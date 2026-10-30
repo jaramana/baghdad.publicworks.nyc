@@ -1,0 +1,23 @@
+/*
+  English pages: Latin type roles and English punctuation.
+  Load after base.css and page.css.
+*/
+
+:root {
+  --kufi: "IBM Plex Sans", "IBM Plex Sans Arabic", sans-serif;
+  --naskh: "IBM Plex Serif", Georgia, serif;
+}
+body { font-family: "IBM Plex Sans", "IBM Plex Sans Arabic", system-ui, sans-serif; line-height: 1.65; }
+h1, h2, h3 { line-height: 1.3; letter-spacing: -0.01em; }
+.brand strong { font-size: 1.375rem; }
+
+.crumbs li + li::before { content: "›"; }
+.steps li::before { content: counter(step); }
+
+/* Footer is the full site map: brand plus four columns */
+
+.foot { grid-template-columns: 1.3fr repeat(4, 1fr); }
+
+@media (max-width: 860px) {
+  .foot { grid-template-columns: 1fr 1fr; }
+}

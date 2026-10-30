@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Districts — Mayoralty of Baghdad</title>
+<link rel="alternate" hreflang="ar" href="../districts.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@600&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/base.css">
+<link rel="stylesheet" href="../shared/page.css">
+<link rel="stylesheet" href="../shared/en.css">
+<link rel="stylesheet" href="../shared/lang-swap.css">
+<script src="../shared/lang-swap.js"></script>
+<style>
+  /* Two banks side by side, each on its own side of the river, as on a map */
+
+  .banks { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); padding-block: 2.5rem 1rem; }
+  .banks h2 { font-size: 1.4rem; margin-bottom: 0.25rem; }
+  .banks h2 + p { margin: 0 0 1rem; color: var(--muted); }
+  .index-list .ar { font-size: 0.875rem; color: var(--muted); font-family: "IBM Plex Sans Arabic", sans-serif; font-weight: 400; margin-inline-start: 0.5rem; }
+  .index-list .acts { grid-column: 1 / -1; display: flex; gap: 1.25rem; flex-wrap: wrap; font-size: 0.9375rem; margin-top: 0.15rem; }
+  .outside { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+  .outside p { max-width: 44rem; }
+
+  @media (max-width: 860px) {
+    .banks, .outside { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
+      <div><strong>Mayoralty of Baghdad</strong><span>Official website · Republic of Iraq</span></div>
+    </a>
+    <ul class="nav">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="report.html">Report a problem</a></li>
+      <li><a href="districts.html" aria-current="page">Districts</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="lang"><a href="../districts.html" lang="ar" hreflang="ar" dir="rtl">العربية</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">Districts</li>
+    </ol>
+  </nav>
+
+  <header class="page-head">
+    <p class="kicker">Mayoralty of Baghdad</p>
+    <h1>Districts</h1>
+    <p class="lede">The Mayoralty serves the city through 14 municipalities, six on the Karkh side and eight on the Rusafa side, plus the Green Zone and Airport Road municipality. Your municipality is your nearest office, and it is where your reports go.</p>
+  </header>
+
+  <div class="banks">
+    <section aria-labelledby="karkh-h">
+      <h2 id="karkh-h">Karkh</h2>
+      <p>The west bank of the Tigris</p>
+      <ul class="index-list">
+        <li id="karkh"><span class="t">Karkh Center<span class="ar" lang="ar">مركز الكرخ</span></span><span class="acts"><a href="report.html?d=karkh">Report a problem here</a></span></li>
+        <li id="kadhimiya"><span class="t">Kadhimiya<span class="ar" lang="ar">الكاظمية</span></span><span class="acts"><a href="report.html?d=kadhimiya">Report a problem here</a></span></li>
+        <li id="mansour"><span class="t">Mansour<span class="ar" lang="ar">المنصور</span></span><span class="acts"><a href="report.html?d=mansour">Report a problem here</a></span></li>
+        <li id="shuala"><span class="t">Al-Shula<span class="ar" lang="ar">الشعلة</span></span><span class="acts"><a href="report.html?d=shuala">Report a problem here</a></span></li>
+        <li id="rasheed"><span class="t">Al-Rasheed<span class="ar" lang="ar">الرشيد</span></span><span class="acts"><a href="report.html?d=rasheed">Report a problem here</a></span></li>
+        <li id="dora"><span class="t">Dora<span class="ar" lang="ar">الدورة</span></span><span class="acts"><a href="report.html?d=dora">Report a problem here</a></span></li>
+        <li id="gzone"><span class="t">Green Zone and Airport Road<span class="ar" lang="ar">المنطقة الخضراء وطريق المطار</span></span><span class="acts"><a href="report.html?d=gzone">Report a problem here</a></span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="rusafa-h">
+      <h2 id="rusafa-h">Rusafa</h2>
+      <p>The east bank of the Tigris</p>
+      <ul class="index-list">
+        <li id="rusafa"><span class="t">Rusafa Center<span class="ar" lang="ar">مركز الرصافة</span></span><span class="acts"><a href="report.html?d=rusafa">Report a problem here</a></span></li>
+        <li id="adhamiya"><span class="t">Adhamiya<span class="ar" lang="ar">الأعظمية</span></span><span class="acts"><a href="report.html?d=adhamiya">Report a problem here</a></span></li>
+        <li id="shaab"><span class="t">Al-Shaab<span class="ar" lang="ar">الشعب</span></span><span class="acts"><a href="report.html?d=shaab">Report a problem here</a></span></li>
+        <li id="sader1"><span class="t">Sadr 1<span class="ar" lang="ar">الصدر الأولى</span></span><span class="acts"><a href="report.html?d=sader1">Report a problem here</a></span></li>
+        <li id="sader2"><span class="t">Sadr 2<span class="ar" lang="ar">الصدر الثانية</span></span><span class="acts"><a href="report.html?d=sader2">Report a problem here</a></span></li>
+        <li id="ghadeer"><span class="t">Al-Ghadeer<span class="ar" lang="ar">الغدير</span></span><span class="acts"><a href="report.html?d=ghadeer">Report a problem here</a></span></li>
+        <li id="baghdadg"><span class="t">New Baghdad<span class="ar" lang="ar">بغداد الجديدة</span></span><span class="acts"><a href="report.html?d=baghdadg">Report a problem here</a></span></li>
+        <li id="karrada"><a class="t" href="district-karrada.html">Karrada<span class="ar" lang="ar">الكرادة</span></a><span class="tag">Full page</span><span class="acts"><a href="district-karrada.html">Alerts, works and office</a><a href="report.html?d=karrada">Report a problem here</a></span></li>
+      </ul>
+    </section>
+  </div>
+
+  <p class="illustrative">The list of municipalities comes from their subdomains on the Mayoralty's website and from Arabic Wikipedia. We found no official source for which bank Al-Ghadeer, Al-Shula and the Green Zone sit on. Only Karrada has a full page in this prototype; the others will be built on its template.</p>
+
+  <section class="block ruled outside" aria-labelledby="out-h">
+    <div>
+      <div class="block-head"><h2 id="out-h">Outside the Mayoralty's boundary?</h2></div>
+      <p>The districts around the city, such as Abu Ghraib, Tarmiyah, Mahmudiyah and Mada'in, come under Baghdad Governorate, not the Mayoralty. If your property or your problem is there, the Governorate or the district's own municipality is responsible.</p>
+      <p class="note">How work is split between the Mayoralty and the Governorate has not been checked in detail. <a href="about.html#who">Who does what</a></p>
+    </div>
+    <div class="side-card">
+      <h2>Baghdad Governorate</h2>
+      <p>The Governorate's official website. It is a separate body from the Mayoralty.</p>
+      <a class="btn" href="https://baghdad.gov.iq" rel="external">baghdad.gov.iq ↗</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">Mayoralty of Baghdad</div>
+      <div><h2>Services</h2><ul><li><a href="services.html">All services</a></li><li><a href="report.html">Report a problem</a></li><li><a href="track.html">Track a report</a></li><li><a href="alerts.html">Alerts</a></li></ul></div>
+      <div><h2>The city</h2><ul><li><a href="districts.html">Districts</a></li><li><a href="projects.html">Projects</a></li><li><a href="../city-tigris.html" hreflang="ar">The Tigris (Arabic)</a></li></ul></div>
+      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">About</a></li><li><a href="about.html#who">Who does what</a></li><li><a href="about.html#tenders">Tenders and auctions</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
+      <div><h2>This site</h2><ul><li><a href="data.html">Open data</a></li><li><a href="about.html#search">How search works</a></li><li><a href="about.html#access">Accessibility</a></li><li><a href="about.html#privacy">Privacy</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p>Private study prototype. Not the official website of the Mayoralty of Baghdad.</p>
+      <p>Seal: community redraw — CC BY-SA 4.0 — Wikimedia Commons. Photos credited with each photo.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -69,17 +69,17 @@ const STR = {
     link: 'صفحة البلدية', note: 'أرقام توضيحية في هذا النموذج'
   },
   en: {
-    wait: 'Searching Amanat pages…',
-    none: '<p class="answer-title">No page matches your request.</p><p>Try other words, or <a href="services.html">browse all services</a> (in Arabic).</p>',
+    wait: 'Searching Mayoralty pages…',
+    none: '<p class="answer-title">No page matches your request.</p><p>Try other words, or <a href="services.html">browse all services</a>.</p>',
     area: d => `Area: ${d.en} · ${SIDE_EN[d.side]}`,
-    source: s => `Source: the “${s}” page on the Amanat site`,
+    source: s => `Source: the “${s}” page on the Mayoralty site`,
     group: side => SIDE_EN[side],
     name: d => `${d.en} municipality`,
     side: d => `${SIDE_EN[d.side]} · ${d.ar}`,
     hoursK: 'Office hours', hoursV: 'Sunday to Thursday, 8:30 am – 2:30 pm',
     worksK: 'Works under way', worksV: n => `${n} projects in the area`,
     reportsK: 'Reports this month', reportsV: (n, p) => `${n} reports, ${p}% closed`,
-    link: 'District page (in Arabic)', note: 'Figures are illustrative in this prototype'
+    link: 'District page', note: 'Figures are illustrative in this prototype'
   }
 }[LANG];
 

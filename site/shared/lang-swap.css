@@ -1,0 +1,69 @@
+/*
+  Language swap
+
+  Cross-document view transitions between a page and its other-language twin.
+  Masthead, every page: the seal and the language link travel to their mirrored place.
+  Home: the search card, Today ledger and task tiles travel too.
+  Every other page: the body is revealed in the new reading direction.
+*/
+
+@view-transition { navigation: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+}
+
+::view-transition-group(*) {
+  animation-duration: 560ms;
+  animation-timing-function: cubic-bezier(0.3, 0, 0.1, 1);
+}
+
+
+/* Masthead glide */
+
+.masthead { view-transition-name: masthead; }
+.brand img { view-transition-name: seal; }
+.lang a { view-transition-name: lang; }
+
+
+/* Home glide: cards keep their proportions while they travel */
+
+.hero .ask { view-transition-name: ask; view-transition-class: card; }
+.hero .ledger { view-transition-name: ledger; view-transition-class: card; }
+.tasks > li:nth-child(1) > a { view-transition-name: task-1; view-transition-class: card; }
+.tasks > li:nth-child(2) > a { view-transition-name: task-2; view-transition-class: card; }
+.tasks > li:nth-child(3) > a { view-transition-name: task-3; view-transition-class: card; }
+.tasks > li:nth-child(4) > a { view-transition-name: task-4; view-transition-class: card; }
+.tasks > li:nth-child(5) > a { view-transition-name: task-5; view-transition-class: card; }
+.tasks > li:nth-child(6) > a { view-transition-name: task-6; view-transition-class: card; }
+
+::view-transition-image-pair(*.card) { overflow: clip; }
+::view-transition-old(*.card),
+::view-transition-new(*.card) {
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+html:has(.hero)::view-transition-old(root),
+html:has(.hero)::view-transition-new(root) { animation-duration: 280ms; }
+
+
+/* Inner pages: reading sweep */
+
+html:not(:has(.hero))::view-transition-old(root) { animation: none; }
+html:not(:has(.hero))::view-transition-new(root) {
+  mask-size: 250% 100%;
+  mask-repeat: no-repeat;
+  animation: 720ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+html[dir="ltr"]:not(:has(.hero))::view-transition-new(root) {
+  mask-image: linear-gradient(to right, #000 40%, transparent 60%);
+  animation-name: sweep-ltr;
+}
+html[dir="rtl"]:not(:has(.hero))::view-transition-new(root) {
+  mask-image: linear-gradient(to left, #000 40%, transparent 60%);
+  animation-name: sweep-rtl;
+}
+@keyframes sweep-ltr { from { mask-position: 100% 0; } to { mask-position: 0 0; } }
+@keyframes sweep-rtl { from { mask-position: 0 0; } to { mask-position: 100% 0; } }
