@@ -1,0 +1,128 @@
+/*
+  Amanat Baghdad — shared base for every page type
+
+  Color
+  Green #1b6435 is the primary, used as lines, text and outlines, never as a fill.
+  Teal #1484a9 (the seal's ring) is a quiet second accent for water and walking.
+
+  Image ratios
+  Hero band  3:1 (16:9 on phones, capped at 26rem tall)
+  All other photos  3:2
+
+  Type roles
+  Kufi   — the institution: wordmark and headings
+  Naskh  — the city's story voice: The City only
+  Plex   — everything people read and use
+*/
+
+:root {
+  --green: #1b6435;
+  --green-deep: #0f3f21;
+  --green-tint: #eef5f0;
+  --teal: #1484a9;
+  --teal-text: #10708f;
+  --ink: #13201a;
+  --muted: #5a665f;
+  --line: #dde3df;
+  --paper: #fbfaf6;
+  --white: #ffffff;
+  --soft: #f4f5f2;
+  --ok: #2f7d4a;
+  --amber: #a36a00;
+  --focus: #ffbf47;
+  --wrap: 74rem;
+  --ratio-hero: 3 / 1;
+  --ratio-photo: 3 / 2;
+  --kufi: "Noto Kufi Arabic", "IBM Plex Sans Arabic", sans-serif;
+  --naskh: "Noto Naskh Arabic", "IBM Plex Sans Arabic", serif;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 6rem; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 1.0625rem/1.75 "IBM Plex Sans Arabic", system-ui, sans-serif;
+}
+a { color: var(--green); text-underline-offset: 0.2em; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid var(--focus); outline-offset: 2px;
+}
+.wrap { max-width: var(--wrap); margin-inline: auto; padding-inline: 1rem; }
+h1, h2, h3 { font-family: var(--kufi); line-height: 1.4; margin: 0; }
+figure { margin: 0; }
+figcaption { font-size: 0.6875rem; color: var(--muted); margin-top: 0.3rem; }
+.note { font-size: 0.8125rem; color: var(--muted); margin: 0.75rem 0 0; }
+
+/* Outline button: the green primary without fill */
+.btn, .answer-action {
+  display: inline-block;
+  background: transparent;
+  color: var(--green);
+  border: 1.5px solid var(--green);
+  border-radius: 3px;
+  padding: 0.4rem 1.1rem;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn:hover, .answer-action:hover { background: var(--green-tint); color: var(--green-deep); }
+
+/* Masthead: sticky white glass between two green lines */
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255,255,255,0.97);
+  background: color-mix(in srgb, #fff 84%, transparent);
+  -webkit-backdrop-filter: saturate(1.5) blur(16px);
+  backdrop-filter: saturate(1.5) blur(16px);
+  border-top: 4px solid var(--green);
+  border-bottom: 1px solid var(--green);
+}
+.masthead .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-block: 0.7rem; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 0.85rem; color: var(--ink); text-decoration: none; }
+.brand img { width: 56px; height: 56px; }
+.brand strong { display: block; font-family: var(--kufi); font-size: 1.5rem; font-weight: 800; line-height: 1.2; color: var(--green); }
+.brand span { display: block; font-size: 0.75rem; color: var(--muted); }
+.nav { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; font-weight: 500; }
+.nav a { color: var(--ink); text-decoration: none; padding-block: 0.25rem; border-bottom: 2px solid transparent; }
+.nav a:hover, .nav a[aria-current] { border-color: var(--green); }
+.nav .lang a { font-size: 0.875rem; color: var(--muted); }
+
+/* Sections */
+section.block { padding-block: 3rem; }
+.ruled { border-top: 1px solid var(--line); }
+.block-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.block-head h2 { font-size: 1.6rem; font-weight: 700; }
+.block-head h2::after { content: ""; display: block; width: 2.5rem; height: 4px; background: var(--green); margin-top: 0.4rem; }
+.block-head p { margin: 0; color: var(--muted); }
+
+/* Status dots */
+.status { white-space: nowrap; font-weight: 600; }
+.status::before { content: ""; display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%; margin-inline-end: 0.4rem; background: currentColor; vertical-align: 0.1em; }
+.status.ok { color: var(--ok); }
+.status.plan { color: var(--amber); }
+.status.walk { color: var(--teal-text); }
+
+/* Footer: soft, framed by a green line */
+footer { background: var(--soft); border-top: 4px solid var(--green); padding-block: 2.5rem 1.5rem; font-size: 0.9375rem; }
+.foot { display: grid; grid-template-columns: 1.3fr repeat(3, 1fr); gap: 1.5rem; }
+.foot-brand { display: flex; gap: 0.75rem; align-items: center; align-self: start; font-family: var(--kufi); font-size: 1.125rem; font-weight: 700; color: var(--green); }
+.foot-brand img { width: 44px; height: 44px; }
+.foot h2 { font-family: inherit; font-size: 0.875rem; font-weight: 600; color: var(--muted); margin-bottom: 0.5rem; }
+.foot ul { list-style: none; margin: 0; padding: 0; }
+.foot li { padding-block: 0.15rem; }
+.foot a { color: var(--ink); }
+.fine { border-top: 1px solid var(--line); margin-top: 2rem; padding-top: 1rem; color: var(--muted); font-size: 0.8125rem; }
+.fine p { margin: 0.25rem 0; }
+
+@media (max-width: 860px) {
+  :root { --ratio-hero: 16 / 9; }
+  html { scroll-padding-top: 0; }
+  .masthead { position: static; background: #fff; }
+  .foot { grid-template-columns: 1fr 1fr; }
+  .nav { gap: 1rem; font-size: 0.9375rem; }
+  .brand img { width: 48px; height: 48px; }
+}

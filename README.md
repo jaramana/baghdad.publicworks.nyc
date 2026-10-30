@@ -24,6 +24,7 @@ Not part of the publicworks.nyc suite.
 - Type roles: Noto Kufi Arabic for the institution (wordmark, headings, large figures); Noto Naskh Arabic for The City story voice only; IBM Plex Sans Arabic for everything people read and use
 - The answer slot has a reserved height; answers never move the page
 - Report a problem offers the web form and WhatsApp side by side
+- Shared rules (tokens, masthead, buttons, section heads, status dots, footer) live in `site/shared/base.css`. Page files hold only their own layout
 - Earlier variants stay in `site/` for reference
 
 Preview: `python3 -m http.server 4321 --directory site`, or `baghdad-site` in the workspace launch config.
@@ -74,6 +75,13 @@ Preview: `python3 -m http.server 4321 --directory site`, or `baghdad-site` in th
 
 - Census 2024 population and our own satellite heat, green and NO2 maps are sourced. Everything else is labelled illustrative.
 - Live air quality only if a working feed is confirmed.
+
+## Page templates built
+
+| Page | File | Notes |
+| --- | --- | --- |
+| Home | `site/i-blend.html` | Chosen direction |
+| Service | `site/service-permit.html` | Building permit. Guide on one side, sticky "Start on Ur" card on the other. Ur location verified; documents, steps, time and cost illustrative |
 
 ## v0.1 scope
 
