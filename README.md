@@ -24,10 +24,13 @@ Not part of the publicworks.nyc suite.
 - Type roles: Noto Kufi Arabic for the institution (wordmark, headings, large figures); Noto Naskh Arabic for The City story voice only; IBM Plex Sans Arabic for everything people read and use
 - The answer slot has a reserved height; answers never move the page
 - Report a problem offers the web form and WhatsApp side by side
-- Shared rules (tokens, masthead, buttons, section heads, status dots, footer) live in `site/shared/base.css`. Page files hold only their own layout
+- Shared rules (tokens, masthead, buttons, section heads, status dots, footer) live in `site/shared/base.css`. Inner pages add `site/shared/page.css` (crumbs, page head, facts strip, two-column layout, checklist, steps, side cards, alerts, data tables, maps, index lists). Page files hold only their own layout
+- Masthead and footer links are identical on every Arabic page: الخدمات → `services.html`, بلّغ → `report.html`, البلديات → `districts.html`, المدينة → `city-tigris.html`, English → `en.html`
+- Maps are Leaflet on OpenStreetMap at 3:2, with wheel zoom off so the page scrolls past them. Marker positions come from OSM place lookups and are approximate
+- Three marks on The City: «مصدر» (sourced, with a source line), «توضيحي» (illustrative), «رؤية» (vision)
 - Earlier variants stay in `site/` for reference
 
-Preview: `python3 -m http.server 4321 --directory site`, or `baghdad-site` in the workspace launch config.
+Preview: `python3 -m http.server 4321 --directory site`, or `baghdad-site` in the workspace launch config (`baghdad-site-alt` serves on 4322 when 4321 is taken).
 
 ## Principles
 
@@ -84,8 +87,19 @@ Preview: `python3 -m http.server 4321 --directory site`, or `baghdad-site` in th
 | Service | `site/service-permit.html` | Building permit. Guide on one side, sticky "Start on Ur" card on the other. Ur location verified; documents, steps, time and cost illustrative |
 | Report | `site/report.html` | Four steps (problem, place on an OpenStreetMap pin, photo and note, review) then a receipt with a case number. Help column beside the form. Nothing is sent |
 | Track | `site/track.html` | Look up a case number; timeline of who did what and when. One sample case (ب-٤٨٢١٣) |
+| Services index | `site/services.html` | Grouped by task. Each service tagged: this site, Ur portal or district office |
+| Service | `site/service-water.html`, `service-property.html`, `service-sewer.html`, `service-fees.html` | Same template as the permit page. Fees adds a lookup by account number in a fixed-height slot, and explains why fee-payer lists are no longer published |
+| Districts index | `site/districts.html` | All 15 municipalities by bank, each with a pre-filled report link (`report.html?d=slug`). Outer districts point to the Governorate |
+| District | `site/district-karrada.html` | Census figure (Karrada ash-Sharqiyah subdistrict, 105,507), alerts, map, works, report table, neighbourhoods, office card. Two works are sourced; the rest is illustrative |
+| Story | `site/city-tigris.html` | The Tigris. Sourced figures, illustrative outfall map and table, projects under way with who runs them, three "what if" ideas, precedents, 14 sources |
+| About | `site/about.html` | Mandate (Law 16/1995), who does what, departments, how search works, accessibility, privacy |
+| Alerts | `site/alerts.html` | Today and this week. Illustrative |
+| Open data | `site/data.html` | Dataset list with honest status, and the full 2024 census table by subdistrict |
+| English home | `site/en.html` | Mirror of the Arabic home. `shared/home.js` switches strings and search rules on `<html lang>` |
 
 ## v0.1 scope
+
+All five are built (30 Oct 2026).
 
 1. Home page, Arabic with English mirror
 2. Service page template (building permit)
@@ -93,7 +107,16 @@ Preview: `python3 -m http.server 4321 --directory site`, or `baghdad-site` in th
 4. District page template (one district)
 5. City page (the Tigris)
 
+## Open items
+
+- WhatsApp «افتح المحادثة» has no target, because no Amanat number exists
+- Ur buttons link to the verified Ur service pages. Pay-bill links to nothing, because the payment site's operator is unverified
+- Inner pages are Arabic only. The English home says so
+- The other 14 district pages, once the official boundary and office list exist
+- Bank of the Tigris for Al-Ghadeer, Al-Shula and the Green Zone municipality is unverified
+- Arabic subdistrict names on the census table are our transliteration from the source's Latin spelling
+
 ## Folders
 
-- `research/` — benchmark scan, current-site inventory, identity and images, urban context
+- `research/` — benchmark scan, current-site inventory, identity and images, urban context, 2024 census by subdistrict
 - `site/` — the prototype

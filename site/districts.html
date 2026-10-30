@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>البلديات — أمانة بغداد</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/page.css">
+<style>
+  /* Two banks side by side, each a ruled list */
+
+  .banks { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); padding-block: 2.5rem 1rem; }
+  .banks h2 { font-size: 1.4rem; margin-bottom: 0.25rem; }
+  .banks h2 + p { margin: 0 0 1rem; color: var(--muted); }
+  .index-list .en { font-size: 0.875rem; color: var(--muted); font-family: "IBM Plex Sans Arabic", sans-serif; font-weight: 400; margin-inline-start: 0.4rem; }
+  .index-list .acts { grid-column: 1 / -1; display: flex; gap: 1.25rem; flex-wrap: wrap; font-size: 0.9375rem; margin-top: 0.15rem; }
+  .outside { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+  .outside p { max-width: 44rem; }
+
+  @media (max-width: 860px) {
+    .banks, .outside { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="i-blend.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
+      <div><strong>أمانة بغداد</strong><span>الموقع الرسمي · جمهورية العراق</span></div>
+    </a>
+    <ul class="nav">
+      <li><a href="services.html">الخدمات</a></li>
+      <li><a href="report.html">بلّغ عن مشكلة</a></li>
+      <li><a href="districts.html" aria-current="page">البلديات</a></li>
+      <li><a href="city-tigris.html">المدينة</a></li>
+      <li class="lang"><a href="en.html" lang="en" hreflang="en" dir="ltr">English</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="crumbs" aria-label="مسار الصفحة">
+    <ol>
+      <li><a href="i-blend.html">الرئيسية</a></li>
+      <li aria-current="page">البلديات</li>
+    </ol>
+  </nav>
+
+  <header class="page-head">
+    <p class="kicker">أمانة بغداد</p>
+    <h1>البلديات</h1>
+    <p class="lede">تخدم الأمانة المدينة عبر ١٤ بلدية، ثمانٍ في جانب الرصافة وستٍّ في جانب الكرخ، إضافة إلى بلدية المنطقة الخضراء وطريق المطار. بلديتك هي أقرب مكتب لك، وإليها يصل بلاغك.</p>
+  </header>
+
+  <div class="banks">
+    <section aria-labelledby="rusafa-h">
+      <h2 id="rusafa-h">جانب الرصافة</h2>
+      <p>الضفة الشرقية لدجلة</p>
+      <ul class="index-list">
+        <li id="rusafa"><span class="t">مركز الرصافة<span class="en">Rusafa Center</span></span><span class="acts"><a href="report.html?d=rusafa">بلّغ عن مشكلة هنا</a></span></li>
+        <li id="adhamiya"><span class="t">الأعظمية<span class="en">Adhamiya</span></span><span class="acts"><a href="report.html?d=adhamiya">بلّغ عن مشكلة هنا</a></span></li>
+        <li id="shaab"><span class="t">الشعب<span class="en">Al-Shaab</span></span><span class="acts"><a href="report.html?d=shaab">بلّغ عن مشكلة هنا</a></span></li>
+        <li id="sader1"><span class="t">الصدر الأولى<span class="en">Sadr 1</span></span><span class="acts"><a href="report.html?d=sader1">بلّغ عن مشكلة هنا</a></span></li>
+        <li id="sader2"><span class="t">الصدر الثانية<span class="en">Sadr 2</span></span><span class="acts"><a href="report.html?d=sader2">بلّغ عن مشكلة هنا</a></span></li>
+        <li id="ghadeer"><span class="t">الغدير<span class="en">Al-Ghadeer</span></span><span class="acts"><a href="report.html?d=ghadeer">بلّغ عن مشكلة هنا</a></span></li>
+        <li id="baghdadg"><span class="t">بغداد الجديدة<span class="en">New Baghdad</span></span><span class="acts"><a href="report.html?d=baghdadg">بلّغ عن مشكلة هنا</a></span></li>
+        <li id="karrada"><a class="t" href="district-karrada.html">الكرادة<span class="en">Karrada</span></a><span class="tag">صفحة البلدية</span><span class="acts"><a href="district-karrada.html">التنبيهات والأعمال والمكتب</a><a href="report.html?d=karrada">بلّغ عن مشكلة هنا</a></span></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="karkh-h">
+      <h2 id="karkh-h">جانب الكرخ</h2>
+      <p>الضفة الغربية لدجلة</p>
+      <ul class="index-list">
+        <li id="karkh"><span class="t">مركز الكرخ<span class="en">Karkh Center</span></span><span class="acts"><a href="report.html?d=karkh">بلّغ عن مشكلة هنا</a></span></li>
+        <li id="kadhimiya"><span class="t">الكاظمية<span class="en">Kadhimiya</span></span><span class="acts"><a href="report.html?d=kadhimiya">بلّغ عن مشكلة هنا</a></span></li>
+        <li id="mansour"><span class="t">المنصور<span class="en">Mansour</span></span><span class="acts"><a href="report.html?d=mansour">بلّغ عن مشكلة هنا</a></span></li>
+        <li id="shuala"><span class="t">الشعلة<span class="en">Al-Shula</span></span><span class="acts"><a href="report.html?d=shuala">بلّغ عن مشكلة هنا</a></span></li>
+        <li id="rasheed"><span class="t">الرشيد<span class="en">Al-Rasheed</span></span><span class="acts"><a href="report.html?d=rasheed">بلّغ عن مشكلة هنا</a></span></li>
+        <li id="dora"><span class="t">الدورة<span class="en">Dora</span></span><span class="acts"><a href="report.html?d=dora">بلّغ عن مشكلة هنا</a></span></li>
+        <li id="gzone"><span class="t">المنطقة الخضراء وطريق المطار<span class="en">Green Zone and Airport Road</span></span><span class="acts"><a href="report.html?d=gzone">بلّغ عن مشكلة هنا</a></span></li>
+      </ul>
+    </section>
+  </div>
+
+  <p class="illustrative">قائمة البلديات من نطاقات مواقعها الفرعية على موقع الأمانة ومن ويكيبيديا العربية. لم نجد مصدراً رسمياً يحدد جانب الغدير والشعلة والمنطقة الخضراء. في هذا النموذج صفحة الكرادة وحدها مكتملة، وبقية البلديات تُبنى على قالبها.</p>
+
+  <section class="block ruled outside" aria-labelledby="out-h">
+    <div>
+      <div class="block-head"><h2 id="out-h">خارج حدود الأمانة؟</h2></div>
+      <p>الأقضية والنواحي المحيطة بالمدينة، مثل أبي غريب والطارمية والمحمودية والمدائن، تتبع محافظة بغداد لا الأمانة. إن كان عقارك أو مشكلتك هناك، فالجهة المختصة هي المحافظة أو بلدية القضاء.</p>
+      <p class="note">تقسيم المهام بين الأمانة والمحافظة لم يُتحقَّق منه بالتفصيل. <a href="about.html#who">من يفعل ماذا</a></p>
+    </div>
+    <div class="side-card">
+      <h2>محافظة بغداد</h2>
+      <p>الموقع الرسمي للمحافظة، جهة منفصلة عن الأمانة.</p>
+      <a class="btn" href="https://baghdad.gov.iq" rel="external">baghdad.gov.iq ↗</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">عن الأمانة</a></li><li><a href="districts.html">البلديات</a></li><li><a href="services.html#business">المناقصات</a></li></ul></div>
+      <div><h2>الخدمات</h2><ul><li><a href="report.html">بلّغ عن مشكلة</a></li><li><a href="track.html">تابع بلاغك</a></li><li><a href="services.html">كل الخدمات</a></li></ul></div>
+      <div><h2>الموقع</h2><ul><li><a href="about.html#access">إمكانية الوصول</a></li><li><a href="about.html#privacy">الخصوصية</a></li><li><a href="data.html">البيانات المفتوحة</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p>نموذج دراسي خاص. ليس الموقع الرسمي لأمانة بغداد.</p>
+      <p>الختم: إعادة رسم مجتمعية — CC BY-SA 4.0 — Wikimedia Commons.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

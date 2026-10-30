@@ -13,6 +13,7 @@
   .river img { width: 100%; aspect-ratio: var(--ratio-hero); max-height: 26rem; object-fit: cover; object-position: center 60%; display: block; }
   .river figcaption { max-width: var(--wrap); margin-inline: auto; padding-inline: 1rem; text-align: end; }
   .hero { position: relative; display: grid; grid-template-columns: 1.35fr 1fr; gap: 1.5rem; align-items: start; margin-top: clamp(-13rem, -15vw, -5rem); }
+  .hero > * { min-width: 0; }
   .card { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 4px; box-shadow: 0 12px 36px rgba(15,63,33,0.12); }
   .ask { padding: 1.75rem; }
   .ask h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 800; }
@@ -116,16 +117,16 @@
 
 <header class="masthead">
   <div class="wrap">
-    <a class="brand" href="#">
+    <a class="brand" href="i-blend.html">
       <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
       <div><strong>أمانة بغداد</strong><span>الموقع الرسمي · جمهورية العراق</span></div>
     </a>
     <ul class="nav">
-      <li><a href="#tasks">الخدمات</a></li>
-      <li><a href="#report">بلّغ عن مشكلة</a></li>
-      <li><a href="#district">البلديات</a></li>
-      <li><a href="#city">المدينة</a></li>
-      <li class="lang"><a href="#" lang="en" dir="ltr">English</a></li>
+      <li><a href="services.html">الخدمات</a></li>
+      <li><a href="report.html">بلّغ عن مشكلة</a></li>
+      <li><a href="districts.html">البلديات</a></li>
+      <li><a href="city-tigris.html">المدينة</a></li>
+      <li class="lang"><a href="en.html" lang="en" hreflang="en" dir="ltr">English</a></li>
     </ul>
   </div>
 </header>
@@ -143,7 +144,7 @@
           <input id="q" type="search" aria-label="ابحث في خدمات الأمانة" placeholder="مثلاً: انقطاع الماء في الكرادة" autocomplete="off">
           <button type="submit">ابحث</button>
         </form>
-        <p class="ai-note">يستعين البحث بالذكاء الاصطناعي، ويجيب من صفحات الأمانة فقط. <a href="#">كيف يعمل؟</a></p>
+        <p class="ai-note">يستعين البحث بالذكاء الاصطناعي، ويجيب من صفحات الأمانة فقط. <a href="about.html#search">كيف يعمل؟</a></p>
         <ul class="chips">
           <li><button type="button" data-chip="انقطاع الماء في الكرادة">انقطاع الماء</button></li>
           <li><button type="button" data-chip="إجازة بناء">إجازة بناء</button></li>
@@ -167,19 +168,19 @@
           <li><div class="row"><span class="topic">الطرق</span><span class="status walk">للمشاة</span></div><p class="what">جسر الشهداء للمشاة فقط اليوم.</p></li>
           <li><div class="row"><span class="topic">النفايات</span><span class="status ok">طبيعي</span></div><p class="what">الرفع حسب الجدول في جميع البلديات.</p></li>
         </ul>
-        <div class="foot-row"><span>بيانات توضيحية</span><a href="#">كل التنبيهات</a></div>
+        <div class="foot-row"><span>بيانات توضيحية</span><a href="alerts.html">كل التنبيهات</a></div>
       </section>
     </div>
     <p class="note" lang="en" dir="ltr" style="text-align:end">Tigris River in early morning — Abdo Alrawii — CC BY-SA 4.0</p>
   </div>
 
   <section class="block wrap" id="tasks" aria-labelledby="tasks-h">
-    <div class="block-head"><h2 id="tasks-h">أكثر الخدمات طلباً</h2><p><a href="#">كل الخدمات</a></p></div>
+    <div class="block-head"><h2 id="tasks-h">أكثر الخدمات طلباً</h2><p><a href="services.html">كل الخدمات</a></p></div>
     <ul class="tasks">
       <li><a href="service-permit.html"><strong>إجازة البناء</strong><p>ما تحتاجه، والكلفة، والمدة، ثم التقديم.</p><span class="tag">على بوابة أور</span></a></li>
-      <li><a href="#"><strong>حساب الماء</strong><p>دفع الفاتورة، اشتراك جديد، تبديل العداد أو نقل الاسم.</p><span class="tag">على بوابة أور</span></a></li>
-      <li><a href="#"><strong>بيان عقار</strong><p>للبيع والإرث والإجازات. يصدر إلكترونياً.</p><span class="tag">على بوابة أور</span></a></li>
-      <li><a href="#"><strong>الرسوم البلدية</strong><p>رسوم المهن والإعلانات والنظافة، ومن أين تُدفع.</p></a></li>
+      <li><a href="service-water.html"><strong>حساب الماء</strong><p>دفع الفاتورة، اشتراك جديد، تبديل العداد أو نقل الاسم.</p><span class="tag">على بوابة أور</span></a></li>
+      <li><a href="service-property.html"><strong>بيان عقار</strong><p>للبيع والإرث والإجازات. يصدر إلكترونياً.</p><span class="tag">على بوابة أور</span></a></li>
+      <li><a href="service-fees.html"><strong>الرسوم البلدية</strong><p>رسوم المهن والإعلانات والنظافة، ومن أين تُدفع.</p></a></li>
       <li><a href="track.html"><strong>تابع بلاغك</strong><p>أدخل رقم البلاغ لترى حالته.</p></a></li>
       <li><a href="#district"><strong>مكتب بلديتك</strong><p>العنوان وساعات الدوام والأعمال الجارية.</p></a></li>
     </ul>
@@ -222,7 +223,7 @@
   </section>
 
   <section class="block wrap ruled" id="city" aria-labelledby="city-h">
-    <div class="block-head"><h2 id="city-h">المدينة</h2><p><a href="#">البيانات المفتوحة</a></p></div>
+    <div class="block-head"><h2 id="city-h">المدينة</h2><p><a href="data.html">البيانات المفتوحة</a></p></div>
     <div class="photos">
       <figure>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Boat_crossing_Tigris_river.jpg/1280px-Boat_crossing_Tigris_river.jpg" alt="قارب يعبر دجلة قرب جسر الشهداء وبرج ساعة القشلة">
@@ -238,13 +239,13 @@
         <p class="kicker">دجلة</p>
         <h3>نهرٌ نعود إليه</h3>
         <p>تصبّ مجارٍ غير معالجة في دجلة بين باب المعظم والكرادة. نعرض كل مصب، والجهة المسؤولة عنه، وموعد إغلاقه. بعدها نصل المتنبي والقشلة وشارع الرشيد بضفة النهر، حياً واحداً للمشاة.</p>
-        <a href="#">تابع خطة النهر</a>
+        <a href="city-tigris.html">تابع خطة النهر</a>
         <p class="note">رؤية مستقبلية · المواعيد في هذه القصة توضيحية</p>
       </div>
       <div class="fact">
         <p class="num">٩٬٧٨٠٬٤٢٩</p>
         <p>عدد سكان محافظة بغداد في التعداد العام للسكان ٢٠٢٤.</p>
-        <a href="#">السكان حسب البلدية</a>
+        <a href="data.html#census">السكان حسب الناحية</a>
       </div>
     </div>
   </section>
@@ -254,9 +255,9 @@
   <div class="wrap">
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
-      <div><h2>الأمانة</h2><ul><li><a href="#">عن الأمانة</a></li><li><a href="#district">البلديات</a></li><li><a href="#">المناقصات</a></li></ul></div>
-      <div><h2>الخدمات</h2><ul><li><a href="report.html">بلّغ عن مشكلة</a></li><li><a href="track.html">تابع بلاغك</a></li><li><a href="#">بوابة أور</a></li></ul></div>
-      <div><h2>الموقع</h2><ul><li><a href="#">إمكانية الوصول</a></li><li><a href="#">الخصوصية</a></li><li><a href="#">البيانات المفتوحة</a></li></ul></div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">عن الأمانة</a></li><li><a href="districts.html">البلديات</a></li><li><a href="services.html#business">المناقصات</a></li></ul></div>
+      <div><h2>الخدمات</h2><ul><li><a href="report.html">بلّغ عن مشكلة</a></li><li><a href="track.html">تابع بلاغك</a></li><li><a href="services.html">كل الخدمات</a></li></ul></div>
+      <div><h2>الموقع</h2><ul><li><a href="about.html#access">إمكانية الوصول</a></li><li><a href="about.html#privacy">الخصوصية</a></li><li><a href="data.html">البيانات المفتوحة</a></li></ul></div>
     </div>
     <div class="fine">
       <p>نموذج دراسي خاص. ليس الموقع الرسمي لأمانة بغداد.</p>

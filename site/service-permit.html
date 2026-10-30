@@ -8,90 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared/base.css">
-<style>
-  /* Service page: a guide on the start side, the action on the end side */
-
-  .crumbs { font-size: 0.875rem; color: var(--muted); padding-top: 1.5rem; }
-  .crumbs ol { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0; padding: 0; list-style: none; }
-  .crumbs li + li::before { content: "‹"; margin-inline-end: 0.4rem; color: #a9b2ac; }
-  .crumbs a { color: var(--muted); }
-
-  .page-head { padding-block: 1.25rem 2rem; border-bottom: 1px solid var(--line); }
-  .kicker { font-size: 0.875rem; font-weight: 600; color: var(--green); margin: 0; }
-  .page-head h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; margin-top: 0.25rem; }
-  .lede { font-size: 1.1875rem; max-width: 44rem; margin: 0.5rem 0 0; }
-
-  .facts { display: grid; grid-template-columns: repeat(3, 1fr); margin: 1.75rem 0 0; padding: 0; list-style: none; border-top: 2px solid var(--green); }
-  .facts li { padding: 0.9rem 0 0; padding-inline-end: 1.25rem; }
-  .facts li + li { border-inline-start: 1px solid var(--line); padding-inline-start: 1.25rem; }
-  .facts dt, .facts .k { font-size: 0.8125rem; font-weight: 600; color: var(--muted); }
-  .facts .v { font-family: var(--kufi); font-weight: 700; font-size: 1.15rem; margin: 0.15rem 0 0; }
-  .facts .s { font-size: 0.875rem; color: var(--muted); margin: 0.1rem 0 0; }
-
-  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: clamp(2rem, 5vw, 4rem); align-items: start; padding-block: 2.5rem 3rem; }
-
-  /* Guide */
-  .illustrative { font-size: 0.875rem; color: var(--muted); border-inline-start: 3px solid var(--amber); padding-inline-start: 0.75rem; margin: 0 0 2rem; }
-  .guide section { padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line); }
-  .guide section:last-of-type { border-bottom: 0; }
-  .guide h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; }
-  .guide p { margin: 0.5rem 0; max-width: 44rem; }
-  .guide ul { margin: 0.5rem 0; padding-inline-start: 1.25rem; max-width: 44rem; }
-  .guide li { margin-block: 0.25rem; }
-  .aside-note { font-size: 0.9375rem; border: 1px solid var(--line); border-inline-start: 4px solid var(--teal); padding: 0.75rem 1rem; margin-top: 1rem; max-width: 44rem; background: var(--white); }
-
-  .checklist { list-style: none; padding: 0 !important; }
-  .checklist li { display: grid; grid-template-columns: 1.4rem 1fr; gap: 0.6rem; padding-block: 0.6rem; border-bottom: 1px solid var(--line); margin: 0 !important; }
-  .checklist li::before { content: ""; width: 1.1rem; height: 1.1rem; margin-top: 0.3rem; border: 1.5px solid var(--green); border-radius: 3px; }
-  .checklist strong { display: block; }
-  .checklist span { color: var(--muted); font-size: 0.9375rem; }
-
-  .steps { list-style: none; counter-reset: step; padding: 0 !important; position: relative; }
-  .steps::before { content: ""; position: absolute; inset-block: 0.75rem 0.75rem; inset-inline-start: calc(1rem - 1px); width: 2px; background: var(--line); }
-  .steps li { counter-increment: step; position: relative; display: grid; grid-template-columns: 2rem 1fr; gap: 0.9rem; padding-block: 0.5rem; margin: 0 !important; }
-  .steps li::before { content: counter(step, arabic-indic); position: relative; z-index: 1; width: 2rem; height: 2rem; display: grid; place-items: center; border: 1.5px solid var(--green); border-radius: 50%; background: var(--paper); color: var(--green); font-weight: 700; font-size: 0.9375rem; }
-  .steps strong { display: block; }
-  .steps span { color: var(--muted); font-size: 0.9375rem; }
-  .steps .where { display: inline-block; font-size: 0.75rem; font-weight: 600; color: var(--green); border: 1px solid var(--line); border-radius: 2px; padding: 0 0.45rem; margin-inline-start: 0.4rem; }
-
-  /* Action column */
-  .action { position: sticky; top: 7rem; }
-  .start { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 4px; padding: 1.25rem; }
-  .start h2 { font-size: 1.15rem; }
-  .start p { margin: 0.4rem 0; font-size: 0.9375rem; color: var(--muted); }
-  .start .btn { display: block; text-align: center; margin-top: 0.9rem; padding-block: 0.6rem; font-size: 1.0625rem; }
-  .start .alt { border-top: 1px solid var(--line); margin-top: 1rem; padding-top: 0.75rem; }
-  .toc { margin-top: 1.5rem; }
-  .toc h2 { font-family: inherit; font-size: 0.8125rem; font-weight: 600; color: var(--muted); margin-bottom: 0.4rem; }
-  .toc ol { list-style: none; margin: 0; padding: 0; border-inline-start: 2px solid var(--line); }
-  .toc a { display: block; padding: 0.25rem 0.9rem; color: var(--ink); text-decoration: none; font-size: 0.9375rem; margin-inline-start: -2px; border-inline-start: 2px solid transparent; }
-  .toc a:hover { border-color: var(--green); color: var(--green); }
-
-  /* Related and feedback */
-  .related { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 0; padding: 0; list-style: none; }
-  .related a { display: block; height: 100%; background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 3px; padding: 1rem 1.15rem; color: var(--ink); text-decoration: none; }
-  .related a:hover { box-shadow: 0 4px 14px rgba(15,63,33,0.08); }
-  .related strong { font-family: var(--kufi); color: var(--green); }
-  .related p { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.9375rem; }
-
-  .feedback { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; border-block: 1px solid var(--line); padding-block: 1rem; margin-top: 2.5rem; }
-  .feedback p { margin: 0; }
-  .feedback .btns { display: flex; gap: 0.5rem; }
-  .meta { font-size: 0.8125rem; color: var(--muted); margin-top: 1rem; }
-
-  @media (max-width: 860px) {
-    .layout { grid-template-columns: 1fr; padding-top: 1.5rem; }
-    .action { position: static; order: -1; }
-    .toc { display: none; }
-    .page-head { padding-bottom: 1.25rem; }
-    .facts { grid-template-columns: 1fr; margin-top: 1.25rem; }
-    .facts li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.5rem 0; }
-    .facts li + li { border-inline-start: 0; border-top: 1px solid var(--line); padding-inline-start: 0; }
-    .facts .v { font-size: 1rem; margin: 0; }
-    .facts .s { display: none; }
-    .related { grid-template-columns: 1fr; }
-  }
-</style>
+<link rel="stylesheet" href="shared/page.css">
 </head>
 <body>
 
@@ -102,11 +19,11 @@
       <div><strong>أمانة بغداد</strong><span>الموقع الرسمي · جمهورية العراق</span></div>
     </a>
     <ul class="nav">
-      <li><a href="i-blend.html#tasks" aria-current="page">الخدمات</a></li>
-      <li><a href="i-blend.html#report">بلّغ عن مشكلة</a></li>
-      <li><a href="i-blend.html#district">البلديات</a></li>
-      <li><a href="i-blend.html#city">المدينة</a></li>
-      <li class="lang"><a href="#" lang="en" dir="ltr">English</a></li>
+      <li><a href="services.html" aria-current="page">الخدمات</a></li>
+      <li><a href="report.html">بلّغ عن مشكلة</a></li>
+      <li><a href="districts.html">البلديات</a></li>
+      <li><a href="city-tigris.html">المدينة</a></li>
+      <li class="lang"><a href="en.html" lang="en" hreflang="en" dir="ltr">English</a></li>
     </ul>
   </div>
 </header>
@@ -115,8 +32,8 @@
   <nav class="crumbs" aria-label="مسار الصفحة">
     <ol>
       <li><a href="i-blend.html">الرئيسية</a></li>
-      <li><a href="i-blend.html#tasks">الخدمات</a></li>
-      <li><a href="#">البناء والعقار</a></li>
+      <li><a href="services.html">الخدمات</a></li>
+      <li><a href="services.html#building">البناء والعقار</a></li>
       <li aria-current="page">إجازة البناء</li>
     </ol>
   </nav>
@@ -146,14 +63,14 @@
           <li>تغيير استعمال البناء، من سكني إلى تجاري مثلاً.</li>
         </ul>
         <p>لا تحتاجها للصيانة الداخلية التي لا تمسّ الهيكل أو الواجهة.</p>
-        <p class="aside-note">إن كان عقارك خارج حدود أمانة بغداد، في الأقضية والنواحي المحيطة، فقد تكون الجهة المختصة محافظة بغداد. <a href="#">تحقّق من الجهة المختصة</a></p>
+        <p class="aside-note">إن كان عقارك خارج حدود أمانة بغداد، في الأقضية والنواحي المحيطة، فقد تكون الجهة المختصة محافظة بغداد. <a href="about.html#who">تحقّق من الجهة المختصة</a></p>
       </section>
 
       <section id="docs" aria-labelledby="docs-h">
         <h2 id="docs-h">ما تحتاجه</h2>
         <p>جهّز هذه المستندات قبل أن تبدأ. ترفعها صوراً واضحة على بوابة أور.</p>
         <ul class="checklist">
-          <li><div><strong>بيان عقار حديث</strong><span>يصدر على بوابة أور. <a href="#">اطلب بيان عقار</a></span></div></li>
+          <li><div><strong>بيان عقار حديث</strong><span>يصدر على بوابة أور. <a href="service-property.html">اطلب بيان عقار</a></span></div></li>
           <li><div><strong>المخططات المعمارية والإنشائية</strong><span>مصدّقة من مهندس أو مكتب هندسي مجاز.</span></div></li>
           <li><div><strong>البطاقة الوطنية الموحدة</strong><span>لمالك العقار، أو وكالة إن قدّم غيره.</span></div></li>
           <li><div><strong>صورة لموقع العقار</strong><span>من الشارع، تُظهر الأبنية المجاورة.</span></div></li>
@@ -182,10 +99,10 @@
       <div class="start">
         <h2>ابدأ الطلب</h2>
         <p>يستغرق التقديم نحو ٢٠ دقيقة إن كانت المستندات جاهزة.</p>
-        <a class="btn" href="#">قدّم على بوابة أور ↗</a>
-        <p>لا تملك حساباً؟ <a href="#">أنشئ حساباً على أور</a></p>
+        <a class="btn" href="https://eservice.ur.gov.iq/customer/applyService/10671" rel="external">قدّم على بوابة أور ↗</a>
+        <p>لا تملك حساباً؟ <a href="https://ur.gov.iq" rel="external">أنشئ حساباً على أور</a></p>
         <div class="alt">
-          <p>تفضّل الحضور؟ قدّم في <a href="i-blend.html#district">مكتب بلديتك</a> خلال الدوام الرسمي.</p>
+          <p>تفضّل الحضور؟ قدّم في <a href="districts.html">مكتب بلديتك</a> خلال الدوام الرسمي.</p>
         </div>
       </div>
       <nav class="toc" aria-labelledby="toc-h">
@@ -203,8 +120,8 @@
   <section class="block ruled" aria-labelledby="related-h">
     <div class="block-head"><h2 id="related-h">خدمات ذات صلة</h2></div>
     <ul class="related">
-      <li><a href="#"><strong>بيان عقار</strong><p>تحتاجه للإجازة وللبيع والإرث.</p></a></li>
-      <li><a href="#"><strong>إيصال المجاري</strong><p>لربط البناء الجديد بشبكة الصرف الصحي.</p></a></li>
+      <li><a href="service-property.html"><strong>بيان عقار</strong><p>تحتاجه للإجازة وللبيع والإرث.</p></a></li>
+      <li><a href="service-sewer.html"><strong>إيصال المجاري</strong><p>لربط البناء الجديد بشبكة الصرف الصحي.</p></a></li>
       <li><a href="report.html?cat=أخرى"><strong>بلّغ عن بناء مخالف</strong><p>بناء بلا إجازة أو خارج المخطط.</p></a></li>
     </ul>
 
@@ -220,9 +137,9 @@
   <div class="wrap">
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
-      <div><h2>الأمانة</h2><ul><li><a href="#">عن الأمانة</a></li><li><a href="i-blend.html#district">البلديات</a></li><li><a href="#">المناقصات</a></li></ul></div>
-      <div><h2>الخدمات</h2><ul><li><a href="report.html">بلّغ عن مشكلة</a></li><li><a href="track.html">تابع بلاغك</a></li><li><a href="#">بوابة أور</a></li></ul></div>
-      <div><h2>الموقع</h2><ul><li><a href="#">إمكانية الوصول</a></li><li><a href="#">الخصوصية</a></li><li><a href="#">البيانات المفتوحة</a></li></ul></div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">عن الأمانة</a></li><li><a href="districts.html">البلديات</a></li><li><a href="services.html#business">المناقصات</a></li></ul></div>
+      <div><h2>الخدمات</h2><ul><li><a href="report.html">بلّغ عن مشكلة</a></li><li><a href="track.html">تابع بلاغك</a></li><li><a href="services.html">كل الخدمات</a></li></ul></div>
+      <div><h2>الموقع</h2><ul><li><a href="about.html#access">إمكانية الوصول</a></li><li><a href="about.html#privacy">الخصوصية</a></li><li><a href="data.html">البيانات المفتوحة</a></li></ul></div>
     </div>
     <div class="fine">
       <p>نموذج دراسي خاص. ليس الموقع الرسمي لأمانة بغداد.</p>
