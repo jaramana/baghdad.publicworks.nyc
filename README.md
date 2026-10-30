@@ -116,6 +116,30 @@ All five are built (30 Oct 2026).
 - Bank of the Tigris for Al-Ghadeer, Al-Shula and the Green Zone municipality is unverified
 - Arabic subdistrict names on the census table are our transliteration from the source's Latin spelling
 
+## Next session: owner review
+
+State on 30 Oct 2026: v0.1 is complete and committed (`9b31dfe`). The owner is reviewing it page by page and will send feedback.
+
+Start here:
+
+1. Read this README, then `research/current-site.md` if a question touches today's site.
+2. Run `baghdad-site` (port 4321) or `baghdad-site-alt` (port 4322) from the workspace launch config. Start at `site/index.html`.
+3. Take feedback one page at a time. For an open design question, build two or three variants behind a switch rather than describing them.
+
+When editing:
+
+- The masthead and footer are copied into every Arabic page. A change to either goes into all 15 Arabic pages in the same edit. `en.html` has its own English copy.
+- New inner pages load `shared/base.css` then `shared/page.css`, and reuse their classes before adding page styles.
+- Green is never a fill. Photos are 3:2, the hero band 3:1. Answers and lookups fill a fixed-height slot.
+- Every number needs a source line or the illustrative label. Vision copy says "could" or "imagine".
+- Map markers need OSM coordinates from a place lookup. Guessed positions landed on the wrong bank once.
+
+Before committing, check that:
+
+- every internal link and `#anchor` resolves
+- no page scrolls sideways at 375px
+- the browser console shows no errors
+
 ## Folders
 
 - `research/` — benchmark scan, current-site inventory, identity and images, urban context, 2024 census by subdistrict
