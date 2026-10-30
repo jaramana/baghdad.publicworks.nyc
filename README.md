@@ -103,31 +103,48 @@ Each English page's العربية link goes to its Arabic counterpart. Projects
 - `info@amanatbaghdad.gov.iq` is inferred from the current site's address list (`info@` plus the site's domain)
 - Search and the fee lookup still answer in a reserved slot on the same page. Owner to confirm this is acceptable under the no-reveal rule
 
-## Next session: owner review of the English site
+## Next session
 
-State on 30 Oct 2026: the English site is built in `site/en/` (15 pages) and the language swap is settled. The owner is reviewing the English pages.
+State on 30 Oct 2026: the English site (`site/en/`, 15 pages) and the language swap are committed on `main` at `db291f2`. The working tree is clean. The owner is reviewing the English pages and will send feedback.
 
-Start here:
+### Owner preferences
+
+- Reviews in English only. Anything still in Arabic is invisible to review, so build and settle English first.
+- Real over invented. Use real studies, projects and sources; label demo data as illustrative.
+- No reveal-on-select. Choosing something takes you to a page. Content never pops into the current one.
+- Nobody gets lost. Every page shows its place in the site, and every index lists all its children.
+- Each section must earn its place with real substance, not a placeholder.
+- Watch for code bloat. Prefer the plain CSS or browser feature over a script, and drop experiments once a choice is made.
+
+### Start here
 
 1. Read this README, then `research/current-site.md` or `research/urban-context.md` if a question touches today's site or a project.
-2. Run `baghdad-site`. Open `site/en/index.html`.
-3. Take feedback one page at a time. For an open design question, build two or three variants behind a switch rather than describing them.
+2. Run `baghdad-site` from `.claude/launch.json` (port 4321). Open `site/en/index.html`.
+3. Take feedback one page at a time. For an open design question, build two or three variants behind a switch, then remove the switch and the losing variants once the owner picks.
 
-When editing:
+### Likely next work
 
-- The masthead and footer are copied into every page. A change to either goes into all 15 English pages (or all 15 Arabic pages) in the same edit.
+1. Owner feedback on the English pages
+2. The open question on search and the fee lookup (same-page slot or results page)
+3. The Arabic pass, once the English settles: new nav, Projects, About sections, district links, translated from the English
+4. The other 14 district pages (blocked until the official boundary and office list exist)
+
+### When editing
+
+- Pages are plain static HTML with no build step. The masthead and footer are copied into every page, so a change to either goes into all 15 English pages (or all 15 Arabic pages) in the same edit.
 - New inner pages load `shared/base.css`, `shared/page.css`, then for English `shared/en.css`, and reuse their classes before adding page styles.
 - Every paired page loads `shared/lang-swap.css` and `shared/lang-swap.js`, and keeps the same element IDs as its counterpart so a swap lands in the same place. The home glide finds its cards by class (`.hero .ask`, `.hero .ledger`, `.tasks` tiles by position); renaming those classes turns the glide into a plain crossfade.
 - Report links use the Arabic category as the key (`report.html?cat=انقطاع الماء`) in both languages; the English form shows English labels.
 - Green is never a fill. Photos are 3:2, the hero band 3:1. Answers and lookups fill a fixed-height slot.
-- Every number needs a source line or the illustrative label.
+- Every number needs a source line or the illustrative label. Project statuses say verified or unverified.
 - Map markers need OSM coordinates from a place lookup. Guessed positions landed on the wrong bank once.
 
-Before committing, check that:
+### Before committing
 
-- every internal link and `#anchor` resolves
-- no page scrolls sideways at 375px
-- the browser console shows no errors
+- Links: `python3 tools/check_links.py site site/en/*.html site/*.html` reports 0 problems
+- No page scrolls sideways at 375px
+- The browser console shows no errors
+- View transitions only run in a visible tab. If the browser pane is hidden, the swap is skipped, so check it with the pane open
 
 ## Folders
 
@@ -135,3 +152,4 @@ Before committing, check that:
 - `site/` — Arabic pages, earlier home variants and the prototype hub (`index.html`)
 - `site/en/` — the English site
 - `site/shared/` — shared styles and scripts
+- `tools/` — `check_links.py`, the internal link and anchor check
