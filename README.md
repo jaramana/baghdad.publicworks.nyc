@@ -19,9 +19,14 @@ Not part of the publicworks.nyc suite.
 | Projects | Replaces "The City". A register of 14 real public works: what, who runs it, status, whether the status is verified, sources |
 | Census | Off the home page. One population line on each district page; the full table lives at About › Open data |
 | Realism | Real studies, projects and sources only; no invented plans or studies. Illustrative live data (alerts, case numbers, report counts) stays, labelled |
-| The Tigris page | `city-tigris.html` and its outfall plan stay as they are, in Arabic. No further work on it. Projects links to it |
+| The Tigris page | `city-tigris.html` and its outfall plan stay as they are, in Arabic. No further work on it. No English or Kurdish page links to it |
+| Reporting in one place | Report links live only in the nav, the home's Report block, the Report and Track pages, the Services index and About › Contact. Track a report is headlined at the top of the Report page; a number entered there opens `track.html?n=` |
+| Side columns | Allowed, but never as cards. Side blocks are plain text under a 2px green rule (`.start`, `.side-card`, `.help section`) |
+| No hand-kept counts | No totals that someone must update by hand (e.g. "6 projects run by the Mayoralty"). Lists show their own size |
+| No side roads | No cards or links that send readers to unrelated pages they can reach from the nav |
+| Disclaimers | Scarce. Keep the illustrative label on made-up figures and verified/unverified on project statuses. No research-method notes on public pages. The prototype notice is off the footer and About until a fuller draft; it must return before anyone outside sees the site |
 | No reveal-on-select | Choosing something navigates to a page; it never makes new content appear on the current one. The home district picker is a list of links |
-| Language swap | On every paired page (`shared/lang-swap.css`, `shared/lang-swap.js`). The masthead glides everywhere: the seal and language link travel to their mirrored place. The home's cards glide too. Every other page's body sweeps in the new reading direction. The swap keeps the reader's place. Settle and the lab panel were tried and dropped |
+| Language swap | On every paired page (`shared/lang-swap.css`, `shared/lang-swap.js`). Every page, home included, sweeps in from the new page's reading direction. The swap keeps the reader's place. A mirror glide (seal, language links and home cards travelling to their mirrored place), Settle and the lab panel were tried and dropped |
 | Location | This folder, git with no remote |
 | Research | Four parallel agents; findings in `research/` |
 | Home direction | `site/i-blend.html` (30 Oct): the B + C blend revised. Green stays primary but only as lines, text and outlines. Grounded (E) rejected |
@@ -71,8 +76,8 @@ Preview: `baghdad-site` in this folder's `.claude/launch.json` (port 4321), or `
 | Home | `en/index.html` | Search, Today, most requested, report, districts by bank, three projects |
 | Services | `en/services.html` | Five service guides (`service-*.html`), Alerts |
 | Report a problem | `en/report.html` | Track a report |
-| Districts | `en/districts.html` | Karrada; the other 14 open their row in the index |
-| Projects | `en/projects.html` | 14 projects in four groups; links to the Arabic Tigris story |
+| Districts | `en/districts.html` | Karrada; the other 14 open their row in the index. Baghdad Governorate is one more row, under Around the city |
+| Projects | `en/projects.html` | 14 projects in four groups |
 | About | `en/about.html` | Mandate, who does what, leadership, tenders, contact, Open data (`en/data.html`), search, accessibility, privacy |
 
 Each English page's العربية link goes to its Arabic counterpart. Projects has none yet, so it links to the Arabic home. Arabic pages' English link goes to their English page; `city-tigris.html` goes to Projects. Every کوردی link goes to the Kurdish twin, or to the Kurdish home when there is none. `site/en.html` is a redirect stub.
@@ -84,7 +89,7 @@ Each English page's العربية link goes to its Arabic counterpart. Projects
 | Home | `en/index.html` | Fixed structure above |
 | Index | Services, Districts | Ruled list of every child page, tagged by where the task happens |
 | Service | Building permit | What you need, cost, time, steps, "Start on Ur" button, office fallback |
-| Report | Report a problem | Photo, map pin, category, case number, status page |
+| Report | Report a problem | Track box under the title, then photo, map pin, category, case number, status page |
 | District | Karrada | Office, contacts, works map, one census line |
 | Register | Projects | Entry per project: what, who, status, verified or not, sources |
 
@@ -137,7 +142,7 @@ State on 30 Oct 2026: the English site (`site/en/`, 15 pages) and the language s
 - Pages are plain static HTML with no build step. The masthead and footer are copied into every page, so a change to either goes into every page of that language in the same edit.
 - New inner pages load `shared/base.css`, `shared/page.css`, then `shared/en.css` for English or `shared/ku.css` for Kurdish, and reuse their classes before adding page styles.
 - When a Kurdish page is added, point the کوردی link on its English and Arabic twins at it, add `hreflang="ckb"` alternates, and switch Kurdish links that went to the English page.
-- Every paired page loads `shared/lang-swap.css` and `shared/lang-swap.js`, and keeps the same element IDs as its counterpart so a swap lands in the same place. The home glide finds its cards by class (`.hero .ask`, `.hero .ledger`, `.tasks` tiles by position); renaming those classes turns the glide into a plain crossfade.
+- Every paired page loads `shared/lang-swap.css` and `shared/lang-swap.js`, and keeps the same element IDs as its counterpart so a swap lands in the same place.
 - Report links use the Arabic category as the key (`report.html?cat=انقطاع الماء`) in both languages; the English form shows English labels.
 - Green is never a fill. Photos are 3:2, the hero band 3:1. Answers and lookups fill a fixed-height slot.
 - Every number needs a source line or the illustrative label. Project statuses say verified or unverified.

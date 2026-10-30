@@ -22,8 +22,8 @@
   .flow { min-width: 0; }
 
   /* Help column */
-  .help { position: sticky; top: 7rem; display: grid; gap: 1rem; padding-top: 0.5rem; }
-  .help section { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 4px; padding: 1rem 1.15rem; }
+  .help { position: sticky; top: 7rem; display: grid; gap: 1.75rem; padding-top: 0.5rem; }
+  .help section { border-top: 2px solid var(--green); padding-top: 0.8rem; }
   .help h2 { font-size: 1rem; margin-bottom: 0.4rem; }
   .help p { margin: 0.3rem 0; font-size: 0.9375rem; color: var(--muted); }
   .help ol { margin: 0.3rem 0 0; padding-inline-start: 1.2rem; font-size: 0.9375rem; }
@@ -31,6 +31,16 @@
   .flow h1 { font-size: clamp(1.9rem, 4.5vw, 2.6rem); font-weight: 800; }
   .lede { margin: 0.4rem 0 0; color: var(--muted); }
   .danger { font-size: 0.9375rem; border: 1px solid var(--line); border-inline-start: 4px solid var(--amber); background: var(--white); padding: 0.6rem 0.9rem; margin: 1.25rem 0 0; }
+
+  /* Track box: the other way into reports, headlined under the title */
+  .track-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin-top: 1.25rem; padding-block: 0.9rem; border-block: 1px solid var(--line); }
+  .track-row label { font-weight: 600; }
+  .track-box { display: flex; border: 1.5px solid var(--ink); border-radius: 4px; overflow: hidden; background: var(--white); }
+  .track-box:focus-within { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+  .track-box input { width: 9rem; border: 0; padding: 0.45rem 0.75rem; font: inherit; color: var(--ink); background: transparent; }
+  .track-box input:focus-visible { outline: none; }
+  .track-box button { border: 0; border-inline-start: 1.5px solid var(--line); background: transparent; color: var(--green); font: inherit; font-weight: 700; padding-inline: 1rem; cursor: pointer; }
+  .track-box button:hover { background: var(--green-tint); }
 
   /* Progress: four segments on one line */
   .progress { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem; margin: 1.75rem 0 0.5rem; padding: 0; list-style: none; }
@@ -145,11 +155,19 @@
 
   <div class="layout">
   <div class="flow">
+    <form id="track" action="track.html" hidden></form>
     <form id="report" novalidate>
 
       <div id="intro">
         <h1>Report a problem</h1>
         <p class="lede">Four short steps. At the end you get a report number to follow it with. Prefer WhatsApp? <a href="index.html#report">Report on WhatsApp</a></p>
+        <div class="track-row">
+          <label for="track-no">Reported before? Track it with your report number.</label>
+          <div class="track-box">
+            <input id="track-no" name="n" form="track" placeholder="B-48213" autocomplete="off">
+            <button type="submit" form="track" aria-label="Track this report number">Track</button>
+          </div>
+        </div>
         <p class="danger">If someone's life is at risk, for example from a bare electric wire or an open manhole, call emergency services first, then tell us.</p>
 
         <ol class="progress" aria-hidden="true">
@@ -269,11 +287,6 @@
       </ol>
     </section>
     <section>
-      <h2>Reported before?</h2>
-      <p>Follow your report with its number, no account needed.</p>
-      <a class="btn" href="track.html">Track a report</a>
-    </section>
-    <section>
       <h2>On WhatsApp</h2>
       <p>Send a photo and your location to the Mayoralty's verified number, and the report number comes back in the chat.</p>
     </section>
@@ -286,12 +299,11 @@
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">Mayoralty of Baghdad</div>
       <div><h2>Services</h2><ul><li><a href="services.html">All services</a></li><li><a href="report.html">Report a problem</a></li><li><a href="track.html">Track a report</a></li><li><a href="alerts.html">Alerts</a></li></ul></div>
-      <div><h2>The city</h2><ul><li><a href="districts.html">Districts</a></li><li><a href="projects.html">Projects</a></li><li><a href="../city-tigris.html" hreflang="ar">The Tigris (Arabic)</a></li></ul></div>
+      <div><h2>The city</h2><ul><li><a href="districts.html">Districts</a></li><li><a href="projects.html">Projects</a></li></ul></div>
       <div><h2>The Mayoralty</h2><ul><li><a href="about.html">About</a></li><li><a href="about.html#who">Who does what</a></li><li><a href="about.html#tenders">Tenders and auctions</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
       <div><h2>This site</h2><ul><li><a href="data.html">Open data</a></li><li><a href="about.html#search">How search works</a></li><li><a href="about.html#access">Accessibility</a></li><li><a href="about.html#privacy">Privacy</a></li></ul></div>
     </div>
     <div class="fine">
-      <p>Private study prototype. Not the official website of the Mayoralty of Baghdad.</p>
       <p>Seal: community redraw — CC BY-SA 4.0 — Wikimedia Commons. Photos credited with each photo.</p>
     </div>
   </div>

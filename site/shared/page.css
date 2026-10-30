@@ -1,7 +1,7 @@
 /*
   Amanat Baghdad — inner pages (service, district, story, index pages)
 
-  Crumbs, page head, facts strip, two-column layout with a sticky action card,
+  Crumbs, page head, facts strip, two-column layout with a sticky action column,
   guide sections, checklist, numbered steps, contents list, related links, feedback.
   Load after base.css.
 */
@@ -49,14 +49,14 @@
 .steps span { color: var(--muted); font-size: 0.9375rem; }
 .steps .where { display: inline-block; font-size: 0.75rem; font-weight: 600; color: var(--green); border: 1px solid var(--line); border-radius: 2px; padding: 0 0.45rem; margin-inline-start: 0.4rem; }
 
-/* Action column */
+/* Action column: plain blocks under a green rule, never boxed */
 .action { position: sticky; top: 7rem; }
-.start { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 4px; padding: 1.25rem; }
+.start { border-top: 2px solid var(--green); padding-top: 0.9rem; }
 .start h2 { font-size: 1.15rem; }
 .start p { margin: 0.4rem 0; font-size: 0.9375rem; color: var(--muted); }
 .start .btn { display: block; text-align: center; margin-top: 0.9rem; padding-block: 0.6rem; font-size: 1.0625rem; }
 .start .alt { border-top: 1px solid var(--line); margin-top: 1rem; padding-top: 0.75rem; }
-.toc { margin-top: 1.5rem; }
+.toc { margin-top: 2rem; }
 .toc h2 { font-family: inherit; font-size: 0.8125rem; font-weight: 600; color: var(--muted); margin-bottom: 0.4rem; }
 .toc ol { list-style: none; margin: 0; padding: 0; border-inline-start: 2px solid var(--line); }
 .toc a { display: block; padding: 0.25rem 0.9rem; color: var(--ink); text-decoration: none; font-size: 0.9375rem; margin-inline-start: -2px; border-inline-start: 2px solid transparent; }
@@ -74,15 +74,15 @@
 .feedback .btns { display: flex; gap: 0.5rem; }
 .meta { font-size: 0.8125rem; color: var(--muted); margin-top: 1rem; }
 
-/* Side card: same frame as the start card, for offices and contacts */
-.side-card { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 4px; padding: 1.25rem; }
+/* Side block: same plain frame as the start block, for offices and contacts */
+.side-card { border-top: 2px solid var(--green); padding-top: 0.9rem; }
 .side-card h2 { font-size: 1.15rem; }
 .side-card p { margin: 0.4rem 0; font-size: 0.9375rem; }
 .side-card dl { margin: 0.75rem 0 0; font-size: 0.9375rem; }
 .side-card dt { font-weight: 600; color: var(--muted); font-size: 0.8125rem; margin-top: 0.6rem; }
 .side-card dd { margin: 0; }
 .side-card .btn { display: block; text-align: center; margin-top: 1rem; }
-.side-card + .side-card { margin-top: 1rem; }
+.side-card + .side-card { margin-top: 2rem; }
 
 /* Alert list: topic, status and what it means */
 .alerts { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--green); }

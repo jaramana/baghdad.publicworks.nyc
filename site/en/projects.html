@@ -33,9 +33,6 @@
   .check.yes { color: var(--green); }
   .check.no { color: var(--amber); }
 
-  .story-card { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--teal); border-radius: 4px; padding: 1.25rem; margin-top: 1rem; }
-  .story-card h2 { font-family: var(--naskh); font-size: 1.3rem; }
-  .story-card p { margin: 0.4rem 0; font-size: 0.9375rem; }
 
   @media (max-width: 860px) {
     .proj > li { grid-template-columns: 1fr; }
@@ -77,16 +74,10 @@
     <p class="kicker">The city</p>
     <h1>Projects</h1>
     <p class="lede">Public works in Baghdad, who runs each one and where it stands. Many of the city's biggest projects are not run by the Mayoralty, so each entry says who to ask.</p>
-    <ul class="facts">
-      <li><span class="k">Run or co-run by the Mayoralty</span><p class="v">6 projects</p><p class="s">Streets, parks, trees, metro, master plan</p></li>
-      <li><span class="k">Run by others</span><p class="v">8 projects</p><p class="s">Ministries, the PM's Office, the Central Bank, the Investment Commission</p></li>
-      <li><span class="k">Last checked</span><p class="v">30 October 2026</p><p class="s">Against the sources listed with each</p></li>
-    </ul>
   </header>
 
   <div class="layout">
     <article class="guide">
-      <p class="illustrative">Every project here is real and sourced. "Status unverified" means the sources are old or disagree, so the status may have changed.</p>
 
       <section class="group" id="streets" aria-labelledby="streets-h">
         <h2 id="streets-h">Streets, the river and old Baghdad</h2>
@@ -286,17 +277,7 @@
     </article>
 
     <aside class="action" aria-label="On this page">
-      <div class="side-card">
-        <h2>Something wrong in a project?</h2>
-        <p>A blocked pavement, a dangerous site, work that stopped. Reports about a project run by another body are passed to it, and we tell you.</p>
-        <a class="btn" href="report.html?cat=أخرى">Report a problem</a>
-      </div>
-      <div class="story-card">
-        <h2>The Tigris</h2>
-        <p>A longer story about the river: what flows into it, who is responsible, and what Baghdad could do with its banks.</p>
-        <p><a href="../city-tigris.html" hreflang="ar">Read the story (Arabic)</a></p>
-      </div>
-      <nav class="toc" aria-labelledby="toc-h">
+      <nav class="toc" aria-labelledby="toc-h" style="margin-top:0">
         <h2 id="toc-h">On this page</h2>
         <ol>
           <li><a href="#streets">Streets, the river and old Baghdad</a></li>
@@ -315,12 +296,11 @@
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">Mayoralty of Baghdad</div>
       <div><h2>Services</h2><ul><li><a href="services.html">All services</a></li><li><a href="report.html">Report a problem</a></li><li><a href="track.html">Track a report</a></li><li><a href="alerts.html">Alerts</a></li></ul></div>
-      <div><h2>The city</h2><ul><li><a href="districts.html">Districts</a></li><li><a href="projects.html">Projects</a></li><li><a href="../city-tigris.html" hreflang="ar">The Tigris (Arabic)</a></li></ul></div>
+      <div><h2>The city</h2><ul><li><a href="districts.html">Districts</a></li><li><a href="projects.html">Projects</a></li></ul></div>
       <div><h2>The Mayoralty</h2><ul><li><a href="about.html">About</a></li><li><a href="about.html#who">Who does what</a></li><li><a href="about.html#tenders">Tenders and auctions</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
       <div><h2>This site</h2><ul><li><a href="data.html">Open data</a></li><li><a href="about.html#search">How search works</a></li><li><a href="about.html#access">Accessibility</a></li><li><a href="about.html#privacy">Privacy</a></li></ul></div>
     </div>
     <div class="fine">
-      <p>Private study prototype. Not the official website of the Mayoralty of Baghdad.</p>
       <p>Seal: community redraw — CC BY-SA 4.0 — Wikimedia Commons. Photos credited with each photo.</p>
     </div>
   </div>

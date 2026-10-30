@@ -22,8 +22,8 @@
   .flow { min-width: 0; }
 
   /* Help column */
-  .help { position: sticky; top: 7rem; display: grid; gap: 1rem; padding-top: 0.5rem; }
-  .help section { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 4px; padding: 1rem 1.15rem; }
+  .help { position: sticky; top: 7rem; display: grid; gap: 1.75rem; padding-top: 0.5rem; }
+  .help section { border-top: 2px solid var(--green); padding-top: 0.8rem; }
   .help h2 { font-size: 1rem; margin-bottom: 0.4rem; }
   .help p { margin: 0.3rem 0; font-size: 0.9375rem; color: var(--muted); }
   .help ol { margin: 0.3rem 0 0; padding-inline-start: 1.2rem; font-size: 0.9375rem; }
@@ -31,6 +31,16 @@
   .flow h1 { font-size: clamp(1.9rem, 4.5vw, 2.6rem); font-weight: 800; }
   .lede { margin: 0.4rem 0 0; color: var(--muted); }
   .danger { font-size: 0.9375rem; border: 1px solid var(--line); border-inline-start: 4px solid var(--amber); background: var(--white); padding: 0.6rem 0.9rem; margin: 1.25rem 0 0; }
+
+  /* Track box: the other way into reports, headlined under the title */
+  .track-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin-top: 1.25rem; padding-block: 0.9rem; border-block: 1px solid var(--line); }
+  .track-row label { font-weight: 600; }
+  .track-box { display: flex; border: 1.5px solid var(--ink); border-radius: 4px; overflow: hidden; background: var(--white); }
+  .track-box:focus-within { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+  .track-box input { width: 9rem; border: 0; padding: 0.45rem 0.75rem; font: inherit; color: var(--ink); background: transparent; }
+  .track-box input:focus-visible { outline: none; }
+  .track-box button { border: 0; border-inline-start: 1.5px solid var(--line); background: transparent; color: var(--green); font: inherit; font-weight: 700; padding-inline: 1rem; cursor: pointer; }
+  .track-box button:hover { background: var(--green-tint); }
 
   /* Progress: four segments on one line */
   .progress { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem; margin: 1.75rem 0 0.5rem; padding: 0; list-style: none; }
@@ -145,11 +155,19 @@
 
   <div class="layout">
   <div class="flow">
+    <form id="track" action="../en/track.html" hidden></form>
     <form id="report" novalidate>
 
       <div id="intro">
         <h1>ڕاپۆرتی کێشە</h1>
         <p class="lede">چوار هەنگاوی کورت. لە کۆتاییدا ژمارەیەکی ڕاپۆرت وەردەگریت بۆ بەدواداچوون. واتسئەپت پێ باشترە؟ <a href="index.html#report">لە واتسئەپەوە ڕاپۆرت بدە</a></p>
+        <div class="track-row">
+          <label for="track-no">پێشتر ڕاپۆرتت داوە؟ بە ژمارەی ڕاپۆرتەکە بەدوایدا بچۆ.</label>
+          <div class="track-box">
+            <input id="track-no" name="n" form="track" placeholder="ب-٤٨٢١٣" autocomplete="off">
+            <button type="submit" form="track" aria-label="بەدواداچوون بۆ ئەم ژمارەیە">بەدواداچوون</button>
+          </div>
+        </div>
         <p class="danger">ئەگەر ژیانی کەسێک لە مەترسیدایە، بۆ نموونە بەهۆی وایەرێکی کارەبای ڕووت یان چاڵێکی ئاوەڕۆی کراوە، سەرەتا پەیوەندی بە فریاکەوتنەوە بکە، پاشان پێمان بڵێ.</p>
 
         <ol class="progress" aria-hidden="true">
@@ -269,11 +287,6 @@
       </ol>
     </section>
     <section>
-      <h2>پێشتر ڕاپۆرتت داوە؟</h2>
-      <p>بە ژمارەکەی بەدوای ڕاپۆرتەکەتدا بچۆ، هەژمار پێویست نییە.</p>
-      <a class="btn" href="../en/track.html">بەدواداچوونی ڕاپۆرت</a>
-    </section>
-    <section>
       <h2>لە واتسئەپەوە</h2>
       <p>وێنە و شوێنەکەت بنێرە بۆ ژمارە پشتڕاستکراوەکەی ئەمانەت، و ژمارەی ڕاپۆرت لە چاتەکەدا بۆت دێتەوە.</p>
     </section>
@@ -286,12 +299,11 @@
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">ئەمانەتی بەغدا</div>
       <div><h2>خزمەتگوزارییەکان</h2><ul><li><a href="services.html">هەموو خزمەتگوزارییەکان</a></li><li><a href="report.html">ڕاپۆرتی کێشە</a></li><li><a href="../en/track.html">بەدواداچوونی ڕاپۆرت</a></li><li><a href="../en/alerts.html">ئاگادارییەکان</a></li></ul></div>
-      <div><h2>شار</h2><ul><li><a href="../en/districts.html">ناوچەکان</a></li><li><a href="../en/projects.html">پڕۆژەکان</a></li><li><a href="../city-tigris.html" hreflang="ar">دیجلە (بە عەرەبی)</a></li></ul></div>
+      <div><h2>شار</h2><ul><li><a href="../en/districts.html">ناوچەکان</a></li><li><a href="../en/projects.html">پڕۆژەکان</a></li></ul></div>
       <div><h2>ئەمانەت</h2><ul><li><a href="../en/about.html">دەربارە</a></li><li><a href="../en/about.html#who">کێ چی دەکات</a></li><li><a href="../en/about.html#tenders">تەندەر و مەزاد</a></li><li><a href="../en/about.html#contact">پەیوەندی</a></li></ul></div>
       <div><h2>ئەم ماڵپەڕە</h2><ul><li><a href="../en/data.html">داتای کراوە</a></li><li><a href="../en/about.html#search">گەڕان چۆن کار دەکات</a></li><li><a href="../en/about.html#access">دەستگەیشتن</a></li><li><a href="../en/about.html#privacy">تایبەتمەندی</a></li></ul></div>
     </div>
     <div class="fine">
-      <p>نموونەیەکی تایبەتی لێکۆڵینەوەیە. ماڵپەڕی فەرمی ئەمانەتی بەغدا نییە.</p>
       <p>مۆر: وێنەکێشانەوەی کۆمەڵگە — CC BY-SA 4.0 — Wikimedia Commons. ناوی وێنەگر لەگەڵ هەر وێنەیەک نووسراوە.</p>
     </div>
   </div>
