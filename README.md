@@ -30,7 +30,7 @@ Not part of the publicworks.nyc suite.
 
 - Green `#1b6435` (from the seal) is the primary, used as lines, text and outline buttons. No green fills
 - Teal `#1484a9` (the seal's ring) is a quiet second accent for water and walking
-- Sticky white glass masthead on desktop, between a 4px green line on top and a 1px green line below. It holds the seal, the name, "Official website · Republic of Iraq" and the nav. On phones it scrolls away
+- Sticky white glass masthead on desktop, between a 4px green line on top and a 1px green line below. It holds the seal, the name, "Official website · Republic of Iraq" and the nav. The language links stack at the nav's end in grey, behind a thin rule. On phones the masthead scrolls away, and the nav moves into a full-screen menu behind a Menu button (the browser's `popover`, no script). The languages end that menu below a thin rule. Under 480px the button shows only its icon
 - Hero: the Tigris band, with the search card and Today ledger set over its lower edge. No dark wash
 - Image ratios: hero band 3:1 (16:9 on phones, capped at 26rem tall); every other photo 3:2, equal widths in a row
 - Type roles in Arabic: Noto Kufi Arabic for the institution; Noto Naskh Arabic for story voice only; IBM Plex Sans Arabic for everything people read and use. English swaps in IBM Plex Sans and IBM Plex Serif through `shared/en.css`. Kurdish keeps the Arabic roles unchanged; all three Arabic-script fonts carry the Kurdish letters (ڕ ڵ ۆ ێ ە), checked against the font files

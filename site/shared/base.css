@@ -89,8 +89,15 @@ figcaption { font-size: 0.6875rem; color: var(--muted); margin-top: 0.3rem; }
 .nav { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; font-weight: 500; }
 .nav a { color: var(--ink); text-decoration: none; padding-block: 0.25rem; border-bottom: 2px solid transparent; }
 .nav a:hover, .nav a[aria-current] { border-color: var(--green); }
-.nav .lang { display: flex; gap: 1rem; }
-.nav .lang a { font-size: 0.875rem; color: var(--muted); }
+
+/* Language links: stacked at the end, in grey, behind a thin rule */
+.nav .lang { display: flex; flex-direction: column; align-items: flex-start; padding-inline-start: 1.25rem; border-inline-start: 1px solid var(--line); line-height: 1.45; }
+.nav .lang a { font-size: 0.8125rem; color: var(--muted); padding-block: 0; border-bottom: 0; }
+.nav .lang a:hover { text-decoration: underline; }
+
+/* Menu: the plain nav on desktop; on phones a popover sheet behind a button */
+.menu { display: contents; }
+.menu-btn, .menu-close { display: none; }
 
 /* Sections */
 section.block { padding-block: 3rem; }
@@ -125,6 +132,46 @@ footer { background: var(--soft); border-top: 4px solid var(--green); padding-bl
   html { scroll-padding-top: 0; }
   .masthead { position: static; background: #fff; }
   .foot { grid-template-columns: 1fr 1fr; }
-  .nav { gap: 1rem; font-size: 0.9375rem; }
   .brand img { width: 48px; height: 48px; }
+
+  .menu-btn, .menu-close { display: flex; align-items: center; gap: 0.5rem; font: inherit; font-weight: 600; color: var(--green); background: none; border: 1.5px solid var(--green); border-radius: 3px; padding: 0.3rem 0.8rem; cursor: pointer; }
+  .menu-btn::before { content: ""; width: 1rem; height: 2px; background: currentColor; box-shadow: 0 -5px currentColor, 0 5px currentColor; }
+  .menu-close { margin-inline-start: auto; }
+  .menu-close::before { content: "×"; font-size: 1.4rem; line-height: 1; }
+  .menu { inset: 0; width: auto; height: auto; max-width: none; max-height: none; margin: 0; border: 0; border-top: 4px solid var(--green); padding: 1.05rem 1rem 2rem; background: var(--white); color: var(--ink); overflow-y: auto; }
+  .menu:not(:popover-open) { display: none; }
+  .menu:popover-open { display: block; }
+
+  /* The sheet fades in while it settles down a little; closing runs the same way back */
+  .menu {
+    opacity: 0;
+    translate: 0 -0.75rem;
+    transition: opacity 0.18s ease-in, translate 0.18s ease-in, display 0.18s allow-discrete, overlay 0.18s allow-discrete;
+  }
+  .menu:popover-open {
+    opacity: 1;
+    translate: 0 0;
+    transition-duration: 0.26s;
+    transition-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  @starting-style {
+    .menu:popover-open { opacity: 0; translate: 0 -0.75rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .menu, .menu:popover-open { translate: none; }
+  }
+  .menu .nav { flex-direction: column; align-items: stretch; gap: 0; margin-top: 1.25rem; font-size: 1.125rem; }
+  .menu .nav > li > a { display: block; padding-block: 0.6rem; border: 0; }
+  .menu .nav a[aria-current] { color: var(--green); font-weight: 700; }
+  .menu .nav .lang { gap: 0.5rem; margin-top: 1rem; padding: 1.25rem 0 0; border-inline-start: 0; border-top: 1px solid var(--line); }
+  .menu .nav .lang a { font-size: 0.9375rem; padding: 0; }
 }
+
+/* Narrow phones: the menu button shows only its icon so the name and button share one row */
+
+@media (max-width: 480px) {
+  .masthead .wrap { gap: 0.75rem; }
+  .masthead .brand strong { font-size: 1.25rem; }
+  .menu-btn { font-size: 0; gap: 0; padding: 0.75rem 0.55rem; }
+}
+
