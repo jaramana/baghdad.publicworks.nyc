@@ -82,6 +82,8 @@ Preview: `python3 -m http.server 4321 --directory site`, or `baghdad-site` in th
 | --- | --- | --- |
 | Home | `site/i-blend.html` | Chosen direction |
 | Service | `site/service-permit.html` | Building permit. Guide on one side, sticky "Start on Ur" card on the other. Ur location verified; documents, steps, time and cost illustrative |
+| Report | `site/report.html` | Four steps (problem, place on an OpenStreetMap pin, photo and note, review) then a receipt with a case number. Help column beside the form. Nothing is sent |
+| Track | `site/track.html` | Look up a case number; timeline of who did what and when. One sample case (ب-٤٨٢١٣) |
 
 ## v0.1 scope
 
