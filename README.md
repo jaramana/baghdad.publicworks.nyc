@@ -12,6 +12,8 @@ Not part of the publicworks.nyc suite.
 | Language | Arabic-first for residents, right to left. The English site is the working version (see next row) |
 | Working language | English first, because the owner reviews in English. Arabic pages are frozen until the English settles, then translated |
 | English structure | `site/en/`, one English file per page with the same filename as its Arabic counterpart in `site/` |
+| Kurdish | Sorani (`lang="ckb"`, Arabic script, right to left) in `site/ku/`, same filenames as `site/en/`, translated from the English. Pilot of four pages: home, Services, Building permit, Report a problem. The rest follow once the English settles, alongside the Arabic pass |
+| Language links | Every paired page lists the other two languages in fixed order: العربية, کوردی, English. A page with no Kurdish twin sends کوردی to the Kurdish home. Kurdish pages link to the English page wherever no Kurdish page exists yet |
 | English name | "Mayoralty of Baghdad", the English text on the seal's ring. "Amanat" appears only once, in About, to give the Arabic name |
 | Site map | Five sections: Services, Report a problem, Districts, Projects, About. Each has an index page listing everything under it. Every page has a breadcrumb and a highlighted nav item. The footer lists the whole site |
 | Projects | Replaces "The City". A register of 14 real public works: what, who runs it, status, whether the status is verified, sources |
@@ -31,7 +33,7 @@ Not part of the publicworks.nyc suite.
 - Sticky white glass masthead on desktop, between a 4px green line on top and a 1px green line below. It holds the seal, the name, "Official website · Republic of Iraq" and the nav. On phones it scrolls away
 - Hero: the Tigris band, with the search card and Today ledger set over its lower edge. No dark wash
 - Image ratios: hero band 3:1 (16:9 on phones, capped at 26rem tall); every other photo 3:2, equal widths in a row
-- Type roles in Arabic: Noto Kufi Arabic for the institution; Noto Naskh Arabic for story voice only; IBM Plex Sans Arabic for everything people read and use. English swaps in IBM Plex Sans and IBM Plex Serif through `shared/en.css`
+- Type roles in Arabic: Noto Kufi Arabic for the institution; Noto Naskh Arabic for story voice only; IBM Plex Sans Arabic for everything people read and use. English swaps in IBM Plex Sans and IBM Plex Serif through `shared/en.css`. Kurdish keeps the Arabic roles unchanged; all three Arabic-script fonts carry the Kurdish letters (ڕ ڵ ۆ ێ ە), checked against the font files
 - The answer slot has a reserved height; answers never move the page
 - Report a problem offers the web form and WhatsApp side by side
 - Districts are listed by bank, each on its own side of the river as on a map: Karkh (west) on the left in English
@@ -73,7 +75,7 @@ Preview: `baghdad-site` in this folder's `.claude/launch.json` (port 4321), or `
 | Projects | `en/projects.html` | 14 projects in four groups; links to the Arabic Tigris story |
 | About | `en/about.html` | Mandate, who does what, leadership, tenders, contact, Open data (`en/data.html`), search, accessibility, privacy |
 
-Each English page's العربية link goes to its Arabic counterpart. Projects has none yet, so it links to the Arabic home. Arabic pages' English link goes to their English page; `city-tigris.html` goes to Projects. `site/en.html` is a redirect stub.
+Each English page's العربية link goes to its Arabic counterpart. Projects has none yet, so it links to the Arabic home. Arabic pages' English link goes to their English page; `city-tigris.html` goes to Projects. Every کوردی link goes to the Kurdish twin, or to the Kurdish home when there is none. `site/en.html` is a redirect stub.
 
 ## Page types
 
@@ -102,10 +104,11 @@ Each English page's العربية link goes to its Arabic counterpart. Projects
 - Bank of the Tigris for Al-Ghadeer, Al-Shula and the Green Zone municipality is unverified
 - `info@amanatbaghdad.gov.iq` is inferred from the current site's address list (`info@` plus the site's domain)
 - Search and the fee lookup still answer in a reserved slot on the same page. Owner to confirm this is acceptable under the no-reveal rule
-
+- The Kurdish text is a draft translation by Claude. It needs a native Sorani reader before anyone relies on it
+- The Kurdish name ئەمانەتی بەغدا and the Kurdish Ur service name are unverified
 ## Next session
 
-State on 30 Oct 2026: the English site (`site/en/`, 15 pages) and the language swap are committed on `main` at `db291f2`. The working tree is clean. The owner is reviewing the English pages and will send feedback.
+State on 30 Oct 2026: the English site (`site/en/`, 15 pages) and the language swap are committed on `main`. A Kurdish pilot (`site/ku/`, 4 pages) and a three-language switcher on every paired page followed. The owner is reviewing the English pages and will send feedback.
 
 ### Owner preferences
 
@@ -126,13 +129,14 @@ State on 30 Oct 2026: the English site (`site/en/`, 15 pages) and the language s
 
 1. Owner feedback on the English pages
 2. The open question on search and the fee lookup (same-page slot or results page)
-3. The Arabic pass, once the English settles: new nav, Projects, About sections, district links, translated from the English
+3. The Arabic pass, once the English settles: new nav, Projects, About sections, district links, translated from the English. The remaining 11 Kurdish pages go in the same pass
 4. The other 14 district pages (blocked until the official boundary and office list exist)
 
 ### When editing
 
-- Pages are plain static HTML with no build step. The masthead and footer are copied into every page, so a change to either goes into all 15 English pages (or all 15 Arabic pages) in the same edit.
-- New inner pages load `shared/base.css`, `shared/page.css`, then for English `shared/en.css`, and reuse their classes before adding page styles.
+- Pages are plain static HTML with no build step. The masthead and footer are copied into every page, so a change to either goes into every page of that language in the same edit.
+- New inner pages load `shared/base.css`, `shared/page.css`, then `shared/en.css` for English or `shared/ku.css` for Kurdish, and reuse their classes before adding page styles.
+- When a Kurdish page is added, point the کوردی link on its English and Arabic twins at it, add `hreflang="ckb"` alternates, and switch Kurdish links that went to the English page.
 - Every paired page loads `shared/lang-swap.css` and `shared/lang-swap.js`, and keeps the same element IDs as its counterpart so a swap lands in the same place. The home glide finds its cards by class (`.hero .ask`, `.hero .ledger`, `.tasks` tiles by position); renaming those classes turns the glide into a plain crossfade.
 - Report links use the Arabic category as the key (`report.html?cat=انقطاع الماء`) in both languages; the English form shows English labels.
 - Green is never a fill. Photos are 3:2, the hero band 3:1. Answers and lookups fill a fixed-height slot.
@@ -141,7 +145,7 @@ State on 30 Oct 2026: the English site (`site/en/`, 15 pages) and the language s
 
 ### Before committing
 
-- Links: `python3 tools/check_links.py site site/en/*.html site/*.html` reports 0 problems
+- Links: `python3 tools/check_links.py site site/en/*.html site/ku/*.html site/*.html` reports 0 problems
 - No page scrolls sideways at 375px
 - The browser console shows no errors
 - View transitions only run in a visible tab. If the browser pane is hidden, the swap is skipped, so check it with the pane open
@@ -151,5 +155,6 @@ State on 30 Oct 2026: the English site (`site/en/`, 15 pages) and the language s
 - `research/` — benchmark scan, current-site inventory, identity and images, urban context, 2024 census by subdistrict
 - `site/` — Arabic pages, earlier home variants and the prototype hub (`index.html`)
 - `site/en/` — the English site
+- `site/ku/` — the Kurdish (Sorani) pilot
 - `site/shared/` — shared styles and scripts
 - `tools/` — `check_links.py`, the internal link and anchor check

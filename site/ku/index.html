@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ئەمانەتی بەغدا</title>
+<link rel="alternate" hreflang="ar" href="../i-blend.html">
+<link rel="alternate" hreflang="en" href="../en/index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/base.css">
+<link rel="stylesheet" href="../shared/ku.css">
+<link rel="stylesheet" href="../shared/lang-swap.css">
+<script src="../shared/lang-swap.js"></script>
+<link rel="expect" href="#projects" blocking="render">
+<style>
+  /* Kurdish home: same layout as the English home */
+  /* Hero: river band with the search card and Today ledger set over its lower edge */
+  .river img { width: 100%; aspect-ratio: var(--ratio-hero); max-height: 26rem; object-fit: cover; object-position: center 60%; display: block; }
+  .river figcaption { max-width: var(--wrap); margin-inline: auto; padding-inline: 1rem; text-align: end; }
+  .hero { position: relative; display: grid; grid-template-columns: 1.35fr 1fr; gap: 1.5rem; align-items: start; margin-top: clamp(-13rem, -15vw, -5rem); }
+  .hero > * { min-width: 0; }
+  .card { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 4px; box-shadow: 0 12px 36px rgba(15,63,33,0.12); }
+  .ask { padding: 1.75rem; }
+  .ask h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 800; }
+  .search { display: flex; margin-top: 1rem; border: 2px solid var(--ink); border-radius: 4px; overflow: hidden; background: var(--white); }
+  .search:focus-within { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+  .search input { flex: 1; min-width: 0; border: 0; padding: 0.8rem 1rem; font: inherit; font-size: 1.125rem; color: var(--ink); background: transparent; }
+  .search input:focus-visible { outline: none; }
+  .search button { border: 0; border-inline-start: 1.5px solid var(--line); background: transparent; color: var(--green); font: inherit; font-weight: 700; padding-inline: 1.5rem; cursor: pointer; }
+  .search button:hover { background: var(--green-tint); }
+  .ai-note { margin: 0.6rem 0 0; font-size: 0.8125rem; color: var(--muted); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.9rem 0 0; padding: 0; list-style: none; }
+  .chips button { font: inherit; font-size: 0.9rem; background: transparent; color: var(--green-deep); border: 1px solid var(--line); border-radius: 999px; padding: 0.2rem 0.9rem; cursor: pointer; }
+  .chips button:hover { border-color: var(--green); }
+
+  /* Answer slot: reserved height so nothing below it moves */
+  .answer { min-height: 14rem; margin-top: 1.1rem; padding-top: 0.9rem; border-top: 1px solid var(--line); }
+  .answer p { margin: 0.2rem 0; }
+  .answer-hint, .answer-wait { color: var(--muted); }
+  .answer-wait::before { content: ""; display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--green); margin-inline-end: 0.5rem; animation: pulse 1s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: 0.25; } }
+  .answer-title { font-family: var(--kufi); font-weight: 700; font-size: 1.0625rem; }
+  .answer-meta { font-weight: 600; }
+  .answer-action { margin-top: 0.5rem; }
+  .answer-source { font-size: 0.8125rem; color: var(--muted); }
+
+  .ledger { padding: 1.25rem 1.25rem 0.5rem; }
+  .ledger h2 { font-size: 1.125rem; }
+  .ledger .date { margin: 0 0 0.5rem; font-size: 0.8125rem; color: var(--muted); }
+  .count { display: flex; align-items: baseline; gap: 0.6rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--green); }
+  .count .num { font-family: var(--kufi); font-size: 2.6rem; font-weight: 800; line-height: 1.1; color: var(--green); }
+  .count p { margin: 0; line-height: 1.45; }
+  .count small { display: block; color: var(--muted); font-size: 0.8125rem; }
+  .today { list-style: none; margin: 0; padding: 0; }
+  .today li { padding-block: 0.6rem; border-bottom: 1px solid var(--line); }
+  .today .row { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.8125rem; }
+  .today .topic { font-weight: 600; color: var(--muted); }
+  .today .what { margin: 0.1rem 0 0; line-height: 1.6; }
+  .ledger .foot-row { display: flex; justify-content: space-between; font-size: 0.8125rem; padding-block: 0.5rem; color: var(--muted); }
+
+  /* Services as tiles */
+  .tasks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 0; padding: 0; list-style: none; }
+  .tasks a { display: block; height: 100%; background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 3px; padding: 1.1rem 1.25rem; color: var(--ink); text-decoration: none; transition: box-shadow 0.15s, transform 0.15s; }
+  .tasks a:hover { box-shadow: 0 4px 14px rgba(15,63,33,0.08); transform: translateY(-2px); }
+  .tasks strong { font-family: var(--kufi); font-size: 1.125rem; font-weight: 700; color: var(--green); }
+  .tasks p { margin: 0.35rem 0 0; color: var(--muted); }
+  .tag { display: inline-block; font-size: 0.75rem; font-weight: 600; color: var(--green); border: 1px solid var(--line); padding: 0 0.5rem; border-radius: 2px; margin-top: 0.5rem; }
+
+  /* Report: framed by green lines */
+  .report { background: var(--white); border-block: 1px solid var(--line); }
+  .report .wrap { border-inline-start: 4px solid var(--green); }
+  .ways { display: grid; grid-template-columns: 1fr 1fr 1.1fr; gap: clamp(1.25rem, 3vw, 2.5rem); align-items: start; }
+  .way h3 { font-size: 1.125rem; font-weight: 700; }
+  .way p { margin: 0.3rem 0 0.9rem; color: var(--muted); }
+  .verified { font-size: 0.8125rem; margin-top: 0.6rem !important; }
+  .chat { background: #ece5dd; border-radius: 6px; padding: 0.9rem; color: #1b1b1b; font-size: 0.9375rem; }
+  .chat .label { font-size: 0.8125rem; font-weight: 600; color: #6b6660; margin: 0 0 0.5rem; }
+  .bubble { max-width: 85%; padding: 0.45rem 0.75rem; border-radius: 8px; margin: 0 0 0.45rem; line-height: 1.55; }
+  .bubble.me { background: #d9fdd3; margin-inline-start: auto; }
+  .bubble.them { background: #fff; }
+  .att { display: inline-block; font-size: 0.75rem; font-weight: 600; background: rgba(0,0,0,0.06); border-radius: 3px; padding: 0 0.4rem; margin-inline-end: 0.3rem; }
+
+  /* Districts: each bank on its own side of the river, as on a map. Right to left, Rusafa comes first */
+  .banks { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2.5rem; }
+  .bank + .bank { border-inline-start: 2px solid var(--teal); padding-inline-start: 2.5rem; }
+  .bank h3 { font-size: 1.125rem; font-weight: 700; padding-bottom: 0.5rem; border-bottom: 1px solid var(--line); }
+  .bank h3 span { font-family: inherit; font-size: 0.875rem; font-weight: 500; color: var(--muted); margin-inline-start: 0.4rem; }
+  .bank ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 1.5rem; }
+  .bank li { padding-block: 0.35rem; break-inside: avoid; }
+
+  /* Projects: real works, who runs them and where they stand */
+  .works { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 0; padding: 0; list-style: none; }
+  .works li { display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 3px; padding: 1.1rem 1.25rem; }
+  .works h3 { font-size: 1.125rem; font-weight: 700; color: var(--green); }
+  .works .what { margin: 0.35rem 0 0.9rem; }
+  .works dl { margin: auto 0 0; font-size: 0.875rem; }
+  .works dl div { display: flex; gap: 0.75rem; padding-block: 0.35rem; border-top: 1px solid var(--line); }
+  .works dt { min-width: 4.5rem; font-weight: 600; color: var(--muted); }
+  .works dd { margin: 0; }
+  .works .src { margin: 0.6rem 0 0; font-size: 0.8125rem; color: var(--muted); }
+
+  @media (max-width: 860px) {
+    .hero { grid-template-columns: 1fr; margin-top: -2.5rem; }
+    .ask { padding: 1.25rem; }
+    .answer { min-height: 16rem; }
+    .ways, .works { grid-template-columns: 1fr; }
+    .tasks { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .tasks, .banks { grid-template-columns: 1fr; }
+    .bank + .bank { border-inline-start: 0; padding-inline-start: 0; margin-top: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
+      <div><strong>ئەمانەتی بەغدا</strong><span>ماڵپەڕی فەرمی · کۆماری عێراق</span></div>
+    </a>
+    <ul class="nav">
+      <li><a href="services.html">خزمەتگوزارییەکان</a></li>
+      <li><a href="report.html">ڕاپۆرتی کێشە</a></li>
+      <li><a href="../en/districts.html">ناوچەکان</a></li>
+      <li><a href="../en/projects.html">پڕۆژەکان</a></li>
+      <li><a href="../en/about.html">دەربارە</a></li>
+      <li class="lang"><a href="../i-blend.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../en/index.html" lang="en" hreflang="en" dir="ltr">English</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <figure class="river">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tigris_River_in_early_morning.jpg/1920px-Tigris_River_in_early_morning.jpg" alt="دیجلە لە بەیانی زوودا">
+  </figure>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="card ask">
+        <h1>ئەمڕۆ چیت پێویستە؟</h1>
+        <form class="search" data-search role="search">
+          <input id="q" type="search" aria-label="گەڕان لە خزمەتگوزارییەکانی ئەمانەت" placeholder="بۆ نموونە: ئاو لە کەڕادە بڕاوە" autocomplete="off">
+          <button type="submit">بگەڕێ</button>
+        </form>
+        <p class="ai-note">گەڕان زیرەکی دەستکرد بەکاردەهێنێت و تەنها لە پەڕەکانی ئەمانەتەوە وەڵام دەداتەوە. <a href="../en/about.html#search">چۆن کار دەکات</a></p>
+        <ul class="chips">
+          <li><button type="button" data-chip="ئاو لە کەڕادە بڕاوە">بڕانی ئاو</button></li>
+          <li><button type="button" data-chip="مۆڵەتی بیناسازی">مۆڵەتی بیناسازی</button></li>
+          <li><button type="button" data-chip="پسوولەی ئاو">پسوولەی ئاو</button></li>
+          <li><button type="button" data-chip="بەیاننامەی موڵک">بەیاننامەی موڵک</button></li>
+        </ul>
+        <div class="answer" data-answer aria-live="polite">
+          <p class="answer-hint">بڵێ چیت پێویستە و ئێمە ڕێگەی پەڕەی گونجاوت پیشان دەدەین. وەڵامەکە لێرە دەردەکەوێت.</p>
+        </div>
+      </div>
+
+      <section class="card ledger" aria-labelledby="today-h">
+        <h2 id="today-h">ئەمڕۆ لە بەغدا</h2>
+        <p class="date">هەینی ٣٠ی تشرینی یەکەمی ٢٠٢٦ · نوێکرایەوە ١٠:٤٠ی بەیانی</p>
+        <div class="count">
+          <span class="num">٢١٤</span>
+          <p>ڕاپۆرت ئەمڕۆ داخرا<small>لە کۆی ٢٦٠ ڕاپۆرت کە لە بەیانییەوە گەیشتوون</small></p>
+        </div>
+        <ul class="today">
+          <li><div class="row"><span class="topic">ئاو</span><span class="status plan">بڕانی خشتەکراو</span></div><p class="what">ناوەوەی کەڕادە، ٩ی بەیانی – ٣ی دوانیوەڕۆ.</p></li>
+          <li><div class="row"><span class="topic">ڕێگاکان</span><span class="status walk">تەنها بۆ پیادە</span></div><p class="what">پردی شەهیدان ئەمڕۆ تەنها بۆ پیادە کراوەیە.</p></li>
+          <li><div class="row"><span class="topic">خاشاک</span><span class="status ok">ئاسایی</span></div><p class="what">کۆکردنەوە لە هەموو ناوچەکان بەپێی خشتەیە.</p></li>
+        </ul>
+        <div class="foot-row"><span>داتای نموونەیی</span><a href="../en/alerts.html">هەموو ئاگادارییەکان</a></div>
+      </section>
+    </div>
+    <p class="note" style="text-align:end">ڕووباری دیجلە لە بەیانی زوودا — Abdo Alrawii — CC BY-SA 4.0</p>
+  </div>
+
+  <section class="block wrap" id="tasks" aria-labelledby="tasks-h">
+    <div class="block-head"><h2 id="tasks-h">زۆرترین داواکراو</h2><p><a href="services.html">هەموو خزمەتگوزارییەکان</a></p></div>
+    <ul class="tasks">
+      <li><a href="service-permit.html"><strong>مۆڵەتی بیناسازی</strong><p>چیت پێویستە، تێچووی چەندە و چەند دەخایەنێت، پاشان داواکاری پێشکەش بکە.</p><span class="tag">لە پۆرتاڵی ئور</span></a></li>
+      <li><a href="../en/service-water.html"><strong>هەژماری ئاو</strong><p>پسوولە بدە، هەژمار بکەرەوە، میتەر بگۆڕە یان ناو بگۆڕە.</p><span class="tag">لە پۆرتاڵی ئور</span></a></li>
+      <li><a href="../en/service-property.html"><strong>بەیاننامەی موڵک</strong><p>بۆ فرۆشتن، میرات و مۆڵەت. بە ئۆنلاین دەردەچێت.</p><span class="tag">لە پۆرتاڵی ئور</span></a></li>
+      <li><a href="../en/service-fees.html"><strong>باجەکانی شارەوانی</strong><p>باجی پیشە، ڕیکلام و پاککردنەوە، و لە کوێ دەدرێن.</p></a></li>
+      <li><a href="../en/track.html"><strong>بەدواداچوونی ڕاپۆرت</strong><p>ژمارەی ڕاپۆرتەکەت بنووسە بۆ ئەوەی بزانیت گەیشتووەتە کوێ.</p></a></li>
+      <li><a href="../en/districts.html"><strong>نووسینگەی شارەوانییەکەت</strong><p>ناونیشان، کاتی دەوام و ئەو کارانەی لە ئارادان.</p></a></li>
+    </ul>
+  </section>
+
+  <div class="report" id="report">
+    <section class="block wrap" aria-labelledby="report-h">
+      <div class="block-head"><h2 id="report-h">ڕاپۆرتی کێشە</h2><p>ئاو، ئاوەڕۆ، خاشاک، ڕووناکی شەقام، چاڵ</p></div>
+      <div class="ways">
+        <div class="way">
+          <h3>لە ماڵپەڕەکەوە</h3>
+          <p>وێنەیەک زیاد بکە، شوێنەکە لەسەر نەخشە دیاری بکە و کێشەکە هەڵبژێرە. دوو خولەک دەخایەنێت.</p>
+          <a class="btn" href="report.html">دەست بە ڕاپۆرت بکە</a>
+        </div>
+        <div class="way">
+          <h3>لە واتسئەپەوە</h3>
+          <p>وێنە و شوێنەکەت بنێرە بۆ ژمارەی ئەمانەت. ژمارەی ڕاپۆرت و هەموو نوێکارییەکان لە هەمان چاتدا وەردەگریت.</p>
+          <a class="btn" href="#">چاتەکە بکەرەوە</a>
+          <p class="verified">ژمارەیەکی پشتڕاستکراوە بە ناوی «ئەمانەتی بەغدا». هەرگیز لە واتسئەپدا داوای پارەت لێ ناکەین.</p>
+        </div>
+        <div class="chat" aria-label="نموونەی گفتوگۆی ڕاپۆرت">
+          <p class="label">نموونە</p>
+          <p class="bubble me"><span class="att">وێنە</span><span class="att">شوێن</span>ئاوەڕۆ لە شەقامەکەماندا ڕژاوە</p>
+          <p class="bubble them">ڕاپۆرتەکەت گەیشت. ژمارەکەی ب-٤٨٢١٣ە و نێردرا بۆ شارەوانی کەڕادە.</p>
+          <p class="bubble them">نوێکاری: تیمەکە ئێستا لە شوێنەکەیە.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="block wrap" id="district" aria-labelledby="district-h">
+    <div class="block-head"><h2 id="district-h">ناوچەکەت</h2><p><a href="../en/districts.html">هەر ١٥ شارەوانییەکە</a></p></div>
+    <div class="banks">
+      <div class="bank">
+        <h3>ڕوسافە <span>کەناری ڕۆژهەڵات</span></h3>
+        <ul>
+          <li><a href="../en/districts.html#rusafa">ناوەندی ڕوسافە</a></li>
+          <li><a href="../en/districts.html#adhamiya">ئەعزەمییە</a></li>
+          <li><a href="../en/districts.html#shaab">شەعب</a></li>
+          <li><a href="../en/districts.html#sader1">سەدری یەکەم</a></li>
+          <li><a href="../en/districts.html#sader2">سەدری دووەم</a></li>
+          <li><a href="../en/districts.html#ghadeer">غەدیر</a></li>
+          <li><a href="../en/districts.html#baghdadg">بەغدای نوێ</a></li>
+          <li><a href="../en/district-karrada.html">کەڕادە</a></li>
+        </ul>
+      </div>
+      <div class="bank">
+        <h3>کەرخ <span>کەناری ڕۆژئاوا</span></h3>
+        <ul>
+          <li><a href="../en/districts.html#karkh">ناوەندی کەرخ</a></li>
+          <li><a href="../en/districts.html#kadhimiya">کازمییە</a></li>
+          <li><a href="../en/districts.html#mansour">مەنسوور</a></li>
+          <li><a href="../en/districts.html#shuala">شوعلە</a></li>
+          <li><a href="../en/districts.html#rasheed">ڕەشید</a></li>
+          <li><a href="../en/districts.html#dora">دۆرە</a></li>
+          <li><a href="../en/districts.html#gzone">ناوچەی سەوز و ڕێگای فڕۆکەخانە</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">کەڕادە پەڕەیەکی تەواوی هەیە بە نووسینگە، کار و ڕاپۆرتەکانییەوە. ئەوانی تر تا پەڕەکانیان دروست دەکرێن، لە لیستی ناوچەکاندا دەکرێنەوە.</p>
+  </section>
+
+  <section class="block wrap ruled" id="projects" aria-labelledby="projects-h">
+    <div class="block-head"><h2 id="projects-h">پڕۆژەکان</h2><p><a href="../en/projects.html">هەموو پڕۆژەکان، کێ بەڕێوەیان دەبات و گەیشتوونەتە کوێ</a></p></div>
+    <ul class="works">
+      <li>
+        <h3>کۆرنیشی ئەبو نواس</h3>
+        <p class="what">نۆژەنکردنەوەی کۆرنیشی کەناری ڕووبار و فراوانکردنی نزیکەی ٨ کم شەقام، لە پارکی شەهیدانی کەڕادەوە تا گۆڕەپانی نسوور.</p>
+        <dl>
+          <div><dt>بەڕێوەبەر</dt><dd>ئەمانەتی بەغدا؛ بەشی شەقامەکە لەلایەن وەزارەتی ئاوەدانکردنەوە و نیشتەجێکردنەوە</dd></div>
+          <div><dt>دۆخ</dt><dd><span class="status ok">قۆناغی یەکەم کراوەیە</span> تشرینی یەکەمی ٢٠٢٥</dd></div>
+        </dl>
+        <p class="src">Arab Urban Development Institute؛ IraqiNews</p>
+      </li>
+      <li>
+        <h3>بەغدا دەچێنێت</h3>
+        <p class="what">هەڵمەتێک بۆ چاندنی یەک ملیۆن دار لە سەرانسەری شار، لە پایتەختێکدا کە زۆربەی ڕووبەری سەوزی بۆ بیناسازی لەدەست داوە.</p>
+        <dl>
+          <div><dt>بەڕێوەبەر</dt><dd>ئەمانەتی بەغدا</dd></div>
+          <div><dt>دۆخ</dt><dd><span class="status plan">لە ئارادایە</span> لە ئاداری ٢٠٢٥ەوە</dd></div>
+        </dl>
+        <p class="src">The New Region</p>
+      </li>
+      <li>
+        <h3>مێترۆی بەغدا</h3>
+        <p class="what">حەوت هێڵ، نزیکەی ١٤٨ کم و ٦٤ وێستگە. کۆنسۆرتیۆمێکی نێودەوڵەتی بۆ دروستکردنی هەڵبژێردرا.</p>
+        <dl>
+          <div><dt>بەڕێوەبەر</dt><dd>ئەمانەتی بەغدا و دەستەی نیشتمانیی وەبەرهێنان</dd></div>
+          <div><dt>دۆخ</dt><dd><span class="status stall">لە پێداچوونەوەدایە</span> لە تەممووزی ٢٠٢٥ەوە</dd></div>
+        </dl>
+        <p class="src">Railway Gazette؛ MEED</p>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">ئەمانەتی بەغدا</div>
+      <div><h2>خزمەتگوزارییەکان</h2><ul><li><a href="services.html">هەموو خزمەتگوزارییەکان</a></li><li><a href="report.html">ڕاپۆرتی کێشە</a></li><li><a href="../en/track.html">بەدواداچوونی ڕاپۆرت</a></li><li><a href="../en/alerts.html">ئاگادارییەکان</a></li></ul></div>
+      <div><h2>شار</h2><ul><li><a href="../en/districts.html">ناوچەکان</a></li><li><a href="../en/projects.html">پڕۆژەکان</a></li><li><a href="../city-tigris.html" hreflang="ar">دیجلە (بە عەرەبی)</a></li></ul></div>
+      <div><h2>ئەمانەت</h2><ul><li><a href="../en/about.html">دەربارە</a></li><li><a href="../en/about.html#who">کێ چی دەکات</a></li><li><a href="../en/about.html#tenders">تەندەر و مەزاد</a></li><li><a href="../en/about.html#contact">پەیوەندی</a></li></ul></div>
+      <div><h2>ئەم ماڵپەڕە</h2><ul><li><a href="../en/data.html">داتای کراوە</a></li><li><a href="../en/about.html#search">گەڕان چۆن کار دەکات</a></li><li><a href="../en/about.html#access">دەستگەیشتن</a></li><li><a href="../en/about.html#privacy">تایبەتمەندی</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p>نموونەیەکی تایبەتی لێکۆڵینەوەیە. ماڵپەڕی فەرمی ئەمانەتی بەغدا نییە.</p>
+      <p>مۆر: وێنەکێشانەوەی کۆمەڵگە — CC BY-SA 4.0 — Wikimedia Commons. ناوی وێنەگر لەگەڵ هەر وێنەیەک نووسراوە.</p>
+    </div>
+  </div>
+</footer>
+<script src="../shared/home.js"></script>
+</body>
+</html>

@@ -2,7 +2,7 @@
   Language swap
 
   Cross-document view transitions between a page and its other-language twin.
-  Masthead, every page: the seal and the language link travel to their mirrored place.
+  Masthead, every page: the seal and the language links travel to their mirrored place.
   Home: the search card, Today ledger and task tiles travel too.
   Every other page: the body is revealed in the new reading direction.
 */
@@ -23,7 +23,9 @@
 
 .masthead { view-transition-name: masthead; }
 .brand img { view-transition-name: seal; }
-.lang a { view-transition-name: lang; }
+.lang a[hreflang="ar"] { view-transition-name: lang-ar; }
+.lang a[hreflang="ckb"] { view-transition-name: lang-ckb; }
+.lang a[hreflang="en"] { view-transition-name: lang-en; }
 
 
 /* Home glide: cards keep their proportions while they travel */

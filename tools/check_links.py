@@ -1,7 +1,7 @@
 """Check that internal links and #anchors resolve.
 
 Usage, from this folder:
-  python3 tools/check_links.py site site/en/*.html site/*.html
+  python3 tools/check_links.py site site/en/*.html site/ku/*.html site/*.html
 """
 import pathlib
 import re

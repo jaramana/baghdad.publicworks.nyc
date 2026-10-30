@@ -40,7 +40,7 @@
   }
 
   addEventListener('click', e => {
-    if (e.target.closest('a[hreflang]')) savePlace();
+    if (e.target.closest('.lang a')) savePlace();
   });
 
   if ('onpagereveal' in window) {
