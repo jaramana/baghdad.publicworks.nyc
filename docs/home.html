@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أمانة بغداد — المزيج المنقّح</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/lang-swap.css">
+<link rel="expect" href="#city" blocking="render">
+<script src="shared/lang-swap.js"></script>
+<style>
+  /* Hero: river band with the search card and Today ledger set over its lower edge */
+  .river img { width: 100%; aspect-ratio: var(--ratio-hero); max-height: 26rem; object-fit: cover; object-position: center 60%; display: block; }
+  .river figcaption { max-width: var(--wrap); margin-inline: auto; padding-inline: 1rem; text-align: end; }
+  .hero { position: relative; display: grid; grid-template-columns: 1.35fr 1fr; gap: 1.5rem; align-items: start; margin-top: clamp(-13rem, -15vw, -5rem); }
+  .hero > * { min-width: 0; }
+  .card { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 4px; box-shadow: 0 12px 36px rgba(15,63,33,0.12); }
+  .ask { padding: 1.75rem; }
+  .ask h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 800; }
+  .search { display: flex; margin-top: 1rem; border: 2px solid var(--ink); border-radius: 4px; overflow: hidden; background: var(--white); }
+  .search:focus-within { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+  .search input { flex: 1; min-width: 0; border: 0; padding: 0.8rem 1rem; font: inherit; font-size: 1.125rem; color: var(--ink); background: transparent; }
+  .search input:focus-visible { outline: none; }
+  .search button { border: 0; border-inline-start: 1.5px solid var(--line); background: transparent; color: var(--green); font: inherit; font-weight: 700; padding-inline: 1.5rem; cursor: pointer; }
+  .search button:hover { background: var(--green-tint); }
+  .ai-note { margin: 0.6rem 0 0; font-size: 0.8125rem; color: var(--muted); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.9rem 0 0; padding: 0; list-style: none; }
+  .chips button { font: inherit; font-size: 0.9rem; background: transparent; color: var(--green-deep); border: 1px solid var(--line); border-radius: 999px; padding: 0.2rem 0.9rem; cursor: pointer; }
+  .chips button:hover { border-color: var(--green); }
+
+  /* Answer slot: reserved height so nothing below it moves */
+  .answer { min-height: 14rem; margin-top: 1.1rem; padding-top: 0.9rem; border-top: 1px solid var(--line); }
+  .answer p { margin: 0.2rem 0; }
+  .answer-hint, .answer-wait { color: var(--muted); }
+  .answer-wait::before { content: ""; display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--green); margin-inline-end: 0.5rem; animation: pulse 1s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: 0.25; } }
+  .answer-title { font-family: var(--kufi); font-weight: 700; font-size: 1.0625rem; }
+  .answer-meta { font-weight: 600; }
+  .answer-action { margin-top: 0.5rem; }
+  .answer-source { font-size: 0.8125rem; color: var(--muted); }
+
+  .ledger { padding: 1.25rem 1.25rem 0.5rem; }
+  .ledger h2 { font-size: 1.125rem; }
+  .ledger .date { margin: 0 0 0.5rem; font-size: 0.8125rem; color: var(--muted); }
+  .count { display: flex; align-items: baseline; gap: 0.6rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--green); }
+  .count .num { font-family: var(--kufi); font-size: 2.6rem; font-weight: 800; line-height: 1.1; color: var(--green); }
+  .count p { margin: 0; line-height: 1.45; }
+  .count small { display: block; color: var(--muted); font-size: 0.8125rem; }
+  .today { list-style: none; margin: 0; padding: 0; }
+  .today li { padding-block: 0.6rem; border-bottom: 1px solid var(--line); }
+  .today .row { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.8125rem; }
+  .today .topic { font-weight: 600; color: var(--muted); }
+  .today .what { margin: 0.1rem 0 0; line-height: 1.6; }
+  .ledger .foot-row { display: flex; justify-content: space-between; font-size: 0.8125rem; padding-block: 0.5rem; color: var(--muted); }
+
+
+  /* Services as tiles */
+  .tasks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 0; padding: 0; list-style: none; }
+  .tasks a { display: block; height: 100%; background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 3px; padding: 1.1rem 1.25rem; color: var(--ink); text-decoration: none; transition: box-shadow 0.15s, transform 0.15s; }
+  .tasks a:hover { box-shadow: 0 4px 14px rgba(15,63,33,0.08); transform: translateY(-2px); }
+  .tasks strong { font-family: var(--kufi); font-size: 1.125rem; font-weight: 700; color: var(--green); }
+  .tasks p { margin: 0.35rem 0 0; color: var(--muted); }
+  .tag { display: inline-block; font-size: 0.75rem; font-weight: 600; color: var(--green); border: 1px solid var(--line); padding: 0 0.5rem; border-radius: 2px; margin-top: 0.5rem; }
+
+  /* Report: framed by green lines */
+  .report { background: var(--white); border-block: 1px solid var(--line); }
+  .report .wrap { border-inline-start: 4px solid var(--green); }
+  .ways { display: grid; grid-template-columns: 1fr 1fr 1.1fr; gap: clamp(1.25rem, 3vw, 2.5rem); align-items: start; }
+  .way h3 { font-size: 1.125rem; font-weight: 700; }
+  .way p { margin: 0.3rem 0 0.9rem; color: var(--muted); }
+  .verified { font-size: 0.8125rem; margin-top: 0.6rem !important; }
+  .chat { background: #ece5dd; border-radius: 6px; padding: 0.9rem; color: #1b1b1b; font-size: 0.9375rem; }
+  .chat .label { font-size: 0.8125rem; font-weight: 600; color: #6b6660; margin: 0 0 0.5rem; }
+  .bubble { max-width: 85%; padding: 0.45rem 0.75rem; border-radius: 8px; margin: 0 0 0.45rem; line-height: 1.55; }
+  .bubble.me { background: #d9fdd3; margin-inline-start: auto; }
+  .bubble.them { background: #fff; }
+  .att { display: inline-block; font-size: 0.75rem; font-weight: 600; background: rgba(0,0,0,0.06); border-radius: 3px; padding: 0 0.4rem; margin-inline-end: 0.3rem; }
+
+  /* District */
+  .district { display: grid; grid-template-columns: minmax(14rem, 22rem) 1fr; gap: 2rem; align-items: start; }
+  .district label { display: block; font-weight: 600; margin-bottom: 0.4rem; }
+  .district select { width: 100%; font: inherit; padding: 0.65rem; border: 1px solid var(--ink); border-radius: 3px; background: var(--white); }
+  .district-card { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 4px; padding: 1.1rem 1.25rem; }
+  .district-name { font-family: var(--kufi); font-size: 1.25rem; font-weight: 700; margin: 0; }
+  .district-side { margin: 0; color: var(--muted); }
+  .district-card dl { margin: 0.75rem 0; }
+  .district-card dl div { display: flex; gap: 1rem; padding-block: 0.3rem; border-bottom: 1px solid var(--line); }
+  .district-card dt { font-weight: 600; min-width: 9rem; }
+  .district-card dd { margin: 0; }
+
+  /* City: equal photos on one ratio */
+  .photos { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .photos img { width: 100%; aspect-ratio: var(--ratio-photo); object-fit: cover; display: block; border-radius: 3px; }
+  .story { display: grid; grid-template-columns: 1.5fr 1fr; gap: 2.5rem; align-items: start; margin-top: 1.75rem; }
+  .kicker { font-size: 0.875rem; font-weight: 600; color: var(--teal-text); margin: 0; }
+  .story h3 { font-family: var(--naskh); font-size: 2.1rem; font-weight: 700; line-height: 1.45; }
+  .story p { margin: 0.5rem 0; max-width: 40rem; }
+  .fact { border-inline-start: 4px solid var(--green); padding-inline-start: 1.25rem; }
+  .fact .num { font-family: var(--kufi); font-size: 2.5rem; font-weight: 800; line-height: 1.2; margin: 0; color: var(--green); }
+  .fact p { margin: 0.3rem 0; }
+
+
+  @media (max-width: 860px) {
+    .hero { grid-template-columns: 1fr; margin-top: -2.5rem; }
+    .ask { padding: 1.25rem; }
+    .answer { min-height: 16rem; }
+    .district, .story, .ways { grid-template-columns: 1fr; }
+    .tasks { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .photos, .tasks { grid-template-columns: 1fr; }
+    .photos figure + figure { display: none; }
+  }
+</style>
+<script src="shared/prototype.js" defer></script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="home.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
+      <div><strong>أمانة بغداد</strong><span>الموقع الرسمي · جمهورية العراق</span></div>
+    </a>
+    <button class="menu-btn" type="button" popovertarget="menu">القائمة</button>
+    <nav class="menu" id="menu" popover aria-label="القائمة الرئيسية">
+      <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">إغلاق</button>
+      <ul class="nav">
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="report.html">بلّغ عن مشكلة</a></li>
+        <li><a href="districts.html">البلديات</a></li>
+        <li><a href="city-tigris.html">المدينة</a></li>
+        <li class="lang"><a href="ku/index.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/index.html" lang="en" hreflang="en" dir="ltr">English</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <figure class="river">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tigris_River_in_early_morning.jpg/1920px-Tigris_River_in_early_morning.jpg" alt="دجلة في الصباح الباكر">
+  </figure>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="card ask">
+        <h1>ماذا تحتاج اليوم؟</h1>
+        <form class="search" data-search role="search">
+          <input id="q" type="search" aria-label="ابحث في خدمات الأمانة" placeholder="مثلاً: انقطاع الماء في الكرادة" autocomplete="off">
+          <button type="submit">ابحث</button>
+        </form>
+        <p class="ai-note">يستعين البحث بالذكاء الاصطناعي، ويجيب من صفحات الأمانة فقط. <a href="about.html#search">كيف يعمل؟</a></p>
+        <ul class="chips">
+          <li><button type="button" data-chip="انقطاع الماء في الكرادة">انقطاع الماء</button></li>
+          <li><button type="button" data-chip="إجازة بناء">إجازة بناء</button></li>
+          <li><button type="button" data-chip="دفع فاتورة الماء">فاتورة الماء</button></li>
+          <li><button type="button" data-chip="بيان عقار">بيان عقار</button></li>
+        </ul>
+        <div class="answer" data-answer aria-live="polite">
+          <p class="answer-hint">اكتب ما تحتاجه، ونرشدك إلى الصفحة الصحيحة. يظهر الجواب هنا.</p>
+        </div>
+      </div>
+
+      <section class="card ledger" aria-labelledby="today-h">
+        <h2 id="today-h">اليوم في بغداد</h2>
+        <p class="date">الجمعة ٣٠ تشرين الأول ٢٠٢٦ · آخر تحديث ١٠:٤٠ صباحاً</p>
+        <div class="count">
+          <span class="num">٢١٤</span>
+          <p>بلاغاً أُغلق اليوم<small>من ٢٦٠ بلاغاً وصلت منذ الصباح</small></p>
+        </div>
+        <ul class="today">
+          <li><div class="row"><span class="topic">الماء</span><span class="status plan">قطع مجدول</span></div><p class="what">الكرادة داخل، ٩ صباحاً – ٣ عصراً.</p></li>
+          <li><div class="row"><span class="topic">الطرق</span><span class="status walk">للمشاة</span></div><p class="what">جسر الشهداء للمشاة فقط اليوم.</p></li>
+          <li><div class="row"><span class="topic">النفايات</span><span class="status ok">طبيعي</span></div><p class="what">الرفع حسب الجدول في جميع البلديات.</p></li>
+        </ul>
+        <div class="foot-row"><span>بيانات توضيحية</span><a href="alerts.html">كل التنبيهات</a></div>
+      </section>
+    </div>
+    <p class="note" lang="en" dir="ltr" style="text-align:end">Tigris River in early morning — Abdo Alrawii — CC BY-SA 4.0</p>
+  </div>
+
+  <section class="block wrap" id="tasks" aria-labelledby="tasks-h">
+    <div class="block-head"><h2 id="tasks-h">أكثر الخدمات طلباً</h2><p><a href="services.html">كل الخدمات</a></p></div>
+    <ul class="tasks">
+      <li><a href="service-permit.html"><strong>إجازة البناء</strong><p>ما تحتاجه، والكلفة، والمدة، ثم التقديم.</p><span class="tag">على بوابة أور</span></a></li>
+      <li><a href="service-water.html"><strong>حساب الماء</strong><p>دفع الفاتورة، اشتراك جديد، تبديل العداد أو نقل الاسم.</p><span class="tag">على بوابة أور</span></a></li>
+      <li><a href="service-property.html"><strong>بيان عقار</strong><p>للبيع والإرث والإجازات. يصدر إلكترونياً.</p><span class="tag">على بوابة أور</span></a></li>
+      <li><a href="service-fees.html"><strong>الرسوم البلدية</strong><p>رسوم المهن والإعلانات والنظافة، ومن أين تُدفع.</p></a></li>
+      <li><a href="track.html"><strong>تابع بلاغك</strong><p>أدخل رقم البلاغ لترى حالته.</p></a></li>
+      <li><a href="#district"><strong>مكتب بلديتك</strong><p>العنوان وساعات الدوام والأعمال الجارية.</p></a></li>
+    </ul>
+  </section>
+
+  <div class="report" id="report">
+    <section class="block wrap" aria-labelledby="report-h">
+      <div class="block-head"><h2 id="report-h">بلّغ عن مشكلة</h2><p>ماء، مجاري، نفايات، إنارة، حُفر</p></div>
+      <div class="ways">
+        <div class="way">
+          <h3>على الموقع</h3>
+          <p>أضف صورة، وحدّد الموقع على الخريطة، واختر نوع المشكلة. يستغرق دقيقتين.</p>
+          <a class="btn" href="report.html">ابدأ البلاغ</a>
+        </div>
+        <div class="way">
+          <h3>عبر واتساب</h3>
+          <p>أرسل صورة وموقعك إلى رقم الأمانة. يصلك رقم البلاغ وكل تحديث في المحادثة نفسها.</p>
+          <a class="btn" href="#">افتح المحادثة</a>
+          <p class="verified">رقم موثّق باسم «أمانة بغداد». لا نطلب منك أي دفع عبر واتساب.</p>
+        </div>
+        <div class="chat" aria-label="مثال على محادثة بلاغ">
+          <p class="label">مثال</p>
+          <p class="bubble me"><span class="att">صورة</span><span class="att">موقع</span>المجاري طافحة بشارعنا</p>
+          <p class="bubble them">وصل بلاغك. رقم البلاغ ب-٤٨٢١٣، وأُرسل إلى بلدية الكرادة.</p>
+          <p class="bubble them">تحديث: الفريق في الموقع الآن.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="block wrap" id="district" aria-labelledby="district-h">
+    <div class="block-head"><h2 id="district-h">بلديتك</h2><p>١٤ بلدية وبلدية المنطقة الخضراء</p></div>
+    <div class="district">
+      <div>
+        <label for="d">اختر منطقتك</label>
+        <select id="d" data-district><option value="">—</option></select>
+      </div>
+      <div class="district-card" data-district-card hidden aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="block wrap ruled" id="city" aria-labelledby="city-h">
+    <div class="block-head"><h2 id="city-h">المدينة</h2><p><a href="data.html">البيانات المفتوحة</a></p></div>
+    <div class="photos">
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Boat_crossing_Tigris_river.jpg/1280px-Boat_crossing_Tigris_river.jpg" alt="قارب يعبر دجلة قرب جسر الشهداء وبرج ساعة القشلة">
+        <figcaption lang="en" dir="ltr">Boat crossing Tigris river — Samir Al-Ibrahem — CC BY-SA 4.0</figcaption>
+      </figure>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/%D9%82%D8%B1%D8%A7%D8%A1_%D9%81%D9%8A_%D8%B4%D8%A7%D8%B1%D8%B9_%D8%A7%D9%84%D9%85%D8%AA%D9%86%D8%A8%D9%8A.jpg/1280px-%D9%82%D8%B1%D8%A7%D8%A1_%D9%81%D9%8A_%D8%B4%D8%A7%D8%B1%D8%B9_%D8%A7%D9%84%D9%85%D8%AA%D9%86%D8%A8%D9%8A.jpg" alt="قرّاء في شارع المتنبي وقبة جامع الحيدرخانة خلفهم">
+        <figcaption>قراء في شارع المتنبي — Mondalawy — CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <div class="story">
+      <div>
+        <p class="kicker">دجلة</p>
+        <h3>نهرٌ نعود إليه</h3>
+        <p>تصبّ مجارٍ غير معالجة في دجلة بين باب المعظم والكرادة. نعرض كل مصب، والجهة المسؤولة عنه، وموعد إغلاقه. بعدها نصل المتنبي والقشلة وشارع الرشيد بضفة النهر، حياً واحداً للمشاة.</p>
+        <a href="city-tigris.html">تابع خطة النهر</a>
+        <p class="note">رؤية مستقبلية · المواعيد في هذه القصة توضيحية</p>
+      </div>
+      <div class="fact">
+        <p class="num">٩٬٧٨٠٬٤٢٩</p>
+        <p>عدد سكان محافظة بغداد في التعداد العام للسكان ٢٠٢٤.</p>
+        <a href="data.html#census">السكان حسب الناحية</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">عن الأمانة</a></li><li><a href="districts.html">البلديات</a></li><li><a href="services.html#business">المناقصات</a></li></ul></div>
+      <div><h2>الخدمات</h2><ul><li><a href="report.html">بلّغ عن مشكلة</a></li><li><a href="track.html">تابع بلاغك</a></li><li><a href="services.html">كل الخدمات</a></li></ul></div>
+      <div><h2>الموقع</h2><ul><li><a href="about.html#access">إمكانية الوصول</a></li><li><a href="about.html#privacy">الخصوصية</a></li><li><a href="data.html">البيانات المفتوحة</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p>الصور من Wikimedia Commons بترخيص CC BY-SA 4.0، والمصوّرون مذكورون مع كل صورة. الختم: إعادة رسم مجتمعية — CC BY-SA 4.0.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="shared/home.js"></script>
+</body>
+</html>

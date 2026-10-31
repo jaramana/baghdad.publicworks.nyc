@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Mayoralty of Baghdad</title>
+<link rel="alternate" hreflang="ar" href="../home.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@600&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/base.css">
+<link rel="stylesheet" href="../shared/page.css">
+<link rel="stylesheet" href="../shared/en.css">
+<link rel="stylesheet" href="../shared/lang-swap.css">
+<script src="../shared/lang-swap.js"></script>
+<style>
+  /* Project register: what, who runs it, status, how sure we are, sources */
+
+  .group + .group { margin-top: 2.5rem; }
+  .group > h2 { margin-bottom: 0.25rem; }
+  .group > p { margin: 0 0 1rem; color: var(--muted); }
+  .proj { list-style: none; margin: 0; padding: 0 !important; border-top: 2px solid var(--green); max-width: none !important; }
+  .proj > li { display: grid; grid-template-columns: minmax(0, 1fr) 15rem; gap: 0.5rem 2rem; padding: 1.1rem 0; margin: 0 !important; border-bottom: 1px solid var(--line); scroll-margin-top: 7rem; }
+  .proj > li:target { background: var(--green-tint); box-shadow: -0.75rem 0 0 var(--green-tint), 0.75rem 0 0 var(--green-tint); }
+  .proj h3 { font-size: 1.125rem; font-weight: 700; }
+  .proj p { margin: 0.3rem 0 0 !important; }
+  .proj .src { font-size: 0.8125rem; color: var(--muted); }
+  .proj .src a { color: var(--muted); }
+  .proj dl { margin: 0; font-size: 0.875rem; }
+  .proj dt { font-size: 0.8125rem; font-weight: 600; color: var(--muted); }
+  .proj dd { margin: 0 0 0.5rem; }
+  .check { display: inline-block; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--line); border-radius: 2px; padding: 0 0.45rem; }
+  .check.yes { color: var(--green); }
+  .check.no { color: var(--amber); }
+
+
+  @media (max-width: 860px) {
+    .proj > li { grid-template-columns: 1fr; }
+  }
+</style>
+<script src="../shared/prototype.js" defer></script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
+      <div><strong>Mayoralty of Baghdad</strong><span>Official website · Republic of Iraq</span></div>
+    </a>
+    <button class="menu-btn" type="button" popovertarget="menu">Menu</button>
+    <nav class="menu" id="menu" popover aria-label="Main menu">
+      <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">Close</button>
+      <ul class="nav">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="report.html">Report a problem</a></li>
+        <li><a href="districts.html">Districts</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="lang"><a href="../home.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../ku/index.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">Projects</li>
+    </ol>
+  </nav>
+
+  <header class="page-head">
+    <p class="kicker">The city</p>
+    <h1>Projects</h1>
+    <p class="lede">Public works in Baghdad, who runs each one and where it stands. Many of the city's biggest projects are not run by the Mayoralty, so each entry says who to ask.</p>
+  </header>
+
+  <div class="layout">
+    <article class="guide">
+
+      <section class="group" id="streets" aria-labelledby="streets-h">
+        <h2 id="streets-h">Streets, the river and old Baghdad</h2>
+        <p>The riverfront and the historic centre on the Rusafa bank.</p>
+        <ul class="proj">
+          <li id="abu-nuwas">
+            <div>
+              <h3>Abu Nuwas corniche</h3>
+              <p>Rebuilding the riverside corniche (over $6 million in 2023) and widening about 8 km of street from Karrada Martyrs Park to Eagles Square. A later report found parts of the street neglected again.</p>
+              <p class="src">Sources: <a href="https://araburban.org/infohub/projects/?id=7602" rel="external">Arab Urban Development Institute</a> · <a href="https://www.iraqinews.com/?p=239484" rel="external">IraqiNews</a> · <a href="https://shafaq.com/en/Report/Once-revived-now-neglected-Baghdad-s-Abu-Nuwas-Street-struggles-again" rel="external">Shafaq News</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>Mayoralty of Baghdad ("Baghdad Ajmal"); the street package by the Ministry of Construction and Housing</dd>
+              <dt>Status</dt><dd><span class="status ok">Phase 1 open</span> October 2025; street package over 88% done</dd>
+              <dd><span class="check yes">Status verified</span></dd>
+            </dl>
+          </li>
+          <li id="rashid">
+            <div>
+              <h3>Rashid Street rehabilitation</h3>
+              <p>Restoring facades and infrastructure on Baghdad's oldest modern street. Phase 2 covered about 3.5 km and 183 buildings.</p>
+              <p class="src">Sources: <a href="https://channel8.com/english/news/48657" rel="external">Channel 8</a> · <a href="https://www.iraq-businessnews.com/2025/02/25/third-phase-of-al-rasheed-street-rehabilitation/" rel="external">Iraq Business News</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>Prime Minister's Office, Central Bank of Iraq and the Iraqi Private Banks League</dd>
+              <dt>Status</dt><dd><span class="status plan">Phase 3 under way</span> since 2025</dd>
+              <dd><span class="check yes">Status verified</span></dd>
+            </dl>
+          </li>
+          <li id="mutanabbi">
+            <div>
+              <h3>Mutanabbi Street</h3>
+              <p>Stone paving, lighting and painted facades on the booksellers' street. Phase 1 of the "Old Baghdad" programme.</p>
+              <p class="src">Source: <a href="https://thenational-the-national-prod.cdn.arcpublishing.com/mena/iraq/2022/01/28/baghdad-nights-rejuvenated-by-al-mutanabbi-street-renovation" rel="external">The National</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>Central Bank of Iraq and the Iraqi Private Banks League</dd>
+              <dt>Status</dt><dd><span class="status ok">Reopened</span> late December 2021</dd>
+              <dd><span class="check yes">Status verified</span></dd>
+            </dl>
+          </li>
+          <li id="saray">
+            <div>
+              <h3>Saray–Qishla Street</h3>
+              <p>Phase 2 of "Old Baghdad": facades and a pedestrian zone between the Saray and the Qishla.</p>
+              <p class="src">Source: <a href="https://www.iraqinews.com/iraq/revitalizing-baghdad-downtown-the-rehabilitation-of-saray-street/" rel="external">IraqiNews</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>The "Old Baghdad" programme</dd>
+              <dt>Status</dt><dd><span class="status plan">Under way or complete</span></dd>
+              <dd><span class="check no">Status unverified</span> no clear date</dd>
+            </dl>
+          </li>
+          <li id="heritage">
+            <div>
+              <h3>Baghdad heritage centre</h3>
+              <p>A centre to protect and record the city's heritage buildings, ordered by the Prime Minister.</p>
+              <p class="src">Source: <a href="https://www.shafaq.com/en/Iraq/Baghdad-s-past-protected-PM-Al-Sudani-orders-heritage-center" rel="external">Shafaq News</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>Prime Minister's Office</dd>
+              <dt>Status</dt><dd><span class="status stall">Ordered</span></dd>
+              <dd><span class="check yes">Status verified</span></dd>
+            </dl>
+          </li>
+        </ul>
+      </section>
+
+      <section class="group" id="green" aria-labelledby="green-h">
+        <h2 id="green-h">Parks and trees</h2>
+        <p>Baghdad has lost much of its green space to building. These projects add it back.</p>
+        <ul class="proj">
+          <li id="plants">
+            <div>
+              <h3>Baghdad Plants</h3>
+              <p>A campaign to plant one million trees across the city.</p>
+              <p class="src">Source: <a href="https://thenewregion.com/posts/1825" rel="external">The New Region</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>Mayoralty of Baghdad</dd>
+              <dt>Status</dt><dd><span class="status plan">Under way</span> since March 2025</dd>
+              <dd><span class="check yes">Status verified</span></dd>
+            </dl>
+          </li>
+          <li id="zawraa">
+            <div>
+              <h3>Zawraa Park rehabilitation</h3>
+              <p>Rebuilding a 3 km² park on a former army camp in Karkh, in three phases costing about $60 million.</p>
+              <p class="src">Sources: <a href="https://en.wikipedia.org/wiki/Al-Zawraa_Park" rel="external">Wikipedia</a> · <a href="https://www.iraqinews.com/?p=65562" rel="external">IraqiNews</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>Mayoralty of Baghdad</dd>
+              <dt>Status</dt><dd><span class="status ok">Reopened</span> reported November 2025</dd>
+              <dd><span class="check no">Status unverified</span> area verified</dd>
+            </dl>
+          </li>
+          <li id="green-belt">
+            <div>
+              <h3>Green Belt, Mansour to Abu Ghraib</h3>
+              <p>A belt of trees on 940 donums (about 235 hectares), watered with treated wastewater.</p>
+              <p class="src">Source: <a href="https://www.iraqinews.com/?p=215594" rel="external">IraqiNews</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>Mayoralty of Baghdad</dd>
+              <dt>Status</dt><dd><span class="status plan">Reported over 95% complete</span></dd>
+              <dd><span class="check no">Status unverified</span> the report's dates conflict</dd>
+            </dl>
+          </li>
+          <li id="forests">
+            <div>
+              <h3>Baghdad Sustainable Forests</h3>
+              <p>About a million trees in 28 forests on the former Rashid military camp, designed by Gensler.</p>
+              <p class="src">Sources: <a href="https://www.iraq-businessnews.com/2024/12/10/baghdad-sustainable-forests-project-launched/" rel="external">Iraq Business News</a> · <a href="https://www.designboom.com/architecture/gensler-urban-forests-former-military-campsite-baghdad-sustainable-iraq-09-17-2025/" rel="external">designboom</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>National Investment Commission</dd>
+              <dt>Status</dt><dd><span class="status plan">Launched</span> December 2024</dd>
+              <dd><span class="check yes">Status verified</span></dd>
+            </dl>
+          </li>
+        </ul>
+      </section>
+
+      <section class="group" id="transport" aria-labelledby="transport-h">
+        <h2 id="transport-h">Getting around</h2>
+        <p>Rail plans and the road programme. The overpasses are national projects, not the Mayoralty's.</p>
+        <ul class="proj">
+          <li id="metro">
+            <div>
+              <h3>Baghdad Metro</h3>
+              <p>Seven lines, about 148 km and 64 stations. A consortium including Systra, SNCF, Alstom, Talgo and SENER was chosen in July 2024. HSS Engineers manages the project under a $316 million contract.</p>
+              <p class="src">Sources: <a href="https://www.railwaygazette.com/metro/baghdad-metro-project-consortium-selected/67035.article" rel="external">Railway Gazette</a> · <a href="https://www.iraq-businessnews.com/2024/07/02/malaysian-firm-wins-consultancy-contract-for-baghdad-metro/" rel="external">Iraq Business News</a> · <a href="https://www.meed.com/baghdad-metro-discussions-stall" rel="external">MEED</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>Mayoralty of Baghdad and the National Investment Commission</dd>
+              <dt>Status</dt><dd><span class="status stall">Under review</span> since July 2025; MEED reports a retender and stalled talks</dd>
+              <dd><span class="check no">Status unverified</span> history verified</dd>
+            </dl>
+          </li>
+          <li id="elevated-train">
+            <div>
+              <h3>Baghdad Elevated Train</h3>
+              <p>About 20 km of elevated railway with 14 stations. Alstom and Hyundai E&amp;C signed a letter of intent in 2020.</p>
+              <p class="src">Source: <a href="https://www.alstom.com/press-releases-news/2020/10/alstom-and-iraqi-ministry-transport-sign-letter-intent-implementation" rel="external">Alstom</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>Ministry of Transport</dd>
+              <dt>Status</dt><dd><span class="status stall">No construction found</span></dd>
+              <dd><span class="check yes">Letter of intent verified</span></dd>
+            </dl>
+          </li>
+          <li id="overpasses">
+            <div>
+              <h3>Traffic-relief package</h3>
+              <p>New overpasses and bridges across the city to ease congestion, including the Qadisiyah overpass and a second Jadriya bridge in Karrada.</p>
+              <p class="src">Sources: <a href="https://www.iraq-businessnews.com/2025/10/10/pm-opens-new-overpasses-in-baghdad/" rel="external">Iraq Business News, Oct 2025</a> · <a href="https://www.iraq-businessnews.com/2023/03/03/new-projects-to-reduce-traffic-jams-in-baghdad/" rel="external">Iraq Business News, Mar 2023</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>Ministry of Construction and Housing, with the Prime Minister's Office</dd>
+              <dt>Status</dt><dd><span class="status plan">Several overpasses open</span> October 2025; others under way</dd>
+              <dd><span class="check yes">Status verified</span></dd>
+            </dl>
+          </li>
+        </ul>
+      </section>
+
+      <section class="group" id="planning" aria-labelledby="planning-h">
+        <h2 id="planning-h">Planning and housing</h2>
+        <p>The city's master plan and its largest new neighbourhood.</p>
+        <ul class="proj">
+          <li id="plan-2030">
+            <div>
+              <h3>Baghdad Comprehensive Development Plan 2030</h3>
+              <p>The city's master plan for land use, transport, environment and river transport, prepared by Khatib &amp; Alami with World Bank funding.</p>
+              <p class="src">Sources: <a href="https://araburban.org/project/baghdad-comprehensive-city-development-plan-2030/" rel="external">Arab Urban Development Institute</a> · <a href="https://jeasiq.uobaghdad.edu.iq/index.php/JEASIQ/article/view/1534" rel="external">JEASIQ paper</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>Mayoralty of Baghdad</dd>
+              <dt>Status</dt><dd><span class="status plan">Approved 2022</span> per one source; a paper says stage 4 is still under discussion</dd>
+              <dd><span class="check no">Status unverified</span> the plan's existence is verified</dd>
+            </dl>
+          </li>
+          <li id="bismayah">
+            <div>
+              <h3>Bismayah New City</h3>
+              <p>100,000 homes on about 1,830 hectares, 10 km south-east of the city, planned for 600,000 people.</p>
+              <p class="src">Sources: <a href="https://www.kunhwaeng.co.kr/iraq-bismayah-new-city/?lang=en" rel="external">Kunhwa Engineering</a> · <a href="https://www.iraq-businessnews.com/2024/12/09/hanwha-resumes-bismaya-new-city-project/" rel="external">Iraq Business News</a></p>
+            </div>
+            <dl>
+              <dt>Runs it</dt><dd>National Investment Commission; built by Hanwha</dd>
+              <dt>Status</dt><dd><span class="status plan">Resumed</span> 2024, after a 16-month pause</dd>
+              <dd><span class="check yes">Status verified</span></dd>
+            </dl>
+          </li>
+        </ul>
+      </section>
+    </article>
+
+    <aside class="action" aria-label="On this page">
+      <nav class="toc" aria-labelledby="toc-h" style="margin-top:0">
+        <h2 id="toc-h">On this page</h2>
+        <ol>
+          <li><a href="#streets">Streets, the river and old Baghdad</a></li>
+          <li><a href="#green">Parks and trees</a></li>
+          <li><a href="#transport">Getting around</a></li>
+          <li><a href="#planning">Planning and housing</a></li>
+        </ol>
+      </nav>
+    </aside>
+  </div>
+  <p class="meta">Last reviewed 30 October 2026 · Compiled from the sources listed with each project</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">Mayoralty of Baghdad</div>
+      <div><h2>Services</h2><ul><li><a href="services.html">All services</a></li><li><a href="report.html">Report a problem</a></li><li><a href="track.html">Track a report</a></li><li><a href="alerts.html">Alerts</a></li></ul></div>
+      <div><h2>The city</h2><ul><li><a href="districts.html">Districts</a></li><li><a href="projects.html">Projects</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li></ul></div>
+      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">About</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="news.html">News</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
+      <div><h2>This site</h2><ul><li><a href="about.html#search">How search works</a></li><li><a href="about.html#access">Accessibility</a></li><li><a href="about.html#privacy">Privacy</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p class="hotline">Hotline <strong>5628</strong>, 8:30 am – 2 pm · <a href="https://www.facebook.com/mayoralty.baghdad" rel="external">Facebook</a> · <a href="https://www.instagram.com/mayoralty_baghdad" rel="external">Instagram</a> · <a href="https://x.com/mayoralty_bd" rel="external">X</a></p>
+      <p>Seal: community redraw — CC BY-SA 4.0 — Wikimedia Commons. Photos credited with each photo.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report a problem — Mayoralty of Baghdad</title>
+<link rel="alternate" hreflang="ar" href="../report.html">
+<link rel="alternate" hreflang="ckb" href="../ku/report.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@600&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/base.css">
+<link rel="stylesheet" href="../shared/page.css">
+<link rel="stylesheet" href="../shared/en.css">
+<link rel="stylesheet" href="../shared/lang-swap.css">
+<script src="../shared/lang-swap.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+  /* Report flow: four short steps, one at a time, then a receipt */
+
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 19rem; gap: clamp(2rem, 5vw, 4rem); align-items: start; padding-block: 1.25rem 4rem; }
+  .flow { min-width: 0; }
+
+  /* Help column */
+  .help { position: sticky; top: 7rem; display: grid; gap: 1.75rem; padding-top: 0.5rem; }
+  .help section { border-top: 2px solid var(--green); padding-top: 0.8rem; }
+  .help h2 { font-size: 1rem; margin-bottom: 0.4rem; }
+  .help p { margin: 0.3rem 0; font-size: 0.9375rem; color: var(--muted); }
+  .help ol { margin: 0.3rem 0 0; padding-inline-start: 1.2rem; font-size: 0.9375rem; }
+  .help li { margin-block: 0.2rem; }
+  .flow h1 { font-size: clamp(1.9rem, 4.5vw, 2.6rem); font-weight: 800; }
+  .lede { margin: 0.4rem 0 0; color: var(--muted); }
+  .danger { font-size: 0.9375rem; border: 1px solid var(--line); border-inline-start: 4px solid var(--amber); background: var(--white); padding: 0.6rem 0.9rem; margin: 1.25rem 0 0; }
+
+  /* Track box: the other way into reports, headlined under the title */
+  .track-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin-top: 1.25rem; padding-block: 0.9rem; border-block: 1px solid var(--line); }
+  .track-row label { font-weight: 600; }
+  .track-box { display: flex; border: 1.5px solid var(--ink); border-radius: 4px; overflow: hidden; background: var(--white); }
+  .track-box:focus-within { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+  .track-box input { width: 9rem; border: 0; padding: 0.45rem 0.75rem; font: inherit; color: var(--ink); background: transparent; }
+  .track-box input:focus-visible { outline: none; }
+  .track-box button { border: 0; border-inline-start: 1.5px solid var(--line); background: transparent; color: var(--green); font: inherit; font-weight: 700; padding-inline: 1rem; cursor: pointer; }
+  .track-box button:hover { background: var(--green-tint); }
+
+  /* Progress: four segments on one line */
+  .progress { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem; margin: 1.75rem 0 0.5rem; padding: 0; list-style: none; }
+  .progress li { border-top: 3px solid var(--line); padding-top: 0.4rem; font-size: 0.8125rem; color: var(--muted); }
+  .progress li.done { border-color: var(--green); }
+  .progress li.now { border-color: var(--green); color: var(--ink); font-weight: 600; }
+  .step-count { font-size: 0.8125rem; color: var(--muted); margin: 0 0 1.25rem; }
+
+  .step { display: none; }
+  .step.on { display: block; }
+  .step h2 { font-size: 1.35rem; margin-bottom: 0.9rem; }
+  .hint { font-size: 0.9375rem; color: var(--muted); margin: -0.5rem 0 1rem; }
+
+  /* Step 1: categories as outlined tiles */
+  .cats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
+  .cats label { display: block; height: 100%; background: var(--white); border: 1px solid var(--line); border-radius: 4px; padding: 0.9rem 1rem; cursor: pointer; }
+  .cats label:hover { border-color: var(--green); }
+  .cats input { position: absolute; opacity: 0; pointer-events: none; }
+  .cats input:checked + label { border-color: var(--green); box-shadow: inset 0 0 0 1.5px var(--green); }
+  .cats input:focus-visible + label { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .cats strong { display: block; font-weight: 600; }
+  .cats span { display: block; font-size: 0.875rem; color: var(--muted); line-height: 1.5; margin-top: 0.2rem; }
+
+  /* Step 2: map */
+  #map { width: 100%; aspect-ratio: var(--ratio-photo); border: 1px solid var(--line); border-radius: 4px; z-index: 0; }
+  .map-tools { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.75rem; margin-top: 0.6rem; font-size: 0.9375rem; }
+  .map-tools .coords { color: var(--muted); font-size: 0.8125rem; }
+  .field { margin-top: 1.1rem; }
+  .field label, .field .label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+  .field .opt { font-weight: 400; color: var(--muted); font-size: 0.875rem; }
+  .field input[type=text], .field input[type=tel], .field select, .field textarea {
+    width: 100%; font: inherit; color: var(--ink); background: var(--white);
+    border: 1px solid #9aa59e; border-radius: 3px; padding: 0.6rem 0.75rem;
+  }
+  .field textarea { min-height: 7rem; resize: vertical; }
+  .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--green); outline: 3px solid var(--green-tint); }
+
+  /* Step 3: photo */
+  .field .drop { display: grid; max-width: 28rem; margin: 0; place-items: center; text-align: center; aspect-ratio: var(--ratio-photo); border: 1.5px dashed #9aa59e; border-radius: 4px; background: var(--white); cursor: pointer; overflow: hidden; position: relative; }
+  .drop:hover { border-color: var(--green); }
+  .drop input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+  .drop img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .drop .prompt strong { display: block; color: var(--green); }
+  .drop .prompt span { font-size: 0.875rem; color: var(--muted); }
+
+  /* Step 4: review */
+  .review { margin: 0; border-top: 2px solid var(--green); }
+  .review div { display: grid; grid-template-columns: 8rem 1fr auto; gap: 1rem; padding-block: 0.6rem; border-bottom: 1px solid var(--line); align-items: baseline; }
+  .review dt { font-weight: 600; color: var(--muted); font-size: 0.9375rem; }
+  .review dd { margin: 0; }
+  .review button { font: inherit; font-size: 0.875rem; background: none; border: 0; color: var(--green); text-decoration: underline; cursor: pointer; padding: 0; }
+  .updates { display: grid; gap: 0.5rem; margin-top: 0.4rem; }
+  .updates label { display: flex; gap: 0.6rem; align-items: center; font-weight: 400; }
+  .updates input { accent-color: var(--green); width: 1.1rem; height: 1.1rem; }
+
+  .nav-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+  .back { font: inherit; background: none; border: 0; color: var(--muted); cursor: pointer; padding: 0.4rem 0; }
+  .back:hover { color: var(--ink); text-decoration: underline; }
+  .back[hidden] { display: inline-block; visibility: hidden; }
+  .error { color: #a3261b; font-size: 0.9375rem; font-weight: 600; margin: 0.75rem 0 0; min-height: 1.6em; }
+  .proto-note { font-size: 0.8125rem; color: var(--muted); margin-top: 1rem; }
+
+  /* Receipt */
+  .receipt { border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 4px; background: var(--white); padding: 1.5rem; }
+  .receipt .label { font-size: 0.875rem; color: var(--muted); margin: 0; }
+  .case-no { font-family: var(--kufi); font-size: clamp(2rem, 6vw, 2.75rem); font-weight: 800; color: var(--green); margin: 0.1rem 0 0.5rem; letter-spacing: 0.02em; }
+  .receipt p { margin: 0.4rem 0; }
+  .receipt .actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.25rem; }
+
+  @media (max-width: 860px) {
+    .layout { grid-template-columns: 1fr; }
+    .help { position: static; }
+  }
+  @media (max-width: 640px) {
+    .cats { grid-template-columns: 1fr 1fr; }
+    .progress li { font-size: 0; }
+    .review div { grid-template-columns: 1fr auto; }
+    .review dt { grid-column: 1 / -1; }
+  }
+</style>
+<script src="../shared/prototype.js" defer></script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
+      <div><strong>Mayoralty of Baghdad</strong><span>Official website · Republic of Iraq</span></div>
+    </a>
+    <button class="menu-btn" type="button" popovertarget="menu">Menu</button>
+    <nav class="menu" id="menu" popover aria-label="Main menu">
+      <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">Close</button>
+      <ul class="nav">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="report.html" aria-current="page">Report a problem</a></li>
+        <li><a href="districts.html">Districts</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="lang"><a href="../report.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../ku/report.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">Report a problem</li>
+    </ol>
+  </nav>
+
+  <div class="layout">
+  <div class="flow">
+    <form id="track" action="track.html" hidden></form>
+    <form id="report" novalidate>
+
+      <div id="intro">
+        <h1>Report a problem</h1>
+        <p class="lede">Four short steps. At the end you get a report number to follow it with. Prefer WhatsApp? <a href="index.html#report">Report on WhatsApp</a></p>
+        <div class="track-row">
+          <label for="track-no">Reported before? Track it with your report number.</label>
+          <div class="track-box">
+            <input id="track-no" name="n" form="track" placeholder="B-48213" autocomplete="off">
+            <button type="submit" form="track" aria-label="Track this report number">Track</button>
+          </div>
+        </div>
+        <p class="danger">If someone's life is at risk, for example from a bare electric wire or an open manhole, call emergency services first, then tell us.</p>
+
+        <ol class="progress" aria-hidden="true">
+          <li data-p="1">Problem</li>
+          <li data-p="2">Place</li>
+          <li data-p="3">Photo and note</li>
+          <li data-p="4">Review</li>
+        </ol>
+        <p class="step-count" aria-live="polite"></p>
+      </div>
+
+      <!-- 1. What -->
+      <fieldset class="step on" data-step="1" style="border:0;margin:0;padding:0">
+        <legend><h2>What is the problem?</h2></legend>
+        <ul class="cats">
+          <li><input type="radio" name="cat" id="c-water" value="انقطاع الماء"><label for="c-water"><strong>Water cut</strong><span>No water, or very low pressure</span></label></li>
+          <li><input type="radio" name="cat" id="c-sewer" value="طفح المجاري"><label for="c-sewer"><strong>Sewage overflow</strong><span>Dirty water in the street or a blocked drain</span></label></li>
+          <li><input type="radio" name="cat" id="c-waste" value="النفايات"><label for="c-waste"><strong>Waste</strong><span>Not collected, or dumped in a public place</span></label></li>
+          <li><input type="radio" name="cat" id="c-light" value="إنارة الشوارع"><label for="c-light"><strong>Street lights</strong><span>A light that is out or damaged</span></label></li>
+          <li><input type="radio" name="cat" id="c-road" value="الطرق والأرصفة"><label for="c-road"><strong>Roads and pavements</strong><span>A pothole, a broken pavement, standing rainwater</span></label></li>
+          <li><input type="radio" name="cat" id="c-other" value="أخرى"><label for="c-other"><strong>Something else</strong><span>Unpermitted building, a fallen tree, anything else</span></label></li>
+        </ul>
+      </fieldset>
+
+      <!-- 2. Where -->
+      <fieldset class="step" data-step="2" style="border:0;margin:0;padding:0">
+        <legend><h2>Where is it?</h2></legend>
+        <p class="hint">Tap the map or drag the pin to the place.</p>
+        <div id="map" role="application" aria-label="Map to mark where the problem is"></div>
+        <div class="map-tools">
+          <button type="button" class="btn" id="locate">Use my current location</button>
+          <span class="coords" id="coords"></span>
+        </div>
+        <div class="field">
+          <label for="district">Municipality</label>
+          <select id="district" required><option value="">Choose a municipality</option></select>
+        </div>
+        <div class="field">
+          <label for="landmark">Nearest landmark or address <span class="opt">(optional)</span></label>
+          <input type="text" id="landmark" placeholder="For example: near the ... mosque, Mahalla 904, Lane 12">
+        </div>
+      </fieldset>
+
+      <!-- 3. Photo and description -->
+      <fieldset class="step" data-step="3" style="border:0;margin:0;padding:0">
+        <legend><h2>Add a photo and a note</h2></legend>
+        <p class="hint">A photo helps the crew bring what they need before they arrive.</p>
+        <div class="field">
+          <span class="label">Photo <span class="opt">(optional)</span></span>
+          <label class="drop" id="drop">
+            <input type="file" id="photo" accept="image/*" capture="environment" aria-label="Add a photo">
+            <span class="prompt"><strong>Take a photo or choose one from your phone</strong><span>One photo is enough</span></span>
+          </label>
+        </div>
+        <div class="field">
+          <label for="desc">Short note <span class="opt">(optional)</span></label>
+          <textarea id="desc" placeholder="For example: sewage has been overflowing for two days and reaches the school gate"></textarea>
+        </div>
+      </fieldset>
+
+      <!-- 4. Review -->
+      <fieldset class="step" data-step="4" style="border:0;margin:0;padding:0">
+        <legend><h2>Check your report</h2></legend>
+        <dl class="review">
+          <div><dt>Problem</dt><dd id="r-cat"></dd><button type="button" data-go="1">Change</button></div>
+          <div><dt>Place</dt><dd id="r-place"></dd><button type="button" data-go="2">Change</button></div>
+          <div><dt>Photo and note</dt><dd id="r-desc"></dd><button type="button" data-go="3">Change</button></div>
+        </dl>
+        <div class="field">
+          <span class="label">How should we send you updates? <span class="opt">(optional)</span></span>
+          <div class="updates">
+            <label><input type="radio" name="via" value="whatsapp" checked> WhatsApp</label>
+            <label><input type="radio" name="via" value="sms"> Text message</label>
+            <label><input type="radio" name="via" value="none"> No updates; I'll follow it with the report number</label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number <span class="opt">(for updates only)</span></label>
+          <input type="tel" id="phone" inputmode="tel" placeholder="07XX XXX XXXX" autocomplete="off">
+        </div>
+        <p class="proto-note">Study prototype: nothing on this page is sent.</p>
+      </fieldset>
+
+      <p class="error" id="error" role="alert"></p>
+
+      <div class="nav-row" id="nav-row">
+        <button type="button" class="back" id="back" hidden>← Back</button>
+        <button type="button" class="btn" id="next">Next</button>
+      </div>
+    </form>
+
+    <!-- Receipt -->
+    <section id="done" hidden aria-live="polite">
+      <h1>Your report is in</h1>
+      <div class="receipt" style="margin-top:1.25rem">
+        <p class="label">Report number</p>
+        <p class="case-no">B-48213</p>
+        <p id="done-line"></p>
+        <p>You get a first reply within two working days. <span class="note" style="display:inline">(illustrative)</span></p>
+        <p id="done-via"></p>
+        <div class="actions">
+          <a class="btn" href="track.html">Track this report</a>
+          <a class="btn" href="report.html">Report something else</a>
+        </div>
+      </div>
+      <p class="proto-note">Keep the report number. You can follow it any time from "Track a report", with no account.</p>
+    </section>
+  </div>
+
+  <aside class="help" aria-label="Help">
+    <section>
+      <h2>What happens after you report?</h2>
+      <ol>
+        <li>You get a report number straight away.</li>
+        <li>It goes to your municipality and the right section.</li>
+        <li>You get updates until it is closed.</li>
+      </ol>
+    </section>
+    <section>
+      <h2>On WhatsApp</h2>
+      <p>Send a photo and your location to the Mayoralty's verified number, and the report number comes back in the chat.</p>
+    </section>
+    <section>
+      <h2>By phone or app</h2>
+      <p>Call <strong>5628</strong>, 8:30 am – 2 pm, or use the Mayoralty's app, Baghdad Citizen Voice.</p>
+      <p>Every channel feeds the same complaints system, so a report made by phone or in the app has a number you can track here.</p>
+    </section>
+  </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">Mayoralty of Baghdad</div>
+      <div><h2>Services</h2><ul><li><a href="services.html">All services</a></li><li><a href="report.html">Report a problem</a></li><li><a href="track.html">Track a report</a></li><li><a href="alerts.html">Alerts</a></li></ul></div>
+      <div><h2>The city</h2><ul><li><a href="districts.html">Districts</a></li><li><a href="projects.html">Projects</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li></ul></div>
+      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">About</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="news.html">News</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
+      <div><h2>This site</h2><ul><li><a href="about.html#search">How search works</a></li><li><a href="about.html#access">Accessibility</a></li><li><a href="about.html#privacy">Privacy</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p class="hotline">Hotline <strong>5628</strong>, 8:30 am – 2 pm · <a href="https://www.facebook.com/mayoralty.baghdad" rel="external">Facebook</a> · <a href="https://www.instagram.com/mayoralty_baghdad" rel="external">Instagram</a> · <a href="https://x.com/mayoralty_bd" rel="external">X</a></p>
+      <p>Seal: community redraw — CC BY-SA 4.0 — Wikimedia Commons. Photos credited with each photo.</p>
+    </div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="../shared/home.js"></script>
+<script>
+  // Report flow. Steps swap in place; nothing is sent anywhere.
+
+  const form = document.getElementById('report');
+  const steps = [...form.querySelectorAll('.step')];
+  const progress = [...document.querySelectorAll('.progress li')];
+  const count = document.querySelector('.step-count');
+  const back = document.getElementById('back');
+  const next = document.getElementById('next');
+  const error = document.getElementById('error');
+  const district = document.getElementById('district');
+  let step = 1;
+  let map, pin, moved = false;
+
+  DISTRICTS.forEach((d, i) => district.append(new Option(`${d.en} · ${SIDE_EN[d.side]}`, i)));
+  const catLabel = () => form.querySelector('input[name=cat]:checked + label strong').textContent;
+
+  function show(n, first) {
+    step = n;
+    steps.forEach(s => s.classList.toggle('on', Number(s.dataset.step) === n));
+    progress.forEach(p => {
+      const k = Number(p.dataset.p);
+      p.className = k < n ? 'done' : k === n ? 'now' : '';
+    });
+    count.textContent = `Step ${n} of 4`;
+    back.hidden = n === 1;
+    next.textContent = n === 4 ? 'Send report' : 'Next';
+    error.textContent = '';
+    if (n === 2) setupMap();
+    if (n === 4) fillReview();
+    if (!first) document.getElementById('intro').scrollIntoView({ block: 'start' });
+  }
+
+  function valid() {
+    if (step === 1 && !form.cat.value) return 'Choose the kind of problem.';
+    if (step === 2 && !moved) return 'Mark the place on the map.';
+    if (step === 2 && district.value === '') return 'Choose the municipality.';
+    return '';
+  }
+
+  function setupMap() {
+    if (map) { map.invalidateSize(); return; }
+    const center = [33.3152, 44.3661];
+    map = L.map('map', { zoomControl: true }).setView(center, 13);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap'
+    }).addTo(map);
+    pin = L.marker(center, { draggable: true }).addTo(map);
+    const set = latlng => {
+      pin.setLatLng(latlng);
+      moved = true;
+      document.getElementById('coords').textContent = `${latlng.lat.toFixed(5)}, ${latlng.lng.toFixed(5)}`;
+    };
+    map.on('click', e => set(e.latlng));
+    pin.on('dragend', () => set(pin.getLatLng()));
+    document.getElementById('locate').addEventListener('click', () => {
+      if (!navigator.geolocation) return;
+      navigator.geolocation.getCurrentPosition(
+        p => { const ll = L.latLng(p.coords.latitude, p.coords.longitude); set(ll); map.setView(ll, 16); },
+        () => { error.textContent = 'We could not find your location. Mark it on the map.'; }
+      );
+    });
+  }
+
+  function fillReview() {
+    const d = DISTRICTS[district.value];
+    const lm = document.getElementById('landmark').value.trim();
+    const desc = document.getElementById('desc').value.trim();
+    const hasPhoto = document.getElementById('photo').files.length > 0;
+    document.getElementById('r-cat').textContent = catLabel();
+    document.getElementById('r-place').textContent = `${d.en} municipality${lm ? ' · ' + lm : ''}`;
+    document.getElementById('r-desc').textContent = [hasPhoto ? 'One photo' : 'No photo', desc || 'No note'].join(' · ');
+  }
+
+  next.addEventListener('click', () => {
+    const msg = valid();
+    if (msg) { error.textContent = msg; return; }
+    if (step < 4) { show(step + 1); return; }
+    const d = DISTRICTS[district.value];
+    const via = form.via.value;
+    document.getElementById('done-line').textContent = `“${catLabel()}” report sent to ${d.en} municipality.`;
+    document.getElementById('done-via').textContent =
+      via === 'whatsapp' ? 'We will send every update on WhatsApp.' :
+      via === 'sms' ? 'We will send every update by text message.' : 'Follow it with the report number.';
+    form.hidden = true;
+    document.getElementById('done').hidden = false;
+    window.scrollTo(0, 0);
+  });
+  back.addEventListener('click', () => show(step - 1));
+  form.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => show(Number(b.dataset.go))));
+
+  document.getElementById('photo').addEventListener('change', e => {
+    const file = e.target.files[0];
+    const drop = document.getElementById('drop');
+    drop.querySelector('img')?.remove();
+    if (!file) return;
+    const img = document.createElement('img');
+    img.alt = 'Attached photo';
+    img.src = URL.createObjectURL(file);
+    drop.append(img);
+  });
+
+  const params = new URLSearchParams(location.search);
+  const pre = params.get('cat');
+  if (pre) { const r = [...form.cat].find(x => x.value === pre); if (r) r.checked = true; }
+  const preD = DISTRICTS.findIndex(d => d.slug === params.get('d'));
+  if (preD > -1) district.value = preD;
+
+  show(1, true);
+</script>
+</body>
+</html>

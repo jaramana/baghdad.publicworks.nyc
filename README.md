@@ -1,6 +1,6 @@
 # Amanat Baghdad — website case study
 
-Private prototype. A redesign of the Mayoralty of Baghdad's website, built as a case study in digital government. Local only. No remote, no public hosting, no Artifact publishing, because it uses a real government's name and seal.
+A design prototype for the Mayoralty of Baghdad's website, built as a case study in digital government. Live demo: https://baghdad.publicworks.nyc, served by GitHub Pages from `docs/`. It uses a real government's name and seal, so every page carries a sticky prototype bar (`docs/shared/prototype.js`) that links to the real site. No Artifact publishing.
 
 Not part of the publicworks.nyc suite.
 
@@ -11,8 +11,8 @@ Not part of the publicworks.nyc suite.
 | Client | Amanat Baghdad (Mayoralty), not the national government |
 | Language | Arabic-first for residents, right to left. The English site is the working version (see next row) |
 | Working language | English first, because the owner reviews in English. Arabic pages are frozen until the English settles, then translated |
-| English structure | `site/en/`, one English file per page with the same filename as its Arabic counterpart in `site/` |
-| Kurdish | Sorani (`lang="ckb"`, Arabic script, right to left) in `site/ku/`, same filenames as `site/en/`, translated from the English. Pilot of four pages: home, Services, Building permit, Report a problem. The rest follow once the English settles, alongside the Arabic pass |
+| English structure | `docs/en/`, one English file per page with the same filename as its Arabic counterpart in `docs/` |
+| Kurdish | Sorani (`lang="ckb"`, Arabic script, right to left) in `docs/ku/`, same filenames as `docs/en/`, translated from the English. Pilot of four pages: home, Services, Building permit, Report a problem. The rest follow once the English settles, alongside the Arabic pass |
 | Language links | Every paired page lists the other two languages in fixed order: العربية, کوردی, English. A page with no Kurdish twin sends کوردی to the Kurdish home. Kurdish pages link to the English page wherever no Kurdish page exists yet |
 | English name | "Mayoralty of Baghdad", the English text on the seal's ring. "Amanat" appears only once, in About, to give the Arabic name |
 | Site map | Five sections: Services, Report a problem, Districts, Projects, About. Each has an index page listing everything under it. Every page has a breadcrumb and a highlighted nav item. The footer lists the whole site |
@@ -24,12 +24,12 @@ Not part of the publicworks.nyc suite.
 | Side columns | Allowed, but never as cards. Side blocks are plain text under a 2px green rule (`.start`, `.side-card`, `.help section`) |
 | No hand-kept counts | No totals that someone must update by hand (e.g. "6 projects run by the Mayoralty"). Lists show their own size |
 | No side roads | No cards or links that send readers to unrelated pages they can reach from the nav |
-| Disclaimers | Scarce. Keep the illustrative label on made-up figures and verified/unverified on project statuses. No research-method notes on public pages. The prototype notice is off the footer and About until a fuller draft; it must return before anyone outside sees the site |
+| Disclaimers | Scarce. Keep the illustrative label on made-up figures and verified/unverified on project statuses. No research-method notes on public pages. The prototype notice lives only in the sticky bar, outside the page design. The model pages stay as the real site would be |
 | No reveal-on-select | Choosing something navigates to a page; it never makes new content appear on the current one. The home district picker is a list of links |
 | Language swap | On every paired page (`shared/lang-swap.css`, `shared/lang-swap.js`). Every page, home included, sweeps in from the new page's reading direction. The swap keeps the reader's place. A mirror glide (seal, language links and home cards travelling to their mirrored place), Settle and the lab panel were tried and dropped |
-| Location | This folder, git with no remote |
+| Location | This folder; `github.com/jaramana/baghdad.publicworks.nyc`, public. Pages serves `docs/` at baghdad.publicworks.nyc. The root sends visitors to the English home |
 | Research | Four parallel agents; findings in `research/` |
-| Home direction | `site/i-blend.html` (30 Oct): the B + C blend revised. Green stays primary but only as lines, text and outlines. Grounded (E) rejected |
+| Home direction | `home.html` (30 Oct, first built as the "i-blend" variant): the B + C blend revised. Green stays primary but only as lines, text and outlines. Grounded (E) rejected |
 | Client package (31 Oct) | About becomes an index with five child pages: Leadership and structure, News, Tenders and auctions, Laws and plans, Open data. They carry what the Mayoralty expects (the Mayor, departments, statements, notices, laws) without putting news on the home page |
 | Complaints | The 5628 hotline and the Citizen Voice app are real and shown wherever reporting is. Our Report flow presents every channel as feeding one complaints system with one kind of number |
 | Deputy mayors | Shown by role only until the Mayoralty confirms names. Posts disagree on who holds Technical and Administrative |
@@ -46,11 +46,10 @@ Not part of the publicworks.nyc suite.
 - The answer slot has a reserved height; answers never move the page
 - Report a problem offers the web form and WhatsApp side by side
 - Districts are listed by bank, each on its own side of the river as on a map: Karkh (west) on the left in English
-- Shared rules live in `site/shared/base.css`. Inner pages add `shared/page.css`. English pages add `shared/en.css` last. Page files hold only their own layout
+- Shared rules live in `docs/shared/base.css`. Inner pages add `shared/page.css`. English pages add `shared/en.css` last. Page files hold only their own layout
 - Maps are Leaflet on OpenStreetMap at 3:2, with wheel zoom off so the page scrolls past them. Marker positions come from OSM place lookups and are approximate
-- Earlier variants stay in `site/` for reference
 
-Preview: `baghdad-site` in this folder's `.claude/launch.json` (port 4321), or `python3 -m http.server 4321 --directory site`. Start at `site/index.html` or go straight to `site/en/index.html`.
+Preview: `baghdad-site` in this folder's `.claude/launch.json` (port 4321), or `python3 -m http.server 4321 --directory docs`. The root redirects to `en/index.html`; the Arabic home is `home.html`.
 
 ## Principles
 
@@ -85,7 +84,7 @@ Preview: `baghdad-site` in this folder's `.claude/launch.json` (port 4321), or `
 | Projects | `en/projects.html` | 14 projects in four groups |
 | About | `en/about.html` | Leadership and structure (`leadership.html`), News (`news.html`), Tenders and auctions (`tenders.html`), Laws and plans (`laws.html`), Open data (`data.html`). About itself keeps mandate, who does what, contact, search, accessibility, privacy |
 
-Each English page's العربية link goes to its Arabic counterpart. Projects has none yet, so it links to the Arabic home. Arabic pages' English link goes to their English page; `city-tigris.html` goes to Projects. Every کوردی link goes to the Kurdish twin, or to the Kurdish home when there is none. `site/en.html` is a redirect stub.
+Each English page's العربية link goes to its Arabic counterpart. Projects has none yet, so it links to the Arabic home. Arabic pages' English link goes to their English page; `city-tigris.html` goes to Projects. Every کوردی link goes to the Kurdish twin, or to the Kurdish home when there is none. `docs/index.html` is a redirect to the English home.
 
 ## Page types
 
@@ -106,7 +105,6 @@ Each English page's العربية link goes to its Arabic counterpart. Projects
 
 ## Open items
 
-- The prototype notice must return to the footer and About before the client or anyone outside sees the site
 - WhatsApp "Open the chat" has no target, because no Mayoralty WhatsApp number exists
 - Pay-bill links to nothing, because the payment site's operator is unverified
 - The Arabic pages are behind the English: old nav (المدينة, no Projects or About), district dropdown on the home, no Projects page, no tenders or contact sections in About
@@ -122,7 +120,7 @@ Each English page's العربية link goes to its Arabic counterpart. Projects
 - The Kurdish name ئەمانەتی بەغدا and the Kurdish Ur service name are unverified
 ## Next session
 
-State on 30 Oct 2026: the English site (`site/en/`, 15 pages) and the language swap are committed on `main`. A Kurdish pilot (`site/ku/`, 4 pages) and a three-language switcher on every paired page followed. The owner is reviewing the English pages and will send feedback.
+State on 30 Oct 2026: the English site (`docs/en/`, 15 pages) and the language swap are committed on `main`. A Kurdish pilot (`docs/ku/`, 4 pages) and a three-language switcher on every paired page followed. The owner is reviewing the English pages and will send feedback.
 
 ### Owner preferences
 
@@ -136,7 +134,7 @@ State on 30 Oct 2026: the English site (`site/en/`, 15 pages) and the language s
 ### Start here
 
 1. Read this README, then `research/current-site.md` or `research/urban-context.md` if a question touches today's site or a project.
-2. Run `baghdad-site` from `.claude/launch.json` (port 4321). Open `site/en/index.html`.
+2. Run `baghdad-site` from `.claude/launch.json` (port 4321). Open `en/index.html`.
 3. Take feedback one page at a time. For an open design question, build two or three variants behind a switch, then remove the switch and the losing variants once the owner picks.
 
 ### Likely next work
@@ -159,7 +157,7 @@ State on 30 Oct 2026: the English site (`site/en/`, 15 pages) and the language s
 
 ### Before committing
 
-- Links: `python3 tools/check_links.py site site/en/*.html site/ku/*.html site/*.html` reports 0 problems
+- Links: `python3 tools/check_links.py docs docs/en/*.html docs/ku/*.html docs/*.html` reports 0 problems
 - No page scrolls sideways at 375px
 - The browser console shows no errors
 - View transitions only run in a visible tab. If the browser pane is hidden, the swap is skipped, so check it with the pane open
@@ -167,8 +165,8 @@ State on 30 Oct 2026: the English site (`site/en/`, 15 pages) and the language s
 ## Folders
 
 - `research/` — benchmark scan, current-site inventory and its deep dive (`current-site-deep.md`), identity and images, urban context, 2024 census by subdistrict
-- `site/` — Arabic pages, earlier home variants and the prototype hub (`index.html`)
-- `site/en/` — the English site
-- `site/ku/` — the Kurdish (Sorani) pilot
-- `site/shared/` — shared styles and scripts
+- `docs/` — the published site: Arabic pages (home is `home.html`), the root redirect and `CNAME`
+- `docs/en/` — the English site
+- `docs/ku/` — the Kurdish (Sorani) pilot
+- `docs/shared/` — shared styles and scripts
 - `tools/` — `check_links.py`, the internal link and anchor check

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الرسوم البلدية — أمانة بغداد</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/lang-swap.css">
+<script src="shared/lang-swap.js"></script>
+<link rel="stylesheet" href="shared/page.css">
+<style>
+  /* Fee lookup: the result fills a slot of fixed height */
+
+  .lookup label { display: block; font-weight: 600; margin-bottom: 0.4rem; }
+  .lookup .row { display: flex; gap: 0.5rem; max-width: 30rem; }
+  .lookup input { flex: 1; min-width: 0; font: inherit; padding: 0.6rem 0.8rem; border: 1px solid var(--ink); border-radius: 3px; background: var(--white); }
+  .lookup .hint { font-size: 0.875rem; color: var(--muted); margin: 0.4rem 0 0; }
+  .result { min-height: 11rem; margin-top: 1rem; padding: 1rem 1.25rem; background: var(--white); border: 1px solid var(--line); border-inline-start: 4px solid var(--green); border-radius: 3px; max-width: 44rem; }
+  .result p { margin: 0.2rem 0; }
+  .result .muted { color: var(--muted); }
+  .result dl { margin: 0.5rem 0 0; }
+  .result dl div { display: flex; justify-content: space-between; gap: 1rem; padding-block: 0.3rem; border-bottom: 1px solid var(--line); }
+  .result dt { font-weight: 600; }
+  .result dd { margin: 0; }
+</style>
+<script src="shared/prototype.js" defer></script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="home.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
+      <div><strong>أمانة بغداد</strong><span>الموقع الرسمي · جمهورية العراق</span></div>
+    </a>
+    <button class="menu-btn" type="button" popovertarget="menu">القائمة</button>
+    <nav class="menu" id="menu" popover aria-label="القائمة الرئيسية">
+      <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">إغلاق</button>
+      <ul class="nav">
+        <li><a href="services.html" aria-current="page">الخدمات</a></li>
+        <li><a href="report.html">بلّغ عن مشكلة</a></li>
+        <li><a href="districts.html">البلديات</a></li>
+        <li><a href="city-tigris.html">المدينة</a></li>
+        <li class="lang"><a href="ku/index.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/service-fees.html" lang="en" hreflang="en" dir="ltr">English</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="crumbs" aria-label="مسار الصفحة">
+    <ol>
+      <li><a href="home.html">الرئيسية</a></li>
+      <li><a href="services.html">الخدمات</a></li>
+      <li><a href="services.html#business">الرسوم والأعمال</a></li>
+      <li aria-current="page">الرسوم البلدية</li>
+    </ol>
+  </nav>
+
+  <header class="page-head">
+    <p class="kicker">خدمة · الرسوم والأعمال</p>
+    <h1>الرسوم البلدية</h1>
+    <p class="lede">تفرض الأمانة رسم المهنة على المحال والأعمال، ورسم الإعلان على اللوحات، ورسم النظافة. اعرف ما عليك برقم حسابك، ثم ادفعه في مكتب بلديتك.</p>
+    <ul class="facts">
+      <li><span class="k">من يدفع</span><p class="v">أصحاب المحال والأعمال</p><p class="s">واللوحات الإعلانية</p></li>
+      <li><span class="k">أين تدفع</span><p class="v">مكتب البلدية</p><p class="s">لا دفع إلكتروني بعد</p></li>
+      <li><span class="k">متى</span><p class="v">مرة في السنة</p><p class="s">توضيحي</p></li>
+    </ul>
+  </header>
+
+  <div class="layout">
+    <article class="guide">
+      <p class="illustrative">أنواع الرسوم الثلاثة من موقع الأمانة الحالي. البحث برقم الحساب ونتيجته والمبالغ والمواعيد توضيحية في هذا النموذج.</p>
+
+      <section id="lookup" aria-labelledby="lookup-h">
+        <h2 id="lookup-h">كم عليك؟</h2>
+        <form class="lookup" id="lookup-form">
+          <label for="acct">رقم الحساب</label>
+          <div class="row">
+            <input id="acct" inputmode="text" autocomplete="off" placeholder="مثلاً: ك-١٠٢٤٥٥">
+            <button class="btn" type="submit">اعرض</button>
+          </div>
+          <p class="hint">مطبوع على آخر إيصال دفعته. لا تعرفه؟ يعطيك إياه مكتب بلديتك.</p>
+        </form>
+        <div class="result" id="result" aria-live="polite">
+          <p class="muted">تظهر الرسوم المستحقة على حسابك هنا.</p>
+        </div>
+      </section>
+
+      <section id="kinds" aria-labelledby="kinds-h">
+        <h2 id="kinds-h">أنواع الرسوم</h2>
+        <ul class="index-list">
+          <li><span class="t">رسم المهنة</span><p>على كل محل أو مكتب أو ورشة تعمل داخل حدود الأمانة. يختلف حسب نوع العمل وموقعه.</p></li>
+          <li><span class="t">رسم الإعلان</span><p>على كل لوحة أو إعلان مطلّ على الشارع. يُحسب حسب المساحة والموقع.</p></li>
+          <li><span class="t">رسم النظافة</span><p>مقابل رفع النفايات من المحال والأعمال.</p></li>
+        </ul>
+      </section>
+
+      <section id="pay" aria-labelledby="pay-h">
+        <h2 id="pay-h">الدفع</h2>
+        <ol class="steps">
+          <li><div><strong>اعرف المبلغ</strong><span>برقم حسابك أعلاه.</span></div></li>
+          <li><div><strong>ادفع <span class="where">مكتب البلدية</span></strong><span>في قسم الجباية، نقداً أو بالبطاقة حيث تتوفر.</span></div></li>
+          <li><div><strong>احتفظ بالإيصال</strong><span>عليه رقم حسابك للسنة القادمة.</span></div></li>
+        </ol>
+      </section>
+
+      <section id="privacy" aria-labelledby="privacy-h">
+        <h2 id="privacy-h">لماذا لا ننشر قوائم الأسماء</h2>
+        <p>كان موقع الأمانة ينشر قوائم المكلّفين بأسمائهم وأعمالهم، بلدية بعد بلدية. هذا الموقع لا ينشرها. ترى ما عليك برقم حسابك وحدك، ولا يرى أحد غيرك ما عليك.</p>
+      </section>
+    </article>
+
+    <aside class="action" aria-label="الدفع">
+      <div class="start">
+        <h2>ادفع في مكتب بلديتك</h2>
+        <p>الأحد إلى الخميس، ٨:٣٠ صباحاً – ٢:٣٠ ظهراً.</p>
+        <a class="btn" href="districts.html">اعثر على مكتب بلديتك</a>
+        <div class="alt">
+          <p>تعتقد أن المبلغ خطأ؟ <a href="report.html?cat=أخرى">أخبرنا</a> وسنرد عليك برقم تتابعه.</p>
+        </div>
+      </div>
+      <nav class="toc" aria-labelledby="toc-h">
+        <h2 id="toc-h">في هذه الصفحة</h2>
+        <ol>
+          <li><a href="#lookup">كم عليك؟</a></li>
+          <li><a href="#kinds">أنواع الرسوم</a></li>
+          <li><a href="#pay">الدفع</a></li>
+          <li><a href="#privacy">لماذا لا ننشر القوائم</a></li>
+        </ol>
+      </nav>
+    </aside>
+  </div>
+
+  <section class="block ruled" aria-labelledby="related-h">
+    <div class="block-head"><h2 id="related-h">خدمات ذات صلة</h2></div>
+    <ul class="related">
+      <li><a href="service-property.html"><strong>بيان عقار</strong><p>للعقار الذي تعمل فيه.</p></a></li>
+      <li><a href="https://itp.iq" rel="external"><strong>المناقصات والمزايدات ↗</strong><p>على المنصة الوطنية الموحدة.</p></a></li>
+      <li><a href="report.html?cat=النفايات"><strong>بلّغ عن النفايات</strong><p>إن لم تُرفع من أمام محلك.</p></a></li>
+    </ul>
+    <div class="feedback">
+      <p>هل وجدت ما تحتاجه في هذه الصفحة؟</p>
+      <div class="btns"><button class="btn" type="button">نعم</button><button class="btn" type="button">لا</button></div>
+    </div>
+    <p class="meta">آخر مراجعة: ٣٠ تشرين الأول ٢٠٢٦</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">عن الأمانة</a></li><li><a href="districts.html">البلديات</a></li><li><a href="services.html#business">المناقصات</a></li></ul></div>
+      <div><h2>الخدمات</h2><ul><li><a href="report.html">بلّغ عن مشكلة</a></li><li><a href="track.html">تابع بلاغك</a></li><li><a href="services.html">كل الخدمات</a></li></ul></div>
+      <div><h2>الموقع</h2><ul><li><a href="about.html#access">إمكانية الوصول</a></li><li><a href="about.html#privacy">الخصوصية</a></li><li><a href="data.html">البيانات المفتوحة</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p>الختم: إعادة رسم مجتمعية — CC BY-SA 4.0 — Wikimedia Commons.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Any account number returns the same illustrative record.
+
+  document.getElementById('lookup-form').addEventListener('submit', e => {
+    e.preventDefault();
+    const acct = document.getElementById('acct').value.trim().replace(/[<>&"]/g, '');
+    const box = document.getElementById('result');
+    if (!acct) {
+      box.innerHTML = '<p>أدخل رقم الحساب كما هو على الإيصال.</p>';
+      return;
+    }
+    box.innerHTML = `
+      <p><strong>حساب ${acct}</strong> · بلدية الكرادة</p>
+      <p class="muted">محل تجاري · شارع ٦٢</p>
+      <dl>
+        <div><dt>رسم المهنة ٢٠٢٦</dt><dd>مدفوع</dd></div>
+        <div><dt>رسم الإعلان ٢٠٢٦</dt><dd>٧٥٬٠٠٠ دينار · مستحق</dd></div>
+        <div><dt>رسم النظافة ٢٠٢٦</dt><dd>٣٠٬٠٠٠ دينار · مستحق</dd></div>
+      </dl>
+      <p class="note">نتيجة توضيحية في هذا النموذج.</p>`;
+  });
+</script>
+</body>
+</html>
