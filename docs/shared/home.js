@@ -1,6 +1,6 @@
-// Behavior shared by the home pages (Arabic, English, Kurdish) and the report flow.
-// The search demo routes a plain-language request with keyword rules.
-// A real build would use a model that answers only from site pages.
+// Behavior shared by the Arabic and Kurdish home pages and the report flow.
+// The Arabic and Kurdish search demo routes a request with keyword rules.
+// English search has its own results page (en/search.html).
 
 const LANG = { en: 'en', ckb: 'ckb' }[document.documentElement.lang] ?? 'ar';
 
@@ -42,18 +42,6 @@ const ROUTES = {
     { match: /عقار|سند|بيان/, title: 'بيان عقار', body: 'يصدر البيان إلكترونياً على بوابة أور. تحتاجه للبيع والإرث والإجازات.', action: 'اقرأ دليل البيان', source: 'بيان عقار', href: 'service-property.html' },
     { match: /رسوم|رسم|دفع/, title: 'الرسوم البلدية', body: 'رسوم المهن والإعلانات والنظافة، ومن أين تُدفع.', action: 'اقرأ دليل الرسوم', source: 'الرسوم البلدية', href: 'service-fees.html' }
   ],
-  en: [
-    { match: /sewer|sewage|overflow|drain/i, title: 'Report a sewage overflow', body: 'We open the report form with the problem type filled in. Add a photo and pin the place on the map.', action: 'Start a report', source: 'Sewers and drainage', href: 'report.html?cat=طفح المجاري' },
-    { match: /bill|account|meter/i, title: 'Water account', body: 'Paying, opening an account and changing the name are done on the Ur portal.', action: 'Go to water account', source: 'Water account', href: 'service-water.html' },
-    { match: /water cut|no water|outage|water/i, title: 'Report a water cut', body: 'We open the report form with the problem type filled in. If a cut is scheduled in your area, you see it first.', action: 'Start a report', source: 'Water cuts', href: 'report.html?cat=انقطاع الماء' },
-    { match: /garbage|trash|rubbish|waste/i, title: 'Report uncollected waste', body: 'We open the report form. Add a photo and we send it to your district office.', action: 'Start a report', source: 'Waste collection', href: 'report.html?cat=النفايات' },
-    { match: /light|lamp/i, title: 'Report a street light', body: 'Pin the pole on the map or add a photo of it.', action: 'Start a report', source: 'Street lighting', href: 'report.html?cat=إنارة الشوارع' },
-    { match: /pothole|road|pavement|sidewalk/i, title: 'Report a road or pavement problem', body: 'Add a photo and pin the place. We send it to the department in charge.', action: 'Start a report', source: 'Roads and pavements', href: 'report.html?cat=الطرق والأرصفة' },
-    { match: /permit|build|renovat/i, title: 'Building permit', body: 'You apply on the Ur portal. Read first what documents you need, what it costs and how long it takes.', action: 'Read the permit guide', source: 'Building permit', href: 'service-permit.html' },
-    { match: /property|deed|statement/i, title: 'Property statement', body: 'Issued online on the Ur portal. You need it to sell, inherit or apply for a permit.', action: 'Read the statement guide', source: 'Property statement', href: 'service-property.html' },
-    { match: /fee|tax|pay/i, title: 'Municipal fees', body: 'Trade, advertising and cleaning fees, and where to pay them.', action: 'Read the fees guide', source: 'Municipal fees', href: 'service-fees.html' }
-  ],
-
   // Kurdish guides not yet translated open their English page
 
   ckb: [
@@ -83,20 +71,6 @@ const STR = {
     reportsK: 'بلاغات هذا الشهر', reportsV: (n, p) => `${num(n)} بلاغاً، أُغلق ${num(p)}٪ منها`,
     link: 'صفحة البلدية', note: 'أرقام توضيحية في هذا النموذج'
   },
-  en: {
-    wait: 'Searching Mayoralty pages…',
-    none: '<p class="answer-title">No page matches your request.</p><p>Try other words, or <a href="services.html">browse all services</a>.</p>',
-    area: d => `Area: ${d.en} · ${SIDE_EN[d.side]}`,
-    source: s => `Source: the “${s}” page on the Mayoralty site`,
-    group: side => SIDE_EN[side],
-    name: d => `${d.en} municipality`,
-    side: d => `${SIDE_EN[d.side]} · ${d.ar}`,
-    hoursK: 'Office hours', hoursV: 'Sunday to Thursday, 8:30 am – 2:30 pm',
-    worksK: 'Works under way', worksV: n => `${n} projects in the area`,
-    reportsK: 'Reports this month', reportsV: (n, p) => `${n} reports, ${p}% closed`,
-    link: 'District page', note: 'Figures are illustrative in this prototype'
-  },
-
   // Kurdish pages use search only; the district card is Arabic-home only
 
   ckb: {

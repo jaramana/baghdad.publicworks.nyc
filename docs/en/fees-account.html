@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fees on your account — Mayoralty of Baghdad</title>
+<link rel="alternate" hreflang="ar" href="../service-fees.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@600&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/base.css">
+<link rel="stylesheet" href="../shared/page.css">
+<link rel="stylesheet" href="../shared/en.css">
+<link rel="stylesheet" href="../shared/lang-swap.css">
+<script src="../shared/lang-swap.js"></script>
+<style>
+  /* Fees on one account: what is due, then how to pay */
+
+  .fees { margin: 0; border-top: 2px solid var(--green); max-width: 36rem; }
+  .fees div { display: flex; justify-content: space-between; gap: 1rem; padding-block: 0.6rem; border-bottom: 1px solid var(--line); }
+  .fees dt { font-weight: 600; }
+  .fees dd { margin: 0; }
+  .lookup label { display: block; font-weight: 600; margin-bottom: 0.4rem; }
+  .lookup .row { display: flex; gap: 0.5rem; max-width: 30rem; }
+  .lookup input { flex: 1; min-width: 0; font: inherit; padding: 0.6rem 0.8rem; border: 1px solid var(--ink); border-radius: 3px; background: var(--white); }
+</style>
+<script src="../shared/prototype.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
+      <div><strong>Mayoralty of Baghdad</strong><span>Official website · Republic of Iraq</span></div>
+    </a>
+    <button class="menu-btn" type="button" popovertarget="menu">Menu</button>
+    <nav class="menu" id="menu" popover aria-label="Main menu">
+      <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">Close</button>
+      <ul class="nav">
+        <li class="has-sub"><a href="services.html" aria-current="true">Services</a>
+          <ul class="sub">
+            <li><a href="service-permit.html">Building permit</a></li>
+            <li><a href="service-water.html">Water account</a></li>
+            <li><a href="service-property.html">Property statement</a></li>
+            <li><a href="service-sewer.html">Sewer connection</a></li>
+            <li><a href="service-fees.html" aria-current="true">Municipal fees</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html">Report a problem</a></li>
+        <li><a href="districts.html">Districts</a></li>
+        <li><a href="news.html">News</a></li>
+        <li class="has-sub end"><a href="about.html">The Mayoralty</a>
+          <ul class="sub">
+            <li><a href="leadership.html">Leadership and structure</a></li>
+            <li><a href="tenders.html">Tenders and auctions</a></li>
+            <li><a href="laws.html">Laws and plans</a></li>
+            <li><a href="data.html">Open data</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+        </li>
+        <li class="lang"><a href="../service-fees.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../ku/index.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="service-fees.html">Municipal fees</a></li>
+    </ol>
+  </nav>
+
+  <header class="page-head">
+    <h1>Fees on your account</h1>
+    <p class="lede">Account <span id="acct-no"></span> · Karrada municipality · Shop, 62nd Street</p>
+  </header>
+
+  <div class="layout">
+    <article class="guide">
+      <p class="illustrative">This account and its amounts are illustrative.</p>
+
+      <section id="due" aria-labelledby="due-h">
+        <h2 id="due-h">2026</h2>
+        <dl class="fees">
+          <div><dt>Trade fee</dt><dd>Paid</dd></div>
+          <div><dt>Advertising fee</dt><dd>75,000 dinars · due</dd></div>
+          <div><dt>Cleaning fee</dt><dd>30,000 dinars · due</dd></div>
+        </dl>
+      </section>
+
+      <section id="pay" aria-labelledby="pay-h">
+        <h2 id="pay-h">How to pay</h2>
+        <p>Pay at the collection section of your district office, Sunday to Thursday, 8:30 am – 2:30 pm, in cash or by card where available. Bring your account number and keep the receipt. <a href="districts.html">Find your district office</a></p>
+      </section>
+
+      <section id="again" aria-labelledby="again-h">
+        <h2 id="again-h">Look up another account</h2>
+        <form class="lookup" action="fees-account.html">
+          <label for="acct">Account number</label>
+          <div class="row">
+            <input id="acct" name="acct" required autocomplete="off" placeholder="For example: K-102455">
+            <button class="btn" type="submit">Show</button>
+          </div>
+        </form>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">Mayoralty of Baghdad</div>
+      <div><h2>Services</h2><ul><li><a href="services.html">All services</a></li><li><a href="report.html">Report a problem</a></li><li><a href="track.html">Track a report</a></li><li><a href="alerts.html">Alerts</a></li></ul></div>
+      <div><h2>The city</h2><ul><li><a href="districts.html">Districts</a></li><li><a href="news.html">News</a></li></ul></div>
+      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">Overview</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
+      <div><h2>This website</h2><ul><li><a href="site.html#privacy">Privacy</a></li><li><a href="site.html#access">Accessibility</a></li><li><a href="site.html#search">How search works</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p class="hotline"><span>Hotline <a href="tel:5628"><strong>5628</strong></a>, 8:30 am – 2 pm</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>Seal: community redraw — CC BY-SA 4.0 — Wikimedia Commons. Photos credited with each photo.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Any account number shows the same illustrative record
+
+  const acct = (new URLSearchParams(location.search).get('acct') || '').trim();
+  if (acct) document.getElementById('acct-no').textContent = acct;
+  else location.replace('service-fees.html#lookup');
+</script>
+</body>
+</html>

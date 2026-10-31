@@ -17,10 +17,12 @@
   table.data .ar { display: block; font-family: "IBM Plex Sans Arabic", sans-serif; font-size: 0.75rem; color: var(--muted); }
   .sets .tag.soon { color: var(--amber); }
   .sets .tag.no { color: var(--muted); }
+  .guide h3 { font-size: 1.0625rem; margin: 1.5rem 0 0.5rem; }
 </style>
 <script src="../shared/prototype.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to main content</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -60,28 +62,17 @@
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="main">
   <nav class="crumbs" aria-label="Breadcrumb">
     <ol>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">The Mayoralty</a></li>
-      <li aria-current="page">Open data</li>
     </ol>
   </nav>
 
   <header class="page-head">
-    <p class="kicker">The Mayoralty</p>
     <h1>Open data</h1>
-    <p class="lede">Data about the city that you can read, download and reuse. Each dataset comes with its source, its date and its limits. We don't publish a number whose source we don't know.</p>
-    <nav class="tabs" aria-label="The Mayoralty">
-      <ul>
-        <li><a href="about.html">Overview</a></li>
-        <li><a href="leadership.html">Leadership</a></li>
-        <li><a href="tenders.html">Tenders</a></li>
-        <li><a href="laws.html">Laws and plans</a></li>
-        <li><a href="data.html" aria-current="page">Open data</a></li>
-      </ul>
-    </nav>
+    <p class="lede">Data and reports about the city. Each dataset comes with its source, its date and its limits.</p>
   </header>
 
   <div class="layout">
@@ -89,15 +80,19 @@
 
       <section id="sets" aria-labelledby="sets-h">
         <h2 id="sets-h">Datasets</h2>
+        <h3>Available now</h3>
         <ul class="index-list sets">
           <li><a class="t" href="#census">Population by subdistrict, 2024 census</a><span class="tag">Available</span><p>38 subdistricts in Baghdad Governorate. Central Statistical Organization.</p></li>
-          <li><a class="t" href="https://api.amanatbaghdad.gov.iq/files/2bcd79ee-b221-4c17-9c4e-73edb58a814a.pdf" rel="external">Statistical report, 2025 ↗</a><span class="tag">PDF · Arabic · 7.4 MB</span><p>The Mayoralty's own yearly statistics. To be published as tables once the report is broken down.</p></li>
+          <li><a class="t" href="https://api.amanatbaghdad.gov.iq/files/2bcd79ee-b221-4c17-9c4e-73edb58a814a.pdf" rel="external">Statistical report, 2025 ↗</a><span class="tag">PDF · Arabic · 7.4 MB</span><p>The Mayoralty's annual statistics report. Separate data tables are planned but are not yet available.</p></li>
           <li><a class="t" href="https://api.amanatbaghdad.gov.iq/files/41a227f1-a3f3-4274-a4c6-d16e6436d214.pdf" rel="external">World Bank project disclosures ↗</a><span class="tag">PDF · Arabic</span><p>The Environmental and Social Commitment Plan for the Mayoralty's World Bank-funded works, October 2026. Bank-funded projects must publish it.</p></li>
+        </ul>
+        <h3>Planned</h3>
+        <ul class="index-list sets">
           <li><span class="t">Reports by municipality</span><span class="tag soon">When reporting launches</span><p>How many reports, what kind, and how long they took to close, every day. No photos or names.</p></li>
           <li><span class="t">Sewage outfalls on the Tigris</span><span class="tag soon">In preparation</span><p>Every outfall, who is responsible and when it will close.</p></li>
           <li><span class="t">Surface heat and green cover</span><span class="tag soon">In preparation</span><p>From Landsat and Sentinel-2 imagery. Surface temperature is not air temperature, and the map will explain the method.</p></li>
           <li><span class="t">Air quality</span><span class="tag no">No live source yet</span><p>Published once a monitoring station is confirmed to be working and publishing readings.</p></li>
-          <li><span class="t">Municipal boundaries</span><span class="tag no">Waiting for the official file</span><p>We don't publish hand-drawn boundaries.</p></li>
+          <li><span class="t">Municipal boundaries</span><span class="tag no">Waiting for the official file</span><p>Published once the Mayoralty releases the official boundary file.</p></li>
         </ul>
       </section>
 
@@ -153,21 +148,14 @@
           </table>
         </div>
         <p class="note">— means the source gives no 2009 estimate. Names are the source's own spelling. The Arabic names under them are our transliteration and may differ from official names.</p>
+        <p class="note">Source: Central Statistical Organization, 2024 census, as compiled by <a href="https://www.citypopulation.de/en/iraq/baghdad/admin/" rel="external">citypopulation.de ↗</a></p>
+      </section>
+
+      <section id="licence" aria-labelledby="licence-h">
+        <h2 id="licence-h">Licence</h2>
+        <p>Data the Mayoralty produces is published under an open licence. Credit the Mayoralty of Baghdad and give the date.</p>
       </section>
     </article>
-
-    <aside class="action" aria-label="About the data">
-      <div class="side-card">
-        <h2>Source</h2>
-        <p>Central Statistical Organization, 2024 census, as compiled by citypopulation.de.</p>
-        <p><a href="https://www.citypopulation.de/en/iraq/baghdad/admin/" rel="external">Source page ↗</a></p>
-        <p class="note">Read on 30 October 2026.</p>
-      </div>
-      <div class="side-card">
-        <h2>Licence</h2>
-        <p>Data the Mayoralty produces is published under an open licence. Credit the Mayoralty of Baghdad and give the date.</p>
-      </div>
-    </aside>
   </div>
 </main>
 
@@ -181,7 +169,7 @@
       <div><h2>This website</h2><ul><li><a href="site.html#privacy">Privacy</a></li><li><a href="site.html#access">Accessibility</a></li><li><a href="site.html#search">How search works</a></li></ul></div>
     </div>
     <div class="fine">
-      <p class="hotline">Hotline <strong>5628</strong>, 8:30 am – 2 pm · <a href="https://www.facebook.com/mayoralty.baghdad" rel="external">Facebook</a> · <a href="https://www.instagram.com/mayoralty_baghdad" rel="external">Instagram</a> · <a href="https://x.com/mayoralty_bd" rel="external">X</a></p>
+      <p class="hotline"><span>Hotline <a href="tel:5628"><strong>5628</strong></a>, 8:30 am – 2 pm</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
       <p>Seal: community redraw — CC BY-SA 4.0 — Wikimedia Commons. Photos credited with each photo.</p>
     </div>
   </div>

@@ -14,23 +14,17 @@
 <link rel="stylesheet" href="../shared/lang-swap.css">
 <script src="../shared/lang-swap.js"></script>
 <style>
-  /* Fee lookup: the result fills a slot of fixed height */
+  /* Fee lookup: the amounts open on their own page */
 
   .lookup label { display: block; font-weight: 600; margin-bottom: 0.4rem; }
   .lookup .row { display: flex; gap: 0.5rem; max-width: 30rem; }
   .lookup input { flex: 1; min-width: 0; font: inherit; padding: 0.6rem 0.8rem; border: 1px solid var(--ink); border-radius: 3px; background: var(--white); }
   .lookup .hint { font-size: 0.875rem; color: var(--muted); margin: 0.4rem 0 0; }
-  .result { min-height: 11rem; margin-top: 1rem; padding: 1rem 1.25rem; background: var(--white); border: 1px solid var(--line); border-inline-start: 4px solid var(--green); border-radius: 3px; max-width: 44rem; }
-  .result p { margin: 0.2rem 0; }
-  .result .muted { color: var(--muted); }
-  .result dl { margin: 0.5rem 0 0; }
-  .result dl div { display: flex; justify-content: space-between; gap: 1rem; padding-block: 0.3rem; border-bottom: 1px solid var(--line); }
-  .result dt { font-weight: 600; }
-  .result dd { margin: 0; }
 </style>
 <script src="../shared/prototype.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to main content</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -70,18 +64,15 @@
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="main">
   <nav class="crumbs" aria-label="Breadcrumb">
     <ol>
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
-      <li><a href="services.html#business">Fees and business</a></li>
-      <li aria-current="page">Municipal fees</li>
     </ol>
   </nav>
 
   <header class="page-head">
-    <p class="kicker">Service · Fees and business</p>
     <h1>Municipal fees</h1>
     <p class="lede">The Mayoralty charges a trade fee on shops and businesses, an advertising fee on signs, and a cleaning fee. Look up what you owe with your account number, then pay at your district office.</p>
     <ul class="facts">
@@ -93,27 +84,24 @@
 
   <div class="layout">
     <article class="guide">
-      <p class="illustrative">The three kinds of fee come from the Mayoralty's current website. The account lookup, its result, the amounts and the dates are illustrative.</p>
+      <p class="illustrative">The account lookup, the amounts and the dates on this page are illustrative.</p>
 
       <section id="lookup" aria-labelledby="lookup-h">
         <h2 id="lookup-h">What do you owe?</h2>
-        <form class="lookup" id="lookup-form">
+        <form class="lookup" action="fees-account.html">
           <label for="acct">Account number</label>
           <div class="row">
-            <input id="acct" inputmode="text" autocomplete="off" placeholder="For example: K-102455">
+            <input id="acct" name="acct" required autocomplete="off" placeholder="For example: K-102455">
             <button class="btn" type="submit">Show</button>
           </div>
           <p class="hint">Printed on your last receipt. Don't know it? Your district office can give it to you.</p>
         </form>
-        <div class="result" id="result" aria-live="polite">
-          <p class="muted">The fees due on your account appear here.</p>
-        </div>
       </section>
 
       <section id="kinds" aria-labelledby="kinds-h">
         <h2 id="kinds-h">Kinds of fee</h2>
         <ul class="index-list">
-          <li><span class="t">Trade fee</span><p>On every shop, office or workshop inside the Mayoralty's boundary. It depends on the kind of business and where it is.</p></li>
+          <li><span class="t">Trade fee</span><p>Applies to every shop, office or workshop inside the Mayoralty's boundary. The amount depends on the business type and location.</p></li>
           <li><span class="t">Advertising fee</span><p>On every sign or advertisement that faces the street. Based on its size and position.</p></li>
           <li><span class="t">Cleaning fee</span><p>For waste collection from shops and businesses.</p></li>
         </ul>
@@ -124,33 +112,11 @@
         <h2 id="pay-h">Paying</h2>
         <ol class="steps">
           <li><div><strong>Find the amount</strong><span>With your account number above.</span></div></li>
-          <li><div><strong>Pay <span class="where">District office</span></strong><span>At the collection section, in cash or by card where available.</span></div></li>
+          <li><div><strong>Pay <span class="where">District office</span></strong><span>At the collection section, Sunday to Thursday, 8:30 am – 2:30 pm, in cash or by card where available. <a href="districts.html">Find your district office</a></span></div></li>
           <li><div><strong>Keep the receipt</strong><span>It has your account number for next year.</span></div></li>
         </ol>
       </section>
-
-      <section id="privacy" aria-labelledby="privacy-h">
-        <h2 id="privacy-h">Why we don't publish lists of names</h2>
-        <p>The Mayoralty's website used to publish lists of fee payers with their names and businesses, municipality by municipality. This site doesn't. You see what you owe with your own account number, and no one else can see it.</p>
-      </section>
     </article>
-
-    <aside class="action" aria-label="Paying">
-      <div class="start">
-        <h2>Pay at your district office</h2>
-        <p>Sunday to Thursday, 8:30 am – 2:30 pm.</p>
-        <a class="btn" href="districts.html">Find your district office</a>
-      </div>
-      <nav class="toc" aria-labelledby="toc-h">
-        <h2 id="toc-h">On this page</h2>
-        <ol>
-          <li><a href="#lookup">What do you owe?</a></li>
-          <li><a href="#kinds">Kinds of fee</a></li>
-          <li><a href="#pay">Paying</a></li>
-          <li><a href="#privacy">Why we don't publish lists</a></li>
-        </ol>
-      </nav>
-    </aside>
   </div>
 
   <section class="block ruled" aria-labelledby="related-h">
@@ -177,32 +143,10 @@
       <div><h2>This website</h2><ul><li><a href="site.html#privacy">Privacy</a></li><li><a href="site.html#access">Accessibility</a></li><li><a href="site.html#search">How search works</a></li></ul></div>
     </div>
     <div class="fine">
-      <p class="hotline">Hotline <strong>5628</strong>, 8:30 am – 2 pm · <a href="https://www.facebook.com/mayoralty.baghdad" rel="external">Facebook</a> · <a href="https://www.instagram.com/mayoralty_baghdad" rel="external">Instagram</a> · <a href="https://x.com/mayoralty_bd" rel="external">X</a></p>
+      <p class="hotline"><span>Hotline <a href="tel:5628"><strong>5628</strong></a>, 8:30 am – 2 pm</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
       <p>Seal: community redraw — CC BY-SA 4.0 — Wikimedia Commons. Photos credited with each photo.</p>
     </div>
   </div>
 </footer>
-<script>
-  // Any account number returns the same illustrative record.
-
-  document.getElementById('lookup-form').addEventListener('submit', e => {
-    e.preventDefault();
-    const acct = document.getElementById('acct').value.trim().replace(/[<>&"]/g, '');
-    const box = document.getElementById('result');
-    if (!acct) {
-      box.innerHTML = '<p>Enter the account number as it appears on your receipt.</p>';
-      return;
-    }
-    box.innerHTML = `
-      <p><strong>Account ${acct}</strong> · Karrada municipality</p>
-      <p class="muted">Shop · 62nd Street</p>
-      <dl>
-        <div><dt>Trade fee 2026</dt><dd>Paid</dd></div>
-        <div><dt>Advertising fee 2026</dt><dd>75,000 dinars · due</dd></div>
-        <div><dt>Cleaning fee 2026</dt><dd>30,000 dinars · due</dd></div>
-      </dl>
-      <p class="note">Illustrative result in this prototype.</p>`;
-  });
-</script>
 </body>
 </html>

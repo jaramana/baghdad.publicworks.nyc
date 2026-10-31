@@ -18,11 +18,11 @@
 <style>
   /* Report flow: four short steps, one at a time, then a receipt */
 
-  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 19rem; gap: clamp(2rem, 5vw, 4rem); align-items: start; padding-block: 1.25rem 4rem; }
+  .layout { padding-block: 1.25rem 4rem; max-width: 50rem; }
   .flow { min-width: 0; }
 
-  /* Help column */
-  .help { position: sticky; top: 7rem; display: grid; gap: 1.75rem; padding-top: 0.5rem; }
+  /* Help: plain blocks under the form */
+  .help { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.75rem; margin-top: 3rem; }
   .help section { border-top: 2px solid var(--green); padding-top: 0.8rem; }
   .help h2 { font-size: 1rem; margin-bottom: 0.4rem; }
   .help p { margin: 0.3rem 0; font-size: 0.9375rem; color: var(--muted); }
@@ -111,8 +111,6 @@
   .receipt .actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.25rem; }
 
   @media (max-width: 860px) {
-    .layout { grid-template-columns: 1fr; }
-    .help { position: static; }
   }
   @media (max-width: 640px) {
     .cats { grid-template-columns: 1fr 1fr; }
@@ -124,6 +122,7 @@
 <script src="../shared/prototype.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to main content</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -163,11 +162,10 @@
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="main">
   <nav class="crumbs" aria-label="Breadcrumb">
     <ol>
       <li><a href="index.html">Home</a></li>
-      <li aria-current="page">Report a problem</li>
     </ol>
   </nav>
 
@@ -178,7 +176,7 @@
 
       <div id="intro">
         <h1>Report a problem</h1>
-        <p class="lede">Four short steps. At the end you get a report number to follow it with. Prefer WhatsApp? <a href="index.html#report">Report on WhatsApp</a></p>
+        <p class="lede">Complete the four steps to receive a report number. Use it to track your report.</p>
         <div class="track-row">
           <label for="track-no">Reported before? Track it with your report number.</label>
           <div class="track-box">
@@ -213,7 +211,7 @@
       <!-- 2. Where -->
       <fieldset class="step" data-step="2" style="border:0;margin:0;padding:0">
         <legend><h2>Where is it?</h2></legend>
-        <p class="hint">Tap the map or drag the pin to the place.</p>
+        <p class="hint">Tap the location of the problem on the map, or drag the pin there. If you can't use the map, type the address or a nearby landmark below.</p>
         <div id="map" role="application" aria-label="Map to mark where the problem is"></div>
         <div class="map-tools">
           <button type="button" class="btn" id="locate">Use my current location</button>
@@ -224,7 +222,7 @@
           <select id="district" required><option value="">Choose a municipality</option></select>
         </div>
         <div class="field">
-          <label for="landmark">Nearest landmark or address <span class="opt">(optional)</span></label>
+          <label for="landmark">Address or nearest landmark <span class="opt">(needed if you don't mark the map)</span></label>
           <input type="text" id="landmark" placeholder="For example: near the ... mosque, Mahalla 904, Lane 12">
         </div>
       </fieldset>
@@ -257,16 +255,14 @@
         <div class="field">
           <span class="label">How should we send you updates? <span class="opt">(optional)</span></span>
           <div class="updates">
-            <label><input type="radio" name="via" value="whatsapp" checked> WhatsApp</label>
-            <label><input type="radio" name="via" value="sms"> Text message</label>
-            <label><input type="radio" name="via" value="none"> No updates; I'll follow it with the report number</label>
+            <label><input type="radio" name="via" value="sms" checked> Text message</label>
+            <label><input type="radio" name="via" value="none"> No updates. I'll track it with the report number</label>
           </div>
         </div>
         <div class="field">
           <label for="phone">Phone number <span class="opt">(for updates only)</span></label>
           <input type="tel" id="phone" inputmode="tel" placeholder="07XX XXX XXXX" autocomplete="off">
         </div>
-        <p class="proto-note">Study prototype: nothing on this page is sent.</p>
       </fieldset>
 
       <p class="error" id="error" role="alert"></p>
@@ -279,41 +275,37 @@
 
     <!-- Receipt -->
     <section id="done" hidden aria-live="polite">
-      <h1>Your report is in</h1>
+      <h1 tabindex="-1">Your report is in</h1>
       <div class="receipt" style="margin-top:1.25rem">
         <p class="label">Report number</p>
-        <p class="case-no">B-48213</p>
+        <p class="case-no" id="done-no"></p>
         <p id="done-line"></p>
         <p>You get a first reply within two working days. <span class="note" style="display:inline">(illustrative)</span></p>
         <p id="done-via"></p>
         <div class="actions">
-          <a class="btn" href="track.html">Track this report</a>
+          <a class="btn" id="done-track" href="track.html">Track this report</a>
           <a class="btn" href="report.html">Report something else</a>
         </div>
       </div>
-      <p class="proto-note">Keep the report number. You can follow it any time from "Track a report", with no account.</p>
+      <p class="proto-note">Keep the report number. You can track it at any time from "Track a report", without an account.</p>
     </section>
   </div>
 
-  <aside class="help" aria-label="Help">
+  <div class="help">
     <section>
       <h2>What happens after you report?</h2>
       <ol>
         <li>You get a report number straight away.</li>
-        <li>It goes to your municipality and the right section.</li>
+        <li>Your report is sent to the responsible section in your municipality.</li>
         <li>You get updates until it is closed.</li>
       </ol>
     </section>
     <section>
-      <h2>On WhatsApp</h2>
-      <p>Send a photo and your location to the Mayoralty's verified number, and the report number comes back in the chat.</p>
-    </section>
-    <section>
       <h2>By phone or app</h2>
-      <p>Call <strong>5628</strong>, 8:30 am – 2 pm, or use the Mayoralty's app, Baghdad Citizen Voice.</p>
+      <p>Call <a href="tel:5628"><strong>5628</strong></a>, 8:30 am – 2 pm, or use the Mayoralty's app, Baghdad Citizen Voice.</p>
       <p>Every channel feeds the same complaints system, so a report made by phone or in the app has a number you can track here.</p>
     </section>
-  </aside>
+  </div>
   </div>
 </main>
 
@@ -327,7 +319,7 @@
       <div><h2>This website</h2><ul><li><a href="site.html#privacy">Privacy</a></li><li><a href="site.html#access">Accessibility</a></li><li><a href="site.html#search">How search works</a></li></ul></div>
     </div>
     <div class="fine">
-      <p class="hotline">Hotline <strong>5628</strong>, 8:30 am – 2 pm · <a href="https://www.facebook.com/mayoralty.baghdad" rel="external">Facebook</a> · <a href="https://www.instagram.com/mayoralty_baghdad" rel="external">Instagram</a> · <a href="https://x.com/mayoralty_bd" rel="external">X</a></p>
+      <p class="hotline"><span>Hotline <a href="tel:5628"><strong>5628</strong></a>, 8:30 am – 2 pm</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
       <p>Seal: community redraw — CC BY-SA 4.0 — Wikimedia Commons. Photos credited with each photo.</p>
     </div>
   </div>
@@ -353,6 +345,7 @@
 
   function show(n, first) {
     step = n;
+    const heading = steps[n - 1].querySelector('h2');
     steps.forEach(s => s.classList.toggle('on', Number(s.dataset.step) === n));
     progress.forEach(p => {
       const k = Number(p.dataset.p);
@@ -364,14 +357,24 @@
     error.textContent = '';
     if (n === 2) setupMap();
     if (n === 4) fillReview();
-    if (!first) document.getElementById('intro').scrollIntoView({ block: 'start' });
+    if (first) return;
+    document.getElementById('intro').scrollIntoView({ block: 'start' });
+    heading.tabIndex = -1;
+    heading.focus({ preventScroll: true });
   }
 
-  function valid() {
-    if (step === 1 && !form.cat.value) return 'Choose the kind of problem.';
-    if (step === 2 && !moved) return 'Mark the place on the map.';
-    if (step === 2 && district.value === '') return 'Choose the municipality.';
-    return '';
+  // Returns the message and the field to focus, or nothing when the step is complete.
+  // A typed address or landmark counts as a place, so the map is never required.
+
+  const landmark = document.getElementById('landmark');
+  const phone = document.getElementById('phone');
+  const digits = s => (s.match(/[0-9٠-٩]/g) || []).length;
+
+  function invalid() {
+    if (step === 1 && !form.cat.value) return ['Choose the kind of problem.', form.cat[0]];
+    if (step === 2 && !moved && !landmark.value.trim()) return ['Mark the place on the map, or type the address or a nearby landmark.', landmark];
+    if (step === 2 && district.value === '') return ['Choose the municipality.', district];
+    if (step === 4 && form.via.value !== 'none' && digits(phone.value) < 10) return ['Enter your phone number for updates, or choose "No updates".', phone];
   }
 
   function setupMap() {
@@ -394,7 +397,7 @@
       if (!navigator.geolocation) return;
       navigator.geolocation.getCurrentPosition(
         p => { const ll = L.latLng(p.coords.latitude, p.coords.longitude); set(ll); map.setView(ll, 16); },
-        () => { error.textContent = 'We could not find your location. Mark it on the map.'; }
+        () => { error.textContent = 'We could not find your location. Mark it on the map or type the address.'; }
       );
     });
   }
@@ -409,19 +412,29 @@
     document.getElementById('r-desc').textContent = [hasPhoto ? 'One photo' : 'No photo', desc || 'No note'].join(' · ');
   }
 
+  // Every demo report gets the same new number. The track page reads the
+  // saved details, so the receipt and tracking describe the same report.
+
+  const NEW_NO = 'B-48492';
+
   next.addEventListener('click', () => {
-    const msg = valid();
-    if (msg) { error.textContent = msg; return; }
+    const fail = invalid();
+    if (fail) { error.textContent = fail[0]; fail[1].focus(); return; }
     if (step < 4) { show(step + 1); return; }
     const d = DISTRICTS[district.value];
     const via = form.via.value;
-    document.getElementById('done-line').textContent = `“${catLabel()}” report sent to ${d.en} municipality.`;
+    const sent = { no: NEW_NO, cat: catLabel(), d: d.en, place: landmark.value.trim(), via, phone: phone.value.trim() };
+    try { sessionStorage.setItem('demo-report', JSON.stringify(sent)); } catch {}
+    document.getElementById('done-no').textContent = NEW_NO;
+    document.getElementById('done-track').href = `track.html?n=${NEW_NO}`;
+    document.getElementById('done-line').textContent = `“${sent.cat}” report sent to ${d.en} municipality.`;
     document.getElementById('done-via').textContent =
-      via === 'whatsapp' ? 'We will send every update on WhatsApp.' :
-      via === 'sms' ? 'We will send every update by text message.' : 'Follow it with the report number.';
+      via === 'sms' ? `We will send updates by text message to ${sent.phone}.` : 'Track it with the report number.';
     form.hidden = true;
-    document.getElementById('done').hidden = false;
+    const done = document.getElementById('done');
+    done.hidden = false;
     window.scrollTo(0, 0);
+    done.querySelector('h1').focus({ preventScroll: true });
   });
   back.addEventListener('click', () => show(step - 1));
   form.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => show(Number(b.dataset.go))));
@@ -442,6 +455,11 @@
   if (pre) { const r = [...form.cat].find(x => x.value === pre); if (r) r.checked = true; }
   const preD = DISTRICTS.findIndex(d => d.slug === params.get('d'));
   if (preD > -1) district.value = preD;
+
+  // "Problem still there?" on the track page sends the earlier number along
+
+  const ref = params.get('ref');
+  if (ref) document.getElementById('desc').value = `Still not fixed. Earlier report: ${ref}.`;
 
   show(1, true);
 </script>

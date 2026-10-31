@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search — Mayoralty of Baghdad</title>
+<link rel="alternate" hreflang="ar" href="../home.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@600&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/base.css">
+<link rel="stylesheet" href="../shared/page.css">
+<link rel="stylesheet" href="../shared/en.css">
+<link rel="stylesheet" href="../shared/lang-swap.css">
+<script src="../shared/lang-swap.js"></script>
+<style>
+  /* Search results: a plain form, then matching pages best first */
+
+  .find { display: flex; max-width: 36rem; margin-top: 1rem; border: 2px solid var(--ink); border-radius: 4px; overflow: hidden; background: var(--white); }
+  .find:focus-within { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+  .find input { flex: 1; min-width: 0; border: 0; padding: 0.7rem 1rem; font: inherit; font-size: 1.125rem; color: var(--ink); background: transparent; }
+  .find input:focus-visible { outline: none; }
+  .find button { border: 0; border-inline-start: 1.5px solid var(--line); background: transparent; color: var(--green); font: inherit; font-weight: 700; padding-inline: 1.25rem; cursor: pointer; }
+  .find button:hover { background: var(--green-tint); }
+  .count { color: var(--muted); margin: 0 0 0.75rem; }
+</style>
+<script src="../shared/prototype.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
+      <div><strong>Mayoralty of Baghdad</strong><span>Official website · Republic of Iraq</span></div>
+    </a>
+    <button class="menu-btn" type="button" popovertarget="menu">Menu</button>
+    <nav class="menu" id="menu" popover aria-label="Main menu">
+      <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">Close</button>
+      <ul class="nav">
+        <li class="has-sub"><a href="services.html">Services</a>
+          <ul class="sub">
+            <li><a href="service-permit.html">Building permit</a></li>
+            <li><a href="service-water.html">Water account</a></li>
+            <li><a href="service-property.html">Property statement</a></li>
+            <li><a href="service-sewer.html">Sewer connection</a></li>
+            <li><a href="service-fees.html">Municipal fees</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html">Report a problem</a></li>
+        <li><a href="districts.html">Districts</a></li>
+        <li><a href="news.html">News</a></li>
+        <li class="has-sub end"><a href="about.html">The Mayoralty</a>
+          <ul class="sub">
+            <li><a href="leadership.html">Leadership and structure</a></li>
+            <li><a href="tenders.html">Tenders and auctions</a></li>
+            <li><a href="laws.html">Laws and plans</a></li>
+            <li><a href="data.html">Open data</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+        </li>
+        <li class="lang"><a href="../home.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../ku/index.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+    </ol>
+  </nav>
+
+  <header class="page-head">
+    <h1>Search</h1>
+    <form class="find" action="search.html" role="search">
+      <input id="q" name="q" type="search" aria-label="Search the Mayoralty website" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <div class="layout">
+    <section class="guide" aria-live="polite" id="results">
+      <p class="count">Enter a service or problem, such as water cut or building permit.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">Mayoralty of Baghdad</div>
+      <div><h2>Services</h2><ul><li><a href="services.html">All services</a></li><li><a href="report.html">Report a problem</a></li><li><a href="track.html">Track a report</a></li><li><a href="alerts.html">Alerts</a></li></ul></div>
+      <div><h2>The city</h2><ul><li><a href="districts.html">Districts</a></li><li><a href="news.html">News</a></li></ul></div>
+      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">Overview</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
+      <div><h2>This website</h2><ul><li><a href="site.html#privacy">Privacy</a></li><li><a href="site.html#access">Accessibility</a></li><li><a href="site.html#search">How search works</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p class="hotline"><span>Hotline <a href="tel:5628"><strong>5628</strong></a>, 8:30 am – 2 pm</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>Seal: community redraw — CC BY-SA 4.0 — Wikimedia Commons. Photos credited with each photo.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Every page and pre-filled report form, with the words people use for it.
+  // Results are ranked by where the query's words match: title, then key words, then summary.
+
+  const PAGES = [
+    { t: 'Report a water cut', h: 'report.html?cat=انقطاع الماء', s: 'Report a problem', d: 'No water, or very low pressure. Check Alerts first for a scheduled cut.', w: 'water cut no outage pressure supply' },
+    { t: 'Report a sewage overflow', h: 'report.html?cat=طفح المجاري', s: 'Report a problem', d: 'Dirty water in the street, or a blocked drain.', w: 'sewage sewer sewerage overflow drain blocked manhole flood flooding smell' },
+    { t: 'Report uncollected waste', h: 'report.html?cat=النفايات', s: 'Report a problem', d: 'Waste not collected, or dumped in a public place.', w: 'waste garbage trash rubbish litter dumped collection bin container' },
+    { t: 'Report a street light', h: 'report.html?cat=إنارة الشوارع', s: 'Report a problem', d: 'A street light that is out or damaged.', w: 'street light lamp pole dark broken' },
+    { t: 'Report a road or pavement problem', h: 'report.html?cat=الطرق والأرصفة', s: 'Report a problem', d: 'A pothole, a broken pavement or standing rainwater.', w: 'road pothole pavement sidewalk street rainwater puddle' },
+    { t: 'Report a problem', h: 'report.html', s: 'Report a problem', d: 'Report water, sewage, waste, street light or road problems and get a report number.', w: 'report problem complaint complain issue fault' },
+    { t: 'Track a report', h: 'track.html', s: 'Report a problem', d: 'Enter your report number to see its progress and the team handling it.', w: 'track status report number case progress follow' },
+    { t: 'Alerts', h: 'alerts.html', s: 'Services', d: 'Scheduled water cuts, road closures, rain warnings and changes to waste collection.', w: 'alert water cut scheduled road closure closed bridge rain warning collection today' },
+    { t: 'Building permit', h: 'service-permit.html', s: 'Services', d: 'Documents, fees and steps for a permit to build or extend, and where to apply on Ur.', w: 'permit build building construction extend extension renovate renovation floor annex licence license' },
+    { t: 'Water account', h: 'service-water.html', s: 'Services', d: 'Pay a bill, open an account, install or replace a meter, or transfer the account to your name.', w: 'water bill account meter new connection transfer name subscription' },
+    { t: 'Pay a water bill', h: 'service-water.html#pay', s: 'Services', d: 'Pay online or at the collection office with the account number on your bill.', w: 'water bill pay payment' },
+    { t: 'Property statement', h: 'service-property.html', s: 'Services', d: 'What a property statement is, when you need one, and how to request it on Ur.', w: 'property statement deed title real estate sale sell buy inheritance inherit plot personal' },
+    { t: 'Sewer connection', h: 'service-sewer.html', s: 'Services', d: 'Connect a new building to the sewer network: documents, steps and where to apply.', w: 'sewer sewerage sewage drain drainage connection connect pipe' },
+    { t: 'Municipal fees', h: 'service-fees.html', s: 'Services', d: 'Trade, advertising and cleaning fees: look up what you owe and where to pay.', w: 'fee tax trade advertising sign billboard cleaning shop business pay owe' },
+    { t: 'All services', h: 'services.html', s: 'Services', d: 'Every service, grouped by what you want to do.', w: 'service list' },
+    { t: 'Districts', h: 'districts.html', s: 'Districts', d: 'Contact details for the 15 municipalities, by bank of the river.', w: 'district municipality office local karkh rusafa kadhimiya mansour shula shuala rasheed dora green zone airport adhamiya shaab sadr ghadeer baghdad new center centre' },
+    { t: 'Karrada municipality', h: 'district-karrada.html', s: 'Districts', d: 'Office, alerts, works under way and reports in Karrada.', w: 'karrada jadriya arasat masbah abu nuwas alwiya wahda zawiya camp sarah' },
+    { t: 'News', h: 'news.html', s: 'News', d: 'Mayoralty statements and updates on municipal works, newest first.', w: 'news statement announcement press latest update works park' },
+    { t: 'The Mayoralty of Baghdad', h: 'about.html', s: 'The Mayoralty', d: 'What the Mayoralty does, who does what in Baghdad, and major projects.', w: 'about amanat duties responsibility governorate project metro who' },
+    { t: 'Leadership and structure', h: 'leadership.html', s: 'The Mayoralty', d: 'The Mayor, the three deputy mayors, and every department\'s email.', w: 'mayor deputy leadership structure department organisation organization chart email' },
+    { t: 'Contact the Mayoralty', h: 'about.html#contact', s: 'The Mayoralty', d: 'The 5628 hotline, the Citizen Voice app, and emails for departments and the press.', w: 'contact hotline phone call email 5628 citizen voice app complaint staff meet mayor appointment' },
+    { t: 'Tenders and auctions', h: 'tenders.html', s: 'The Mayoralty', d: 'Notices for contracts, and for sales and leases of Mayoralty property.', w: 'tender auction bid bidding contract procurement lease' },
+    { t: 'Laws and plans', h: 'laws.html', s: 'The Mayoralty', d: 'The laws, regulations and plans the Mayoralty works under.', w: 'law regulation decision rule plan master development 2030 legal' },
+    { t: 'Open data', h: 'data.html', s: 'The Mayoralty', d: 'Population by subdistrict from the 2024 census, and the Mayoralty\'s reports.', w: 'data open census population statistic statistical dataset' },
+    { t: 'Using this website', h: 'site.html', s: 'This website', d: 'Privacy, accessibility and how search works.', w: 'privacy accessibility cookie website search' }
+  ];
+
+  const SKIP = new Set('a an and are at can do does for from get how i in is it me my need of on or our please the to want what where with your'.split(' '));
+  const KEEP = new Set(['news', 'this', 'its', 'gas', 'bus', 'was', 'has', 'is', 'us']);
+  const stem = w => w.length > 3 && w.endsWith('s') && !w.endsWith('ss') && !KEEP.has(w) ? w.slice(0, -1) : w;
+  const words = text => text.toLowerCase().replace(/[^a-z0-9\s-]/g, ' ').split(/[\s-]+/).filter(Boolean).map(stem);
+
+  PAGES.forEach(p => { p.tw = new Set(words(p.t)); p.ww = new Set(words(p.w)); p.dw = new Set(words(p.d)); });
+
+  function rank(query) {
+    const terms = [...new Set(words(query))].filter(w => !SKIP.has(w));
+    return PAGES
+      .map(p => ({ p, n: terms.reduce((n, w) => n + (p.tw.has(w) ? 3 : p.ww.has(w) ? 2 : p.dw.has(w) ? 1 : 0), 0) }))
+      .filter(r => r.n > 0)
+      .sort((a, b) => b.n - a.n)
+      .slice(0, 8)
+      .map(r => r.p);
+  }
+
+  const q = (new URLSearchParams(location.search).get('q') || '').trim();
+  const box = document.getElementById('results');
+  document.getElementById('q').value = q;
+
+  if (q) {
+    const found = rank(q);
+    const count = document.createElement('p');
+    count.className = 'count';
+    count.textContent = found.length
+      ? `${found.length} ${found.length === 1 ? 'page matches' : 'pages match'} “${q}”`
+      : `No pages match “${q}”.`;
+    box.replaceChildren(count);
+    if (found.length) {
+      const list = document.createElement('ul');
+      list.className = 'index-list';
+      for (const p of found) {
+        const li = document.createElement('li');
+        const link = Object.assign(document.createElement('a'), { className: 't', href: p.h, textContent: p.t });
+        const tag = Object.assign(document.createElement('span'), { className: 'tag', textContent: p.s });
+        li.append(link, tag, Object.assign(document.createElement('p'), { textContent: p.d }));
+        list.append(li);
+      }
+      box.append(list);
+    } else {
+      box.insertAdjacentHTML('beforeend', '<p>Try other words, browse <a href="services.html">all services</a>, or call the hotline, <a href="tel:5628">5628</a>, 8:30 am – 2 pm.</p>');
+    }
+    document.title = `${q} — Search — Mayoralty of Baghdad`;
+  }
+</script>
+</body>
+</html>

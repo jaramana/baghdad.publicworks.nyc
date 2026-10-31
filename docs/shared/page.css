@@ -1,7 +1,7 @@
 /*
   Amanat Baghdad — inner pages (service, district, story, index pages)
 
-  Crumbs, page head, facts strip, two-column layout with a sticky action column,
+  Crumbs, page head, facts strip, one-column layout (two where an action column remains),
   guide sections, checklist, numbered steps, contents list, related links, feedback.
   Load after base.css.
 */
@@ -16,14 +16,6 @@
 .page-head h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; margin-top: 0.25rem; }
 .lede { font-size: 1.1875rem; max-width: 44rem; margin: 0.5rem 0 0; }
 
-/* Section tabs: every page in a section, under the title, so siblings stay in view */
-
-.tabs { margin: 1.5rem 0 -2rem; }
-.tabs ul { display: flex; flex-wrap: wrap; gap: 0 1.75rem; margin: 0; padding: 0; list-style: none; }
-.tabs a { display: block; padding-block: 0.6rem; color: var(--ink); text-decoration: none; font-weight: 500; border-bottom: 3px solid transparent; margin-bottom: -1px; }
-.tabs a:hover { border-color: var(--line); }
-.tabs a[aria-current] { color: var(--green); font-weight: 600; border-color: var(--green); }
-
 .facts { display: grid; grid-template-columns: repeat(3, 1fr); margin: 1.75rem 0 0; padding: 0; list-style: none; border-top: 2px solid var(--green); }
 .facts li { padding: 0.9rem 0 0; padding-inline-end: 1.25rem; }
 .facts li + li { border-inline-start: 1px solid var(--line); padding-inline-start: 1.25rem; }
@@ -31,7 +23,10 @@
 .facts .v { font-family: var(--kufi); font-weight: 700; font-size: 1.15rem; margin: 0.15rem 0 0; }
 .facts .s { font-size: 0.875rem; color: var(--muted); margin: 0.1rem 0 0; }
 
-.layout { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: clamp(2rem, 5vw, 4rem); align-items: start; padding-block: 2.5rem 3rem; }
+/* One reading column. Arabic and Kurdish pages still carry an action column beside it */
+
+.layout { display: grid; grid-template-columns: minmax(0, 50rem); gap: 2rem; align-items: start; padding-block: 2.5rem 3rem; }
+.layout:has(> .action) { grid-template-columns: minmax(0, 1fr) 20rem; gap: clamp(2rem, 5vw, 4rem); }
 .layout > * { min-width: 0; }
 
 /* Guide */
@@ -65,6 +60,7 @@
 .start p { margin: 0.4rem 0; font-size: 0.9375rem; color: var(--muted); }
 .start .btn { display: block; text-align: center; margin-top: 0.9rem; padding-block: 0.6rem; font-size: 1.0625rem; }
 .start .alt { border-top: 1px solid var(--line); margin-top: 1rem; padding-top: 0.75rem; }
+.layout > .start .btn { display: inline-block; padding-inline: 2rem; }
 .toc { margin-top: 2rem; }
 .toc h2 { font-family: inherit; font-size: 0.8125rem; font-weight: 600; color: var(--muted); margin-bottom: 0.4rem; }
 .toc ol { list-style: none; margin: 0; padding: 0; border-inline-start: 2px solid var(--line); }
@@ -82,6 +78,12 @@
 .feedback p { margin: 0; }
 .feedback .btns { display: flex; gap: 0.5rem; }
 .meta { font-size: 0.8125rem; color: var(--muted); margin-top: 1rem; }
+
+/* Details: label and value pairs, such as an office's address and hours */
+
+.details { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: 0.4rem 1rem; margin: 0.5rem 0 0; }
+.details dt { font-weight: 600; color: var(--muted); font-size: 0.9375rem; }
+.details dd { margin: 0; overflow-wrap: anywhere; }
 
 /* Side block: same plain frame as the start block, for offices and contacts */
 .side-card { border-top: 2px solid var(--green); padding-top: 0.9rem; }
@@ -139,19 +141,17 @@ table.data tr.total td { font-weight: 700; border-bottom: 0; }
 .sources a { color: var(--muted); word-break: break-word; }
 
 @media (max-width: 860px) {
-  .layout { grid-template-columns: 1fr; padding-top: 1.5rem; }
+  .layout, .layout:has(> .action) { grid-template-columns: 1fr; padding-top: 1.5rem; }
   .action { position: static; order: -1; }
-  .toc { display: none; }
+  .toc { margin-top: 1.5rem; }
   .page-head { padding-bottom: 1.25rem; }
-  .tabs { margin-bottom: -1.25rem; }
-  .tabs ul { gap: 0 1.25rem; }
-  .tabs a { padding-block: 0.4rem; }
+  .layout > .start .btn { display: block; }
   .leader { grid-template-columns: 1fr; gap: 1rem; }
   .facts { grid-template-columns: 1fr; margin-top: 1.25rem; }
-  .facts li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.5rem 0; }
+  .facts li { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; column-gap: 1rem; padding: 0.5rem 0; }
   .facts li + li { border-inline-start: 0; border-top: 1px solid var(--line); padding-inline-start: 0; }
   .facts .v { font-size: 1rem; margin: 0; }
-  .facts .s { display: none; }
+  .facts .s { flex-basis: 100%; text-align: end; margin: 0; }
   .related { grid-template-columns: 1fr; }
   .alerts li { grid-template-columns: 1fr auto; }
   .alerts .what { grid-column: 1 / -1; }

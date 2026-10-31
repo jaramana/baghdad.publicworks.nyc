@@ -17,6 +17,7 @@
 <script src="../shared/prototype.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to main content</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -56,30 +57,34 @@
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="main">
   <nav class="crumbs" aria-label="Breadcrumb">
     <ol>
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
-      <li><a href="services.html#water">Water</a></li>
-      <li aria-current="page">Water account</li>
     </ol>
   </nav>
 
   <header class="page-head">
-    <p class="kicker">Service · Water</p>
     <h1>Water account</h1>
-    <p class="lede">Every home in Baghdad has a water account with the Baghdad Water Department. Pay your bill, open a new account or replace your meter, all starting here.</p>
+    <p class="lede">Every home in Baghdad has a water account with the Baghdad Water Department. Find out how to pay your bill, open an account or replace a meter.</p>
     <ul class="facts">
       <li><span class="k">Who runs it</span><p class="v">Baghdad Water Department</p><p class="s">A department of the Mayoralty</p></li>
-      <li><span class="k">Where to apply</span><p class="v">Ur portal</p><p class="s">New accounts verified on Ur</p></li>
+      <li><span class="k">Where to apply</span><p class="v">Ur portal</p><p class="s">You need an Ur account</p></li>
       <li><span class="k">Paying</span><p class="v">Online or at the collection office</p><p class="s">The payment site is run by another party</p></li>
     </ul>
   </header>
 
   <div class="layout">
+    <div class="start">
+      <h2>Start on the Ur portal</h2>
+      <p>For new accounts, meters and transfers of name.</p>
+      <a class="btn" href="https://eservice.ur.gov.iq/index/new-service/10364" rel="external">Go to the Ur portal ↗</a>
+      <p>No account? <a href="https://ur.gov.iq" rel="external">Create an Ur account</a></p>
+    </div>
+
     <article class="guide">
-      <p class="illustrative">Opening a new account on the Ur portal is verified. Meter and change-of-name services are listed on Ur, but we have not checked their details. Documents and times on this page are illustrative.</p>
+      <p class="illustrative">The documents, steps and times in this guide are illustrative.</p>
 
       <section id="what" aria-labelledby="what-h">
         <h2 id="what-h">What do you want to do?</h2>
@@ -87,7 +92,7 @@
           <li><a class="t" href="#pay">Pay my bill</a><span class="tag">Payment site</span><p>With the account number printed on your bill.</p></li>
           <li><a class="t" href="#new">Open a new account</a><span class="tag">Ur portal</span><p>For a new home, or a property that never had an account.</p></li>
           <li><a class="t" href="#meter">Install or replace a meter</a><span class="tag">Ur portal</span><p>A broken meter, or a home's first meter.</p></li>
-          <li><a class="t" href="#name">Move the account to my name</a><span class="tag">Ur portal</span><p>After you buy or inherit a home.</p></li>
+          <li><a class="t" href="#name">Transfer the account to my name</a><span class="tag">Ur portal</span><p>After you buy or inherit a home.</p></li>
         </ul>
         <p class="aside-note">Merging several accounts into one is closed on the Ur portal for now. If you need it, visit the collection office in your municipality.</p>
       </section>
@@ -119,33 +124,10 @@
       </section>
 
       <section id="name" aria-labelledby="name-h">
-        <h2 id="name-h">Move the account to your name</h2>
+        <h2 id="name-h">Transfer the account to your name</h2>
         <p>You need a property statement in your name, your national ID card and your last paid bill. Apply on the Ur portal. Your water stays on while the change goes through.</p>
       </section>
     </article>
-
-    <aside class="action" aria-label="Start">
-      <div class="start">
-        <h2>Start on the Ur portal</h2>
-        <p>For new accounts, meters and changes of name.</p>
-        <a class="btn" href="https://eservice.ur.gov.iq/index/new-service/10364" rel="external">Go to the Ur portal ↗</a>
-        <p>No account? <a href="https://ur.gov.iq" rel="external">Create an Ur account</a></p>
-        <div class="alt">
-          <p>Only want to pay? <a href="#pay">Pay your bill</a></p>
-          <p>No water? <a href="alerts.html">Check for a scheduled cut</a></p>
-        </div>
-      </div>
-      <nav class="toc" aria-labelledby="toc-h">
-        <h2 id="toc-h">On this page</h2>
-        <ol>
-          <li><a href="#what">What do you want to do?</a></li>
-          <li><a href="#pay">Pay your bill</a></li>
-          <li><a href="#new">New account</a></li>
-          <li><a href="#meter">Meters</a></li>
-          <li><a href="#name">Change of name</a></li>
-        </ol>
-      </nav>
-    </aside>
   </div>
 
   <section class="block ruled" aria-labelledby="related-h">
@@ -172,7 +154,7 @@
       <div><h2>This website</h2><ul><li><a href="site.html#privacy">Privacy</a></li><li><a href="site.html#access">Accessibility</a></li><li><a href="site.html#search">How search works</a></li></ul></div>
     </div>
     <div class="fine">
-      <p class="hotline">Hotline <strong>5628</strong>, 8:30 am – 2 pm · <a href="https://www.facebook.com/mayoralty.baghdad" rel="external">Facebook</a> · <a href="https://www.instagram.com/mayoralty_baghdad" rel="external">Instagram</a> · <a href="https://x.com/mayoralty_bd" rel="external">X</a></p>
+      <p class="hotline"><span>Hotline <a href="tel:5628"><strong>5628</strong></a>, 8:30 am – 2 pm</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
       <p>Seal: community redraw — CC BY-SA 4.0 — Wikimedia Commons. Photos credited with each photo.</p>
     </div>
   </div>

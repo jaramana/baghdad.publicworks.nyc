@@ -39,6 +39,7 @@
 <script src="../shared/prototype.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to main content</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -78,19 +79,17 @@
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="main">
   <nav class="crumbs" aria-label="Breadcrumb">
     <ol>
       <li><a href="index.html">Home</a></li>
       <li><a href="districts.html">Districts</a></li>
-      <li aria-current="page">Karrada</li>
     </ol>
   </nav>
 
   <header class="page-head">
-    <p class="kicker">Municipality · Rusafa side</p>
     <h1>Karrada municipality</h1>
-    <p class="lede">The municipality serves the Karrada peninsula on the east bank of the Tigris, from Abu Nuwas to Jadriya. Here you see what is happening in your area today, the works under way, and how to reach the municipal office.</p>
+    <p class="lede">The municipality serves the Karrada peninsula on the east bank of the Tigris, from Abu Nuwas to Jadriya. Check local alerts and works under way, or find contact details for the municipal office.</p>
     <ul class="facts">
       <li><span class="k">Population</span><p class="v">105,507</p><p class="s">Karrada ash-Sharqiyah subdistrict, 2024 census</p></li>
       <li><span class="k">Office hours</span><p class="v">Sunday – Thursday</p><p class="s">8:30 am – 2:30 pm · illustrative</p></li>
@@ -100,13 +99,23 @@
 
   <div class="layout">
     <article class="guide">
-      <p class="illustrative">The alerts, local works, reports and office address are illustrative. The population is the 2024 census figure for the Karrada ash-Sharqiyah subdistrict, whose boundary does not match the municipality's exactly. The Abu Nuwas and Jadriya projects come from published sources, named with each.</p>
+      <p class="illustrative">The office address, alerts, local works and report figures on this page are illustrative.</p>
+
+      <section id="office" aria-labelledby="office-h">
+        <h2 id="office-h">Municipal office</h2>
+        <dl class="details">
+          <dt>Address</dt><dd>Inner Karrada, near Kahramana Square <span class="note">· illustrative</span></dd>
+          <dt>Hours</dt><dd>Sunday to Thursday, 8:30 am – 2:30 pm</dd>
+          <dt>Email</dt><dd><a href="mailto:alkarrada@amanatbaghdad.gov.iq">alkarrada@amanatbaghdad.gov.iq</a></dd>
+          <dt>Phone</dt><dd>Mayoralty hotline <a href="tel:5628"><strong>5628</strong></a>, 8:30 am – 2 pm</dd>
+        </dl>
+      </section>
 
       <section id="today" aria-labelledby="today-h">
         <h2 id="today-h">Today in Karrada <small>Updated 10:40 am</small></h2>
         <ul class="alerts">
           <li><span class="topic">Water</span><p class="what">Scheduled cut in Inner Karrada, 9 am – 3 pm.<small>Main line maintenance. Store what you need before 9.</small></p><span class="status plan">Scheduled cut</span></li>
-          <li><span class="topic">Roads</span><p class="what">One lane closed on Abu Nuwas Street near Firdos Square.<small>Pavement works until the end of the week. The riverside walk is open.</small></p><span class="status walk">Walking only</span></li>
+          <li><span class="topic">Roads</span><p class="what">One lane closed on Abu Nuwas Street near Firdos Square.<small>Pavement works until the end of the week. The riverside walk is open.</small></p><span class="status plan">Partly closed</span></li>
           <li><span class="topic">Waste</span><p class="what">Collection on schedule: every evening after 9.<small>Leave bags at the container, not on the pavement.</small></p><span class="status ok">Normal</span></li>
         </ul>
         <p class="note"><a href="alerts.html">All alerts in Baghdad</a></p>
@@ -120,7 +129,7 @@
           <li><i style="background:var(--amber)"></i>Works under way</li>
           <li><i style="background:var(--teal)"></i>Today's alert</li>
         </ul>
-        <p class="note">We don't draw the municipality's boundary until the Mayoralty publishes the official boundary file. Positions on the map are approximate.</p>
+        <p class="note">The map does not show the municipal boundary because the official boundary file is not yet available. Locations are approximate.</p>
       </section>
 
       <section id="works" aria-labelledby="works-h">
@@ -179,32 +188,6 @@
         <p class="note">An unofficial list until the Mayoralty publishes neighbourhood boundaries.</p>
       </section>
     </article>
-
-    <aside class="action" aria-label="Municipal office">
-      <div class="side-card">
-        <h2>Municipal office</h2>
-        <dl>
-          <dt>Address</dt><dd>Inner Karrada, near Kahramana Square <span class="note">· illustrative</span></dd>
-          <dt>Hours</dt><dd>Sunday to Thursday, 8:30 am – 2:30 pm</dd>
-          <dt>Email</dt><dd><a href="mailto:alkarrada@amanatbaghdad.gov.iq">alkarrada@amanatbaghdad.gov.iq</a></dd>
-          <dt>Phone</dt><dd>Mayoralty hotline <strong>5628</strong>, 8:30 am – 2 pm</dd>
-        </dl>
-      </div>
-      <div class="side-card">
-        <h2>Not your municipality?</h2>
-        <p><a href="districts.html">Choose yours from the list</a></p>
-      </div>
-      <nav class="toc" aria-labelledby="toc-h">
-        <h2 id="toc-h">On this page</h2>
-        <ol>
-          <li><a href="#today">Today in Karrada</a></li>
-          <li><a href="#map-s">On the map</a></li>
-          <li><a href="#works">Works under way</a></li>
-          <li><a href="#reports">Reports in the area</a></li>
-          <li><a href="#places">Neighbourhoods</a></li>
-        </ol>
-      </nav>
-    </aside>
   </div>
   <p class="meta">Last reviewed 30 October 2026 · Population: Central Statistical Organization, 2024 census, via citypopulation.de · <a href="data.html#census">All subdistricts</a></p>
 </main>
@@ -219,7 +202,7 @@
       <div><h2>This website</h2><ul><li><a href="site.html#privacy">Privacy</a></li><li><a href="site.html#access">Accessibility</a></li><li><a href="site.html#search">How search works</a></li></ul></div>
     </div>
     <div class="fine">
-      <p class="hotline">Hotline <strong>5628</strong>, 8:30 am – 2 pm · <a href="https://www.facebook.com/mayoralty.baghdad" rel="external">Facebook</a> · <a href="https://www.instagram.com/mayoralty_baghdad" rel="external">Instagram</a> · <a href="https://x.com/mayoralty_bd" rel="external">X</a></p>
+      <p class="hotline"><span>Hotline <a href="tel:5628"><strong>5628</strong></a>, 8:30 am – 2 pm</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
       <p>Seal: community redraw — CC BY-SA 4.0 — Wikimedia Commons. Photos credited with each photo.</p>
     </div>
   </div>
