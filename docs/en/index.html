@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="../shared/en.css">
 <link rel="stylesheet" href="../shared/lang-swap.css">
 <script src="../shared/lang-swap.js"></script>
-<link rel="expect" href="#projects" blocking="render">
+<link rel="expect" href="#news" blocking="render">
 <style>
   /* English home: same layout as the Arabic home */
   /* Hero: river band with the search card and Today ledger set over its lower edge */
@@ -92,26 +92,22 @@
   .bank ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 1.5rem; }
   .bank li { padding-block: 0.35rem; break-inside: avoid; }
 
-  /* Projects: real works, who runs them and where they stand */
-  .works { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 0; padding: 0; list-style: none; }
-  .works li { display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 3px; padding: 1.1rem 1.25rem; }
-  .works h3 { font-size: 1.125rem; font-weight: 700; color: var(--green); }
-  .works .what { margin: 0.35rem 0 0.9rem; }
-  .works dl { margin: auto 0 0; font-size: 0.875rem; }
-  .works dl div { display: flex; gap: 0.75rem; padding-block: 0.35rem; border-top: 1px solid var(--line); }
-  .works dt { min-width: 4.5rem; font-weight: 600; color: var(--muted); }
-  .works dd { margin: 0; }
-  .works .src { margin: 0.6rem 0 0; font-size: 0.8125rem; color: var(--muted); }
+  /* News: the three latest headlines, date beside each */
+  .headlines { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--green); }
+  .headlines li { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.15rem 1.25rem; padding-block: 0.8rem; border-bottom: 1px solid var(--line); }
+  .headlines time { font-size: 0.875rem; font-weight: 600; color: var(--muted); padding-top: 0.1rem; }
+  .headlines a { font-weight: 600; color: var(--ink); text-decoration: none; }
+  .headlines a:hover { color: var(--green); text-decoration: underline; }
 
   @media (max-width: 860px) {
     .hero { grid-template-columns: 1fr; margin-top: -2.5rem; }
     .ask { padding: 1.25rem; }
     .answer { min-height: 16rem; }
-    .ways, .works { grid-template-columns: 1fr; }
+    .ways { grid-template-columns: 1fr; }
     .tasks { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 560px) {
-    .tasks, .banks { grid-template-columns: 1fr; }
+    .tasks, .banks, .headlines li { grid-template-columns: 1fr; }
     .bank + .bank { border-inline-start: 0; padding-inline-start: 0; margin-top: 1.5rem; }
   }
 </style>
@@ -129,11 +125,28 @@
     <nav class="menu" id="menu" popover aria-label="Main menu">
       <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">Close</button>
       <ul class="nav">
-        <li><a href="services.html">Services</a></li>
+        <li class="has-sub"><a href="services.html">Services</a>
+          <ul class="sub">
+            <li><a href="service-permit.html">Building permit</a></li>
+            <li><a href="service-water.html">Water account</a></li>
+            <li><a href="service-property.html">Property statement</a></li>
+            <li><a href="service-sewer.html">Sewer connection</a></li>
+            <li><a href="service-fees.html">Municipal fees</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+          </ul>
+        </li>
         <li><a href="report.html">Report a problem</a></li>
         <li><a href="districts.html">Districts</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li class="has-sub end"><a href="about.html">The Mayoralty</a>
+          <ul class="sub">
+            <li><a href="leadership.html">Leadership and structure</a></li>
+            <li><a href="tenders.html">Tenders and auctions</a></li>
+            <li><a href="laws.html">Laws and plans</a></li>
+            <li><a href="data.html">Open data</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+        </li>
         <li class="lang"><a href="../home.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../ku/index.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a></li>
       </ul>
     </nav>
@@ -153,7 +166,7 @@
           <input id="q" type="search" aria-label="Search Mayoralty services" placeholder="For example: no water in Karrada" autocomplete="off">
           <button type="submit">Search</button>
         </form>
-        <p class="ai-note">Search uses AI and answers only from Mayoralty pages. <a href="about.html#search">How it works</a></p>
+        <p class="ai-note">Search uses AI and answers only from Mayoralty pages. <a href="site.html#search">How it works</a></p>
         <ul class="chips">
           <li><button type="button" data-chip="No water in Karrada">Water cut</button></li>
           <li><button type="button" data-chip="Building permit">Building permit</button></li>
@@ -253,36 +266,12 @@
     <p class="note">Karrada has a full page with its office, works and reports. The others open their entry in the districts index until their pages are built.</p>
   </section>
 
-  <section class="block wrap ruled" id="projects" aria-labelledby="projects-h">
-    <div class="block-head"><h2 id="projects-h">Projects</h2><p><a href="projects.html">All projects, who runs them and where they stand</a></p></div>
-    <ul class="works">
-      <li>
-        <h3>Abu Nuwas corniche</h3>
-        <p class="what">Rebuilding the riverside corniche and widening about 8 km of street from Karrada Martyrs Park to Eagles Square.</p>
-        <dl>
-          <div><dt>Runs it</dt><dd>Mayoralty of Baghdad; street package by the Ministry of Construction and Housing</dd></div>
-          <div><dt>Status</dt><dd><span class="status ok">Phase 1 open</span> October 2025</dd></div>
-        </dl>
-        <p class="src">Arab Urban Development Institute; IraqiNews</p>
-      </li>
-      <li>
-        <h3>Baghdad Plants</h3>
-        <p class="what">A campaign to plant one million trees across the city, in a capital that has lost much of its green space to building.</p>
-        <dl>
-          <div><dt>Runs it</dt><dd>Mayoralty of Baghdad</dd></div>
-          <div><dt>Status</dt><dd><span class="status plan">Under way</span> since March 2025</dd></div>
-        </dl>
-        <p class="src">The New Region</p>
-      </li>
-      <li>
-        <h3>Baghdad Metro</h3>
-        <p class="what">Seven lines, about 148 km and 64 stations. An international consortium was chosen to build it.</p>
-        <dl>
-          <div><dt>Runs it</dt><dd>Mayoralty of Baghdad and the National Investment Commission</dd></div>
-          <div><dt>Status</dt><dd><span class="status stall">Under review</span> since July 2025</dd></div>
-        </dl>
-        <p class="src">Railway Gazette; MEED</p>
-      </li>
+  <section class="block wrap ruled" id="news" aria-labelledby="news-h">
+    <div class="block-head"><h2 id="news-h">News</h2><p><a href="news.html">All news</a></p></div>
+    <ul class="headlines">
+      <li><time datetime="2026-10-21">21 Oct 2026</time><a href="news.html#n-f8c1ed6f">Mayoralty and the Federation of Arab Engineers agree to work together on urban development</a></li>
+      <li><time datetime="2026-10-19">19 Oct 2026</time><a href="news.html#n-c7aca8a4">New 32,000 m² park opens in Kadhimiya</a></li>
+      <li><time datetime="2026-10-06">6 Oct 2026</time><a href="news.html#n-3922b475">Tree-planting campaign starts in every municipality</a></li>
     </ul>
   </section>
 </main>
@@ -292,9 +281,9 @@
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">Mayoralty of Baghdad</div>
       <div><h2>Services</h2><ul><li><a href="services.html">All services</a></li><li><a href="report.html">Report a problem</a></li><li><a href="track.html">Track a report</a></li><li><a href="alerts.html">Alerts</a></li></ul></div>
-      <div><h2>The city</h2><ul><li><a href="districts.html">Districts</a></li><li><a href="projects.html">Projects</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li></ul></div>
-      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">About</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="news.html">News</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
-      <div><h2>This site</h2><ul><li><a href="about.html#search">How search works</a></li><li><a href="about.html#access">Accessibility</a></li><li><a href="about.html#privacy">Privacy</a></li></ul></div>
+      <div><h2>The city</h2><ul><li><a href="districts.html">Districts</a></li><li><a href="news.html">News</a></li></ul></div>
+      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">Overview</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
+      <div><h2>This website</h2><ul><li><a href="site.html#privacy">Privacy</a></li><li><a href="site.html#access">Accessibility</a></li><li><a href="site.html#search">How search works</a></li></ul></div>
     </div>
     <div class="fine">
       <p class="hotline">Hotline <strong>5628</strong>, 8:30 am – 2 pm · <a href="https://www.facebook.com/mayoralty.baghdad" rel="external">Facebook</a> · <a href="https://www.instagram.com/mayoralty_baghdad" rel="external">Instagram</a> · <a href="https://x.com/mayoralty_bd" rel="external">X</a></p>

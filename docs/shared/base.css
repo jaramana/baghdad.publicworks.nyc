@@ -90,6 +90,17 @@ figcaption { font-size: 0.6875rem; color: var(--muted); margin-top: 0.3rem; }
 .nav a { color: var(--ink); text-decoration: none; padding-block: 0.25rem; border-bottom: 2px solid transparent; }
 .nav a:hover, .nav a[aria-current] { border-color: var(--green); }
 
+/* Dropdown: the parent stays a link to its index; its children open on hover or keyboard focus */
+
+.nav .has-sub { position: relative; }
+.nav .has-sub > a::after { content: ""; display: inline-block; width: 0.35rem; height: 0.35rem; margin-inline-start: 0.45rem; border: solid currentColor; border-width: 0 1.5px 1.5px 0; rotate: 45deg; vertical-align: 0.25em; opacity: 0.6; }
+.nav .sub { display: none; position: absolute; top: 100%; inset-inline-start: -1rem; z-index: 20; min-width: 15rem; margin: 0; padding: 0.75rem 0 0.5rem; list-style: none; background: var(--white); border: 1px solid var(--line); border-top: 2px solid var(--green); border-radius: 0 0 3px 3px; box-shadow: 0 12px 28px rgba(15,63,33,0.12); font-weight: 400; }
+.nav .end > .sub { inset-inline: auto -1rem; }
+.nav .has-sub:hover > .sub, .nav .has-sub:focus-within > .sub { display: block; }
+.nav .sub a { display: block; padding: 0.35rem 1rem; border: 0; }
+.nav .sub a:hover { background: var(--green-tint); color: var(--green-deep); }
+.nav .sub a[aria-current] { color: var(--green); font-weight: 600; }
+
 /* Language links: stacked at the end, in grey, behind a thin rule */
 .nav .lang { display: flex; flex-direction: column; align-items: flex-start; padding-inline-start: 1.25rem; border-inline-start: 1px solid var(--line); line-height: 1.45; }
 .nav .lang a { font-size: 0.8125rem; color: var(--muted); padding-block: 0; border-bottom: 0; }
@@ -164,6 +175,12 @@ footer { background: var(--soft); border-top: 4px solid var(--green); padding-bl
   .menu .nav { flex-direction: column; align-items: stretch; gap: 0; margin-top: 1.25rem; font-size: 1.125rem; }
   .menu .nav > li > a { display: block; padding-block: 0.6rem; border: 0; }
   .menu .nav a[aria-current] { color: var(--green); font-weight: 700; }
+
+  /* In the sheet, children always show, indented under their parent */
+  .menu .nav .has-sub > a::after { display: none; }
+  .menu .nav .sub { display: block; position: static; min-width: 0; padding: 0 0 0.5rem; border: 0; border-inline-start: 2px solid var(--line); margin-inline-start: 0.15rem; box-shadow: none; background: none; font-size: 0.9375rem; }
+  .menu .nav .sub a { padding: 0.3rem 0.9rem; }
+  .menu .nav .sub a[aria-current] { font-weight: 700; }
   .menu .nav .lang { gap: 0.5rem; margin-top: 1rem; padding: 1.25rem 0 0; border-inline-start: 0; border-top: 1px solid var(--line); }
   .menu .nav .lang a { font-size: 0.9375rem; padding: 0; }
 }
