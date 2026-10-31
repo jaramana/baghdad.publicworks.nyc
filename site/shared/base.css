@@ -126,6 +126,7 @@ footer { background: var(--soft); border-top: 4px solid var(--green); padding-bl
 .foot a { color: var(--ink); }
 .fine { border-top: 1px solid var(--line); margin-top: 2rem; padding-top: 1rem; color: var(--muted); font-size: 0.8125rem; }
 .fine p { margin: 0.25rem 0; }
+.fine .hotline { color: var(--ink); font-size: 0.9375rem; }
 
 @media (max-width: 860px) {
   :root { --ratio-hero: 16 / 9; }

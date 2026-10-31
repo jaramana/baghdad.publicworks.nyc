@@ -30,6 +30,10 @@ Not part of the publicworks.nyc suite.
 | Location | This folder, git with no remote |
 | Research | Four parallel agents; findings in `research/` |
 | Home direction | `site/i-blend.html` (30 Oct): the B + C blend revised. Green stays primary but only as lines, text and outlines. Grounded (E) rejected |
+| Client package (31 Oct) | About becomes an index with five child pages: Leadership and structure, News, Tenders and auctions, Laws and plans, Open data. They carry what the Mayoralty expects (the Mayor, departments, statements, notices, laws) without putting news on the home page |
+| Complaints | The 5628 hotline and the Citizen Voice app are real and shown wherever reporting is. Our Report flow presents every channel as feeding one complaints system with one kind of number |
+| Deputy mayors | Shown by role only until the Mayoralty confirms names. Posts disagree on who holds Technical and Administrative |
+| News page | Real statements, newest first, with English headlines written from the Arabic and a link to each original. Headlines lead with what changed, not with who attended |
 
 ## Visual system
 
@@ -62,7 +66,8 @@ Preview: `baghdad-site` in this folder's `.claude/launch.json` (port 4321), or `
 
 | Finding | Consequence for the design | Source |
 | --- | --- | --- |
-| Current home page has 447 links, ~160 say «اضغط هنا», no hotline, `/en` shows Arabic | The bar is low; the case study shows the gap | `research/current-site.md` |
+| Current home page has 447 links, ~160 say «اضغط هنا», `/en` shows Arabic | The bar is low; the case study shows the gap | `research/current-site.md` |
+| A municipal hotline (5628) and a complaints app (Citizen Voice) exist; the home page loads ~173 MB of images; the site was built by UoITC, not the University of Baghdad | Show the hotline and app; Report feeds them rather than competing | `research/current-site-deep.md` |
 | Real transactions (permits, property statements, water) run on the national Ur portal behind login | Don't rebuild transactions. Own the front door, plain-language service pages and a clean handoff to Ur | `current-site.md` §3 |
 | Complaints are the one transaction Amanat owns, split across four channels with no tracking | Report-a-problem with a case number and status is the flagship | `current-site.md` §3 |
 | Overpasses are run by the national ministry and the PM's office | Projects says who runs each project and who to ask | `urban-context.md` §2–3 |
@@ -78,7 +83,7 @@ Preview: `baghdad-site` in this folder's `.claude/launch.json` (port 4321), or `
 | Report a problem | `en/report.html` | Track a report |
 | Districts | `en/districts.html` | Karrada; the other 14 open their row in the index. Baghdad Governorate is one more row, under Around the city |
 | Projects | `en/projects.html` | 14 projects in four groups |
-| About | `en/about.html` | Mandate, who does what, leadership, tenders, contact, Open data (`en/data.html`), search, accessibility, privacy |
+| About | `en/about.html` | Leadership and structure (`leadership.html`), News (`news.html`), Tenders and auctions (`tenders.html`), Laws and plans (`laws.html`), Open data (`data.html`). About itself keeps mandate, who does what, contact, search, accessibility, privacy |
 
 Each English page's العربية link goes to its Arabic counterpart. Projects has none yet, so it links to the Arabic home. Arabic pages' English link goes to their English page; `city-tigris.html` goes to Projects. Every کوردی link goes to the Kurdish twin, or to the Kurdish home when there is none. `site/en.html` is a redirect stub.
 
@@ -101,13 +106,17 @@ Each English page's العربية link goes to its Arabic counterpart. Projects
 
 ## Open items
 
-- WhatsApp "Open the chat" has no target, because no Mayoralty number exists
+- The prototype notice must return to the footer and About before the client or anyone outside sees the site
+- WhatsApp "Open the chat" has no target, because no Mayoralty WhatsApp number exists
 - Pay-bill links to nothing, because the payment site's operator is unverified
-- No public phone line exists; About says so
 - The Arabic pages are behind the English: old nav (المدينة, no Projects or About), district dropdown on the home, no Projects page, no tenders or contact sections in About
 - The other 14 district pages, once the official boundary and office list exist
 - Bank of the Tigris for Al-Ghadeer, Al-Shula and the Green Zone municipality is unverified
-- `info@amanatbaghdad.gov.iq` is inferred from the current site's address list (`info@` plus the site's domain)
+- Deputy mayors' names, and whether Citizen Voice gives residents a case number
+- Tenders and auctions show only notice numbers, because the subject sits inside each Word or image file
+- The district mobile numbers in `current-site-deep.md` date from 2024 and are untested, so they are not on the site
+- News, tenders and laws are a snapshot from 31 Oct 2026. A live site would read them from the Mayoralty's own feed
+- The four new About pages have no Arabic or Kurdish twin yet; their language links go to the Arabic About and the Kurdish home
 - Search and the fee lookup still answer in a reserved slot on the same page. Owner to confirm this is acceptable under the no-reveal rule
 - The Kurdish text is a draft translation by Claude. It needs a native Sorani reader before anyone relies on it
 - The Kurdish name ئەمانەتی بەغدا and the Kurdish Ur service name are unverified
@@ -157,7 +166,7 @@ State on 30 Oct 2026: the English site (`site/en/`, 15 pages) and the language s
 
 ## Folders
 
-- `research/` — benchmark scan, current-site inventory, identity and images, urban context, 2024 census by subdistrict
+- `research/` — benchmark scan, current-site inventory and its deep dive (`current-site-deep.md`), identity and images, urban context, 2024 census by subdistrict
 - `site/` — Arabic pages, earlier home variants and the prototype hub (`index.html`)
 - `site/en/` — the English site
 - `site/ku/` — the Kurdish (Sorani) pilot
