@@ -1,0 +1,81 @@
+# Alerts
+
+en: Alerts — Mayoralty of Baghdad
+ar: التنبيهات — أمانة بغداد
+ku: ئاگادارکردنەوەکان — ئەمانەتی بەغدا
+
+en: Scheduled water cuts, road closures, rain warnings and changes to waste collection. Other announcements are published under <0>News</0>.
+ar: قطع الماء المجدول، وغلق الطرق، وتحذيرات الأمطار، وتغييرات مواعيد رفع النفايات. تُنشر الإعلانات الأخرى في <0>الأخبار</0>.
+ku: بڕانی خشتەکراوی ئاو، داخستنی ڕێگا، ئاگادارکردنەوەی باران و گۆڕانکاری لە کۆکردنەوەی خاشاک. ڕاگەیاندنەکانی تر لە بەشی <0>هەواڵەکان</0> بڵاو دەکرێنەوە.
+
+en: The alerts on this page are illustrative.
+ar: التنبيهات في هذه الصفحة توضيحية.
+ku: ئاگادارکردنەوەکانی ئەم پەڕەیە نموونەیین.
+
+en: Today<0>Friday 30 October · Updated 10:40 am</0>
+ar: اليوم<0>الجمعة 30 تشرين الأول · آخر تحديث 10:40 صباحاً</0>
+ku: ئەمڕۆ<0>هەینی 30ی تشرینی یەکەم · نوێکراوەتەوە 10:40ی بەیانی</0>
+
+en: Scheduled cut in Inner Karrada, 9 am – 3 pm.<0>Karrada municipality · main line maintenance</0>
+ar: قطع مجدول في الكرادة داخل، من 9 صباحاً إلى 3 عصراً.<0>بلدية الكرادة · صيانة الخط الرئيسي</0>
+ku: بڕانی خشتەکراو لە کەڕادەی ناوەوە، لە 9ی بەیانی تا 3ی دوانیوەڕۆ.<0>شارەوانی کەڕادە · چاککردنەوەی هێڵی سەرەکی</0>
+
+en: Martyrs Bridge is open to pedestrians only today.<0>Between Rusafa and Karkh · until midnight</0>
+ar: جسر الشهداء مفتوح للمشاة فقط اليوم.<0>بين الرصافة والكرخ · حتى منتصف الليل</0>
+ku: پردی شەهیدان ئەمڕۆ تەنها بۆ پیادە کراوەیە.<0>نێوان ڕوسافە و کەرخ · تا نیوەشەو</0>
+
+en: Walking only
+ar: للمشاة فقط
+ku: تەنها بۆ پیادە
+
+en: One lane closed on Abu Nuwas Street near Firdos Square.<0>Karrada municipality · until the end of the week</0>
+ar: غلق مسار واحد في شارع أبي نؤاس قرب ساحة الفردوس.<0>بلدية الكرادة · حتى نهاية الأسبوع</0>
+ku: هێڵێک لە شەقامی ئەبو نوواس نزیک گۆڕەپانی فیردەوس داخراوە.<0>شارەوانی کەڕادە · تا کۆتایی هەفتە</0>
+
+en: Collection on schedule in every municipality.
+ar: رفع النفايات وفق الجدول في كل البلديات.
+ku: کۆکردنەوە بەپێی خشتە لە هەموو شارەوانییەکان.
+
+en: This week
+ar: هذا الأسبوع
+ku: ئەم هەفتەیە
+
+en: Rain
+ar: الأمطار
+ku: باران
+
+en: Rain is expected on Sunday night. Residents are asked to clear the drain in front of their homes and not to put rubbish in drains.<0>All municipalities</0>
+ar: يُتوقع هطول الأمطار ليلة الأحد. يُرجى من المواطنين تنظيف المشبك أمام منازلهم وعدم رمي النفايات في المشبكات.<0>كل البلديات</0>
+ku: چاوەڕوان دەکرێت شەوی یەکشەممە باران ببارێت. داوا لە دانیشتوان دەکرێت ئاوەڕۆی بەردەم ماڵەکانیان پاک بکەنەوە و خاشاک نەخەنە ناو ئاوەڕۆکانەوە.<0>هەموو شارەوانییەکان</0>
+
+en: Warning
+ar: تحذير
+ku: ئاگاداری
+
+en: Scheduled cut in Hay al-Jamia, Tuesday 8 am – 2 pm.<0>Mansour municipality · connecting a new line</0>
+ar: قطع مجدول في حي الجامعة، يوم الثلاثاء من 8 صباحاً إلى 2 ظهراً.<0>بلدية المنصور · ربط خط جديد</0>
+ku: بڕانی خشتەکراو لە گەڕەکی جامیعە، سێشەممە لە 8ی بەیانی تا 2ی دوانیوەڕۆ.<0>شارەوانی مەنسوور · گەیاندنی هێڵێکی نوێ</0>
+
+en: Palestine Street closed at night, Sunday to Wednesday.<0>Rusafa side · resurfacing</0>
+ar: غلق شارع فلسطين ليلاً من الأحد إلى الأربعاء.<0>جانب الرصافة · إعادة إكساء</0>
+ku: شەقامی فەلەستین بە شەو دادەخرێت، یەکشەممە تا چوارشەممە.<0>لای ڕوسافە · قیرتاوکردنەوە</0>
+
+en: Closed at night
+ar: مغلق ليلاً
+ku: بە شەو داخراوە
+
+en: Collection in Kadhimiya in the morning instead of the evening all week.<0>Kadhimiya municipality</0>
+ar: رفع النفايات في الكاظمية صباحاً بدلاً من المساء طوال الأسبوع.<0>بلدية الكاظمية</0>
+ku: کۆکردنەوە لە کازمییە بە درێژایی هەفتە بەیانیان دەکرێت لەجیاتی ئێواران.<0>شارەوانی کازمییە</0>
+
+en: Different time
+ar: موعد مختلف
+ku: کاتێکی جیاواز
+
+en: Alerts by municipality
+ar: التنبيهات حسب البلدية
+ku: ئاگادارکردنەوەکان بەپێی شارەوانی
+
+en: <0>Karrada municipality</0> · <1>All municipalities</1>
+ar: <0>بلدية الكرادة</0> · <1>كل البلديات</1>
+ku: <0>شارەوانی کەڕادە</0> · <1>هەموو شارەوانییەکان</1>

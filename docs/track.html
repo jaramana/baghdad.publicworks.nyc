@@ -3,30 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>تابع بلاغك — أمانة بغداد</title>
+<title>متابعة بلاغ — أمانة بغداد</title>
+<link rel="alternate" hreflang="ckb" href="ku/track.html">
+<link rel="alternate" hreflang="en" href="en/track.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/page.css">
 <link rel="stylesheet" href="shared/lang-swap.css">
 <script src="shared/lang-swap.js"></script>
 <style>
   /* Case tracking: look up a number, see who did what and when */
 
-  .crumbs { font-size: 0.875rem; color: var(--muted); padding-top: 1.5rem; }
-  .crumbs ol { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0; padding: 0; list-style: none; }
-  .crumbs li + li::before { content: "‹"; margin-inline-end: 0.4rem; color: #a9b2ac; }
-  .crumbs a { color: var(--muted); }
-
-  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 19rem; gap: clamp(2rem, 5vw, 4rem); align-items: start; padding-block: 1.25rem 4rem; }
+  .layout { padding-block: 1.25rem 4rem; max-width: 50rem; }
   .track { min-width: 0; }
 
-  /* Help column */
-  .help { display: grid; gap: 1rem; padding-top: 0.5rem; }
-  .help section { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 4px; padding: 1rem 1.15rem; }
+  /* Help: plain blocks under the case */
+  .help { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.75rem; margin-top: 3rem; }
+  .help section { border-top: 2px solid var(--green); padding-top: 0.8rem; }
   .help h2 { font-size: 1rem; margin-bottom: 0.4rem; }
   .help p { margin: 0.3rem 0; font-size: 0.9375rem; color: var(--muted); }
-  @media (max-width: 860px) { .layout { grid-template-columns: 1fr; } }
   .track h1 { font-size: clamp(1.9rem, 4.5vw, 2.6rem); font-weight: 800; }
   .lede { margin: 0.4rem 0 0; color: var(--muted); }
 
@@ -61,6 +58,7 @@
 <script src="shared/prototype.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">انتقل إلى المحتوى الرئيسي</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -72,29 +70,46 @@
     <nav class="menu" id="menu" popover aria-label="القائمة الرئيسية">
       <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">إغلاق</button>
       <ul class="nav">
-        <li><a href="services.html">الخدمات</a></li>
-        <li><a href="report.html">بلّغ عن مشكلة</a></li>
-        <li><a href="districts.html">البلديات</a></li>
-        <li><a href="city-tigris.html">المدينة</a></li>
-        <li class="lang"><a href="ku/index.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/track.html" lang="en" hreflang="en" dir="ltr">English</a></li>
+        <li class="has-sub"><a href="services.html">الخدمات</a>
+          <ul class="sub">
+            <li><a href="service-permit.html">إجازة البناء</a></li>
+            <li><a href="service-water.html">حساب الماء</a></li>
+            <li><a href="service-property.html">بيان العقار</a></li>
+            <li><a href="service-sewer.html">ربط المجاري</a></li>
+            <li><a href="service-fees.html">الرسوم البلدية</a></li>
+            <li><a href="alerts.html">التنبيهات</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html" aria-current="true">الإبلاغ عن مشكلة</a></li>
+        <li><a href="news.html">الأخبار</a></li>
+        <li class="has-sub end"><a href="about.html">الأمانة</a>
+          <ul class="sub">
+            <li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li>
+            <li><a href="districts.html">البلديات</a></li>
+            <li><a href="tenders.html">المناقصات والمزايدات</a></li>
+            <li><a href="laws.html">القوانين والخطط</a></li>
+            <li><a href="data.html">البيانات المفتوحة</a></li>
+            <li><a href="about.html#contact">الاتصال</a></li>
+          </ul>
+        </li>
+        <li class="lang"><a href="ku/track.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/track.html" lang="en" hreflang="en" dir="ltr">English</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <nav class="crumbs" aria-label="مسار الصفحة">
+<main class="wrap" id="main">
+  <nav class="crumbs" aria-label="مسار التنقل">
     <ol>
       <li><a href="home.html">الرئيسية</a></li>
-      <li><a href="report.html">بلّغ عن مشكلة</a></li>
-      <li aria-current="page">تابع بلاغك</li>
+      <li><a href="report.html">الإبلاغ عن مشكلة</a></li>
     </ol>
   </nav>
 
   <div class="layout">
   <div class="track">
-    <h1>تابع بلاغك</h1>
-    <p class="lede">أدخل رقم البلاغ لترى ما حدث له، ومن يعمل عليه الآن. لا تحتاج حساباً.</p>
+    <h1>متابعة بلاغ</h1>
+    <p class="lede">أدخل رقم البلاغ لمعرفة مراحل إنجازه والفريق الذي يتولاه. لا يلزم حساب.</p>
 
     <form class="lookup" id="lookup" role="search">
       <input id="no" aria-label="رقم البلاغ" value="ب-٤٨٢١٣" autocomplete="off">
@@ -108,39 +123,58 @@
           <p class="case-no" id="case-no">ب-٤٨٢١٣</p>
           <p class="case-meta">طفح المجاري · بلدية الكرادة · قرب مدرسة في محلة ٩٠٤</p>
         </div>
-        <span class="status plan">قيد التنفيذ</span>
+        <span class="status plan">قيد الإنجاز</span>
       </div>
 
       <ol class="timeline">
-        <li class="done"><div><strong>استُلم البلاغ</strong><span class="when">الخميس ٢٩ تشرين الأول، ٨:١٢ مساءً</span><p class="by">عبر الموقع، مع صورة.</p></div></li>
-        <li class="done"><div><strong>أُحيل إلى بلدية الكرادة</strong><span class="when">الجمعة ٣٠ تشرين الأول، ٧:٤٠ صباحاً</span><p class="by">قسم المجاري في البلدية.</p></div></li>
-        <li class="now"><div><strong>الفريق في الموقع</strong><span class="when">الجمعة ٣٠ تشرين الأول، ١٠:٢٥ صباحاً</span><p class="by">فريق تسليك يعمل على الخط الفرعي.</p></div></li>
-        <li class="todo"><div><strong>أُغلق البلاغ</strong><span class="when">بانتظار انتهاء العمل</span></div></li>
+        <li class="done"><div><strong>تم استلام البلاغ</strong><span class="when">الخميس ٢٩ تشرين الأول، ٨:١٢ مساءً</span><p class="by">عبر الموقع، مع صورة.</p></div></li>
+        <li class="done"><div><strong>أُرسل إلى بلدية الكرادة</strong><span class="when">الجمعة ٣٠ تشرين الأول، ٧:٤٠ صباحاً</span><p class="by">شعبة المجاري في البلدية.</p></div></li>
+        <li class="now"><div><strong>الفريق في الموقع</strong><span class="when">الجمعة ٣٠ تشرين الأول، ١٠:٢٥ صباحاً</span><p class="by">فريق تسليك المجاري يعمل على الخط الفرعي.</p></div></li>
+        <li class="todo"><div><strong>إغلاق البلاغ</strong><span class="when">بانتظار انتهاء العمل</span></div></li>
       </ol>
 
       <div class="after">
-        <p>تصلك هذه التحديثات على واتساب أيضاً.</p>
-        <a class="btn" href="report.html">المشكلة ما زالت قائمة؟ بلّغ مجدداً</a>
+        <p>تصلك هذه التحديثات برسالة نصية أيضاً.</p>
+        <a class="btn" href="report.html?cat=طفح%20المجاري&amp;d=karrada&amp;ref=ب-٤٨٢١٣">أبلغ عن المشكلة مجدداً</a>
       </div>
     </article>
 
-    <p class="note-block">مثال توضيحي في هذا النموذج. جرّب رقماً آخر لترى رسالة «لم نجد».</p>
+    <article class="case" id="case-new" aria-labelledby="new-no" hidden>
+      <div class="case-head">
+        <div>
+          <p class="case-no" id="new-no"></p>
+          <p class="case-meta" id="new-meta"></p>
+        </div>
+        <span class="status plan">الاستلام</span>
+      </div>
+
+      <ol class="timeline">
+        <li class="now"><div><strong>تم استلام البلاغ</strong><span class="when">اليوم</span><p class="by">عبر الموقع.</p></div></li>
+        <li class="todo"><div><strong>أُرسل إلى بلدية <span id="new-d"></span></strong><span class="when">التالي</span></div></li>
+        <li class="todo"><div><strong>الفريق في الموقع</strong></div></li>
+        <li class="todo"><div><strong>إغلاق البلاغ</strong></div></li>
+      </ol>
+
+      <div class="after" id="new-via"></div>
+    </article>
+
+    <p class="note-block">مثال توضيحي.</p>
   </div>
 
-  <aside class="help" aria-label="أسئلة شائعة">
+  <div class="help">
     <section>
       <h2>أين أجد رقم البلاغ؟</h2>
-      <p>في صفحة التأكيد بعد الإرسال، وفي أول رسالة على واتساب أو الرسائل النصية.</p>
+      <p>في صفحة التأكيد بعد الإرسال، وفي أول رسالة نصية.</p>
     </section>
     <section>
-      <h2>كم يستغرق الحل؟</h2>
-      <p>يصلك أول رد خلال يومين عمل. مدة الحل تختلف بحسب نوع المشكلة. (توضيحي)</p>
+      <h2>كم يستغرق الإصلاح؟</h2>
+      <p>يصلك أول رد خلال يومي عمل. وتعتمد مدة الإصلاح على نوع المشكلة. (توضيحي)</p>
     </section>
     <section>
-      <h2>أُغلق البلاغ ولم تُحل المشكلة؟</h2>
-      <p>بلّغ مجدداً واذكر رقم البلاغ القديم في الوصف، فيُربط البلاغان.</p>
+      <h2>ماذا لو أُغلق البلاغ والمشكلة ما زالت قائمة؟</h2>
+      <p>استخدم «أبلغ عن المشكلة مجدداً» في بلاغك. يحمل البلاغ الجديد الرقم القديم، فيرتبط البلاغان.</p>
     </section>
-  </aside>
+  </div>
   </div>
 </main>
 
@@ -148,26 +182,48 @@
   <div class="wrap">
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
-      <div><h2>الأمانة</h2><ul><li><a href="about.html">عن الأمانة</a></li><li><a href="districts.html">البلديات</a></li><li><a href="services.html#business">المناقصات</a></li></ul></div>
-      <div><h2>الخدمات</h2><ul><li><a href="report.html">بلّغ عن مشكلة</a></li><li><a href="track.html">تابع بلاغك</a></li><li><a href="services.html">كل الخدمات</a></li></ul></div>
-      <div><h2>الموقع</h2><ul><li><a href="about.html#access">إمكانية الوصول</a></li><li><a href="about.html#privacy">الخصوصية</a></li><li><a href="data.html">البيانات المفتوحة</a></li></ul></div>
+      <div><h2>الخدمات</h2><ul><li><a href="services.html">كل الخدمات</a></li><li><a href="report.html">الإبلاغ عن مشكلة</a></li><li><a href="track.html">متابعة بلاغ</a></li><li><a href="alerts.html">التنبيهات</a></li></ul></div>
+      <div><h2>الأخبار</h2><ul><li><a href="news.html">كل الأخبار</a></li></ul></div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">نظرة عامة</a></li><li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li><li><a href="districts.html">البلديات</a></li><li><a href="tenders.html">المناقصات والمزايدات</a></li><li><a href="laws.html">القوانين والخطط</a></li><li><a href="data.html">البيانات المفتوحة</a></li><li><a href="about.html#contact">الاتصال</a></li></ul></div>
+      <div><h2>هذا الموقع</h2><ul><li><a href="site.html#privacy">الخصوصية</a></li><li><a href="site.html#access">إمكانية الوصول</a></li><li><a href="site.html#search">كيف يعمل البحث</a></li></ul></div>
     </div>
     <div class="fine">
-      <p>الختم: إعادة رسم مجتمعية — CC BY-SA 4.0 — Wikimedia Commons.</p>
+      <p class="hotline"><span>الخط الساخن <a href="tel:5628"><strong>٥٦٢٨</strong></a>، من ٨:٣٠ صباحاً إلى ٢ ظهراً</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="فيسبوك" title="فيسبوك"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="إنستغرام" title="إنستغرام"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="إكس" title="إكس"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>الشعار: إعادة رسم مجتمعية — CC BY-SA 4.0 — ويكيميديا كومنز. تُذكر حقوق كل صورة معها.</p>
     </div>
   </div>
 </footer>
-
 <script>
-  // Lookup demo: only the sample case exists. Accepts Arabic or Western digits.
+  // Lookup demo: the sample case, plus a report sent from the Report page in
+  // this browser tab. Accepts Arabic or Western digits.
 
   const toWestern = s => s.replace(/[٠-٩]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d));
+  const key = s => toWestern(s).replace(/\D/g, '');
+  const cases = { 48213: document.getElementById('case') };
+
+  let saved = null;
+  try { saved = JSON.parse(sessionStorage.getItem('demo-report')); } catch {}
+  if (saved) {
+    document.getElementById('new-no').textContent = saved.no;
+    document.getElementById('new-meta').textContent = [saved.cat, `بلدية ${saved.d}`, saved.place].filter(Boolean).join(' · ');
+    document.getElementById('new-d').textContent = saved.d;
+    const via = { sms: 'برسالة نصية' }[saved.via];
+    const after = document.getElementById('new-via');
+    if (via) after.innerHTML = `<p>تصلك هذه التحديثات ${via} أيضاً.</p>`; else after.remove();
+    cases[key(saved.no)] = document.getElementById('case-new');
+  }
+
   document.getElementById('lookup').addEventListener('submit', e => {
     e.preventDefault();
-    const found = toWestern(document.getElementById('no').value).replace(/\D/g, '') === '48213';
-    document.getElementById('case').hidden = !found;
-    document.getElementById('miss').textContent = found ? '' : 'لم نجد بلاغاً بهذا الرقم. تأكّد من الرقم في رسالة التأكيد.';
+    const found = cases[key(document.getElementById('no').value)];
+    Object.values(cases).forEach(c => { c.hidden = c !== found; });
+    document.getElementById('miss').textContent = found ? '' : 'لا يوجد بلاغ بهذا الرقم. تحقّق من الرقم في رسالة التأكيد.';
   });
+
+  // A number sent from the Report page opens straight onto its result
+
+  const sent = new URLSearchParams(location.search).get('n');
+  if (sent) { document.getElementById('no').value = sent; document.getElementById('lookup').requestSubmit(); }
 </script>
 </body>
 </html>

@@ -10,10 +10,10 @@ Not part of the publicworks.nyc suite.
 | --- | --- |
 | Client | Amanat Baghdad (Mayoralty), not the national government |
 | Language | Arabic-first for residents, right to left. The English site is the working version (see next row) |
-| Working language | English first, because the owner reviews in English. Arabic pages are frozen until the English settles, then translated |
+| Working language | English first, because the owner reviews in English. Arabic and Kurdish pages are built from the English by `tools/i18n/build.py` (1 Nov) |
 | English structure | `docs/en/`, one English file per page with the same filename as its Arabic counterpart in `docs/` |
-| Kurdish | Sorani (`lang="ckb"`, Arabic script, right to left) in `docs/ku/`, same filenames as `docs/en/`, translated from the English. Pilot of four pages: home, Services, Building permit, Report a problem. The rest follow once the English settles, alongside the Arabic pass |
-| Language links | Every paired page lists the other two languages in fixed order: العربية, کوردی, English. A page with no Kurdish twin sends کوردی to the Kurdish home. Kurdish pages link to the English page wherever no Kurdish page exists yet |
+| Kurdish | Sorani (`lang="ckb"`, Arabic script, right to left) in `docs/ku/`, same filenames as `docs/en/`, translated from the English. Every English page has a Kurdish twin (1 Nov) |
+| Language links | Every page lists the other two languages in fixed order: العربية, کوردی, English, each linking to the same page in that language. The build script writes them |
 | English name | "Mayoralty of Baghdad", the English text on the seal's ring. "Amanat" appears only once, in About, to give the Arabic name |
 | Site map | Four sections: Services, Report a problem, News, The Mayoralty. Districts sits under The Mayoralty. Each has an index page listing everything under it. Every page has a breadcrumb and a highlighted nav item. The footer lists the whole site |
 | Dropdowns (31 Oct) | Services and The Mayoralty open a dropdown of their children on hover or keyboard focus, in CSS only. The parent label stays a link to its index. The panel hangs from the masthead's green line, its text aligned under the label. In the phone menu the children show indented under their parent |
@@ -23,7 +23,7 @@ Not part of the publicworks.nyc suite.
 | Realism | Real studies, projects and sources only; no invented plans or studies. Illustrative live data (alerts, case numbers, report counts) stays, labelled |
 | The Tigris page | `city-tigris.html` and its outfall plan stay as they are, in Arabic. No further work on it. No English or Kurdish page links to it |
 | Reporting in one place | Report links live only in the nav, the home's Report block, the Report and Track pages, the Services index and About › Contact. Track a report is headlined at the top of the Report page; a number entered there opens `track.html?n=` |
-| Side columns (31 Oct) | None on English pages for now, after owner review; they may return later. Each page is one reading column, 50rem wide. A service's Start block sits above its guide; contacts and help sit at the end. Arabic and Kurdish pages keep theirs until their pass |
+| Side columns (31 Oct) | None, after owner review; they may return later. Each page is one reading column, 50rem wide. A service's Start block sits above its guide; contacts and help sit at the end |
 | No hand-kept counts | No totals that someone must update by hand (e.g. "6 projects run by the Mayoralty"). Lists show their own size |
 | No side roads | No cards or links that send readers to unrelated pages they can reach from the nav |
 | Disclaimers | Scarce. Keep the illustrative label on made-up figures. The model pages role-play the real site: no comparisons with the Mayoralty's current website, and no research-method or sourcing notes on public pages (`research/service-claims.md` holds those). The prototype notice lives only in the sticky bar, outside the page design |
@@ -33,7 +33,7 @@ Not part of the publicworks.nyc suite.
 | Research | Four parallel agents; findings in `research/` |
 | Home direction | `home.html` (30 Oct, first built as the "i-blend" variant): the B + C blend revised. Green stays primary but only as lines, text and outlines. Grounded (E) rejected |
 | The Mayoralty (31 Oct) | About is renamed The Mayoralty. Its overview leads with the Mayor, then duties, responsibilities in Baghdad, major projects and contact. Its four children are Leadership and structure, Tenders and auctions, Laws and plans, Open data |
-| Districts (1 Nov) | Under The Mayoralty, after Leadership and structure, since the municipalities are part of its structure. Its breadcrumb is Home › The Mayoralty. The footer's The city column becomes News. Arabic and Kurdish pages keep Districts on top until their pass |
+| Districts (1 Nov) | Under The Mayoralty, after Leadership and structure, since the municipalities are part of its structure. Its breadcrumb is Home › The Mayoralty. The footer's The city column becomes News |
 | News (31 Oct) | News is a top-level nav item. The home page shows the three latest headlines, each linking to its item on the News page |
 | Site information (31 Oct) | Privacy, accessibility and how search works live on `site.html` ("Using this website"), linked from the footer only. The Mayoralty pages say nothing about the website itself |
 | Headshots (31 Oct) | The Mayor's portrait (Wikimedia Commons, CC0, January 2026) leads the overview and Leadership, at 3:2. Deputy mayors have no licensed photo and unconfirmed names, so they stay by role |
@@ -50,6 +50,8 @@ Not part of the publicworks.nyc suite.
 | Social links (31 Oct) | Facebook, Instagram and X as icons beside the footer hotline, each with a label for screen readers |
 | Voice (1 Nov) | Formal and institutional, the register of an Iraqi government site in translation. The Mayoralty is "the Mayoralty", not "we"; instructions address "you". No asides that explain or defend the institution ("not elected", "isn't always clear"), no conversational openers ("Can't find…?", "Prefer to…?"), no contractions. Headings are labels, except form steps and the Track questions. Pages carry no review date |
 | Claims (31 Oct) | `research/service-claims.md` lists every service and reporting claim as verified, illustrative, proposed or unsourced. Each service guide says everything but its Ur destination is illustrative |
+| Arabic and Kurdish pass (1 Nov) | Both languages translated from the settled English, page for page, with the same IDs, layout and scripts. Arabic and Kurdish text uses Eastern Arabic digits, Iraqi month names and «» quotes. Ur service names are quoted in Arabic exactly as Ur shows them. Report numbers read ب-٤٨٢١٣ |
+| Banks in right-to-left (1 Nov) | Karkh stays on the left, as on a map: the build puts Rusafa first in the source of right-to-left pages |
 
 ## Visual system
 
@@ -60,8 +62,8 @@ Not part of the publicworks.nyc suite.
 - Image ratios: hero band 3:1 (16:9 on phones, capped at 26rem tall); every other photo 3:2, equal widths in a row
 - Type roles in Arabic: Noto Kufi Arabic for the institution; Noto Naskh Arabic for story voice only; IBM Plex Sans Arabic for everything people read and use. English swaps in IBM Plex Sans and IBM Plex Serif through `shared/en.css`. Kurdish keeps the Arabic roles unchanged; all three Arabic-script fonts carry the Kurdish letters (ڕ ڵ ۆ ێ ە), checked against the font files
 - Report a problem offers the web form beside the 5628 hotline and the Citizen Voice app
-- Districts are listed by bank, each on its own side of the river as on a map: Karkh (west) on the left in English
-- Shared rules live in `docs/shared/base.css`. Inner pages add `shared/page.css`. English pages add `shared/en.css` last. Page files hold only their own layout
+- Districts are listed by bank, each on its own side of the river as on a map: Karkh (west) on the left in every language
+- Shared rules live in `docs/shared/base.css`. Inner pages add `shared/page.css`. English pages add `shared/en.css` last. Page files hold only their own layout. The footer grid takes any number of columns
 - Maps are Leaflet on OpenStreetMap at 3:2, with wheel zoom off so the page scrolls past them. Marker positions come from OSM place lookups and are approximate
 
 Preview: `baghdad-site` in this folder's `.claude/launch.json` (port 4321), or `python3 -m http.server 4321 --directory docs`. The root redirects to `en/index.html`; the Arabic home is `home.html`.
@@ -100,7 +102,7 @@ Preview: `baghdad-site` in this folder's `.claude/launch.json` (port 4321), or `
 | Districts, under The Mayoralty | `en/districts.html` | Karrada; the other 14 open their row in the index. Baghdad Governorate is one more row, under Around the city |
 | Footer only | `en/site.html` | Privacy, accessibility, how search works |
 
-Each English page's العربية link goes to its Arabic counterpart. News and Using this website have none yet, so they link to the Arabic home. Arabic pages' English link goes to their English page; `city-tigris.html` goes to Projects. Every کوردی link goes to the Kurdish twin, or to the Kurdish home when there is none. `docs/index.html` is a redirect to the English home.
+Every page links to its twin in the other two languages. The Arabic home is `home.html`; every other Arabic page has its English filename. `city-tigris.html` links to Projects. `docs/index.html` is a redirect to the English home.
 
 ## Page types
 
@@ -122,16 +124,16 @@ Each English page's العربية link goes to its Arabic counterpart. News and
 
 - No Mayoralty WhatsApp number exists, so WhatsApp is hidden
 - Pay-bill links to nothing, because the payment site's operator is unverified
-- The Arabic pages are behind the English: old nav (المدينة, no Projects or About), district dropdown on the home, no Projects page, no tenders or contact sections in About
 - The other 14 district pages, once the official boundary and office list exist
 - Bank of the Tigris for Al-Ghadeer, Al-Shula and the Green Zone municipality is unverified
 - Deputy mayors' names and photos, and whether Citizen Voice gives residents a case number
 - Tenders and auctions show only notice numbers, because the subject sits inside each Word or image file
 - The district mobile numbers in `current-site-deep.md` date from 2024 and are untested, so they are not on the site
 - News, tenders and laws are a snapshot from 31 Oct 2026. A live site would read them from the Mayoralty's own feed
-- The four new About pages have no Arabic or Kurdish twin yet; their language links go to the Arabic About and the Kurdish home
-- `search.html` and `fees-account.html` have no Arabic or Kurdish twin. The Arabic and Kurdish homes still answer search in a slot, until their pass
-- The Kurdish text is a draft translation by Claude. It needs a native Sorani reader before anyone relies on it
+- The Arabic and Kurdish text is a draft translation by Claude, in `tools/i18n/text/`. Arabic needs an Iraqi reader for register; Kurdish needs a native Sorani reader before anyone relies on it
+- Arabic law and plan titles on Laws and plans are rendered from the English, not copied from each document. Check each against its PDF
+- The Arabic name of the Building Permits Regulation (نظام إجازات البناء) is unverified
+- A report sent in one language and tracked in another shows its problem type and municipality in the language it was sent in
 - The Kurdish name ئەمانەتی بەغدا and the Kurdish Ur service name are unverified
 - Audit decisions for the owner: whether Report keeps saying every channel feeds one complaints system (S01); what the page-feedback Yes/No buttons do, given the no-reveal rule (U07); which licence covers Mayoralty data (S06)
 - The fee lookup shows a balance for any account number. Decide what needs identity checks before making any privacy promise (S04)
@@ -141,7 +143,7 @@ Each English page's العربية link goes to its Arabic counterpart. News and
 - `tel:5628` links are untested on Iraqi phones
 ## Next session
 
-State on 30 Oct 2026: the English site (`docs/en/`, 15 pages) and the language swap are committed on `main`. A Kurdish pilot (`docs/ku/`, 4 pages) and a three-language switcher on every paired page followed. The owner is reviewing the English pages and will send feedback.
+State on 1 Nov 2026: the English site (`docs/en/`, 21 pages including the redirect stub) is settled. Every English page now has an Arabic twin in `docs/` and a Kurdish twin in `docs/ku/`, built by `tools/i18n/build.py`. Both translations are drafts awaiting native review.
 
 ### Owner preferences
 
@@ -160,17 +162,18 @@ State on 30 Oct 2026: the English site (`docs/en/`, 15 pages) and the language s
 
 ### Likely next work
 
-1. Owner feedback on the English pages
-2. The open question on search and the fee lookup (same-page slot or results page)
-3. The Arabic pass, once the English settles: new nav, Projects, About sections, district links, translated from the English. The remaining 11 Kurdish pages go in the same pass
-4. The other 14 district pages (blocked until the official boundary and office list exist)
+1. Native review of the Arabic and Kurdish text in `tools/i18n/text/`
+2. Owner feedback on the English pages, carried to Arabic and Kurdish through the build
+3. The other 14 district pages (blocked until the official boundary and office list exist)
 
 ### When editing
 
-- Pages are plain static HTML with no build step. The masthead and footer are copied into every page, so a change to either goes into every page of that language in the same edit.
-- New inner pages load `shared/base.css`, `shared/page.css`, then `shared/en.css` for English or `shared/ku.css` for Kurdish, and reuse their classes before adding page styles.
-- When a Kurdish page is added, point the کوردی link on its English and Arabic twins at it, add `hreflang="ckb"` alternates, and switch Kurdish links that went to the English page.
-- Every paired page loads `shared/lang-swap.css` and `shared/lang-swap.js`, and keeps the same element IDs as its counterpart so a swap lands in the same place.
+- Pages are plain static HTML. Edit English pages by hand; never edit Arabic or Kurdish pages directly, because the build overwrites them.
+- After any English change, run `python3 tools/i18n/build.py extract` to list new or changed text, add its Arabic and Kurdish to `tools/i18n/text/` (`_common.txt` for text on several pages, otherwise the page's own file), then run `python3 tools/i18n/build.py build`. It reports any text still untranslated.
+- Script strings and link query strings are `raw:` entries in the same files. The build warns when a `raw:` source no longer appears in the page.
+- The build also writes the language links and `hreflang` alternates on every page, English included.
+- New inner pages load `shared/base.css`, `shared/page.css`, then `shared/en.css` (English only), and reuse their classes before adding page styles.
+- Every page loads `shared/lang-swap.css` and `shared/lang-swap.js`. The build keeps element IDs identical across languages, so a swap lands in the same place.
 - Report links use the Arabic category as the key (`report.html?cat=انقطاع الماء`) in both languages; the English form shows English labels.
 - Green is never a fill. Photos are 3:2, the hero band 3:1. Search and lookups open their own result page.
 - Every number needs a source line or the illustrative label. Project statuses say verified or unverified.
@@ -189,7 +192,7 @@ State on 30 Oct 2026: the English site (`docs/en/`, 15 pages) and the language s
 
 - `research/` — benchmark scan, current-site inventory and its deep dive (`current-site-deep.md`), identity and images, urban context, 2024 census by subdistrict
 - `docs/` — the published site: Arabic pages (home is `home.html`), the root redirect and `CNAME`
-- `docs/en/` — the English site
-- `docs/ku/` — the Kurdish (Sorani) pilot
+- `docs/en/` — the English site, the source for the other two
+- `docs/ku/` — the Kurdish (Sorani) site
 - `docs/shared/` — shared styles and scripts
-- `tools/` — `check_links.py`, the internal link and anchor check
+- `tools/` — `check_links.py`, the internal link and anchor check; `i18n/build.py` and `i18n/text/`, the Arabic and Kurdish build and its translations

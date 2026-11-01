@@ -1,0 +1,327 @@
+# Karrada municipality
+
+en: Karrada municipality — Mayoralty of Baghdad
+ar: بلدية الكرادة — أمانة بغداد
+ku: شارەوانی کەڕادە — ئەمانەتی بەغدا
+
+en: Karrada municipality serves the Karrada peninsula on the east bank of the Tigris, from Abu Nuwas to Jadriya.
+ar: تخدم بلدية الكرادة شبه جزيرة الكرادة على الضفة الشرقية لدجلة، من أبي نؤاس إلى الجادرية.
+ku: شارەوانی کەڕادە خزمەتی نیمچە دوورگەی کەڕادە دەکات لە کەناری ڕۆژهەڵاتی دیجلە، لە ئەبو نوواسەوە تا جادرییە.
+
+en: Population
+ar: السكان
+ku: دانیشتوان
+
+en: Karrada ash-Sharqiyah subdistrict, 2024 census
+ar: ناحية الكرادة الشرقية، تعداد 2024
+ku: ناحیەی کەڕادەی ڕۆژهەڵات، سەرژمێریی 2024
+
+en: Office hours
+ar: ساعات الدوام
+ku: کاتی دەوام
+
+en: Sunday – Thursday
+ar: الأحد – الخميس
+ku: یەکشەممە – پێنجشەممە
+
+en: 8:30 am – 2:30 pm · illustrative
+ar: 8:30 صباحاً – 2:30 ظهراً · توضيحي
+ku: 8:30ی بەیانی – 2:30ی دوانیوەڕۆ · نموونەیی
+
+en: Reports this month
+ar: بلاغات هذا الشهر
+ku: ڕاپۆرتەکانی ئەم مانگە
+
+en: 142 reports
+ar: 142 بلاغاً
+ku: 142 ڕاپۆرت
+
+en: 81% closed · illustrative
+ar: أُغلق 81% منها · توضيحي
+ku: 81%ی داخراون · نموونەیی
+
+en: The office address, alerts, local works and report figures on this page are illustrative.
+ar: عنوان المقر والتنبيهات والأعمال المحلية وأرقام البلاغات في هذه الصفحة توضيحية.
+ku: ناونیشانی نووسینگە، ئاگادارکردنەوەکان، کارە ناوخۆییەکان و ژمارەی ڕاپۆرتەکانی ئەم پەڕەیە نموونەیین.
+
+en: Municipal office
+ar: مقر البلدية
+ku: نووسینگەی شارەوانی
+
+en: Address
+ar: العنوان
+ku: ناونیشان
+
+en: Inner Karrada, near Kahramana Square <0>· illustrative</0>
+ar: الكرادة داخل، قرب ساحة كهرمانة <0>· توضيحي</0>
+ku: کەڕادەی ناوەوە، نزیک گۆڕەپانی کەهرەمانە <0>· نموونەیی</0>
+
+en: Hours
+ar: الدوام
+ku: کاتی دەوام
+
+en: Sunday to Thursday, 8:30 am – 2:30 pm
+ar: من الأحد إلى الخميس، من 8:30 صباحاً إلى 2:30 ظهراً
+ku: یەکشەممە تا پێنجشەممە، لە 8:30ی بەیانی تا 2:30ی دوانیوەڕۆ
+
+en: Phone
+ar: الهاتف
+ku: تەلەفۆن
+
+en: Mayoralty hotline <0><1>5628</1></0>, 8:30 am – 2 pm
+ar: الخط الساخن للأمانة <0><1>5628</1></0>، من 8:30 صباحاً إلى 2 ظهراً
+ku: هێڵی گەرمی ئەمانەت <0><1>5628</1></0>، لە 8:30ی بەیانی تا 2ی دوانیوەڕۆ
+
+en: Today in Karrada <0>Updated 10:40 am</0>
+ar: اليوم في الكرادة <0>آخر تحديث 10:40 صباحاً</0>
+ku: ئەمڕۆ لە کەڕادە <0>نوێکراوەتەوە 10:40ی بەیانی</0>
+
+en: Scheduled cut in Inner Karrada, 9 am – 3 pm.<0>Main line maintenance. Residents are advised to store water before 9 am.</0>
+ar: قطع مجدول في الكرادة داخل، من 9 صباحاً إلى 3 عصراً.<0>صيانة الخط الرئيسي. يُنصح المواطنون بخزن الماء قبل الساعة 9 صباحاً.</0>
+ku: بڕانی خشتەکراو لە کەڕادەی ناوەوە، لە 9ی بەیانی تا 3ی دوانیوەڕۆ.<0>چاککردنەوەی هێڵی سەرەکی. ئامۆژگاری دانیشتوان دەکرێت پێش کاتژمێر 9ی بەیانی ئاو هەڵبگرن.</0>
+
+en: One lane closed on Abu Nuwas Street near Firdos Square.<0>Pavement works until the end of the week. The riverside walk is open.</0>
+ar: غلق مسار واحد في شارع أبي نؤاس قرب ساحة الفردوس.<0>أعمال أرصفة حتى نهاية الأسبوع. ممشى النهر مفتوح.</0>
+ku: هێڵێک لە شەقامی ئەبو نوواس نزیک گۆڕەپانی فیردەوس داخراوە.<0>کاری پیادەڕەو تا کۆتایی هەفتە. ڕێڕەوی کەناری ڕووبار کراوەیە.</0>
+
+en: Collection on schedule, every evening after 9 pm.<0>Bags should be left at the container, not on the pavement.</0>
+ar: رفع النفايات وفق الجدول، كل مساء بعد الساعة 9.<0>تُوضع الأكياس عند الحاوية لا على الرصيف.</0>
+ku: کۆکردنەوە بەپێی خشتە، هەموو ئێوارەیەک دوای کاتژمێر 9.<0>کیسەکان لای سەتڵەکە دابنرێن، نەک لەسەر پیادەڕەو.</0>
+
+en: All alerts in Baghdad
+ar: كل التنبيهات في بغداد
+ku: هەموو ئاگادارکردنەوەکان لە بەغدا
+
+en: On the map
+ar: على الخريطة
+ku: لەسەر نەخشە
+
+en: Map of Karrada showing the municipal office, works under way and today's alerts
+ar: خريطة الكرادة تبيّن مقر البلدية والأعمال الجارية وتنبيهات اليوم
+ku: نەخشەی کەڕادە کە نووسینگەی شارەوانی، کارە بەردەوامەکان و ئاگادارکردنەوەکانی ئەمڕۆ پیشان دەدات
+
+en: <0></0>Municipal office
+ar: <0></0>مقر البلدية
+ku: <0></0>نووسینگەی شارەوانی
+
+en: <0></0>Works under way
+ar: <0></0>أعمال جارية
+ku: <0></0>کاری بەردەوام
+
+en: <0></0>Today's alert
+ar: <0></0>تنبيه اليوم
+ku: <0></0>ئاگادارکردنەوەی ئەمڕۆ
+
+en: Locations are approximate.
+ar: المواقع تقريبية.
+ku: شوێنەکان نزیکەیین.
+
+en: Works under way
+ar: الأعمال الجارية
+ku: کارە بەردەوامەکان
+
+en: Abu Nuwas Street and corniche <0>Mayoralty of Baghdad</0>
+ar: شارع أبي نؤاس والكورنيش <0>أمانة بغداد</0>
+ku: شەقام و کۆرنیشی ئەبو نوواس <0>ئەمانەتی بەغدا</0>
+
+en: Phase 1 open
+ar: افتُتحت المرحلة الأولى
+ku: قۆناغی یەکەم کراوەتەوە
+
+en: Rebuilding the corniche and widening the street between Karrada Martyrs Park and Eagles Square. Phase 1 opened in October 2025.
+ar: إعادة بناء الكورنيش وتوسعة الشارع بين متنزه شهداء الكرادة وساحة النسور. افتُتحت المرحلة الأولى في تشرين الأول 2025.
+ku: دووبارە دروستکردنەوەی کۆرنیش و فراوانکردنی شەقام لە نێوان پارکی شەهیدانی کەڕادە و گۆڕەپانی نەسوور. قۆناغی یەکەم لە تشرینی یەکەمی 2025 کرایەوە.
+
+en: Source: Arab Urban Development Institute; IraqiNews · <0>Who runs the major projects</0>
+ar: المصدر: المعهد العربي لإنماء المدن؛ IraqiNews · <0>الجهات المنفذة للمشاريع الكبرى</0>
+ku: سەرچاوە: پەیمانگای عەرەبیی پەرەپێدانی شار؛ IraqiNews · <0>کێ پرۆژە گەورەکان بەڕێوە دەبات</0>
+
+en: Qadisiyah overpass and second Jadriya bridge <0>Ministry of Construction and Housing</0>
+ar: مجسر القادسية وجسر الجادرية الثاني <0>وزارة الإعمار والإسكان</0>
+ku: پردی سەرزەویی قادسییە و پردی دووەمی جادرییە <0>وەزارەتی ئاوەدانکردنەوە و نیشتەجێبوون</0>
+
+en: Over 88%
+ar: أكثر من 88%
+ku: زیاتر لە 88%
+
+en: Part of the national traffic-relief package, built by the Ministry of Construction and Housing. Reports about the works are passed to the ministry.
+ar: ضمن الحزمة الوطنية لفك الاختناقات المرورية، وتنفذه وزارة الإعمار والإسكان. تُحال البلاغات الخاصة بالأعمال إلى الوزارة.
+ku: بەشێکە لە پاکێجی نیشتمانیی کەمکردنەوەی قەرەباڵغی هاتوچۆ، وەزارەتی ئاوەدانکردنەوە و نیشتەجێبوون دروستی دەکات. ڕاپۆرتەکانی پەیوەست بە کارەکان دەنێردرێن بۆ وەزارەتەکە.
+
+en: Source: the ministry via IraqiNews, October 2026
+ar: المصدر: الوزارة عبر IraqiNews، تشرين الأول 2026
+ku: سەرچاوە: وەزارەتەکە لە ڕێگەی IraqiNews، تشرینی یەکەمی 2026
+
+en: Storm drain renewal <0>Karrada municipality</0>
+ar: تجديد مشبكات الأمطار <0>بلدية الكرادة</0>
+ku: نوێکردنەوەی ئاوەڕۆی باران <0>شارەوانی کەڕادە</0>
+
+en: Before the rains
+ar: قبل موسم الأمطار
+ku: پێش باران
+
+en: Clearing drains and replacing broken ones on 62nd Street and in Arasat. Illustrative.
+ar: تنظيف المشبكات واستبدال التالف منها في شارع 62 والعرصات. توضيحي.
+ku: پاککردنەوەی ئاوەڕۆکان و گۆڕینی شکاوەکانیان لە شەقامی 62 و عەرەسات. نموونەیی.
+
+en: Shade trees in Inner Karrada <0>Parks Department</0>
+ar: أشجار الظل في الكرادة داخل <0>دائرة المتنزهات</0>
+ku: داری سێبەر لە کەڕادەی ناوەوە <0>فەرمانگەی پارکەکان</0>
+
+en: 320 of 500 trees
+ar: 320 من أصل 500 شجرة
+ku: 320 لە 500 دار
+
+en: Part of the Mayoralty's campaign to plant a million trees, launched in March 2025. The Karrada numbers are illustrative.
+ar: ضمن حملة الأمانة لزراعة مليون شجرة التي انطلقت في آذار 2025. أرقام الكرادة توضيحية.
+ku: بەشێکە لە هەڵمەتی ئەمانەت بۆ چاندنی ملیۆنێک دار کە لە ئازاری 2025 دەستی پێکرد. ژمارەکانی کەڕادە نموونەیین.
+
+en: Reports in the area <0>October 2026 · illustrative</0>
+ar: البلاغات في المنطقة <0>تشرين الأول 2026 · توضيحي</0>
+ku: ڕاپۆرتەکانی ناوچەکە <0>تشرینی یەکەمی 2026 · نموونەیی</0>
+
+en: of this month's reports closed<0>115 of 142 reports. Average time to close: 3 days.</0>
+ar: من بلاغات هذا الشهر أُغلقت<0>115 من أصل 142 بلاغاً. متوسط مدة الإغلاق: 3 أيام.</0>
+ku: لە ڕاپۆرتەکانی ئەم مانگە داخراون<0>115 لە 142 ڕاپۆرت. تێکڕای ماوەی داخستن: 3 ڕۆژ.</0>
+
+en: Reports by type
+ar: البلاغات بحسب النوع
+ku: ڕاپۆرتەکان بەپێی جۆر
+
+en: Type
+ar: النوع
+ku: جۆر
+
+en: Received
+ar: الواردة
+ku: وەرگیراو
+
+en: Average to close
+ar: متوسط مدة الإغلاق
+ku: تێکڕای داخستن
+
+en: Water cut
+ar: انقطاع الماء
+ku: بڕانی ئاو
+
+en: 2 days
+ar: يومان
+ku: 2 ڕۆژ
+
+en: Sewage overflow
+ar: طفح المجاري
+ku: ڕژانی ئاوەڕۆ
+
+en: 4 days
+ar: 4 أيام
+ku: 4 ڕۆژ
+
+en: 1 day
+ar: يوم واحد
+ku: 1 ڕۆژ
+
+en: Street lights
+ar: إنارة الشوارع
+ku: ڕووناکی شەقام
+
+en: 5 days
+ar: 5 أيام
+ku: 5 ڕۆژ
+
+en: Roads and pavements
+ar: الطرق والأرصفة
+ku: ڕێگا و پیادەڕەو
+
+en: 6 days
+ar: 6 أيام
+ku: 6 ڕۆژ
+
+en: Total
+ar: المجموع
+ku: کۆی گشتی
+
+en: 3 days
+ar: 3 أيام
+ku: 3 ڕۆژ
+
+en: A report counts as closed when the crew confirms the work is done. A report passed to another body does not count as closed.
+ar: يُعدّ البلاغ مغلقاً عندما يؤكد الفريق إنجاز العمل. ولا يُعدّ البلاغ المحال إلى جهة أخرى مغلقاً.
+ku: ڕاپۆرت بە داخراو هەژمار دەکرێت کاتێک تیمەکە پشتڕاستی دەکاتەوە کارەکە تەواو بووە. ڕاپۆرتێک کە بۆ لایەنێکی تر نێردرابێت بە داخراو هەژمار ناکرێت.
+
+en: Neighbourhoods in the municipality
+ar: أحياء البلدية
+ku: گەڕەکەکانی شارەوانییەکە
+
+en: If you live in one of these areas, your municipality is Karrada.
+ar: إذا كنت تسكن في إحدى هذه المناطق فبلديتك هي الكرادة.
+ku: ئەگەر لە یەکێک لەم ناوچانە دەژیت، شارەوانییەکەت کەڕادەیە.
+
+en: Inner Karrada
+ar: الكرادة داخل
+ku: کەڕادەی ناوەوە
+
+en: Outer Karrada
+ar: الكرادة خارج
+ku: کەڕادەی دەرەوە
+
+en: Arasat
+ar: العرصات
+ku: عەرەسات
+
+en: Masbah
+ar: المسبح
+ku: مەسبەح
+
+en: Jadriya
+ar: الجادرية
+ku: جادرییە
+
+en: Zawiya
+ar: الزوية
+ku: زەوییە
+
+en: Wahda
+ar: الوحدة
+ku: وەحدە
+
+en: Camp Sarah
+ar: كمب سارة
+ku: کەمپ سارە
+
+en: Alwiya
+ar: العلوية
+ku: عەلەوییە
+
+en: Abu Nuwas
+ar: أبو نؤاس
+ku: ئەبو نوواس
+
+en: This list is for guidance only.
+ar: هذه القائمة للاسترشاد فقط.
+ku: ئەم لیستە تەنها بۆ ڕێنماییە.
+
+en: Population: Central Statistical Organization, 2024 census, via citypopulation.de · <0>All subdistricts</0>
+ar: السكان: الجهاز المركزي للإحصاء، تعداد 2024، عبر citypopulation.de · <0>كل النواحي</0>
+ku: دانیشتوان: دەزگای ناوەندیی ئامار، سەرژمێریی 2024، لە ڕێگەی citypopulation.de · <0>هەموو ناحیەکان</0>
+
+# Map popups
+
+raw: text: 'Karrada municipal office (illustrative)'
+ar: text: 'مقر بلدية الكرادة (توضيحي)'
+ku: text: 'نووسینگەی شارەوانی کەڕادە (نموونەیی)'
+
+raw: text: 'Abu Nuwas Street and corniche'
+ar: text: 'شارع أبي نؤاس والكورنيش'
+ku: text: 'شەقام و کۆرنیشی ئەبو نوواس'
+
+raw: text: 'Near Jadriya Bridge (second bridge position approximate)'
+ar: text: 'قرب جسر الجادرية (موقع الجسر الثاني تقريبي)'
+ku: text: 'نزیک پردی جادرییە (شوێنی پردی دووەم نزیکەییە)'
+
+raw: text: 'Storm drains, 62nd Street (illustrative)'
+ar: text: 'مشبكات الأمطار، شارع 62 (توضيحي)'
+ku: text: 'ئاوەڕۆی باران، شەقامی 62 (نموونەیی)'
+
+raw: text: 'Scheduled water cut, Inner Karrada'
+ar: text: 'قطع ماء مجدول، الكرادة داخل'
+ku: text: 'بڕانی خشتەکراوی ئاو، کەڕادەی ناوەوە'

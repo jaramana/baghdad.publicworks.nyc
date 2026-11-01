@@ -1,0 +1,113 @@
+# Sewer connection
+
+en: Sewer connection — Mayoralty of Baghdad
+ar: ربط المجاري — أمانة بغداد
+ku: گەیاندن بە تۆڕی ئاوەڕۆ — ئەمانەتی بەغدا
+
+en: Every new home or shop must be connected to the sewer network. Apply on the Ur portal, then visit your district office to have your documents checked.
+ar: يجب ربط كل منزل أو محل جديد بشبكة المجاري. قدّم الطلب على بوابة أور، ثم راجع بلدية منطقتك لتدقيق المستمسكات.
+ku: هەموو ماڵ یان دووکانێکی نوێ دەبێت بە تۆڕی ئاوەڕۆوە ببەسترێتەوە. لە پۆرتاڵی ئور پێشکەشی بکە، پاشان سەردانی شارەوانی ناوچەکەت بکە بۆ پشکنینی بەڵگەنامەکانت.
+
+en: Ur portal, then the office
+ar: بوابة أور ثم البلدية
+ku: پۆرتاڵی ئور، پاشان نووسینگە
+
+en: Document checks and an office visit
+ar: تدقيق المستمسكات ومراجعة البلدية
+ku: پشکنینی بەڵگەنامە و سەردانی نووسینگە
+
+en: About two weeks
+ar: نحو أسبوعين
+ku: نزیکەی دوو هەفتە
+
+en: After the inspection · illustrative
+ar: بعد الكشف · توضيحي
+ku: دوای پشکنین · نموونەیی
+
+en: Baghdad Sewerage Department
+ar: دائرة مجاري بغداد
+ku: فەرمانگەی ئاوەڕۆی بەغدا
+
+en: Apply on Ur, then make one visit to your district office.
+ar: قدّم على أور، ثم راجع بلدية منطقتك مرة واحدة.
+ku: لە ئور پێشکەشی بکە، پاشان یەک جار سەردانی شارەوانی ناوچەکەت بکە.
+
+en: The documents, steps and time in this guide are illustrative.
+ar: المستمسكات والخطوات والمدة الواردة في هذا الدليل توضيحية.
+ku: بەڵگەنامە، هەنگاو و ماوەی ئەم ڕێبەرە نموونەیین.
+
+en: When a connection is required
+ar: متى يلزم الربط
+ku: کەی گەیاندن پێویستە
+
+en: A connection is required for every new building not yet on the network. It is also required when a change of use increases a building's drainage, for example when a home becomes a restaurant.
+ar: يلزم الربط لكل مبنى جديد غير مربوط بالشبكة. ويلزم أيضاً عند تغيير الاستعمال بما يزيد تصريف المبنى، كتحويل منزل إلى مطعم.
+ku: بۆ هەموو بینایەکی نوێ کە هێشتا بە تۆڕەکەوە نەبەستراوە گەیاندن پێویستە. هەروەها کاتێک گۆڕینی بەکارهێنان ئاوەڕۆی بیناکە زیاد دەکات، بۆ نموونە کاتێک ماڵێک دەبێتە چێشتخانە.
+
+en: Connecting a building to the network without a permit is an offence. Unpermitted connections cause sewage to overflow into the street.
+ar: ربط المبنى بالشبكة دون إجازة مخالفة. تؤدي التوصيلات غير المجازة إلى طفح المجاري في الشوارع.
+ku: بەستنەوەی بینا بە تۆڕەکەوە بێ مۆڵەت سەرپێچییە. بەستنەوەی بێ مۆڵەت دەبێتە هۆی ڕژانی ئاوەڕۆ بۆ ناو شەقام.
+
+en: Or proof that the building is permitted. <0>About building permits</0>
+ar: أو ما يثبت أن المبنى مجاز. <0>عن إجازات البناء</0>
+ku: یان بەڵگەیەک کە بیناکە مۆڵەتی هەیە. <0>دەربارەی مۆڵەتی بیناسازی</0>
+
+en: Get a property statement
+ar: احصل على بيان عقار
+ku: بەیاننامەی موڵک وەربگرە
+
+en: The owner's.
+ar: للمالك.
+ku: هی خاوەنەکە.
+
+en: Internal drainage plan
+ar: مخطط التصريف الداخلي
+ku: نەخشەی ئاوەڕۆی ناوەوە
+
+en: Shows where the pipes leave the building.
+ar: يبيّن مخرج الأنابيب من المبنى.
+ku: پیشانی دەدات بۆرییەکان لە کوێوە لە بیناکە دەردەچن.
+
+en: Choose "Sewer pipe connection" and upload your documents. You get an application number.
+ar: اختر «ايصال انابيب الصرف الصحي» وارفع المستمسكات. تحصل على رقم للطلب.
+ku: «ايصال انابيب الصرف الصحي» هەڵبژێرە و بەڵگەنامەکانت باربکە. ژمارەیەکی داواکاری وەردەگریت.
+
+en: Visit your district office <0>District office</0>
+ar: راجع بلدية منطقتك <0>البلدية</0>
+ku: سەردانی شارەوانی ناوچەکەت بکە <0>شارەوانی</0>
+
+en: Bring the original documents and your application number so they can be checked.
+ar: أحضر المستمسكات الأصلية ورقم الطلب لتدقيقها.
+ku: بەڵگەنامە ڕەسەنەکان و ژمارەی داواکارییەکەت لەگەڵ خۆت بهێنە بۆ پشکنین.
+
+en: The sewer team decides where to connect and how long the pipe will be.
+ar: يحدد فريق المجاري نقطة الربط وطول الأنبوب.
+ku: تیمی ئاوەڕۆ شوێنی گەیاندن و درێژیی بۆرییەکە دیاری دەکات.
+
+en: Based on the length of the connection and the pipe size.
+ar: بحسب طول الربط وقطر الأنبوب.
+ku: بەپێی درێژیی گەیاندنەکە و قەبارەی بۆرییەکە.
+
+en: Connection
+ar: الربط
+ku: گەیاندن
+
+en: Done by the Sewerage Department, or by a licensed contractor it supervises.
+ar: تنفذه دائرة المجاري، أو مقاول مجاز بإشرافها.
+ku: لەلایەن فەرمانگەی ئاوەڕۆوە دەکرێت، یان لەلایەن بەڵێندەرێکی مۆڵەتدار بە سەرپەرشتیی ئەو.
+
+en: Before you build and connect.
+ar: قبل البناء والربط.
+ku: پێش بیناکردن و گەیاندن.
+
+en: New water account
+ar: حساب ماء جديد
+ku: هەژماری ئاوی نوێ
+
+en: For the same new building.
+ar: للمبنى الجديد نفسه.
+ku: بۆ هەمان بینا نوێیەکە.
+
+en: Service on Ur: "Sewer pipe connection"
+ar: الخدمة على أور: «ايصال انابيب الصرف الصحي»
+ku: خزمەتگوزاری لە ئور: «ايصال انابيب الصرف الصحي»

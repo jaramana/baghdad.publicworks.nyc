@@ -3,26 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ڕاپۆرتی کێشە — ئەمانەتی بەغدا</title>
+<title>ڕاپۆرتکردنی کێشە — ئەمانەتی بەغدا</title>
 <link rel="alternate" hreflang="ar" href="../report.html">
 <link rel="alternate" hreflang="en" href="../en/report.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../shared/base.css">
 <link rel="stylesheet" href="../shared/page.css">
-<link rel="stylesheet" href="../shared/ku.css">
 <link rel="stylesheet" href="../shared/lang-swap.css">
 <script src="../shared/lang-swap.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <style>
   /* Report flow: four short steps, one at a time, then a receipt */
 
-  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 19rem; gap: clamp(2rem, 5vw, 4rem); align-items: start; padding-block: 1.25rem 4rem; }
+  .layout { padding-block: 1.25rem 4rem; max-width: 50rem; }
   .flow { min-width: 0; }
 
-  /* Help column */
-  .help { position: sticky; top: 7rem; display: grid; gap: 1.75rem; padding-top: 0.5rem; }
+  /* Help: plain blocks under the form */
+  .help { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.75rem; margin-top: 3rem; }
   .help section { border-top: 2px solid var(--green); padding-top: 0.8rem; }
   .help h2 { font-size: 1rem; margin-bottom: 0.4rem; }
   .help p { margin: 0.3rem 0; font-size: 0.9375rem; color: var(--muted); }
@@ -111,8 +110,6 @@
   .receipt .actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.25rem; }
 
   @media (max-width: 860px) {
-    .layout { grid-template-columns: 1fr; }
-    .help { position: static; }
   }
   @media (max-width: 640px) {
     .cats { grid-template-columns: 1fr 1fr; }
@@ -124,6 +121,7 @@
 <script src="../shared/prototype.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">بازدان بۆ ناوەڕۆکی سەرەکی</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -131,45 +129,61 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
       <div><strong>ئەمانەتی بەغدا</strong><span>ماڵپەڕی فەرمی · کۆماری عێراق</span></div>
     </a>
-    <button class="menu-btn" type="button" popovertarget="menu">مێنیو</button>
+    <button class="menu-btn" type="button" popovertarget="menu">لیست</button>
     <nav class="menu" id="menu" popover aria-label="مێنیوی سەرەکی">
       <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">داخستن</button>
       <ul class="nav">
-        <li><a href="services.html">خزمەتگوزارییەکان</a></li>
-        <li><a href="report.html" aria-current="page">ڕاپۆرتی کێشە</a></li>
-        <li><a href="../en/districts.html">ناوچەکان</a></li>
-        <li><a href="../en/projects.html">پڕۆژەکان</a></li>
-        <li><a href="../en/about.html">دەربارە</a></li>
+        <li class="has-sub"><a href="services.html">خزمەتگوزارییەکان</a>
+          <ul class="sub">
+            <li><a href="service-permit.html">مۆڵەتی بیناسازی</a></li>
+            <li><a href="service-water.html">هەژماری ئاو</a></li>
+            <li><a href="service-property.html">بەیاننامەی موڵک</a></li>
+            <li><a href="service-sewer.html">گەیاندن بە تۆڕی ئاوەڕۆ</a></li>
+            <li><a href="service-fees.html">باجەکانی شارەوانی</a></li>
+            <li><a href="alerts.html">ئاگادارکردنەوەکان</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html" aria-current="page">ڕاپۆرتکردنی کێشە</a></li>
+        <li><a href="news.html">هەواڵەکان</a></li>
+        <li class="has-sub end"><a href="about.html">ئەمانەت</a>
+          <ul class="sub">
+            <li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li>
+            <li><a href="districts.html">شارەوانییەکان</a></li>
+            <li><a href="tenders.html">تەندەر و مزایەدەکان</a></li>
+            <li><a href="laws.html">یاسا و پلانەکان</a></li>
+            <li><a href="data.html">داتای کراوە</a></li>
+            <li><a href="about.html#contact">پەیوەندی</a></li>
+          </ul>
+        </li>
         <li class="lang"><a href="../report.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../en/report.html" lang="en" hreflang="en" dir="ltr">English</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="main">
   <nav class="crumbs" aria-label="ڕێڕەو">
     <ol>
       <li><a href="index.html">سەرەکی</a></li>
-      <li aria-current="page">ڕاپۆرتی کێشە</li>
     </ol>
   </nav>
 
   <div class="layout">
   <div class="flow">
-    <form id="track" action="../en/track.html" hidden></form>
+    <form id="track" action="track.html" hidden></form>
     <form id="report" novalidate>
 
       <div id="intro">
-        <h1>ڕاپۆرتی کێشە</h1>
-        <p class="lede">چوار هەنگاوی کورت. لە کۆتاییدا ژمارەیەکی ڕاپۆرت وەردەگریت بۆ بەدواداچوون. واتسئەپت پێ باشترە؟ <a href="index.html#report">لە واتسئەپەوە ڕاپۆرت بدە</a></p>
+        <h1>ڕاپۆرتکردنی کێشە</h1>
+        <p class="lede">چوار هەنگاوەکە تەواو بکە بۆ وەرگرتنی ژمارەی ڕاپۆرت. بەو ژمارەیە بەدواداچوون بۆ ڕاپۆرتەکەت بکە.</p>
         <div class="track-row">
-          <label for="track-no">پێشتر ڕاپۆرتت داوە؟ بە ژمارەی ڕاپۆرتەکە بەدوایدا بچۆ.</label>
+          <label for="track-no">بۆ بەدواداچوونی ڕاپۆرتێکی پێشوو، ژمارەکەی بنووسە.</label>
           <div class="track-box">
             <input id="track-no" name="n" form="track" placeholder="ب-٤٨٢١٣" autocomplete="off">
-            <button type="submit" form="track" aria-label="بەدواداچوون بۆ ئەم ژمارەیە">بەدواداچوون</button>
+            <button type="submit" form="track" aria-label="بەدواداچوون بۆ ئەم ژمارەی ڕاپۆرتە بکە">بەدواداچوون</button>
           </div>
         </div>
-        <p class="danger">ئەگەر ژیانی کەسێک لە مەترسیدایە، بۆ نموونە بەهۆی وایەرێکی کارەبای ڕووت یان چاڵێکی ئاوەڕۆی کراوە، سەرەتا پەیوەندی بە فریاکەوتنەوە بکە، پاشان پێمان بڵێ.</p>
+        <p class="danger">ئەگەر مەترسی لەسەر ژیان هەبێت، وەک وایەری کارەبای ڕووت یان دەمی ئاوەڕۆی کراوە، سەرەتا پەیوەندی بە خزمەتگوزارییەکانی فریاکەوتنەوە بکە، پاشان لێرە ڕاپۆرتی بکە.</p>
 
         <ol class="progress" aria-hidden="true">
           <li data-p="1">کێشە</li>
@@ -185,10 +199,10 @@
         <legend><h2>کێشەکە چییە؟</h2></legend>
         <ul class="cats">
           <li><input type="radio" name="cat" id="c-water" value="انقطاع الماء"><label for="c-water"><strong>بڕانی ئاو</strong><span>ئاو نییە، یان پەستانی زۆر کەمە</span></label></li>
-          <li><input type="radio" name="cat" id="c-sewer" value="طفح المجاري"><label for="c-sewer"><strong>ڕژانی ئاوەڕۆ</strong><span>ئاوی پیس لە شەقامدا یان زێرابێکی گیراو</span></label></li>
-          <li><input type="radio" name="cat" id="c-waste" value="النفايات"><label for="c-waste"><strong>خاشاک</strong><span>کۆنەکراوەتەوە، یان لە شوێنێکی گشتیدا فڕێدراوە</span></label></li>
+          <li><input type="radio" name="cat" id="c-sewer" value="طفح المجاري"><label for="c-sewer"><strong>ڕژانی ئاوەڕۆ</strong><span>ئاوی پیس لە شەقام یان ئاوەڕۆیەکی گیراو</span></label></li>
+          <li><input type="radio" name="cat" id="c-waste" value="النفايات"><label for="c-waste"><strong>خاشاک</strong><span>کۆنەکراوەتەوە، یان لە شوێنێکی گشتی فڕێدراوە</span></label></li>
           <li><input type="radio" name="cat" id="c-light" value="إنارة الشوارع"><label for="c-light"><strong>ڕووناکی شەقام</strong><span>گڵۆپێکی کوژاوە یان تێکچوو</span></label></li>
-          <li><input type="radio" name="cat" id="c-road" value="الطرق والأرصفة"><label for="c-road"><strong>ڕێگا و پیادەڕەو</strong><span>چاڵ، پیادەڕەوی شکاو، ئاوی باران کە ماوەتەوە</span></label></li>
+          <li><input type="radio" name="cat" id="c-road" value="الطرق والأرصفة"><label for="c-road"><strong>ڕێگا و پیادەڕەو</strong><span>چاڵ، پیادەڕەوی شکاو، کۆبوونەوەی ئاوی باران</span></label></li>
           <li><input type="radio" name="cat" id="c-other" value="أخرى"><label for="c-other"><strong>شتێکی تر</strong><span>بیناسازیی بێ مۆڵەت، دارێکی کەوتوو، هەر شتێکی تر</span></label></li>
         </ul>
       </fieldset>
@@ -196,7 +210,7 @@
       <!-- 2. Where -->
       <fieldset class="step" data-step="2" style="border:0;margin:0;padding:0">
         <legend><h2>لە کوێیە؟</h2></legend>
-        <p class="hint">دەست لە نەخشەکە بدە یان نیشانەکە ڕابکێشە بۆ شوێنەکە.</p>
+        <p class="hint">لەسەر نەخشەکە کرتە لە شوێنی کێشەکە بکە، یان دەرزییەکە ڕابکێشە بۆ ئەوێ. ئەگەر ناتوانیت نەخشەکە بەکاربهێنیت، ناونیشان یان نیشانەیەکی نزیک لە خوارەوە بنووسە.</p>
         <div id="map" role="application" aria-label="نەخشە بۆ دیاریکردنی شوێنی کێشەکە"></div>
         <div class="map-tools">
           <button type="button" class="btn" id="locate">شوێنی ئێستام بەکاربهێنە</button>
@@ -207,25 +221,25 @@
           <select id="district" required><option value="">شارەوانییەک هەڵبژێرە</option></select>
         </div>
         <div class="field">
-          <label for="landmark">نزیکترین نیشانە یان ناونیشان <span class="opt">(ئارەزوومەندانە)</span></label>
-          <input type="text" id="landmark" placeholder="بۆ نموونە: نزیک مزگەوتی ...، گەڕەکی ٩٠٤، کۆڵانی ١٢">
+          <label for="landmark">ناونیشان یان نزیکترین نیشانە <span class="opt">(پێویستە ئەگەر لەسەر نەخشە دیاری نەکرابێت)</span></label>
+          <input type="text" id="landmark" placeholder="بۆ نموونە: نزیک مزگەوتی ...، مەحەللەی ٩٠٤، کۆڵانی ١٢">
         </div>
       </fieldset>
 
       <!-- 3. Photo and description -->
       <fieldset class="step" data-step="3" style="border:0;margin:0;padding:0">
         <legend><h2>وێنە و تێبینییەک زیاد بکە</h2></legend>
-        <p class="hint">وێنە یارمەتی تیمەکە دەدات پێش گەیشتن ئەوەی پێویستیانە لەگەڵ خۆیان بهێنن.</p>
+        <p class="hint">وێنە یارمەتی تیمەکە دەدات پێش گەیشتن خۆی ئامادە بکات.</p>
         <div class="field">
           <span class="label">وێنە <span class="opt">(ئارەزوومەندانە)</span></span>
           <label class="drop" id="drop">
             <input type="file" id="photo" accept="image/*" capture="environment" aria-label="وێنەیەک زیاد بکە">
-            <span class="prompt"><strong>وێنەیەک بگرە یان لە مۆبایلەکەت هەڵیبژێرە</strong><span>یەک وێنە بەسە</span></span>
+            <span class="prompt"><strong>وێنەیەک بگرە یان یەکێک لە مۆبایلەکەت هەڵبژێرە</strong><span>یەک وێنە بەسە</span></span>
           </label>
         </div>
         <div class="field">
           <label for="desc">تێبینیی کورت <span class="opt">(ئارەزوومەندانە)</span></label>
-          <textarea id="desc" placeholder="بۆ نموونە: دوو ڕۆژە ئاوەڕۆ ڕژاوە و گەیشتووەتە دەرگای قوتابخانەکە"></textarea>
+          <textarea id="desc" placeholder="بۆ نموونە: دوو ڕۆژە ئاوەڕۆ دەڕژێت و دەگاتە دەرگای قوتابخانەکە"></textarea>
         </div>
       </fieldset>
 
@@ -238,60 +252,59 @@
           <div><dt>وێنە و تێبینی</dt><dd id="r-desc"></dd><button type="button" data-go="3">گۆڕین</button></div>
         </dl>
         <div class="field">
-          <span class="label">نوێکارییەکانت چۆن بۆ بنێرین؟ <span class="opt">(ئارەزوومەندانە)</span></span>
+          <span class="label">دەتەوێت نوێکارییەکان چۆن پێت بگەن؟ <span class="opt">(ئارەزوومەندانە)</span></span>
           <div class="updates">
-            <label><input type="radio" name="via" value="whatsapp" checked> واتسئەپ</label>
-            <label><input type="radio" name="via" value="sms"> نامەی کورت</label>
-            <label><input type="radio" name="via" value="none"> نوێکاری نا؛ بە ژمارەی ڕاپۆرتەکە بەدوایدا دەچم</label>
+            <label><input type="radio" name="via" value="sms" checked> نامەی دەقی</label>
+            <label><input type="radio" name="via" value="none"> بێ نوێکاری. بە ژمارەکەی بەدواداچوون بۆ ڕاپۆرتەکە دەکەم</label>
           </div>
         </div>
         <div class="field">
-          <label for="phone">ژمارەی مۆبایل <span class="opt">(تەنها بۆ نوێکاری)</span></label>
+          <label for="phone">ژمارەی تەلەفۆن <span class="opt">(تەنها بۆ نوێکاری)</span></label>
           <input type="tel" id="phone" inputmode="tel" placeholder="07XX XXX XXXX" autocomplete="off">
         </div>
-        <p class="proto-note">نموونەی لێکۆڵینەوە: هیچ شتێک لەم پەڕەیەوە نانێردرێت.</p>
       </fieldset>
 
       <p class="error" id="error" role="alert"></p>
 
       <div class="nav-row" id="nav-row">
-        <button type="button" class="back" id="back" hidden>→ گەڕانەوە</button>
+        <button type="button" class="back" id="back" hidden>→ پێشوو</button>
         <button type="button" class="btn" id="next">دواتر</button>
       </div>
     </form>
 
     <!-- Receipt -->
     <section id="done" hidden aria-live="polite">
-      <h1>ڕاپۆرتەکەت گەیشت</h1>
+      <h1 tabindex="-1">ڕاپۆرتەکە وەرگیرا</h1>
       <div class="receipt" style="margin-top:1.25rem">
         <p class="label">ژمارەی ڕاپۆرت</p>
-        <p class="case-no">ب-٤٨٢١٣</p>
+        <p class="case-no" id="done-no"></p>
         <p id="done-line"></p>
         <p>لە ماوەی دوو ڕۆژی کاردا یەکەم وەڵام وەردەگریت. <span class="note" style="display:inline">(نموونەیی)</span></p>
         <p id="done-via"></p>
         <div class="actions">
-          <a class="btn" href="../en/track.html">بەدواداچوون بۆ ئەم ڕاپۆرتە</a>
-          <a class="btn" href="report.html">ڕاپۆرتی شتێکی تر</a>
+          <a class="btn" id="done-track" href="track.html">بەدواداچوون بۆ ئەم ڕاپۆرتە بکە</a>
+          <a class="btn" href="report.html">شتێکی تر ڕاپۆرت بکە</a>
         </div>
       </div>
-      <p class="proto-note">ژمارەی ڕاپۆرتەکە بپارێزە. هەر کاتێک بێت دەتوانیت لە «بەدواداچوونی ڕاپۆرت» بەدوایدا بچیت، بێ هەژمار.</p>
+      <p class="proto-note">ژمارەی ڕاپۆرتەکە هەڵبگرە. لە هەر کاتێکدا دەتوانیت لە «بەدواداچوونی ڕاپۆرت» بەدواداچوونی بۆ بکەیت، بێ هەژمار.</p>
     </section>
   </div>
 
-  <aside class="help" aria-label="یارمەتی">
+  <div class="help">
     <section>
-      <h2>دوای ڕاپۆرتدان چی ڕوودەدات؟</h2>
+      <h2>دوای ڕاپۆرتکردن</h2>
       <ol>
-        <li>یەکسەر ژمارەیەکی ڕاپۆرت وەردەگریت.</li>
-        <li>دەچێت بۆ شارەوانییەکەت و بەشی پەیوەندیدار.</li>
-        <li>تا دادەخرێت نوێکاری وەردەگریت.</li>
+        <li>یەکسەر ژمارەی ڕاپۆرت وەردەگریت.</li>
+        <li>ڕاپۆرتەکەت دەنێردرێت بۆ بەشی بەرپرس لە شارەوانییەکەت.</li>
+        <li>تا داخستنی نوێکاری وەردەگریت.</li>
       </ol>
     </section>
     <section>
-      <h2>لە واتسئەپەوە</h2>
-      <p>وێنە و شوێنەکەت بنێرە بۆ ژمارە پشتڕاستکراوەکەی ئەمانەت، و ژمارەی ڕاپۆرت لە چاتەکەدا بۆت دێتەوە.</p>
+      <h2>بە تەلەفۆن یان ئەپ</h2>
+      <p>پەیوەندی بە <a href="tel:5628"><strong>٥٦٢٨</strong></a> بکە، لە ٨:٣٠ی بەیانی تا ٢ی دوانیوەڕۆ، یان ئەپی ئەمانەت بەکاربهێنە، «دەنگی هاووڵاتیی بەغدا».</p>
+      <p>ڕاپۆرتەکانی تەلەفۆن و ئەپ دەچنە هەمان سیستەمی سکاڵاوە و دەتوانرێت لێرەش بە ژمارەکەیان بەدواداچوونیان بۆ بکرێت.</p>
     </section>
-  </aside>
+  </div>
   </div>
 </main>
 
@@ -299,18 +312,19 @@
   <div class="wrap">
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">ئەمانەتی بەغدا</div>
-      <div><h2>خزمەتگوزارییەکان</h2><ul><li><a href="services.html">هەموو خزمەتگوزارییەکان</a></li><li><a href="report.html">ڕاپۆرتی کێشە</a></li><li><a href="../en/track.html">بەدواداچوونی ڕاپۆرت</a></li><li><a href="../en/alerts.html">ئاگادارییەکان</a></li></ul></div>
-      <div><h2>شار</h2><ul><li><a href="../en/districts.html">ناوچەکان</a></li><li><a href="../en/projects.html">پڕۆژەکان</a></li></ul></div>
-      <div><h2>ئەمانەت</h2><ul><li><a href="../en/about.html">دەربارە</a></li><li><a href="../en/about.html#who">کێ چی دەکات</a></li><li><a href="../en/tenders.html">تەندەر و مەزاد</a></li><li><a href="../en/about.html#contact">پەیوەندی</a></li></ul></div>
-      <div><h2>ئەم ماڵپەڕە</h2><ul><li><a href="../en/data.html">داتای کراوە</a></li><li><a href="../en/site.html#search">گەڕان چۆن کار دەکات</a></li><li><a href="../en/site.html#access">دەستگەیشتن</a></li><li><a href="../en/site.html#privacy">تایبەتمەندی</a></li></ul></div>
+      <div><h2>خزمەتگوزارییەکان</h2><ul><li><a href="services.html">هەموو خزمەتگوزارییەکان</a></li><li><a href="report.html">ڕاپۆرتکردنی کێشە</a></li><li><a href="track.html">بەدواداچوونی ڕاپۆرت</a></li><li><a href="alerts.html">ئاگادارکردنەوەکان</a></li></ul></div>
+      <div><h2>هەواڵەکان</h2><ul><li><a href="news.html">هەموو هەواڵەکان</a></li></ul></div>
+      <div><h2>ئەمانەت</h2><ul><li><a href="about.html">تێڕوانینی گشتی</a></li><li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li><li><a href="districts.html">شارەوانییەکان</a></li><li><a href="tenders.html">تەندەر و مزایەدەکان</a></li><li><a href="laws.html">یاسا و پلانەکان</a></li><li><a href="data.html">داتای کراوە</a></li><li><a href="about.html#contact">پەیوەندی</a></li></ul></div>
+      <div><h2>ئەم ماڵپەڕە</h2><ul><li><a href="site.html#privacy">تایبەتێتی</a></li><li><a href="site.html#access">دەستڕاگەیشتن</a></li><li><a href="site.html#search">گەڕان چۆن کار دەکات</a></li></ul></div>
     </div>
     <div class="fine">
-      <p>مۆر: وێنەکێشانەوەی کۆمەڵگە — CC BY-SA 4.0 — Wikimedia Commons. ناوی وێنەگر لەگەڵ هەر وێنەیەک نووسراوە.</p>
+      <p class="hotline"><span>هێڵی گەرم <a href="tel:5628"><strong>٥٦٢٨</strong></a>، لە ٨:٣٠ی بەیانی تا ٢ی دوانیوەڕۆ</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="فەیسبووک" title="فەیسبووک"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="ئینستاگرام" title="ئینستاگرام"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="ئێکس" title="ئێکس"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>مۆر: دووبارە کێشانەوەی کۆمەڵگە — CC BY-SA 4.0 — ویکیمیدیا کۆمنز. مافی هەر وێنەیەک لەگەڵ وێنەکەدا نووسراوە.</p>
     </div>
   </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="../shared/home.js"></script>
+<script src="../shared/districts.js"></script>
 <script>
   // Report flow. Steps swap in place; nothing is sent anywhere.
 
@@ -330,25 +344,36 @@
 
   function show(n, first) {
     step = n;
+    const heading = steps[n - 1].querySelector('h2');
     steps.forEach(s => s.classList.toggle('on', Number(s.dataset.step) === n));
     progress.forEach(p => {
       const k = Number(p.dataset.p);
       p.className = k < n ? 'done' : k === n ? 'now' : '';
     });
-    count.textContent = `هەنگاوی ${ar(n)} لە ٤`;
+    count.textContent = `هەنگاوی ${eastern(n)} لە ٤`;
     back.hidden = n === 1;
     next.textContent = n === 4 ? 'ڕاپۆرتەکە بنێرە' : 'دواتر';
     error.textContent = '';
     if (n === 2) setupMap();
     if (n === 4) fillReview();
-    if (!first) document.getElementById('intro').scrollIntoView({ block: 'start' });
+    if (first) return;
+    document.getElementById('intro').scrollIntoView({ block: 'start' });
+    heading.tabIndex = -1;
+    heading.focus({ preventScroll: true });
   }
 
-  function valid() {
-    if (step === 1 && !form.cat.value) return 'جۆری کێشەکە هەڵبژێرە.';
-    if (step === 2 && !moved) return 'شوێنەکە لەسەر نەخشە دیاری بکە.';
-    if (step === 2 && district.value === '') return 'شارەوانییەکە هەڵبژێرە.';
-    return '';
+  // Returns the message and the field to focus, or nothing when the step is complete.
+  // A typed address or landmark counts as a place, so the map is never required.
+
+  const landmark = document.getElementById('landmark');
+  const phone = document.getElementById('phone');
+  const digits = s => (s.match(/[0-9٠-٩]/g) || []).length;
+
+  function invalid() {
+    if (step === 1 && !form.cat.value) return ['جۆری کێشەکە هەڵبژێرە.', form.cat[0]];
+    if (step === 2 && !moved && !landmark.value.trim()) return ['شوێنەکە لەسەر نەخشە دیاری بکە، یان ناونیشان یان نیشانەیەکی نزیک بنووسە.', landmark];
+    if (step === 2 && district.value === '') return ['شارەوانییەکە هەڵبژێرە.', district];
+    if (step === 4 && form.via.value !== 'none' && digits(phone.value) < 10) return ['ژمارەی تەلەفۆنەکەت بۆ نوێکاری بنووسە، یان «بێ نوێکاری» هەڵبژێرە.', phone];
   }
 
   function setupMap() {
@@ -371,7 +396,7 @@
       if (!navigator.geolocation) return;
       navigator.geolocation.getCurrentPosition(
         p => { const ll = L.latLng(p.coords.latitude, p.coords.longitude); set(ll); map.setView(ll, 16); },
-        () => { error.textContent = 'نەمانتوانی شوێنەکەت بدۆزینەوە. لەسەر نەخشە دیاری بکە.'; }
+        () => { error.textContent = 'شوێنەکەت نەدۆزرایەوە. لەسەر نەخشە دیاری بکە یان ناونیشانەکە بنووسە.'; }
       );
     });
   }
@@ -383,22 +408,32 @@
     const hasPhoto = document.getElementById('photo').files.length > 0;
     document.getElementById('r-cat').textContent = catLabel();
     document.getElementById('r-place').textContent = `شارەوانی ${d.ku}${lm ? ' · ' + lm : ''}`;
-    document.getElementById('r-desc').textContent = [hasPhoto ? 'یەک وێنە' : 'وێنە نییە', desc || 'تێبینی نییە'].join(' · ');
+    document.getElementById('r-desc').textContent = [hasPhoto ? 'یەک وێنە' : 'بێ وێنە', desc || 'بێ تێبینی'].join(' · ');
   }
 
+  // Every demo report gets the same new number. The track page reads the
+  // saved details, so the receipt and tracking describe the same report.
+
+  const NEW_NO = 'ب-٤٨٤٩٢';
+
   next.addEventListener('click', () => {
-    const msg = valid();
-    if (msg) { error.textContent = msg; return; }
+    const fail = invalid();
+    if (fail) { error.textContent = fail[0]; fail[1].focus(); return; }
     if (step < 4) { show(step + 1); return; }
     const d = DISTRICTS[district.value];
     const via = form.via.value;
-    document.getElementById('done-line').textContent = `ڕاپۆرتی «${catLabel()}» نێردرا بۆ شارەوانی ${d.ku}.`;
+    const sent = { no: NEW_NO, cat: catLabel(), d: d.ku, place: landmark.value.trim(), via, phone: phone.value.trim() };
+    try { sessionStorage.setItem('demo-report', JSON.stringify(sent)); } catch {}
+    document.getElementById('done-no').textContent = NEW_NO;
+    document.getElementById('done-track').href = `track.html?n=${NEW_NO}`;
+    document.getElementById('done-line').textContent = `ڕاپۆرتی «${sent.cat}» نێردرا بۆ شارەوانی ${d.ku}.`;
     document.getElementById('done-via').textContent =
-      via === 'whatsapp' ? 'هەموو نوێکارییەک لە واتسئەپەوە دەنێرین.' :
-      via === 'sms' ? 'هەموو نوێکارییەک بە نامەی کورت دەنێرین.' : 'بە ژمارەی ڕاپۆرتەکە بەدوایدا بچۆ.';
+      via === 'sms' ? `نوێکارییەکان بە نامەی دەقی بۆ ${sent.phone} دەنێردرێن.` : 'بە ژمارەی ڕاپۆرتەکە بەدواداچوونی بۆ بکە.';
     form.hidden = true;
-    document.getElementById('done').hidden = false;
+    const done = document.getElementById('done');
+    done.hidden = false;
     window.scrollTo(0, 0);
+    done.querySelector('h1').focus({ preventScroll: true });
   });
   back.addEventListener('click', () => show(step - 1));
   form.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => show(Number(b.dataset.go))));
@@ -419,6 +454,11 @@
   if (pre) { const r = [...form.cat].find(x => x.value === pre); if (r) r.checked = true; }
   const preD = DISTRICTS.findIndex(d => d.slug === params.get('d'));
   if (preD > -1) district.value = preD;
+
+  // "Problem still there?" on the track page sends the earlier number along
+
+  const ref = params.get('ref');
+  if (ref) document.getElementById('desc').value = `کێشەکە ماوە. ڕاپۆرتی پێشوو: ${ref}.`;
 
   show(1, true);
 </script>

@@ -1,0 +1,97 @@
+# Municipal fees
+
+en: Municipal fees — Mayoralty of Baghdad
+ar: الرسوم البلدية — أمانة بغداد
+ku: باجەکانی شارەوانی — ئەمانەتی بەغدا
+
+en: The Mayoralty charges a trade fee on shops and businesses, an advertising fee on signs, and a cleaning fee. Look up what you owe with your account number, then pay at your district office.
+ar: تستوفي الأمانة رسم مهنة على المحال والأعمال، ورسم إعلان على اللوحات، ورسم نظافة. اعرف المبلغ المستحق عليك برقم حسابك، ثم ادفعه في بلدية منطقتك.
+ku: ئەمانەت باجی پیشە لەسەر دووکان و کارەکان، باجی ڕیکلام لەسەر تابلۆکان و باجی پاککردنەوە وەردەگرێت. بە ژمارەی هەژمارەکەت بزانە چەندت لەسەرە، پاشان لە شارەوانی ناوچەکەت بیدە.
+
+en: Who pays
+ar: من يدفع
+ku: کێ دەیدات
+
+en: Shops and businesses
+ar: المحال والأعمال
+ku: دووکان و کارەکان
+
+en: And owners of advertising signs
+ar: وأصحاب اللوحات الإعلانية
+ku: و خاوەنی تابلۆی ڕیکلام
+
+en: Where to pay
+ar: مكان الدفع
+ku: شوێنی پارەدان
+
+en: Payment in person only
+ar: الدفع حضورياً فقط
+ku: پارەدان تەنها بە ئامادەبوون
+
+en: When
+ar: الموعد
+ku: کەی
+
+en: Once a year
+ar: مرة في السنة
+ku: ساڵانە یەک جار
+
+en: The account lookup, the amounts and the dates on this page are illustrative.
+ar: الاستعلام عن الحساب والمبالغ والمواعيد في هذه الصفحة توضيحية.
+ku: پشکنینی هەژمار، بڕەکان و بەروارەکانی ئەم پەڕەیە نموونەیین.
+
+en: Look up your fees
+ar: استعلم عن رسومك
+ku: باجەکانت بپشکنە
+
+en: The account number is printed on your last receipt. Your district office can also provide it.
+ar: رقم الحساب مطبوع على آخر وصل لديك، ويمكن أيضاً الحصول عليه من بلدية منطقتك.
+ku: ژمارەی هەژمار لەسەر دوایین پسوولەی وەرگرتنت چاپکراوە. شارەوانی ناوچەکەشت دەتوانێت پێتی بدات.
+
+en: Kinds of fee
+ar: أنواع الرسوم
+ku: جۆرەکانی باج
+
+en: Applies to every shop, office or workshop inside the Mayoralty's boundary. The amount depends on the business type and location.
+ar: يُفرض على كل محل أو مكتب أو ورشة ضمن حدود الأمانة، ويعتمد مبلغه على نوع العمل وموقعه.
+ku: لەسەر هەموو دووکان، نووسینگە یان کارگەیەک لە سنووری ئەمانەتدا. بڕەکەی بەندە بە جۆر و شوێنی کارەکە.
+
+en: Charged on every sign or advertisement facing the street, according to its size and position.
+ar: يُستوفى عن كل لوحة أو إعلان مطل على الشارع، بحسب حجمه وموقعه.
+ku: لەسەر هەموو تابلۆ یان ڕیکلامێکی بەرەو شەقام وەردەگیرێت، بەپێی قەبارە و شوێنەکەی.
+
+en: For waste collection from shops and businesses.
+ar: مقابل رفع النفايات من المحال والأعمال.
+ku: بۆ کۆکردنەوەی خاشاک لە دووکان و کارەکان.
+
+en: The fees are set by the <0>Municipal Revenues Law, No. 1 of 2023</0>. Household waste collection is free of charge.
+ar: تُحدَّد الرسوم بموجب <0>قانون الواردات البلدية رقم 1 لسنة 2023</0>. رفع النفايات المنزلية مجاني.
+ku: باجەکان بەپێی <0>یاسای داهاتەکانی شارەوانی ژمارە 1ی ساڵی 2023</0> دیاری دەکرێن. کۆکردنەوەی خاشاکی ماڵان بێبەرامبەرە.
+
+en: Find the amount
+ar: اعرف المبلغ
+ku: بڕەکە بزانە
+
+en: With your account number above.
+ar: برقم حسابك في الأعلى.
+ku: بە ژمارەی هەژمارەکەت لە سەرەوە.
+
+en: Pay <0>District office</0>
+ar: ادفع <0>البلدية</0>
+ku: پارە بدە <0>شارەوانی</0>
+
+en: At the collection section, Sunday to Thursday, 8:30 am – 2:30 pm, in cash or by card where available. <0>Find your district office</0>
+ar: في شعبة الجباية، من الأحد إلى الخميس، من 8:30 صباحاً إلى 2:30 ظهراً، نقداً أو بالبطاقة حيثما توفرت. <0>اعثر على بلدية منطقتك</0>
+ku: لە بەشی کۆکردنەوەی پارە، یەکشەممە تا پێنجشەممە، لە 8:30ی بەیانی تا 2:30ی دوانیوەڕۆ، بە نەقد یان بە کارت لە شوێنی بەردەست. <0>شارەوانی ناوچەکەت بدۆزەرەوە</0>
+
+en: Keep the receipt
+ar: احتفظ بالوصل
+ku: پسوولەی وەرگرتن هەڵبگرە
+
+en: It shows your account number for future payments.
+ar: يظهر فيه رقم حسابك للدفعات القادمة.
+ku: ژمارەی هەژمارەکەت بۆ پارەدانەکانی داهاتوو تێدایە.
+
+en: For the property you work from.
+ar: للعقار الذي تمارس فيه عملك.
+ku: بۆ ئەو موڵکەی کاری تێدا دەکەیت.

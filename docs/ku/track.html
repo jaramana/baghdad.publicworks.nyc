@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بەدواداچوونی ڕاپۆرت — ئەمانەتی بەغدا</title>
+<link rel="alternate" hreflang="ar" href="../track.html">
+<link rel="alternate" hreflang="en" href="../en/track.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/base.css">
+<link rel="stylesheet" href="../shared/page.css">
+<link rel="stylesheet" href="../shared/lang-swap.css">
+<script src="../shared/lang-swap.js"></script>
+<style>
+  /* Case tracking: look up a number, see who did what and when */
+
+  .layout { padding-block: 1.25rem 4rem; max-width: 50rem; }
+  .track { min-width: 0; }
+
+  /* Help: plain blocks under the case */
+  .help { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.75rem; margin-top: 3rem; }
+  .help section { border-top: 2px solid var(--green); padding-top: 0.8rem; }
+  .help h2 { font-size: 1rem; margin-bottom: 0.4rem; }
+  .help p { margin: 0.3rem 0; font-size: 0.9375rem; color: var(--muted); }
+  .track h1 { font-size: clamp(1.9rem, 4.5vw, 2.6rem); font-weight: 800; }
+  .lede { margin: 0.4rem 0 0; color: var(--muted); }
+
+  .lookup { display: flex; margin-top: 1.25rem; border: 2px solid var(--ink); border-radius: 4px; overflow: hidden; background: var(--white); max-width: 30rem; }
+  .lookup:focus-within { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+  .lookup input { flex: 1; min-width: 0; border: 0; padding: 0.7rem 1rem; font: inherit; font-size: 1.125rem; background: transparent; color: var(--ink); }
+  .lookup input:focus-visible { outline: none; }
+  .lookup button { border: 0; border-inline-start: 1.5px solid var(--line); background: transparent; color: var(--green); font: inherit; font-weight: 700; padding-inline: 1.25rem; cursor: pointer; }
+  .lookup button:hover { background: var(--green-tint); }
+  .miss { min-height: 1.6em; margin: 0.5rem 0 0; color: #a3261b; font-weight: 600; font-size: 0.9375rem; }
+
+  .case { margin-top: 1.5rem; border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 4px; background: var(--white); padding: 1.5rem; }
+  .case-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+  .case-no { font-family: var(--kufi); font-size: 1.75rem; font-weight: 800; color: var(--green); margin: 0; }
+  .case-meta { margin: 0.1rem 0 0; color: var(--muted); }
+
+  .timeline { list-style: none; margin: 1.25rem 0 0; padding: 0; position: relative; }
+  .timeline::before { content: ""; position: absolute; inset-block: 0.9rem 0.9rem; inset-inline-start: calc(0.75rem - 1px); width: 2px; background: var(--line); }
+  .timeline li { position: relative; display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.9rem; padding-block: 0.55rem; }
+  .timeline li::before { content: ""; position: relative; z-index: 1; width: 1.5rem; height: 1.5rem; border-radius: 50%; border: 2px solid var(--line); background: var(--white); box-sizing: border-box; }
+  .timeline li.done::before { border-color: var(--green); background: radial-gradient(circle, var(--green) 0 4px, var(--white) 5px); }
+  .timeline li.now::before { border-color: var(--amber); box-shadow: 0 0 0 4px #fbeccb; }
+  .timeline strong { display: block; }
+  .timeline .when { font-size: 0.875rem; color: var(--muted); }
+  .timeline .by { font-size: 0.9375rem; margin: 0.15rem 0 0; }
+  .timeline li.todo strong { color: var(--muted); font-weight: 500; }
+
+  .after { margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; justify-content: space-between; }
+  .after p { margin: 0; font-size: 0.9375rem; color: var(--muted); }
+  .note-block { font-size: 0.8125rem; color: var(--muted); margin-top: 1rem; }
+</style>
+<script src="../shared/prototype.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">بازدان بۆ ناوەڕۆکی سەرەکی</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
+      <div><strong>ئەمانەتی بەغدا</strong><span>ماڵپەڕی فەرمی · کۆماری عێراق</span></div>
+    </a>
+    <button class="menu-btn" type="button" popovertarget="menu">لیست</button>
+    <nav class="menu" id="menu" popover aria-label="مێنیوی سەرەکی">
+      <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">داخستن</button>
+      <ul class="nav">
+        <li class="has-sub"><a href="services.html">خزمەتگوزارییەکان</a>
+          <ul class="sub">
+            <li><a href="service-permit.html">مۆڵەتی بیناسازی</a></li>
+            <li><a href="service-water.html">هەژماری ئاو</a></li>
+            <li><a href="service-property.html">بەیاننامەی موڵک</a></li>
+            <li><a href="service-sewer.html">گەیاندن بە تۆڕی ئاوەڕۆ</a></li>
+            <li><a href="service-fees.html">باجەکانی شارەوانی</a></li>
+            <li><a href="alerts.html">ئاگادارکردنەوەکان</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html" aria-current="true">ڕاپۆرتکردنی کێشە</a></li>
+        <li><a href="news.html">هەواڵەکان</a></li>
+        <li class="has-sub end"><a href="about.html">ئەمانەت</a>
+          <ul class="sub">
+            <li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li>
+            <li><a href="districts.html">شارەوانییەکان</a></li>
+            <li><a href="tenders.html">تەندەر و مزایەدەکان</a></li>
+            <li><a href="laws.html">یاسا و پلانەکان</a></li>
+            <li><a href="data.html">داتای کراوە</a></li>
+            <li><a href="about.html#contact">پەیوەندی</a></li>
+          </ul>
+        </li>
+        <li class="lang"><a href="../track.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../en/track.html" lang="en" hreflang="en" dir="ltr">English</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <nav class="crumbs" aria-label="ڕێڕەو">
+    <ol>
+      <li><a href="index.html">سەرەکی</a></li>
+      <li><a href="report.html">ڕاپۆرتکردنی کێشە</a></li>
+    </ol>
+  </nav>
+
+  <div class="layout">
+  <div class="track">
+    <h1>بەدواداچوونی ڕاپۆرت</h1>
+    <p class="lede">ژمارەی ڕاپۆرتەکەت بنووسە بۆ بینینی قۆناغەکانی و ئەو تیمەی کاری لەسەر دەکات. هەژمار پێویست نییە.</p>
+
+    <form class="lookup" id="lookup" role="search">
+      <input id="no" aria-label="ژمارەی ڕاپۆرت" value="ب-٤٨٢١٣" autocomplete="off">
+      <button type="submit">پیشان بدە</button>
+    </form>
+    <p class="miss" id="miss" role="alert"></p>
+
+    <article class="case" id="case" aria-labelledby="case-no">
+      <div class="case-head">
+        <div>
+          <p class="case-no" id="case-no">ب-٤٨٢١٣</p>
+          <p class="case-meta">ڕژانی ئاوەڕۆ · شارەوانی کەڕادە · نزیک قوتابخانەیەک لە مەحەللەی ٩٠٤</p>
+        </div>
+        <span class="status plan">لە کاردایە</span>
+      </div>
+
+      <ol class="timeline">
+        <li class="done"><div><strong>ڕاپۆرتەکە وەرگیرا</strong><span class="when">پێنجشەممە ٢٩ی تشرینی یەکەم، ٨:١٢ی ئێوارە</span><p class="by">لە ماڵپەڕەکەوە، لەگەڵ وێنەیەک.</p></div></li>
+        <li class="done"><div><strong>نێردرا بۆ شارەوانی کەڕادە</strong><span class="when">هەینی ٣٠ی تشرینی یەکەم، ٧:٤٠ی بەیانی</span><p class="by">بەشی ئاوەڕۆی شارەوانییەکە.</p></div></li>
+        <li class="now"><div><strong>تیمەکە لە شوێنەکەیە</strong><span class="when">هەینی ٣٠ی تشرینی یەکەم، ١٠:٢٥ی بەیانی</span><p class="by">تیمێکی پاککردنەوەی ئاوەڕۆ کار لەسەر هێڵە لاوەکییەکە دەکات.</p></div></li>
+        <li class="todo"><div><strong>داخستنی ڕاپۆرت</strong><span class="when">چاوەڕێی تەواوبوونی کارەکە</span></div></li>
+      </ol>
+
+      <div class="after">
+        <p>ئەم نوێکارییانە بە نامەی دەقیش وەردەگریت.</p>
+        <a class="btn" href="report.html?cat=طفح%20المجاري&amp;d=karrada&amp;ref=ب-٤٨٢١٣">دووبارە کێشەکە ڕاپۆرت بکەرەوە</a>
+      </div>
+    </article>
+
+    <article class="case" id="case-new" aria-labelledby="new-no" hidden>
+      <div class="case-head">
+        <div>
+          <p class="case-no" id="new-no"></p>
+          <p class="case-meta" id="new-meta"></p>
+        </div>
+        <span class="status plan">وەرگیرا</span>
+      </div>
+
+      <ol class="timeline">
+        <li class="now"><div><strong>ڕاپۆرتەکە وەرگیرا</strong><span class="when">ئەمڕۆ</span><p class="by">لە ماڵپەڕەکەوە.</p></div></li>
+        <li class="todo"><div><strong>نێردرا بۆ شارەوانی <span id="new-d"></span></strong><span class="when">دواتر</span></div></li>
+        <li class="todo"><div><strong>تیمەکە لە شوێنەکەیە</strong></div></li>
+        <li class="todo"><div><strong>داخستنی ڕاپۆرت</strong></div></li>
+      </ol>
+
+      <div class="after" id="new-via"></div>
+    </article>
+
+    <p class="note-block">نموونەیەکی ڕوونکەرەوە.</p>
+  </div>
+
+  <div class="help">
+    <section>
+      <h2>ژمارەی ڕاپۆرتەکەم لە کوێ بدۆزمەوە؟</h2>
+      <p>لە پەڕەی پشتڕاستکردنەوە دوای ناردن، و لە یەکەم نامەی دەقیدا.</p>
+    </section>
+    <section>
+      <h2>چاککردنەوە چەند دەخایەنێت؟</h2>
+      <p>لە ماوەی دوو ڕۆژی کاردا یەکەم وەڵام وەردەگریت. ماوەی چاککردنەوە بەندە بە کێشەکە. (نموونەیی)</p>
+    </section>
+    <section>
+      <h2>ئەگەر ڕاپۆرتێک داخرا بەڵام کێشەکە مابوو؟</h2>
+      <p>لە ڕاپۆرتەکەتدا «دووبارە کێشەکە ڕاپۆرت بکەرەوە» بەکاربهێنە. ڕاپۆرتە نوێیەکە ژمارە کۆنەکەی لەگەڵدایە، بۆیە هەردووکیان بەیەکەوە دەبەسترێنەوە.</p>
+    </section>
+  </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">ئەمانەتی بەغدا</div>
+      <div><h2>خزمەتگوزارییەکان</h2><ul><li><a href="services.html">هەموو خزمەتگوزارییەکان</a></li><li><a href="report.html">ڕاپۆرتکردنی کێشە</a></li><li><a href="track.html">بەدواداچوونی ڕاپۆرت</a></li><li><a href="alerts.html">ئاگادارکردنەوەکان</a></li></ul></div>
+      <div><h2>هەواڵەکان</h2><ul><li><a href="news.html">هەموو هەواڵەکان</a></li></ul></div>
+      <div><h2>ئەمانەت</h2><ul><li><a href="about.html">تێڕوانینی گشتی</a></li><li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li><li><a href="districts.html">شارەوانییەکان</a></li><li><a href="tenders.html">تەندەر و مزایەدەکان</a></li><li><a href="laws.html">یاسا و پلانەکان</a></li><li><a href="data.html">داتای کراوە</a></li><li><a href="about.html#contact">پەیوەندی</a></li></ul></div>
+      <div><h2>ئەم ماڵپەڕە</h2><ul><li><a href="site.html#privacy">تایبەتێتی</a></li><li><a href="site.html#access">دەستڕاگەیشتن</a></li><li><a href="site.html#search">گەڕان چۆن کار دەکات</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p class="hotline"><span>هێڵی گەرم <a href="tel:5628"><strong>٥٦٢٨</strong></a>، لە ٨:٣٠ی بەیانی تا ٢ی دوانیوەڕۆ</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="فەیسبووک" title="فەیسبووک"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="ئینستاگرام" title="ئینستاگرام"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="ئێکس" title="ئێکس"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>مۆر: دووبارە کێشانەوەی کۆمەڵگە — CC BY-SA 4.0 — ویکیمیدیا کۆمنز. مافی هەر وێنەیەک لەگەڵ وێنەکەدا نووسراوە.</p>
+    </div>
+  </div>
+</footer>
+<script>
+  // Lookup demo: the sample case, plus a report sent from the Report page in
+  // this browser tab. Accepts Arabic or Western digits.
+
+  const toWestern = s => s.replace(/[٠-٩]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d));
+  const key = s => toWestern(s).replace(/\D/g, '');
+  const cases = { 48213: document.getElementById('case') };
+
+  let saved = null;
+  try { saved = JSON.parse(sessionStorage.getItem('demo-report')); } catch {}
+  if (saved) {
+    document.getElementById('new-no').textContent = saved.no;
+    document.getElementById('new-meta').textContent = [saved.cat, `شارەوانی ${saved.d}`, saved.place].filter(Boolean).join(' · ');
+    document.getElementById('new-d').textContent = saved.d;
+    const via = { sms: 'بە نامەی دەقی' }[saved.via];
+    const after = document.getElementById('new-via');
+    if (via) after.innerHTML = `<p>ئەم نوێکارییانە ${via}یش وەردەگریت.</p>`; else after.remove();
+    cases[key(saved.no)] = document.getElementById('case-new');
+  }
+
+  document.getElementById('lookup').addEventListener('submit', e => {
+    e.preventDefault();
+    const found = cases[key(document.getElementById('no').value)];
+    Object.values(cases).forEach(c => { c.hidden = c !== found; });
+    document.getElementById('miss').textContent = found ? '' : 'هیچ ڕاپۆرتێک بەم ژمارەیە نەدۆزرایەوە. ژمارەکە لە نامەی پشتڕاستکردنەوەکەتدا بپشکنە.';
+  });
+
+  // A number sent from the Report page opens straight onto its result
+
+  const sent = new URLSearchParams(location.search).get('n');
+  if (sent) { document.getElementById('no').value = sent; document.getElementById('lookup').requestSubmit(); }
+</script>
+</body>
+</html>

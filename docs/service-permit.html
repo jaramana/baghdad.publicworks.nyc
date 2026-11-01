@@ -4,16 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>إجازة البناء — أمانة بغداد</title>
+<link rel="alternate" hreflang="ckb" href="ku/service-permit.html">
+<link rel="alternate" hreflang="en" href="en/service-permit.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/page.css">
 <link rel="stylesheet" href="shared/lang-swap.css">
 <script src="shared/lang-swap.js"></script>
-<link rel="stylesheet" href="shared/page.css">
+
 <script src="shared/prototype.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">انتقل إلى المحتوى الرئيسي</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -25,118 +29,123 @@
     <nav class="menu" id="menu" popover aria-label="القائمة الرئيسية">
       <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">إغلاق</button>
       <ul class="nav">
-        <li><a href="services.html" aria-current="page">الخدمات</a></li>
-        <li><a href="report.html">بلّغ عن مشكلة</a></li>
-        <li><a href="districts.html">البلديات</a></li>
-        <li><a href="city-tigris.html">المدينة</a></li>
+        <li class="has-sub"><a href="services.html" aria-current="true">الخدمات</a>
+          <ul class="sub">
+            <li><a href="service-permit.html" aria-current="page">إجازة البناء</a></li>
+            <li><a href="service-water.html">حساب الماء</a></li>
+            <li><a href="service-property.html">بيان العقار</a></li>
+            <li><a href="service-sewer.html">ربط المجاري</a></li>
+            <li><a href="service-fees.html">الرسوم البلدية</a></li>
+            <li><a href="alerts.html">التنبيهات</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html">الإبلاغ عن مشكلة</a></li>
+        <li><a href="news.html">الأخبار</a></li>
+        <li class="has-sub end"><a href="about.html">الأمانة</a>
+          <ul class="sub">
+            <li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li>
+            <li><a href="districts.html">البلديات</a></li>
+            <li><a href="tenders.html">المناقصات والمزايدات</a></li>
+            <li><a href="laws.html">القوانين والخطط</a></li>
+            <li><a href="data.html">البيانات المفتوحة</a></li>
+            <li><a href="about.html#contact">الاتصال</a></li>
+          </ul>
+        </li>
         <li class="lang"><a href="ku/service-permit.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/service-permit.html" lang="en" hreflang="en" dir="ltr">English</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <nav class="crumbs" aria-label="مسار الصفحة">
+<main class="wrap" id="main">
+  <nav class="crumbs" aria-label="مسار التنقل">
     <ol>
       <li><a href="home.html">الرئيسية</a></li>
       <li><a href="services.html">الخدمات</a></li>
-      <li><a href="services.html#building">البناء والعقار</a></li>
-      <li aria-current="page">إجازة البناء</li>
     </ol>
   </nav>
 
   <header class="page-head">
-    <p class="kicker">خدمة · البناء والعقار</p>
     <h1>إجازة البناء</h1>
-    <p class="lede">تحتاج إجازة بناء قبل أن تبني أو تضيف بناءً على عقار داخل حدود أمانة بغداد. تقدّم الطلب إلكترونياً على بوابة أور، وتتابعه هناك.</p>
+    <p class="lede">تحتاج إلى إجازة لبناء مبنى أو توسعته على عقار يقع ضمن حدود أمانة بغداد. قدّم الطلب إلكترونياً عبر بوابة أور وتابع طلبك فيها.</p>
     <ul class="facts">
-      <li><span class="k">أين تقدّم</span><p class="v">بوابة أور</p><p class="s">تحتاج حساباً على أور</p></li>
-      <li><span class="k">المدة</span><p class="v">نحو ٣٠ يوماً</p><p class="s">بعد اكتمال المستندات · توضيحي</p></li>
-      <li><span class="k">الكلفة</span><p class="v">حسب المساحة والاستعمال</p><p class="s">تُحسب عند التدقيق · توضيحي</p></li>
+      <li><span class="k">جهة التقديم</span><p class="v">بوابة أور</p><p class="s">يلزم حساب على أور</p></li>
+      <li><span class="k">المدة</span><p class="v">نحو ٣٠ يوماً</p><p class="s">بعد اكتمال المستمسكات · توضيحي</p></li>
+      <li><span class="k">الكلفة</span><p class="v">تعتمد على المساحة والاستعمال</p><p class="s">تُحدَّد عند التدقيق · توضيحي</p></li>
     </ul>
   </header>
 
   <div class="layout">
+    <div class="start">
+      <h2>ابدأ طلبك</h2>
+      <p>يستغرق تقديم الطلب نحو ٢٠ دقيقة بعد تهيئة المستمسكات.</p>
+      <a class="btn" href="https://eservice.ur.gov.iq/customer/applyService/10671" rel="external">قدّم على بوابة أور ↗</a>
+      <p>يلزم حساب على أور. <a href="https://ur.gov.iq" rel="external">أنشئ حساباً على أور</a></p>
+      <div class="alt">
+        <p>ويمكنك أيضاً التقديم حضورياً في <a href="districts.html">بلدية منطقتك</a> خلال ساعات الدوام.</p>
+      </div>
+    </div>
+
     <article class="guide">
-      <p class="illustrative">المستندات والخطوات والمدد في هذه الصفحة توضيحية في هذا النموذج، إلى أن تُراجع مع الدائرة المختصة. مكان التقديم على بوابة أور مؤكَّد.</p>
+      <p class="illustrative">الشروط والمستمسكات والخطوات والمدد والكلف الواردة في هذا الدليل توضيحية.</p>
 
       <section id="need" aria-labelledby="need-h">
-        <h2 id="need-h">هل تحتاج إجازة؟</h2>
-        <p>تحتاجها في الحالات الآتية:</p>
+        <h2 id="need-h">متى تلزم الإجازة</h2>
+        <p>تلزم الإجازة من أجل:</p>
         <ul>
-          <li>بناء جديد على أرض فارغة.</li>
-          <li>إضافة طابق أو غرفة أو ملحق.</li>
-          <li>تغيير الواجهة المطلّة على الشارع.</li>
-          <li>تغيير استعمال البناء، من سكني إلى تجاري مثلاً.</li>
+          <li>البناء على أرض فارغة</li>
+          <li>إضافة طابق أو غرفة أو ملحق</li>
+          <li>تغيير واجهة المبنى المطلة على الشارع</li>
+          <li>تغيير استعمال المبنى، كتحويل منزل إلى محل تجاري</li>
         </ul>
-        <p>لا تحتاجها للصيانة الداخلية التي لا تمسّ الهيكل أو الواجهة.</p>
-        <p class="aside-note">إن كان عقارك خارج حدود أمانة بغداد، في الأقضية والنواحي المحيطة، فقد تكون الجهة المختصة محافظة بغداد. <a href="about.html#who">تحقّق من الجهة المختصة</a></p>
+        <p>لا تلزم الإجازة للترميمات الداخلية التي لا تمس الهيكل الإنشائي أو واجهة المبنى.</p>
+        <p>ترد الأحكام كاملة في <a href="laws.html#building">نظام إجازات البناء رقم ٢ لسنة ٢٠١٦</a>.</p>
+        <p class="aside-note">إذا كان عقارك خارج حدود الأمانة، في الأقضية المحيطة، فقد تكون محافظة بغداد هي الجهة المسؤولة. <a href="about.html#who">تحقّق من الجهة المسؤولة</a></p>
       </section>
 
       <section id="docs" aria-labelledby="docs-h">
         <h2 id="docs-h">ما تحتاجه</h2>
-        <p>جهّز هذه المستندات قبل أن تبدأ. ترفعها صوراً واضحة على بوابة أور.</p>
+        <p>هيّئ هذه المستمسكات قبل التقديم، وارفع صورة واضحة لكل منها على بوابة أور.</p>
         <ul class="checklist">
-          <li><div><strong>بيان عقار حديث</strong><span>يصدر على بوابة أور. <a href="service-property.html">اطلب بيان عقار</a></span></div></li>
-          <li><div><strong>المخططات المعمارية والإنشائية</strong><span>مصدّقة من مهندس أو مكتب هندسي مجاز.</span></div></li>
-          <li><div><strong>البطاقة الوطنية الموحدة</strong><span>لمالك العقار، أو وكالة إن قدّم غيره.</span></div></li>
-          <li><div><strong>صورة لموقع العقار</strong><span>من الشارع، تُظهر الأبنية المجاورة.</span></div></li>
+          <li><div><strong>بيان عقار حديث</strong><span>يصدر على بوابة أور. <a href="service-property.html">احصل على بيان عقار</a></span></div></li>
+          <li><div><strong>المخططات المعمارية والإنشائية</strong><span>مصدّقة من مهندس مجاز أو مكتب هندسي.</span></div></li>
+          <li><div><strong>البطاقة الوطنية الموحدة</strong><span>للمالك، أو وكالة إذا قدّم الطلب شخص آخر.</span></div></li>
+          <li><div><strong>صورة للموقع</strong><span>مأخوذة من الشارع، وتظهر فيها المباني المجاورة.</span></div></li>
         </ul>
       </section>
 
       <section id="steps" aria-labelledby="steps-h">
         <h2 id="steps-h">الخطوات</h2>
         <ol class="steps">
-          <li><div><strong>جهّز المستندات</strong><span>القائمة أعلاه.</span></div></li>
-          <li><div><strong>قدّم الطلب <span class="where">بوابة أور</span></strong><span>ادخل بحسابك، واختر «منح إجازة البناء»، وارفع المستندات. يصلك رقم طلب.</span></div></li>
-          <li><div><strong>تدقيق المخططات</strong><span>تراجع الدائرة المختصة المخططات، وقد تطلب تعديلات عبر أور.</span></div></li>
-          <li><div><strong>كشف موقعي</strong><span>يزور موظف من بلديتك العقار. ستُبلَّغ بالموعد.</span></div></li>
-          <li><div><strong>دفع الرسوم <span class="where">بوابة أور</span></strong><span>تظهر الرسوم في طلبك بعد التدقيق.</span></div></li>
-          <li><div><strong>استلام الإجازة</strong><span>تصدر إلكترونياً، وتعلّقها في موقع البناء طوال مدة العمل.</span></div></li>
+          <li><div><strong>هيّئ المستمسكات</strong><span>القائمة أعلاه.</span></div></li>
+          <li><div><strong>قدّم الطلب <span class="where">بوابة أور</span></strong><span>سجّل الدخول، واختر «منح إجازة البناء بمختلف انواعها»، وارفع المستمسكات. تحصل على رقم للطلب.</span></div></li>
+          <li><div><strong>تدقيق المخططات</strong><span>تدقق الدائرة المخططات، وقد تطلب تعديلات عبر أور.</span></div></li>
+          <li><div><strong>الكشف الموقعي</strong><span>يزور مفتش من بلديتك العقار، ويُبلَّغ صاحب الطلب بالموعد.</span></div></li>
+          <li><div><strong>ادفع الرسوم <span class="where">بوابة أور</span></strong><span>تظهر الرسوم في طلبك بعد التدقيق.</span></div></li>
+          <li><div><strong>استلم الإجازة</strong><span>تصدر الإجازة إلكترونياً، وتُعرض في موقع البناء طوال مدة العمل.</span></div></li>
         </ol>
       </section>
 
       <section id="after" aria-labelledby="after-h">
         <h2 id="after-h">بعد التقديم</h2>
-        <p>تتابع حالة طلبك على بوابة أور برقم الطلب. إن تأخر الرد أكثر من المدة المعلنة، أو رُفض طلبك ولم تفهم السبب، <a href="report.html">بلّغنا</a> وسنرد عليك برقم بلاغ تتابعه.</p>
+        <p>تابع طلبك على بوابة أور برقمه.</p>
+        <p>قد يُطلب منك تقييم الخدمة بعد صدور الإجازة.</p>
       </section>
     </article>
-
-    <aside class="action" aria-label="ابدأ الطلب">
-      <div class="start">
-        <h2>ابدأ الطلب</h2>
-        <p>يستغرق التقديم نحو ٢٠ دقيقة إن كانت المستندات جاهزة.</p>
-        <a class="btn" href="https://eservice.ur.gov.iq/customer/applyService/10671" rel="external">قدّم على بوابة أور ↗</a>
-        <p>لا تملك حساباً؟ <a href="https://ur.gov.iq" rel="external">أنشئ حساباً على أور</a></p>
-        <div class="alt">
-          <p>تفضّل الحضور؟ قدّم في <a href="districts.html">مكتب بلديتك</a> خلال الدوام الرسمي.</p>
-        </div>
-      </div>
-      <nav class="toc" aria-labelledby="toc-h">
-        <h2 id="toc-h">في هذه الصفحة</h2>
-        <ol>
-          <li><a href="#need">هل تحتاج إجازة؟</a></li>
-          <li><a href="#docs">ما تحتاجه</a></li>
-          <li><a href="#steps">الخطوات</a></li>
-          <li><a href="#after">بعد التقديم</a></li>
-        </ol>
-      </nav>
-    </aside>
   </div>
 
   <section class="block ruled" aria-labelledby="related-h">
     <div class="block-head"><h2 id="related-h">خدمات ذات صلة</h2></div>
     <ul class="related">
-      <li><a href="service-property.html"><strong>بيان عقار</strong><p>تحتاجه للإجازة وللبيع والإرث.</p></a></li>
-      <li><a href="service-sewer.html"><strong>إيصال المجاري</strong><p>لربط البناء الجديد بشبكة الصرف الصحي.</p></a></li>
-      <li><a href="report.html?cat=أخرى"><strong>بلّغ عن بناء مخالف</strong><p>بناء بلا إجازة أو خارج المخطط.</p></a></li>
+      <li><a href="service-property.html"><strong>بيان العقار</strong><p>مطلوب للإجازة وللبيع والإرث.</p></a></li>
+      <li><a href="service-sewer.html"><strong>ربط المجاري</strong><p>ربط المبنى الجديد بشبكة المجاري.</p></a></li>
     </ul>
 
     <div class="feedback">
-      <p>هل وجدت ما تحتاجه في هذه الصفحة؟</p>
+      <p>هل كانت هذه الصفحة مفيدة؟</p>
       <div class="btns"><button class="btn" type="button">نعم</button><button class="btn" type="button">لا</button></div>
     </div>
-    <p class="meta">آخر مراجعة: ٣٠ تشرين الأول ٢٠٢٦ · الخدمة على أور: «منح إجازة البناء بمختلف أنواعها»</p>
+    <p class="meta">الخدمة على أور: «منح إجازة البناء بمختلف انواعها»</p>
   </section>
 </main>
 
@@ -144,12 +153,14 @@
   <div class="wrap">
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
-      <div><h2>الأمانة</h2><ul><li><a href="about.html">عن الأمانة</a></li><li><a href="districts.html">البلديات</a></li><li><a href="services.html#business">المناقصات</a></li></ul></div>
-      <div><h2>الخدمات</h2><ul><li><a href="report.html">بلّغ عن مشكلة</a></li><li><a href="track.html">تابع بلاغك</a></li><li><a href="services.html">كل الخدمات</a></li></ul></div>
-      <div><h2>الموقع</h2><ul><li><a href="about.html#access">إمكانية الوصول</a></li><li><a href="about.html#privacy">الخصوصية</a></li><li><a href="data.html">البيانات المفتوحة</a></li></ul></div>
+      <div><h2>الخدمات</h2><ul><li><a href="services.html">كل الخدمات</a></li><li><a href="report.html">الإبلاغ عن مشكلة</a></li><li><a href="track.html">متابعة بلاغ</a></li><li><a href="alerts.html">التنبيهات</a></li></ul></div>
+      <div><h2>الأخبار</h2><ul><li><a href="news.html">كل الأخبار</a></li></ul></div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">نظرة عامة</a></li><li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li><li><a href="districts.html">البلديات</a></li><li><a href="tenders.html">المناقصات والمزايدات</a></li><li><a href="laws.html">القوانين والخطط</a></li><li><a href="data.html">البيانات المفتوحة</a></li><li><a href="about.html#contact">الاتصال</a></li></ul></div>
+      <div><h2>هذا الموقع</h2><ul><li><a href="site.html#privacy">الخصوصية</a></li><li><a href="site.html#access">إمكانية الوصول</a></li><li><a href="site.html#search">كيف يعمل البحث</a></li></ul></div>
     </div>
     <div class="fine">
-      <p>الختم: إعادة رسم مجتمعية — CC BY-SA 4.0 — Wikimedia Commons.</p>
+      <p class="hotline"><span>الخط الساخن <a href="tel:5628"><strong>٥٦٢٨</strong></a>، من ٨:٣٠ صباحاً إلى ٢ ظهراً</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="فيسبوك" title="فيسبوك"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="إنستغرام" title="إنستغرام"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="إكس" title="إكس"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>الشعار: إعادة رسم مجتمعية — CC BY-SA 4.0 — ويكيميديا كومنز. تُذكر حقوق كل صورة معها.</p>
     </div>
   </div>
 </footer>

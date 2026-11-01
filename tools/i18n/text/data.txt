@@ -1,0 +1,301 @@
+# Open data
+
+en: Open data — Mayoralty of Baghdad
+ar: البيانات المفتوحة — أمانة بغداد
+ku: داتای کراوە — ئەمانەتی بەغدا
+
+en: Data and reports about the city. Each dataset lists its source, date and limitations.
+ar: بيانات وتقارير عن المدينة. تُذكر مع كل مجموعة بيانات مصدرُها وتاريخها وحدودها.
+ku: داتا و ڕاپۆرت دەربارەی شار. هەر کۆمەڵە داتایەک سەرچاوە، بەروار و سنوورەکانی لەگەڵدایە.
+
+en: Datasets
+ar: مجموعات البيانات
+ku: کۆمەڵە داتاکان
+
+en: Available now
+ar: المتاح الآن
+ku: ئێستا بەردەستە
+
+en: Population by subdistrict, 2024 census
+ar: السكان بحسب الناحية، تعداد 2024
+ku: دانیشتوان بەپێی ناحیە، سەرژمێریی 2024
+
+en: Available
+ar: متاح
+ku: بەردەستە
+
+en: 38 subdistricts in Baghdad Governorate. Central Statistical Organization.
+ar: 38 ناحية في محافظة بغداد. الجهاز المركزي للإحصاء.
+ku: 38 ناحیە لە پارێزگای بەغدا. دەزگای ناوەندیی ئامار.
+
+en: Statistical report, 2025 ↗
+ar: التقرير الإحصائي، 2025 ↗
+ku: ڕاپۆرتی ئاماری، 2025 ↗
+
+en: PDF · Arabic · 7.4 MB
+ar: PDF · عربي · 7.4 م.ب
+ku: PDF · عەرەبی · 7.4 م.ب
+
+en: The Mayoralty's annual statistical report. The data tables will also be published separately.
+ar: التقرير الإحصائي السنوي للأمانة. وستُنشر جداول البيانات منفصلة أيضاً.
+ku: ڕاپۆرتی ئاماریی ساڵانەی ئەمانەت. خشتەکانی داتاش بە جیا بڵاو دەکرێنەوە.
+
+en: World Bank project disclosures ↗
+ar: إفصاحات مشاريع البنك الدولي ↗
+ku: ئاشکراکردنەکانی پرۆژەکانی بانکی نێودەوڵەتی ↗
+
+en: PDF · Arabic
+ar: PDF · عربي
+ku: PDF · عەرەبی
+
+en: The Environmental and Social Commitment Plan for the Mayoralty's World Bank-funded works, October 2026. Publication is a World Bank requirement.
+ar: خطة الالتزام البيئي والاجتماعي لأعمال الأمانة الممولة من البنك الدولي، تشرين الأول 2026. ونشرها من متطلبات البنك الدولي.
+ku: پلانی پابەندبوونی ژینگەیی و کۆمەڵایەتی بۆ کارەکانی ئەمانەت کە بانکی نێودەوڵەتی پارەی دەدات، تشرینی یەکەمی 2026. بڵاوکردنەوەی مەرجێکی بانکی نێودەوڵەتییە.
+
+en: Planned
+ar: المخطط لها
+ku: پلان بۆ داڕێژراو
+
+en: Reports by municipality
+ar: البلاغات بحسب البلدية
+ku: ڕاپۆرتەکان بەپێی شارەوانی
+
+en: In preparation
+ar: قيد الإعداد
+ku: ئامادە دەکرێت
+
+en: Daily counts of reports by type, and the time taken to close them. No photos or personal details.
+ar: أعداد البلاغات اليومية بحسب النوع، ومدة إغلاقها. دون صور أو بيانات شخصية.
+ku: ژمارەی ڕۆژانەی ڕاپۆرتەکان بەپێی جۆر، و ماوەی داخستنیان. بێ وێنە و زانیاریی کەسی.
+
+en: Sewage outfalls on the Tigris
+ar: مصبات المجاري على دجلة
+ku: ڕژانگەکانی ئاوەڕۆ لەسەر دیجلە
+
+en: Every outfall, who is responsible and when it will close.
+ar: كل مصب، والجهة المسؤولة عنه، وموعد غلقه.
+ku: هەموو ڕژانگەیەک، کێ بەرپرسە و کەی دادەخرێت.
+
+en: Surface heat and green cover
+ar: حرارة السطح والغطاء الأخضر
+ku: گەرمیی ڕووی زەوی و ڕووپۆشی سەوز
+
+en: From Landsat and Sentinel-2 satellite imagery. The method will be published with the map.
+ar: من صور الأقمار الصناعية Landsat وSentinel-2. وستُنشر المنهجية مع الخريطة.
+ku: لە وێنەی مانگە دەستکردەکانی Landsat و Sentinel-2. ڕێبازەکە لەگەڵ نەخشەکە بڵاو دەکرێتەوە.
+
+en: Air quality
+ar: جودة الهواء
+ku: کوالیتیی هەوا
+
+en: Not yet available
+ar: غير متاح بعد
+ku: هێشتا بەردەست نییە
+
+en: To be published when monitoring station readings are available.
+ar: يُنشر عند توفر قراءات محطات الرصد.
+ku: کاتێک خوێندنەوەی وێستگەکانی چاودێری بەردەست بوو بڵاو دەکرێتەوە.
+
+en: Municipal boundaries
+ar: حدود البلديات
+ku: سنووری شارەوانییەکان
+
+en: To be published with the official boundary file.
+ar: تُنشر مع ملف الحدود الرسمي.
+ku: لەگەڵ فایلی فەرمیی سنوور بڵاو دەکرێتەوە.
+
+en: Population by subdistrict
+ar: السكان بحسب الناحية
+ku: دانیشتوان بەپێی ناحیە
+
+en: Results of the general population census of 25 November 2024, with 2009 estimates for comparison. The figures cover all of Baghdad Governorate, including districts outside the Mayoralty's boundary.
+ar: نتائج التعداد العام للسكان في 25 تشرين الثاني 2024، مع تقديرات عام 2009 للمقارنة. تشمل الأرقام محافظة بغداد كلها، ومنها الأقضية الواقعة خارج حدود الأمانة.
+ku: ئەنجامەکانی سەرژمێریی گشتیی دانیشتوان لە 25ی تشرینی دووەمی 2024، لەگەڵ خەمڵاندنەکانی 2009 بۆ بەراوردکردن. ژمارەکان هەموو پارێزگای بەغدا دەگرنەوە، لەوانە ئەو قەزایانەی لە دەرەوەی سنووری ئەمانەتن.
+
+en: Subdistricts are statistical units. Their boundaries do not match those of the 15 municipalities, so subdistrict figures cannot be added together to give a municipality's population.
+ar: النواحي وحدات إحصائية لا تتطابق حدودها مع حدود البلديات الخمس عشرة، لذا لا يمكن جمع أرقام النواحي للحصول على عدد سكان بلدية ما.
+ku: ناحیەکان یەکەی ئامارین. سنوورەکانیان لەگەڵ سنووری ١٥ شارەوانییەکە یەک ناگرنەوە، بۆیە ناتوانرێت ژمارەی ناحیەکان کۆ بکرێنەوە بۆ دەرهێنانی دانیشتوانی شارەوانییەک.
+
+en: Largest to smallest
+ar: من الأكبر إلى الأصغر
+ku: لە گەورەترینەوە بۆ بچووکترین
+
+en: Subdistrict
+ar: الناحية
+ku: ناحیە
+
+en: 2009 estimate
+ar: تقدير 2009
+ku: خەمڵاندنی 2009
+
+en: 2024 census
+ar: تعداد 2024
+ku: سەرژمێریی 2024
+
+en: Al-M'āmūn <0>المأمون</0>
+ar: المأمون
+ku: المأمون
+
+en: Baghdād al-Jidīdah <0>بغداد الجديدة</0>
+ar: بغداد الجديدة
+ku: بغداد الجديدة
+
+en: Al-Faḥāmah <0>الفحامة</0>
+ar: الفحامة
+ku: الفحامة
+
+en: Al-Manṣūr <0>المنصور</0>
+ar: المنصور
+ku: المنصور
+
+en: Az-Zawrā' <0>الزوراء</0>
+ar: الزوراء
+ku: الزوراء
+
+en: Samā al-Kāẓimiyyah [Dhāt as-Salāsil] <0>سماء الكاظمية (ذات السلاسل)</0>
+ar: سماء الكاظمية (ذات السلاسل)
+ku: سماء الكاظمية (ذات السلاسل)
+
+en: Al-Waḥdah <0>الوحدة</0>
+ar: الوحدة
+ku: الوحدة
+
+en: Al-Furāt <0>الفرات</0>
+ar: الفرات
+ku: الفرات
+
+en: Az-Za'frāniyah <0>الزعفرانية</0>
+ar: الزعفرانية
+ku: الزعفرانية
+
+en: Al-Ā'ẓamiyah <0>الأعظمية</0>
+ar: الأعظمية
+ku: الأعظمية
+
+en: Az-Zahūr <0>الزهور</0>
+ar: الزهور
+ku: الزهور
+
+en: Al-Kāẓimiyyah <0>الكاظمية</0>
+ar: الكاظمية
+ku: الكاظمية
+
+en: Abū Ghraīb <0>أبو غريب</0>
+ar: أبو غريب
+ku: أبو غريب
+
+en: Al-Ḥurriyah al-Baghdādiyah <0>الحرية البغدادية</0>
+ar: الحرية البغدادية
+ku: الحرية البغدادية
+
+en: Al-Jisr <0>الجسر</0>
+ar: الجسر
+ku: الجسر
+
+en: Al-Maḥmūdiyah <0>المحمودية</0>
+ar: المحمودية
+ku: المحمودية
+
+en: Faḍā' al-Kāẓimiyyah [At-Tājī] <0>فضاء الكاظمية (التاجي)</0>
+ar: فضاء الكاظمية (التاجي)
+ku: فضاء الكاظمية (التاجي)
+
+en: Al-Munawarah <0>المنورة</0>
+ar: المنورة
+ku: المنورة
+
+en: Al-Yūsufiyah <0>اليوسفية</0>
+ar: اليوسفية
+ku: اليوسفية
+
+en: Al-Karkh <0>الكرخ</0>
+ar: الكرخ
+ku: الكرخ
+
+en: Aṣ-Ṣadīq al-Akbar <0>الصديق الأكبر</0>
+ar: الصديق الأكبر
+ku: الصديق الأكبر
+
+en: An-Naṣir & As-Salām <0>النصر والسلام</0>
+ar: النصر والسلام
+ku: النصر والسلام
+
+en: Al-Laṭīfiyah <0>اللطيفية</0>
+ar: اللطيفية
+ku: اللطيفية
+
+en: Abnā'a ar-Rāfadaīn <0>أبناء الرافدين</0>
+ar: أبناء الرافدين
+ku: أبناء الرافدين
+
+en: Aṭ-Ṭārmiyah <0>الطارمية</0>
+ar: الطارمية
+ku: الطارمية
+
+en: Al-Madā'in <0>المدائن</0>
+ar: المدائن
+ku: المدائن
+
+en: Ar-Rashīd <0>الرشيد</0>
+ar: الرشيد
+ku: الرشيد
+
+en: Al-Karādah ash-Sharqiyah <0>الكرادة الشرقية</0>
+ar: الكرادة الشرقية
+ku: الكرادة الشرقية
+
+en: Aṣ-Ṣadr al-Āwlā <0>الصدر الأولى</0>
+ar: الصدر الأولى
+ku: الصدر الأولى
+
+en: Falasṭīn <0>فلسطين</0>
+ar: فلسطين
+ku: فلسطين
+
+en: Ar-Rabī' <0>الربيع</0>
+ar: الربيع
+ku: الربيع
+
+en: Bawābat as-Samm <0>بوابة الشام</0>
+ar: بوابة الشام
+ku: بوابة الشام
+
+en: Ar-Ruṣāfah <0>الرصافة</0>
+ar: الرصافة
+ku: الرصافة
+
+en: Ar-Rāshidiyah <0>الراشدية</0>
+ar: الراشدية
+ku: الراشدية
+
+en: Aṣ-Ṣadr ath-Thāniyah <0>الصدر الثانية</0>
+ar: الصدر الثانية
+ku: الصدر الثانية
+
+en: Al-Mushāhidah <0>المشاهدة</0>
+ar: المشاهدة
+ku: المشاهدة
+
+en: Ar-Rāshidiyah al-Jidīdah <0>الراشدية الجديدة</0>
+ar: الراشدية الجديدة
+ku: الراشدية الجديدة
+
+en: Al-'Abāījī <0>العبايجي</0>
+ar: العبايجي
+ku: العبايجي
+
+en: — means the source gives no 2009 estimate. Names follow the source's spelling. The Arabic names are transliterations and may differ from official names.
+ar: تعني العلامة — أن المصدر لا يورد تقديراً لعام 2009. نُقلت الأسماء عن التهجئة اللاتينية في المصدر، وقد تختلف عن الأسماء الرسمية.
+ku: — واتە سەرچاوەکە خەمڵاندنی 2009ی نییە. ناوەکان لە ڕێنووسی لاتینیی سەرچاوەکەوە گوازراونەتەوە و لەوانەیە جیاواز بن لە ناوە فەرمییەکان.
+
+en: Source: Central Statistical Organization, 2024 census, as compiled by <0>citypopulation.de ↗</0>
+ar: المصدر: الجهاز المركزي للإحصاء، تعداد 2024، بحسب ما جمعه موقع <0>citypopulation.de ↗</0>
+ku: سەرچاوە: دەزگای ناوەندیی ئامار، سەرژمێریی 2024، وەک ماڵپەڕی <0>citypopulation.de ↗</0> کۆی کردووەتەوە
+
+en: Licence
+ar: الترخيص
+ku: مۆڵەتی بەکارهێنان
+
+en: Data produced by the Mayoralty is published under an open licence. Reuse should credit the Mayoralty of Baghdad and give the date of the data.
+ar: تُنشر البيانات التي تنتجها الأمانة بترخيص مفتوح. ويُذكر عند إعادة استخدامها اسم أمانة بغداد وتاريخ البيانات.
+ku: ئەو داتایانەی ئەمانەت بەرهەمیان دەهێنێت بە مۆڵەتێکی کراوە بڵاو دەکرێنەوە. لە کاتی دووبارە بەکارهێنانەوەدا ناوی ئەمانەتی بەغدا و بەرواری داتاکە بنووسە.

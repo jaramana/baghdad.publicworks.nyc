@@ -13,11 +13,3 @@ h1, h2, h3 { line-height: 1.3; letter-spacing: -0.01em; }
 
 .crumbs li + li::before { content: "›"; }
 .steps li::before { content: counter(step); }
-
-/* Footer is the full site map: brand plus four columns */
-
-.foot { grid-template-columns: 1.3fr repeat(4, 1fr); }
-
-@media (max-width: 860px) {
-  .foot { grid-template-columns: 1fr 1fr; }
-}

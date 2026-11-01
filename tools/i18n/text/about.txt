@@ -1,0 +1,293 @@
+# The Mayoralty (overview)
+
+en: The Mayoralty — Mayoralty of Baghdad
+ar: الأمانة — أمانة بغداد
+ku: ئەمانەت — ئەمانەتی بەغدا
+
+en: The Mayoralty of Baghdad
+ar: أمانة بغداد
+ku: ئەمانەتی بەغدا
+
+en: The Mayoralty provides water, sewerage, roads, waste collection, parks and building permits within the boundary of Baghdad, through 15 municipalities.
+ar: تتولى الأمانة خدمات الماء والمجاري والطرق ورفع النفايات والمتنزهات وإجازات البناء ضمن حدود بغداد، عبر خمس عشرة بلدية.
+ku: ئەمانەت لە سنووری بەغدادا ئاو، ئاوەڕۆ، ڕێگا، کۆکردنەوەی خاشاک، پارک و مۆڵەتی بیناسازی دابین دەکات، لە ڕێگەی ١٥ شارەوانییەوە.
+
+en: In office since 2022. Three deputy mayors assist the Mayor, one each for municipal, technical and administrative affairs.
+ar: في المنصب منذ عام 2022. يعاون أمينَ بغداد ثلاثة وكلاء: وكيل للشؤون البلدية، وآخر للشؤون الفنية، وثالث للشؤون الإدارية.
+ku: لە ساڵی 2022ەوە لە پۆستەکەدایە. سێ جێگر یارمەتی ئەمین دەدەن، یەکێک بۆ کاروباری شارەوانی، یەکێک بۆ کاروباری تەکنیکی و یەکێک بۆ کاروباری کارگێڕی.
+
+en: In this section
+ar: في هذا القسم
+ku: لەم بەشەدا
+
+en: The Mayor, the deputy mayors and the departments, with their email addresses.
+ar: أمين بغداد ووكلاؤه والدوائر، مع عناوين بريدها الإلكتروني.
+ku: ئەمین، جێگرەکان و فەرمانگەکان، لەگەڵ ناونیشانی ئیمەیڵیان.
+
+en: The 15 municipalities, with the email for each office.
+ar: البلديات الخمس عشرة، مع البريد الإلكتروني لكل منها.
+ku: ١٥ شارەوانییەکە، لەگەڵ ئیمەیڵی هەر نووسینگەیەک.
+
+en: Notices for contracts and for sales and leases of Mayoralty property.
+ar: إعلانات العقود، وبيع أملاك الأمانة وإيجارها.
+ku: ئاگادارییەکانی گرێبەست، و فرۆشتن و بەکرێدانی موڵکی ئەمانەت.
+
+en: The laws, regulations and plans that govern the Mayoralty's work.
+ar: القوانين والأنظمة والخطط التي تحكم عمل الأمانة.
+ku: ئەو یاسا، ڕێسا و پلانانەی کاری ئەمانەت ڕێک دەخەن.
+
+en: Population by subdistrict and the Mayoralty's statistical reports.
+ar: السكان بحسب الناحية، والتقارير الإحصائية للأمانة.
+ku: دانیشتوان بەپێی ناحیە و ڕاپۆرتە ئامارییەکانی ئەمانەت.
+
+en: What the Mayoralty does
+ar: مهام الأمانة
+ku: ئەمانەت چی دەکات
+
+en: The Mayoralty of Baghdad (Amanat Baghdad) is the capital's municipal government. The Mayoralty of Baghdad Law, No. 16 of 1995, sets its duties inside the city's planned boundary:
+ar: أمانة بغداد هي الإدارة البلدية للعاصمة. ويحدد قانون أمانة بغداد رقم 16 لسنة 1995 مهامها ضمن حدود التصميم الأساسي للمدينة:
+ku: ئەمانەتی بەغدا ئیدارەی شارەوانیی پایتەختە. یاسای ئەمانەتی بەغدا ژمارە 16ی ساڵی 1995 ئەرکەکانی لە ناو سنووری پلانڕێژراوی شارەکەدا دیاری دەکات:
+
+en: water and sewerage
+ar: الماء والمجاري
+ku: ئاو و ئاوەڕۆ
+
+en: roads and bridges inside the city
+ar: الطرق والجسور داخل المدينة
+ku: ڕێگا و پردەکانی ناو شار
+
+en: street cleaning and waste collection
+ar: تنظيف الشوارع ورفع النفايات
+ku: پاککردنەوەی شەقام و کۆکردنەوەی خاشاک
+
+en: parks and tree planting
+ar: المتنزهات والتشجير
+ku: پارک و دارچاندن
+
+en: building permits and land use
+ar: إجازات البناء واستعمالات الأرض
+ku: مۆڵەتی بیناسازی و بەکارهێنانی زەوی
+
+en: municipal fees
+ar: الرسوم البلدية
+ku: باجەکانی شارەوانی
+
+en: It works through <0>15 municipalities</0> and through central departments, each responsible for one service. It also runs the Baghdadi Museum, the radio station Sawt Baghdad and the Sawt Baghdad newspaper.
+ar: وتعمل عبر <0>خمس عشرة بلدية</0> ودوائر مركزية تتولى كل منها خدمة واحدة. كما تدير المتحف البغدادي وإذاعة صوت بغداد وجريدة صوت بغداد.
+ku: لە ڕێگەی <0>١٥ شارەوانی</0> و فەرمانگە ناوەندییەکانەوە کار دەکات، هەر یەکەیان بەرپرسی خزمەتگوزارییەکە. هەروەها مۆزەخانەی بەغدادی، ڕادیۆی سەوتی بەغدا و ڕۆژنامەی سەوتی بەغدا بەڕێوە دەبات.
+
+en: Responsibilities in Baghdad
+ar: المسؤوليات في بغداد
+ku: بەرپرسیارێتییەکان لە بەغدا
+
+en: Body
+ar: الجهة
+ku: دامەزراوە
+
+en: What it handles
+ar: ما تتولاه
+ku: چی بەڕێوە دەبات
+
+en: Contact it for
+ar: راجعها بشأن
+ku: بۆ ئەمانە پەیوەندی پێوە بکە
+
+en: Municipal services inside the city boundary
+ar: الخدمات البلدية ضمن حدود المدينة
+ku: خزمەتگوزارییە شارەوانییەکان لە ناو سنووری شار
+
+en: Water, sewers, waste, street lights, streets, permits
+ar: الماء، المجاري، النفايات، إنارة الشوارع، الشوارع، الإجازات
+ku: ئاو، ئاوەڕۆ، خاشاک، ڕووناکی شەقام، شەقامەکان، مۆڵەت
+
+en: Running the province, and the districts outside the Mayoralty's boundary
+ar: إدارة المحافظة، والأقضية الواقعة خارج حدود الأمانة
+ku: بەڕێوەبردنی پارێزگا، و ئەو قەزایانەی لە دەرەوەی سنووری ئەمانەتن
+
+en: Abu Ghraib, Tarmiyah, Mahmudiyah, Mada'in and others
+ar: أبو غريب، الطارمية، المحمودية، المدائن وغيرها
+ku: ئەبو غرێب، تارمییە، مەحمودییە، مەدائین و هی تر
+
+en: Baghdad Provincial Council
+ar: مجلس محافظة بغداد
+ku: ئەنجومەنی پارێزگای بەغدا
+
+en: An elected council that chooses the Governor and approves the provincial budget
+ar: مجلس منتخب يختار المحافظ ويصادق على موازنة المحافظة
+ku: ئەنجومەنێکی هەڵبژێردراو کە پارێزگار هەڵدەبژێرێت و بودجەی پارێزگا پەسەند دەکات
+
+en: Your elected representatives
+ar: ممثلوك المنتخبون
+ku: نوێنەرە هەڵبژێردراوەکانت
+
+en: Ministry of Construction and Housing
+ar: وزارة الإعمار والإسكان
+ku: وەزارەتی ئاوەدانکردنەوە و نیشتەجێبوون
+
+en: Overpasses and the national traffic-relief package
+ar: المجسرات والحزمة الوطنية لفك الاختناقات المرورية
+ku: پردە سەرزەوییەکان و پاکێجی نیشتمانیی کەمکردنەوەی قەرەباڵغی هاتوچۆ
+
+en: Overpasses and major highways
+ar: المجسرات والطرق السريعة الرئيسية
+ku: پردە سەرزەوییەکان و ڕێگا خێرا سەرەکییەکان
+
+en: The national online portal for the Mayoralty's applications
+ar: البوابة الإلكترونية الوطنية لمعاملات الأمانة
+ku: پۆرتاڵی ئۆنلاینی نیشتمانی بۆ داواکارییەکانی ئەمانەت
+
+en: Your Ur account and your applications on it
+ar: حسابك على أور وطلباتك فيها
+ku: هەژماری ئورەکەت و داواکارییەکانت تێیدا
+
+en: A report on a matter outside the Mayoralty's responsibility is passed to the body responsible, and you are informed.
+ar: يُحال البلاغ الذي يخص أمراً خارج مسؤولية الأمانة إلى الجهة المسؤولة، ويُبلَّغ صاحبه بذلك.
+ku: ڕاپۆرتێک دەربارەی بابەتێک لە دەرەوەی بەرپرسیارێتیی ئەمانەت دەنێردرێت بۆ لایەنی بەرپرس و ئاگادار دەکرێیتەوە.
+
+en: Major projects
+ar: المشاريع الكبرى
+ku: پرۆژە گەورەکان
+
+en: Major projects in Baghdad are run by several public bodies. Enquiries about a project should be sent to the body responsible. Updates on the Mayoralty's own works are published in <0>News</0>.
+ar: تتولى عدة جهات حكومية المشاريع الكبرى في بغداد، وتُوجَّه الاستفسارات عن كل مشروع إلى الجهة المسؤولة عنه. وتُنشر مستجدات أعمال الأمانة في <0>الأخبار</0>.
+ku: پرۆژە گەورەکانی بەغدا لەلایەن چەند دامەزراوەیەکی گشتییەوە بەڕێوە دەبرێن. پرسیار دەربارەی هەر پرۆژەیەک دەبێت بنێردرێت بۆ لایەنی بەرپرس. نوێکاریی کارەکانی خودی ئەمانەت لە <0>هەواڵەکان</0>دا بڵاو دەکرێنەوە.
+
+en: Project
+ar: المشروع
+ku: پرۆژە
+
+en: Runs it
+ar: الجهة المنفذة
+ku: بەڕێوەبەر
+
+en: Abu Nuwas corniche
+ar: كورنيش أبي نؤاس
+ku: کۆرنیشی ئەبو نوواس
+
+en: Mayoralty of Baghdad; the street widening by the Ministry of Construction and Housing
+ar: أمانة بغداد؛ وتوسعة الشارع من وزارة الإعمار والإسكان
+ku: ئەمانەتی بەغدا؛ فراوانکردنی شەقامەکە لەلایەن وەزارەتی ئاوەدانکردنەوە و نیشتەجێبوونەوە
+
+en: Baghdad Plants, a million trees
+ar: بغداد تزرع، مليون شجرة
+ku: بەغدا دەچێنێت، ملیۆنێک دار
+
+en: Zawraa Park
+ar: متنزه الزوراء
+ku: پارکی زەورا
+
+en: Green Belt, Mansour to Abu Ghraib
+ar: الحزام الأخضر، من المنصور إلى أبي غريب
+ku: پشتێنەی سەوز، لە مەنسوورەوە بۆ ئەبو غرێب
+
+en: Comprehensive Development Plan 2030
+ar: خطة التنمية الشاملة 2030
+ku: پلانی پەرەپێدانی گشتگیری 2030
+
+en: Baghdad Metro
+ar: مترو بغداد
+ku: مێترۆی بەغدا
+
+en: Mayoralty of Baghdad and the National Investment Commission
+ar: أمانة بغداد والهيئة الوطنية للاستثمار
+ku: ئەمانەتی بەغدا و دەستەی نیشتمانیی وەبەرهێنان
+
+en: Overpasses and the traffic-relief package
+ar: المجسرات وحزمة فك الاختناقات المرورية
+ku: پردە سەرزەوییەکان و پاکێجی کەمکردنەوەی قەرەباڵغی هاتوچۆ
+
+en: Ministry of Construction and Housing, with the Prime Minister's Office
+ar: وزارة الإعمار والإسكان، مع مكتب رئيس الوزراء
+ku: وەزارەتی ئاوەدانکردنەوە و نیشتەجێبوون، لەگەڵ نووسینگەی سەرۆک وەزیران
+
+en: Baghdad Elevated Train
+ar: قطار بغداد المعلّق
+ku: شەمەندەفەری هەڵواسراوی بەغدا
+
+en: Ministry of Transport
+ar: وزارة النقل
+ku: وەزارەتی گواستنەوە
+
+en: Rashid Street and Mutanabbi Street
+ar: شارع الرشيد وشارع المتنبي
+ku: شەقامی ڕەشید و شەقامی موتەنەبی
+
+en: Prime Minister's Office, Central Bank of Iraq and the Iraqi Private Banks League
+ar: مكتب رئيس الوزراء، والبنك المركزي العراقي، ورابطة المصارف الخاصة العراقية
+ku: نووسینگەی سەرۆک وەزیران، بانکی ناوەندیی عێراق و یەکێتیی بانکە تایبەتەکانی عێراق
+
+en: Baghdad Sustainable Forests
+ar: غابات بغداد المستدامة
+ku: دارستانە بەردەوامەکانی بەغدا
+
+en: National Investment Commission
+ar: الهيئة الوطنية للاستثمار
+ku: دەستەی نیشتمانیی وەبەرهێنان
+
+en: Bismayah New City
+ar: مدينة بسماية الجديدة
+ku: شاری نوێی بسمایە
+
+en: National Investment Commission; built by Hanwha
+ar: الهيئة الوطنية للاستثمار؛ وتنفذها شركة هانوا
+ku: دەستەی نیشتمانیی وەبەرهێنان؛ کۆمپانیای هانوا دروستی دەکات
+
+en: Problems in your area
+ar: المشكلات في منطقتك
+ku: کێشەکانی ناوچەکەت
+
+en: <0>Report a problem</0>, then <1>track it</1> with your report number.
+ar: <0>أبلغ عن المشكلة</0>، ثم <1>تابعها</1> برقم البلاغ.
+ku: <0>کێشەکە ڕاپۆرت بکە</0>، پاشان بە ژمارەی ڕاپۆرتەکە <1>بەدواداچوونی بۆ بکە</1>.
+
+en: By phone
+ar: عبر الهاتف
+ku: بە تەلەفۆن
+
+en: Call <0><1>5628</1></0>, 8:30 am – 2 pm, for questions and complaints.
+ar: اتصل بالرقم <0><1>5628</1></0> من 8:30 صباحاً إلى 2 ظهراً للاستفسارات والشكاوى.
+ku: بۆ پرسیار و سکاڵا پەیوەندی بە <0><1>5628</1></0> بکە، لە 8:30ی بەیانی تا 2ی دوانیوەڕۆ.
+
+en: In the app
+ar: عبر التطبيق
+ku: لە ئەپەکەوە
+
+en: Baghdad Citizen Voice, the Mayoralty's complaints app. <0>App Store ↗</0>
+ar: صوت المواطن البغدادي، تطبيق الشكاوى التابع للأمانة. <0>App Store ↗</0>
+ku: دەنگی هاووڵاتیی بەغدا، ئەپی سکاڵاکانی ئەمانەت. <0>App Store ↗</0>
+
+en: Your municipality
+ar: بلديتك
+ku: شارەوانییەکەت
+
+en: Each of the 15 municipalities has its own office and email. <0>Find your municipality</0>
+ar: لكل بلدية من البلديات الخمس عشرة مقرها وبريدها الإلكتروني. <0>اعثر على بلديتك</0>
+ku: هەر یەک لە ١٥ شارەوانییەکە نووسینگە و ئیمەیڵی خۆی هەیە. <0>شارەوانییەکەت بدۆزەرەوە</0>
+
+en: Complaints about staff or departments
+ar: الشكاوى بحق الموظفين أو الدوائر
+ku: سکاڵا دەربارەی فەرمانبەران یان فەرمانگەکان
+
+en: Audit and Control Department: <0>shakawi.alrkaba@amanatbaghdad.gov.iq</0>
+ar: دائرة الرقابة والتدقيق: <0>shakawi.alrkaba@amanatbaghdad.gov.iq</0>
+ku: فەرمانگەی چاودێری و وردبینی: <0>shakawi.alrkaba@amanatbaghdad.gov.iq</0>
+
+en: Meeting the Mayor
+ar: مقابلة أمين بغداد
+ku: چاوپێکەوتن لەگەڵ ئەمین
+
+en: By appointment: <0>connection@amanatbaghdad.gov.iq</0>
+ar: بموعد مسبق: <0>connection@amanatbaghdad.gov.iq</0>
+ku: بە کاتی پێشوەختە: <0>connection@amanatbaghdad.gov.iq</0>
+
+en: Departments
+ar: الدوائر
+ku: فەرمانگەکان
+
+en: Each department's email is listed under <0>Leadership and structure</0>.
+ar: البريد الإلكتروني لكل دائرة مدرج في <0>القيادة والهيكل التنظيمي</0>.
+ku: ئیمەیڵی هەر فەرمانگەیەک لە <0>سەرکردایەتی و پێکهاتە</0>دا هاتووە.
+
+en: General enquiries
+ar: الاستفسارات العامة
+ku: پرسیارە گشتییەکان

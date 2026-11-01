@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>باجەکانی سەر هەژمارەکەت — ئەمانەتی بەغدا</title>
+<link rel="alternate" hreflang="ar" href="../fees-account.html">
+<link rel="alternate" hreflang="en" href="../en/fees-account.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/base.css">
+<link rel="stylesheet" href="../shared/page.css">
+<link rel="stylesheet" href="../shared/lang-swap.css">
+<script src="../shared/lang-swap.js"></script>
+<style>
+  /* Fees on one account: what is due, then how to pay */
+
+  .fees { margin: 0; border-top: 2px solid var(--green); max-width: 36rem; }
+  .fees div { display: flex; justify-content: space-between; gap: 1rem; padding-block: 0.6rem; border-bottom: 1px solid var(--line); }
+  .fees dt { font-weight: 600; }
+  .fees dd { margin: 0; }
+  .lookup label { display: block; font-weight: 600; margin-bottom: 0.4rem; }
+  .lookup .row { display: flex; gap: 0.5rem; max-width: 30rem; }
+  .lookup input { flex: 1; min-width: 0; font: inherit; padding: 0.6rem 0.8rem; border: 1px solid var(--ink); border-radius: 3px; background: var(--white); }
+</style>
+<script src="../shared/prototype.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">بازدان بۆ ناوەڕۆکی سەرەکی</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
+      <div><strong>ئەمانەتی بەغدا</strong><span>ماڵپەڕی فەرمی · کۆماری عێراق</span></div>
+    </a>
+    <button class="menu-btn" type="button" popovertarget="menu">لیست</button>
+    <nav class="menu" id="menu" popover aria-label="مێنیوی سەرەکی">
+      <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">داخستن</button>
+      <ul class="nav">
+        <li class="has-sub"><a href="services.html" aria-current="true">خزمەتگوزارییەکان</a>
+          <ul class="sub">
+            <li><a href="service-permit.html">مۆڵەتی بیناسازی</a></li>
+            <li><a href="service-water.html">هەژماری ئاو</a></li>
+            <li><a href="service-property.html">بەیاننامەی موڵک</a></li>
+            <li><a href="service-sewer.html">گەیاندن بە تۆڕی ئاوەڕۆ</a></li>
+            <li><a href="service-fees.html" aria-current="true">باجەکانی شارەوانی</a></li>
+            <li><a href="alerts.html">ئاگادارکردنەوەکان</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html">ڕاپۆرتکردنی کێشە</a></li>
+        <li><a href="news.html">هەواڵەکان</a></li>
+        <li class="has-sub end"><a href="about.html">ئەمانەت</a>
+          <ul class="sub">
+            <li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li>
+            <li><a href="districts.html">شارەوانییەکان</a></li>
+            <li><a href="tenders.html">تەندەر و مزایەدەکان</a></li>
+            <li><a href="laws.html">یاسا و پلانەکان</a></li>
+            <li><a href="data.html">داتای کراوە</a></li>
+            <li><a href="about.html#contact">پەیوەندی</a></li>
+          </ul>
+        </li>
+        <li class="lang"><a href="../fees-account.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../en/fees-account.html" lang="en" hreflang="en" dir="ltr">English</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <nav class="crumbs" aria-label="ڕێڕەو">
+    <ol>
+      <li><a href="index.html">سەرەکی</a></li>
+      <li><a href="services.html">خزمەتگوزارییەکان</a></li>
+      <li><a href="service-fees.html">باجەکانی شارەوانی</a></li>
+    </ol>
+  </nav>
+
+  <header class="page-head">
+    <h1>باجەکانی سەر هەژمارەکەت</h1>
+    <p class="lede">هەژماری <span id="acct-no"></span> · شارەوانی کەڕادە · دووکان، شەقامی ٦٢</p>
+  </header>
+
+  <div class="layout">
+    <article class="guide">
+      <p class="illustrative">ئەم هەژمارە و بڕەکانی نموونەیین.</p>
+
+      <section id="due" aria-labelledby="due-h">
+        <h2 id="due-h">٢٠٢٦</h2>
+        <dl class="fees">
+          <div><dt>باجی پیشە</dt><dd>دراوە</dd></div>
+          <div><dt>باجی ڕیکلام</dt><dd>٧٥٬٠٠٠ دینار · ماوە</dd></div>
+          <div><dt>باجی پاککردنەوە</dt><dd>٣٠٬٠٠٠ دینار · ماوە</dd></div>
+        </dl>
+      </section>
+
+      <section id="pay" aria-labelledby="pay-h">
+        <h2 id="pay-h">چۆنیەتی پارەدان</h2>
+        <p>لە بەشی کۆکردنەوەی پارە لە شارەوانی ناوچەکەت بیدە، یەکشەممە تا پێنجشەممە، لە ٨:٣٠ی بەیانی تا ٢:٣٠ی دوانیوەڕۆ، بە نەقد یان بە کارت لە شوێنی بەردەست. ژمارەی هەژمارەکەت لەگەڵ خۆت بهێنە و پسوولەی وەرگرتن هەڵبگرە. <a href="districts.html">شارەوانی ناوچەکەت بدۆزەرەوە</a></p>
+      </section>
+
+      <section id="again" aria-labelledby="again-h">
+        <h2 id="again-h">هەژمارێکی تر بپشکنە</h2>
+        <form class="lookup" action="fees-account.html">
+          <label for="acct">ژمارەی هەژمار</label>
+          <div class="row">
+            <input id="acct" name="acct" required autocomplete="off" placeholder="بۆ نموونە: K-102455">
+            <button class="btn" type="submit">پیشان بدە</button>
+          </div>
+        </form>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">ئەمانەتی بەغدا</div>
+      <div><h2>خزمەتگوزارییەکان</h2><ul><li><a href="services.html">هەموو خزمەتگوزارییەکان</a></li><li><a href="report.html">ڕاپۆرتکردنی کێشە</a></li><li><a href="track.html">بەدواداچوونی ڕاپۆرت</a></li><li><a href="alerts.html">ئاگادارکردنەوەکان</a></li></ul></div>
+      <div><h2>هەواڵەکان</h2><ul><li><a href="news.html">هەموو هەواڵەکان</a></li></ul></div>
+      <div><h2>ئەمانەت</h2><ul><li><a href="about.html">تێڕوانینی گشتی</a></li><li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li><li><a href="districts.html">شارەوانییەکان</a></li><li><a href="tenders.html">تەندەر و مزایەدەکان</a></li><li><a href="laws.html">یاسا و پلانەکان</a></li><li><a href="data.html">داتای کراوە</a></li><li><a href="about.html#contact">پەیوەندی</a></li></ul></div>
+      <div><h2>ئەم ماڵپەڕە</h2><ul><li><a href="site.html#privacy">تایبەتێتی</a></li><li><a href="site.html#access">دەستڕاگەیشتن</a></li><li><a href="site.html#search">گەڕان چۆن کار دەکات</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p class="hotline"><span>هێڵی گەرم <a href="tel:5628"><strong>٥٦٢٨</strong></a>، لە ٨:٣٠ی بەیانی تا ٢ی دوانیوەڕۆ</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="فەیسبووک" title="فەیسبووک"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="ئینستاگرام" title="ئینستاگرام"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="ئێکس" title="ئێکس"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>مۆر: دووبارە کێشانەوەی کۆمەڵگە — CC BY-SA 4.0 — ویکیمیدیا کۆمنز. مافی هەر وێنەیەک لەگەڵ وێنەکەدا نووسراوە.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Any account number shows the same illustrative record
+
+  const acct = (new URLSearchParams(location.search).get('acct') || '').trim();
+  if (acct) document.getElementById('acct-no').textContent = acct;
+  else location.replace('service-fees.html#lookup');
+</script>
+</body>
+</html>

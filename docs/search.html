@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>البحث — أمانة بغداد</title>
+<link rel="alternate" hreflang="ckb" href="ku/search.html">
+<link rel="alternate" hreflang="en" href="en/search.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/page.css">
+<link rel="stylesheet" href="shared/lang-swap.css">
+<script src="shared/lang-swap.js"></script>
+<style>
+  /* Search results: a plain form, then matching pages best first */
+
+  .find { display: flex; max-width: 36rem; margin-top: 1rem; border: 2px solid var(--ink); border-radius: 4px; overflow: hidden; background: var(--white); }
+  .find:focus-within { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+  .find input { flex: 1; min-width: 0; border: 0; padding: 0.7rem 1rem; font: inherit; font-size: 1.125rem; color: var(--ink); background: transparent; }
+  .find input:focus-visible { outline: none; }
+  .find button { border: 0; border-inline-start: 1.5px solid var(--line); background: transparent; color: var(--green); font: inherit; font-weight: 700; padding-inline: 1.25rem; cursor: pointer; }
+  .find button:hover { background: var(--green-tint); }
+  .count { color: var(--muted); margin: 0 0 0.75rem; }
+</style>
+<script src="shared/prototype.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">انتقل إلى المحتوى الرئيسي</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="home.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
+      <div><strong>أمانة بغداد</strong><span>الموقع الرسمي · جمهورية العراق</span></div>
+    </a>
+    <button class="menu-btn" type="button" popovertarget="menu">القائمة</button>
+    <nav class="menu" id="menu" popover aria-label="القائمة الرئيسية">
+      <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">إغلاق</button>
+      <ul class="nav">
+        <li class="has-sub"><a href="services.html">الخدمات</a>
+          <ul class="sub">
+            <li><a href="service-permit.html">إجازة البناء</a></li>
+            <li><a href="service-water.html">حساب الماء</a></li>
+            <li><a href="service-property.html">بيان العقار</a></li>
+            <li><a href="service-sewer.html">ربط المجاري</a></li>
+            <li><a href="service-fees.html">الرسوم البلدية</a></li>
+            <li><a href="alerts.html">التنبيهات</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html">الإبلاغ عن مشكلة</a></li>
+        <li><a href="news.html">الأخبار</a></li>
+        <li class="has-sub end"><a href="about.html">الأمانة</a>
+          <ul class="sub">
+            <li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li>
+            <li><a href="districts.html">البلديات</a></li>
+            <li><a href="tenders.html">المناقصات والمزايدات</a></li>
+            <li><a href="laws.html">القوانين والخطط</a></li>
+            <li><a href="data.html">البيانات المفتوحة</a></li>
+            <li><a href="about.html#contact">الاتصال</a></li>
+          </ul>
+        </li>
+        <li class="lang"><a href="ku/search.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/search.html" lang="en" hreflang="en" dir="ltr">English</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <nav class="crumbs" aria-label="مسار التنقل">
+    <ol>
+      <li><a href="home.html">الرئيسية</a></li>
+    </ol>
+  </nav>
+
+  <header class="page-head">
+    <h1>بحث</h1>
+    <form class="find" action="search.html" role="search">
+      <input id="q" name="q" type="search" aria-label="ابحث في موقع الأمانة" autocomplete="off">
+      <button type="submit">بحث</button>
+    </form>
+  </header>
+
+  <div class="layout">
+    <section class="guide" aria-live="polite" id="results">
+      <p class="count">اكتب خدمة أو مشكلة، مثل انقطاع الماء أو إجازة البناء.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
+      <div><h2>الخدمات</h2><ul><li><a href="services.html">كل الخدمات</a></li><li><a href="report.html">الإبلاغ عن مشكلة</a></li><li><a href="track.html">متابعة بلاغ</a></li><li><a href="alerts.html">التنبيهات</a></li></ul></div>
+      <div><h2>الأخبار</h2><ul><li><a href="news.html">كل الأخبار</a></li></ul></div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">نظرة عامة</a></li><li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li><li><a href="districts.html">البلديات</a></li><li><a href="tenders.html">المناقصات والمزايدات</a></li><li><a href="laws.html">القوانين والخطط</a></li><li><a href="data.html">البيانات المفتوحة</a></li><li><a href="about.html#contact">الاتصال</a></li></ul></div>
+      <div><h2>هذا الموقع</h2><ul><li><a href="site.html#privacy">الخصوصية</a></li><li><a href="site.html#access">إمكانية الوصول</a></li><li><a href="site.html#search">كيف يعمل البحث</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p class="hotline"><span>الخط الساخن <a href="tel:5628"><strong>٥٦٢٨</strong></a>، من ٨:٣٠ صباحاً إلى ٢ ظهراً</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="فيسبوك" title="فيسبوك"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="إنستغرام" title="إنستغرام"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="إكس" title="إكس"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>الشعار: إعادة رسم مجتمعية — CC BY-SA 4.0 — ويكيميديا كومنز. تُذكر حقوق كل صورة معها.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Every page and pre-filled report form, with the words people use for it.
+  // Results are ranked by where the query's words match: title, then key words, then summary.
+
+  const PAGES = [
+    { t: 'الإبلاغ عن انقطاع الماء', h: 'report.html?cat=انقطاع الماء', s: 'الإبلاغ عن مشكلة', d: 'لا يوجد ماء، أو الضغط ضعيف جداً. راجع التنبيهات أولاً للتأكد من عدم وجود قطع مجدول.', w: 'ماء مياه ماي انقطاع قطع مقطوع ضغط ضعيف اسالة' },
+    { t: 'الإبلاغ عن طفح المجاري', h: 'report.html?cat=طفح المجاري', s: 'الإبلاغ عن مشكلة', d: 'مياه آسنة في الشارع، أو مشبك مسدود.', w: 'مجاري مجاري طفح صرف صحي مشبك مسدود منهول فيضان رائحة صرف' },
+    { t: 'الإبلاغ عن نفايات لم تُرفع', h: 'report.html?cat=النفايات', s: 'الإبلاغ عن مشكلة', d: 'نفايات لم تُرفع، أو رُميت في مكان عام.', w: 'نفايات زبالة قمامة اوساخ ازبال رفع حاوية رمي' },
+    { t: 'الإبلاغ عن إنارة الشارع', h: 'report.html?cat=إنارة الشوارع', s: 'الإبلاغ عن مشكلة', d: 'مصباح شارع مطفأ أو تالف.', w: 'انارة اضاءة مصباح عمود ضوء ظلام عاطل' },
+    { t: 'الإبلاغ عن مشكلة في الطريق أو الرصيف', h: 'report.html?cat=الطرق والأرصفة', s: 'الإبلاغ عن مشكلة', d: 'حفرة، أو رصيف متضرر، أو تجمع مياه الأمطار.', w: 'طريق شارع حفرة حفر رصيف تبليط اكساء امطار تجمع' },
+    { t: 'الإبلاغ عن مشكلة', h: 'report.html', s: 'الإبلاغ عن مشكلة', d: 'أبلغ عن مشكلات الماء أو المجاري أو النفايات أو الإنارة أو الطرق واحصل على رقم بلاغ.', w: 'بلاغ ابلاغ مشكلة شكوى شكاوى عطل' },
+    { t: 'متابعة بلاغ', h: 'track.html', s: 'الإبلاغ عن مشكلة', d: 'أدخل رقم البلاغ لمعرفة مراحل إنجازه والفريق الذي يتولاه.', w: 'متابعة تابع حالة رقم بلاغ شكوى' },
+    { t: 'التنبيهات', h: 'alerts.html', s: 'الخدمات', d: 'قطع الماء المجدول، وغلق الطرق، وتحذيرات الأمطار، وتغييرات مواعيد رفع النفايات.', w: 'تنبيه تنبيهات قطع مجدول غلق مغلق جسر امطار مطر تحذير اليوم' },
+    { t: 'إجازة البناء', h: 'service-permit.html', s: 'الخدمات', d: 'المستمسكات والرسوم والخطوات لإجازة البناء أو التوسعة، وجهة التقديم على أور.', w: 'اجازة بناء رخصة بناء توسعة ترميم طابق ملحق تشييد' },
+    { t: 'حساب الماء', h: 'service-water.html', s: 'الخدمات', d: 'دفع الفاتورة، أو فتح حساب، أو نصب المقياس أو تبديله، أو نقل الحساب إلى اسمك.', w: 'ماء فاتورة حساب مقياس عداد اشتراك ربط نقل اسم' },
+    { t: 'دفع فاتورة الماء', h: 'service-water.html#pay', s: 'الخدمات', d: 'ادفع إلكترونياً أو في مكتب الجباية برقم الحساب المطبوع على فاتورتك.', w: 'دفع تسديد فاتورة ماء جباية' },
+    { t: 'بيان العقار', h: 'service-property.html', s: 'الخدمات', d: 'ما بيان العقار، ومتى تحتاجه، وكيف تطلبه على أور.', w: 'بيان عقار سند ملكية طابو بيع شراء ارث قطعة شخصي' },
+    { t: 'ربط المجاري', h: 'service-sewer.html', s: 'الخدمات', d: 'ربط مبنى جديد بشبكة المجاري: المستمسكات والخطوات وجهة التقديم.', w: 'مجاري ربط صرف صحي انبوب ايصال تصريف' },
+    { t: 'الرسوم البلدية', h: 'service-fees.html', s: 'الخدمات', d: 'رسوم المهنة والإعلان والنظافة: اعرف المبلغ المستحق ومكان الدفع.', w: 'رسوم رسم ضريبة مهنة اعلان لوحة نظافة محل دفع' },
+    { t: 'كل الخدمات', h: 'services.html', s: 'الخدمات', d: 'كل الخدمات، مجمّعة بحسب ما تريد إنجازه.', w: 'خدمات خدمة قائمة' },
+    { t: 'البلديات', h: 'districts.html', s: 'الأمانة', d: 'بيانات الاتصال بالبلديات الخمس عشرة، بحسب جانب النهر.', w: 'بلدية بلديات منطقة الكرخ الرصافة الكاظمية المنصور الشعلة الرشيد الدورة الخضراء المطار الاعظمية الشعب الصدر الغدير بغداد الجديدة مركز' },
+    { t: 'بلدية الكرادة', h: 'district-karrada.html', s: 'الأمانة', d: 'المقر والتنبيهات والأعمال الجارية والبلاغات في الكرادة.', w: 'الكرادة الجادرية العرصات المسبح ابو نواس العلوية الوحدة الزوية كمب سارة' },
+    { t: 'الأخبار', h: 'news.html', s: 'الأخبار', d: 'بيانات الأمانة وآخر أخبار الأعمال البلدية، الأحدث أولاً.', w: 'اخبار خبر بيان اعلان صحافة جديد اعمال متنزه حديقة' },
+    { t: 'أمانة بغداد', h: 'about.html', s: 'الأمانة', d: 'مهام الأمانة، والمسؤوليات في بغداد، والمشاريع الكبرى.', w: 'عن الامانة امانة مهام مسؤولية محافظة مشروع مشاريع مترو من' },
+    { t: 'القيادة والهيكل التنظيمي', h: 'leadership.html', s: 'الأمانة', d: 'أمين بغداد ووكلاؤه الثلاثة، والبريد الإلكتروني لكل دائرة.', w: 'امين وكيل قيادة هيكل دائرة دوائر تنظيمي بريد' },
+    { t: 'الاتصال بالأمانة', h: 'about.html#contact', s: 'الأمانة', d: 'الخط الساخن ٥٦٢٨، وتطبيق صوت المواطن، والبريد الإلكتروني للدوائر والإعلام.', w: 'اتصال تواصل خط ساخن هاتف بريد 5628 صوت المواطن تطبيق شكوى مقابلة موعد امين' },
+    { t: 'المناقصات والمزايدات', h: 'tenders.html', s: 'الأمانة', d: 'إعلانات العقود، وبيع أملاك الأمانة وإيجارها.', w: 'مناقصة مناقصات مزايدة مزايدات عقد عطاء ايجار' },
+    { t: 'القوانين والخطط', h: 'laws.html', s: 'الأمانة', d: 'القوانين والأنظمة والخطط التي تعمل الأمانة بموجبها.', w: 'قانون قوانين نظام تعليمات قرار خطة تصميم اساسي تنمية 2030' },
+    { t: 'البيانات المفتوحة', h: 'data.html', s: 'الأمانة', d: 'السكان بحسب الناحية من تعداد ٢٠٢٤، وتقارير الأمانة.', w: 'بيانات مفتوحة تعداد سكان احصاء احصائيات' },
+    { t: 'استخدام هذا الموقع', h: 'site.html', s: 'هذا الموقع', d: 'الخصوصية، وإمكانية الوصول، وكيف يعمل البحث.', w: 'خصوصية وصول كوكيز موقع بحث' }
+  ];
+
+  const SKIP = new Set('في من على عن الى او و ما ماذا كيف اين هل اريد عندي لي هذا هذه'.split(' '));
+  const fold = s => s.replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي').replace(/[\u064B-\u0652\u0640]/g, '').replace(/[٠-٩]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d));
+  const eastern = n => String(n).replace(/\d/g, c => '٠١٢٣٤٥٦٧٨٩'[c]);
+  const stem = w => w.replace(/^(وال|بال|فال|كال|لل|ال)(?=..)/, '');
+  const words = text => fold(text).replace(/[^\p{L}\p{N}\s-]/gu, ' ').split(/[\s-]+/).filter(Boolean).map(stem);
+
+  PAGES.forEach(p => { p.tw = new Set(words(p.t)); p.ww = new Set(words(p.w)); p.dw = new Set(words(p.d)); });
+
+  function rank(query) {
+    const terms = [...new Set(words(query))].filter(w => !SKIP.has(w));
+    return PAGES
+      .map(p => ({ p, n: terms.reduce((n, w) => n + (p.tw.has(w) ? 3 : p.ww.has(w) ? 2 : p.dw.has(w) ? 1 : 0), 0) }))
+      .filter(r => r.n > 0)
+      .sort((a, b) => b.n - a.n)
+      .slice(0, 8)
+      .map(r => r.p);
+  }
+
+  const q = (new URLSearchParams(location.search).get('q') || '').trim();
+  const box = document.getElementById('results');
+  document.getElementById('q').value = q;
+
+  if (q) {
+    const found = rank(q);
+    const count = document.createElement('p');
+    count.className = 'count';
+    count.textContent = found.length
+      ? `الصفحات المطابقة لـ«${q}»: ${eastern(found.length)}`
+      : `لا توجد صفحة تطابق «${q}».`;
+    box.replaceChildren(count);
+    if (found.length) {
+      const list = document.createElement('ul');
+      list.className = 'index-list';
+      for (const p of found) {
+        const li = document.createElement('li');
+        const link = Object.assign(document.createElement('a'), { className: 't', href: p.h, textContent: p.t });
+        const tag = Object.assign(document.createElement('span'), { className: 'tag', textContent: p.s });
+        li.append(link, tag, Object.assign(document.createElement('p'), { textContent: p.d }));
+        list.append(li);
+      }
+      box.append(list);
+    } else {
+      box.insertAdjacentHTML('beforeend', '<p>جرّب كلمات أخرى، أو تصفّح <a href="services.html">كل الخدمات</a>، أو اتصل بالخط الساخن <a href="tel:5628">٥٦٢٨</a> من ٨:٣٠ صباحاً إلى ٢ ظهراً.</p>');
+    }
+    document.title = `${q} — البحث — أمانة بغداد`;
+  }
+</script>
+</body>
+</html>

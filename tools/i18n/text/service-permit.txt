@@ -1,0 +1,169 @@
+# Building permit
+
+en: Building permit — Mayoralty of Baghdad
+ar: إجازة البناء — أمانة بغداد
+ku: مۆڵەتی بیناسازی — ئەمانەتی بەغدا
+
+en: You need a permit to build or extend a building on property inside the Mayoralty's boundary. Apply online through the Ur portal and track your application there.
+ar: تحتاج إلى إجازة لبناء مبنى أو توسعته على عقار يقع ضمن حدود أمانة بغداد. قدّم الطلب إلكترونياً عبر بوابة أور وتابع طلبك فيها.
+ku: بۆ بیناکردن یان فراوانکردنی بینایەک لەسەر موڵکێک لە سنووری ئەمانەتدا، مۆڵەتت پێویستە. داواکاری بە ئۆنلاین لە پۆرتاڵی ئور پێشکەش بکە و لەوێ بەدواداچوونی بۆ بکە.
+
+en: About 30 days
+ar: نحو 30 يوماً
+ku: نزیکەی 30 ڕۆژ
+
+en: Once your documents are complete · illustrative
+ar: بعد اكتمال المستمسكات · توضيحي
+ku: دوای تەواوبوونی بەڵگەنامەکان · نموونەیی
+
+en: Depends on area and use
+ar: تعتمد على المساحة والاستعمال
+ku: بەندە بە ڕووبەر و جۆری بەکارهێنان
+
+en: Worked out at review · illustrative
+ar: تُحدَّد عند التدقيق · توضيحي
+ku: لە کاتی پێداچوونەوەدا دیاری دەکرێت · نموونەیی
+
+en: The application takes about 20 minutes once your documents are ready.
+ar: يستغرق تقديم الطلب نحو 20 دقيقة بعد تهيئة المستمسكات.
+ku: کاتێک بەڵگەنامەکانت ئامادەن، پێشکەشکردنی داواکاری نزیکەی 20 خولەک دەخایەنێت.
+
+en: The requirements, documents, steps, times and costs in this guide are illustrative.
+ar: الشروط والمستمسكات والخطوات والمدد والكلف الواردة في هذا الدليل توضيحية.
+ku: مەرج، بەڵگەنامە، هەنگاو، ماوە و تێچووەکانی ئەم ڕێبەرە نموونەیین.
+
+en: When a permit is required
+ar: متى تلزم الإجازة
+ku: کەی مۆڵەت پێویستە
+
+en: A permit is required to:
+ar: تلزم الإجازة من أجل:
+ku: مۆڵەت پێویستە بۆ:
+
+en: build on empty land
+ar: البناء على أرض فارغة
+ku: بیناکردن لەسەر زەویی بەتاڵ
+
+en: add a floor, a room or an annex
+ar: إضافة طابق أو غرفة أو ملحق
+ku: زیادکردنی نهۆم، ژوور یان پاشکۆ
+
+en: change the front of a building that faces the street
+ar: تغيير واجهة المبنى المطلة على الشارع
+ku: گۆڕینی ڕووی ئەو بینایەی بەرەو شەقامە
+
+en: change how a building is used, for example from home to shop
+ar: تغيير استعمال المبنى، كتحويل منزل إلى محل تجاري
+ku: گۆڕینی بەکارهێنانی بینا، بۆ نموونە لە ماڵەوە بۆ دووکان
+
+en: A permit is not needed for interior repairs that do not affect the structure or the front of the building.
+ar: لا تلزم الإجازة للترميمات الداخلية التي لا تمس الهيكل الإنشائي أو واجهة المبنى.
+ku: بۆ چاککردنەوەی ناوەوە کە کار لە پێکهاتە یان ڕووی بیناکە ناکات، مۆڵەت پێویست نییە.
+
+en: The full rules are in the <0>Building Permits Regulation, No. 2 of 2016</0>.
+ar: ترد الأحكام كاملة في <0>نظام إجازات البناء رقم 2 لسنة 2016</0>.
+ku: هەموو ڕێساکان لە <0>ڕێسای مۆڵەتەکانی بیناسازی ژمارە 2ی ساڵی 2016</0>دان.
+
+en: If your property is outside the Mayoralty's boundary, in the surrounding districts, Baghdad Governorate may be responsible. <0>Check who is responsible</0>
+ar: إذا كان عقارك خارج حدود الأمانة، في الأقضية المحيطة، فقد تكون محافظة بغداد هي الجهة المسؤولة. <0>تحقّق من الجهة المسؤولة</0>
+ku: ئەگەر موڵکەکەت لە دەرەوەی سنووری ئەمانەتە، لە قەزاکانی دەوروبەر، لەوانەیە پارێزگای بەغدا بەرپرس بێت. <0>بزانە کێ بەرپرسە</0>
+
+en: Have these documents ready before you apply. Upload a clear photo of each on the Ur portal.
+ar: هيّئ هذه المستمسكات قبل التقديم، وارفع صورة واضحة لكل منها على بوابة أور.
+ku: پێش پێشکەشکردن ئەم بەڵگەنامانە ئامادە بکە. وێنەیەکی ڕوونی هەر یەکێکیان لە پۆرتاڵی ئور باربکە.
+
+en: A recent property statement
+ar: بيان عقار حديث
+ku: بەیاننامەیەکی نوێی موڵک
+
+en: Issued on the Ur portal. <0>Get a property statement</0>
+ar: يصدر على بوابة أور. <0>احصل على بيان عقار</0>
+ku: لە پۆرتاڵی ئور دەردەچێت. <0>بەیاننامەی موڵک وەربگرە</0>
+
+en: Architectural and structural drawings
+ar: المخططات المعمارية والإنشائية
+ku: نەخشە تەلارسازی و پێکهاتەییەکان
+
+en: Certified by a licensed engineer or engineering office.
+ar: مصدّقة من مهندس مجاز أو مكتب هندسي.
+ku: پەسەندکراو لەلایەن ئەندازیارێکی مۆڵەتدار یان نووسینگەیەکی ئەندازیارییەوە.
+
+en: A photo of the site
+ar: صورة للموقع
+ku: وێنەیەکی شوێنەکە
+
+en: Taken from the street, showing the buildings next to it.
+ar: مأخوذة من الشارع، وتظهر فيها المباني المجاورة.
+ku: لە شەقامەوە گیراوە و بیناکانی تەنیشتی تێدا دیارن.
+
+en: Get your documents ready
+ar: هيّئ المستمسكات
+ku: بەڵگەنامەکانت ئامادە بکە
+
+en: The list above.
+ar: القائمة أعلاه.
+ku: لیستەکەی سەرەوە.
+
+en: Apply <0>Ur portal</0>
+ar: قدّم الطلب <0>بوابة أور</0>
+ku: پێشکەشی بکە <0>پۆرتاڵی ئور</0>
+
+en: Sign in, choose "Building permit (all types)" and upload your documents. You get an application number.
+ar: سجّل الدخول، واختر «منح إجازة البناء بمختلف انواعها»، وارفع المستمسكات. تحصل على رقم للطلب.
+ku: بچۆ ژوورەوە، «منح إجازة البناء بمختلف انواعها» هەڵبژێرە و بەڵگەنامەکانت باربکە. ژمارەیەکی داواکاری وەردەگریت.
+
+en: Drawings review
+ar: تدقيق المخططات
+ku: پێداچوونەوەی نەخشەکان
+
+en: The department reviews the drawings and may ask for changes through Ur.
+ar: تدقق الدائرة المخططات، وقد تطلب تعديلات عبر أور.
+ku: فەرمانگەکە پێداچوونەوە بە نەخشەکاندا دەکات و لەوانەیە لە ڕێگەی ئورەوە داوای گۆڕانکاری بکات.
+
+en: Site inspection
+ar: الكشف الموقعي
+ku: پشکنینی شوێن
+
+en: An inspector from your municipality visits the property. You are informed of the date.
+ar: يزور مفتش من بلديتك العقار، ويُبلَّغ صاحب الطلب بالموعد.
+ku: پشکنەرێک لە شارەوانییەکەتەوە سەردانی موڵکەکە دەکات. ئاگادار دەکرێیتەوە لە کاتەکەی.
+
+en: Pay the fees <0>Ur portal</0>
+ar: ادفع الرسوم <0>بوابة أور</0>
+ku: باجەکان بدە <0>پۆرتاڵی ئور</0>
+
+en: The fees appear in your application after review.
+ar: تظهر الرسوم في طلبك بعد التدقيق.
+ku: دوای پێداچوونەوە باجەکان لە داواکارییەکەتدا دەردەکەون.
+
+en: Receive the permit
+ar: استلم الإجازة
+ku: مۆڵەتەکە وەربگرە
+
+en: The permit is issued online. Display it at the building site throughout the work.
+ar: تصدر الإجازة إلكترونياً، وتُعرض في موقع البناء طوال مدة العمل.
+ku: مۆڵەتەکە بە ئۆنلاین دەردەچێت. لە ماوەی کارەکەدا لە شوێنی بیناسازییەکە دایبنێ بە دیار.
+
+en: After you apply
+ar: بعد التقديم
+ku: دوای پێشکەشکردن
+
+en: Track your application on the Ur portal with its number.
+ar: تابع طلبك على بوابة أور برقمه.
+ku: بە ژمارەکەی لە پۆرتاڵی ئور بەدواداچوون بۆ داواکارییەکەت بکە.
+
+en: You may be asked to rate the service once the permit is issued.
+ar: قد يُطلب منك تقييم الخدمة بعد صدور الإجازة.
+ku: لەوانەیە دوای دەرچوونی مۆڵەتەکە داوات لێ بکرێت هەڵسەنگاندن بۆ خزمەتگوزارییەکە بکەیت.
+
+en: Needed for the permit, and for sales and inheritance.
+ar: مطلوب للإجازة وللبيع والإرث.
+ku: بۆ مۆڵەت و فرۆشتن و میرات پێویستە.
+
+en: Connect the new building to the sewer network.
+ar: ربط المبنى الجديد بشبكة المجاري.
+ku: گەیاندنی بینا نوێیەکە بە تۆڕی ئاوەڕۆ.
+
+en: Service on Ur: "Building permit (all types)"
+ar: الخدمة على أور: «منح إجازة البناء بمختلف انواعها»
+ku: خزمەتگوزاری لە ئور: «منح إجازة البناء بمختلف انواعها»

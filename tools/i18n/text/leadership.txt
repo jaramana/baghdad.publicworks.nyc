@@ -1,0 +1,201 @@
+# Leadership and structure
+
+en: Leadership and structure — Mayoralty of Baghdad
+ar: القيادة والهيكل التنظيمي — أمانة بغداد
+ku: سەرکردایەتی و پێکهاتە — ئەمانەتی بەغدا
+
+en: The Mayor, the three deputy mayors and the departments that report to each, with their email addresses.
+ar: أمين بغداد ووكلاؤه الثلاثة والدوائر المرتبطة بكل منهم، مع عناوين بريدها الإلكتروني.
+ku: ئەمین، سێ جێگرەکەی و ئەو فەرمانگانەی سەر بە هەر یەکێکیانن، لەگەڵ ناونیشانی ئیمەیڵیان.
+
+en: In office since 2022.
+ar: في المنصب منذ عام 2022.
+ku: لە ساڵی 2022ەوە لە پۆستەکەدایە.
+
+en: Three deputy mayors assist the Mayor, one each for municipal, technical and administrative affairs.
+ar: يعاون أمينَ بغداد ثلاثة وكلاء: وكيل للشؤون البلدية، وآخر للشؤون الفنية، وثالث للشؤون الإدارية.
+ku: سێ جێگر یارمەتی ئەمین دەدەن، یەکێک بۆ کاروباری شارەوانی، یەکێک بۆ کاروباری تەکنیکی و یەکێک بۆ کاروباری کارگێڕی.
+
+en: Reporting to the Mayor
+ar: المرتبطة بأمين بغداد
+ku: سەر بە ئەمین
+
+en: Office
+ar: الجهة
+ku: یەکە
+
+en: Office of the Mayor
+ar: مكتب أمين بغداد
+ku: نووسینگەی ئەمین
+
+en: Public Contracts
+ar: العقود العامة
+ku: گرێبەستە گشتییەکان
+
+en: Investment
+ar: الاستثمار
+ku: وەبەرهێنان
+
+en: Quality Management
+ar: إدارة الجودة
+ku: بەڕێوەبردنی کوالیتی
+
+en: Information Technology
+ar: تقنية المعلومات
+ku: تەکنەلۆجیای زانیاری
+
+en: World Bank projects
+ar: مشاريع البنك الدولي
+ku: پرۆژەکانی بانکی نێودەوڵەتی
+
+en: Electricity and Decorations
+ar: الكهرباء والتزيين
+ku: کارەبا و ڕازاندنەوە
+
+en: Deputy Mayor for Municipal Affairs
+ar: وكيل أمين بغداد للشؤون البلدية
+ku: جێگری ئەمین بۆ کاروباری شارەوانی
+
+en: Responsible for the 15 municipalities, solid waste, highways, cemeteries and house numbering. Office: <0>wakelbaladi@amanatbaghdad.gov.iq</0>
+ar: يتولى البلديات الخمس عشرة، والمخلفات الصلبة، والطرق السريعة، والمقابر، وترقيم الدور. المكتب: <0>wakelbaladi@amanatbaghdad.gov.iq</0>
+ku: بەرپرسی ١٥ شارەوانییەکە، پاشماوەی ڕەق، ڕێگا خێراکان، گۆڕستانەکان و ژمارەکردنی خانووەکانە. نووسینگە: <0>wakelbaladi@amanatbaghdad.gov.iq</0>
+
+en: The 15 municipalities
+ar: البلديات الخمس عشرة
+ku: ١٥ شارەوانییەکە
+
+en: Listed on <0>Districts</0>
+ar: مدرجة في <0>البلديات</0>
+ku: لە <0>شارەوانییەکان</0>دا لیست کراون
+
+en: Solid Waste and Environment
+ar: المخلفات الصلبة والبيئة
+ku: پاشماوەی ڕەق و ژینگە
+
+en: Highways
+ar: الطرق السريعة
+ku: ڕێگا خێراکان
+
+en: House Numbering
+ar: الترقيم
+ku: ژمارەکردنی خانووەکان
+
+en: Municipal Factories
+ar: المعامل البلدية
+ku: کارگە شارەوانییەکان
+
+en: Cemeteries
+ar: المقابر
+ku: گۆڕستانەکان
+
+en: Bob al-Sham
+ar: بوب الشام
+ku: بوب ئەلشام
+
+en: Deputy Mayor for Technical Affairs
+ar: وكيل أمين بغداد للشؤون الفنية
+ku: جێگری ئەمین بۆ کاروباری تەکنیکی
+
+en: Responsible for water, sewerage, parks, projects and design. Office: <0>wakelfani@amanatbaghdad.gov.iq</0>
+ar: يتولى الماء، والمجاري، والمتنزهات، والمشاريع، والتصاميم. المكتب: <0>wakelfani@amanatbaghdad.gov.iq</0>
+ku: بەرپرسی ئاو، ئاوەڕۆ، پارکەکان، پرۆژەکان و دیزاینە. نووسینگە: <0>wakelfani@amanatbaghdad.gov.iq</0>
+
+en: Baghdad Water
+ar: ماء بغداد
+ku: ئاوی بەغدا
+
+en: Baghdad Sewerage
+ar: مجاري بغداد
+ku: ئاوەڕۆی بەغدا
+
+en: Projects
+ar: المشاريع
+ku: پرۆژەکان
+
+en: Designs
+ar: التصاميم
+ku: دیزاینەکان
+
+en: Planning and Follow-up
+ar: التخطيط والمتابعة
+ku: پلاندانان و بەدواداچوون
+
+en: Parks and Afforestation
+ar: المتنزهات والتشجير
+ku: پارک و دارستانکردن
+
+en: Production Units
+ar: الوحدات الإنتاجية
+ku: یەکە بەرهەمهێنەکان
+
+en: Water Projects Execution Company
+ar: شركة تنفيذ مشاريع الماء
+ku: کۆمپانیای جێبەجێکردنی پرۆژەکانی ئاو
+
+en: Ibn Rushd General Company
+ar: شركة ابن رشد العامة
+ku: کۆمپانیای گشتیی ئیبن ڕوشد
+
+en: Deputy Mayor for Administrative Affairs
+ar: وكيل أمين بغداد للشؤون الإدارية
+ku: جێگری ئەمین بۆ کاروباری کارگێڕی
+
+en: Responsible for administration, finance, real estate, legal affairs and audit. Office: <0>wakeledari@amanatbaghdad.gov.iq</0>
+ar: يتولى الشؤون الإدارية والمالية، والعقارات، والشؤون القانونية، والرقابة. المكتب: <0>wakeledari@amanatbaghdad.gov.iq</0>
+ku: بەرپرسی کارگێڕی، دارایی، موڵک و ماڵ، کاروباری یاسایی و چاودێرییە. نووسینگە: <0>wakeledari@amanatbaghdad.gov.iq</0>
+
+en: Administration and Finance
+ar: الشؤون الإدارية والمالية
+ku: کارگێڕی و دارایی
+
+en: Real Estate
+ar: العقارات
+ku: موڵک و ماڵ
+
+en: Legal
+ar: الشؤون القانونية
+ku: یاسایی
+
+en: Audit and Control
+ar: الرقابة والتدقيق
+ku: چاودێری و وردبینی
+
+en: Relations and Media
+ar: العلاقات والإعلام
+ku: پەیوەندییەکان و ڕاگەیاندن
+
+en: Guards and Security
+ar: الحراسات والأمن
+ku: پاسەوانی و ئاسایش
+
+en: Other offices
+ar: جهات أخرى
+ku: یەکەکانی تر
+
+en: Revenues
+ar: الواردات
+ku: داهاتەکان
+
+en: Planning section
+ar: قسم التخطيط
+ku: بەشی پلاندانان
+
+en: Control section
+ar: قسم الرقابة
+ku: بەشی چاودێری
+
+en: Tourism
+ar: السياحة
+ku: گەشتوگوزار
+
+en: Women's Empowerment
+ar: تمكين المرأة
+ku: بەهێزکردنی ئافرەتان
+
+en: Vocational Training Institute
+ar: معهد التدريب المهني
+ku: پەیمانگای ڕاهێنانی پیشەیی
+
+en: — means no public email address.
+ar: تعني العلامة — عدم وجود بريد إلكتروني معلن.
+ku: — واتە ناونیشانی ئیمەیڵی گشتی نییە.

@@ -8,16 +8,16 @@
 <link rel="alternate" hreflang="en" href="../en/service-permit.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../shared/base.css">
 <link rel="stylesheet" href="../shared/page.css">
-<link rel="stylesheet" href="../shared/ku.css">
 <link rel="stylesheet" href="../shared/lang-swap.css">
 <script src="../shared/lang-swap.js"></script>
 
 <script src="../shared/prototype.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">بازدان بۆ ناوەڕۆکی سەرەکی</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -25,67 +25,92 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
       <div><strong>ئەمانەتی بەغدا</strong><span>ماڵپەڕی فەرمی · کۆماری عێراق</span></div>
     </a>
-    <button class="menu-btn" type="button" popovertarget="menu">مێنیو</button>
+    <button class="menu-btn" type="button" popovertarget="menu">لیست</button>
     <nav class="menu" id="menu" popover aria-label="مێنیوی سەرەکی">
       <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">داخستن</button>
       <ul class="nav">
-        <li><a href="services.html" aria-current="page">خزمەتگوزارییەکان</a></li>
-        <li><a href="report.html">ڕاپۆرتی کێشە</a></li>
-        <li><a href="../en/districts.html">ناوچەکان</a></li>
-        <li><a href="../en/projects.html">پڕۆژەکان</a></li>
-        <li><a href="../en/about.html">دەربارە</a></li>
+        <li class="has-sub"><a href="services.html" aria-current="true">خزمەتگوزارییەکان</a>
+          <ul class="sub">
+            <li><a href="service-permit.html" aria-current="page">مۆڵەتی بیناسازی</a></li>
+            <li><a href="service-water.html">هەژماری ئاو</a></li>
+            <li><a href="service-property.html">بەیاننامەی موڵک</a></li>
+            <li><a href="service-sewer.html">گەیاندن بە تۆڕی ئاوەڕۆ</a></li>
+            <li><a href="service-fees.html">باجەکانی شارەوانی</a></li>
+            <li><a href="alerts.html">ئاگادارکردنەوەکان</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html">ڕاپۆرتکردنی کێشە</a></li>
+        <li><a href="news.html">هەواڵەکان</a></li>
+        <li class="has-sub end"><a href="about.html">ئەمانەت</a>
+          <ul class="sub">
+            <li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li>
+            <li><a href="districts.html">شارەوانییەکان</a></li>
+            <li><a href="tenders.html">تەندەر و مزایەدەکان</a></li>
+            <li><a href="laws.html">یاسا و پلانەکان</a></li>
+            <li><a href="data.html">داتای کراوە</a></li>
+            <li><a href="about.html#contact">پەیوەندی</a></li>
+          </ul>
+        </li>
         <li class="lang"><a href="../service-permit.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../en/service-permit.html" lang="en" hreflang="en" dir="ltr">English</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="main">
   <nav class="crumbs" aria-label="ڕێڕەو">
     <ol>
       <li><a href="index.html">سەرەکی</a></li>
       <li><a href="services.html">خزمەتگوزارییەکان</a></li>
-      <li><a href="services.html#building">بیناسازی و موڵک</a></li>
-      <li aria-current="page">مۆڵەتی بیناسازی</li>
     </ol>
   </nav>
 
   <header class="page-head">
-    <p class="kicker">خزمەتگوزاری · بیناسازی و موڵک</p>
     <h1>مۆڵەتی بیناسازی</h1>
-    <p class="lede">پێش ئەوەی لەسەر موڵکێک لە سنووری ئەمانەتدا بینا دروست بکەیت یان شتێکی بخەیتە سەر، مۆڵەتی بیناسازیت پێویستە. داواکارییەکە بە ئۆنلاین لە پۆرتاڵی ئور پێشکەش دەکەیت و هەر لەوێ بەدوایدا دەچیت.</p>
+    <p class="lede">بۆ بیناکردن یان فراوانکردنی بینایەک لەسەر موڵکێک لە سنووری ئەمانەتدا، مۆڵەتت پێویستە. داواکاری بە ئۆنلاین لە پۆرتاڵی ئور پێشکەش بکە و لەوێ بەدواداچوونی بۆ بکە.</p>
     <ul class="facts">
-      <li><span class="k">شوێنی داواکاری</span><p class="v">پۆرتاڵی ئور</p><p class="s">هەژمارێکی ئورت پێویستە</p></li>
-      <li><span class="k">کات</span><p class="v">نزیکەی ٣٠ ڕۆژ</p><p class="s">دوای تەواوبوونی بەڵگەنامەکانت · نموونەیی</p></li>
-      <li><span class="k">تێچوو</span><p class="v">بەپێی ڕووبەر و جۆری بەکارهێنان</p><p class="s">لە کاتی پێداچوونەوەدا دیاری دەکرێت · نموونەیی</p></li>
+      <li><span class="k">شوێنی پێشکەشکردن</span><p class="v">پۆرتاڵی ئور</p><p class="s">هەژمارێکی ئورت پێویستە</p></li>
+      <li><span class="k">ماوە</span><p class="v">نزیکەی ٣٠ ڕۆژ</p><p class="s">دوای تەواوبوونی بەڵگەنامەکان · نموونەیی</p></li>
+      <li><span class="k">تێچوو</span><p class="v">بەندە بە ڕووبەر و جۆری بەکارهێنان</p><p class="s">لە کاتی پێداچوونەوەدا دیاری دەکرێت · نموونەیی</p></li>
     </ul>
   </header>
 
   <div class="layout">
+    <div class="start">
+      <h2>داواکارییەکەت دەست پێ بکە</h2>
+      <p>کاتێک بەڵگەنامەکانت ئامادەن، پێشکەشکردنی داواکاری نزیکەی ٢٠ خولەک دەخایەنێت.</p>
+      <a class="btn" href="https://eservice.ur.gov.iq/customer/applyService/10671" rel="external">لە پۆرتاڵی ئور پێشکەشی بکە ↗</a>
+      <p>هەژمارێکی ئور پێویستە. <a href="https://ur.gov.iq" rel="external">هەژمارێکی ئور دروست بکە</a></p>
+      <div class="alt">
+        <p>دەتوانیت لە کاتی دەوامدا بە ئامادەبوونی خۆت لە <a href="districts.html">شارەوانی ناوچەکەت</a> پێشکەشی بکەیت.</p>
+      </div>
+    </div>
+
     <article class="guide">
-      <p class="illustrative">بەڵگەنامە، هەنگاو و کاتەکانی ئەم پەڕەیە نموونەیین تا لەگەڵ فەرمانگەکە پشتڕاست دەکرێنەوە. شوێنی داواکاری لە پۆرتاڵی ئور پشتڕاستکراوەتەوە.</p>
+      <p class="illustrative">مەرج، بەڵگەنامە، هەنگاو، ماوە و تێچووەکانی ئەم ڕێبەرە نموونەیین.</p>
 
       <section id="need" aria-labelledby="need-h">
-        <h2 id="need-h">ئایا مۆڵەتت پێویستە؟</h2>
-        <p>مۆڵەتت پێویستە بۆ:</p>
+        <h2 id="need-h">کەی مۆڵەت پێویستە</h2>
+        <p>مۆڵەت پێویستە بۆ:</p>
         <ul>
-          <li>بیناسازی لەسەر زەوییەکی بەتاڵ</li>
-          <li>زیادکردنی نهۆمێک، ژوورێک یان پاشکۆیەک</li>
-          <li>گۆڕینی ڕووی بینایەک کە بەرەو شەقامە</li>
-          <li>گۆڕینی بەکارهێنانی بینایەک، بۆ نموونە لە ماڵەوە بۆ دووکان</li>
+          <li>بیناکردن لەسەر زەویی بەتاڵ</li>
+          <li>زیادکردنی نهۆم، ژوور یان پاشکۆ</li>
+          <li>گۆڕینی ڕووی ئەو بینایەی بەرەو شەقامە</li>
+          <li>گۆڕینی بەکارهێنانی بینا، بۆ نموونە لە ماڵەوە بۆ دووکان</li>
         </ul>
-        <p>بۆ چاککردنەوەی ناوەوە کە دەست لە پێکهاتە و ڕووی بیناکە نادات، مۆڵەتت پێویست نییە.</p>
-        <p class="aside-note">ئەگەر موڵکەکەت لە دەرەوەی سنووری ئەمانەت بێت، لە قەزاکانی دەوروبەر، لەوانەیە پارێزگای بەغدا بەرپرس بێت. <a href="../en/about.html#who">بزانە کێ بەرپرسە</a></p>
+        <p>بۆ چاککردنەوەی ناوەوە کە کار لە پێکهاتە یان ڕووی بیناکە ناکات، مۆڵەت پێویست نییە.</p>
+        <p>هەموو ڕێساکان لە <a href="laws.html#building">ڕێسای مۆڵەتەکانی بیناسازی ژمارە ٢ی ساڵی ٢٠١٦</a>دان.</p>
+        <p class="aside-note">ئەگەر موڵکەکەت لە دەرەوەی سنووری ئەمانەتە، لە قەزاکانی دەوروبەر، لەوانەیە پارێزگای بەغدا بەرپرس بێت. <a href="about.html#who">بزانە کێ بەرپرسە</a></p>
       </section>
 
       <section id="docs" aria-labelledby="docs-h">
-        <h2 id="docs-h">چیت پێویستە</h2>
-        <p>پێش ئەوەی دەست پێ بکەیت ئەمانە ئامادە بکە. وێنەیەکی ڕوونی هەر یەکێکیان لە پۆرتاڵی ئور بار دەکەیت.</p>
+        <h2 id="docs-h">ئەوەی پێویستتە</h2>
+        <p>پێش پێشکەشکردن ئەم بەڵگەنامانە ئامادە بکە. وێنەیەکی ڕوونی هەر یەکێکیان لە پۆرتاڵی ئور باربکە.</p>
         <ul class="checklist">
-          <li><div><strong>بەیاننامەیەکی نوێی موڵک</strong><span>لە پۆرتاڵی ئور دەردەچێت. <a href="../en/service-property.html">بەیاننامەی موڵک وەربگرە</a></span></div></li>
-          <li><div><strong>نەخشەی تەلارسازی و پێکهاتەیی</strong><span>لەلایەن ئەندازیارێک یان نووسینگەیەکی ئەندازیاریی مۆڵەتدارەوە پەسەندکراو.</span></div></li>
-          <li><div><strong>کارتی نیشتمانیی یەکگرتوو</strong><span>هی خاوەنەکە، یان وەکالەتنامە ئەگەر کەسێکی تر داواکاری پێشکەش بکات.</span></div></li>
-          <li><div><strong>وێنەیەکی شوێنەکە</strong><span>لە شەقامەوە گیرابێت و بیناکانی تەنیشتی پیشان بدات.</span></div></li>
+          <li><div><strong>بەیاننامەیەکی نوێی موڵک</strong><span>لە پۆرتاڵی ئور دەردەچێت. <a href="service-property.html">بەیاننامەی موڵک وەربگرە</a></span></div></li>
+          <li><div><strong>نەخشە تەلارسازی و پێکهاتەییەکان</strong><span>پەسەندکراو لەلایەن ئەندازیارێکی مۆڵەتدار یان نووسینگەیەکی ئەندازیارییەوە.</span></div></li>
+          <li><div><strong>کارتی نیشتمانیی یەکگرتوو</strong><span>هی خاوەنەکە، یان وەکالەتنامە ئەگەر کەسێکی تر پێشکەشی بکات.</span></div></li>
+          <li><div><strong>وێنەیەکی شوێنەکە</strong><span>لە شەقامەوە گیراوە و بیناکانی تەنیشتی تێدا دیارن.</span></div></li>
         </ul>
       </section>
 
@@ -93,54 +118,34 @@
         <h2 id="steps-h">هەنگاوەکان</h2>
         <ol class="steps">
           <li><div><strong>بەڵگەنامەکانت ئامادە بکە</strong><span>لیستەکەی سەرەوە.</span></div></li>
-          <li><div><strong>داواکاری پێشکەش بکە <span class="where">پۆرتاڵی ئور</span></strong><span>بچۆ ژوورەوە، «مۆڵەتی بیناسازی (هەموو جۆرەکان)» هەڵبژێرە و بەڵگەنامەکانت بار بکە. ژمارەیەکی داواکاری وەردەگریت.</span></div></li>
+          <li><div><strong>پێشکەشی بکە <span class="where">پۆرتاڵی ئور</span></strong><span>بچۆ ژوورەوە، «منح إجازة البناء بمختلف انواعها» هەڵبژێرە و بەڵگەنامەکانت باربکە. ژمارەیەکی داواکاری وەردەگریت.</span></div></li>
           <li><div><strong>پێداچوونەوەی نەخشەکان</strong><span>فەرمانگەکە پێداچوونەوە بە نەخشەکاندا دەکات و لەوانەیە لە ڕێگەی ئورەوە داوای گۆڕانکاری بکات.</span></div></li>
-          <li><div><strong>پشکنینی شوێن</strong><span>کەسێک لە شارەوانییەکەتەوە سەردانی موڵکەکە دەکات. بەرواری سەردانەکەت پێ ڕادەگەیەنرێت.</span></div></li>
+          <li><div><strong>پشکنینی شوێن</strong><span>پشکنەرێک لە شارەوانییەکەتەوە سەردانی موڵکەکە دەکات. ئاگادار دەکرێیتەوە لە کاتەکەی.</span></div></li>
           <li><div><strong>باجەکان بدە <span class="where">پۆرتاڵی ئور</span></strong><span>دوای پێداچوونەوە باجەکان لە داواکارییەکەتدا دەردەکەون.</span></div></li>
-          <li><div><strong>مۆڵەتەکە وەربگرە</strong><span>بە ئۆنلاین دەردەچێت. تا کار بەردەوامە لەسەر شوێنەکە هەڵیبواسە.</span></div></li>
+          <li><div><strong>مۆڵەتەکە وەربگرە</strong><span>مۆڵەتەکە بە ئۆنلاین دەردەچێت. لە ماوەی کارەکەدا لە شوێنی بیناسازییەکە دایبنێ بە دیار.</span></div></li>
         </ol>
       </section>
 
       <section id="after" aria-labelledby="after-h">
         <h2 id="after-h">دوای پێشکەشکردن</h2>
-        <p>بە ژمارەی داواکارییەکەت لە پۆرتاڵی ئور بەدوایدا بچۆ.</p>
+        <p>بە ژمارەکەی لە پۆرتاڵی ئور بەدواداچوون بۆ داواکارییەکەت بکە.</p>
+        <p>لەوانەیە دوای دەرچوونی مۆڵەتەکە داوات لێ بکرێت هەڵسەنگاندن بۆ خزمەتگوزارییەکە بکەیت.</p>
       </section>
     </article>
-
-    <aside class="action" aria-label="داواکارییەکەت دەست پێ بکە">
-      <div class="start">
-        <h2>داواکارییەکەت دەست پێ بکە</h2>
-        <p>ئەگەر بەڵگەنامەکانت ئامادە بن، پێشکەشکردن نزیکەی ٢٠ خولەک دەخایەنێت.</p>
-        <a class="btn" href="https://eservice.ur.gov.iq/customer/applyService/10671" rel="external">لە پۆرتاڵی ئور داواکاری پێشکەش بکە ↗</a>
-        <p>هەژمارت نییە؟ <a href="https://ur.gov.iq" rel="external">هەژمارێکی ئور دروست بکە</a></p>
-        <div class="alt">
-          <p>پێت باشترە بە خۆت بچیت؟ لە کاتی دەوامدا لە <a href="../en/districts.html">نووسینگەی شارەوانییەکەت</a> داواکاری پێشکەش بکە.</p>
-        </div>
-      </div>
-      <nav class="toc" aria-labelledby="toc-h">
-        <h2 id="toc-h">لەم پەڕەیەدا</h2>
-        <ol>
-          <li><a href="#need">ئایا مۆڵەتت پێویستە؟</a></li>
-          <li><a href="#docs">چیت پێویستە</a></li>
-          <li><a href="#steps">هەنگاوەکان</a></li>
-          <li><a href="#after">دوای پێشکەشکردن</a></li>
-        </ol>
-      </nav>
-    </aside>
   </div>
 
   <section class="block ruled" aria-labelledby="related-h">
     <div class="block-head"><h2 id="related-h">خزمەتگوزارییە پەیوەندیدارەکان</h2></div>
     <ul class="related">
-      <li><a href="../en/service-property.html"><strong>بەیاننامەی موڵک</strong><p>بۆ مۆڵەتەکە پێویستە، هەروەها بۆ فرۆشتن و میرات.</p></a></li>
-      <li><a href="../en/service-sewer.html"><strong>بەستنەوە بە تۆڕی ئاوەڕۆ</strong><p>بینا نوێیەکە بە تۆڕی ئاوەڕۆوە ببەستەوە.</p></a></li>
+      <li><a href="service-property.html"><strong>بەیاننامەی موڵک</strong><p>بۆ مۆڵەت و فرۆشتن و میرات پێویستە.</p></a></li>
+      <li><a href="service-sewer.html"><strong>گەیاندن بە تۆڕی ئاوەڕۆ</strong><p>گەیاندنی بینا نوێیەکە بە تۆڕی ئاوەڕۆ.</p></a></li>
     </ul>
 
     <div class="feedback">
-      <p>ئەوەی پێویستت بوو لەم پەڕەیەدا دۆزیتەوە؟</p>
+      <p>ئەم پەڕەیە سوودی هەبوو؟</p>
       <div class="btns"><button class="btn" type="button">بەڵێ</button><button class="btn" type="button">نەخێر</button></div>
     </div>
-    <p class="meta">دوایین پێداچوونەوە ٣٠ی تشرینی یەکەمی ٢٠٢٦ · خزمەتگوزاری لە ئور: «مۆڵەتی بیناسازی (هەموو جۆرەکان)»</p>
+    <p class="meta">خزمەتگوزاری لە ئور: «منح إجازة البناء بمختلف انواعها»</p>
   </section>
 </main>
 
@@ -148,13 +153,14 @@
   <div class="wrap">
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">ئەمانەتی بەغدا</div>
-      <div><h2>خزمەتگوزارییەکان</h2><ul><li><a href="services.html">هەموو خزمەتگوزارییەکان</a></li><li><a href="report.html">ڕاپۆرتی کێشە</a></li><li><a href="../en/track.html">بەدواداچوونی ڕاپۆرت</a></li><li><a href="../en/alerts.html">ئاگادارییەکان</a></li></ul></div>
-      <div><h2>شار</h2><ul><li><a href="../en/districts.html">ناوچەکان</a></li><li><a href="../en/projects.html">پڕۆژەکان</a></li></ul></div>
-      <div><h2>ئەمانەت</h2><ul><li><a href="../en/about.html">دەربارە</a></li><li><a href="../en/about.html#who">کێ چی دەکات</a></li><li><a href="../en/tenders.html">تەندەر و مەزاد</a></li><li><a href="../en/about.html#contact">پەیوەندی</a></li></ul></div>
-      <div><h2>ئەم ماڵپەڕە</h2><ul><li><a href="../en/data.html">داتای کراوە</a></li><li><a href="../en/site.html#search">گەڕان چۆن کار دەکات</a></li><li><a href="../en/site.html#access">دەستگەیشتن</a></li><li><a href="../en/site.html#privacy">تایبەتمەندی</a></li></ul></div>
+      <div><h2>خزمەتگوزارییەکان</h2><ul><li><a href="services.html">هەموو خزمەتگوزارییەکان</a></li><li><a href="report.html">ڕاپۆرتکردنی کێشە</a></li><li><a href="track.html">بەدواداچوونی ڕاپۆرت</a></li><li><a href="alerts.html">ئاگادارکردنەوەکان</a></li></ul></div>
+      <div><h2>هەواڵەکان</h2><ul><li><a href="news.html">هەموو هەواڵەکان</a></li></ul></div>
+      <div><h2>ئەمانەت</h2><ul><li><a href="about.html">تێڕوانینی گشتی</a></li><li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li><li><a href="districts.html">شارەوانییەکان</a></li><li><a href="tenders.html">تەندەر و مزایەدەکان</a></li><li><a href="laws.html">یاسا و پلانەکان</a></li><li><a href="data.html">داتای کراوە</a></li><li><a href="about.html#contact">پەیوەندی</a></li></ul></div>
+      <div><h2>ئەم ماڵپەڕە</h2><ul><li><a href="site.html#privacy">تایبەتێتی</a></li><li><a href="site.html#access">دەستڕاگەیشتن</a></li><li><a href="site.html#search">گەڕان چۆن کار دەکات</a></li></ul></div>
     </div>
     <div class="fine">
-      <p>مۆر: وێنەکێشانەوەی کۆمەڵگە — CC BY-SA 4.0 — Wikimedia Commons. ناوی وێنەگر لەگەڵ هەر وێنەیەک نووسراوە.</p>
+      <p class="hotline"><span>هێڵی گەرم <a href="tel:5628"><strong>٥٦٢٨</strong></a>، لە ٨:٣٠ی بەیانی تا ٢ی دوانیوەڕۆ</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="فەیسبووک" title="فەیسبووک"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="ئینستاگرام" title="ئینستاگرام"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="ئێکس" title="ئێکس"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>مۆر: دووبارە کێشانەوەی کۆمەڵگە — CC BY-SA 4.0 — ویکیمیدیا کۆمنز. مافی هەر وێنەیەک لەگەڵ وێنەکەدا نووسراوە.</p>
     </div>
   </div>
 </footer>

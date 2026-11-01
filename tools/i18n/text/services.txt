@@ -1,0 +1,113 @@
+# All services
+
+en: All services — Mayoralty of Baghdad
+ar: كل الخدمات — أمانة بغداد
+ku: هەموو خزمەتگوزارییەکان — ئەمانەتی بەغدا
+
+en: Each service guide lists what you need and where to apply.
+ar: يبيّن دليل كل خدمة ما تحتاجه وجهة التقديم.
+ku: ڕێبەری هەر خزمەتگوزارییەک ئەوەی پێویستتە و شوێنی پێشکەشکردن دەخاتە ڕوو.
+
+en: Where each service is provided
+ar: أين تُقدَّم كل خدمة
+ku: هەر خزمەتگوزارییەک لە کوێ پێشکەش دەکرێت
+
+en: <0>This website</0>Completed on this website
+ar: <0>هذا الموقع</0>تُنجز على هذا الموقع
+ku: <0>ئەم ماڵپەڕە</0>لەسەر ئەم ماڵپەڕە تەواو دەکرێت
+
+en: <0>Ur portal</0>Apply on the national Ur portal with an Ur account
+ar: <0>بوابة أور</0>يُقدَّم الطلب على بوابة أور الوطنية بحساب على أور
+ku: <0>پۆرتاڵی ئور</0>لە پۆرتاڵی نیشتمانیی ئور بە هەژمارێکی ئور پێشکەش دەکرێت
+
+en: <0>District office</0>Requires a visit to your district office
+ar: <0>البلدية</0>تتطلب مراجعة بلدية منطقتك
+ku: <0>شارەوانی</0>پێویستی بە سەردانی شارەوانی ناوچەکەتە
+
+en: Reports
+ar: البلاغات
+ku: ڕاپۆرتەکان
+
+en: Report problems with water, sewage, waste, street lights or roads, and get a report number.
+ar: أبلغ عن مشكلات الماء أو المجاري أو النفايات أو إنارة الشوارع أو الطرق، واحصل على رقم بلاغ.
+ku: کێشەکانی ئاو، ئاوەڕۆ، خاشاک، ڕووناکی شەقام یان ڕێگا ڕاپۆرت بکە و ژمارەی ڕاپۆرت وەربگرە.
+
+en: Enter your report number to see the responsible team and the latest update.
+ar: أدخل رقم البلاغ لمعرفة الفريق المسؤول وآخر المستجدات.
+ku: ژمارەی ڕاپۆرتەکەت بنووسە بۆ بینینی تیمی بەرپرس و دوایین نوێکاری.
+
+en: Scheduled water cuts, road closures and rain warnings.
+ar: قطع الماء المجدول، وغلق الطرق، وتحذيرات الأمطار.
+ku: بڕانی خشتەکراوی ئاو، داخستنی ڕێگا و ئاگادارکردنەوەی باران.
+
+en: Building and property
+ar: البناء والعقار
+ku: بیناسازی و موڵک
+
+en: Required to build, extend or change the front of a building.
+ar: مطلوبة للبناء أو التوسعة أو تغيير واجهة المبنى.
+ku: بۆ بیناکردن، فراوانکردن یان گۆڕینی ڕووی بینا پێویستە.
+
+en: For sales, inheritance and permits.
+ar: للبيع والإرث والإجازات.
+ku: بۆ فرۆشتن، میرات و مۆڵەت.
+
+en: Ur portal and district office
+ar: بوابة أور والبلدية
+ku: پۆرتاڵی ئور و شارەوانی
+
+en: Connect a new building to the sewer network.
+ar: ربط مبنى جديد بشبكة المجاري.
+ku: گەیاندنی بینایەکی نوێ بە تۆڕی ئاوەڕۆ.
+
+en: New account, meter replacement, change of name.
+ar: حساب جديد، تبديل المقياس، نقل الاسم.
+ku: هەژماری نوێ، گۆڕینی میتەر، گۆڕینی ناو.
+
+en: Pay a water bill
+ar: دفع فاتورة الماء
+ku: پارەدانی پسوولەی ئاو
+
+en: Payment site
+ar: موقع الدفع
+ku: ماڵپەڕی پارەدان
+
+en: Online or at the collection office.
+ar: إلكترونياً أو في مكتب الجباية.
+ku: ئۆنلاین یان لە نووسینگەی کۆکردنەوەی پارە.
+
+en: Fees and business
+ar: الرسوم والأعمال
+ku: باج و بازرگانی
+
+en: District office
+ar: البلدية
+ku: شارەوانی
+
+en: Trade, advertising and cleaning fees, and what you owe.
+ar: رسوم المهنة والإعلان والنظافة، والمبلغ المستحق عليك.
+ku: باجی پیشە، ڕیکلام و پاککردنەوە، و ئەو بڕەی لەسەرتە.
+
+en: Find and contact
+ar: الوصول والاتصال
+ku: دۆزینەوە و پەیوەندی
+
+en: Responsibilities in Baghdad
+ar: المسؤوليات في بغداد
+ku: بەرپرسیارێتییەکان لە بەغدا
+
+en: Which public body is responsible for each service.
+ar: الجهة الحكومية المسؤولة عن كل خدمة.
+ku: کام دامەزراوەی گشتی بەرپرسی هەر خزمەتگوزارییەکە.
+
+en: Contact the Mayoralty
+ar: الاتصال بالأمانة
+ku: پەیوەندی بە ئەمانەتەوە
+
+en: The 5628 hotline, email and meeting requests.
+ar: الخط الساخن 5628، والبريد الإلكتروني، وطلبات المقابلة.
+ku: هێڵی گەرمی 5628، ئیمەیڵ و داواکاریی چاوپێکەوتن.
+
+en: If the service you need is not listed, <0>search the website</0>.
+ar: إذا لم تجد الخدمة التي تحتاجها في القائمة، <0>ابحث في الموقع</0>.
+ku: ئەگەر ئەو خزمەتگوزارییەی پێویستتە لە لیستەکەدا نییە، <0>لە ماڵپەڕەکەدا بگەڕێ</0>.

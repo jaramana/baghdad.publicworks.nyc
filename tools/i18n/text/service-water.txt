@@ -1,0 +1,161 @@
+# Water account
+
+en: Water account — Mayoralty of Baghdad
+ar: حساب الماء — أمانة بغداد
+ku: هەژماری ئاو — ئەمانەتی بەغدا
+
+en: Every home in Baghdad has a water account with the Baghdad Water Department. This guide explains how to pay a bill, open an account, replace a meter or transfer an account.
+ar: لكل منزل في بغداد حساب ماء لدى دائرة ماء بغداد. يشرح هذا الدليل كيفية دفع الفاتورة، وفتح حساب، وتبديل المقياس، ونقل الحساب.
+ku: هەر ماڵێک لە بەغدا هەژمارێکی ئاوی لە فەرمانگەی ئاوی بەغدا هەیە. ئەم ڕێبەرە ڕوون دەکاتەوە چۆن پسوولە بدەیت، هەژمار بکەیتەوە، میتەر بگۆڕیت یان هەژمار بگوازیتەوە.
+
+en: Baghdad Water Department
+ar: دائرة ماء بغداد
+ku: فەرمانگەی ئاوی بەغدا
+
+en: Online or at the collection office
+ar: إلكترونياً أو في مكتب الجباية
+ku: ئۆنلاین یان لە نووسینگەی کۆکردنەوەی پارە
+
+en: Operated by a third party
+ar: تديره جهة أخرى
+ku: لایەنێکی ترەوە بەڕێوە دەبرێت
+
+en: Start on the Ur portal
+ar: ابدأ على بوابة أور
+ku: لە پۆرتاڵی ئور دەست پێ بکە
+
+en: For new accounts, meters and transfers of name.
+ar: للحسابات الجديدة والمقاييس ونقل الاسم.
+ku: بۆ هەژماری نوێ، میتەر و گواستنەوەی ناو.
+
+en: Go to the Ur portal ↗
+ar: انتقل إلى بوابة أور ↗
+ku: بڕۆ بۆ پۆرتاڵی ئور ↗
+
+en: The documents, steps and times in this guide are illustrative.
+ar: المستمسكات والخطوات والمدد الواردة في هذا الدليل توضيحية.
+ku: بەڵگەنامە، هەنگاو و ماوەکانی ئەم ڕێبەرە نموونەیین.
+
+en: Water services
+ar: خدمات الماء
+ku: خزمەتگوزارییەکانی ئاو
+
+en: Pay a bill
+ar: دفع الفاتورة
+ku: پارەدانی پسوولە
+
+en: Payment site
+ar: موقع الدفع
+ku: ماڵپەڕی پارەدان
+
+en: With the account number printed on your bill.
+ar: برقم الحساب المطبوع على فاتورتك.
+ku: بە ژمارەی هەژمارەکە کە لەسەر پسوولەکەت چاپکراوە.
+
+en: Open a new account
+ar: فتح حساب جديد
+ku: کردنەوەی هەژمارێکی نوێ
+
+en: For a new home, or a property that never had an account.
+ar: لمنزل جديد، أو لعقار لم يكن له حساب من قبل.
+ku: بۆ ماڵێکی نوێ، یان موڵکێک کە پێشتر هەژماری نەبووە.
+
+en: Install or replace a meter
+ar: نصب المقياس أو تبديله
+ku: دانان یان گۆڕینی میتەر
+
+en: A broken meter, or a home's first meter.
+ar: مقياس عاطل، أو أول مقياس للمنزل.
+ku: میتەرێکی تێکچوو، یان یەکەم میتەری ماڵێک.
+
+en: Transfer an account to your name
+ar: نقل الحساب إلى اسمك
+ku: گواستنەوەی هەژمار بۆ ناوی خۆت
+
+en: After you buy or inherit a home.
+ar: بعد شراء منزل أو انتقاله إليك بالإرث.
+ku: دوای کڕین یان بۆماوەبوونی ماڵێک.
+
+en: Merging accounts is not currently available on the Ur portal. Apply at the collection office in your municipality.
+ar: خدمة دمج الحسابات غير متاحة حالياً على بوابة أور. قدّم الطلب في مكتب الجباية في بلديتك.
+ku: یەکخستنی هەژمارەکان ئێستا لە پۆرتاڵی ئور بەردەست نییە. لە نووسینگەی کۆکردنەوەی پارە لە شارەوانییەکەت پێشکەشی بکە.
+
+en: Pay your bill
+ar: ادفع فاتورتك
+ku: پسوولەکەت بدە
+
+en: Pay online on the payment site with your account number, or in cash at the collection office in your municipality. Keep the receipt until your next bill arrives.
+ar: ادفع إلكترونياً على موقع الدفع برقم حسابك، أو نقداً في مكتب الجباية في بلديتك. احتفظ بالوصل حتى وصول الفاتورة التالية.
+ku: بە ژمارەی هەژمارەکەت لە ماڵپەڕی پارەدان بە ئۆنلاین بیدە، یان بە پارەی نەقد لە نووسینگەی کۆکردنەوەی پارە لە شارەوانییەکەت. پسوولەی وەرگرتن هەڵبگرە تا پسوولەی داهاتوو دەگات.
+
+en: The payment site is operated by a third party. The Mayoralty does not ask for card numbers by WhatsApp or text message.
+ar: تدير موقع الدفع جهة أخرى. لا تطلب الأمانة أرقام البطاقات عبر واتساب أو الرسائل النصية.
+ku: ماڵپەڕی پارەدان لەلایەن لایەنێکی ترەوە بەڕێوە دەبرێت. ئەمانەت ژمارەی کارت لە ڕێگەی واتسئاپ یان نامەی دەقییەوە داوا ناکات.
+
+en: New account
+ar: حساب جديد
+ku: هەژماری نوێ
+
+en: Proves you own the property. <0>Get a property statement</0>
+ar: يثبت ملكيتك للعقار. <0>احصل على بيان عقار</0>
+ku: خاوەندارێتیت بۆ موڵکەکە دەسەلمێنێت. <0>بەیاننامەی موڵک وەربگرە</0>
+
+en: The owner's, or a lease and power of attorney if you rent.
+ar: للمالك، أو عقد إيجار ووكالة إذا كنت مستأجراً.
+ku: هی خاوەنەکە، یان گرێبەستی کرێ و وەکالەتنامە ئەگەر بە کرێ دانیشتوویت.
+
+en: For newly built homes. <0>About building permits</0>
+ar: للمنازل المشيدة حديثاً. <0>عن إجازات البناء</0>
+ku: بۆ ماڵە تازە دروستکراوەکان. <0>دەربارەی مۆڵەتی بیناسازی</0>
+
+en: Choose the Baghdad Water Department service and upload your documents.
+ar: اختر خدمة دائرة ماء بغداد وارفع المستمسكات.
+ku: خزمەتگوزاریی فەرمانگەی ئاوی بەغدا هەڵبژێرە و بەڵگەنامەکانت باربکە.
+
+en: The water team visits to decide where to connect.
+ar: يزورك فريق الماء لتحديد نقطة الربط.
+ku: تیمی ئاو سەردان دەکات بۆ دیاریکردنی شوێنی گەیاندن.
+
+en: Pay the connection fee <0>Ur portal</0>
+ar: ادفع رسم الربط <0>بوابة أور</0>
+ku: باجی گەیاندن بدە <0>پۆرتاڵی ئور</0>
+
+en: It appears in your application after the inspection.
+ar: يظهر في طلبك بعد الكشف.
+ku: دوای پشکنین لە داواکارییەکەتدا دەردەکەوێت.
+
+en: Connection and meter
+ar: الربط والمقياس
+ku: گەیاندن و میتەر
+
+en: Your new account number comes with your first bill.
+ar: يصلك رقم حسابك الجديد مع أول فاتورة.
+ku: ژمارەی هەژمارە نوێیەکەت لەگەڵ یەکەم پسوولەدا دێت.
+
+en: Meters
+ar: المقاييس
+ku: میتەرەکان
+
+en: Apply on the Ur portal with your account number to install or replace a meter. If the meter is leaking, report it first so the water can be shut off.
+ar: قدّم على بوابة أور برقم حسابك لنصب المقياس أو تبديله. إذا كان المقياس يسرّب الماء فأبلغ عنه أولاً ليُقطع الماء.
+ku: بۆ دانان یان گۆڕینی میتەر بە ژمارەی هەژمارەکەت لە پۆرتاڵی ئور پێشکەشی بکە. ئەگەر میتەرەکە ئاو دەدزێتەوە، سەرەتا ڕاپۆرتی بکە بۆ ئەوەی ئاوەکە ببڕدرێت.
+
+en: Transfer the account to your name
+ar: نقل الحساب إلى اسمك
+ku: گواستنەوەی هەژمارەکە بۆ ناوی خۆت
+
+en: You need a property statement in your name, your national ID card and your last paid bill. Apply on the Ur portal. The water supply continues during the transfer.
+ar: تحتاج إلى بيان عقار باسمك، وبطاقتك الوطنية، وآخر فاتورة مدفوعة. قدّم على بوابة أور. لا ينقطع الماء خلال النقل.
+ku: بەیاننامەی موڵک بە ناوی خۆت، کارتی نیشتمانی و دوایین پسوولەی دراوت پێویستە. لە پۆرتاڵی ئور پێشکەشی بکە. لە ماوەی گواستنەوەدا ئاو نابڕدرێت.
+
+en: Connect a building to the sewer network.
+ar: ربط مبنى بشبكة المجاري.
+ku: گەیاندنی بینایەک بە تۆڕی ئاوەڕۆ.
+
+en: Needed for a new account and a change of name.
+ar: مطلوب لفتح حساب جديد ولنقل الاسم.
+ku: بۆ هەژماری نوێ و گۆڕینی ناو پێویستە.
+
+en: Service on Ur: "Baghdad Water Department services"
+ar: الخدمة على أور: «خدمات دائرة ماء بغداد»
+ku: خزمەتگوزاری لە ئور: «خدمات دائرة ماء بغداد»

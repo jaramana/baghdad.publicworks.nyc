@@ -39,7 +39,7 @@
 
 ## Out of scope
 
-- Arabic pages (`/*.html`) and Kurdish pages (`/ku/`). Both are on hold until the English is settled.
+- Arabic pages (`/*.html`) and Kurdish pages (`/ku/`). Both are built from the English.
 - The prototype strip at the top of each page.
 - `/city-tigris.html`.
 

@@ -1,0 +1,448 @@
+# Masthead, footer and text used on more than one page.
+# Kurdish is a draft by Claude and needs a native Sorani reader.
+
+en: Mayoralty of Baghdad
+ar: أمانة بغداد
+ku: ئەمانەتی بەغدا
+
+en: Official website · Republic of Iraq
+ar: الموقع الرسمي · جمهورية العراق
+ku: ماڵپەڕی فەرمی · کۆماری عێراق
+
+en: Skip to main content
+ar: انتقل إلى المحتوى الرئيسي
+ku: بازدان بۆ ناوەڕۆکی سەرەکی
+
+en: Menu
+ar: القائمة
+ku: لیست
+
+en: Close
+ar: إغلاق
+ku: داخستن
+
+en: Main menu
+ar: القائمة الرئيسية
+ku: مێنیوی سەرەکی
+
+en: Breadcrumb
+ar: مسار التنقل
+ku: ڕێڕەو
+
+en: Home
+ar: الرئيسية
+ku: سەرەکی
+
+en: Services
+ar: الخدمات
+ku: خزمەتگوزارییەکان
+
+en: All services
+ar: كل الخدمات
+ku: هەموو خزمەتگوزارییەکان
+
+en: Building permit
+ar: إجازة البناء
+ku: مۆڵەتی بیناسازی
+
+en: Water account
+ar: حساب الماء
+ku: هەژماری ئاو
+
+en: Property statement
+ar: بيان العقار
+ku: بەیاننامەی موڵک
+
+en: Sewer connection
+ar: ربط المجاري
+ku: گەیاندن بە تۆڕی ئاوەڕۆ
+
+en: Municipal fees
+ar: الرسوم البلدية
+ku: باجەکانی شارەوانی
+
+en: Alerts
+ar: التنبيهات
+ku: ئاگادارکردنەوەکان
+
+en: Report a problem
+ar: الإبلاغ عن مشكلة
+ku: ڕاپۆرتکردنی کێشە
+
+en: Track a report
+ar: متابعة بلاغ
+ku: بەدواداچوونی ڕاپۆرت
+
+en: News
+ar: الأخبار
+ku: هەواڵەکان
+
+en: All news
+ar: كل الأخبار
+ku: هەموو هەواڵەکان
+
+en: The Mayoralty
+ar: الأمانة
+ku: ئەمانەت
+
+en: Overview
+ar: نظرة عامة
+ku: تێڕوانینی گشتی
+
+en: Leadership and structure
+ar: القيادة والهيكل التنظيمي
+ku: سەرکردایەتی و پێکهاتە
+
+en: Districts
+ar: البلديات
+ku: شارەوانییەکان
+
+en: Tenders and auctions
+ar: المناقصات والمزايدات
+ku: تەندەر و مزایەدەکان
+
+en: Laws and plans
+ar: القوانين والخطط
+ku: یاسا و پلانەکان
+
+en: Open data
+ar: البيانات المفتوحة
+ku: داتای کراوە
+
+en: Contact
+ar: الاتصال
+ku: پەیوەندی
+
+en: This website
+ar: هذا الموقع
+ku: ئەم ماڵپەڕە
+
+en: Privacy
+ar: الخصوصية
+ku: تایبەتێتی
+
+en: Accessibility
+ar: إمكانية الوصول
+ku: دەستڕاگەیشتن
+
+en: How search works
+ar: كيف يعمل البحث
+ku: گەڕان چۆن کار دەکات
+
+en: Hotline <0><1>5628</1></0>, 8:30 am – 2 pm
+ar: الخط الساخن <0><1>5628</1></0>، من 8:30 صباحاً إلى 2 ظهراً
+ku: هێڵی گەرم <0><1>5628</1></0>، لە 8:30ی بەیانی تا 2ی دوانیوەڕۆ
+
+en: Facebook
+ar: فيسبوك
+ku: فەیسبووک
+
+en: Instagram
+ar: إنستغرام
+ku: ئینستاگرام
+
+en: X
+ar: إكس
+ku: ئێکس
+
+en: Seal: community redraw — CC BY-SA 4.0 — Wikimedia Commons. Photos credited with each photo.
+ar: الشعار: إعادة رسم مجتمعية — CC BY-SA 4.0 — ويكيميديا كومنز. تُذكر حقوق كل صورة معها.
+ku: مۆر: دووبارە کێشانەوەی کۆمەڵگە — CC BY-SA 4.0 — ویکیمیدیا کۆمنز. مافی هەر وێنەیەک لەگەڵ وێنەکەدا نووسراوە.
+
+# Shared page parts
+
+en: Search the Mayoralty website
+ar: ابحث في موقع الأمانة
+ku: لە ماڵپەڕی ئەمانەت بگەڕێ
+
+en: Search
+ar: بحث
+ku: گەڕان
+
+en: Was this page useful?
+ar: هل كانت هذه الصفحة مفيدة؟
+ku: ئەم پەڕەیە سوودی هەبوو؟
+
+en: Yes
+ar: نعم
+ku: بەڵێ
+
+en: No
+ar: لا
+ku: نەخێر
+
+en: Related services
+ar: خدمات ذات صلة
+ku: خزمەتگوزارییە پەیوەندیدارەکان
+
+en: Illustrative
+ar: توضيحي
+ku: نموونەیی
+
+en: Where to apply
+ar: جهة التقديم
+ku: شوێنی پێشکەشکردن
+
+en: Time
+ar: المدة
+ku: ماوە
+
+en: Cost
+ar: الكلفة
+ku: تێچوو
+
+en: Ur portal
+ar: بوابة أور
+ku: پۆرتاڵی ئور
+
+en: You need an Ur account
+ar: يلزم حساب على أور
+ku: هەژمارێکی ئورت پێویستە
+
+en: Start your application
+ar: ابدأ طلبك
+ku: داواکارییەکەت دەست پێ بکە
+
+en: <0>Apply on the Ur portal ↗</0>
+ar: <0>قدّم على بوابة أور ↗</0>
+ku: <0>لە پۆرتاڵی ئور پێشکەشی بکە ↗</0>
+
+en: Apply on the Ur portal ↗
+ar: قدّم على بوابة أور ↗
+ku: لە پۆرتاڵی ئور پێشکەشی بکە ↗
+
+en: An Ur account is required. <0>Create an Ur account</0>
+ar: يلزم حساب على أور. <0>أنشئ حساباً على أور</0>
+ku: هەژمارێکی ئور پێویستە. <0>هەژمارێکی ئور دروست بکە</0>
+
+en: You can also apply in person at <0>your district office</0> during working hours.
+ar: ويمكنك أيضاً التقديم حضورياً في <0>بلدية منطقتك</0> خلال ساعات الدوام.
+ku: دەتوانیت لە کاتی دەوامدا بە ئامادەبوونی خۆت لە <0>شارەوانی ناوچەکەت</0> پێشکەشی بکەیت.
+
+en: What you need
+ar: ما تحتاجه
+ku: ئەوەی پێویستتە
+
+en: Steps
+ar: الخطوات
+ku: هەنگاوەکان
+
+en: Unified national ID card
+ar: البطاقة الوطنية الموحدة
+ku: کارتی نیشتمانیی یەکگرتوو
+
+en: The owner's, or a power of attorney if someone else applies.
+ar: للمالك، أو وكالة إذا قدّم الطلب شخص آخر.
+ku: هی خاوەنەکە، یان وەکالەتنامە ئەگەر کەسێکی تر پێشکەشی بکات.
+
+en: Paying
+ar: الدفع
+ku: پارەدان
+
+en: Account number
+ar: رقم الحساب
+ku: ژمارەی هەژمار
+
+en: For example: K-102455
+ar: مثال: K-102455
+ku: بۆ نموونە: K-102455
+
+en: Show
+ar: اعرض
+ku: پیشان بدە
+
+en: Trade fee
+ar: رسم المهنة
+ku: باجی پیشە
+
+en: Advertising fee
+ar: رسم الإعلان
+ku: باجی ڕیکلام
+
+en: Cleaning fee
+ar: رسم النظافة
+ku: باجی پاککردنەوە
+
+en: Report number
+ar: رقم البلاغ
+ku: ژمارەی ڕاپۆرت
+
+en: B-48213
+ar: ب-48213
+ku: ب-48213
+
+en: By phone or app
+ar: عبر الهاتف أو التطبيق
+ku: بە تەلەفۆن یان ئەپ
+
+en: Contact details for each of the 15 municipalities.
+ar: بيانات الاتصال بكل بلدية من البلديات الخمس عشرة.
+ku: زانیاریی پەیوەندی بە هەر یەک لە ١٥ شارەوانییەکە.
+
+en: Notices with their closing dates and full terms.
+ar: الإعلانات مع مواعيد غلقها وشروطها الكاملة.
+ku: ئاگادارییەکان لەگەڵ کاتی داخستن و مەرجە تەواوەکانیان.
+
+en: Email
+ar: البريد الإلكتروني
+ku: ئیمەیڵ
+
+en: alkarrada@amanatbaghdad.gov.iq
+ar: alkarrada@amanatbaghdad.gov.iq
+ku: alkarrada@amanatbaghdad.gov.iq
+
+en: Eng. Ammar Moussa Kadhim
+ar: المهندس عمار موسى كاظم
+ku: ئەندازیار عەممار مووسا کازم
+
+en: Eng. Ammar Moussa Kadhim at his desk
+ar: المهندس عمار موسى كاظم في مكتبه
+ku: ئەندازیار عەممار مووسا کازم لە نووسینگەکەیدا
+
+en: Mayor of Baghdad
+ar: أمين بغداد
+ku: ئەمینی بەغدا
+
+en: Mustafa85674 — CC0 — Wikimedia Commons
+ar: Mustafa85674 — CC0 — ويكيميديا كومنز
+ku: Mustafa85674 — CC0 — ویکیمیدیا کۆمنز
+
+en: Relations and Media Department: <0>elakat@amanatbaghdad.gov.iq</0>
+ar: دائرة العلاقات والإعلام: <0>elakat@amanatbaghdad.gov.iq</0>
+ku: فەرمانگەی پەیوەندییەکان و ڕاگەیاندن: <0>elakat@amanatbaghdad.gov.iq</0>
+
+en: Media enquiries
+ar: استفسارات الإعلام
+ku: پرسیارەکانی ڕاگەیاندن
+
+en: Baghdad Governorate
+ar: محافظة بغداد
+ku: پارێزگای بەغدا
+
+en: A department of the Mayoralty
+ar: دائرة في الأمانة
+ku: فەرمانگەیەکی ئەمانەت
+
+en: Who runs it
+ar: الجهة المنفذة
+ku: کێ بەڕێوەی دەبات
+
+en: Water
+ar: الماء
+ku: ئاو
+
+en: Waste
+ar: النفايات
+ku: خاشاک
+
+en: Roads
+ar: الطرق
+ku: ڕێگاکان
+
+en: Normal
+ar: طبيعي
+ku: ئاسایی
+
+en: Scheduled cut
+ar: قطع مجدول
+ku: بڕانی خشتەکراو
+
+en: Partly closed
+ar: مغلق جزئياً
+ku: بەشێکی داخراوە
+
+en: Closed
+ar: مغلق
+ku: داخراوە
+
+# Municipalities
+
+en: Karkh Center
+ar: مركز الكرخ
+ku: ناوەندی کەرخ
+
+en: Kadhimiya
+ar: الكاظمية
+ku: کازمییە
+
+en: Mansour
+ar: المنصور
+ku: مەنسوور
+
+en: Al-Shula
+ar: الشعلة
+ku: شوعلە
+
+en: Al-Rasheed
+ar: الرشيد
+ku: ڕەشید
+
+en: Dora
+ar: الدورة
+ku: دۆرە
+
+en: Green Zone and Airport Road
+ar: المنطقة الخضراء وطريق المطار
+ku: ناوچەی سەوز و ڕێگای فڕۆکەخانە
+
+en: Rusafa Center
+ar: مركز الرصافة
+ku: ناوەندی ڕوسافە
+
+en: Adhamiya
+ar: الأعظمية
+ku: ئەعزەمییە
+
+en: Al-Shaab
+ar: الشعب
+ku: شەعب
+
+en: Sadr 1
+ar: الصدر الأولى
+ku: سەدری یەکەم
+
+en: Sadr 2
+ar: الصدر الثانية
+ku: سەدری دووەم
+
+en: Al-Ghadeer
+ar: الغدير
+ku: غەدیر
+
+en: New Baghdad
+ar: بغداد الجديدة
+ku: بەغدای نوێ
+
+en: Karrada
+ar: الكرادة
+ku: کەڕادە
+
+en: Karrada municipality
+ar: بلدية الكرادة
+ku: شارەوانی کەڕادە
+
+# Service guides
+
+en: District office
+ar: البلدية
+ku: شارەوانی
+
+en: Your district office
+ar: بلدية منطقتك
+ku: شارەوانی ناوچەکەت
+
+en: Apply <0>Ur portal</0>
+ar: قدّم الطلب <0>بوابة أور</0>
+ku: پێشکەشی بکە <0>پۆرتاڵی ئور</0>
+
+en: Pay the fees <0>Ur portal</0>
+ar: ادفع الرسوم <0>بوابة أور</0>
+ku: باجەکان بدە <0>پۆرتاڵی ئور</0>
+
+en: A recent property statement
+ar: بيان عقار حديث
+ku: بەیاننامەیەکی نوێی موڵک
+
+en: Site inspection
+ar: الكشف الموقعي
+ku: پشکنینی شوێن

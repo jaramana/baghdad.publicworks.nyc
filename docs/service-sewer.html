@@ -3,17 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>إيصال المجاري — أمانة بغداد</title>
+<title>ربط المجاري — أمانة بغداد</title>
+<link rel="alternate" hreflang="ckb" href="ku/service-sewer.html">
+<link rel="alternate" hreflang="en" href="en/service-sewer.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/page.css">
 <link rel="stylesheet" href="shared/lang-swap.css">
 <script src="shared/lang-swap.js"></script>
-<link rel="stylesheet" href="shared/page.css">
+
 <script src="shared/prototype.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">انتقل إلى المحتوى الرئيسي</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -25,102 +29,103 @@
     <nav class="menu" id="menu" popover aria-label="القائمة الرئيسية">
       <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">إغلاق</button>
       <ul class="nav">
-        <li><a href="services.html" aria-current="page">الخدمات</a></li>
-        <li><a href="report.html">بلّغ عن مشكلة</a></li>
-        <li><a href="districts.html">البلديات</a></li>
-        <li><a href="city-tigris.html">المدينة</a></li>
-        <li class="lang"><a href="ku/index.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/service-sewer.html" lang="en" hreflang="en" dir="ltr">English</a></li>
+        <li class="has-sub"><a href="services.html" aria-current="true">الخدمات</a>
+          <ul class="sub">
+            <li><a href="service-permit.html">إجازة البناء</a></li>
+            <li><a href="service-water.html">حساب الماء</a></li>
+            <li><a href="service-property.html">بيان العقار</a></li>
+            <li><a href="service-sewer.html" aria-current="page">ربط المجاري</a></li>
+            <li><a href="service-fees.html">الرسوم البلدية</a></li>
+            <li><a href="alerts.html">التنبيهات</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html">الإبلاغ عن مشكلة</a></li>
+        <li><a href="news.html">الأخبار</a></li>
+        <li class="has-sub end"><a href="about.html">الأمانة</a>
+          <ul class="sub">
+            <li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li>
+            <li><a href="districts.html">البلديات</a></li>
+            <li><a href="tenders.html">المناقصات والمزايدات</a></li>
+            <li><a href="laws.html">القوانين والخطط</a></li>
+            <li><a href="data.html">البيانات المفتوحة</a></li>
+            <li><a href="about.html#contact">الاتصال</a></li>
+          </ul>
+        </li>
+        <li class="lang"><a href="ku/service-sewer.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/service-sewer.html" lang="en" hreflang="en" dir="ltr">English</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <nav class="crumbs" aria-label="مسار الصفحة">
+<main class="wrap" id="main">
+  <nav class="crumbs" aria-label="مسار التنقل">
     <ol>
       <li><a href="home.html">الرئيسية</a></li>
       <li><a href="services.html">الخدمات</a></li>
-      <li><a href="services.html#building">البناء والعقار</a></li>
-      <li aria-current="page">إيصال المجاري</li>
     </ol>
   </nav>
 
   <header class="page-head">
-    <p class="kicker">خدمة · البناء والعقار</p>
-    <h1>إيصال المجاري</h1>
-    <p class="lede">إن بنيت بيتاً أو محلاً جديداً، تحتاج ربطه بشبكة الصرف الصحي. تبدأ الطلب على بوابة أور، ثم تراجع مكتب البلدية للتحقق.</p>
+    <h1>ربط المجاري</h1>
+    <p class="lede">يجب ربط كل منزل أو محل جديد بشبكة المجاري. قدّم الطلب على بوابة أور، ثم راجع بلدية منطقتك لتدقيق المستمسكات.</p>
     <ul class="facts">
-      <li><span class="k">أين تقدّم</span><p class="v">بوابة أور ثم المكتب</p><p class="s">تحتاج تحققاً وحضوراً</p></li>
+      <li><span class="k">جهة التقديم</span><p class="v">بوابة أور ثم البلدية</p><p class="s">تدقيق المستمسكات ومراجعة البلدية</p></li>
       <li><span class="k">المدة</span><p class="v">نحو أسبوعين</p><p class="s">بعد الكشف · توضيحي</p></li>
-      <li><span class="k">الجهة</span><p class="v">دائرة مجاري بغداد</p><p class="s">إحدى دوائر الأمانة</p></li>
+      <li><span class="k">الجهة المنفذة</span><p class="v">دائرة مجاري بغداد</p><p class="s">دائرة في الأمانة</p></li>
     </ul>
   </header>
 
   <div class="layout">
+    <div class="start">
+      <h2>ابدأ طلبك</h2>
+      <p>قدّم على أور، ثم راجع بلدية منطقتك مرة واحدة.</p>
+      <a class="btn" href="https://ur.gov.iq/index/show-eservice/51171/10046/org" rel="external">قدّم على بوابة أور ↗</a>
+      <p>يلزم حساب على أور. <a href="https://ur.gov.iq" rel="external">أنشئ حساباً على أور</a></p>
+    </div>
+
     <article class="guide">
-      <p class="illustrative">الخدمة على بوابة أور مؤكَّدة، وصفحتها تقول إنها تحتاج تحققاً وحضوراً. المستندات والخطوات والمدة توضيحية في هذا النموذج.</p>
+      <p class="illustrative">المستمسكات والخطوات والمدة الواردة في هذا الدليل توضيحية.</p>
 
       <section id="need" aria-labelledby="need-h">
-        <h2 id="need-h">هل تحتاج إيصالاً؟</h2>
-        <p>تحتاجه لكل بناء جديد لم يُربط بالشبكة، ولكل بناء تغيّر استعماله تغيّراً يزيد ما يصرفه، كأن يصير البيت مطعماً.</p>
-        <p class="aside-note">لا تربط البناء بالشبكة بنفسك. الربط غير المجاز يسبّب الطفح في الشارع كله، ويُعدّ مخالفة.</p>
+        <h2 id="need-h">متى يلزم الربط</h2>
+        <p>يلزم الربط لكل مبنى جديد غير مربوط بالشبكة. ويلزم أيضاً عند تغيير الاستعمال بما يزيد تصريف المبنى، كتحويل منزل إلى مطعم.</p>
+        <p class="aside-note">ربط المبنى بالشبكة دون إجازة مخالفة. تؤدي التوصيلات غير المجازة إلى طفح المجاري في الشوارع.</p>
       </section>
 
       <section id="docs" aria-labelledby="docs-h">
         <h2 id="docs-h">ما تحتاجه</h2>
         <ul class="checklist">
-          <li><div><strong>إجازة البناء</strong><span>أو ما يثبت أن البناء مجاز. <a href="service-permit.html">عن إجازة البناء</a></span></div></li>
-          <li><div><strong>بيان عقار حديث</strong><span><a href="service-property.html">اطلب بيان عقار</a></span></div></li>
-          <li><div><strong>البطاقة الوطنية الموحدة</strong><span>لمالك العقار.</span></div></li>
-          <li><div><strong>مخطط الصرف الداخلي</strong><span>يبيّن مكان خروج الأنابيب من البناء.</span></div></li>
+          <li><div><strong>إجازة البناء</strong><span>أو ما يثبت أن المبنى مجاز. <a href="service-permit.html">عن إجازات البناء</a></span></div></li>
+          <li><div><strong>بيان عقار حديث</strong><span><a href="service-property.html">احصل على بيان عقار</a></span></div></li>
+          <li><div><strong>البطاقة الوطنية الموحدة</strong><span>للمالك.</span></div></li>
+          <li><div><strong>مخطط التصريف الداخلي</strong><span>يبيّن مخرج الأنابيب من المبنى.</span></div></li>
         </ul>
       </section>
 
       <section id="steps" aria-labelledby="steps-h">
         <h2 id="steps-h">الخطوات</h2>
         <ol class="steps">
-          <li><div><strong>قدّم الطلب <span class="where">بوابة أور</span></strong><span>اختر «إيصال أنابيب الصرف الصحي» وارفع المستندات. يصلك رقم طلب.</span></div></li>
-          <li><div><strong>راجع مكتب البلدية <span class="where">مكتب البلدية</span></strong><span>بالمستندات الأصلية ورقم الطلب، للتحقق منها.</span></div></li>
-          <li><div><strong>كشف موقعي</strong><span>يحدد فريق المجاري نقطة الربط وطولها.</span></div></li>
-          <li><div><strong>دفع الرسوم <span class="where">بوابة أور</span></strong><span>تُحسب من طول الربط وقطر الأنبوب.</span></div></li>
-          <li><div><strong>تنفيذ الربط</strong><span>تنفّذه دائرة المجاري أو مقاول مجاز تحت إشرافها.</span></div></li>
+          <li><div><strong>قدّم الطلب <span class="where">بوابة أور</span></strong><span>اختر «ايصال انابيب الصرف الصحي» وارفع المستمسكات. تحصل على رقم للطلب.</span></div></li>
+          <li><div><strong>راجع بلدية منطقتك <span class="where">البلدية</span></strong><span>أحضر المستمسكات الأصلية ورقم الطلب لتدقيقها.</span></div></li>
+          <li><div><strong>الكشف الموقعي</strong><span>يحدد فريق المجاري نقطة الربط وطول الأنبوب.</span></div></li>
+          <li><div><strong>ادفع الرسوم <span class="where">بوابة أور</span></strong><span>بحسب طول الربط وقطر الأنبوب.</span></div></li>
+          <li><div><strong>الربط</strong><span>تنفذه دائرة المجاري، أو مقاول مجاز بإشرافها.</span></div></li>
         </ol>
       </section>
     </article>
-
-    <aside class="action" aria-label="ابدأ الطلب">
-      <div class="start">
-        <h2>ابدأ الطلب</h2>
-        <p>التقديم على أور، ثم زيارة واحدة لمكتب البلدية.</p>
-        <a class="btn" href="https://ur.gov.iq/index/show-eservice/51171/10046/org" rel="external">قدّم على بوابة أور ↗</a>
-        <p>لا تملك حساباً؟ <a href="https://ur.gov.iq" rel="external">أنشئ حساباً على أور</a></p>
-        <div class="alt">
-          <p>المجاري تطفح في شارعك؟ هذا بلاغ لا طلب. <a href="report.html?cat=طفح المجاري">بلّغ عن الطفح</a></p>
-        </div>
-      </div>
-      <nav class="toc" aria-labelledby="toc-h">
-        <h2 id="toc-h">في هذه الصفحة</h2>
-        <ol>
-          <li><a href="#need">هل تحتاج إيصالاً؟</a></li>
-          <li><a href="#docs">ما تحتاجه</a></li>
-          <li><a href="#steps">الخطوات</a></li>
-        </ol>
-      </nav>
-    </aside>
   </div>
 
   <section class="block ruled" aria-labelledby="related-h">
     <div class="block-head"><h2 id="related-h">خدمات ذات صلة</h2></div>
     <ul class="related">
       <li><a href="service-permit.html"><strong>إجازة البناء</strong><p>قبل البناء والربط.</p></a></li>
-      <li><a href="service-water.html#new"><strong>حساب ماء جديد</strong><p>للبناء الجديد نفسه.</p></a></li>
-      <li><a href="report.html?cat=طفح المجاري"><strong>بلّغ عن طفح المجاري</strong><p>صورة وموقع ورقم بلاغ.</p></a></li>
+      <li><a href="service-water.html#new"><strong>حساب ماء جديد</strong><p>للمبنى الجديد نفسه.</p></a></li>
     </ul>
     <div class="feedback">
-      <p>هل وجدت ما تحتاجه في هذه الصفحة؟</p>
+      <p>هل كانت هذه الصفحة مفيدة؟</p>
       <div class="btns"><button class="btn" type="button">نعم</button><button class="btn" type="button">لا</button></div>
     </div>
-    <p class="meta">آخر مراجعة: ٣٠ تشرين الأول ٢٠٢٦ · الخدمة على أور: «إيصال أنابيب الصرف الصحي»</p>
+    <p class="meta">الخدمة على أور: «ايصال انابيب الصرف الصحي»</p>
   </section>
 </main>
 
@@ -128,12 +133,14 @@
   <div class="wrap">
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
-      <div><h2>الأمانة</h2><ul><li><a href="about.html">عن الأمانة</a></li><li><a href="districts.html">البلديات</a></li><li><a href="services.html#business">المناقصات</a></li></ul></div>
-      <div><h2>الخدمات</h2><ul><li><a href="report.html">بلّغ عن مشكلة</a></li><li><a href="track.html">تابع بلاغك</a></li><li><a href="services.html">كل الخدمات</a></li></ul></div>
-      <div><h2>الموقع</h2><ul><li><a href="about.html#access">إمكانية الوصول</a></li><li><a href="about.html#privacy">الخصوصية</a></li><li><a href="data.html">البيانات المفتوحة</a></li></ul></div>
+      <div><h2>الخدمات</h2><ul><li><a href="services.html">كل الخدمات</a></li><li><a href="report.html">الإبلاغ عن مشكلة</a></li><li><a href="track.html">متابعة بلاغ</a></li><li><a href="alerts.html">التنبيهات</a></li></ul></div>
+      <div><h2>الأخبار</h2><ul><li><a href="news.html">كل الأخبار</a></li></ul></div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">نظرة عامة</a></li><li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li><li><a href="districts.html">البلديات</a></li><li><a href="tenders.html">المناقصات والمزايدات</a></li><li><a href="laws.html">القوانين والخطط</a></li><li><a href="data.html">البيانات المفتوحة</a></li><li><a href="about.html#contact">الاتصال</a></li></ul></div>
+      <div><h2>هذا الموقع</h2><ul><li><a href="site.html#privacy">الخصوصية</a></li><li><a href="site.html#access">إمكانية الوصول</a></li><li><a href="site.html#search">كيف يعمل البحث</a></li></ul></div>
     </div>
     <div class="fine">
-      <p>الختم: إعادة رسم مجتمعية — CC BY-SA 4.0 — Wikimedia Commons.</p>
+      <p class="hotline"><span>الخط الساخن <a href="tel:5628"><strong>٥٦٢٨</strong></a>، من ٨:٣٠ صباحاً إلى ٢ ظهراً</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="فيسبوك" title="فيسبوك"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="إنستغرام" title="إنستغرام"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="إكس" title="إكس"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>الشعار: إعادة رسم مجتمعية — CC BY-SA 4.0 — ويكيميديا كومنز. تُذكر حقوق كل صورة معها.</p>
     </div>
   </div>
 </footer>

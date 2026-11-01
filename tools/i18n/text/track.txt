@@ -1,0 +1,143 @@
+# Track a report
+
+en: Track a report — Mayoralty of Baghdad
+ar: متابعة بلاغ — أمانة بغداد
+ku: بەدواداچوونی ڕاپۆرت — ئەمانەتی بەغدا
+
+en: Enter your report number to see its progress and the team handling it. No account is needed.
+ar: أدخل رقم البلاغ لمعرفة مراحل إنجازه والفريق الذي يتولاه. لا يلزم حساب.
+ku: ژمارەی ڕاپۆرتەکەت بنووسە بۆ بینینی قۆناغەکانی و ئەو تیمەی کاری لەسەر دەکات. هەژمار پێویست نییە.
+
+en: Sewage overflow · Karrada municipality · near a school in Mahalla 904
+ar: طفح المجاري · بلدية الكرادة · قرب مدرسة في محلة 904
+ku: ڕژانی ئاوەڕۆ · شارەوانی کەڕادە · نزیک قوتابخانەیەک لە مەحەللەی 904
+
+en: In progress
+ar: قيد الإنجاز
+ku: لە کاردایە
+
+en: Report received
+ar: تم استلام البلاغ
+ku: ڕاپۆرتەکە وەرگیرا
+
+en: Thursday 29 October, 8:12 pm
+ar: الخميس 29 تشرين الأول، 8:12 مساءً
+ku: پێنجشەممە 29ی تشرینی یەکەم، 8:12ی ئێوارە
+
+en: On the website, with a photo.
+ar: عبر الموقع، مع صورة.
+ku: لە ماڵپەڕەکەوە، لەگەڵ وێنەیەک.
+
+en: Sent to Karrada municipality
+ar: أُرسل إلى بلدية الكرادة
+ku: نێردرا بۆ شارەوانی کەڕادە
+
+en: Friday 30 October, 7:40 am
+ar: الجمعة 30 تشرين الأول، 7:40 صباحاً
+ku: هەینی 30ی تشرینی یەکەم، 7:40ی بەیانی
+
+en: The municipality's sewer section.
+ar: شعبة المجاري في البلدية.
+ku: بەشی ئاوەڕۆی شارەوانییەکە.
+
+en: Crew on site
+ar: الفريق في الموقع
+ku: تیمەکە لە شوێنەکەیە
+
+en: Friday 30 October, 10:25 am
+ar: الجمعة 30 تشرين الأول، 10:25 صباحاً
+ku: هەینی 30ی تشرینی یەکەم، 10:25ی بەیانی
+
+en: A drain-clearing crew is working on the branch line.
+ar: فريق تسليك المجاري يعمل على الخط الفرعي.
+ku: تیمێکی پاککردنەوەی ئاوەڕۆ کار لەسەر هێڵە لاوەکییەکە دەکات.
+
+en: Report closed
+ar: إغلاق البلاغ
+ku: داخستنی ڕاپۆرت
+
+en: Waiting for the work to finish
+ar: بانتظار انتهاء العمل
+ku: چاوەڕێی تەواوبوونی کارەکە
+
+en: You also get these updates by text message.
+ar: تصلك هذه التحديثات برسالة نصية أيضاً.
+ku: ئەم نوێکارییانە بە نامەی دەقیش وەردەگریت.
+
+en: Report the problem again
+ar: أبلغ عن المشكلة مجدداً
+ku: دووبارە کێشەکە ڕاپۆرت بکەرەوە
+
+en: Received
+ar: الاستلام
+ku: وەرگیرا
+
+en: Today
+ar: اليوم
+ku: ئەمڕۆ
+
+en: On the website.
+ar: عبر الموقع.
+ku: لە ماڵپەڕەکەوە.
+
+en: Sent to <0></0> municipality
+ar: أُرسل إلى بلدية <0></0>
+ku: نێردرا بۆ شارەوانی <0></0>
+
+en: Next
+ar: التالي
+ku: دواتر
+
+en: Illustrative example.
+ar: مثال توضيحي.
+ku: نموونەیەکی ڕوونکەرەوە.
+
+en: Where do I find my report number?
+ar: أين أجد رقم البلاغ؟
+ku: ژمارەی ڕاپۆرتەکەم لە کوێ بدۆزمەوە؟
+
+en: On the confirmation page after you send, and in the first text message.
+ar: في صفحة التأكيد بعد الإرسال، وفي أول رسالة نصية.
+ku: لە پەڕەی پشتڕاستکردنەوە دوای ناردن، و لە یەکەم نامەی دەقیدا.
+
+en: How long does a fix take?
+ar: كم يستغرق الإصلاح؟
+ku: چاککردنەوە چەند دەخایەنێت؟
+
+en: You will receive a first response within two working days. The time to fix depends on the problem. (Illustrative)
+ar: يصلك أول رد خلال يومي عمل. وتعتمد مدة الإصلاح على نوع المشكلة. (توضيحي)
+ku: لە ماوەی دوو ڕۆژی کاردا یەکەم وەڵام وەردەگریت. ماوەی چاککردنەوە بەندە بە کێشەکە. (نموونەیی)
+
+en: What if a report is closed but the problem remains?
+ar: ماذا لو أُغلق البلاغ والمشكلة ما زالت قائمة؟
+ku: ئەگەر ڕاپۆرتێک داخرا بەڵام کێشەکە مابوو؟
+
+en: Use "Report the problem again" on your report. The new report carries the old number, so the two are linked.
+ar: استخدم «أبلغ عن المشكلة مجدداً» في بلاغك. يحمل البلاغ الجديد الرقم القديم، فيرتبط البلاغان.
+ku: لە ڕاپۆرتەکەتدا «دووبارە کێشەکە ڕاپۆرت بکەرەوە» بەکاربهێنە. ڕاپۆرتە نوێیەکە ژمارە کۆنەکەی لەگەڵدایە، بۆیە هەردووکیان بەیەکەوە دەبەسترێنەوە.
+
+raw: value="B-48213"
+ar: value="ب-٤٨٢١٣"
+ku: value="ب-٤٨٢١٣"
+
+raw: ref=B-48213"
+ar: ref=ب-٤٨٢١٣"
+ku: ref=ب-٤٨٢١٣"
+
+# Lookup script
+
+raw: `${saved.d} municipality`
+ar: `بلدية ${saved.d}`
+ku: `شارەوانی ${saved.d}`
+
+raw: { sms: 'by text message' }
+ar: { sms: 'برسالة نصية' }
+ku: { sms: 'بە نامەی دەقی' }
+
+raw: `<p>You also get these updates ${via}.</p>`
+ar: `<p>تصلك هذه التحديثات ${via} أيضاً.</p>`
+ku: `<p>ئەم نوێکارییانە ${via}یش وەردەگریت.</p>`
+
+raw: 'No report was found with that number. Check the number in your confirmation message.'
+ar: 'لا يوجد بلاغ بهذا الرقم. تحقّق من الرقم في رسالة التأكيد.'
+ku: 'هیچ ڕاپۆرتێک بەم ژمارەیە نەدۆزرایەوە. ژمارەکە لە نامەی پشتڕاستکردنەوەکەتدا بپشکنە.'

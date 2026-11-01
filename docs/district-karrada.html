@@ -4,14 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>بلدية الكرادة — أمانة بغداد</title>
+<link rel="alternate" hreflang="ckb" href="ku/district-karrada.html">
+<link rel="alternate" hreflang="en" href="en/district-karrada.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/page.css">
 <link rel="stylesheet" href="shared/lang-swap.css">
 <script src="shared/lang-swap.js"></script>
-<link rel="stylesheet" href="shared/page.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <style>
   /* District page: what is happening here, then who to reach */
 
@@ -37,6 +39,7 @@
 <script src="shared/prototype.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">انتقل إلى المحتوى الرئيسي</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -48,29 +51,46 @@
     <nav class="menu" id="menu" popover aria-label="القائمة الرئيسية">
       <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">إغلاق</button>
       <ul class="nav">
-        <li><a href="services.html">الخدمات</a></li>
-        <li><a href="report.html">بلّغ عن مشكلة</a></li>
-        <li><a href="districts.html" aria-current="page">البلديات</a></li>
-        <li><a href="city-tigris.html">المدينة</a></li>
-        <li class="lang"><a href="ku/index.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/district-karrada.html" lang="en" hreflang="en" dir="ltr">English</a></li>
+        <li class="has-sub"><a href="services.html">الخدمات</a>
+          <ul class="sub">
+            <li><a href="service-permit.html">إجازة البناء</a></li>
+            <li><a href="service-water.html">حساب الماء</a></li>
+            <li><a href="service-property.html">بيان العقار</a></li>
+            <li><a href="service-sewer.html">ربط المجاري</a></li>
+            <li><a href="service-fees.html">الرسوم البلدية</a></li>
+            <li><a href="alerts.html">التنبيهات</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html">الإبلاغ عن مشكلة</a></li>
+        <li><a href="news.html">الأخبار</a></li>
+        <li class="has-sub end"><a href="about.html" aria-current="true">الأمانة</a>
+          <ul class="sub">
+            <li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li>
+            <li><a href="districts.html" aria-current="true">البلديات</a></li>
+            <li><a href="tenders.html">المناقصات والمزايدات</a></li>
+            <li><a href="laws.html">القوانين والخطط</a></li>
+            <li><a href="data.html">البيانات المفتوحة</a></li>
+            <li><a href="about.html#contact">الاتصال</a></li>
+          </ul>
+        </li>
+        <li class="lang"><a href="ku/district-karrada.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/district-karrada.html" lang="en" hreflang="en" dir="ltr">English</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <nav class="crumbs" aria-label="مسار الصفحة">
+<main class="wrap" id="main">
+  <nav class="crumbs" aria-label="مسار التنقل">
     <ol>
       <li><a href="home.html">الرئيسية</a></li>
+      <li><a href="about.html">الأمانة</a></li>
       <li><a href="districts.html">البلديات</a></li>
-      <li aria-current="page">الكرادة</li>
     </ol>
   </nav>
 
   <header class="page-head">
-    <p class="kicker">بلدية · جانب الرصافة</p>
     <h1>بلدية الكرادة</h1>
-    <p class="lede">تخدم البلدية شبه جزيرة الكرادة على الضفة الشرقية لدجلة، من أبي نؤاس إلى الجادرية. هنا ترى ما يجري في منطقتك اليوم، والأعمال الجارية فيها، وكيف تصل إلى مكتب البلدية.</p>
+    <p class="lede">تخدم بلدية الكرادة شبه جزيرة الكرادة على الضفة الشرقية لدجلة، من أبي نؤاس إلى الجادرية.</p>
     <ul class="facts">
       <li><span class="k">السكان</span><p class="v">١٠٥٬٥٠٧</p><p class="s">ناحية الكرادة الشرقية، تعداد ٢٠٢٤</p></li>
       <li><span class="k">ساعات الدوام</span><p class="v">الأحد – الخميس</p><p class="s">٨:٣٠ صباحاً – ٢:٣٠ ظهراً · توضيحي</p></li>
@@ -80,63 +100,73 @@
 
   <div class="layout">
     <article class="guide">
-      <p class="illustrative">التنبيهات والأعمال المحلية والبلاغات وعنوان المكتب توضيحية في هذا النموذج. عدد السكان من تعداد ٢٠٢٤ لناحية الكرادة الشرقية، وحدودها لا تطابق حدود البلدية تماماً. مشروعا أبي نؤاس والجادرية من مصادر منشورة، والمصدر مذكور مع كل منهما.</p>
+      <p class="illustrative">عنوان المقر والتنبيهات والأعمال المحلية وأرقام البلاغات في هذه الصفحة توضيحية.</p>
+
+      <section id="office" aria-labelledby="office-h">
+        <h2 id="office-h">مقر البلدية</h2>
+        <dl class="details">
+          <dt>العنوان</dt><dd>الكرادة داخل، قرب ساحة كهرمانة <span class="note">· توضيحي</span></dd>
+          <dt>الدوام</dt><dd>من الأحد إلى الخميس، من ٨:٣٠ صباحاً إلى ٢:٣٠ ظهراً</dd>
+          <dt>البريد الإلكتروني</dt><dd><a href="mailto:alkarrada@amanatbaghdad.gov.iq">alkarrada@amanatbaghdad.gov.iq</a></dd>
+          <dt>الهاتف</dt><dd>الخط الساخن للأمانة <a href="tel:5628"><strong>٥٦٢٨</strong></a>، من ٨:٣٠ صباحاً إلى ٢ ظهراً</dd>
+        </dl>
+      </section>
 
       <section id="today" aria-labelledby="today-h">
         <h2 id="today-h">اليوم في الكرادة <small>آخر تحديث ١٠:٤٠ صباحاً</small></h2>
         <ul class="alerts">
-          <li><span class="topic">الماء</span><p class="what">قطع مجدول في الكرادة داخل، ٩ صباحاً – ٣ عصراً.<small>لصيانة خط رئيسي. خزّن ما تحتاجه قبل التاسعة.</small></p><span class="status plan">قطع مجدول</span></li>
-          <li><span class="topic">الطرق</span><p class="what">مسار واحد مغلق في شارع أبي نؤاس قرب ساحة الفردوس.<small>أعمال رصيف حتى نهاية الأسبوع. الرصيف النهري مفتوح للمشاة.</small></p><span class="status walk">للمشاة</span></li>
-          <li><span class="topic">النفايات</span><p class="what">الرفع حسب الجدول: كل مساء بعد التاسعة.<small>ضع الأكياس عند الحاوية لا على الرصيف.</small></p><span class="status ok">طبيعي</span></li>
+          <li><span class="topic">الماء</span><p class="what">قطع مجدول في الكرادة داخل، من ٩ صباحاً إلى ٣ عصراً.<small>صيانة الخط الرئيسي. يُنصح المواطنون بخزن الماء قبل الساعة ٩ صباحاً.</small></p><span class="status plan">قطع مجدول</span></li>
+          <li><span class="topic">الطرق</span><p class="what">غلق مسار واحد في شارع أبي نؤاس قرب ساحة الفردوس.<small>أعمال أرصفة حتى نهاية الأسبوع. ممشى النهر مفتوح.</small></p><span class="status plan">مغلق جزئياً</span></li>
+          <li><span class="topic">النفايات</span><p class="what">رفع النفايات وفق الجدول، كل مساء بعد الساعة ٩.<small>تُوضع الأكياس عند الحاوية لا على الرصيف.</small></p><span class="status ok">طبيعي</span></li>
         </ul>
         <p class="note"><a href="alerts.html">كل التنبيهات في بغداد</a></p>
       </section>
 
       <section id="map-s" aria-labelledby="map-h">
         <h2 id="map-h">على الخريطة</h2>
-        <div class="map" id="map" role="img" aria-label="خريطة الكرادة وعليها مكتب البلدية والأعمال الجارية والتنبيهات"></div>
+        <div class="map" id="map" role="img" aria-label="خريطة الكرادة تبيّن مقر البلدية والأعمال الجارية وتنبيهات اليوم"></div>
         <ul class="legend">
-          <li><i style="background:var(--green)"></i>مكتب البلدية</li>
+          <li><i style="background:var(--green)"></i>مقر البلدية</li>
           <li><i style="background:var(--amber)"></i>أعمال جارية</li>
           <li><i style="background:var(--teal)"></i>تنبيه اليوم</li>
         </ul>
-        <p class="note">لا نرسم حدود البلدية إلى أن تنشر الأمانة ملف الحدود الرسمي. المواقع على الخريطة تقريبية.</p>
+        <p class="note">المواقع تقريبية.</p>
       </section>
 
       <section id="works" aria-labelledby="works-h">
-        <h2 id="works-h">أعمال جارية</h2>
+        <h2 id="works-h">الأعمال الجارية</h2>
         <ul class="works">
           <li>
-            <div class="row"><strong>شارع أبي نؤاس والكورنيش <span class="who">أمانة بغداد</span></strong><span class="status ok">المرحلة الأولى مفتوحة</span></div>
-            <p>تأهيل الكورنيش وتوسعة الشارع بين متنزه الشهداء في الكرادة وساحة النسور. افتُتحت المرحلة الأولى في تشرين الأول ٢٠٢٥.</p>
-            <p class="src">المصدر: المعهد العربي لإنماء المدن؛ IraqiNews</p>
+            <div class="row"><strong>شارع أبي نؤاس والكورنيش <span class="who">أمانة بغداد</span></strong><span class="status ok">افتُتحت المرحلة الأولى</span></div>
+            <p>إعادة بناء الكورنيش وتوسعة الشارع بين متنزه شهداء الكرادة وساحة النسور. افتُتحت المرحلة الأولى في تشرين الأول ٢٠٢٥.</p>
+            <p class="src">المصدر: المعهد العربي لإنماء المدن؛ IraqiNews · <a href="about.html#works">الجهات المنفذة للمشاريع الكبرى</a></p>
           </li>
           <li>
             <div class="row"><strong>مجسر القادسية وجسر الجادرية الثاني <span class="who">وزارة الإعمار والإسكان</span></strong><span class="status plan">أكثر من ٨٨٪</span></div>
-            <p>جزء من حزمة فك الاختناقات الوطنية. تنفّذه الوزارة لا الأمانة، فالبلاغات عنه تُحال إليها.</p>
+            <p>ضمن الحزمة الوطنية لفك الاختناقات المرورية، وتنفذه وزارة الإعمار والإسكان. تُحال البلاغات الخاصة بالأعمال إلى الوزارة.</p>
             <p class="src">المصدر: الوزارة عبر IraqiNews، تشرين الأول ٢٠٢٦</p>
           </li>
           <li>
-            <div class="row"><strong>تجديد مشبكات تصريف الأمطار <span class="who">بلدية الكرادة</span></strong><span class="status plan">قبل موسم المطر</span></div>
-            <p>تنظيف المشبكات وتبديل المكسور منها في شارع ٦٢ والعرصات. توضيحي.</p>
+            <div class="row"><strong>تجديد مشبكات الأمطار <span class="who">بلدية الكرادة</span></strong><span class="status plan">قبل موسم الأمطار</span></div>
+            <p>تنظيف المشبكات واستبدال التالف منها في شارع ٦٢ والعرصات. توضيحي.</p>
           </li>
           <li>
-            <div class="row"><strong>زراعة أشجار ظل في الكرادة داخل <span class="who">دائرة المتنزهات</span></strong><span class="status walk">٣٢٠ شجرة من ٥٠٠</span></div>
-            <p>ضمن حملة الأمانة لزراعة مليون شجرة، التي أُطلقت في آذار ٢٠٢٥. أعداد الكرادة توضيحية.</p>
+            <div class="row"><strong>أشجار الظل في الكرادة داخل <span class="who">دائرة المتنزهات</span></strong><span class="status walk">٣٢٠ من أصل ٥٠٠ شجرة</span></div>
+            <p>ضمن حملة الأمانة لزراعة مليون شجرة التي انطلقت في آذار ٢٠٢٥. أرقام الكرادة توضيحية.</p>
           </li>
         </ul>
       </section>
 
       <section id="reports" aria-labelledby="reports-h">
-        <h2 id="reports-h">بلاغات المنطقة <small>تشرين الأول ٢٠٢٦ · توضيحي</small></h2>
+        <h2 id="reports-h">البلاغات في المنطقة <small>تشرين الأول ٢٠٢٦ · توضيحي</small></h2>
         <div class="closed">
           <span class="num">٨١٪</span>
-          <p>من بلاغات الشهر أُغلق<small>١١٥ من ١٤٢ بلاغاً. متوسط الإغلاق ٣ أيام.</small></p>
+          <p>من بلاغات هذا الشهر أُغلقت<small>١١٥ من أصل ١٤٢ بلاغاً. متوسط مدة الإغلاق: ٣ أيام.</small></p>
         </div>
         <div class="table-wrap">
           <table class="data">
-            <caption>البلاغات حسب النوع</caption>
-            <thead><tr><th>النوع</th><th class="n">وصلت</th><th class="n">أُغلقت</th><th class="n">متوسط الإغلاق</th></tr></thead>
+            <caption>البلاغات بحسب النوع</caption>
+            <thead><tr><th>النوع</th><th class="n">الواردة</th><th class="n">مغلق</th><th class="n">متوسط مدة الإغلاق</th></tr></thead>
             <tbody>
               <tr><td>انقطاع الماء</td><td class="n">٣٨</td><td class="n">٣٤</td><td class="n">يومان</td></tr>
               <tr><td>طفح المجاري</td><td class="n">٣١</td><td class="n">٢٣</td><td class="n">٤ أيام</td></tr>
@@ -147,63 +177,37 @@
             </tbody>
           </table>
         </div>
-        <p class="note">يُحسب الإغلاق من وصول البلاغ إلى تأكيد الفريق أن العمل انتهى. البلاغ الذي يُحال إلى جهة أخرى لا يُحسب مغلقاً.</p>
+        <p class="note">يُعدّ البلاغ مغلقاً عندما يؤكد الفريق إنجاز العمل. ولا يُعدّ البلاغ المحال إلى جهة أخرى مغلقاً.</p>
       </section>
 
       <section id="places" aria-labelledby="places-h">
-        <h2 id="places-h">المحلات في البلدية</h2>
-        <p>إن كنت في إحدى هذه المناطق، فبلديتك هي الكرادة.</p>
+        <h2 id="places-h">أحياء البلدية</h2>
+        <p>إذا كنت تسكن في إحدى هذه المناطق فبلديتك هي الكرادة.</p>
         <ul class="places">
           <li>الكرادة داخل</li><li>الكرادة خارج</li><li>العرصات</li><li>المسبح</li><li>الجادرية</li><li>الزوية</li><li>الوحدة</li><li>كمب سارة</li><li>العلوية</li><li>أبو نؤاس</li>
         </ul>
-        <p class="note">قائمة غير رسمية إلى أن تنشر الأمانة حدود المحلات.</p>
+        <p class="note">هذه القائمة للاسترشاد فقط.</p>
       </section>
     </article>
-
-    <aside class="action" aria-label="مكتب البلدية">
-      <div class="side-card">
-        <h2>مكتب البلدية</h2>
-        <dl>
-          <dt>العنوان</dt><dd>الكرادة داخل، قرب ساحة كهرمانة <span class="note">· توضيحي</span></dd>
-          <dt>الدوام</dt><dd>الأحد إلى الخميس، ٨:٣٠ صباحاً – ٢:٣٠ ظهراً</dd>
-          <dt>البريد</dt><dd><span dir="ltr">karrada@amanatbaghdad.gov.iq</span> <span class="note">· لم يُتحقَّق منه</span></dd>
-        </dl>
-        <a class="btn" href="report.html?d=karrada">بلّغ عن مشكلة في الكرادة</a>
-        <p class="note">البلاغ يصل إلى البلدية مباشرة، ويصلك رقم تتابعه.</p>
-      </div>
-      <div class="side-card">
-        <h2>ليست بلديتك؟</h2>
-        <p><a href="districts.html">اختر بلديتك من القائمة</a></p>
-      </div>
-      <nav class="toc" aria-labelledby="toc-h">
-        <h2 id="toc-h">في هذه الصفحة</h2>
-        <ol>
-          <li><a href="#today">اليوم في الكرادة</a></li>
-          <li><a href="#map-s">على الخريطة</a></li>
-          <li><a href="#works">أعمال جارية</a></li>
-          <li><a href="#reports">بلاغات المنطقة</a></li>
-          <li><a href="#places">المحلات</a></li>
-        </ol>
-      </nav>
-    </aside>
   </div>
-  <p class="meta">آخر مراجعة: ٣٠ تشرين الأول ٢٠٢٦ · السكان: الجهاز المركزي للإحصاء، تعداد ٢٠٢٤، عبر citypopulation.de</p>
+  <p class="meta">السكان: الجهاز المركزي للإحصاء، تعداد ٢٠٢٤، عبر citypopulation.de · <a href="data.html#census">كل النواحي</a></p>
 </main>
 
 <footer>
   <div class="wrap">
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
-      <div><h2>الأمانة</h2><ul><li><a href="about.html">عن الأمانة</a></li><li><a href="districts.html">البلديات</a></li><li><a href="services.html#business">المناقصات</a></li></ul></div>
-      <div><h2>الخدمات</h2><ul><li><a href="report.html">بلّغ عن مشكلة</a></li><li><a href="track.html">تابع بلاغك</a></li><li><a href="services.html">كل الخدمات</a></li></ul></div>
-      <div><h2>الموقع</h2><ul><li><a href="about.html#access">إمكانية الوصول</a></li><li><a href="about.html#privacy">الخصوصية</a></li><li><a href="data.html">البيانات المفتوحة</a></li></ul></div>
+      <div><h2>الخدمات</h2><ul><li><a href="services.html">كل الخدمات</a></li><li><a href="report.html">الإبلاغ عن مشكلة</a></li><li><a href="track.html">متابعة بلاغ</a></li><li><a href="alerts.html">التنبيهات</a></li></ul></div>
+      <div><h2>الأخبار</h2><ul><li><a href="news.html">كل الأخبار</a></li></ul></div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">نظرة عامة</a></li><li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li><li><a href="districts.html">البلديات</a></li><li><a href="tenders.html">المناقصات والمزايدات</a></li><li><a href="laws.html">القوانين والخطط</a></li><li><a href="data.html">البيانات المفتوحة</a></li><li><a href="about.html#contact">الاتصال</a></li></ul></div>
+      <div><h2>هذا الموقع</h2><ul><li><a href="site.html#privacy">الخصوصية</a></li><li><a href="site.html#access">إمكانية الوصول</a></li><li><a href="site.html#search">كيف يعمل البحث</a></li></ul></div>
     </div>
     <div class="fine">
-      <p>الخريطة: © مساهمو OpenStreetMap. الختم: إعادة رسم مجتمعية — CC BY-SA 4.0 — Wikimedia Commons.</p>
+      <p class="hotline"><span>الخط الساخن <a href="tel:5628"><strong>٥٦٢٨</strong></a>، من ٨:٣٠ صباحاً إلى ٢ ظهراً</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="فيسبوك" title="فيسبوك"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="إنستغرام" title="إنستغرام"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="إكس" title="إكس"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>الشعار: إعادة رسم مجتمعية — CC BY-SA 4.0 — ويكيميديا كومنز. تُذكر حقوق كل صورة معها.</p>
     </div>
   </div>
 </footer>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
   // Approximate positions. The office and local works are illustrative.
@@ -213,10 +217,10 @@
 
   const css = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   const points = [
-    { at: [33.3113, 44.4241], color: css('--green'), text: 'مكتب بلدية الكرادة (توضيحي)' },
+    { at: [33.3113, 44.4241], color: css('--green'), text: 'مقر بلدية الكرادة (توضيحي)' },
     { at: [33.3100, 44.4120], color: css('--amber'), text: 'شارع أبي نؤاس والكورنيش' },
     { at: [33.2830, 44.3700], color: css('--amber'), text: 'قرب جسر الجادرية (موقع الجسر الثاني تقريبي)' },
-    { at: [33.3085, 44.4431], color: css('--amber'), text: 'مشبكات الأمطار، شارع ٦٢ (توضيحي)' },
+    { at: [33.3085, 44.4431], color: css('--amber'), text: 'مشبكات الأمطار، شارع 62 (توضيحي)' },
     { at: [33.3060, 44.4236], color: css('--teal'), text: 'قطع ماء مجدول، الكرادة داخل' }
   ];
   points.forEach(p => L.circleMarker(p.at, { radius: 8, color: '#fff', weight: 2, fillColor: p.color, fillOpacity: 1 })

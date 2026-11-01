@@ -1,0 +1,167 @@
+# Search results
+
+en: Search — Mayoralty of Baghdad
+ar: البحث — أمانة بغداد
+ku: گەڕان — ئەمانەتی بەغدا
+
+en: Enter a service or problem, such as water cut or building permit.
+ar: اكتب خدمة أو مشكلة، مثل انقطاع الماء أو إجازة البناء.
+ku: خزمەتگوزارییەک یان کێشەیەک بنووسە، وەک بڕانی ئاو یان مۆڵەتی بیناسازی.
+
+# Matching. Arabic folds letter forms and drops the article; Kurdish drops common endings.
+
+raw: const KEEP = new Set(['news', 'this', 'its', 'gas', 'bus', 'was', 'has', 'is', 'us']);
+ar: const fold = s => s.replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي').replace(/[\u064B-\u0652\u0640]/g, '').replace(/[٠-٩]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d));\n  const eastern = n => String(n).replace(/\d/g, c => '٠١٢٣٤٥٦٧٨٩'[c]);
+ku: const fold = s => s.replace(/ي/g, 'ی').replace(/ك/g, 'ک').replace(/ه\u200c/g, 'ە').replace(/\u200c/g, '').replace(/[٠-٩]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d));\n  const eastern = n => String(n).replace(/\d/g, c => '٠١٢٣٤٥٦٧٨٩'[c]);
+
+raw: const SKIP = new Set('a an and are at can do does for from get how i in is it me my need of on or our please the to want what where with your'.split(' '));
+ar: const SKIP = new Set('في من على عن الى او و ما ماذا كيف اين هل اريد عندي لي هذا هذه'.split(' '));
+ku: const SKIP = new Set('لە بۆ و یان چۆن کوێ چی من دەمەوێت بە ئەم ئەو لەسەر'.split(' '));
+
+raw: const stem = w => w.length > 3 && w.endsWith('s') && !w.endsWith('ss') && !KEEP.has(w) ? w.slice(0, -1) : w;
+ar: const stem = w => w.replace(/^(وال|بال|فال|كال|لل|ال)(?=..)/, '');
+ku: const stem = w => { const s = w.replace(/(ەکانی|ەکان|ەکەی|ەکە|یەک|ی)$/, ''); return s.length > 2 ? s : w; };
+
+raw: const words = text => text.toLowerCase().replace(/[^a-z0-9\s-]/g, ' ').split(/[\s-]+/).filter(Boolean).map(stem);
+ar: const words = text => fold(text).replace(/[^\p{L}\p{N}\s-]/gu, ' ').split(/[\s-]+/).filter(Boolean).map(stem);
+ku: const words = text => fold(text).replace(/[^\p{L}\p{M}\p{N}\s-]/gu, ' ').split(/[\s-]+/).filter(Boolean).map(stem);
+
+raw: `${found.length} ${found.length === 1 ? 'page matches' : 'pages match'} “${q}”`
+ar: `الصفحات المطابقة لـ«${q}»: ${eastern(found.length)}`
+ku: `ئەو پەڕانەی لەگەڵ «${q}» دەگونجێن: ${eastern(found.length)}`
+
+raw: `No pages match “${q}”.`
+ar: `لا توجد صفحة تطابق «${q}».`
+ku: `هیچ پەڕەیەک لەگەڵ «${q}» ناگونجێت.`
+
+raw: '<p>Try other words, browse <a href="services.html">all services</a>, or call the hotline, <a href="tel:5628">5628</a>, 8:30 am – 2 pm.</p>'
+ar: '<p>جرّب كلمات أخرى، أو تصفّح <a href="services.html">كل الخدمات</a>، أو اتصل بالخط الساخن <a href="tel:5628">٥٦٢٨</a> من ٨:٣٠ صباحاً إلى ٢ ظهراً.</p>'
+ku: '<p>وشەی تر تاقی بکەرەوە، سەیری <a href="services.html">هەموو خزمەتگوزارییەکان</a> بکە، یان پەیوەندی بە هێڵی گەرمەوە بکە، <a href="tel:5628">٥٦٢٨</a>، لە ٨:٣٠ی بەیانی تا ٢ی دوانیوەڕۆ.</p>'
+
+raw: `${q} — Search — Mayoralty of Baghdad`
+ar: `${q} — البحث — أمانة بغداد`
+ku: `${q} — گەڕان — ئەمانەتی بەغدا`
+
+# Page index: section names
+
+raw: s: 'Report a problem'
+ar: s: 'الإبلاغ عن مشكلة'
+ku: s: 'ڕاپۆرتکردنی کێشە'
+
+raw: s: 'Services'
+ar: s: 'الخدمات'
+ku: s: 'خزمەتگوزارییەکان'
+
+raw: s: 'The Mayoralty'
+ar: s: 'الأمانة'
+ku: s: 'ئەمانەت'
+
+raw: s: 'News'
+ar: s: 'الأخبار'
+ku: s: 'هەواڵەکان'
+
+raw: s: 'This website'
+ar: s: 'هذا الموقع'
+ku: s: 'ئەم ماڵپەڕە'
+
+# Page index: titles, summaries and key words
+
+raw: t: 'Report a water cut', h: 'report.html?cat=انقطاع الماء', s: 'Report a problem', d: 'No water, or very low pressure. Check Alerts first for a scheduled cut.', w: 'water cut no outage pressure supply'
+ar: t: 'الإبلاغ عن انقطاع الماء', h: 'report.html?cat=انقطاع الماء', s: 'Report a problem', d: 'لا يوجد ماء، أو الضغط ضعيف جداً. راجع التنبيهات أولاً للتأكد من عدم وجود قطع مجدول.', w: 'ماء مياه ماي انقطاع قطع مقطوع ضغط ضعيف اسالة'
+ku: t: 'ڕاپۆرتی بڕانی ئاو', h: 'report.html?cat=انقطاع الماء', s: 'Report a problem', d: 'ئاو نییە، یان پەستانی زۆر کەمە. سەرەتا ئاگادارکردنەوەکان ببینە بۆ بڕانی خشتەکراو.', w: 'ئاو بڕان بڕاوە نییە پەستان کەم'
+
+raw: t: 'Report a sewage overflow', h: 'report.html?cat=طفح المجاري', s: 'Report a problem', d: 'Dirty water in the street, or a blocked drain.', w: 'sewage sewer sewerage overflow drain blocked manhole flood flooding smell'
+ar: t: 'الإبلاغ عن طفح المجاري', h: 'report.html?cat=طفح المجاري', s: 'Report a problem', d: 'مياه آسنة في الشارع، أو مشبك مسدود.', w: 'مجاري مجاري طفح صرف صحي مشبك مسدود منهول فيضان رائحة صرف'
+ku: t: 'ڕاپۆرتی ڕژانی ئاوەڕۆ', h: 'report.html?cat=طفح المجاري', s: 'Report a problem', d: 'ئاوی پیس لە شەقام، یان ئاوەڕۆیەکی گیراو.', w: 'ئاوەڕۆ زێراب ڕژان گیراو بۆن لافاو مەجاری'
+
+raw: t: 'Report uncollected waste', h: 'report.html?cat=النفايات', s: 'Report a problem', d: 'Waste not collected, or dumped in a public place.', w: 'waste garbage trash rubbish litter dumped collection bin container'
+ar: t: 'الإبلاغ عن نفايات لم تُرفع', h: 'report.html?cat=النفايات', s: 'Report a problem', d: 'نفايات لم تُرفع، أو رُميت في مكان عام.', w: 'نفايات زبالة قمامة اوساخ ازبال رفع حاوية رمي'
+ku: t: 'ڕاپۆرتی خاشاکی کۆنەکراوە', h: 'report.html?cat=النفايات', s: 'Report a problem', d: 'خاشاکی کۆنەکراوە، یان فڕێدراو لە شوێنێکی گشتی.', w: 'خاشاک زبڵ پاشماوە کۆکردنەوە سەتڵ فڕێدان'
+
+raw: t: 'Report a street light', h: 'report.html?cat=إنارة الشوارع', s: 'Report a problem', d: 'A street light that is out or damaged.', w: 'street light lamp pole dark broken'
+ar: t: 'الإبلاغ عن إنارة الشارع', h: 'report.html?cat=إنارة الشوارع', s: 'Report a problem', d: 'مصباح شارع مطفأ أو تالف.', w: 'انارة اضاءة مصباح عمود ضوء ظلام عاطل'
+ku: t: 'ڕاپۆرتی ڕووناکی شەقام', h: 'report.html?cat=إنارة الشوارع', s: 'Report a problem', d: 'گڵۆپێکی شەقام کە کوژاوە یان تێکچووە.', w: 'ڕووناکی گڵۆپ چرا ستوون تاریک تێکچوو'
+
+raw: t: 'Report a road or pavement problem', h: 'report.html?cat=الطرق والأرصفة', s: 'Report a problem', d: 'A pothole, a broken pavement or standing rainwater.', w: 'road pothole pavement sidewalk street rainwater puddle'
+ar: t: 'الإبلاغ عن مشكلة في الطريق أو الرصيف', h: 'report.html?cat=الطرق والأرصفة', s: 'Report a problem', d: 'حفرة، أو رصيف متضرر، أو تجمع مياه الأمطار.', w: 'طريق شارع حفرة حفر رصيف تبليط اكساء امطار تجمع'
+ku: t: 'ڕاپۆرتی کێشەی ڕێگا یان پیادەڕەو', h: 'report.html?cat=الطرق والأرصفة', s: 'Report a problem', d: 'چاڵ، پیادەڕەوی شکاو یان کۆبوونەوەی ئاوی باران.', w: 'ڕێگا شەقام جادە چاڵ پیادەڕەو باران قیر'
+
+raw: t: 'Report a problem', h: 'report.html', s: 'Report a problem', d: 'Report water, sewage, waste, street light or road problems and get a report number.', w: 'report problem complaint complain issue fault'
+ar: t: 'الإبلاغ عن مشكلة', h: 'report.html', s: 'Report a problem', d: 'أبلغ عن مشكلات الماء أو المجاري أو النفايات أو الإنارة أو الطرق واحصل على رقم بلاغ.', w: 'بلاغ ابلاغ مشكلة شكوى شكاوى عطل'
+ku: t: 'ڕاپۆرتکردنی کێشە', h: 'report.html', s: 'Report a problem', d: 'کێشەکانی ئاو، ئاوەڕۆ، خاشاک، ڕووناکی یان ڕێگا ڕاپۆرت بکە و ژمارەی ڕاپۆرت وەربگرە.', w: 'ڕاپۆرت کێشە سکاڵا گازندە تێکچوون'
+
+raw: t: 'Track a report', h: 'track.html', s: 'Report a problem', d: 'Enter your report number to see its progress and the team handling it.', w: 'track status report number case progress follow'
+ar: t: 'متابعة بلاغ', h: 'track.html', s: 'Report a problem', d: 'أدخل رقم البلاغ لمعرفة مراحل إنجازه والفريق الذي يتولاه.', w: 'متابعة تابع حالة رقم بلاغ شكوى'
+ku: t: 'بەدواداچوونی ڕاپۆرت', h: 'track.html', s: 'Report a problem', d: 'ژمارەی ڕاپۆرتەکەت بنووسە بۆ بینینی قۆناغەکانی و ئەو تیمەی کاری لەسەر دەکات.', w: 'بەدواداچوون دۆخ ژمارە ڕاپۆرت'
+
+raw: t: 'Alerts', h: 'alerts.html', s: 'Services', d: 'Scheduled water cuts, road closures, rain warnings and changes to waste collection.', w: 'alert water cut scheduled road closure closed bridge rain warning collection today'
+ar: t: 'التنبيهات', h: 'alerts.html', s: 'Services', d: 'قطع الماء المجدول، وغلق الطرق، وتحذيرات الأمطار، وتغييرات مواعيد رفع النفايات.', w: 'تنبيه تنبيهات قطع مجدول غلق مغلق جسر امطار مطر تحذير اليوم'
+ku: t: 'ئاگادارکردنەوەکان', h: 'alerts.html', s: 'Services', d: 'بڕانی خشتەکراوی ئاو، داخستنی ڕێگا، ئاگادارکردنەوەی باران و گۆڕانکاری لە کۆکردنەوەی خاشاک.', w: 'ئاگادارکردنەوە بڕان داخستن داخراو پرد باران ئەمڕۆ'
+
+raw: t: 'Building permit', h: 'service-permit.html', s: 'Services', d: 'Documents, fees and steps for a permit to build or extend, and where to apply on Ur.', w: 'permit build building construction extend extension renovate renovation floor annex licence license'
+ar: t: 'إجازة البناء', h: 'service-permit.html', s: 'Services', d: 'المستمسكات والرسوم والخطوات لإجازة البناء أو التوسعة، وجهة التقديم على أور.', w: 'اجازة بناء رخصة بناء توسعة ترميم طابق ملحق تشييد'
+ku: t: 'مۆڵەتی بیناسازی', h: 'service-permit.html', s: 'Services', d: 'بەڵگەنامە، باج و هەنگاوەکانی مۆڵەتی بیناکردن یان فراوانکردن، و شوێنی پێشکەشکردن لە ئور.', w: 'مۆڵەت بیناسازی بیناکردن فراوانکردن نۆژەنکردنەوە نهۆم'
+
+raw: t: 'Water account', h: 'service-water.html', s: 'Services', d: 'Pay a bill, open an account, install or replace a meter, or transfer the account to your name.', w: 'water bill account meter new connection transfer name subscription'
+ar: t: 'حساب الماء', h: 'service-water.html', s: 'Services', d: 'دفع الفاتورة، أو فتح حساب، أو نصب المقياس أو تبديله، أو نقل الحساب إلى اسمك.', w: 'ماء فاتورة حساب مقياس عداد اشتراك ربط نقل اسم'
+ku: t: 'هەژماری ئاو', h: 'service-water.html', s: 'Services', d: 'پارەدانی پسوولە، کردنەوەی هەژمار، دانان یان گۆڕینی میتەر، یان گواستنەوەی هەژمار بۆ ناوی خۆت.', w: 'ئاو پسوولە هەژمار میتەر عەداد گواستنەوە ناو'
+
+raw: t: 'Pay a water bill', h: 'service-water.html#pay', s: 'Services', d: 'Pay online or at the collection office with the account number on your bill.', w: 'water bill pay payment'
+ar: t: 'دفع فاتورة الماء', h: 'service-water.html#pay', s: 'Services', d: 'ادفع إلكترونياً أو في مكتب الجباية برقم الحساب المطبوع على فاتورتك.', w: 'دفع تسديد فاتورة ماء جباية'
+ku: t: 'پارەدانی پسوولەی ئاو', h: 'service-water.html#pay', s: 'Services', d: 'بە ئۆنلاین یان لە نووسینگەی کۆکردنەوەی پارە بە ژمارەی هەژمارەکەی سەر پسوولەکەت بیدە.', w: 'پارەدان پسوولە ئاو'
+
+raw: t: 'Property statement', h: 'service-property.html', s: 'Services', d: 'What a property statement is, when you need one, and how to request it on Ur.', w: 'property statement deed title real estate sale sell buy inheritance inherit plot personal'
+ar: t: 'بيان العقار', h: 'service-property.html', s: 'Services', d: 'ما بيان العقار، ومتى تحتاجه، وكيف تطلبه على أور.', w: 'بيان عقار سند ملكية طابو بيع شراء ارث قطعة شخصي'
+ku: t: 'بەیاننامەی موڵک', h: 'service-property.html', s: 'Services', d: 'بەیاننامەی موڵک چییە، کەی پێویستە و چۆن لە ئور داوای دەکەیت.', w: 'بەیاننامە موڵک سەنەد تاپۆ فرۆشتن کڕین میرات کەسی'
+
+raw: t: 'Sewer connection', h: 'service-sewer.html', s: 'Services', d: 'Connect a new building to the sewer network: documents, steps and where to apply.', w: 'sewer sewerage sewage drain drainage connection connect pipe'
+ar: t: 'ربط المجاري', h: 'service-sewer.html', s: 'Services', d: 'ربط مبنى جديد بشبكة المجاري: المستمسكات والخطوات وجهة التقديم.', w: 'مجاري ربط صرف صحي انبوب ايصال تصريف'
+ku: t: 'گەیاندن بە تۆڕی ئاوەڕۆ', h: 'service-sewer.html', s: 'Services', d: 'گەیاندنی بینایەکی نوێ بە تۆڕی ئاوەڕۆ: بەڵگەنامە، هەنگاو و شوێنی پێشکەشکردن.', w: 'ئاوەڕۆ گەیاندن بەستنەوە بۆری زێراب'
+
+raw: t: 'Municipal fees', h: 'service-fees.html', s: 'Services', d: 'Trade, advertising and cleaning fees: look up what you owe and where to pay.', w: 'fee tax trade advertising sign billboard cleaning shop business pay owe'
+ar: t: 'الرسوم البلدية', h: 'service-fees.html', s: 'Services', d: 'رسوم المهنة والإعلان والنظافة: اعرف المبلغ المستحق ومكان الدفع.', w: 'رسوم رسم ضريبة مهنة اعلان لوحة نظافة محل دفع'
+ku: t: 'باجەکانی شارەوانی', h: 'service-fees.html', s: 'Services', d: 'باجی پیشە، ڕیکلام و پاککردنەوە: بزانە چەندت لەسەرە و لە کوێ دەیدەیت.', w: 'باج پیشە ڕیکلام تابلۆ پاککردنەوە دووکان پارەدان'
+
+raw: t: 'All services', h: 'services.html', s: 'Services', d: 'Every service, grouped by what you want to do.', w: 'service list'
+ar: t: 'كل الخدمات', h: 'services.html', s: 'Services', d: 'كل الخدمات، مجمّعة بحسب ما تريد إنجازه.', w: 'خدمات خدمة قائمة'
+ku: t: 'هەموو خزمەتگوزارییەکان', h: 'services.html', s: 'Services', d: 'هەموو خزمەتگوزارییەکان، بەپێی ئەوەی دەتەوێت بیکەیت.', w: 'خزمەتگوزاری لیست'
+
+raw: t: 'Districts', h: 'districts.html', s: 'The Mayoralty', d: 'Contact details for the 15 municipalities, by bank of the river.', w: 'district municipality office local karkh rusafa kadhimiya mansour shula shuala rasheed dora green zone airport adhamiya shaab sadr ghadeer baghdad new center centre'
+ar: t: 'البلديات', h: 'districts.html', s: 'The Mayoralty', d: 'بيانات الاتصال بالبلديات الخمس عشرة، بحسب جانب النهر.', w: 'بلدية بلديات منطقة الكرخ الرصافة الكاظمية المنصور الشعلة الرشيد الدورة الخضراء المطار الاعظمية الشعب الصدر الغدير بغداد الجديدة مركز'
+ku: t: 'شارەوانییەکان', h: 'districts.html', s: 'The Mayoralty', d: 'زانیاریی پەیوەندی بە ١٥ شارەوانییەکە، بەپێی کەناری ڕووبار.', w: 'شارەوانی ناوچە کەرخ ڕوسافە کازمییە مەنسوور شوعلە ڕەشید دۆرە سەوز فڕۆکەخانە ئەعزەمییە شەعب سەدر غەدیر بەغدای نوێ ناوەند'
+
+raw: t: 'Karrada municipality', h: 'district-karrada.html', s: 'The Mayoralty', d: 'Office, alerts, works under way and reports in Karrada.', w: 'karrada jadriya arasat masbah abu nuwas alwiya wahda zawiya camp sarah'
+ar: t: 'بلدية الكرادة', h: 'district-karrada.html', s: 'The Mayoralty', d: 'المقر والتنبيهات والأعمال الجارية والبلاغات في الكرادة.', w: 'الكرادة الجادرية العرصات المسبح ابو نواس العلوية الوحدة الزوية كمب سارة'
+ku: t: 'شارەوانی کەڕادە', h: 'district-karrada.html', s: 'The Mayoralty', d: 'بارەگا، ئاگادارکردنەوە، کارە بەردەوامەکان و ڕاپۆرتەکان لە کەڕادە.', w: 'کەڕادە جادرییە عەرەسات مەسبەح ئەبو نوواس عەلەوییە وەحدە زەوییە کەمپ سارە'
+
+raw: t: 'News', h: 'news.html', s: 'News', d: 'Mayoralty statements and updates on municipal works, newest first.', w: 'news statement announcement press latest update works park'
+ar: t: 'الأخبار', h: 'news.html', s: 'News', d: 'بيانات الأمانة وآخر أخبار الأعمال البلدية، الأحدث أولاً.', w: 'اخبار خبر بيان اعلان صحافة جديد اعمال متنزه حديقة'
+ku: t: 'هەواڵەکان', h: 'news.html', s: 'News', d: 'ڕاگەیەندراوەکانی ئەمانەت و نوێترین هەواڵی کارە شارەوانییەکان، نوێترین لە سەرەوە.', w: 'هەواڵ ڕاگەیەندراو ڕاگەیاندن نوێ کار پارک'
+
+raw: t: 'The Mayoralty of Baghdad', h: 'about.html', s: 'The Mayoralty', d: 'What the Mayoralty does, responsibilities in Baghdad, and major projects.', w: 'about amanat duties responsibility governorate project metro who'
+ar: t: 'أمانة بغداد', h: 'about.html', s: 'The Mayoralty', d: 'مهام الأمانة، والمسؤوليات في بغداد، والمشاريع الكبرى.', w: 'عن الامانة امانة مهام مسؤولية محافظة مشروع مشاريع مترو من'
+ku: t: 'ئەمانەتی بەغدا', h: 'about.html', s: 'The Mayoralty', d: 'ئەمانەت چی دەکات، بەرپرسیارێتییەکان لە بەغدا و پرۆژە گەورەکان.', w: 'دەربارە ئەمانەت ئەرک بەرپرسیارێتی پارێزگا پرۆژە مێترۆ'
+
+raw: t: 'Leadership and structure', h: 'leadership.html', s: 'The Mayoralty', d: 'The Mayor, the three deputy mayors, and every department\'s email.', w: 'mayor deputy leadership structure department organisation organization chart email'
+ar: t: 'القيادة والهيكل التنظيمي', h: 'leadership.html', s: 'The Mayoralty', d: 'أمين بغداد ووكلاؤه الثلاثة، والبريد الإلكتروني لكل دائرة.', w: 'امين وكيل قيادة هيكل دائرة دوائر تنظيمي بريد'
+ku: t: 'سەرکردایەتی و پێکهاتە', h: 'leadership.html', s: 'The Mayoralty', d: 'ئەمینی بەغدا، سێ جێگرەکەی و ئیمەیڵی هەموو فەرمانگەکان.', w: 'ئەمین جێگر سەرکردایەتی پێکهاتە فەرمانگە ئیمەیڵ'
+
+raw: t: 'Contact the Mayoralty', h: 'about.html#contact', s: 'The Mayoralty', d: 'The 5628 hotline, the Citizen Voice app, and emails for departments and the press.', w: 'contact hotline phone call email 5628 citizen voice app complaint staff meet mayor appointment'
+ar: t: 'الاتصال بالأمانة', h: 'about.html#contact', s: 'The Mayoralty', d: 'الخط الساخن ٥٦٢٨، وتطبيق صوت المواطن، والبريد الإلكتروني للدوائر والإعلام.', w: 'اتصال تواصل خط ساخن هاتف بريد 5628 صوت المواطن تطبيق شكوى مقابلة موعد امين'
+ku: t: 'پەیوەندی بە ئەمانەتەوە', h: 'about.html#contact', s: 'The Mayoralty', d: 'هێڵی گەرمی ٥٦٢٨، ئەپی دەنگی هاووڵاتی و ئیمەیڵی فەرمانگەکان و ڕاگەیاندن.', w: 'پەیوەندی هێڵی گەرم تەلەفۆن ئیمەیڵ 5628 دەنگی هاووڵاتی ئەپ سکاڵا چاوپێکەوتن'
+
+raw: t: 'Tenders and auctions', h: 'tenders.html', s: 'The Mayoralty', d: 'Notices for contracts, and for sales and leases of Mayoralty property.', w: 'tender auction bid bidding contract procurement lease'
+ar: t: 'المناقصات والمزايدات', h: 'tenders.html', s: 'The Mayoralty', d: 'إعلانات العقود، وبيع أملاك الأمانة وإيجارها.', w: 'مناقصة مناقصات مزايدة مزايدات عقد عطاء ايجار'
+ku: t: 'تەندەر و مزایەدەکان', h: 'tenders.html', s: 'The Mayoralty', d: 'ئاگادارییەکانی گرێبەست، و فرۆشتن و بەکرێدانی موڵکی ئەمانەت.', w: 'تەندەر مزایەدە گرێبەست کرێ مناقصە'
+
+raw: t: 'Laws and plans', h: 'laws.html', s: 'The Mayoralty', d: 'The laws, regulations and plans the Mayoralty works under.', w: 'law regulation decision rule plan master development 2030 legal'
+ar: t: 'القوانين والخطط', h: 'laws.html', s: 'The Mayoralty', d: 'القوانين والأنظمة والخطط التي تعمل الأمانة بموجبها.', w: 'قانون قوانين نظام تعليمات قرار خطة تصميم اساسي تنمية 2030'
+ku: t: 'یاسا و پلانەکان', h: 'laws.html', s: 'The Mayoralty', d: 'ئەو یاسا، ڕێسا و پلانانەی ئەمانەت لەژێریاندا کار دەکات.', w: 'یاسا ڕێسا ڕێنمایی بڕیار پلان پەرەپێدان 2030'
+
+raw: t: 'Open data', h: 'data.html', s: 'The Mayoralty', d: 'Population by subdistrict from the 2024 census, and the Mayoralty\'s reports.', w: 'data open census population statistic statistical dataset'
+ar: t: 'البيانات المفتوحة', h: 'data.html', s: 'The Mayoralty', d: 'السكان بحسب الناحية من تعداد ٢٠٢٤، وتقارير الأمانة.', w: 'بيانات مفتوحة تعداد سكان احصاء احصائيات'
+ku: t: 'داتای کراوە', h: 'data.html', s: 'The Mayoralty', d: 'دانیشتوان بەپێی ناحیە لە سەرژمێریی ٢٠٢٤، و ڕاپۆرتەکانی ئەمانەت.', w: 'داتا کراوە سەرژمێری دانیشتوان ئامار'
+
+raw: t: 'Using this website', h: 'site.html', s: 'This website', d: 'Privacy, accessibility and how search works.', w: 'privacy accessibility cookie website search'
+ar: t: 'استخدام هذا الموقع', h: 'site.html', s: 'This website', d: 'الخصوصية، وإمكانية الوصول، وكيف يعمل البحث.', w: 'خصوصية وصول كوكيز موقع بحث'
+ku: t: 'بەکارهێنانی ئەم ماڵپەڕە', h: 'site.html', s: 'This website', d: 'تایبەتێتی، دەستڕاگەیشتن و گەڕان چۆن کار دەکات.', w: 'تایبەتێتی دەستڕاگەیشتن کووکی ماڵپەڕ گەڕان'

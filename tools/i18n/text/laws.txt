@@ -1,0 +1,194 @@
+# Laws and plans
+# Arabic titles are rendered from the English and need checking against each document's own title.
+
+en: Laws and plans — Mayoralty of Baghdad
+ar: القوانين والخطط — أمانة بغداد
+ku: یاسا و پلانەکان — ئەمانەتی بەغدا
+
+en: The laws, regulations and plans that govern the Mayoralty's work. The documents and maps are the official Arabic texts.
+ar: القوانين والأنظمة والخطط التي تحكم عمل الأمانة. الوثائق والخرائط المرفقة هي النصوص الرسمية.
+ku: ئەو یاسا، ڕێسا و پلانانەی کاری ئەمانەت ڕێک دەخەن. بەڵگەنامە و نەخشەکان دەقە فەرمییە عەرەبییەکانن.
+
+en: Plans and maps
+ar: الخطط والخرائط
+ku: پلان و نەخشەکان
+
+en: Baghdad Comprehensive Development Plan 2030 ↗
+ar: خطة التنمية الشاملة لمدينة بغداد 2030 ↗
+ku: پلانی پەرەپێدانی گشتگیری بەغدا 2030 ↗
+
+en: PDF · 9.5 MB
+ar: PDF · 9.5 م.ب
+ku: PDF · 9.5 م.ب
+
+en: The city's long-range plan for land use, transport and services.
+ar: الخطة بعيدة المدى للمدينة في استعمالات الأرض والنقل والخدمات.
+ku: پلانی درێژخایەنی شار بۆ بەکارهێنانی زەوی، گواستنەوە و خزمەتگوزارییەکان.
+
+en: Planning controls for building ↗
+ar: الضوابط التخطيطية للبناء ↗
+ku: ڕێساکانی پلاندانان بۆ بیناسازی ↗
+
+en: PDF
+ar: PDF
+ku: PDF
+
+en: Neighbourhood and street boundaries ↗
+ar: حدود المحلات والشوارع ↗
+ku: سنووری گەڕەک و شەقامەکان ↗
+
+en: Image · 0.9 MB
+ar: صورة · 0.9 م.ب
+ku: وێنە · 0.9 م.ب
+
+en: A scanned map of the city's mahallas and main streets.
+ar: خريطة ممسوحة ضوئياً لمحلات المدينة وشوارعها الرئيسية.
+ku: نەخشەیەکی سکانکراوی مەحەللە و شەقامە سەرەکییەکانی شار.
+
+en: The Mayoralty and the municipalities
+ar: الأمانة والبلديات
+ku: ئەمانەت و شارەوانییەکان
+
+en: Mayoralty of Baghdad Law ↗
+ar: قانون أمانة بغداد ↗
+ku: یاسای ئەمانەتی بەغدا ↗
+
+en: Establishes the Mayoralty and sets out its duties.
+ar: ينص على تأسيس الأمانة ويحدد مهامها.
+ku: ئەمانەت دادەمەزرێنێت و ئەرکەکانی دیاری دەکات.
+
+en: Municipal Administration Law, No. 165 of 1964, as amended ↗
+ar: قانون إدارة البلديات رقم 165 لسنة 1964 المعدّل ↗
+ku: یاسای بەڕێوەبردنی شارەوانییەکان ژمارە 165ی ساڵی 1964، هەموارکراو ↗
+
+en: Governs municipal administration across Iraq.
+ar: ينظم الإدارة البلدية في عموم العراق.
+ku: بەڕێوەبردنی شارەوانی لە سەرانسەری عێراق ڕێکدەخات.
+
+en: Instructions for the Municipal Administration Law ↗
+ar: تعليمات قانون إدارة البلديات ↗
+ku: ڕێنماییەکانی یاسای بەڕێوەبردنی شارەوانییەکان ↗
+
+en: Municipal Revenues Law, No. 1 of 2023 ↗
+ar: قانون الواردات البلدية رقم 1 لسنة 2023 ↗
+ku: یاسای داهاتەکانی شارەوانی ژمارە 1ی ساڵی 2023 ↗
+
+en: Sets the fees municipalities may charge. <0>Pay municipal fees</0>
+ar: يحدد الرسوم التي يجوز للبلديات استيفاؤها. <0>ادفع الرسوم البلدية</0>
+ku: ئەو باجانە دیاری دەکات کە شارەوانییەکان دەتوانن وەریبگرن. <0>باجەکانی شارەوانی بدە</0>
+
+en: Instructions for reporting corruption and illicit gain ↗
+ar: تعليمات الإبلاغ عن الفساد والكسب غير المشروع ↗
+ku: ڕێنماییەکانی ڕاپۆرتکردنی گەندەڵی و قازانجی نایاسایی ↗
+
+en: PDF · 2026
+ar: PDF · 2026
+ku: PDF · 2026
+
+en: Building and streets
+ar: البناء والشوارع
+ku: بیناسازی و شەقامەکان
+
+en: Building Permits Regulation, No. 2 of 2016 ↗
+ar: نظام إجازات البناء رقم 2 لسنة 2016 ↗
+ku: ڕێسای مۆڵەتەکانی بیناسازی ژمارە 2ی ساڵی 2016 ↗
+
+en: Sets out which works need a permit and how permits are granted. <0>Apply for a building permit</0>
+ar: يحدد الأعمال التي تلزمها إجازة وكيفية منح الإجازات. <0>قدّم طلب إجازة بناء</0>
+ku: دیاری دەکات کام کار مۆڵەتی پێویستە و مۆڵەت چۆن دەدرێت. <0>داوای مۆڵەتی بیناسازی بکە</0>
+
+en: Roads and Buildings Regulation, No. 44 of 1935 ↗
+ar: نظام الطرق والأبنية رقم 44 لسنة 1935 ↗
+ku: ڕێسای ڕێگا و بیناکان ژمارە 44ی ساڵی 1935 ↗
+
+en: Dividing land into plots ↗
+ar: إفراز الأراضي ↗
+ku: دابەشکردنی زەوی بۆ پارچە ↗
+
+en: Street Paving Law, No. 85 of 1963 ↗
+ar: قانون تبليط الشوارع رقم 85 لسنة 1963 ↗
+ku: یاسای قیرتاوکردنی شەقامەکان ژمارە 85ی ساڵی 1963 ↗
+
+en: Amendments: <0>first ↗</0>, <1>second ↗</1>, <2>third ↗</2>, <3>fourth ↗</3>
+ar: التعديلات: <0>الأول ↗</0>، <1>الثاني ↗</1>، <2>الثالث ↗</2>، <3>الرابع ↗</3>
+ku: هەموارەکان: <0>یەکەم ↗</0>، <1>دووەم ↗</1>، <2>سێیەم ↗</2>، <3>چوارەم ↗</3>
+
+en: Public land and property
+ar: الأراضي والأملاك العامة
+ku: زەوی و موڵکی گشتی
+
+en: State Property Sale and Lease Law, No. 21 of 2013 ↗
+ar: قانون بيع وإيجار أموال الدولة رقم 21 لسنة 2013 ↗
+ku: یاسای فرۆشتن و بەکرێدانی موڵکی دەوڵەت ژمارە 21ی ساڵی 2013 ↗
+
+en: Governs <0>auctions</0> of Mayoralty property.
+ar: ينظم <0>مزايدات</0> أملاك الأمانة.
+ku: <0>مزایەدەکانی</0> موڵکی ئەمانەت ڕێکدەخات.
+
+en: Instructions for the State Property Sale and Lease Law ↗
+ar: تعليمات قانون بيع وإيجار أموال الدولة ↗
+ku: ڕێنماییەکانی یاسای فرۆشتن و بەکرێدانی موڵکی دەوڵەت ↗
+
+en: Decision 1521 of 1981: building rights on municipal land ↗
+ar: القرار 1521 لسنة 1981: حق البناء على الأراضي البلدية ↗
+ku: بڕیاری 1521ی ساڵی 1981: مافی بیناسازی لەسەر زەویی شارەوانی ↗
+
+en: Decision 154 of 2001: removing encroachments on state and municipal property ↗
+ar: القرار 154 لسنة 2001: إزالة التجاوزات على أملاك الدولة والبلديات ↗
+ku: بڕیاری 154ی ساڵی 2001: لابردنی دەستدرێژی بۆ سەر موڵکی دەوڵەت و شارەوانی ↗
+
+en: Decision 289 of 1980: plots for bakery owners ↗
+ar: القرار 289 لسنة 1980: قطع أراضٍ لأصحاب المخابز ↗
+ku: بڕیاری 289ی ساڵی 1980: پارچە زەوی بۆ خاوەن نانەواخانەکان ↗
+
+en: Amendment to Decision 64 of 1990: land for industrial use ↗
+ar: تعديل القرار 64 لسنة 1990: أراضٍ للاستعمال الصناعي ↗
+ku: هەموارکردنی بڕیاری 64ی ساڵی 1990: زەوی بۆ بەکارهێنانی پیشەسازی ↗
+
+en: Public space
+ar: الفضاء العام
+ku: شوێنی گشتی
+
+en: Decision 296 of 1990: penalties for defacing public space ↗
+ar: القرار 296 لسنة 1990: عقوبات تشويه الأماكن العامة ↗
+ku: بڕیاری 296ی ساڵی 1990: سزای شێواندنی شوێنی گشتی ↗
+
+en: Amended fine ↗
+ar: الغرامة المعدّلة ↗
+ku: غەرامەی هەموارکراو ↗
+
+en: Decision 1107 of 1983: livestock grazing inside municipal limits ↗
+ar: القرار 1107 لسنة 1983: رعي المواشي داخل حدود البلديات ↗
+ku: بڕیاری 1107ی ساڵی 1983: لەوەڕاندنی ئاژەڵ لە ناو سنووری شارەوانی ↗
+
+en: Investment and industry
+ar: الاستثمار والصناعة
+ku: وەبەرهێنان و پیشەسازی
+
+en: Investment Law, No. 13 of 2006, as amended ↗
+ar: قانون الاستثمار رقم 13 لسنة 2006 المعدّل ↗
+ku: یاسای وەبەرهێنان ژمارە 13ی ساڵی 2006، هەموارکراو ↗
+
+en: Industrial Investment Law for the Private and Mixed Sectors, No. 20 of 1998 ↗
+ar: قانون الاستثمار الصناعي للقطاعين الخاص والمختلط رقم 20 لسنة 1998 ↗
+ku: یاسای وەبەرهێنانی پیشەسازی بۆ کەرتی تایبەت و تێکەڵ ژمارە 20ی ساڵی 1998 ↗
+
+en: Industrial Services Law, No. 30 of 2000 ↗
+ar: قانون الخدمات الصناعية رقم 30 لسنة 2000 ↗
+ku: یاسای خزمەتگوزارییە پیشەسازییەکان ژمارە 30ی ساڵی 2000 ↗
+
+en: Which projects it covers ↗
+ar: المشاريع المشمولة به ↗
+ku: ئەو پرۆژانەی دەیانگرێتەوە ↗
+
+en: Legal enquiries
+ar: الاستفسارات القانونية
+ku: پرسیارە یاساییەکان
+
+en: Legal Department: <0>kanonea@amanatbaghdad.gov.iq</0>
+ar: الدائرة القانونية: <0>kanonea@amanatbaghdad.gov.iq</0>
+ku: فەرمانگەی یاسایی: <0>kanonea@amanatbaghdad.gov.iq</0>
+
+en: English titles are translations. The Arabic documents are the official text.
+ar: الوثائق العربية المرفقة هي النص الرسمي.
+ku: ناونیشانە کوردییەکان وەرگێڕانن. بەڵگەنامە عەرەبییەکان دەقی فەرمین.

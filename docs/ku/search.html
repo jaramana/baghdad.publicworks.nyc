@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>گەڕان — ئەمانەتی بەغدا</title>
+<link rel="alternate" hreflang="ar" href="../search.html">
+<link rel="alternate" hreflang="en" href="../en/search.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/base.css">
+<link rel="stylesheet" href="../shared/page.css">
+<link rel="stylesheet" href="../shared/lang-swap.css">
+<script src="../shared/lang-swap.js"></script>
+<style>
+  /* Search results: a plain form, then matching pages best first */
+
+  .find { display: flex; max-width: 36rem; margin-top: 1rem; border: 2px solid var(--ink); border-radius: 4px; overflow: hidden; background: var(--white); }
+  .find:focus-within { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+  .find input { flex: 1; min-width: 0; border: 0; padding: 0.7rem 1rem; font: inherit; font-size: 1.125rem; color: var(--ink); background: transparent; }
+  .find input:focus-visible { outline: none; }
+  .find button { border: 0; border-inline-start: 1.5px solid var(--line); background: transparent; color: var(--green); font: inherit; font-weight: 700; padding-inline: 1.25rem; cursor: pointer; }
+  .find button:hover { background: var(--green-tint); }
+  .count { color: var(--muted); margin: 0 0 0.75rem; }
+</style>
+<script src="../shared/prototype.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">بازدان بۆ ناوەڕۆکی سەرەکی</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">
+      <div><strong>ئەمانەتی بەغدا</strong><span>ماڵپەڕی فەرمی · کۆماری عێراق</span></div>
+    </a>
+    <button class="menu-btn" type="button" popovertarget="menu">لیست</button>
+    <nav class="menu" id="menu" popover aria-label="مێنیوی سەرەکی">
+      <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">داخستن</button>
+      <ul class="nav">
+        <li class="has-sub"><a href="services.html">خزمەتگوزارییەکان</a>
+          <ul class="sub">
+            <li><a href="service-permit.html">مۆڵەتی بیناسازی</a></li>
+            <li><a href="service-water.html">هەژماری ئاو</a></li>
+            <li><a href="service-property.html">بەیاننامەی موڵک</a></li>
+            <li><a href="service-sewer.html">گەیاندن بە تۆڕی ئاوەڕۆ</a></li>
+            <li><a href="service-fees.html">باجەکانی شارەوانی</a></li>
+            <li><a href="alerts.html">ئاگادارکردنەوەکان</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html">ڕاپۆرتکردنی کێشە</a></li>
+        <li><a href="news.html">هەواڵەکان</a></li>
+        <li class="has-sub end"><a href="about.html">ئەمانەت</a>
+          <ul class="sub">
+            <li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li>
+            <li><a href="districts.html">شارەوانییەکان</a></li>
+            <li><a href="tenders.html">تەندەر و مزایەدەکان</a></li>
+            <li><a href="laws.html">یاسا و پلانەکان</a></li>
+            <li><a href="data.html">داتای کراوە</a></li>
+            <li><a href="about.html#contact">پەیوەندی</a></li>
+          </ul>
+        </li>
+        <li class="lang"><a href="../search.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../en/search.html" lang="en" hreflang="en" dir="ltr">English</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <nav class="crumbs" aria-label="ڕێڕەو">
+    <ol>
+      <li><a href="index.html">سەرەکی</a></li>
+    </ol>
+  </nav>
+
+  <header class="page-head">
+    <h1>گەڕان</h1>
+    <form class="find" action="search.html" role="search">
+      <input id="q" name="q" type="search" aria-label="لە ماڵپەڕی ئەمانەت بگەڕێ" autocomplete="off">
+      <button type="submit">گەڕان</button>
+    </form>
+  </header>
+
+  <div class="layout">
+    <section class="guide" aria-live="polite" id="results">
+      <p class="count">خزمەتگوزارییەک یان کێشەیەک بنووسە، وەک بڕانی ئاو یان مۆڵەتی بیناسازی.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">ئەمانەتی بەغدا</div>
+      <div><h2>خزمەتگوزارییەکان</h2><ul><li><a href="services.html">هەموو خزمەتگوزارییەکان</a></li><li><a href="report.html">ڕاپۆرتکردنی کێشە</a></li><li><a href="track.html">بەدواداچوونی ڕاپۆرت</a></li><li><a href="alerts.html">ئاگادارکردنەوەکان</a></li></ul></div>
+      <div><h2>هەواڵەکان</h2><ul><li><a href="news.html">هەموو هەواڵەکان</a></li></ul></div>
+      <div><h2>ئەمانەت</h2><ul><li><a href="about.html">تێڕوانینی گشتی</a></li><li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li><li><a href="districts.html">شارەوانییەکان</a></li><li><a href="tenders.html">تەندەر و مزایەدەکان</a></li><li><a href="laws.html">یاسا و پلانەکان</a></li><li><a href="data.html">داتای کراوە</a></li><li><a href="about.html#contact">پەیوەندی</a></li></ul></div>
+      <div><h2>ئەم ماڵپەڕە</h2><ul><li><a href="site.html#privacy">تایبەتێتی</a></li><li><a href="site.html#access">دەستڕاگەیشتن</a></li><li><a href="site.html#search">گەڕان چۆن کار دەکات</a></li></ul></div>
+    </div>
+    <div class="fine">
+      <p class="hotline"><span>هێڵی گەرم <a href="tel:5628"><strong>٥٦٢٨</strong></a>، لە ٨:٣٠ی بەیانی تا ٢ی دوانیوەڕۆ</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="فەیسبووک" title="فەیسبووک"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="ئینستاگرام" title="ئینستاگرام"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="ئێکس" title="ئێکس"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>مۆر: دووبارە کێشانەوەی کۆمەڵگە — CC BY-SA 4.0 — ویکیمیدیا کۆمنز. مافی هەر وێنەیەک لەگەڵ وێنەکەدا نووسراوە.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Every page and pre-filled report form, with the words people use for it.
+  // Results are ranked by where the query's words match: title, then key words, then summary.
+
+  const PAGES = [
+    { t: 'ڕاپۆرتی بڕانی ئاو', h: 'report.html?cat=انقطاع الماء', s: 'ڕاپۆرتکردنی کێشە', d: 'ئاو نییە، یان پەستانی زۆر کەمە. سەرەتا ئاگادارکردنەوەکان ببینە بۆ بڕانی خشتەکراو.', w: 'ئاو بڕان بڕاوە نییە پەستان کەم' },
+    { t: 'ڕاپۆرتی ڕژانی ئاوەڕۆ', h: 'report.html?cat=طفح المجاري', s: 'ڕاپۆرتکردنی کێشە', d: 'ئاوی پیس لە شەقام، یان ئاوەڕۆیەکی گیراو.', w: 'ئاوەڕۆ زێراب ڕژان گیراو بۆن لافاو مەجاری' },
+    { t: 'ڕاپۆرتی خاشاکی کۆنەکراوە', h: 'report.html?cat=النفايات', s: 'ڕاپۆرتکردنی کێشە', d: 'خاشاکی کۆنەکراوە، یان فڕێدراو لە شوێنێکی گشتی.', w: 'خاشاک زبڵ پاشماوە کۆکردنەوە سەتڵ فڕێدان' },
+    { t: 'ڕاپۆرتی ڕووناکی شەقام', h: 'report.html?cat=إنارة الشوارع', s: 'ڕاپۆرتکردنی کێشە', d: 'گڵۆپێکی شەقام کە کوژاوە یان تێکچووە.', w: 'ڕووناکی گڵۆپ چرا ستوون تاریک تێکچوو' },
+    { t: 'ڕاپۆرتی کێشەی ڕێگا یان پیادەڕەو', h: 'report.html?cat=الطرق والأرصفة', s: 'ڕاپۆرتکردنی کێشە', d: 'چاڵ، پیادەڕەوی شکاو یان کۆبوونەوەی ئاوی باران.', w: 'ڕێگا شەقام جادە چاڵ پیادەڕەو باران قیر' },
+    { t: 'ڕاپۆرتکردنی کێشە', h: 'report.html', s: 'ڕاپۆرتکردنی کێشە', d: 'کێشەکانی ئاو، ئاوەڕۆ، خاشاک، ڕووناکی یان ڕێگا ڕاپۆرت بکە و ژمارەی ڕاپۆرت وەربگرە.', w: 'ڕاپۆرت کێشە سکاڵا گازندە تێکچوون' },
+    { t: 'بەدواداچوونی ڕاپۆرت', h: 'track.html', s: 'ڕاپۆرتکردنی کێشە', d: 'ژمارەی ڕاپۆرتەکەت بنووسە بۆ بینینی قۆناغەکانی و ئەو تیمەی کاری لەسەر دەکات.', w: 'بەدواداچوون دۆخ ژمارە ڕاپۆرت' },
+    { t: 'ئاگادارکردنەوەکان', h: 'alerts.html', s: 'خزمەتگوزارییەکان', d: 'بڕانی خشتەکراوی ئاو، داخستنی ڕێگا، ئاگادارکردنەوەی باران و گۆڕانکاری لە کۆکردنەوەی خاشاک.', w: 'ئاگادارکردنەوە بڕان داخستن داخراو پرد باران ئەمڕۆ' },
+    { t: 'مۆڵەتی بیناسازی', h: 'service-permit.html', s: 'خزمەتگوزارییەکان', d: 'بەڵگەنامە، باج و هەنگاوەکانی مۆڵەتی بیناکردن یان فراوانکردن، و شوێنی پێشکەشکردن لە ئور.', w: 'مۆڵەت بیناسازی بیناکردن فراوانکردن نۆژەنکردنەوە نهۆم' },
+    { t: 'هەژماری ئاو', h: 'service-water.html', s: 'خزمەتگوزارییەکان', d: 'پارەدانی پسوولە، کردنەوەی هەژمار، دانان یان گۆڕینی میتەر، یان گواستنەوەی هەژمار بۆ ناوی خۆت.', w: 'ئاو پسوولە هەژمار میتەر عەداد گواستنەوە ناو' },
+    { t: 'پارەدانی پسوولەی ئاو', h: 'service-water.html#pay', s: 'خزمەتگوزارییەکان', d: 'بە ئۆنلاین یان لە نووسینگەی کۆکردنەوەی پارە بە ژمارەی هەژمارەکەی سەر پسوولەکەت بیدە.', w: 'پارەدان پسوولە ئاو' },
+    { t: 'بەیاننامەی موڵک', h: 'service-property.html', s: 'خزمەتگوزارییەکان', d: 'بەیاننامەی موڵک چییە، کەی پێویستە و چۆن لە ئور داوای دەکەیت.', w: 'بەیاننامە موڵک سەنەد تاپۆ فرۆشتن کڕین میرات کەسی' },
+    { t: 'گەیاندن بە تۆڕی ئاوەڕۆ', h: 'service-sewer.html', s: 'خزمەتگوزارییەکان', d: 'گەیاندنی بینایەکی نوێ بە تۆڕی ئاوەڕۆ: بەڵگەنامە، هەنگاو و شوێنی پێشکەشکردن.', w: 'ئاوەڕۆ گەیاندن بەستنەوە بۆری زێراب' },
+    { t: 'باجەکانی شارەوانی', h: 'service-fees.html', s: 'خزمەتگوزارییەکان', d: 'باجی پیشە، ڕیکلام و پاککردنەوە: بزانە چەندت لەسەرە و لە کوێ دەیدەیت.', w: 'باج پیشە ڕیکلام تابلۆ پاککردنەوە دووکان پارەدان' },
+    { t: 'هەموو خزمەتگوزارییەکان', h: 'services.html', s: 'خزمەتگوزارییەکان', d: 'هەموو خزمەتگوزارییەکان، بەپێی ئەوەی دەتەوێت بیکەیت.', w: 'خزمەتگوزاری لیست' },
+    { t: 'شارەوانییەکان', h: 'districts.html', s: 'ئەمانەت', d: 'زانیاریی پەیوەندی بە ١٥ شارەوانییەکە، بەپێی کەناری ڕووبار.', w: 'شارەوانی ناوچە کەرخ ڕوسافە کازمییە مەنسوور شوعلە ڕەشید دۆرە سەوز فڕۆکەخانە ئەعزەمییە شەعب سەدر غەدیر بەغدای نوێ ناوەند' },
+    { t: 'شارەوانی کەڕادە', h: 'district-karrada.html', s: 'ئەمانەت', d: 'بارەگا، ئاگادارکردنەوە، کارە بەردەوامەکان و ڕاپۆرتەکان لە کەڕادە.', w: 'کەڕادە جادرییە عەرەسات مەسبەح ئەبو نوواس عەلەوییە وەحدە زەوییە کەمپ سارە' },
+    { t: 'هەواڵەکان', h: 'news.html', s: 'هەواڵەکان', d: 'ڕاگەیەندراوەکانی ئەمانەت و نوێترین هەواڵی کارە شارەوانییەکان، نوێترین لە سەرەوە.', w: 'هەواڵ ڕاگەیەندراو ڕاگەیاندن نوێ کار پارک' },
+    { t: 'ئەمانەتی بەغدا', h: 'about.html', s: 'ئەمانەت', d: 'ئەمانەت چی دەکات، بەرپرسیارێتییەکان لە بەغدا و پرۆژە گەورەکان.', w: 'دەربارە ئەمانەت ئەرک بەرپرسیارێتی پارێزگا پرۆژە مێترۆ' },
+    { t: 'سەرکردایەتی و پێکهاتە', h: 'leadership.html', s: 'ئەمانەت', d: 'ئەمینی بەغدا، سێ جێگرەکەی و ئیمەیڵی هەموو فەرمانگەکان.', w: 'ئەمین جێگر سەرکردایەتی پێکهاتە فەرمانگە ئیمەیڵ' },
+    { t: 'پەیوەندی بە ئەمانەتەوە', h: 'about.html#contact', s: 'ئەمانەت', d: 'هێڵی گەرمی ٥٦٢٨، ئەپی دەنگی هاووڵاتی و ئیمەیڵی فەرمانگەکان و ڕاگەیاندن.', w: 'پەیوەندی هێڵی گەرم تەلەفۆن ئیمەیڵ 5628 دەنگی هاووڵاتی ئەپ سکاڵا چاوپێکەوتن' },
+    { t: 'تەندەر و مزایەدەکان', h: 'tenders.html', s: 'ئەمانەت', d: 'ئاگادارییەکانی گرێبەست، و فرۆشتن و بەکرێدانی موڵکی ئەمانەت.', w: 'تەندەر مزایەدە گرێبەست کرێ مناقصە' },
+    { t: 'یاسا و پلانەکان', h: 'laws.html', s: 'ئەمانەت', d: 'ئەو یاسا، ڕێسا و پلانانەی ئەمانەت لەژێریاندا کار دەکات.', w: 'یاسا ڕێسا ڕێنمایی بڕیار پلان پەرەپێدان 2030' },
+    { t: 'داتای کراوە', h: 'data.html', s: 'ئەمانەت', d: 'دانیشتوان بەپێی ناحیە لە سەرژمێریی ٢٠٢٤، و ڕاپۆرتەکانی ئەمانەت.', w: 'داتا کراوە سەرژمێری دانیشتوان ئامار' },
+    { t: 'بەکارهێنانی ئەم ماڵپەڕە', h: 'site.html', s: 'ئەم ماڵپەڕە', d: 'تایبەتێتی، دەستڕاگەیشتن و گەڕان چۆن کار دەکات.', w: 'تایبەتێتی دەستڕاگەیشتن کووکی ماڵپەڕ گەڕان' }
+  ];
+
+  const SKIP = new Set('لە بۆ و یان چۆن کوێ چی من دەمەوێت بە ئەم ئەو لەسەر'.split(' '));
+  const fold = s => s.replace(/ي/g, 'ی').replace(/ك/g, 'ک').replace(/ه\u200c/g, 'ە').replace(/\u200c/g, '').replace(/[٠-٩]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d));
+  const eastern = n => String(n).replace(/\d/g, c => '٠١٢٣٤٥٦٧٨٩'[c]);
+  const stem = w => { const s = w.replace(/(ەکانی|ەکان|ەکەی|ەکە|یەک|ی)$/, ''); return s.length > 2 ? s : w; };
+  const words = text => fold(text).replace(/[^\p{L}\p{M}\p{N}\s-]/gu, ' ').split(/[\s-]+/).filter(Boolean).map(stem);
+
+  PAGES.forEach(p => { p.tw = new Set(words(p.t)); p.ww = new Set(words(p.w)); p.dw = new Set(words(p.d)); });
+
+  function rank(query) {
+    const terms = [...new Set(words(query))].filter(w => !SKIP.has(w));
+    return PAGES
+      .map(p => ({ p, n: terms.reduce((n, w) => n + (p.tw.has(w) ? 3 : p.ww.has(w) ? 2 : p.dw.has(w) ? 1 : 0), 0) }))
+      .filter(r => r.n > 0)
+      .sort((a, b) => b.n - a.n)
+      .slice(0, 8)
+      .map(r => r.p);
+  }
+
+  const q = (new URLSearchParams(location.search).get('q') || '').trim();
+  const box = document.getElementById('results');
+  document.getElementById('q').value = q;
+
+  if (q) {
+    const found = rank(q);
+    const count = document.createElement('p');
+    count.className = 'count';
+    count.textContent = found.length
+      ? `ئەو پەڕانەی لەگەڵ «${q}» دەگونجێن: ${eastern(found.length)}`
+      : `هیچ پەڕەیەک لەگەڵ «${q}» ناگونجێت.`;
+    box.replaceChildren(count);
+    if (found.length) {
+      const list = document.createElement('ul');
+      list.className = 'index-list';
+      for (const p of found) {
+        const li = document.createElement('li');
+        const link = Object.assign(document.createElement('a'), { className: 't', href: p.h, textContent: p.t });
+        const tag = Object.assign(document.createElement('span'), { className: 'tag', textContent: p.s });
+        li.append(link, tag, Object.assign(document.createElement('p'), { textContent: p.d }));
+        list.append(li);
+      }
+      box.append(list);
+    } else {
+      box.insertAdjacentHTML('beforeend', '<p>وشەی تر تاقی بکەرەوە، سەیری <a href="services.html">هەموو خزمەتگوزارییەکان</a> بکە، یان پەیوەندی بە هێڵی گەرمەوە بکە، <a href="tel:5628">٥٦٢٨</a>، لە ٨:٣٠ی بەیانی تا ٢ی دوانیوەڕۆ.</p>');
+    }
+    document.title = `${q} — گەڕان — ئەمانەتی بەغدا`;
+  }
+</script>
+</body>
+</html>

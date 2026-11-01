@@ -1,0 +1,165 @@
+# Home
+
+en: The Tigris in early morning
+ar: نهر دجلة في الصباح الباكر
+ku: ڕووباری دیجلە لە بەیانیی زوودا
+
+en: Find a service
+ar: ابحث عن خدمة
+ku: خزمەتگوزارییەک بدۆزەرەوە
+
+en: For example: water cut
+ar: مثال: انقطاع الماء
+ku: بۆ نموونە: بڕانی ئاو
+
+en: Common searches: <0>water cut</0>, <1>building permit</1>, <2>water bill</2>, <3>property statement</3>
+ar: عمليات بحث شائعة: <0>انقطاع الماء</0>، <1>إجازة البناء</1>، <2>فاتورة الماء</2>، <3>بيان العقار</3>
+ku: گەڕانە باوەکان: <0>بڕانی ئاو</0>، <1>مۆڵەتی بیناسازی</1>، <2>پسوولەی ئاو</2>، <3>بەیاننامەی موڵک</3>
+
+raw: href="search.html?q=water+cut"
+ar: href="search.html?q=انقطاع+الماء"
+ku: href="search.html?q=بڕانی+ئاو"
+
+raw: href="search.html?q=building+permit"
+ar: href="search.html?q=إجازة+البناء"
+ku: href="search.html?q=مۆڵەتی+بیناسازی"
+
+raw: href="search.html?q=water+bill"
+ar: href="search.html?q=فاتورة+الماء"
+ku: href="search.html?q=پسوولەی+ئاو"
+
+raw: href="search.html?q=property+statement"
+ar: href="search.html?q=بيان+العقار"
+ku: href="search.html?q=بەیاننامەی+موڵک"
+
+en: Today in Baghdad
+ar: اليوم في بغداد
+ku: ئەمڕۆ لە بەغدا
+
+en: Friday 30 October 2026 · Updated 10:40 am
+ar: الجمعة 30 تشرين الأول 2026 · آخر تحديث 10:40 صباحاً
+ku: هەینی 30ی تشرینی یەکەمی 2026 · نوێکراوەتەوە 10:40ی بەیانی
+
+en: reports closed today<0>of 260 received since the morning</0>
+ar: بلاغاً أُغلق اليوم<0>من أصل 260 وردت منذ الصباح</0>
+ku: ڕاپۆرت ئەمڕۆ داخران<0>لە کۆی 260 کە لە بەیانییەوە گەیشتوون</0>
+
+en: Walking only
+ar: للمشاة فقط
+ku: تەنها بۆ پیادە
+
+en: Inner Karrada, 9 am – 3 pm.
+ar: الكرادة داخل، من 9 صباحاً إلى 3 عصراً.
+ku: کەڕادەی ناوەوە، لە 9ی بەیانی تا 3ی دوانیوەڕۆ.
+
+en: Martyrs Bridge is open to pedestrians only today.
+ar: جسر الشهداء مفتوح للمشاة فقط اليوم.
+ku: پردی شەهیدان ئەمڕۆ تەنها بۆ پیادە کراوەیە.
+
+en: Collection on schedule in every district.
+ar: رفع النفايات وفق الجدول في كل البلديات.
+ku: کۆکردنەوە بەپێی خشتە لە هەموو شارەوانییەکان.
+
+en: Illustrative data
+ar: بيانات توضيحية
+ku: داتای نموونەیی
+
+en: All alerts
+ar: كل التنبيهات
+ku: هەموو ئاگادارکردنەوەکان
+
+en: Tigris River in early morning — Abdo Alrawii — CC BY-SA 4.0
+ar: نهر دجلة في الصباح الباكر — Abdo Alrawii — CC BY-SA 4.0
+ku: ڕووباری دیجلە لە بەیانیی زوودا — Abdo Alrawii — CC BY-SA 4.0
+
+en: Most requested
+ar: الأكثر طلباً
+ku: زۆرترین داواکراو
+
+en: Check the documents, fees and processing time before you apply.
+ar: اطّلع على المستمسكات والرسوم ومدة الإنجاز قبل التقديم.
+ku: پێش پێشکەشکردن، بەڵگەنامە، باج و ماوەی ئەنجامدان ببینە.
+
+en: On the Ur portal
+ar: على بوابة أور
+ku: لە پۆرتاڵی ئور
+
+en: Pay a bill, open an account, replace a meter or change the name.
+ar: دفع الفاتورة، أو فتح حساب، أو تبديل المقياس، أو نقل الاسم.
+ku: پارەدانی پسوولە، کردنەوەی هەژمار، گۆڕینی میتەر یان گۆڕینی ناو.
+
+en: For sales, inheritance and permits. Issued online.
+ar: للبيع والإرث والإجازات. يصدر إلكترونياً.
+ku: بۆ فرۆشتن، میرات و مۆڵەت. بە ئۆنلاین دەردەچێت.
+
+en: Trade, advertising and cleaning fees, and where to pay them.
+ar: رسوم المهنة والإعلان والنظافة، وأماكن دفعها.
+ku: باجی پیشە، ڕیکلام و پاککردنەوە، و شوێنی دانیان.
+
+en: Enter your report number to check its status.
+ar: أدخل رقم البلاغ لمعرفة حالته.
+ku: ژمارەی ڕاپۆرتەکەت بنووسە بۆ زانینی دۆخەکەی.
+
+en: Your district office
+ar: بلدية منطقتك
+ku: شارەوانی ناوچەکەت
+
+en: Water, sewage, waste, street lights, potholes
+ar: الماء، المجاري، النفايات، إنارة الشوارع، الحفر
+ku: ئاو، ئاوەڕۆ، خاشاک، ڕووناکی شەقام، چاڵ
+
+en: On the website
+ar: عبر الموقع
+ku: لە ماڵپەڕەکەوە
+
+en: Choose the problem, mark the place on the map or type the address, and add a photo.
+ar: اختر المشكلة، وحدّد المكان على الخريطة أو اكتب العنوان، وأرفق صورة.
+ku: کێشەکە هەڵبژێرە، شوێنەکە لەسەر نەخشە دیاری بکە یان ناونیشانەکە بنووسە، و وێنەیەک زیاد بکە.
+
+en: Start a report
+ar: ابدأ البلاغ
+ku: دەست بە ڕاپۆرت بکە
+
+en: Call <0><1>5628</1></0>, 8:30 am – 2 pm, or use the Mayoralty's app, <2>Baghdad Citizen Voice ↗</2>. Reports made by phone or in the app also receive a report number.
+ar: اتصل بالرقم <0><1>5628</1></0> من 8:30 صباحاً إلى 2 ظهراً، أو استخدم تطبيق الأمانة <2>صوت المواطن البغدادي ↗</2>. تحصل البلاغات المقدّمة بالهاتف أو عبر التطبيق على رقم بلاغ أيضاً.
+ku: پەیوەندی بە <0><1>5628</1></0> بکە، لە 8:30ی بەیانی تا 2ی دوانیوەڕۆ، یان ئەپی ئەمانەت بەکاربهێنە، <2>دەنگی هاووڵاتیی بەغدا ↗</2>. ڕاپۆرتەکانی تەلەفۆن و ئەپیش ژمارەی ڕاپۆرت وەردەگرن.
+
+en: Your district
+ar: بلديتك
+ku: شارەوانییەکەت
+
+en: All 15 municipalities
+ar: البلديات الخمس عشرة
+ku: هەموو ١٥ شارەوانییەکە
+
+en: Karkh <0>west bank</0>
+ar: الكرخ <0>الجانب الغربي</0>
+ku: کەرخ <0>کەناری ڕۆژئاوا</0>
+
+en: Rusafa <0>east bank</0>
+ar: الرصافة <0>الجانب الشرقي</0>
+ku: ڕوسافە <0>کەناری ڕۆژهەڵات</0>
+
+en: 21 Oct 2026
+ar: 21 تشرين الأول 2026
+ku: 21ی تشرینی یەکەمی 2026
+
+en: Mayoralty and the Federation of Arab Engineers agree to work together on urban development
+ar: الأمانة واتحاد المهندسين العرب يتفقان على التعاون في التنمية الحضرية
+ku: ئەمانەت و یەکێتیی ئەندازیارانی عەرەب ڕێککەوتن لەسەر هاوکاری لە پەرەپێدانی شاردا
+
+en: 19 Oct 2026
+ar: 19 تشرين الأول 2026
+ku: 19ی تشرینی یەکەمی 2026
+
+en: New 32,000 m² park opens in Kadhimiya
+ar: افتتاح متنزه جديد بمساحة 32,000 م² في الكاظمية
+ku: پارکێکی نوێی 32,000 م² لە کازمییە کرایەوە
+
+en: 6 Oct 2026
+ar: 6 تشرين الأول 2026
+ku: 6ی تشرینی یەکەمی 2026
+
+en: Tree-planting campaign starts in every municipality
+ar: انطلاق حملة تشجير في كل البلديات
+ku: هەڵمەتی دارچاندن لە هەموو شارەوانییەکان دەستی پێکرد

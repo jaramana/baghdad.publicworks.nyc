@@ -1,0 +1,65 @@
+# Using this website
+
+en: Using this website — Mayoralty of Baghdad
+ar: استخدام هذا الموقع — أمانة بغداد
+ku: بەکارهێنانی ئەم ماڵپەڕە — ئەمانەتی بەغدا
+
+en: Using this website
+ar: استخدام هذا الموقع
+ku: بەکارهێنانی ئەم ماڵپەڕە
+
+en: The information this website collects, its accessibility, and how search works.
+ar: المعلومات التي يجمعها هذا الموقع، وإمكانية الوصول إليه، وكيف يعمل البحث.
+ku: ئەو زانیارییانەی ئەم ماڵپەڕە کۆیان دەکاتەوە، دەستڕاگەیشتنی، و گەڕان چۆن کار دەکات.
+
+en: When you report a problem, the Mayoralty keeps its type, location, photo and description. A phone number is optional and is used only to send updates on the report.
+ar: عند الإبلاغ عن مشكلة، تحتفظ الأمانة بنوعها وموقعها وصورتها ووصفها. رقم الهاتف اختياري، ولا يُستخدم إلا لإرسال تحديثات البلاغ.
+ku: کاتێک کێشەیەک ڕاپۆرت دەکەیت، ئەمانەت جۆر، شوێن، وێنە و وەسفەکەی هەڵدەگرێت. ژمارەی تەلەفۆن ئارەزوومەندانەیە و تەنها بۆ ناردنی نوێکاریی ڕاپۆرتەکە بەکاردێت.
+
+en: Report photos are not published.
+ar: لا تُنشر صور البلاغات.
+ku: وێنەی ڕاپۆرتەکان بڵاو ناکرێنەوە.
+
+en: The website carries no advertising and no advertising trackers. Visit statistics are collected only with your consent.
+ar: لا يتضمن الموقع إعلانات ولا أدوات تتبع إعلانية. ولا تُجمع إحصاءات الزيارات إلا بموافقتك.
+ku: ماڵپەڕەکە هیچ ڕیکلام و ئامرازی شوێنکەوتنی ڕیکلامی تێدا نییە. ئاماری سەردان تەنها بە ڕەزامەندیی تۆ کۆدەکرێتەوە.
+
+en: This website is intended for everyone in Baghdad, including people who use a screen reader, enlarge the text or use an older phone.
+ar: هذا الموقع موجّه إلى كل من في بغداد، ومنهم من يستخدم قارئ الشاشة أو يكبّر النص أو يستخدم هاتفاً قديماً.
+ku: ئەم ماڵپەڕە بۆ هەموو کەسێکە لە بەغدا، لەوانە ئەوانەی خوێنەری شاشە بەکاردەهێنن، دەق گەورە دەکەن یان مۆبایلێکی کۆن بەکاردەهێنن.
+
+en: The website aims to meet the WCAG 2.2 AA standard. It has not yet been tested against the standard.
+ar: يسعى الموقع إلى استيفاء معيار WCAG 2.2 AA، ولم يُختبر وفقه بعد.
+ku: ماڵپەڕەکە هەوڵ دەدات پێوەری WCAG 2.2 AA پڕ بکاتەوە. هێشتا بەپێی ئەو پێوەرە تاقی نەکراوەتەوە.
+
+en: Pages can be read without JavaScript. Search, the report form, report tracking, the fee lookup and maps require it.
+ar: يمكن قراءة الصفحات دون جافاسكربت. أما البحث ونموذج البلاغ ومتابعة البلاغات والاستعلام عن الرسوم والخرائط فتتطلبها.
+ku: پەڕەکان بەبێ جاڤاسکریپت دەخوێنرێنەوە. گەڕان، فۆرمی ڕاپۆرت، بەدواداچوونی ڕاپۆرت، پشکنینی باج و نەخشەکان پێویستیان پێیەتی.
+
+en: A problem can be reported by typing the address instead of using the map. Alerts and works shown on district maps are also listed as text.
+ar: يمكن الإبلاغ عن المشكلة بكتابة العنوان بدلاً من استخدام الخريطة. والتنبيهات والأعمال المعروضة على خرائط البلديات مدرجة نصاً أيضاً.
+ku: دەتوانرێت کێشە بە نووسینی ناونیشان ڕاپۆرت بکرێت لەجیاتی بەکارهێنانی نەخشە. ئاگادارکردنەوە و کارەکانی سەر نەخشەی شارەوانییەکان وەک دەقیش لیست کراون.
+
+en: Arabic is the website's primary language.
+ar: العربية هي اللغة الأساسية للموقع.
+ku: عەرەبی زمانی سەرەکیی ماڵپەڕەکەیە.
+
+en: To report an accessibility problem, write to <0>info@amanatbaghdad.gov.iq</0> with the page address and a description of the problem, or call the hotline, <1>5628</1>, 8:30 am – 2 pm.
+ar: للإبلاغ عن مشكلة في إمكانية الوصول، راسل <0>info@amanatbaghdad.gov.iq</0> مع عنوان الصفحة ووصف المشكلة، أو اتصل بالخط الساخن <1>5628</1> من 8:30 صباحاً إلى 2 ظهراً.
+ku: بۆ ڕاپۆرتکردنی کێشەیەکی دەستڕاگەیشتن، بنووسە بۆ <0>info@amanatbaghdad.gov.iq</0> لەگەڵ ناونیشانی پەڕەکە و وەسفی کێشەکە، یان پەیوەندی بە هێڵی گەرمەوە بکە، <1>5628</1>، لە 8:30ی بەیانی تا 2ی دوانیوەڕۆ.
+
+en: Search covers the titles, summaries and keywords of pages on this website, and lists matching pages with the best match first.
+ar: يشمل البحث عناوين صفحات هذا الموقع وملخصاتها وكلماتها المفتاحية، ويعرض الصفحات المطابقة بدءاً بالأكثر مطابقة.
+ku: گەڕان ناونیشان، کورتە و وشە سەرەکییەکانی پەڕەکانی ئەم ماڵپەڕە دەگرێتەوە و پەڕە گونجاوەکان پیشان دەدات، گونجاوترین لە سەرەوە.
+
+en: Only this website is searched.
+ar: يقتصر البحث على هذا الموقع.
+ku: تەنها لەم ماڵپەڕەدا دەگەڕێت.
+
+en: Search terms are not linked to your name or phone number.
+ar: لا ترتبط كلمات البحث باسمك أو رقم هاتفك.
+ku: وشەکانی گەڕان بە ناو یان ژمارەی تەلەفۆنەکەتەوە نابەسترێنەوە.
+
+en: If you cannot find what you need, see <0>all services</0> or call the hotline, <1>5628</1>, 8:30 am – 2 pm.
+ar: إذا لم تجد ما تحتاجه، فاطّلع على <0>كل الخدمات</0> أو اتصل بالخط الساخن <1>5628</1> من 8:30 صباحاً إلى 2 ظهراً.
+ku: ئەگەر ئەوەی پێویستتە نەتدۆزییەوە، سەیری <0>هەموو خزمەتگوزارییەکان</0> بکە یان پەیوەندی بە هێڵی گەرمەوە بکە، <1>5628</1>، لە 8:30ی بەیانی تا 2ی دوانیوەڕۆ.

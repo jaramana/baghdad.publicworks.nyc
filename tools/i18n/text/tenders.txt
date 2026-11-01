@@ -1,0 +1,193 @@
+# Tenders and auctions
+
+en: Tenders and auctions — Mayoralty of Baghdad
+ar: المناقصات والمزايدات — أمانة بغداد
+ku: تەندەر و مزایەدەکان — ئەمانەتی بەغدا
+
+en: Tenders invite bids for Mayoralty contracts, such as building works and supplies. Auctions offer Mayoralty property for sale or lease. Each notice lists its closing date and links to the full terms.
+ar: تدعو المناقصات إلى تقديم العطاءات لعقود الأمانة، كأعمال البناء والتجهيزات. وتعرض المزايدات أملاك الأمانة للبيع أو الإيجار. يتضمن كل إعلان موعد الغلق ورابط الشروط الكاملة.
+ku: تەندەرەکان بانگهێشتی پێشکەشکردنی نرخ دەکەن بۆ گرێبەستەکانی ئەمانەت، وەک کاری بیناسازی و پێداویستی. مزایەدەکان موڵکی ئەمانەت بۆ فرۆشتن یان بەکرێدان پێشکەش دەکەن. هەر ئاگادارییەک کاتی داخستن و بەستەری مەرجە تەواوەکانی تێدایە.
+
+en: There are no open tenders or auctions at present. Recent notices are listed below.
+ar: لا توجد مناقصات أو مزايدات مفتوحة حالياً. الإعلانات الأخيرة مدرجة أدناه.
+ku: ئێستا هیچ تەندەر یان مزایەدەیەکی کراوە نییە. دوایین ئاگادارییەکان لە خوارەوە لیست کراون.
+
+en: Tenders
+ar: المناقصات
+ku: تەندەرەکان
+
+en: Newest first
+ar: الأحدث أولاً
+ku: نوێترین لە سەرەوە
+
+en: Notice
+ar: الإعلان
+ku: ئاگاداری
+
+en: Published
+ar: تاريخ النشر
+ku: بڵاوکرایەوە
+
+en: Closes
+ar: موعد الغلق
+ku: کاتی داخستن
+
+en: Status
+ar: الحالة
+ku: دۆخ
+
+en: Terms
+ar: الشروط
+ku: مەرجەکان
+
+en: Notice ↗
+ar: الإعلان ↗
+ku: ئاگاداری ↗
+
+en: Notice, PDF ↗
+ar: الإعلان، PDF ↗
+ku: ئاگاداری، PDF ↗
+
+en: Notice, Word ↗
+ar: الإعلان، Word ↗
+ku: ئاگاداری، Word ↗
+
+en: Tender 2/2026
+ar: مناقصة 2/2026
+ku: تەندەری 2/2026
+
+en: Tender 1/2026
+ar: مناقصة 1/2026
+ku: تەندەری 1/2026
+
+en: Tender 4/2025
+ar: مناقصة 4/2025
+ku: تەندەری 4/2025
+
+en: Tender 3/2025, reissued
+ar: مناقصة 3/2025، معادة
+ku: تەندەری 3/2025، دووبارە بڵاوکراوەتەوە
+
+en: Tender 2/2025
+ar: مناقصة 2/2025
+ku: تەندەری 2/2025
+
+en: Tender 1/2025, reissued
+ar: مناقصة 1/2025، معادة
+ku: تەندەری 1/2025، دووبارە بڵاوکراوەتەوە
+
+en: Auctions
+ar: المزايدات
+ku: مزایەدەکان
+
+en: Bidding
+ar: تقديم العطاءات
+ku: پێشکەشکردنی نرخ
+
+en: Enquiries about a notice should be sent to the Public Contracts Department, quoting the notice number: <0>alukud@amanatbaghdad.gov.iq</0>
+ar: تُوجَّه الاستفسارات عن أي إعلان إلى دائرة العقود العامة مع ذكر رقمه: <0>alukud@amanatbaghdad.gov.iq</0>
+ku: پرسیار دەربارەی هەر ئاگادارییەک بنێرە بۆ فەرمانگەی گرێبەستە گشتییەکان و ژمارەی ئاگادارییەکە بنووسە: <0>alukud@amanatbaghdad.gov.iq</0>
+
+en: The national tenders platform, <0>itp.iq ↗</0>, lists notices from all ministries and provinces, including the Mayoralty.
+ar: تعرض المنصة الوطنية للمناقصات <0>itp.iq ↗</0> إعلانات كل الوزارات والمحافظات، ومنها الأمانة.
+ku: پلاتفۆرمی نیشتمانیی تەندەرەکان، <0>itp.iq ↗</0>، ئاگادارییەکانی هەموو وەزارەت و پارێزگاکان پیشان دەدات، لەوانە ئەمانەت.
+
+en: Sales and leases are governed by the <0>State Property Sale and Lease Law, No. 21 of 2013</0>.
+ar: يخضع البيع والإيجار لأحكام <0>قانون بيع وإيجار أموال الدولة رقم 21 لسنة 2013</0>.
+ku: فرۆشتن و بەکرێدان بەپێی <0>یاسای فرۆشتن و بەکرێدانی موڵکی دەوڵەت ژمارە 21ی ساڵی 2013</0> ڕێکدەخرێن.
+
+en: Auction 159
+ar: مزايدة 159
+ku: مزایەدەی 159
+
+en: Auction 160
+ar: مزايدة 160
+ku: مزایەدەی 160
+
+en: Auction 161
+ar: مزايدة 161
+ku: مزایەدەی 161
+
+en: Auction 162
+ar: مزايدة 162
+ku: مزایەدەی 162
+
+en: Auction 163
+ar: مزايدة 163
+ku: مزایەدەی 163
+
+en: Auction 164
+ar: مزايدة 164
+ku: مزایەدەی 164
+
+en: Auction 165
+ar: مزايدة 165
+ku: مزایەدەی 165
+
+en: Auction 166
+ar: مزايدة 166
+ku: مزایەدەی 166
+
+en: 19 Apr 2026
+ar: 19 نيسان 2026
+ku: 19ی نیسانی 2026
+
+en: 3 May 2026
+ar: 3 أيار 2026
+ku: 3ی ئایاری 2026
+
+en: 20 Nov 2025
+ar: 20 تشرين الثاني 2025
+ku: 20ی تشرینی دووەمی 2025
+
+en: 9 Dec 2025
+ar: 9 كانون الأول 2025
+ku: 9ی کانوونی یەکەمی 2025
+
+en: 8 Sep 2025
+ar: 8 أيلول 2025
+ku: 8ی ئەیلوولی 2025
+
+en: 28 Sep 2025
+ar: 28 أيلول 2025
+ku: 28ی ئەیلوولی 2025
+
+en: 3 Jul 2025
+ar: 3 تموز 2025
+ku: 3ی تەممووزی 2025
+
+en: 23 Jul 2025
+ar: 23 تموز 2025
+ku: 23ی تەممووزی 2025
+
+en: 9 Apr 2025
+ar: 9 نيسان 2025
+ku: 9ی نیسانی 2025
+
+en: 22 Apr 2025
+ar: 22 نيسان 2025
+ku: 22ی نیسانی 2025
+
+en: 19 Aug 2026
+ar: 19 آب 2026
+ku: 19ی ئابی 2026
+
+en: 1 Sep 2026
+ar: 1 أيلول 2026
+ku: 1ی ئەیلوولی 2026
+
+en: 16 Sep 2026
+ar: 16 أيلول 2026
+ku: 16ی ئەیلوولی 2026
+
+en: 10 Sep 2026
+ar: 10 أيلول 2026
+ku: 10ی ئەیلوولی 2026
+
+en: 24 Aug 2026
+ar: 24 آب 2026
+ku: 24ی ئابی 2026
+
+en: 9 Sep 2026
+ar: 9 أيلول 2026
+ku: 9ی ئەیلوولی 2026

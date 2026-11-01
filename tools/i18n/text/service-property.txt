@@ -1,0 +1,113 @@
+# Property statement
+
+en: Property statement — Mayoralty of Baghdad
+ar: بيان العقار — أمانة بغداد
+ku: بەیاننامەی موڵک — ئەمانەتی بەغدا
+
+en: A property statement is a Mayoralty document that sets out a property's location, size, use and any fees owed on it. You request it online on the Ur portal and receive it there.
+ar: بيان العقار وثيقة تصدرها الأمانة تبيّن موقع العقار ومساحته واستعماله وما يترتب عليه من رسوم. يُطلب إلكترونياً على بوابة أور ويُستلم فيها.
+ku: بەیاننامەی موڵک بەڵگەنامەیەکی ئەمانەتە کە شوێن، ڕووبەر، بەکارهێنان و ئەو باجانەی لەسەر موڵکەکەن دەخاتە ڕوو. بە ئۆنلاین لە پۆرتاڵی ئور داوای دەکەیت و لەوێ وەریدەگریت.
+
+en: About 3 working days
+ar: نحو 3 أيام عمل
+ku: نزیکەی 3 ڕۆژی کار
+
+en: A fixed fee
+ar: رسم ثابت
+ku: باجێکی جێگیر
+
+en: Shown before you pay · illustrative
+ar: يظهر قبل الدفع · توضيحي
+ku: پێش پارەدان پیشان دەدرێت · نموونەیی
+
+en: The application takes about 10 minutes. Have your title deed ready.
+ar: يستغرق تقديم الطلب نحو 10 دقائق. هيّئ سند الملكية.
+ku: پێشکەشکردنی داواکاری نزیکەی 10 خولەک دەخایەنێت. سەنەدی خاوەندارێتییەکەت ئامادە بکە.
+
+en: What the statement contains, the documents, the time and the cost in this guide are illustrative.
+ar: مضمون البيان والمستمسكات والمدة والكلفة الواردة في هذا الدليل توضيحية.
+ku: ناوەڕۆکی بەیاننامەکە، بەڵگەنامەکان، ماوە و تێچووی ئەم ڕێبەرە نموونەیین.
+
+en: When a statement is required
+ar: متى يلزم البيان
+ku: کەی بەیاننامە پێویستە
+
+en: Before you sell or buy a property.
+ar: قبل بيع عقار أو شرائه.
+ku: پێش فرۆشتن یان کڕینی موڵک.
+
+en: To divide an inheritance.
+ar: لتقسيم الإرث.
+ku: بۆ دابەشکردنی میرات.
+
+en: To apply for a <0>building permit</0>.
+ar: لطلب <0>إجازة البناء</0>.
+ku: بۆ داواکردنی <0>مۆڵەتی بیناسازی</0>.
+
+en: To open a <0>water account</0> or transfer one to your name.
+ar: لفتح <0>حساب ماء</0> أو نقله إلى اسمك.
+ku: بۆ کردنەوەی <0>هەژماری ئاو</0> یان گواستنەوەی بۆ ناوی خۆت.
+
+en: A property statement is different from a title deed. Title deeds are issued by the Real Estate Registration Department of the Ministry of Justice.
+ar: يختلف بيان العقار عن سند الملكية. تصدر سندات الملكية عن دائرة التسجيل العقاري في وزارة العدل.
+ku: بەیاننامەی موڵک جیاوازە لە سەنەدی خاوەندارێتی. سەنەدی خاوەندارێتی لەلایەن فەرمانگەی تۆماری خانووبەرەی وەزارەتی دادەوە دەردەچێت.
+
+en: Property and plot numbers
+ar: رقم العقار ورقم القطعة
+ku: ژمارەی موڵک و ژمارەی پارچە زەوی
+
+en: Both are written on the title deed.
+ar: كلاهما مدوّن في سند الملكية.
+ku: هەردووکیان لەسەر سەنەدی خاوەندارێتی نووسراون.
+
+en: A copy of the title deed
+ar: نسخة من سند الملكية
+ku: کۆپییەکی سەنەدی خاوەندارێتی
+
+en: A clear copy of both sides.
+ar: نسخة واضحة للوجهين.
+ku: کۆپییەکی ڕوونی هەردوو ڕووەکەی.
+
+en: Choose "Open a property statement" and enter the property and plot numbers.
+ar: اختر «فتح بيان عقار» وأدخل رقم العقار ورقم القطعة.
+ku: «فتح بيان عقار» هەڵبژێرە و ژمارەی موڵک و پارچە زەوییەکە بنووسە.
+
+en: Pay the fee <0>Ur portal</0>
+ar: ادفع الرسم <0>بوابة أور</0>
+ku: باجەکە بدە <0>پۆرتاڵی ئور</0>
+
+en: The amount is shown before you pay.
+ar: يظهر المبلغ قبل الدفع.
+ku: بڕەکە پێش پارەدان پیشان دەدرێت.
+
+en: Receive the statement
+ar: استلم البيان
+ku: بەیاننامەکە وەربگرە
+
+en: The statement is issued as a file on Ur. Print it or send it to the office that requested it.
+ar: يصدر البيان ملفاً على أور. اطبعه أو أرسله إلى الجهة التي طلبته.
+ku: بەیاننامەکە وەک فایلێک لە ئور دەردەچێت. چاپی بکە یان بینێرە بۆ ئەو نووسینگەیەی داوای کردووە.
+
+en: Personal statement
+ar: البيان الشخصي
+ku: بەیاننامەی کەسی
+
+en: A personal statement lists the properties registered in your name and what is owed on them. You also request it on the Ur portal, with the service "Request a personal statement".
+ar: يبيّن البيان الشخصي العقارات المسجلة باسمك وما يترتب عليها. ويُطلب أيضاً على بوابة أور بخدمة «طلب فتح بيان شخصي».
+ku: بەیاننامەی کەسی ئەو موڵکانە دەخاتە ڕوو کە بە ناوی تۆوە تۆمارکراون و ئەوەی لەسەریانە. ئەمیش لە پۆرتاڵی ئور بە خزمەتگوزاریی «طلب فتح بيان شخصي» داوا دەکەیت.
+
+en: You need a property statement to apply.
+ar: تحتاج إلى بيان عقار للتقديم.
+ku: بۆ پێشکەشکردن بەیاننامەی موڵکت پێویستە.
+
+en: Open an account or transfer it to your name.
+ar: فتح حساب أو نقله إلى اسمك.
+ku: کردنەوەی هەژمار یان گواستنەوەی بۆ ناوی خۆت.
+
+en: Cleaning fees on the property.
+ar: رسوم النظافة على العقار.
+ku: باجی پاککردنەوەی موڵکەکە.
+
+en: Service on Ur: "Open a property statement"
+ar: الخدمة على أور: «فتح بيان عقار»
+ku: خزمەتگوزاری لە ئور: «فتح بيان عقار»

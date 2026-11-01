@@ -3,17 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>بيان عقار — أمانة بغداد</title>
+<title>بيان العقار — أمانة بغداد</title>
+<link rel="alternate" hreflang="ckb" href="ku/service-property.html">
+<link rel="alternate" hreflang="en" href="en/service-property.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/page.css">
 <link rel="stylesheet" href="shared/lang-swap.css">
 <script src="shared/lang-swap.js"></script>
-<link rel="stylesheet" href="shared/page.css">
+
 <script src="shared/prototype.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">انتقل إلى المحتوى الرئيسي</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -25,110 +29,114 @@
     <nav class="menu" id="menu" popover aria-label="القائمة الرئيسية">
       <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">إغلاق</button>
       <ul class="nav">
-        <li><a href="services.html" aria-current="page">الخدمات</a></li>
-        <li><a href="report.html">بلّغ عن مشكلة</a></li>
-        <li><a href="districts.html">البلديات</a></li>
-        <li><a href="city-tigris.html">المدينة</a></li>
-        <li class="lang"><a href="ku/index.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/service-property.html" lang="en" hreflang="en" dir="ltr">English</a></li>
+        <li class="has-sub"><a href="services.html" aria-current="true">الخدمات</a>
+          <ul class="sub">
+            <li><a href="service-permit.html">إجازة البناء</a></li>
+            <li><a href="service-water.html">حساب الماء</a></li>
+            <li><a href="service-property.html" aria-current="page">بيان العقار</a></li>
+            <li><a href="service-sewer.html">ربط المجاري</a></li>
+            <li><a href="service-fees.html">الرسوم البلدية</a></li>
+            <li><a href="alerts.html">التنبيهات</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html">الإبلاغ عن مشكلة</a></li>
+        <li><a href="news.html">الأخبار</a></li>
+        <li class="has-sub end"><a href="about.html">الأمانة</a>
+          <ul class="sub">
+            <li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li>
+            <li><a href="districts.html">البلديات</a></li>
+            <li><a href="tenders.html">المناقصات والمزايدات</a></li>
+            <li><a href="laws.html">القوانين والخطط</a></li>
+            <li><a href="data.html">البيانات المفتوحة</a></li>
+            <li><a href="about.html#contact">الاتصال</a></li>
+          </ul>
+        </li>
+        <li class="lang"><a href="ku/service-property.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/service-property.html" lang="en" hreflang="en" dir="ltr">English</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <nav class="crumbs" aria-label="مسار الصفحة">
+<main class="wrap" id="main">
+  <nav class="crumbs" aria-label="مسار التنقل">
     <ol>
       <li><a href="home.html">الرئيسية</a></li>
       <li><a href="services.html">الخدمات</a></li>
-      <li><a href="services.html#building">البناء والعقار</a></li>
-      <li aria-current="page">بيان عقار</li>
     </ol>
   </nav>
 
   <header class="page-head">
-    <p class="kicker">خدمة · البناء والعقار</p>
-    <h1>بيان عقار</h1>
-    <p class="lede">بيان العقار وثيقة من الأمانة تبيّن حال العقار: موقعه ومساحته واستعماله وما عليه من رسوم. تطلبه إلكترونياً على بوابة أور، ويصلك هناك.</p>
+    <h1>بيان العقار</h1>
+    <p class="lede">بيان العقار وثيقة تصدرها الأمانة تبيّن موقع العقار ومساحته واستعماله وما يترتب عليه من رسوم. يُطلب إلكترونياً على بوابة أور ويُستلم فيها.</p>
     <ul class="facts">
-      <li><span class="k">أين تقدّم</span><p class="v">بوابة أور</p><p class="s">تحتاج حساباً على أور</p></li>
+      <li><span class="k">جهة التقديم</span><p class="v">بوابة أور</p><p class="s">يلزم حساب على أور</p></li>
       <li><span class="k">المدة</span><p class="v">نحو ٣ أيام عمل</p><p class="s">توضيحي</p></li>
       <li><span class="k">الكلفة</span><p class="v">رسم ثابت</p><p class="s">يظهر قبل الدفع · توضيحي</p></li>
     </ul>
   </header>
 
   <div class="layout">
+    <div class="start">
+      <h2>ابدأ طلبك</h2>
+      <p>يستغرق تقديم الطلب نحو ١٠ دقائق. هيّئ سند الملكية.</p>
+      <a class="btn" href="https://eservice.ur.gov.iq/customer/applyService/10928" rel="external">قدّم على بوابة أور ↗</a>
+      <p>يلزم حساب على أور. <a href="https://ur.gov.iq" rel="external">أنشئ حساباً على أور</a></p>
+      <div class="alt">
+        <p>ويمكنك أيضاً التقديم حضورياً في <a href="districts.html">بلدية منطقتك</a> خلال ساعات الدوام.</p>
+      </div>
+    </div>
+
     <article class="guide">
-      <p class="illustrative">مكان التقديم على بوابة أور مؤكَّد. محتوى البيان والمستندات والمدة والكلفة توضيحية في هذا النموذج، إلى أن تُراجع مع دائرة العقارات.</p>
+      <p class="illustrative">مضمون البيان والمستمسكات والمدة والكلفة الواردة في هذا الدليل توضيحية.</p>
 
       <section id="need" aria-labelledby="need-h">
-        <h2 id="need-h">متى تحتاجه؟</h2>
+        <h2 id="need-h">متى يلزم البيان</h2>
         <ul>
-          <li>قبل أن تبيع عقاراً أو تشتريه.</li>
+          <li>قبل بيع عقار أو شرائه.</li>
           <li>لتقسيم الإرث.</li>
-          <li>لطلب <a href="service-permit.html">إجازة بناء</a>.</li>
+          <li>لطلب <a href="service-permit.html">إجازة البناء</a>.</li>
           <li>لفتح <a href="service-water.html#new">حساب ماء</a> أو نقله إلى اسمك.</li>
         </ul>
-        <p class="aside-note">بيان العقار غير سند الملكية. السند تصدره دائرة التسجيل العقاري في وزارة العدل، والبيان تصدره الأمانة.</p>
+        <p class="aside-note">يختلف بيان العقار عن سند الملكية. تصدر سندات الملكية عن دائرة التسجيل العقاري في وزارة العدل.</p>
       </section>
 
       <section id="docs" aria-labelledby="docs-h">
         <h2 id="docs-h">ما تحتاجه</h2>
         <ul class="checklist">
-          <li><div><strong>رقم العقار والمقاطعة</strong><span>مكتوبان في سند الملكية.</span></div></li>
-          <li><div><strong>صورة سند الملكية</strong><span>واضحة، من الجهتين.</span></div></li>
-          <li><div><strong>البطاقة الوطنية الموحدة</strong><span>لمالك العقار، أو وكالة إن قدّم غيره.</span></div></li>
+          <li><div><strong>رقم العقار ورقم القطعة</strong><span>كلاهما مدوّن في سند الملكية.</span></div></li>
+          <li><div><strong>نسخة من سند الملكية</strong><span>نسخة واضحة للوجهين.</span></div></li>
+          <li><div><strong>البطاقة الوطنية الموحدة</strong><span>للمالك، أو وكالة إذا قدّم الطلب شخص آخر.</span></div></li>
         </ul>
       </section>
 
       <section id="steps" aria-labelledby="steps-h">
         <h2 id="steps-h">الخطوات</h2>
         <ol class="steps">
-          <li><div><strong>قدّم الطلب <span class="where">بوابة أور</span></strong><span>اختر «فتح بيان عقار» وأدخل رقم العقار والمقاطعة.</span></div></li>
+          <li><div><strong>قدّم الطلب <span class="where">بوابة أور</span></strong><span>اختر «فتح بيان عقار» وأدخل رقم العقار ورقم القطعة.</span></div></li>
           <li><div><strong>ادفع الرسم <span class="where">بوابة أور</span></strong><span>يظهر المبلغ قبل الدفع.</span></div></li>
-          <li><div><strong>استلم البيان</strong><span>يصلك ملفاً على أور، تطبعه أو ترسله إلى الجهة التي طلبته.</span></div></li>
+          <li><div><strong>استلم البيان</strong><span>يصدر البيان ملفاً على أور. اطبعه أو أرسله إلى الجهة التي طلبته.</span></div></li>
         </ol>
       </section>
 
       <section id="personal" aria-labelledby="personal-h">
         <h2 id="personal-h">البيان الشخصي</h2>
-        <p>يبيّن البيان الشخصي العقارات المسجّلة باسمك وما عليها. تطلبه أيضاً على بوابة أور بخدمة «طلب فتح بيان شخصي».</p>
+        <p>يبيّن البيان الشخصي العقارات المسجلة باسمك وما يترتب عليها. ويُطلب أيضاً على بوابة أور بخدمة «طلب فتح بيان شخصي».</p>
       </section>
     </article>
-
-    <aside class="action" aria-label="ابدأ الطلب">
-      <div class="start">
-        <h2>ابدأ الطلب</h2>
-        <p>يستغرق التقديم نحو ١٠ دقائق إن كان السند أمامك.</p>
-        <a class="btn" href="https://eservice.ur.gov.iq/customer/applyService/10928" rel="external">قدّم على بوابة أور ↗</a>
-        <p>لا تملك حساباً؟ <a href="https://ur.gov.iq" rel="external">أنشئ حساباً على أور</a></p>
-        <div class="alt">
-          <p>تفضّل الحضور؟ قدّم في <a href="districts.html">مكتب بلديتك</a> خلال الدوام الرسمي.</p>
-        </div>
-      </div>
-      <nav class="toc" aria-labelledby="toc-h">
-        <h2 id="toc-h">في هذه الصفحة</h2>
-        <ol>
-          <li><a href="#need">متى تحتاجه؟</a></li>
-          <li><a href="#docs">ما تحتاجه</a></li>
-          <li><a href="#steps">الخطوات</a></li>
-          <li><a href="#personal">البيان الشخصي</a></li>
-        </ol>
-      </nav>
-    </aside>
   </div>
 
   <section class="block ruled" aria-labelledby="related-h">
     <div class="block-head"><h2 id="related-h">خدمات ذات صلة</h2></div>
     <ul class="related">
-      <li><a href="service-permit.html"><strong>إجازة البناء</strong><p>تحتاج بيان العقار للتقديم.</p></a></li>
+      <li><a href="service-permit.html"><strong>إجازة البناء</strong><p>تحتاج إلى بيان عقار للتقديم.</p></a></li>
       <li><a href="service-water.html"><strong>حساب الماء</strong><p>فتح حساب أو نقله إلى اسمك.</p></a></li>
       <li><a href="service-fees.html"><strong>الرسوم البلدية</strong><p>رسوم النظافة على العقار.</p></a></li>
     </ul>
     <div class="feedback">
-      <p>هل وجدت ما تحتاجه في هذه الصفحة؟</p>
+      <p>هل كانت هذه الصفحة مفيدة؟</p>
       <div class="btns"><button class="btn" type="button">نعم</button><button class="btn" type="button">لا</button></div>
     </div>
-    <p class="meta">آخر مراجعة: ٣٠ تشرين الأول ٢٠٢٦ · الخدمة على أور: «فتح بيان عقار»</p>
+    <p class="meta">الخدمة على أور: «فتح بيان عقار»</p>
   </section>
 </main>
 
@@ -136,12 +144,14 @@
   <div class="wrap">
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
-      <div><h2>الأمانة</h2><ul><li><a href="about.html">عن الأمانة</a></li><li><a href="districts.html">البلديات</a></li><li><a href="services.html#business">المناقصات</a></li></ul></div>
-      <div><h2>الخدمات</h2><ul><li><a href="report.html">بلّغ عن مشكلة</a></li><li><a href="track.html">تابع بلاغك</a></li><li><a href="services.html">كل الخدمات</a></li></ul></div>
-      <div><h2>الموقع</h2><ul><li><a href="about.html#access">إمكانية الوصول</a></li><li><a href="about.html#privacy">الخصوصية</a></li><li><a href="data.html">البيانات المفتوحة</a></li></ul></div>
+      <div><h2>الخدمات</h2><ul><li><a href="services.html">كل الخدمات</a></li><li><a href="report.html">الإبلاغ عن مشكلة</a></li><li><a href="track.html">متابعة بلاغ</a></li><li><a href="alerts.html">التنبيهات</a></li></ul></div>
+      <div><h2>الأخبار</h2><ul><li><a href="news.html">كل الأخبار</a></li></ul></div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">نظرة عامة</a></li><li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li><li><a href="districts.html">البلديات</a></li><li><a href="tenders.html">المناقصات والمزايدات</a></li><li><a href="laws.html">القوانين والخطط</a></li><li><a href="data.html">البيانات المفتوحة</a></li><li><a href="about.html#contact">الاتصال</a></li></ul></div>
+      <div><h2>هذا الموقع</h2><ul><li><a href="site.html#privacy">الخصوصية</a></li><li><a href="site.html#access">إمكانية الوصول</a></li><li><a href="site.html#search">كيف يعمل البحث</a></li></ul></div>
     </div>
     <div class="fine">
-      <p>الختم: إعادة رسم مجتمعية — CC BY-SA 4.0 — Wikimedia Commons.</p>
+      <p class="hotline"><span>الخط الساخن <a href="tel:5628"><strong>٥٦٢٨</strong></a>، من ٨:٣٠ صباحاً إلى ٢ ظهراً</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="فيسبوك" title="فيسبوك"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="إنستغرام" title="إنستغرام"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="إكس" title="إكس"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>الشعار: إعادة رسم مجتمعية — CC BY-SA 4.0 — ويكيميديا كومنز. تُذكر حقوق كل صورة معها.</p>
     </div>
   </div>
 </footer>

@@ -3,28 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>بلّغ عن مشكلة — أمانة بغداد</title>
+<title>الإبلاغ عن مشكلة — أمانة بغداد</title>
+<link rel="alternate" hreflang="ckb" href="ku/report.html">
+<link rel="alternate" hreflang="en" href="en/report.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Kufi+Arabic:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="shared/page.css">
 <link rel="stylesheet" href="shared/lang-swap.css">
 <script src="shared/lang-swap.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <style>
   /* Report flow: four short steps, one at a time, then a receipt */
 
-  .crumbs { font-size: 0.875rem; color: var(--muted); padding-top: 1.5rem; }
-  .crumbs ol { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0; padding: 0; list-style: none; }
-  .crumbs li + li::before { content: "‹"; margin-inline-end: 0.4rem; color: #a9b2ac; }
-  .crumbs a { color: var(--muted); }
-
-  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 19rem; gap: clamp(2rem, 5vw, 4rem); align-items: start; padding-block: 1.25rem 4rem; }
+  .layout { padding-block: 1.25rem 4rem; max-width: 50rem; }
   .flow { min-width: 0; }
 
-  /* Help column */
-  .help { position: sticky; top: 7rem; display: grid; gap: 1rem; padding-top: 0.5rem; }
-  .help section { background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 4px; padding: 1rem 1.15rem; }
+  /* Help: plain blocks under the form */
+  .help { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.75rem; margin-top: 3rem; }
+  .help section { border-top: 2px solid var(--green); padding-top: 0.8rem; }
   .help h2 { font-size: 1rem; margin-bottom: 0.4rem; }
   .help p { margin: 0.3rem 0; font-size: 0.9375rem; color: var(--muted); }
   .help ol { margin: 0.3rem 0 0; padding-inline-start: 1.2rem; font-size: 0.9375rem; }
@@ -32,6 +30,16 @@
   .flow h1 { font-size: clamp(1.9rem, 4.5vw, 2.6rem); font-weight: 800; }
   .lede { margin: 0.4rem 0 0; color: var(--muted); }
   .danger { font-size: 0.9375rem; border: 1px solid var(--line); border-inline-start: 4px solid var(--amber); background: var(--white); padding: 0.6rem 0.9rem; margin: 1.25rem 0 0; }
+
+  /* Track box: the other way into reports, headlined under the title */
+  .track-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin-top: 1.25rem; padding-block: 0.9rem; border-block: 1px solid var(--line); }
+  .track-row label { font-weight: 600; }
+  .track-box { display: flex; border: 1.5px solid var(--ink); border-radius: 4px; overflow: hidden; background: var(--white); }
+  .track-box:focus-within { border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+  .track-box input { width: 9rem; border: 0; padding: 0.45rem 0.75rem; font: inherit; color: var(--ink); background: transparent; }
+  .track-box input:focus-visible { outline: none; }
+  .track-box button { border: 0; border-inline-start: 1.5px solid var(--line); background: transparent; color: var(--green); font: inherit; font-weight: 700; padding-inline: 1rem; cursor: pointer; }
+  .track-box button:hover { background: var(--green-tint); }
 
   /* Progress: four segments on one line */
   .progress { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem; margin: 1.75rem 0 0.5rem; padding: 0; list-style: none; }
@@ -102,8 +110,6 @@
   .receipt .actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.25rem; }
 
   @media (max-width: 860px) {
-    .layout { grid-template-columns: 1fr; }
-    .help { position: static; }
   }
   @media (max-width: 640px) {
     .cats { grid-template-columns: 1fr 1fr; }
@@ -115,6 +121,7 @@
 <script src="shared/prototype.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">انتقل إلى المحتوى الرئيسي</a>
 
 <header class="masthead">
   <div class="wrap">
@@ -126,38 +133,63 @@
     <nav class="menu" id="menu" popover aria-label="القائمة الرئيسية">
       <button class="menu-close" type="button" popovertarget="menu" popovertargetaction="hide">إغلاق</button>
       <ul class="nav">
-        <li><a href="services.html">الخدمات</a></li>
-        <li><a href="report.html" aria-current="page">بلّغ عن مشكلة</a></li>
-        <li><a href="districts.html">البلديات</a></li>
-        <li><a href="city-tigris.html">المدينة</a></li>
+        <li class="has-sub"><a href="services.html">الخدمات</a>
+          <ul class="sub">
+            <li><a href="service-permit.html">إجازة البناء</a></li>
+            <li><a href="service-water.html">حساب الماء</a></li>
+            <li><a href="service-property.html">بيان العقار</a></li>
+            <li><a href="service-sewer.html">ربط المجاري</a></li>
+            <li><a href="service-fees.html">الرسوم البلدية</a></li>
+            <li><a href="alerts.html">التنبيهات</a></li>
+          </ul>
+        </li>
+        <li><a href="report.html" aria-current="page">الإبلاغ عن مشكلة</a></li>
+        <li><a href="news.html">الأخبار</a></li>
+        <li class="has-sub end"><a href="about.html">الأمانة</a>
+          <ul class="sub">
+            <li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li>
+            <li><a href="districts.html">البلديات</a></li>
+            <li><a href="tenders.html">المناقصات والمزايدات</a></li>
+            <li><a href="laws.html">القوانين والخطط</a></li>
+            <li><a href="data.html">البيانات المفتوحة</a></li>
+            <li><a href="about.html#contact">الاتصال</a></li>
+          </ul>
+        </li>
         <li class="lang"><a href="ku/report.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/report.html" lang="en" hreflang="en" dir="ltr">English</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <nav class="crumbs" aria-label="مسار الصفحة">
+<main class="wrap" id="main">
+  <nav class="crumbs" aria-label="مسار التنقل">
     <ol>
       <li><a href="home.html">الرئيسية</a></li>
-      <li aria-current="page">بلّغ عن مشكلة</li>
     </ol>
   </nav>
 
   <div class="layout">
   <div class="flow">
+    <form id="track" action="track.html" hidden></form>
     <form id="report" novalidate>
 
       <div id="intro">
-        <h1>بلّغ عن مشكلة</h1>
-        <p class="lede">أربع خطوات قصيرة. تحصل في النهاية على رقم بلاغ تتابع به حالته. تفضّل واتساب؟ <a href="home.html#report">بلّغ عبر واتساب</a></p>
-        <p class="danger">إن كان هناك خطر على الحياة، مثل سلك كهرباء مكشوف أو فتحة مجاري مفتوحة، اتصل بالطوارئ فوراً ثم بلّغنا.</p>
+        <h1>الإبلاغ عن مشكلة</h1>
+        <p class="lede">أكمل الخطوات الأربع لتحصل على رقم بلاغ تتابع به بلاغك.</p>
+        <div class="track-row">
+          <label for="track-no">لمتابعة بلاغ سابق، أدخل رقمه.</label>
+          <div class="track-box">
+            <input id="track-no" name="n" form="track" placeholder="ب-٤٨٢١٣" autocomplete="off">
+            <button type="submit" form="track" aria-label="تابع رقم البلاغ هذا">تابع</button>
+          </div>
+        </div>
+        <p class="danger">إذا كان هناك خطر على الحياة، كسلك كهربائي مكشوف أو فتحة مجاري مفتوحة، فاتصل بخدمات الطوارئ أولاً، ثم أبلغ هنا.</p>
 
         <ol class="progress" aria-hidden="true">
           <li data-p="1">المشكلة</li>
           <li data-p="2">المكان</li>
-          <li data-p="3">صورة ووصف</li>
-          <li data-p="4">مراجعة</li>
+          <li data-p="3">الصورة والملاحظة</li>
+          <li data-p="4">المراجعة</li>
         </ol>
         <p class="step-count" aria-live="polite"></p>
       </div>
@@ -166,119 +198,113 @@
       <fieldset class="step on" data-step="1" style="border:0;margin:0;padding:0">
         <legend><h2>ما المشكلة؟</h2></legend>
         <ul class="cats">
-          <li><input type="radio" name="cat" id="c-water" value="انقطاع الماء"><label for="c-water"><strong>انقطاع الماء</strong><span>لا ماء، أو ضعف شديد في الضغط</span></label></li>
-          <li><input type="radio" name="cat" id="c-sewer" value="طفح المجاري"><label for="c-sewer"><strong>طفح المجاري</strong><span>مياه آسنة في الشارع أو فتحة مسدودة</span></label></li>
-          <li><input type="radio" name="cat" id="c-waste" value="النفايات"><label for="c-waste"><strong>النفايات</strong><span>لم تُرفع، أو رمي في مكان عام</span></label></li>
-          <li><input type="radio" name="cat" id="c-light" value="إنارة الشوارع"><label for="c-light"><strong>إنارة الشوارع</strong><span>عمود مطفأ أو متضرر</span></label></li>
-          <li><input type="radio" name="cat" id="c-road" value="الطرق والأرصفة"><label for="c-road"><strong>الطرق والأرصفة</strong><span>حفرة، رصيف مكسور، تجمّع أمطار</span></label></li>
-          <li><input type="radio" name="cat" id="c-other" value="أخرى"><label for="c-other"><strong>أخرى</strong><span>بناء مخالف، شجرة ساقطة، غير ذلك</span></label></li>
+          <li><input type="radio" name="cat" id="c-water" value="انقطاع الماء"><label for="c-water"><strong>انقطاع الماء</strong><span>لا يوجد ماء، أو الضغط ضعيف جداً</span></label></li>
+          <li><input type="radio" name="cat" id="c-sewer" value="طفح المجاري"><label for="c-sewer"><strong>طفح المجاري</strong><span>مياه آسنة في الشارع أو مشبك مسدود</span></label></li>
+          <li><input type="radio" name="cat" id="c-waste" value="النفايات"><label for="c-waste"><strong>النفايات</strong><span>لم تُرفع، أو رُميت في مكان عام</span></label></li>
+          <li><input type="radio" name="cat" id="c-light" value="إنارة الشوارع"><label for="c-light"><strong>إنارة الشوارع</strong><span>مصباح مطفأ أو تالف</span></label></li>
+          <li><input type="radio" name="cat" id="c-road" value="الطرق والأرصفة"><label for="c-road"><strong>الطرق والأرصفة</strong><span>حفرة، أو رصيف متضرر، أو تجمع مياه الأمطار</span></label></li>
+          <li><input type="radio" name="cat" id="c-other" value="أخرى"><label for="c-other"><strong>مشكلة أخرى</strong><span>بناء دون إجازة، أو شجرة ساقطة، أو أي أمر آخر</span></label></li>
         </ul>
       </fieldset>
 
       <!-- 2. Where -->
       <fieldset class="step" data-step="2" style="border:0;margin:0;padding:0">
         <legend><h2>أين المشكلة؟</h2></legend>
-        <p class="hint">اضغط على الخريطة أو اسحب الدبوس إلى المكان.</p>
-        <div id="map" role="application" aria-label="خريطة لتحديد مكان المشكلة"></div>
+        <p class="hint">انقر على موقع المشكلة في الخريطة، أو اسحب الدبوس إليه. إذا تعذّر استخدام الخريطة، فاكتب العنوان أو أقرب دالة في الأسفل.</p>
+        <div id="map" role="application" aria-label="خريطة لتحديد موقع المشكلة"></div>
         <div class="map-tools">
           <button type="button" class="btn" id="locate">استخدم موقعي الحالي</button>
-          <span class="coords" id="coords" dir="ltr"></span>
+          <span class="coords" id="coords"></span>
         </div>
         <div class="field">
           <label for="district">البلدية</label>
           <select id="district" required><option value="">اختر البلدية</option></select>
         </div>
         <div class="field">
-          <label for="landmark">أقرب معلَم أو عنوان <span class="opt">(اختياري)</span></label>
-          <input type="text" id="landmark" placeholder="مثلاً: قرب جامع ...، محلة ٩٠٤، زقاق ١٢">
+          <label for="landmark">العنوان أو أقرب دالة <span class="opt">(مطلوب إذا لم يُحدَّد المكان على الخريطة)</span></label>
+          <input type="text" id="landmark" placeholder="مثال: قرب جامع ...، محلة ٩٠٤، زقاق ١٢">
         </div>
       </fieldset>
 
       <!-- 3. Photo and description -->
       <fieldset class="step" data-step="3" style="border:0;margin:0;padding:0">
-        <legend><h2>أضف صورة ووصفاً</h2></legend>
-        <p class="hint">الصورة تساعد الفريق على تجهيز ما يحتاجه قبل الوصول.</p>
+        <legend><h2>أرفق صورة وملاحظة</h2></legend>
+        <p class="hint">تساعد الصورة الفريق على الاستعداد قبل الوصول.</p>
         <div class="field">
           <span class="label">صورة <span class="opt">(اختياري)</span></span>
           <label class="drop" id="drop">
-            <input type="file" id="photo" accept="image/*" capture="environment" aria-label="أضف صورة">
-            <span class="prompt"><strong>التقط صورة أو اختر من هاتفك</strong><span>صورة واحدة تكفي</span></span>
+            <input type="file" id="photo" accept="image/*" capture="environment" aria-label="أرفق صورة">
+            <span class="prompt"><strong>التقط صورة أو اختر واحدة من هاتفك</strong><span>تكفي صورة واحدة</span></span>
           </label>
         </div>
         <div class="field">
-          <label for="desc">وصف قصير <span class="opt">(اختياري)</span></label>
-          <textarea id="desc" placeholder="مثلاً: المجاري طافحة منذ يومين وتصل إلى باب المدرسة"></textarea>
+          <label for="desc">ملاحظة قصيرة <span class="opt">(اختياري)</span></label>
+          <textarea id="desc" placeholder="مثال: المجاري طافحة منذ يومين وتصل إلى باب المدرسة"></textarea>
         </div>
       </fieldset>
 
       <!-- 4. Review -->
       <fieldset class="step" data-step="4" style="border:0;margin:0;padding:0">
-        <legend><h2>راجع البلاغ</h2></legend>
+        <legend><h2>راجع بلاغك</h2></legend>
         <dl class="review">
           <div><dt>المشكلة</dt><dd id="r-cat"></dd><button type="button" data-go="1">تعديل</button></div>
           <div><dt>المكان</dt><dd id="r-place"></dd><button type="button" data-go="2">تعديل</button></div>
-          <div><dt>الصورة والوصف</dt><dd id="r-desc"></dd><button type="button" data-go="3">تعديل</button></div>
+          <div><dt>الصورة والملاحظة</dt><dd id="r-desc"></dd><button type="button" data-go="3">تعديل</button></div>
         </dl>
         <div class="field">
-          <span class="label">كيف نبلغك بالتحديثات؟ <span class="opt">(اختياري)</span></span>
+          <span class="label">كيف تريد أن تصلك التحديثات؟ <span class="opt">(اختياري)</span></span>
           <div class="updates">
-            <label><input type="radio" name="via" value="whatsapp" checked> واتساب</label>
-            <label><input type="radio" name="via" value="sms"> رسالة نصية</label>
-            <label><input type="radio" name="via" value="none"> لا أريد تحديثات، سأتابع برقم البلاغ</label>
+            <label><input type="radio" name="via" value="sms" checked> رسالة نصية</label>
+            <label><input type="radio" name="via" value="none"> دون تحديثات. سأتابع البلاغ برقمه</label>
           </div>
         </div>
         <div class="field">
           <label for="phone">رقم الهاتف <span class="opt">(للتحديثات فقط)</span></label>
-          <input type="tel" id="phone" dir="ltr" inputmode="tel" placeholder="07XX XXX XXXX" autocomplete="off">
+          <input type="tel" id="phone" inputmode="tel" placeholder="07XX XXX XXXX" autocomplete="off">
         </div>
-        <p class="proto-note">نموذج دراسي: لا يُرسل أي شيء من هذه الصفحة.</p>
       </fieldset>
 
       <p class="error" id="error" role="alert"></p>
 
       <div class="nav-row" id="nav-row">
-        <button type="button" class="back" id="back" hidden>→ رجوع</button>
+        <button type="button" class="back" id="back" hidden>→ السابق</button>
         <button type="button" class="btn" id="next">التالي</button>
       </div>
     </form>
 
     <!-- Receipt -->
     <section id="done" hidden aria-live="polite">
-      <h1>وصل بلاغك</h1>
+      <h1 tabindex="-1">تم استلام البلاغ</h1>
       <div class="receipt" style="margin-top:1.25rem">
         <p class="label">رقم البلاغ</p>
-        <p class="case-no">ب-٤٨٢١٣</p>
+        <p class="case-no" id="done-no"></p>
         <p id="done-line"></p>
-        <p>يصلك أول رد خلال يومين عمل. <span class="note" style="display:inline">(توضيحي)</span></p>
+        <p>يصلك أول رد خلال يومي عمل. <span class="note" style="display:inline">(توضيحي)</span></p>
         <p id="done-via"></p>
         <div class="actions">
-          <a class="btn" href="track.html">تابع البلاغ</a>
-          <a class="btn" href="report.html">بلاغ آخر</a>
+          <a class="btn" id="done-track" href="track.html">تابع هذا البلاغ</a>
+          <a class="btn" href="report.html">أبلغ عن مشكلة أخرى</a>
         </div>
       </div>
-      <p class="proto-note">احفظ رقم البلاغ. تتابع به حالته من «تابع بلاغك» في أي وقت، دون حساب.</p>
+      <p class="proto-note">احتفظ برقم البلاغ. يمكنك متابعته في أي وقت من «متابعة بلاغ» دون حساب.</p>
     </section>
   </div>
 
-  <aside class="help" aria-label="مساعدة">
+  <div class="help">
     <section>
-      <h2>ماذا يحدث بعد البلاغ؟</h2>
+      <h2>بعد تقديم البلاغ</h2>
       <ol>
-        <li>يصلك رقم بلاغ فوراً.</li>
-        <li>يُحال إلى بلديتك والقسم المختص.</li>
-        <li>تصلك التحديثات حتى يُغلق.</li>
+        <li>تحصل على رقم البلاغ فوراً.</li>
+        <li>يُرسل بلاغك إلى الشعبة المسؤولة في بلديتك.</li>
+        <li>تصلك التحديثات حتى إغلاقه.</li>
       </ol>
     </section>
     <section>
-      <h2>بلّغت من قبل؟</h2>
-      <p>تابع حالة بلاغك برقمه، دون حساب.</p>
-      <a class="btn" href="track.html">تابع بلاغك</a>
+      <h2>عبر الهاتف أو التطبيق</h2>
+      <p>اتصل بالرقم <a href="tel:5628"><strong>٥٦٢٨</strong></a> من ٨:٣٠ صباحاً إلى ٢ ظهراً، أو استخدم تطبيق الأمانة «صوت المواطن البغدادي».</p>
+      <p>تدخل البلاغات المقدّمة بالهاتف أو عبر التطبيق منظومة الشكاوى نفسها، ويمكن متابعتها هنا أيضاً برقمها.</p>
     </section>
-    <section>
-      <h2>عبر واتساب</h2>
-      <p>أرسل صورة وموقعك إلى رقم الأمانة الموثّق، ويصلك رقم البلاغ في المحادثة.</p>
-    </section>
-  </aside>
+  </div>
   </div>
 </main>
 
@@ -286,18 +312,19 @@
   <div class="wrap">
     <div class="foot">
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
-      <div><h2>الأمانة</h2><ul><li><a href="about.html">عن الأمانة</a></li><li><a href="districts.html">البلديات</a></li><li><a href="services.html#business">المناقصات</a></li></ul></div>
-      <div><h2>الخدمات</h2><ul><li><a href="report.html">بلّغ عن مشكلة</a></li><li><a href="track.html">تابع بلاغك</a></li><li><a href="services.html">كل الخدمات</a></li></ul></div>
-      <div><h2>الموقع</h2><ul><li><a href="about.html#access">إمكانية الوصول</a></li><li><a href="about.html#privacy">الخصوصية</a></li><li><a href="data.html">البيانات المفتوحة</a></li></ul></div>
+      <div><h2>الخدمات</h2><ul><li><a href="services.html">كل الخدمات</a></li><li><a href="report.html">الإبلاغ عن مشكلة</a></li><li><a href="track.html">متابعة بلاغ</a></li><li><a href="alerts.html">التنبيهات</a></li></ul></div>
+      <div><h2>الأخبار</h2><ul><li><a href="news.html">كل الأخبار</a></li></ul></div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">نظرة عامة</a></li><li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li><li><a href="districts.html">البلديات</a></li><li><a href="tenders.html">المناقصات والمزايدات</a></li><li><a href="laws.html">القوانين والخطط</a></li><li><a href="data.html">البيانات المفتوحة</a></li><li><a href="about.html#contact">الاتصال</a></li></ul></div>
+      <div><h2>هذا الموقع</h2><ul><li><a href="site.html#privacy">الخصوصية</a></li><li><a href="site.html#access">إمكانية الوصول</a></li><li><a href="site.html#search">كيف يعمل البحث</a></li></ul></div>
     </div>
     <div class="fine">
-      <p>الخريطة: © مساهمو OpenStreetMap. الختم: إعادة رسم مجتمعية — CC BY-SA 4.0 — Wikimedia Commons.</p>
+      <p class="hotline"><span>الخط الساخن <a href="tel:5628"><strong>٥٦٢٨</strong></a>، من ٨:٣٠ صباحاً إلى ٢ ظهراً</span><span class="social"><a href="https://www.facebook.com/mayoralty.baghdad" rel="external" aria-label="فيسبوك" title="فيسبوك"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.56-.14-2.86-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></a><a href="https://www.instagram.com/mayoralty_baghdad" rel="external" aria-label="إنستغرام" title="إنستغرام"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a><a href="https://x.com/mayoralty_bd" rel="external" aria-label="إكس" title="إكس"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.5h2.04L6.49 3.24H4.3z"/></svg></a></span></p>
+      <p>الشعار: إعادة رسم مجتمعية — CC BY-SA 4.0 — ويكيميديا كومنز. تُذكر حقوق كل صورة معها.</p>
     </div>
   </div>
 </footer>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="shared/home.js"></script>
+<script src="shared/districts.js"></script>
 <script>
   // Report flow. Steps swap in place; nothing is sent anywhere.
 
@@ -312,29 +339,41 @@
   let step = 1;
   let map, pin, moved = false;
 
-  DISTRICTS.forEach((d, i) => district.append(new Option(`${d.ar} · ${d.side}`, i)));
+  DISTRICTS.forEach((d, i) => district.append(new Option(`${d.ar} · جانب ${d.side}`, i)));
+  const catLabel = () => form.querySelector('input[name=cat]:checked + label strong').textContent;
 
   function show(n, first) {
     step = n;
+    const heading = steps[n - 1].querySelector('h2');
     steps.forEach(s => s.classList.toggle('on', Number(s.dataset.step) === n));
     progress.forEach(p => {
       const k = Number(p.dataset.p);
       p.className = k < n ? 'done' : k === n ? 'now' : '';
     });
-    count.textContent = `الخطوة ${ar(n)} من ٤`;
+    count.textContent = `الخطوة ${eastern(n)} من ٤`;
     back.hidden = n === 1;
     next.textContent = n === 4 ? 'أرسل البلاغ' : 'التالي';
     error.textContent = '';
     if (n === 2) setupMap();
     if (n === 4) fillReview();
-    if (!first) document.getElementById('intro').scrollIntoView({ block: 'start' });
+    if (first) return;
+    document.getElementById('intro').scrollIntoView({ block: 'start' });
+    heading.tabIndex = -1;
+    heading.focus({ preventScroll: true });
   }
 
-  function valid() {
-    if (step === 1 && !form.cat.value) return 'اختر نوع المشكلة.';
-    if (step === 2 && !moved) return 'حدّد المكان على الخريطة.';
-    if (step === 2 && district.value === '') return 'اختر البلدية.';
-    return '';
+  // Returns the message and the field to focus, or nothing when the step is complete.
+  // A typed address or landmark counts as a place, so the map is never required.
+
+  const landmark = document.getElementById('landmark');
+  const phone = document.getElementById('phone');
+  const digits = s => (s.match(/[0-9٠-٩]/g) || []).length;
+
+  function invalid() {
+    if (step === 1 && !form.cat.value) return ['اختر نوع المشكلة.', form.cat[0]];
+    if (step === 2 && !moved && !landmark.value.trim()) return ['حدّد المكان على الخريطة، أو اكتب العنوان أو أقرب دالة.', landmark];
+    if (step === 2 && district.value === '') return ['اختر البلدية.', district];
+    if (step === 4 && form.via.value !== 'none' && digits(phone.value) < 10) return ['أدخل رقم هاتفك لتلقي التحديثات، أو اختر «دون تحديثات».', phone];
   }
 
   function setupMap() {
@@ -357,7 +396,7 @@
       if (!navigator.geolocation) return;
       navigator.geolocation.getCurrentPosition(
         p => { const ll = L.latLng(p.coords.latitude, p.coords.longitude); set(ll); map.setView(ll, 16); },
-        () => { error.textContent = 'تعذّر تحديد موقعك. حدّده على الخريطة.'; }
+        () => { error.textContent = 'تعذّر تحديد موقعك. حدّده على الخريطة أو اكتب العنوان.'; }
       );
     });
   }
@@ -367,24 +406,34 @@
     const lm = document.getElementById('landmark').value.trim();
     const desc = document.getElementById('desc').value.trim();
     const hasPhoto = document.getElementById('photo').files.length > 0;
-    document.getElementById('r-cat').textContent = form.cat.value;
+    document.getElementById('r-cat').textContent = catLabel();
     document.getElementById('r-place').textContent = `بلدية ${d.ar}${lm ? ' · ' + lm : ''}`;
-    document.getElementById('r-desc').textContent = [hasPhoto ? 'صورة واحدة' : 'بلا صورة', desc || 'بلا وصف'].join(' · ');
+    document.getElementById('r-desc').textContent = [hasPhoto ? 'صورة واحدة' : 'دون صورة', desc || 'دون ملاحظة'].join(' · ');
   }
 
+  // Every demo report gets the same new number. The track page reads the
+  // saved details, so the receipt and tracking describe the same report.
+
+  const NEW_NO = 'ب-٤٨٤٩٢';
+
   next.addEventListener('click', () => {
-    const msg = valid();
-    if (msg) { error.textContent = msg; return; }
+    const fail = invalid();
+    if (fail) { error.textContent = fail[0]; fail[1].focus(); return; }
     if (step < 4) { show(step + 1); return; }
     const d = DISTRICTS[district.value];
     const via = form.via.value;
-    document.getElementById('done-line').textContent = `بلاغ «${form.cat.value}» أُرسل إلى بلدية ${d.ar}.`;
+    const sent = { no: NEW_NO, cat: catLabel(), d: d.ar, place: landmark.value.trim(), via, phone: phone.value.trim() };
+    try { sessionStorage.setItem('demo-report', JSON.stringify(sent)); } catch {}
+    document.getElementById('done-no').textContent = NEW_NO;
+    document.getElementById('done-track').href = `track.html?n=${NEW_NO}`;
+    document.getElementById('done-line').textContent = `أُرسل بلاغ «${sent.cat}» إلى بلدية ${d.ar}.`;
     document.getElementById('done-via').textContent =
-      via === 'whatsapp' ? 'سنرسل كل تحديث إلى واتساب.' :
-      via === 'sms' ? 'سنرسل كل تحديث برسالة نصية.' : 'تابع الحالة برقم البلاغ.';
+      via === 'sms' ? `ستصلك التحديثات برسالة نصية على الرقم ${sent.phone}.` : 'تابعه برقم البلاغ.';
     form.hidden = true;
-    document.getElementById('done').hidden = false;
+    const done = document.getElementById('done');
+    done.hidden = false;
     window.scrollTo(0, 0);
+    done.querySelector('h1').focus({ preventScroll: true });
   });
   back.addEventListener('click', () => show(step - 1));
   form.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => show(Number(b.dataset.go))));
@@ -405,6 +454,11 @@
   if (pre) { const r = [...form.cat].find(x => x.value === pre); if (r) r.checked = true; }
   const preD = DISTRICTS.findIndex(d => d.slug === params.get('d'));
   if (preD > -1) district.value = preD;
+
+  // "Problem still there?" on the track page sends the earlier number along
+
+  const ref = params.get('ref');
+  if (ref) document.getElementById('desc').value = `المشكلة ما زالت قائمة. البلاغ السابق: ${ref}.`;
 
   show(1, true);
 </script>

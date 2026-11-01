@@ -1,0 +1,303 @@
+# Report a problem
+
+en: Report a problem — Mayoralty of Baghdad
+ar: الإبلاغ عن مشكلة — أمانة بغداد
+ku: ڕاپۆرتکردنی کێشە — ئەمانەتی بەغدا
+
+en: Complete the four steps to receive a report number. Use it to track your report.
+ar: أكمل الخطوات الأربع لتحصل على رقم بلاغ تتابع به بلاغك.
+ku: چوار هەنگاوەکە تەواو بکە بۆ وەرگرتنی ژمارەی ڕاپۆرت. بەو ژمارەیە بەدواداچوون بۆ ڕاپۆرتەکەت بکە.
+
+en: To follow an existing report, enter its number.
+ar: لمتابعة بلاغ سابق، أدخل رقمه.
+ku: بۆ بەدواداچوونی ڕاپۆرتێکی پێشوو، ژمارەکەی بنووسە.
+
+en: Track this report number
+ar: تابع رقم البلاغ هذا
+ku: بەدواداچوون بۆ ئەم ژمارەی ڕاپۆرتە بکە
+
+en: Track
+ar: تابع
+ku: بەدواداچوون
+
+en: If there is a risk to life, such as an exposed electric wire or an open manhole, call the emergency services first, then report it here.
+ar: إذا كان هناك خطر على الحياة، كسلك كهربائي مكشوف أو فتحة مجاري مفتوحة، فاتصل بخدمات الطوارئ أولاً، ثم أبلغ هنا.
+ku: ئەگەر مەترسی لەسەر ژیان هەبێت، وەک وایەری کارەبای ڕووت یان دەمی ئاوەڕۆی کراوە، سەرەتا پەیوەندی بە خزمەتگوزارییەکانی فریاکەوتنەوە بکە، پاشان لێرە ڕاپۆرتی بکە.
+
+en: Problem
+ar: المشكلة
+ku: کێشە
+
+en: Place
+ar: المكان
+ku: شوێن
+
+en: Photo and note
+ar: الصورة والملاحظة
+ku: وێنە و تێبینی
+
+en: Review
+ar: المراجعة
+ku: پێداچوونەوە
+
+en: What is the problem?
+ar: ما المشكلة؟
+ku: کێشەکە چییە؟
+
+en: Water cut
+ar: انقطاع الماء
+ku: بڕانی ئاو
+
+en: No water, or very low pressure
+ar: لا يوجد ماء، أو الضغط ضعيف جداً
+ku: ئاو نییە، یان پەستانی زۆر کەمە
+
+en: Sewage overflow
+ar: طفح المجاري
+ku: ڕژانی ئاوەڕۆ
+
+en: Dirty water in the street or a blocked drain
+ar: مياه آسنة في الشارع أو مشبك مسدود
+ku: ئاوی پیس لە شەقام یان ئاوەڕۆیەکی گیراو
+
+en: Not collected, or dumped in a public place
+ar: لم تُرفع، أو رُميت في مكان عام
+ku: کۆنەکراوەتەوە، یان لە شوێنێکی گشتی فڕێدراوە
+
+en: Street lights
+ar: إنارة الشوارع
+ku: ڕووناکی شەقام
+
+en: A light that is out or damaged
+ar: مصباح مطفأ أو تالف
+ku: گڵۆپێکی کوژاوە یان تێکچوو
+
+en: Roads and pavements
+ar: الطرق والأرصفة
+ku: ڕێگا و پیادەڕەو
+
+en: A pothole, a broken pavement, standing rainwater
+ar: حفرة، أو رصيف متضرر، أو تجمع مياه الأمطار
+ku: چاڵ، پیادەڕەوی شکاو، کۆبوونەوەی ئاوی باران
+
+en: Something else
+ar: مشكلة أخرى
+ku: شتێکی تر
+
+en: Unpermitted building, a fallen tree, anything else
+ar: بناء دون إجازة، أو شجرة ساقطة، أو أي أمر آخر
+ku: بیناسازیی بێ مۆڵەت، دارێکی کەوتوو، هەر شتێکی تر
+
+en: Where is it?
+ar: أين المشكلة؟
+ku: لە کوێیە؟
+
+en: Tap the location of the problem on the map, or drag the pin there. If you cannot use the map, type the address or a nearby landmark below.
+ar: انقر على موقع المشكلة في الخريطة، أو اسحب الدبوس إليه. إذا تعذّر استخدام الخريطة، فاكتب العنوان أو أقرب دالة في الأسفل.
+ku: لەسەر نەخشەکە کرتە لە شوێنی کێشەکە بکە، یان دەرزییەکە ڕابکێشە بۆ ئەوێ. ئەگەر ناتوانیت نەخشەکە بەکاربهێنیت، ناونیشان یان نیشانەیەکی نزیک لە خوارەوە بنووسە.
+
+en: Map to mark where the problem is
+ar: خريطة لتحديد موقع المشكلة
+ku: نەخشە بۆ دیاریکردنی شوێنی کێشەکە
+
+en: Use my current location
+ar: استخدم موقعي الحالي
+ku: شوێنی ئێستام بەکاربهێنە
+
+en: Municipality
+ar: البلدية
+ku: شارەوانی
+
+en: Choose a municipality
+ar: اختر البلدية
+ku: شارەوانییەک هەڵبژێرە
+
+en: Address or nearest landmark <0>(required if the map is not marked)</0>
+ar: العنوان أو أقرب دالة <0>(مطلوب إذا لم يُحدَّد المكان على الخريطة)</0>
+ku: ناونیشان یان نزیکترین نیشانە <0>(پێویستە ئەگەر لەسەر نەخشە دیاری نەکرابێت)</0>
+
+en: For example: near the ... mosque, Mahalla 904, Lane 12
+ar: مثال: قرب جامع ...، محلة 904، زقاق 12
+ku: بۆ نموونە: نزیک مزگەوتی ...، مەحەللەی 904، کۆڵانی 12
+
+en: Add a photo and a note
+ar: أرفق صورة وملاحظة
+ku: وێنە و تێبینییەک زیاد بکە
+
+en: A photo helps the crew prepare before they arrive.
+ar: تساعد الصورة الفريق على الاستعداد قبل الوصول.
+ku: وێنە یارمەتی تیمەکە دەدات پێش گەیشتن خۆی ئامادە بکات.
+
+en: Photo <0>(optional)</0>
+ar: صورة <0>(اختياري)</0>
+ku: وێنە <0>(ئارەزوومەندانە)</0>
+
+en: Add a photo
+ar: أرفق صورة
+ku: وێنەیەک زیاد بکە
+
+en: Take a photo or choose one from your phone
+ar: التقط صورة أو اختر واحدة من هاتفك
+ku: وێنەیەک بگرە یان یەکێک لە مۆبایلەکەت هەڵبژێرە
+
+en: One photo is enough
+ar: تكفي صورة واحدة
+ku: یەک وێنە بەسە
+
+en: Short note <0>(optional)</0>
+ar: ملاحظة قصيرة <0>(اختياري)</0>
+ku: تێبینیی کورت <0>(ئارەزوومەندانە)</0>
+
+en: For example: sewage has been overflowing for two days and reaches the school gate
+ar: مثال: المجاري طافحة منذ يومين وتصل إلى باب المدرسة
+ku: بۆ نموونە: دوو ڕۆژە ئاوەڕۆ دەڕژێت و دەگاتە دەرگای قوتابخانەکە
+
+en: Check your report
+ar: راجع بلاغك
+ku: ڕاپۆرتەکەت بپشکنە
+
+en: Change
+ar: تعديل
+ku: گۆڕین
+
+en: How would you like to receive updates? <0>(optional)</0>
+ar: كيف تريد أن تصلك التحديثات؟ <0>(اختياري)</0>
+ku: دەتەوێت نوێکارییەکان چۆن پێت بگەن؟ <0>(ئارەزوومەندانە)</0>
+
+en: Text message
+ar: رسالة نصية
+ku: نامەی دەقی
+
+en: No updates. I will track the report with its number
+ar: دون تحديثات. سأتابع البلاغ برقمه
+ku: بێ نوێکاری. بە ژمارەکەی بەدواداچوون بۆ ڕاپۆرتەکە دەکەم
+
+en: Phone number <0>(for updates only)</0>
+ar: رقم الهاتف <0>(للتحديثات فقط)</0>
+ku: ژمارەی تەلەفۆن <0>(تەنها بۆ نوێکاری)</0>
+
+en: 07XX XXX XXXX
+ar: 07XX XXX XXXX
+ku: 07XX XXX XXXX
+
+en: ← Back
+ar: → السابق
+ku: → پێشوو
+
+en: Next
+ar: التالي
+ku: دواتر
+
+en: Report received
+ar: تم استلام البلاغ
+ku: ڕاپۆرتەکە وەرگیرا
+
+en: You will receive a first response within two working days. <0>(illustrative)</0>
+ar: يصلك أول رد خلال يومي عمل. <0>(توضيحي)</0>
+ku: لە ماوەی دوو ڕۆژی کاردا یەکەم وەڵام وەردەگریت. <0>(نموونەیی)</0>
+
+en: Track this report
+ar: تابع هذا البلاغ
+ku: بەدواداچوون بۆ ئەم ڕاپۆرتە بکە
+
+en: Report something else
+ar: أبلغ عن مشكلة أخرى
+ku: شتێکی تر ڕاپۆرت بکە
+
+en: Keep the report number. You can track it at any time from "Track a report", without an account.
+ar: احتفظ برقم البلاغ. يمكنك متابعته في أي وقت من «متابعة بلاغ» دون حساب.
+ku: ژمارەی ڕاپۆرتەکە هەڵبگرە. لە هەر کاتێکدا دەتوانیت لە «بەدواداچوونی ڕاپۆرت» بەدواداچوونی بۆ بکەیت، بێ هەژمار.
+
+en: After you report
+ar: بعد تقديم البلاغ
+ku: دوای ڕاپۆرتکردن
+
+en: You receive a report number immediately.
+ar: تحصل على رقم البلاغ فوراً.
+ku: یەکسەر ژمارەی ڕاپۆرت وەردەگریت.
+
+en: Your report is sent to the responsible section in your municipality.
+ar: يُرسل بلاغك إلى الشعبة المسؤولة في بلديتك.
+ku: ڕاپۆرتەکەت دەنێردرێت بۆ بەشی بەرپرس لە شارەوانییەکەت.
+
+en: You get updates until it is closed.
+ar: تصلك التحديثات حتى إغلاقه.
+ku: تا داخستنی نوێکاری وەردەگریت.
+
+en: Call <0><1>5628</1></0>, 8:30 am – 2 pm, or use the Mayoralty's app, Baghdad Citizen Voice.
+ar: اتصل بالرقم <0><1>5628</1></0> من 8:30 صباحاً إلى 2 ظهراً، أو استخدم تطبيق الأمانة «صوت المواطن البغدادي».
+ku: پەیوەندی بە <0><1>5628</1></0> بکە، لە 8:30ی بەیانی تا 2ی دوانیوەڕۆ، یان ئەپی ئەمانەت بەکاربهێنە، «دەنگی هاووڵاتیی بەغدا».
+
+en: Reports made by phone or in the app enter the same complaints system and can also be tracked here by their number.
+ar: تدخل البلاغات المقدّمة بالهاتف أو عبر التطبيق منظومة الشكاوى نفسها، ويمكن متابعتها هنا أيضاً برقمها.
+ku: ڕاپۆرتەکانی تەلەفۆن و ئەپ دەچنە هەمان سیستەمی سکاڵاوە و دەتوانرێت لێرەش بە ژمارەکەیان بەدواداچوونیان بۆ بکرێت.
+
+# Report flow script
+
+raw: district.append(new Option(`${d.en} · ${SIDE_EN[d.side]}`, i))
+ar: district.append(new Option(`${d.ar} · جانب ${d.side}`, i))
+ku: district.append(new Option(`${d.ku} · ${SIDE_KU[d.side]}`, i))
+
+raw: count.textContent = `Step ${n} of 4`;
+ar: count.textContent = `الخطوة ${eastern(n)} من ٤`;
+ku: count.textContent = `هەنگاوی ${eastern(n)} لە ٤`;
+
+raw: 'Send report' : 'Next'
+ar: 'أرسل البلاغ' : 'التالي'
+ku: 'ڕاپۆرتەکە بنێرە' : 'دواتر'
+
+raw: 'Choose the kind of problem.'
+ar: 'اختر نوع المشكلة.'
+ku: 'جۆری کێشەکە هەڵبژێرە.'
+
+raw: 'Mark the place on the map, or type the address or a nearby landmark.'
+ar: 'حدّد المكان على الخريطة، أو اكتب العنوان أو أقرب دالة.'
+ku: 'شوێنەکە لەسەر نەخشە دیاری بکە، یان ناونیشان یان نیشانەیەکی نزیک بنووسە.'
+
+raw: 'Choose the municipality.'
+ar: 'اختر البلدية.'
+ku: 'شارەوانییەکە هەڵبژێرە.'
+
+raw: 'Enter your phone number for updates, or choose "No updates".'
+ar: 'أدخل رقم هاتفك لتلقي التحديثات، أو اختر «دون تحديثات».'
+ku: 'ژمارەی تەلەفۆنەکەت بۆ نوێکاری بنووسە، یان «بێ نوێکاری» هەڵبژێرە.'
+
+raw: 'Your location could not be found. Mark it on the map or type the address.'
+ar: 'تعذّر تحديد موقعك. حدّده على الخريطة أو اكتب العنوان.'
+ku: 'شوێنەکەت نەدۆزرایەوە. لەسەر نەخشە دیاری بکە یان ناونیشانەکە بنووسە.'
+
+raw: `${d.en} municipality${lm ? ' · ' + lm : ''}`
+ar: `بلدية ${d.ar}${lm ? ' · ' + lm : ''}`
+ku: `شارەوانی ${d.ku}${lm ? ' · ' + lm : ''}`
+
+raw: [hasPhoto ? 'One photo' : 'No photo', desc || 'No note']
+ar: [hasPhoto ? 'صورة واحدة' : 'دون صورة', desc || 'دون ملاحظة']
+ku: [hasPhoto ? 'یەک وێنە' : 'بێ وێنە', desc || 'بێ تێبینی']
+
+raw: const NEW_NO = 'B-48492';
+ar: const NEW_NO = 'ب-٤٨٤٩٢';
+ku: const NEW_NO = 'ب-٤٨٤٩٢';
+
+raw: d: d.en,
+ar: d: d.ar,
+ku: d: d.ku,
+
+raw: `“${sent.cat}” report sent to ${d.en} municipality.`
+ar: `أُرسل بلاغ «${sent.cat}» إلى بلدية ${d.ar}.`
+ku: `ڕاپۆرتی «${sent.cat}» نێردرا بۆ شارەوانی ${d.ku}.`
+
+raw: `Updates will be sent by text message to ${sent.phone}.` : 'Track it with the report number.'
+ar: `ستصلك التحديثات برسالة نصية على الرقم ${sent.phone}.` : 'تابعه برقم البلاغ.'
+ku: `نوێکارییەکان بە نامەی دەقی بۆ ${sent.phone} دەنێردرێن.` : 'بە ژمارەی ڕاپۆرتەکە بەدواداچوونی بۆ بکە.'
+
+raw: img.alt = 'Attached photo';
+ar: img.alt = 'الصورة المرفقة';
+ku: img.alt = 'وێنەی هاوپێچکراو';
+
+raw: `The problem remains. Earlier report: ${ref}.`
+ar: `المشكلة ما زالت قائمة. البلاغ السابق: ${ref}.`
+ku: `کێشەکە ماوە. ڕاپۆرتی پێشوو: ${ref}.`
+
+en: <0>Take a photo or choose one from your phone</0><1>One photo is enough</1>
+ar: <0>التقط صورة أو اختر واحدة من هاتفك</0><1>تكفي صورة واحدة</1>
+ku: <0>وێنەیەک بگرە یان یەکێک لە مۆبایلەکەت هەڵبژێرە</0><1>یەک وێنە بەسە</1>
