@@ -178,13 +178,13 @@
         <h1>Report a problem</h1>
         <p class="lede">Complete the four steps to receive a report number. Use it to track your report.</p>
         <div class="track-row">
-          <label for="track-no">Reported before? Track it with your report number.</label>
+          <label for="track-no">To follow an existing report, enter its number.</label>
           <div class="track-box">
             <input id="track-no" name="n" form="track" placeholder="B-48213" autocomplete="off">
             <button type="submit" form="track" aria-label="Track this report number">Track</button>
           </div>
         </div>
-        <p class="danger">If someone's life is at risk, for example from a bare electric wire or an open manhole, call emergency services first, then tell us.</p>
+        <p class="danger">If there is a risk to life, such as an exposed electric wire or an open manhole, call the emergency services first, then report it here.</p>
 
         <ol class="progress" aria-hidden="true">
           <li data-p="1">Problem</li>
@@ -211,7 +211,7 @@
       <!-- 2. Where -->
       <fieldset class="step" data-step="2" style="border:0;margin:0;padding:0">
         <legend><h2>Where is it?</h2></legend>
-        <p class="hint">Tap the location of the problem on the map, or drag the pin there. If you can't use the map, type the address or a nearby landmark below.</p>
+        <p class="hint">Tap the location of the problem on the map, or drag the pin there. If you cannot use the map, type the address or a nearby landmark below.</p>
         <div id="map" role="application" aria-label="Map to mark where the problem is"></div>
         <div class="map-tools">
           <button type="button" class="btn" id="locate">Use my current location</button>
@@ -222,7 +222,7 @@
           <select id="district" required><option value="">Choose a municipality</option></select>
         </div>
         <div class="field">
-          <label for="landmark">Address or nearest landmark <span class="opt">(needed if you don't mark the map)</span></label>
+          <label for="landmark">Address or nearest landmark <span class="opt">(required if the map is not marked)</span></label>
           <input type="text" id="landmark" placeholder="For example: near the ... mosque, Mahalla 904, Lane 12">
         </div>
       </fieldset>
@@ -230,7 +230,7 @@
       <!-- 3. Photo and description -->
       <fieldset class="step" data-step="3" style="border:0;margin:0;padding:0">
         <legend><h2>Add a photo and a note</h2></legend>
-        <p class="hint">A photo helps the crew bring what they need before they arrive.</p>
+        <p class="hint">A photo helps the crew prepare before they arrive.</p>
         <div class="field">
           <span class="label">Photo <span class="opt">(optional)</span></span>
           <label class="drop" id="drop">
@@ -253,10 +253,10 @@
           <div><dt>Photo and note</dt><dd id="r-desc"></dd><button type="button" data-go="3">Change</button></div>
         </dl>
         <div class="field">
-          <span class="label">How should we send you updates? <span class="opt">(optional)</span></span>
+          <span class="label">How would you like to receive updates? <span class="opt">(optional)</span></span>
           <div class="updates">
             <label><input type="radio" name="via" value="sms" checked> Text message</label>
-            <label><input type="radio" name="via" value="none"> No updates. I'll track it with the report number</label>
+            <label><input type="radio" name="via" value="none"> No updates. I will track the report with its number</label>
           </div>
         </div>
         <div class="field">
@@ -275,12 +275,12 @@
 
     <!-- Receipt -->
     <section id="done" hidden aria-live="polite">
-      <h1 tabindex="-1">Your report is in</h1>
+      <h1 tabindex="-1">Report received</h1>
       <div class="receipt" style="margin-top:1.25rem">
         <p class="label">Report number</p>
         <p class="case-no" id="done-no"></p>
         <p id="done-line"></p>
-        <p>You get a first reply within two working days. <span class="note" style="display:inline">(illustrative)</span></p>
+        <p>You will receive a first response within two working days. <span class="note" style="display:inline">(illustrative)</span></p>
         <p id="done-via"></p>
         <div class="actions">
           <a class="btn" id="done-track" href="track.html">Track this report</a>
@@ -293,9 +293,9 @@
 
   <div class="help">
     <section>
-      <h2>What happens after you report?</h2>
+      <h2>After you report</h2>
       <ol>
-        <li>You get a report number straight away.</li>
+        <li>You receive a report number immediately.</li>
         <li>Your report is sent to the responsible section in your municipality.</li>
         <li>You get updates until it is closed.</li>
       </ol>
@@ -303,7 +303,7 @@
     <section>
       <h2>By phone or app</h2>
       <p>Call <a href="tel:5628"><strong>5628</strong></a>, 8:30 am – 2 pm, or use the Mayoralty's app, Baghdad Citizen Voice.</p>
-      <p>Every channel feeds the same complaints system, so a report made by phone or in the app has a number you can track here.</p>
+      <p>Reports made by phone or in the app enter the same complaints system and can also be tracked here by their number.</p>
     </section>
   </div>
   </div>
@@ -397,7 +397,7 @@
       if (!navigator.geolocation) return;
       navigator.geolocation.getCurrentPosition(
         p => { const ll = L.latLng(p.coords.latitude, p.coords.longitude); set(ll); map.setView(ll, 16); },
-        () => { error.textContent = 'We could not find your location. Mark it on the map or type the address.'; }
+        () => { error.textContent = 'Your location could not be found. Mark it on the map or type the address.'; }
       );
     });
   }
@@ -429,7 +429,7 @@
     document.getElementById('done-track').href = `track.html?n=${NEW_NO}`;
     document.getElementById('done-line').textContent = `“${sent.cat}” report sent to ${d.en} municipality.`;
     document.getElementById('done-via').textContent =
-      via === 'sms' ? `We will send updates by text message to ${sent.phone}.` : 'Track it with the report number.';
+      via === 'sms' ? `Updates will be sent by text message to ${sent.phone}.` : 'Track it with the report number.';
     form.hidden = true;
     const done = document.getElementById('done');
     done.hidden = false;
@@ -459,7 +459,7 @@
   // "Problem still there?" on the track page sends the earlier number along
 
   const ref = params.get('ref');
-  if (ref) document.getElementById('desc').value = `Still not fixed. Earlier report: ${ref}.`;
+  if (ref) document.getElementById('desc').value = `The problem remains. Earlier report: ${ref}.`;
 
   show(1, true);
 </script>

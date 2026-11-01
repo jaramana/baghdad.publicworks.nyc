@@ -30,7 +30,10 @@
   bar.className = 'proto-bar';
   bar.setAttribute('role', 'note');
   bar.innerHTML = `<p><span class="long">${long}</span><span class="short">${short}</span><a href="https://www.amanatbaghdad.gov.iq/ar" rel="external">${link}</a></p>`;
-  document.body.prepend(bar);
+  // After the skip link, so the skip link stays first in the Tab order
+
+  const skip = document.querySelector('body > .skip');
+  skip ? skip.after(bar) : document.body.prepend(bar);
 
   const fit = () => document.documentElement.style.setProperty('--proto-h', bar.offsetHeight + 'px');
   fit();

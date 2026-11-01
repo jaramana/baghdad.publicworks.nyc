@@ -32,7 +32,7 @@ Not part of the publicworks.nyc suite.
 | Location | This folder; `github.com/jaramana/baghdad.publicworks.nyc`, public. Pages serves `docs/` at baghdad.publicworks.nyc. The root sends visitors to the English home |
 | Research | Four parallel agents; findings in `research/` |
 | Home direction | `home.html` (30 Oct, first built as the "i-blend" variant): the B + C blend revised. Green stays primary but only as lines, text and outlines. Grounded (E) rejected |
-| The Mayoralty (31 Oct) | About is renamed The Mayoralty. Its overview leads with the Mayor, then duties, who does what, major projects and contact. Its four children are Leadership and structure, Tenders and auctions, Laws and plans, Open data |
+| The Mayoralty (31 Oct) | About is renamed The Mayoralty. Its overview leads with the Mayor, then duties, responsibilities in Baghdad, major projects and contact. Its four children are Leadership and structure, Tenders and auctions, Laws and plans, Open data |
 | News (31 Oct) | News is a top-level nav item. The home page shows the three latest headlines, each linking to its item on the News page |
 | Site information (31 Oct) | Privacy, accessibility and how search works live on `site.html` ("Using this website"), linked from the footer only. The Mayoralty pages say nothing about the website itself |
 | Headshots (31 Oct) | The Mayor's portrait (Wikimedia Commons, CC0, January 2026) leads the overview and Leadership, at 3:2. Deputy mayors have no licensed photo and unconfirmed names, so they stay by role |
@@ -47,6 +47,7 @@ Not part of the publicworks.nyc suite.
 | Breadcrumbs (31 Oct) | Ancestors only, never the current page or an in-page group. No kicker above the title |
 | WhatsApp (31 Oct) | Hidden until the Mayoralty has a number. Reporting offers the web form, the 5628 hotline and the Citizen Voice app; updates come by text message |
 | Social links (31 Oct) | Facebook, Instagram and X as icons beside the footer hotline, each with a label for screen readers |
+| Voice (1 Nov) | Formal and institutional, the register of an Iraqi government site in translation. The Mayoralty is "the Mayoralty", not "we"; instructions address "you". No asides that explain or defend the institution ("not elected", "isn't always clear"), no conversational openers ("Can't find…?", "Prefer to…?"), no contractions. Headings are labels, except form steps and the Track questions. Pages carry no review date |
 | Claims (31 Oct) | `research/service-claims.md` lists every service and reporting claim as verified, illustrative, proposed or unsourced. Each service guide says everything but its Ur destination is illustrative |
 
 ## Visual system
@@ -95,7 +96,7 @@ Preview: `baghdad-site` in this folder's `.claude/launch.json` (port 4321), or `
 | Report a problem | `en/report.html` | Track a report |
 | Districts | `en/districts.html` | Karrada; the other 14 open their row in the index. Baghdad Governorate is one more row, under Around the city |
 | News | `en/news.html` | Statements newest first, each tagged Planning, Parks, Services or Works |
-| The Mayoralty | `en/about.html` | Leadership and structure (`leadership.html`), Tenders and auctions (`tenders.html`), Laws and plans (`laws.html`), Open data (`data.html`). The overview holds the Mayor, duties, who does what, major projects and contact |
+| The Mayoralty | `en/about.html` | Leadership and structure (`leadership.html`), Tenders and auctions (`tenders.html`), Laws and plans (`laws.html`), Open data (`data.html`). The overview holds the Mayor, duties, responsibilities in Baghdad, major projects and contact |
 | Footer only | `en/site.html` | Privacy, accessibility, how search works |
 
 Each English page's العربية link goes to its Arabic counterpart. News and Using this website have none yet, so they link to the Arabic home. Arabic pages' English link goes to their English page; `city-tigris.html` goes to Projects. Every کوردی link goes to the Kurdish twin, or to the Kurdish home when there is none. `docs/index.html` is a redirect to the English home.

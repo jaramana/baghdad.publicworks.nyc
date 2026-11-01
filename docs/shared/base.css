@@ -50,9 +50,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 .wrap { max-width: var(--wrap); margin-inline: auto; padding-inline: 1rem; }
 
-/* Skip link: off screen until it has keyboard focus */
+/* Skip link: above the top of the window until it has keyboard focus, then under the prototype bar */
 
-.skip { position: absolute; top: var(--proto-h, 0px); inset-inline-start: 1rem; z-index: 1001; translate: 0 -150%; background: var(--white); color: var(--green); font-weight: 600; padding: 0.5rem 1rem; border: 2px solid var(--green); border-top: 0; border-radius: 0 0 3px 3px; }
+.skip { position: absolute; top: var(--proto-h, 0px); inset-inline-start: 1rem; z-index: 1001; translate: 0 calc(-100% - var(--proto-h, 0px)); background: var(--white); color: var(--green); font-weight: 600; padding: 0.5rem 1rem; border: 2px solid var(--green); border-top: 0; border-radius: 0 0 3px 3px; }
 .skip:focus { translate: 0 0; }
 h1, h2, h3 { font-family: var(--kufi); line-height: 1.4; margin: 0; }
 figure { margin: 0; }
@@ -110,8 +110,8 @@ figcaption { font-size: 0.6875rem; color: var(--muted); margin-top: 0.3rem; }
 .nav .sub a:hover { background: var(--green-tint); color: var(--green-deep); }
 .nav .sub a[aria-current] { color: var(--green); font-weight: 600; }
 
-/* Language links: stacked at the end, in grey, behind a thin rule */
-.nav .lang { display: flex; flex-direction: column; align-items: flex-start; padding-inline-start: 1.25rem; border-inline-start: 1px solid var(--line); line-height: 1.45; }
+/* Language links: stacked at the end, in grey, behind a thin rule, centred on the nav labels */
+.nav .lang { display: flex; flex-direction: column; align-items: flex-start; align-self: center; padding-inline-start: 1.25rem; border-inline-start: 1px solid var(--line); line-height: 1.45; }
 .nav .lang a { font-size: 0.8125rem; color: var(--muted); padding-block: 0; border-bottom: 0; }
 .nav .lang a:hover { text-decoration: underline; }
 
@@ -199,7 +199,7 @@ footer { background: var(--soft); border-top: 4px solid var(--green); padding-bl
   .menu .nav .sub { display: block; position: static; min-width: 0; padding: 0 0 0.5rem; border: 0; border-inline-start: 2px solid var(--line); margin-inline-start: 0.15rem; box-shadow: none; background: none; font-size: 0.9375rem; }
   .menu .nav .sub a { padding: 0.3rem 0.9rem; }
   .menu .nav .sub a[aria-current] { font-weight: 700; }
-  .menu .nav .lang { gap: 0.5rem; margin-top: 1rem; padding: 1.25rem 0 0; border-inline-start: 0; border-top: 1px solid var(--line); }
+  .menu .nav .lang { align-self: stretch; gap: 0.5rem; margin-top: 1rem; padding: 1.25rem 0 0; border-inline-start: 0; border-top: 1px solid var(--line); }
   .menu .nav .lang a { font-size: 0.9375rem; padding: 0; }
 }
 

@@ -109,7 +109,7 @@
   <div class="layout">
   <div class="track">
     <h1>Track a report</h1>
-    <p class="lede">Enter your report number to see its progress and the team handling it. You do not need an account.</p>
+    <p class="lede">Enter your report number to see its progress and the team handling it. No account is needed.</p>
 
     <form class="lookup" id="lookup" role="search">
       <input id="no" aria-label="Report number" value="B-48213" autocomplete="off">
@@ -135,7 +135,7 @@
 
       <div class="after">
         <p>You also get these updates by text message.</p>
-        <a class="btn" href="report.html?cat=طفح%20المجاري&amp;d=karrada&amp;ref=B-48213">Problem still there? Report it again</a>
+        <a class="btn" href="report.html?cat=طفح%20المجاري&amp;d=karrada&amp;ref=B-48213">Report the problem again</a>
       </div>
     </article>
 
@@ -168,11 +168,11 @@
     </section>
     <section>
       <h2>How long does a fix take?</h2>
-      <p>You get a first reply within two working days. How long the fix takes depends on the problem. (Illustrative)</p>
+      <p>You will receive a first response within two working days. The time to fix depends on the problem. (Illustrative)</p>
     </section>
     <section>
-      <h2>Report closed but the problem isn't fixed?</h2>
-      <p>Use "Problem still there?" on your report. The new report carries the old number, so the two are linked.</p>
+      <h2>What if a report is closed but the problem remains?</h2>
+      <p>Use "Report the problem again" on your report. The new report carries the old number, so the two are linked.</p>
     </section>
   </div>
   </div>
@@ -217,7 +217,7 @@
     e.preventDefault();
     const found = cases[key(document.getElementById('no').value)];
     Object.values(cases).forEach(c => { c.hidden = c !== found; });
-    document.getElementById('miss').textContent = found ? '' : 'No report with that number. Check the number in your confirmation message.';
+    document.getElementById('miss').textContent = found ? '' : 'No report was found with that number. Check the number in your confirmation message.';
   });
 
   // A number sent from the Report page opens straight onto its result
