@@ -15,7 +15,7 @@ Not part of the publicworks.nyc suite.
 | Kurdish | Sorani (`lang="ckb"`, Arabic script, right to left) in `docs/ku/`, same filenames as `docs/en/`, translated from the English. Pilot of four pages: home, Services, Building permit, Report a problem. The rest follow once the English settles, alongside the Arabic pass |
 | Language links | Every paired page lists the other two languages in fixed order: العربية, کوردی, English. A page with no Kurdish twin sends کوردی to the Kurdish home. Kurdish pages link to the English page wherever no Kurdish page exists yet |
 | English name | "Mayoralty of Baghdad", the English text on the seal's ring. "Amanat" appears only once, in About, to give the Arabic name |
-| Site map | Five sections: Services, Report a problem, Districts, News, The Mayoralty. Each has an index page listing everything under it. Every page has a breadcrumb and a highlighted nav item. The footer lists the whole site |
+| Site map | Four sections: Services, Report a problem, News, The Mayoralty. Districts sits under The Mayoralty. Each has an index page listing everything under it. Every page has a breadcrumb and a highlighted nav item. The footer lists the whole site |
 | Dropdowns (31 Oct) | Services and The Mayoralty open a dropdown of their children on hover or keyboard focus, in CSS only. The parent label stays a link to its index. The panel hangs from the masthead's green line, its text aligned under the label. In the phone menu the children show indented under their parent |
 | Section tabs (31 Oct) | Retired after owner review. The Mayoralty overview lists its four pages under "In this section"; the dropdown and phone menu list them too |
 | Projects (31 Oct) | The status register is retired, because nobody can keep 14 statuses current. Progress on the Mayoralty's own works appears in News, tagged Works. Who runs each major project is one table on The Mayoralty overview (`about.html#works`). `projects.html` redirects there |
@@ -33,6 +33,7 @@ Not part of the publicworks.nyc suite.
 | Research | Four parallel agents; findings in `research/` |
 | Home direction | `home.html` (30 Oct, first built as the "i-blend" variant): the B + C blend revised. Green stays primary but only as lines, text and outlines. Grounded (E) rejected |
 | The Mayoralty (31 Oct) | About is renamed The Mayoralty. Its overview leads with the Mayor, then duties, responsibilities in Baghdad, major projects and contact. Its four children are Leadership and structure, Tenders and auctions, Laws and plans, Open data |
+| Districts (1 Nov) | Under The Mayoralty, after Leadership and structure, since the municipalities are part of its structure. Its breadcrumb is Home › The Mayoralty. The footer's The city column becomes News. Arabic and Kurdish pages keep Districts on top until their pass |
 | News (31 Oct) | News is a top-level nav item. The home page shows the three latest headlines, each linking to its item on the News page |
 | Site information (31 Oct) | Privacy, accessibility and how search works live on `site.html` ("Using this website"), linked from the footer only. The Mayoralty pages say nothing about the website itself |
 | Headshots (31 Oct) | The Mayor's portrait (Wikimedia Commons, CC0, January 2026) leads the overview and Leadership, at 3:2. Deputy mayors have no licensed photo and unconfirmed names, so they stay by role |
@@ -94,9 +95,9 @@ Preview: `baghdad-site` in this folder's `.claude/launch.json` (port 4321), or `
 | Home | `en/index.html` | Search (opens `search.html`), Today, most requested, report, districts by bank, three latest news |
 | Services | `en/services.html` | Five service guides (`service-*.html`), Alerts. The fee lookup opens `fees-account.html` |
 | Report a problem | `en/report.html` | Track a report |
-| Districts | `en/districts.html` | Karrada; the other 14 open their row in the index. Baghdad Governorate is one more row, under Around the city |
 | News | `en/news.html` | Statements newest first, each tagged Planning, Parks, Services or Works |
-| The Mayoralty | `en/about.html` | Leadership and structure (`leadership.html`), Tenders and auctions (`tenders.html`), Laws and plans (`laws.html`), Open data (`data.html`). The overview holds the Mayor, duties, responsibilities in Baghdad, major projects and contact |
+| The Mayoralty | `en/about.html` | Leadership and structure (`leadership.html`), Districts (`districts.html`), Tenders and auctions (`tenders.html`), Laws and plans (`laws.html`), Open data (`data.html`). The overview holds the Mayor, duties, responsibilities in Baghdad, major projects and contact |
+| Districts, under The Mayoralty | `en/districts.html` | Karrada; the other 14 open their row in the index. Baghdad Governorate is one more row, under Around the city |
 | Footer only | `en/site.html` | Privacy, accessibility, how search works |
 
 Each English page's العربية link goes to its Arabic counterpart. News and Using this website have none yet, so they link to the Arabic home. Arabic pages' English link goes to their English page; `city-tigris.html` goes to Projects. Every کوردی link goes to the Kurdish twin, or to the Kurdish home when there is none. `docs/index.html` is a redirect to the English home.
