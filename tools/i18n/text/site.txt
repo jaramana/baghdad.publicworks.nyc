@@ -40,13 +40,13 @@ en: A problem can be reported by typing the address instead of using the map. Al
 ar: يمكن الإبلاغ عن المشكلة بكتابة العنوان بدلاً من استخدام الخريطة. والتنبيهات والأعمال المعروضة على خرائط البلديات مدرجة نصاً أيضاً.
 ku: دەتوانرێت کێشە بە نووسینی ناونیشان ڕاپۆرت بکرێت لەجیاتی بەکارهێنانی نەخشە. ئاگادارکردنەوە و کارەکانی سەر نەخشەی شارەوانییەکان وەک دەقیش لیست کراون.
 
-en: Arabic is the website's primary language.
-ar: العربية هي اللغة الأساسية للموقع.
-ku: عەرەبی زمانی سەرەکیی ماڵپەڕەکەیە.
+en: Arabic is the website's primary language and its official text. The English and Kurdish pages are translations.
+ar: العربية هي اللغة الأساسية للموقع، والنص العربي هو النص الرسمي. الصفحات الإنكليزية والكردية ترجمات.
+ku: عەرەبی زمانی سەرەکیی ماڵپەڕەکەیە و دەقە عەرەبییەکە دەقی فەرمییە. پەڕە ئینگلیزی و کوردییەکان وەرگێڕانن.
 
-en: To report an accessibility problem, write to <0>info@amanatbaghdad.gov.iq</0> with the page address and a description of the problem, or call the hotline, <1>5628</1>, 8:30 am – 2 pm.
-ar: للإبلاغ عن مشكلة في إمكانية الوصول، راسل <0>info@amanatbaghdad.gov.iq</0> مع عنوان الصفحة ووصف المشكلة، أو اتصل بالخط الساخن <1>5628</1> من 8:30 صباحاً إلى 2 ظهراً.
-ku: بۆ ڕاپۆرتکردنی کێشەیەکی دەستڕاگەیشتن، بنووسە بۆ <0>info@amanatbaghdad.gov.iq</0> لەگەڵ ناونیشانی پەڕەکە و وەسفی کێشەکە، یان پەیوەندی بە هێڵی گەرمەوە بکە، <1>5628</1>، لە 8:30ی بەیانی تا 2ی دوانیوەڕۆ.
+en: To report an accessibility problem, <0>contact the Mayoralty</0> with the page address and a description of the problem.
+ar: للإبلاغ عن مشكلة في إمكانية الوصول، <0>تواصل مع الأمانة</0> مع عنوان الصفحة ووصف المشكلة.
+ku: بۆ ڕاپۆرتکردنی کێشەیەکی دەستڕاگەیشتن، <0>پەیوەندی بە ئەمانەتەوە بکە</0> لەگەڵ ناونیشانی پەڕەکە و وەسفی کێشەکە.
 
 en: Search covers the titles, summaries and keywords of pages on this website, and lists matching pages with the best match first.
 ar: يشمل البحث عناوين صفحات هذا الموقع وملخصاتها وكلماتها المفتاحية، ويعرض الصفحات المطابقة بدءاً بالأكثر مطابقة.
@@ -60,6 +60,6 @@ en: Search terms are not linked to your name or phone number.
 ar: لا ترتبط كلمات البحث باسمك أو رقم هاتفك.
 ku: وشەکانی گەڕان بە ناو یان ژمارەی تەلەفۆنەکەتەوە نابەسترێنەوە.
 
-en: If you cannot find what you need, see <0>all services</0> or call the hotline, <1>5628</1>, 8:30 am – 2 pm.
-ar: إذا لم تجد ما تحتاجه، فاطّلع على <0>كل الخدمات</0> أو اتصل بالخط الساخن <1>5628</1> من 8:30 صباحاً إلى 2 ظهراً.
-ku: ئەگەر ئەوەی پێویستتە نەتدۆزییەوە، سەیری <0>هەموو خزمەتگوزارییەکان</0> بکە یان پەیوەندی بە هێڵی گەرمەوە بکە، <1>5628</1>، لە 8:30ی بەیانی تا 2ی دوانیوەڕۆ.
+en: If you cannot find what you need, see <0>all services</0> or <1>contact the Mayoralty</1>.
+ar: إذا لم تجد ما تحتاجه، فاطّلع على <0>كل الخدمات</0> أو <1>تواصل مع الأمانة</1>.
+ku: ئەگەر ئەوەی پێویستتە نەتدۆزییەوە، سەیری <0>هەموو خزمەتگوزارییەکان</0> بکە یان <1>پەیوەندی بە ئەمانەتەوە بکە</1>.

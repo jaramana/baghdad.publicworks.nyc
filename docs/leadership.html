@@ -15,8 +15,13 @@
 <script src="shared/lang-swap.js"></script>
 <style>
   .guide h2 { scroll-margin-top: 7rem; }
-  table.data td:last-child { word-break: break-word; }
-  table.data td:first-child { width: 55%; }
+  .guide h3 { font-size: 1rem; margin: 1.25rem 0 0.25rem; }
+  .units { columns: 2; column-gap: 2rem; list-style: none; padding: 0 !important; border-top: 2px solid var(--green); }
+  .units .head { display: block; font-size: 0.875rem; color: var(--muted); }
+  .units li { break-inside: avoid; margin: 0 !important; padding-block: 0.45rem; border-bottom: 1px solid var(--line); }
+  @media (max-width: 560px) {
+    .units { columns: 1; }
+  }
 </style>
 <script src="shared/prototype.js" defer></script>
 </head>
@@ -48,11 +53,10 @@
         <li class="has-sub end"><a href="about.html" aria-current="true">الأمانة</a>
           <ul class="sub">
             <li><a href="leadership.html" aria-current="page">القيادة والهيكل التنظيمي</a></li>
-            <li><a href="districts.html">البلديات</a></li>
             <li><a href="tenders.html">المناقصات والمزايدات</a></li>
             <li><a href="laws.html">القوانين والخطط</a></li>
             <li><a href="data.html">البيانات المفتوحة</a></li>
-            <li><a href="about.html#contact">الاتصال</a></li>
+            <li><a href="contact.html">الاتصال</a></li>
           </ul>
         </li>
         <li class="lang"><a href="ku/leadership.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/leadership.html" lang="en" hreflang="en" dir="ltr">English</a></li>
@@ -71,7 +75,7 @@
 
   <header class="page-head">
     <h1>القيادة والهيكل التنظيمي</h1>
-    <p class="lede">أمين بغداد ووكلاؤه الثلاثة والدوائر المرتبطة بكل منهم، مع عناوين بريدها الإلكتروني.</p>
+    <p class="lede">أمين بغداد ووكلاؤه الثلاثة والدوائر التابعة لكل منهم. عناوين البريد الإلكتروني لكل مكتب مدرجة في صفحة <a href="contact.html#departments">الاتصال</a>.</p>
   </header>
 
   <div class="layout">
@@ -90,101 +94,64 @@
           </div>
         </div>
         <p>يعاون أمينَ بغداد ثلاثة وكلاء: وكيل للشؤون البلدية، وآخر للشؤون الفنية، وثالث للشؤون الإدارية.</p>
-        <div class="table-wrap">
-          <table class="data">
-            <caption>المرتبطة بأمين بغداد</caption>
-            <thead><tr><th>الجهة</th><th>البريد الإلكتروني</th></tr></thead>
-            <tbody>
-              <tr><td>مكتب أمين بغداد</td><td><a href="mailto:mayor.office@amanatbaghdad.gov.iq">mayor.office@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>العقود العامة</td><td><a href="mailto:alukud@amanatbaghdad.gov.iq">alukud@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>الاستثمار</td><td><a href="mailto:investing@amanatbaghdad.gov.iq">investing@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>إدارة الجودة</td><td>—</td></tr>
-              <tr><td>تقنية المعلومات</td><td><a href="mailto:alhaseb@amanatbaghdad.gov.iq">alhaseb@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>مشاريع البنك الدولي</td><td><a href="mailto:bank@amanatbaghdad.gov.iq">bank@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>الكهرباء والتزيين</td><td><a href="mailto:kahraba@amanatbaghdad.gov.iq">kahraba@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
+        <h3>المرتبطة بأمين بغداد</h3>
+        <ul class="units">
+          <li>مكتب أمين بغداد</li>
+          <li>العقود العامة</li>
+          <li>الاستثمار</li>
+          <li>إدارة الجودة</li>
+          <li>تقنية المعلومات</li>
+          <li>مشاريع البنك الدولي</li>
+          <li>الكهرباء والتزيين</li>
+        </ul>
       </section>
 
       <section id="municipal" aria-labelledby="municipal-h">
         <h2 id="municipal-h">وكيل أمين بغداد للشؤون البلدية</h2>
-        <p>يتولى البلديات الخمس عشرة، والمخلفات الصلبة، والطرق السريعة، والمقابر، وترقيم الدور. المكتب: <a href="mailto:wakelbaladi@amanatbaghdad.gov.iq">wakelbaladi@amanatbaghdad.gov.iq</a></p>
-        <div class="table-wrap">
-          <table class="data">
-            <thead><tr><th>الجهة</th><th>البريد الإلكتروني</th></tr></thead>
-            <tbody>
-              <tr><td><a href="districts.html">البلديات الخمس عشرة</a></td><td>مدرجة في <a href="districts.html">البلديات</a></td></tr>
-              <tr><td>المخلفات الصلبة والبيئة</td><td><a href="mailto:albeaa@amanatbaghdad.gov.iq">albeaa@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>الطرق السريعة</td><td>—</td></tr>
-              <tr><td>الترقيم</td><td>—</td></tr>
-              <tr><td>المعامل البلدية</td><td><a href="mailto:factor@amanatbaghdad.gov.iq">factor@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>المقابر</td><td><a href="mailto:makaber@amanatbaghdad.gov.iq">makaber@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>بوب الشام</td><td><a href="mailto:bob@amanatbaghdad.gov.iq">bob@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
+        <p>يتولى البلديات، والمخلفات الصلبة، والطرق السريعة، والمقابر، وترقيم الدور.</p>
+        <ul class="units">
+          <li><a href="contact.html#municipalities">البلديات</a></li>
+          <li>المخلفات الصلبة والبيئة</li>
+          <li>الطرق السريعة</li>
+          <li>الترقيم</li>
+          <li>المعامل البلدية</li>
+          <li>المقابر</li>
+          <li>بوب الشام</li>
+        </ul>
       </section>
 
       <section id="technical" aria-labelledby="technical-h">
         <h2 id="technical-h">وكيل أمين بغداد للشؤون الفنية</h2>
-        <p>يتولى الماء، والمجاري، والمتنزهات، والمشاريع، والتصاميم. المكتب: <a href="mailto:wakelfani@amanatbaghdad.gov.iq">wakelfani@amanatbaghdad.gov.iq</a></p>
-        <div class="table-wrap">
-          <table class="data">
-            <thead><tr><th>الجهة</th><th>البريد الإلكتروني</th></tr></thead>
-            <tbody>
-              <tr><td>ماء بغداد</td><td><a href="mailto:maabaghdad@amanatbaghdad.gov.iq">maabaghdad@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>مجاري بغداد</td><td><a href="mailto:majari@amanatbaghdad.gov.iq">majari@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>المشاريع</td><td><a href="mailto:mashareaa@amanatbaghdad.gov.iq">mashareaa@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>التصاميم</td><td><a href="mailto:tasamem@amanatbaghdad.gov.iq">tasamem@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>التخطيط والمتابعة</td><td><a href="mailto:tactet@amanatbaghdad.gov.iq">tactet@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>المتنزهات والتشجير</td><td><a href="mailto:mashatel@amanatbaghdad.gov.iq">mashatel@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>الوحدات الإنتاجية</td><td><a href="mailto:antajea@amanatbaghdad.gov.iq">antajea@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>شركة تنفيذ مشاريع الماء</td><td><a href="mailto:alsharka@amanatbaghdad.gov.iq">alsharka@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>شركة ابن رشد العامة</td><td><a href="mailto:ibnrushd@amanatbaghdad.gov.iq">ibnrushd@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
+        <p>يتولى الماء، والمجاري، والمتنزهات، والمشاريع، والتصاميم.</p>
+        <ul class="units">
+          <li>ماء بغداد</li>
+          <li>مجاري بغداد</li>
+          <li>المشاريع<span class="head">المدير العام: المهندس يقظان عدنان الوائلي</span></li>
+          <li>التصاميم</li>
+          <li>التخطيط والمتابعة</li>
+          <li>المتنزهات والتشجير</li>
+          <li>الوحدات الإنتاجية</li>
+          <li>شركة تنفيذ مشاريع الماء</li>
+          <li>شركة ابن رشد العامة</li>
+        </ul>
       </section>
 
       <section id="administrative" aria-labelledby="administrative-h">
         <h2 id="administrative-h">وكيل أمين بغداد للشؤون الإدارية</h2>
-        <p>يتولى الشؤون الإدارية والمالية، والعقارات، والشؤون القانونية، والرقابة. المكتب: <a href="mailto:wakeledari@amanatbaghdad.gov.iq">wakeledari@amanatbaghdad.gov.iq</a></p>
-        <div class="table-wrap">
-          <table class="data">
-            <thead><tr><th>الجهة</th><th>البريد الإلكتروني</th></tr></thead>
-            <tbody>
-              <tr><td>الشؤون الإدارية والمالية</td><td><a href="mailto:edarea@amanatbaghdad.gov.iq">edarea@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>العقارات</td><td><a href="mailto:ekarat@amanatbaghdad.gov.iq">ekarat@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>الشؤون القانونية</td><td><a href="mailto:kanonea@amanatbaghdad.gov.iq">kanonea@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>الرقابة والتدقيق</td><td><a href="mailto:alrkaba@amanatbaghdad.gov.iq">alrkaba@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>العلاقات والإعلام</td><td><a href="mailto:elakat@amanatbaghdad.gov.iq">elakat@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>الحراسات والأمن</td><td><a href="mailto:hrasat@amanatbaghdad.gov.iq">hrasat@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
+        <p>يتولى الشؤون الإدارية والمالية، والعقارات، والشؤون القانونية، والرقابة.</p>
+        <ul class="units">
+          <li>الشؤون الإدارية والمالية</li>
+          <li>العقارات</li>
+          <li>الشؤون القانونية</li>
+          <li>الرقابة والتدقيق</li>
+          <li>العلاقات والإعلام<span class="head">المدير العام: المهندس محمد الربيعي</span></li>
+          <li>الحراسات والأمن</li>
+        </ul>
       </section>
 
-      <section id="other" aria-labelledby="other-h">
-        <h2 id="other-h">جهات أخرى</h2>
-        <div class="table-wrap">
-          <table class="data">
-            <thead><tr><th>الجهة</th><th>البريد الإلكتروني</th></tr></thead>
-            <tbody>
-              <tr><td>الواردات</td><td><a href="mailto:wardat@amanatbaghdad.gov.iq">wardat@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>قسم التخطيط</td><td><a href="mailto:dep_tactet@amanatbaghdad.gov.iq">dep_tactet@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>قسم الرقابة</td><td><a href="mailto:control@amanatbaghdad.gov.iq">control@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>السياحة</td><td><a href="mailto:alseaha@amanatbaghdad.gov.iq">alseaha@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>تمكين المرأة</td><td><a href="mailto:women-t@amanatbaghdad.gov.iq">women-t@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>معهد التدريب المهني</td><td><a href="mailto:mahad@amanatbaghdad.gov.iq">mahad@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
 
     </article>
   </div>
-  <p class="meta">تعني العلامة — عدم وجود بريد إلكتروني معلن.</p>
 </main>
 
 <footer>
@@ -193,7 +160,7 @@
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
       <div><h2>الخدمات</h2><ul><li><a href="services.html">كل الخدمات</a></li><li><a href="report.html">الإبلاغ عن مشكلة</a></li><li><a href="track.html">متابعة بلاغ</a></li><li><a href="alerts.html">التنبيهات</a></li></ul></div>
       <div><h2>الأخبار</h2><ul><li><a href="news.html">كل الأخبار</a></li></ul></div>
-      <div><h2>الأمانة</h2><ul><li><a href="about.html">نظرة عامة</a></li><li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li><li><a href="districts.html">البلديات</a></li><li><a href="tenders.html">المناقصات والمزايدات</a></li><li><a href="laws.html">القوانين والخطط</a></li><li><a href="data.html">البيانات المفتوحة</a></li><li><a href="about.html#contact">الاتصال</a></li></ul></div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">نظرة عامة</a></li><li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li><li><a href="tenders.html">المناقصات والمزايدات</a></li><li><a href="laws.html">القوانين والخطط</a></li><li><a href="data.html">البيانات المفتوحة</a></li><li><a href="contact.html">الاتصال</a></li></ul></div>
       <div><h2>هذا الموقع</h2><ul><li><a href="site.html#privacy">الخصوصية</a></li><li><a href="site.html#access">إمكانية الوصول</a></li><li><a href="site.html#search">كيف يعمل البحث</a></li></ul></div>
     </div>
     <div class="fine">

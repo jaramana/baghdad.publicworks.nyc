@@ -59,13 +59,12 @@
   .way h3 { font-size: 1.125rem; font-weight: 700; }
   .way p { margin: 0.3rem 0 0.9rem; color: var(--muted); }
 
-  /* Districts: each bank on its own side of the river, as on a map */
-  .banks { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2.5rem; }
-  .bank + .bank { border-inline-start: 2px solid var(--teal); padding-inline-start: 2.5rem; }
-  .bank h3 { font-size: 1.125rem; font-weight: 700; padding-bottom: 0.5rem; border-bottom: 1px solid var(--line); }
-  .bank h3 span { font-family: "IBM Plex Sans Arabic", sans-serif; font-size: 0.875rem; font-weight: 500; color: var(--muted); margin-inline-start: 0.4rem; }
-  .bank ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 1.5rem; }
-  .bank li { padding-block: 0.35rem; break-inside: avoid; }
+  /* The Mayor: portrait beside name and title */
+  .mayor { display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); gap: 1.5rem; align-items: center; }
+  .mayor img { display: block; width: 100%; aspect-ratio: var(--ratio-photo); object-fit: cover; object-position: center 30%; border-radius: 3px; }
+  .mayor .role { margin: 0; font-size: 0.875rem; font-weight: 600; color: var(--green); }
+  .mayor h2 { font-size: 1.5rem; margin: 0.1rem 0 0.6rem; }
+  .mayor .links { margin: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; }
 
   /* News: the three latest headlines, date beside each */
   .headlines { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--green); }
@@ -81,8 +80,7 @@
     .tasks { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 560px) {
-    .tasks, .banks, .headlines li { grid-template-columns: 1fr; }
-    .bank + .bank { border-inline-start: 0; padding-inline-start: 0; margin-top: 1.5rem; }
+    .tasks, .headlines li, .mayor { grid-template-columns: 1fr; }
   }
 </style>
 <script src="shared/prototype.js" defer></script>
@@ -115,11 +113,10 @@
         <li class="has-sub end"><a href="about.html">الأمانة</a>
           <ul class="sub">
             <li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li>
-            <li><a href="districts.html">البلديات</a></li>
             <li><a href="tenders.html">المناقصات والمزايدات</a></li>
             <li><a href="laws.html">القوانين والخطط</a></li>
             <li><a href="data.html">البيانات المفتوحة</a></li>
-            <li><a href="about.html#contact">الاتصال</a></li>
+            <li><a href="contact.html">الاتصال</a></li>
           </ul>
         </li>
         <li class="lang"><a href="ku/index.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/index.html" lang="en" hreflang="en" dir="ltr">English</a></li>
@@ -170,7 +167,7 @@
       <li><a href="service-property.html"><strong>بيان العقار</strong><p>للبيع والإرث والإجازات. يصدر إلكترونياً.</p><span class="tag">على بوابة أور</span></a></li>
       <li><a href="service-fees.html"><strong>الرسوم البلدية</strong><p>رسوم المهنة والإعلان والنظافة، وأماكن دفعها.</p></a></li>
       <li><a href="track.html"><strong>متابعة بلاغ</strong><p>أدخل رقم البلاغ لمعرفة حالته.</p></a></li>
-      <li><a href="districts.html"><strong>بلدية منطقتك</strong><p>بيانات الاتصال بكل بلدية من البلديات الخمس عشرة.</p></a></li>
+      <li><a href="contact.html#municipalities"><strong>بلدية منطقتك</strong><p>بيانات الاتصال ببلديتك.</p></a></li>
     </ul>
   </section>
 
@@ -185,39 +182,22 @@
         </div>
         <div class="way">
           <h3>عبر الهاتف أو التطبيق</h3>
-          <p>اتصل بالرقم <a href="tel:5628"><strong>٥٦٢٨</strong></a> من ٨:٣٠ صباحاً إلى ٢ ظهراً، أو استخدم تطبيق الأمانة <a href="https://apps.apple.com/iq/app/id1669088018" rel="external">صوت المواطن البغدادي ↗</a>. تحصل البلاغات المقدّمة بالهاتف أو عبر التطبيق على رقم بلاغ أيضاً.</p>
+          <p>اتصل بالرقم <a href="tel:5628"><strong>٥٦٢٨</strong></a> أو استخدم تطبيق الأمانة <a href="https://apps.apple.com/iq/app/id1669088018" rel="external">صوت المواطن البغدادي ↗</a>. تحصل البلاغات المقدّمة بالهاتف أو عبر التطبيق على رقم بلاغ أيضاً.</p>
         </div>
       </div>
     </section>
   </div>
 
-  <section class="block wrap" id="district" aria-labelledby="district-h">
-    <div class="block-head"><h2 id="district-h">بلديتك</h2><p><a href="districts.html">البلديات الخمس عشرة</a></p></div>
-    <div class="banks">
-      <div class="bank">
-        <h3>الرصافة <span>الجانب الشرقي</span></h3>
-        <ul>
-          <li><a href="districts.html#rusafa">مركز الرصافة</a></li>
-          <li><a href="districts.html#adhamiya">الأعظمية</a></li>
-          <li><a href="districts.html#shaab">الشعب</a></li>
-          <li><a href="districts.html#sader1">الصدر الأولى</a></li>
-          <li><a href="districts.html#sader2">الصدر الثانية</a></li>
-          <li><a href="districts.html#ghadeer">الغدير</a></li>
-          <li><a href="districts.html#baghdadg">بغداد الجديدة</a></li>
-          <li><a href="district-karrada.html">الكرادة</a></li>
-        </ul>
-      </div>
-      <div class="bank">
-        <h3>الكرخ <span>الجانب الغربي</span></h3>
-        <ul>
-          <li><a href="districts.html#karkh">مركز الكرخ</a></li>
-          <li><a href="districts.html#kadhimiya">الكاظمية</a></li>
-          <li><a href="districts.html#mansour">المنصور</a></li>
-          <li><a href="districts.html#shuala">الشعلة</a></li>
-          <li><a href="districts.html#rasheed">الرشيد</a></li>
-          <li><a href="districts.html#dora">الدورة</a></li>
-          <li><a href="districts.html#gzone">المنطقة الخضراء وطريق المطار</a></li>
-        </ul>
+  <section class="block wrap" id="mayor" aria-labelledby="mayor-h">
+    <div class="mayor">
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/%D8%B5%D9%88%D8%B1%D8%A9_%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9_%D8%B9%D9%85%D8%A7%D8%B1_%D9%85%D9%88%D8%B3%D9%89_%D9%83%D8%A7%D8%B8%D9%85.jpg/960px-%D8%B5%D9%88%D8%B1%D8%A9_%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9_%D8%B9%D9%85%D8%A7%D8%B1_%D9%85%D9%88%D8%B3%D9%89_%D9%83%D8%A7%D8%B8%D9%85.jpg" alt="المهندس عمار موسى كاظم في مكتبه">
+        <figcaption>Mustafa85674 — CC0 — ويكيميديا كومنز</figcaption>
+      </figure>
+      <div>
+        <p class="role">أمين بغداد</p>
+        <h2 id="mayor-h">المهندس عمار موسى كاظم</h2>
+        <p class="links"><a href="about.html">الأمانة</a><a href="leadership.html">القيادة والهيكل التنظيمي</a></p>
       </div>
     </div>
   </section>
@@ -238,7 +218,7 @@
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
       <div><h2>الخدمات</h2><ul><li><a href="services.html">كل الخدمات</a></li><li><a href="report.html">الإبلاغ عن مشكلة</a></li><li><a href="track.html">متابعة بلاغ</a></li><li><a href="alerts.html">التنبيهات</a></li></ul></div>
       <div><h2>الأخبار</h2><ul><li><a href="news.html">كل الأخبار</a></li></ul></div>
-      <div><h2>الأمانة</h2><ul><li><a href="about.html">نظرة عامة</a></li><li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li><li><a href="districts.html">البلديات</a></li><li><a href="tenders.html">المناقصات والمزايدات</a></li><li><a href="laws.html">القوانين والخطط</a></li><li><a href="data.html">البيانات المفتوحة</a></li><li><a href="about.html#contact">الاتصال</a></li></ul></div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">نظرة عامة</a></li><li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li><li><a href="tenders.html">المناقصات والمزايدات</a></li><li><a href="laws.html">القوانين والخطط</a></li><li><a href="data.html">البيانات المفتوحة</a></li><li><a href="contact.html">الاتصال</a></li></ul></div>
       <div><h2>هذا الموقع</h2><ul><li><a href="site.html#privacy">الخصوصية</a></li><li><a href="site.html#access">إمكانية الوصول</a></li><li><a href="site.html#search">كيف يعمل البحث</a></li></ul></div>
     </div>
     <div class="fine">

@@ -8,9 +8,9 @@ en: The Mayoralty of Baghdad
 ar: أمانة بغداد
 ku: ئەمانەتی بەغدا
 
-en: The Mayoralty provides water, sewerage, roads, waste collection, parks and building permits within the boundary of Baghdad, through 15 municipalities.
-ar: تتولى الأمانة خدمات الماء والمجاري والطرق ورفع النفايات والمتنزهات وإجازات البناء ضمن حدود بغداد، عبر خمس عشرة بلدية.
-ku: ئەمانەت لە سنووری بەغدادا ئاو، ئاوەڕۆ، ڕێگا، کۆکردنەوەی خاشاک، پارک و مۆڵەتی بیناسازی دابین دەکات، لە ڕێگەی ١٥ شارەوانییەوە.
+en: The Mayoralty provides water, sewerage, roads, waste collection, parks and building permits within the boundary of Baghdad.
+ar: تتولى الأمانة خدمات الماء والمجاري والطرق ورفع النفايات والمتنزهات وإجازات البناء ضمن حدود بغداد.
+ku: ئەمانەت لە سنووری بەغدادا ئاو، ئاوەڕۆ، ڕێگا، کۆکردنەوەی خاشاک، پارک و مۆڵەتی بیناسازی دابین دەکات.
 
 en: In office since 2022. Three deputy mayors assist the Mayor, one each for municipal, technical and administrative affairs.
 ar: في المنصب منذ عام 2022. يعاون أمينَ بغداد ثلاثة وكلاء: وكيل للشؤون البلدية، وآخر للشؤون الفنية، وثالث للشؤون الإدارية.
@@ -24,9 +24,9 @@ en: The Mayor, the deputy mayors and the departments, with their email addresses
 ar: أمين بغداد ووكلاؤه والدوائر، مع عناوين بريدها الإلكتروني.
 ku: ئەمین، جێگرەکان و فەرمانگەکان، لەگەڵ ناونیشانی ئیمەیڵیان.
 
-en: The 15 municipalities, with the email for each office.
-ar: البلديات الخمس عشرة، مع البريد الإلكتروني لكل منها.
-ku: ١٥ شارەوانییەکە، لەگەڵ ئیمەیڵی هەر نووسینگەیەک.
+en: The municipalities of Baghdad, by bank of the Tigris.
+ar: بلديات بغداد، بحسب جانب دجلة.
+ku: شارەوانییەکانی بەغدا، بەپێی کەناری دیجلە.
 
 en: Notices for contracts and for sales and leases of Mayoralty property.
 ar: إعلانات العقود، وبيع أملاك الأمانة وإيجارها.
@@ -260,9 +260,9 @@ en: Your municipality
 ar: بلديتك
 ku: شارەوانییەکەت
 
-en: Each of the 15 municipalities has its own office and email. <0>Find your municipality</0>
-ar: لكل بلدية من البلديات الخمس عشرة مقرها وبريدها الإلكتروني. <0>اعثر على بلديتك</0>
-ku: هەر یەک لە ١٥ شارەوانییەکە نووسینگە و ئیمەیڵی خۆی هەیە. <0>شارەوانییەکەت بدۆزەرەوە</0>
+en: Each municipality has its own office and email. <0>Find your municipality</0>
+ar: لكل بلدية مقرها وبريدها الإلكتروني. <0>اعثر على بلديتك</0>
+ku: هەر شارەوانییەک نووسینگە و ئیمەیڵی خۆی هەیە. <0>شارەوانییەکەت بدۆزەرەوە</0>
 
 en: Complaints about staff or departments
 ar: الشكاوى بحق الموظفين أو الدوائر
@@ -291,3 +291,27 @@ ku: ئیمەیڵی هەر فەرمانگەیەک لە <0>سەرکردایەتی 
 en: General enquiries
 ar: الاستفسارات العامة
 ku: پرسیارە گشتییەکان
+
+en: The Mayor, the deputy mayors and the departments that report to each.
+ar: أمين بغداد ووكلاؤه والدوائر التابعة لكل منهم.
+ku: ئەمینی بەغدا، جێگرەکانی و ئەو فەرمانگانەی سەر بە هەر یەکێکیانن.
+
+en: The hotline, the municipality offices and the email addresses of the departments.
+ar: الخط الساخن ومقار البلديات وعناوين البريد الإلكتروني للدوائر.
+ku: هێڵی گەرم، نووسینگەی شارەوانییەکان و ناونیشانی ئیمەیڵی فەرمانگەکان.
+
+en: The lake in Zawraa Park, with trees along its banks
+ar: بحيرة متنزه الزوراء والأشجار على ضفافها
+ku: دەریاچەی پارکی زەوراء و درەختەکانی دەوروبەری
+
+en: <0>Zawraa Park, Karkh</0>Haleemwitwit, 2014 — CC BY-SA 4.0 — Wikimedia Commons
+ar: <0>متنزه الزوراء، الكرخ</0>Haleemwitwit، ٢٠١٤ — CC BY-SA 4.0 — ويكيميديا كومنز
+ku: <0>پارکی زەوراء، کەرخ</0>Haleemwitwit، ٢٠١٤ — CC BY-SA 4.0 — ویکیمیدیا کۆمنز
+
+en: Gardens on the Abu Nuwas corniche beside the Tigris
+ar: حدائق كورنيش أبي نواس على ضفة دجلة
+ku: باخچەکانی کۆرنیشی ئەبو نوواس لە تەنیشت دیجلە
+
+en: <0>Abu Nuwas corniche gardens, Rusafa</0>Nawar GJ, 2014 — CC BY-SA 3.0 — Wikimedia Commons
+ar: <0>حدائق كورنيش أبي نواس، الرصافة</0>Nawar GJ، ٢٠١٤ — CC BY-SA 3.0 — ويكيميديا كومنز
+ku: <0>باخچەکانی کۆرنیشی ئەبو نوواس، ڕوسافە</0>Nawar GJ، ٢٠١٤ — CC BY-SA 3.0 — ویکیمیدیا کۆمنز

@@ -32,9 +32,9 @@ en: How to pay
 ar: طريقة الدفع
 ku: چۆنیەتی پارەدان
 
-en: Pay at the collection section of your district office, Sunday to Thursday, 8:30 am – 2:30 pm, in cash or by card where available. Bring your account number and keep the receipt. <0>Find your district office</0>
-ar: ادفع في شعبة الجباية في بلدية منطقتك، من الأحد إلى الخميس، من 8:30 صباحاً إلى 2:30 ظهراً، نقداً أو بالبطاقة حيثما توفرت. أحضر رقم حسابك واحتفظ بالوصل. <0>اعثر على بلدية منطقتك</0>
-ku: لە بەشی کۆکردنەوەی پارە لە شارەوانی ناوچەکەت بیدە، یەکشەممە تا پێنجشەممە، لە 8:30ی بەیانی تا 2:30ی دوانیوەڕۆ، بە نەقد یان بە کارت لە شوێنی بەردەست. ژمارەی هەژمارەکەت لەگەڵ خۆت بهێنە و پسوولەی وەرگرتن هەڵبگرە. <0>شارەوانی ناوچەکەت بدۆزەرەوە</0>
+en: Pay at the collection section of your district office during office hours, in cash or by card where available. Bring your account number and keep the receipt. <0>Find your district office</0>
+ar: ادفع في شعبة الجباية في بلدية منطقتك خلال أوقات الدوام، نقداً أو بالبطاقة حيثما توفرت. أحضر رقم حسابك واحتفظ بالوصل. <0>اعثر على بلدية منطقتك</0>
+ku: لە بەشی کۆکردنەوەی پارە لە شارەوانی ناوچەکەت لە کاتی دەوامدا بیدە، بە نەقد یان بە کارت لە شوێنی بەردەست. ژمارەی هەژمارەکەت لەگەڵ خۆت بهێنە و پسوولەی وەرگرتن هەڵبگرە. <0>شارەوانی ناوچەکەت بدۆزەرەوە</0>
 
 en: Look up another account
 ar: استعلم عن حساب آخر

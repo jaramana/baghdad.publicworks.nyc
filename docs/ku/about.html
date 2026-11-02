@@ -15,13 +15,11 @@
 <script src="../shared/lang-swap.js"></script>
 <style>
   .guide h2 { scroll-margin-top: 7rem; }
-  .ways-in { list-style: none; padding: 0 !important; border-top: 2px solid var(--green); }
-  .ways-in li { display: grid; grid-template-columns: 10rem 1fr; gap: 0.25rem 1.25rem; padding-block: 0.7rem; margin: 0 !important; border-bottom: 1px solid var(--line); }
-  .ways-in strong { font-weight: 600; }
-  .ways-in p { margin: 0 !important; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0 1.5rem; }
+  .pair img { display: block; width: 100%; aspect-ratio: var(--ratio-photo); object-fit: cover; border-radius: 3px; }
+  .pair .place { display: block; font-size: 0.875rem; font-weight: 600; color: var(--ink); }
   @media (max-width: 560px) {
-    .ways-in li { grid-template-columns: 1fr; }
-  }
+    }
 </style>
 <script src="../shared/prototype.js" defer></script>
 </head>
@@ -53,11 +51,10 @@
         <li class="has-sub end"><a href="about.html" aria-current="page">ئەمانەت</a>
           <ul class="sub">
             <li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li>
-            <li><a href="districts.html">شارەوانییەکان</a></li>
             <li><a href="tenders.html">تەندەر و مزایەدەکان</a></li>
             <li><a href="laws.html">یاسا و پلانەکان</a></li>
             <li><a href="data.html">داتای کراوە</a></li>
-            <li><a href="about.html#contact">پەیوەندی</a></li>
+            <li><a href="contact.html">پەیوەندی</a></li>
           </ul>
         </li>
         <li class="lang"><a href="../about.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../en/about.html" lang="en" hreflang="en" dir="ltr">English</a></li>
@@ -75,7 +72,7 @@
 
   <header class="page-head">
     <h1>ئەمانەتی بەغدا</h1>
-    <p class="lede">ئەمانەت لە سنووری بەغدادا ئاو، ئاوەڕۆ، ڕێگا، کۆکردنەوەی خاشاک، پارک و مۆڵەتی بیناسازی دابین دەکات، لە ڕێگەی ١٥ شارەوانییەوە.</p>
+    <p class="lede">ئەمانەت لە سنووری بەغدادا ئاو، ئاوەڕۆ، ڕێگا، کۆکردنەوەی خاشاک، پارک و مۆڵەتی بیناسازی دابین دەکات.</p>
   </header>
 
   <div class="layout">
@@ -99,11 +96,11 @@
       <section id="pages" aria-labelledby="pages-h">
         <h2 id="pages-h">لەم بەشەدا</h2>
         <ul class="index-list">
-          <li><a class="t" href="leadership.html">سەرکردایەتی و پێکهاتە</a><p>ئەمین، جێگرەکان و فەرمانگەکان، لەگەڵ ناونیشانی ئیمەیڵیان.</p></li>
-          <li><a class="t" href="districts.html">شارەوانییەکان</a><p>١٥ شارەوانییەکە، لەگەڵ ئیمەیڵی هەر نووسینگەیەک.</p></li>
+          <li><a class="t" href="leadership.html">سەرکردایەتی و پێکهاتە</a><p>ئەمینی بەغدا، جێگرەکانی و ئەو فەرمانگانەی سەر بە هەر یەکێکیانن.</p></li>
           <li><a class="t" href="tenders.html">تەندەر و مزایەدەکان</a><p>ئاگادارییەکانی گرێبەست، و فرۆشتن و بەکرێدانی موڵکی ئەمانەت.</p></li>
           <li><a class="t" href="laws.html">یاسا و پلانەکان</a><p>ئەو یاسا، ڕێسا و پلانانەی کاری ئەمانەت ڕێک دەخەن.</p></li>
           <li><a class="t" href="data.html">داتای کراوە</a><p>دانیشتوان بەپێی ناحیە و ڕاپۆرتە ئامارییەکانی ئەمانەت.</p></li>
+          <li><a class="t" href="contact.html">پەیوەندی</a><p>هێڵی گەرم، نووسینگەی شارەوانییەکان و ناونیشانی ئیمەیڵی فەرمانگەکان.</p></li>
         </ul>
       </section>
 
@@ -118,7 +115,7 @@
           <li>مۆڵەتی بیناسازی و بەکارهێنانی زەوی</li>
           <li>باجەکانی شارەوانی</li>
         </ul>
-        <p>لە ڕێگەی <a href="districts.html">١٥ شارەوانی</a> و فەرمانگە ناوەندییەکانەوە کار دەکات، هەر یەکەیان بەرپرسی خزمەتگوزارییەکە. هەروەها مۆزەخانەی بەغدادی، ڕادیۆی سەوتی بەغدا و ڕۆژنامەی سەوتی بەغدا بەڕێوە دەبات.</p>
+        <p>لە ڕێگەی <a href="contact.html#municipalities">١٥ شارەوانی</a> و فەرمانگە ناوەندییەکانەوە کار دەکات، هەر یەکەیان بەرپرسی خزمەتگوزارییەکە. هەروەها مۆزەخانەی بەغدادی، ڕادیۆی سەوتی بەغدا و ڕۆژنامەی سەوتی بەغدا بەڕێوە دەبات.</p>
       </section>
 
       <section id="who" aria-labelledby="who-h">
@@ -141,6 +138,16 @@
       <section id="works" aria-labelledby="works-h">
         <h2 id="works-h">پرۆژە گەورەکان</h2>
         <p>پرۆژە گەورەکانی بەغدا لەلایەن چەند دامەزراوەیەکی گشتییەوە بەڕێوە دەبرێن. پرسیار دەربارەی هەر پرۆژەیەک دەبێت بنێردرێت بۆ لایەنی بەرپرس. نوێکاریی کارەکانی خودی ئەمانەت لە <a href="news.html">هەواڵەکان</a>دا بڵاو دەکرێنەوە.</p>
+        <div class="pair">
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Al_Zawraa_Park_lake_%2C_Karch_%2C_Baghdad_1.jpg/960px-Al_Zawraa_Park_lake_%2C_Karch_%2C_Baghdad_1.jpg" alt="دەریاچەی پارکی زەوراء و درەختەکانی دەوروبەری" loading="lazy">
+            <figcaption><span class="place">پارکی زەوراء، کەرخ</span>Haleemwitwit، ٢٠١٤ — CC BY-SA 4.0 — ویکیمیدیا کۆمنز</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/%D9%85%D9%86_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4_%D8%A7%D8%A8%D9%88_%D9%86%D9%88%D8%A7%D8%B3_....jpg/960px-%D9%85%D9%86_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4_%D8%A7%D8%A8%D9%88_%D9%86%D9%88%D8%A7%D8%B3_....jpg" alt="باخچەکانی کۆرنیشی ئەبو نوواس لە تەنیشت دیجلە" loading="lazy" style="object-position: center 80%">
+            <figcaption><span class="place">باخچەکانی کۆرنیشی ئەبو نوواس، ڕوسافە</span>Nawar GJ، ٢٠١٤ — CC BY-SA 3.0 — ویکیمیدیا کۆمنز</figcaption>
+          </figure>
+        </div>
         <div class="table-wrap">
           <table class="data">
             <thead><tr><th>پرۆژە</th><th>بەڕێوەبەر</th></tr></thead>
@@ -161,20 +168,6 @@
         </div>
       </section>
 
-      <section id="contact" aria-labelledby="contact-h">
-        <h2 id="contact-h">پەیوەندی</h2>
-        <ul class="ways-in">
-          <li><strong>کێشەکانی ناوچەکەت</strong><p><a href="report.html">کێشەکە ڕاپۆرت بکە</a>، پاشان بە ژمارەی ڕاپۆرتەکە <a href="track.html">بەدواداچوونی بۆ بکە</a>.</p></li>
-          <li><strong>بە تەلەفۆن</strong><p>بۆ پرسیار و سکاڵا پەیوەندی بە <a href="tel:5628"><strong>٥٦٢٨</strong></a> بکە، لە ٨:٣٠ی بەیانی تا ٢ی دوانیوەڕۆ.</p></li>
-          <li><strong>لە ئەپەکەوە</strong><p>دەنگی هاووڵاتیی بەغدا، ئەپی سکاڵاکانی ئەمانەت. <a href="https://apps.apple.com/iq/app/id1669088018" rel="external">App Store ↗</a></p></li>
-          <li><strong>شارەوانییەکەت</strong><p>هەر یەک لە ١٥ شارەوانییەکە نووسینگە و ئیمەیڵی خۆی هەیە. <a href="districts.html">شارەوانییەکەت بدۆزەرەوە</a></p></li>
-          <li><strong>سکاڵا دەربارەی فەرمانبەران یان فەرمانگەکان</strong><p>فەرمانگەی چاودێری و وردبینی: <a href="mailto:shakawi.alrkaba@amanatbaghdad.gov.iq">shakawi.alrkaba@amanatbaghdad.gov.iq</a></p></li>
-          <li><strong>چاوپێکەوتن لەگەڵ ئەمین</strong><p>بە کاتی پێشوەختە: <a href="mailto:connection@amanatbaghdad.gov.iq">connection@amanatbaghdad.gov.iq</a></p></li>
-          <li><strong>فەرمانگەکان</strong><p>ئیمەیڵی هەر فەرمانگەیەک لە <a href="leadership.html">سەرکردایەتی و پێکهاتە</a>دا هاتووە.</p></li>
-          <li><strong>پرسیارەکانی ڕاگەیاندن</strong><p>فەرمانگەی پەیوەندییەکان و ڕاگەیاندن: <a href="mailto:elakat@amanatbaghdad.gov.iq">elakat@amanatbaghdad.gov.iq</a></p></li>
-          <li><strong>پرسیارە گشتییەکان</strong><p><a href="mailto:info@amanatbaghdad.gov.iq">info@amanatbaghdad.gov.iq</a></p></li>
-        </ul>
-      </section>
 
     </article>
   </div>
@@ -186,7 +179,7 @@
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">ئەمانەتی بەغدا</div>
       <div><h2>خزمەتگوزارییەکان</h2><ul><li><a href="services.html">هەموو خزمەتگوزارییەکان</a></li><li><a href="report.html">ڕاپۆرتکردنی کێشە</a></li><li><a href="track.html">بەدواداچوونی ڕاپۆرت</a></li><li><a href="alerts.html">ئاگادارکردنەوەکان</a></li></ul></div>
       <div><h2>هەواڵەکان</h2><ul><li><a href="news.html">هەموو هەواڵەکان</a></li></ul></div>
-      <div><h2>ئەمانەت</h2><ul><li><a href="about.html">تێڕوانینی گشتی</a></li><li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li><li><a href="districts.html">شارەوانییەکان</a></li><li><a href="tenders.html">تەندەر و مزایەدەکان</a></li><li><a href="laws.html">یاسا و پلانەکان</a></li><li><a href="data.html">داتای کراوە</a></li><li><a href="about.html#contact">پەیوەندی</a></li></ul></div>
+      <div><h2>ئەمانەت</h2><ul><li><a href="about.html">تێڕوانینی گشتی</a></li><li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li><li><a href="tenders.html">تەندەر و مزایەدەکان</a></li><li><a href="laws.html">یاسا و پلانەکان</a></li><li><a href="data.html">داتای کراوە</a></li><li><a href="contact.html">پەیوەندی</a></li></ul></div>
       <div><h2>ئەم ماڵپەڕە</h2><ul><li><a href="site.html#privacy">تایبەتێتی</a></li><li><a href="site.html#access">دەستڕاگەیشتن</a></li><li><a href="site.html#search">گەڕان چۆن کار دەکات</a></li></ul></div>
     </div>
     <div class="fine">

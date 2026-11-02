@@ -140,6 +140,6 @@ en: Rehabilitated with World Bank funding. Habibiya serves Shaab and nearby area
 ar: أُهّلتا بتمويل من البنك الدولي. وتخدم محطة الحبيبية منطقة الشعب وما يجاورها. <0>البيان الأصلي ↗</0>
 ku: بە پارەی بانکی نێودەوڵەتی نۆژەن کرانەوە. حەبیبییە خزمەتی شەعب و ناوچەکانی دەوروبەری دەکات. <0>ڕاگەیەندراوەکە بە عەرەبی ↗</0>
 
-en: English headlines are translated from the Arabic statements. Each links to the original.
-ar: يرتبط كل خبر ببيان الأمانة الأصلي.
-ku: سەردێڕە کوردییەکان لە ڕاگەیەندراوە عەرەبییەکانەوە وەرگێڕدراون. هەر یەکەیان بەستەری دەقە ڕەسەنەکەی هەیە.
+en: Media enquiries are handled by the Relations and Media Department. Its address is listed under <0>Contact</0>.
+ar: تتولى دائرة العلاقات والإعلام استفسارات الإعلام. عنوانها مدرج في صفحة <0>الاتصال</0>.
+ku: پرسیارەکانی ڕاگەیاندن لەلایەن فەرمانگەی پەیوەندی و ڕاگەیاندنەوە وەڵام دەدرێنەوە. ناونیشانەکەی لە <0>پەیوەندی</0> دا هاتووە.

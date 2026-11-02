@@ -15,13 +15,11 @@
 <script src="shared/lang-swap.js"></script>
 <style>
   .guide h2 { scroll-margin-top: 7rem; }
-  .ways-in { list-style: none; padding: 0 !important; border-top: 2px solid var(--green); }
-  .ways-in li { display: grid; grid-template-columns: 10rem 1fr; gap: 0.25rem 1.25rem; padding-block: 0.7rem; margin: 0 !important; border-bottom: 1px solid var(--line); }
-  .ways-in strong { font-weight: 600; }
-  .ways-in p { margin: 0 !important; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0 1.5rem; }
+  .pair img { display: block; width: 100%; aspect-ratio: var(--ratio-photo); object-fit: cover; border-radius: 3px; }
+  .pair .place { display: block; font-size: 0.875rem; font-weight: 600; color: var(--ink); }
   @media (max-width: 560px) {
-    .ways-in li { grid-template-columns: 1fr; }
-  }
+    }
 </style>
 <script src="shared/prototype.js" defer></script>
 </head>
@@ -53,11 +51,10 @@
         <li class="has-sub end"><a href="about.html" aria-current="page">الأمانة</a>
           <ul class="sub">
             <li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li>
-            <li><a href="districts.html">البلديات</a></li>
             <li><a href="tenders.html">المناقصات والمزايدات</a></li>
             <li><a href="laws.html">القوانين والخطط</a></li>
             <li><a href="data.html">البيانات المفتوحة</a></li>
-            <li><a href="about.html#contact">الاتصال</a></li>
+            <li><a href="contact.html">الاتصال</a></li>
           </ul>
         </li>
         <li class="lang"><a href="ku/about.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a><a href="en/about.html" lang="en" hreflang="en" dir="ltr">English</a></li>
@@ -75,7 +72,7 @@
 
   <header class="page-head">
     <h1>أمانة بغداد</h1>
-    <p class="lede">تتولى الأمانة خدمات الماء والمجاري والطرق ورفع النفايات والمتنزهات وإجازات البناء ضمن حدود بغداد، عبر خمس عشرة بلدية.</p>
+    <p class="lede">تتولى الأمانة خدمات الماء والمجاري والطرق ورفع النفايات والمتنزهات وإجازات البناء ضمن حدود بغداد.</p>
   </header>
 
   <div class="layout">
@@ -99,11 +96,11 @@
       <section id="pages" aria-labelledby="pages-h">
         <h2 id="pages-h">في هذا القسم</h2>
         <ul class="index-list">
-          <li><a class="t" href="leadership.html">القيادة والهيكل التنظيمي</a><p>أمين بغداد ووكلاؤه والدوائر، مع عناوين بريدها الإلكتروني.</p></li>
-          <li><a class="t" href="districts.html">البلديات</a><p>البلديات الخمس عشرة، مع البريد الإلكتروني لكل منها.</p></li>
+          <li><a class="t" href="leadership.html">القيادة والهيكل التنظيمي</a><p>أمين بغداد ووكلاؤه والدوائر التابعة لكل منهم.</p></li>
           <li><a class="t" href="tenders.html">المناقصات والمزايدات</a><p>إعلانات العقود، وبيع أملاك الأمانة وإيجارها.</p></li>
           <li><a class="t" href="laws.html">القوانين والخطط</a><p>القوانين والأنظمة والخطط التي تحكم عمل الأمانة.</p></li>
           <li><a class="t" href="data.html">البيانات المفتوحة</a><p>السكان بحسب الناحية، والتقارير الإحصائية للأمانة.</p></li>
+          <li><a class="t" href="contact.html">الاتصال</a><p>الخط الساخن ومقار البلديات وعناوين البريد الإلكتروني للدوائر.</p></li>
         </ul>
       </section>
 
@@ -118,7 +115,7 @@
           <li>إجازات البناء واستعمالات الأرض</li>
           <li>الرسوم البلدية</li>
         </ul>
-        <p>وتعمل عبر <a href="districts.html">خمس عشرة بلدية</a> ودوائر مركزية تتولى كل منها خدمة واحدة. كما تدير المتحف البغدادي وإذاعة صوت بغداد وجريدة صوت بغداد.</p>
+        <p>وتعمل عبر <a href="contact.html#municipalities">خمس عشرة بلدية</a> ودوائر مركزية تتولى كل منها خدمة واحدة. كما تدير المتحف البغدادي وإذاعة صوت بغداد وجريدة صوت بغداد.</p>
       </section>
 
       <section id="who" aria-labelledby="who-h">
@@ -141,6 +138,16 @@
       <section id="works" aria-labelledby="works-h">
         <h2 id="works-h">المشاريع الكبرى</h2>
         <p>تتولى عدة جهات حكومية المشاريع الكبرى في بغداد، وتُوجَّه الاستفسارات عن كل مشروع إلى الجهة المسؤولة عنه. وتُنشر مستجدات أعمال الأمانة في <a href="news.html">الأخبار</a>.</p>
+        <div class="pair">
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Al_Zawraa_Park_lake_%2C_Karch_%2C_Baghdad_1.jpg/960px-Al_Zawraa_Park_lake_%2C_Karch_%2C_Baghdad_1.jpg" alt="بحيرة متنزه الزوراء والأشجار على ضفافها" loading="lazy">
+            <figcaption><span class="place">متنزه الزوراء، الكرخ</span>Haleemwitwit، ٢٠١٤ — CC BY-SA 4.0 — ويكيميديا كومنز</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/%D9%85%D9%86_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4_%D8%A7%D8%A8%D9%88_%D9%86%D9%88%D8%A7%D8%B3_....jpg/960px-%D9%85%D9%86_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4_%D8%A7%D8%A8%D9%88_%D9%86%D9%88%D8%A7%D8%B3_....jpg" alt="حدائق كورنيش أبي نواس على ضفة دجلة" loading="lazy" style="object-position: center 80%">
+            <figcaption><span class="place">حدائق كورنيش أبي نواس، الرصافة</span>Nawar GJ، ٢٠١٤ — CC BY-SA 3.0 — ويكيميديا كومنز</figcaption>
+          </figure>
+        </div>
         <div class="table-wrap">
           <table class="data">
             <thead><tr><th>المشروع</th><th>الجهة المنفذة</th></tr></thead>
@@ -161,20 +168,6 @@
         </div>
       </section>
 
-      <section id="contact" aria-labelledby="contact-h">
-        <h2 id="contact-h">الاتصال</h2>
-        <ul class="ways-in">
-          <li><strong>المشكلات في منطقتك</strong><p><a href="report.html">أبلغ عن المشكلة</a>، ثم <a href="track.html">تابعها</a> برقم البلاغ.</p></li>
-          <li><strong>عبر الهاتف</strong><p>اتصل بالرقم <a href="tel:5628"><strong>٥٦٢٨</strong></a> من ٨:٣٠ صباحاً إلى ٢ ظهراً للاستفسارات والشكاوى.</p></li>
-          <li><strong>عبر التطبيق</strong><p>صوت المواطن البغدادي، تطبيق الشكاوى التابع للأمانة. <a href="https://apps.apple.com/iq/app/id1669088018" rel="external">App Store ↗</a></p></li>
-          <li><strong>بلديتك</strong><p>لكل بلدية من البلديات الخمس عشرة مقرها وبريدها الإلكتروني. <a href="districts.html">اعثر على بلديتك</a></p></li>
-          <li><strong>الشكاوى بحق الموظفين أو الدوائر</strong><p>دائرة الرقابة والتدقيق: <a href="mailto:shakawi.alrkaba@amanatbaghdad.gov.iq">shakawi.alrkaba@amanatbaghdad.gov.iq</a></p></li>
-          <li><strong>مقابلة أمين بغداد</strong><p>بموعد مسبق: <a href="mailto:connection@amanatbaghdad.gov.iq">connection@amanatbaghdad.gov.iq</a></p></li>
-          <li><strong>الدوائر</strong><p>البريد الإلكتروني لكل دائرة مدرج في <a href="leadership.html">القيادة والهيكل التنظيمي</a>.</p></li>
-          <li><strong>استفسارات الإعلام</strong><p>دائرة العلاقات والإعلام: <a href="mailto:elakat@amanatbaghdad.gov.iq">elakat@amanatbaghdad.gov.iq</a></p></li>
-          <li><strong>الاستفسارات العامة</strong><p><a href="mailto:info@amanatbaghdad.gov.iq">info@amanatbaghdad.gov.iq</a></p></li>
-        </ul>
-      </section>
 
     </article>
   </div>
@@ -186,7 +179,7 @@
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">أمانة بغداد</div>
       <div><h2>الخدمات</h2><ul><li><a href="services.html">كل الخدمات</a></li><li><a href="report.html">الإبلاغ عن مشكلة</a></li><li><a href="track.html">متابعة بلاغ</a></li><li><a href="alerts.html">التنبيهات</a></li></ul></div>
       <div><h2>الأخبار</h2><ul><li><a href="news.html">كل الأخبار</a></li></ul></div>
-      <div><h2>الأمانة</h2><ul><li><a href="about.html">نظرة عامة</a></li><li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li><li><a href="districts.html">البلديات</a></li><li><a href="tenders.html">المناقصات والمزايدات</a></li><li><a href="laws.html">القوانين والخطط</a></li><li><a href="data.html">البيانات المفتوحة</a></li><li><a href="about.html#contact">الاتصال</a></li></ul></div>
+      <div><h2>الأمانة</h2><ul><li><a href="about.html">نظرة عامة</a></li><li><a href="leadership.html">القيادة والهيكل التنظيمي</a></li><li><a href="tenders.html">المناقصات والمزايدات</a></li><li><a href="laws.html">القوانين والخطط</a></li><li><a href="data.html">البيانات المفتوحة</a></li><li><a href="contact.html">الاتصال</a></li></ul></div>
       <div><h2>هذا الموقع</h2><ul><li><a href="site.html#privacy">الخصوصية</a></li><li><a href="site.html#access">إمكانية الوصول</a></li><li><a href="site.html#search">كيف يعمل البحث</a></li></ul></div>
     </div>
     <div class="fine">

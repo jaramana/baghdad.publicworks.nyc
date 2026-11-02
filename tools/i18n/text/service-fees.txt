@@ -80,9 +80,9 @@ en: Pay <0>District office</0>
 ar: ادفع <0>البلدية</0>
 ku: پارە بدە <0>شارەوانی</0>
 
-en: At the collection section, Sunday to Thursday, 8:30 am – 2:30 pm, in cash or by card where available. <0>Find your district office</0>
-ar: في شعبة الجباية، من الأحد إلى الخميس، من 8:30 صباحاً إلى 2:30 ظهراً، نقداً أو بالبطاقة حيثما توفرت. <0>اعثر على بلدية منطقتك</0>
-ku: لە بەشی کۆکردنەوەی پارە، یەکشەممە تا پێنجشەممە، لە 8:30ی بەیانی تا 2:30ی دوانیوەڕۆ، بە نەقد یان بە کارت لە شوێنی بەردەست. <0>شارەوانی ناوچەکەت بدۆزەرەوە</0>
+en: At the collection section during office hours, in cash or by card where available. <0>Find your district office</0>
+ar: في شعبة الجباية خلال أوقات الدوام، نقداً أو بالبطاقة حيثما توفرت. <0>اعثر على بلدية منطقتك</0>
+ku: لە بەشی کۆکردنەوەی پارە لە کاتی دەوامدا، بە نەقد یان بە کارت لە شوێنی بەردەست. <0>شارەوانی ناوچەکەت بدۆزەرەوە</0>
 
 en: Keep the receipt
 ar: احتفظ بالوصل

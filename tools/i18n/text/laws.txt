@@ -189,6 +189,6 @@ en: Legal Department: <0>kanonea@amanatbaghdad.gov.iq</0>
 ar: الدائرة القانونية: <0>kanonea@amanatbaghdad.gov.iq</0>
 ku: فەرمانگەی یاسایی: <0>kanonea@amanatbaghdad.gov.iq</0>
 
-en: English titles are translations. The Arabic documents are the official text.
-ar: الوثائق العربية المرفقة هي النص الرسمي.
-ku: ناونیشانە کوردییەکان وەرگێڕانن. بەڵگەنامە عەرەبییەکان دەقی فەرمین.
+en: Legal enquiries are handled by the Legal Department. Its address is listed under <0>Contact</0>.
+ar: تتولى الدائرة القانونية الاستفسارات القانونية. عنوانها مدرج في صفحة <0>الاتصال</0>.
+ku: پرسیارە یاساییەکان لەلایەن فەرمانگەی یاساییەوە وەڵام دەدرێنەوە. ناونیشانەکەی لە <0>پەیوەندی</0> دا هاتووە.

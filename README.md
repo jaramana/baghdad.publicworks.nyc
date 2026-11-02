@@ -15,28 +15,32 @@ Not part of the publicworks.nyc suite.
 | Kurdish | Sorani (`lang="ckb"`, Arabic script, right to left) in `docs/ku/`, same filenames as `docs/en/`, translated from the English. Every English page has a Kurdish twin (1 Nov) |
 | Language links | Every page lists the other two languages in fixed order: العربية, کوردی, English, each linking to the same page in that language. The build script writes them |
 | English name | "Mayoralty of Baghdad", the English text on the seal's ring. "Amanat" appears only once, in About, to give the Arabic name |
-| Site map | Four sections: Services, Report a problem, News, The Mayoralty. Districts sits under The Mayoralty. Each has an index page listing everything under it. Every page has a breadcrumb and a highlighted nav item. The footer lists the whole site |
+| Site map | Four sections: Services, Report a problem, News, The Mayoralty. Contact sits under The Mayoralty. Each has an index page listing everything under it. Every page has a breadcrumb and a highlighted nav item. The footer lists the whole site |
 | Dropdowns (31 Oct) | Services and The Mayoralty open a dropdown of their children on hover or keyboard focus, in CSS only. The parent label stays a link to its index. The panel hangs from the masthead's green line, its text aligned under the label. In the phone menu the children show indented under their parent |
 | Section tabs (31 Oct) | Retired after owner review. The Mayoralty overview lists its four pages under "In this section"; the dropdown and phone menu list them too |
 | Projects (31 Oct) | The status register is retired, because nobody can keep 14 statuses current. Progress on the Mayoralty's own works appears in News, tagged Works. Who runs each major project is one table on The Mayoralty overview (`about.html#works`). `projects.html` redirects there |
-| Census | Off the home page. One population line on each district page; the full table lives at About › Open data |
+| Census | Off the home page. The full table lives at The Mayoralty › Open data |
 | Realism | Real studies, projects and sources only; no invented plans or studies. Illustrative live data (alerts, case numbers, report counts) stays, labelled |
 | The Tigris page | `city-tigris.html` and its outfall plan stay as they are, in Arabic. No further work on it. No English or Kurdish page links to it |
-| Reporting in one place | Report links live only in the nav, the home's Report block, the Report and Track pages, the Services index and About › Contact. Track a report is headlined at the top of the Report page; a number entered there opens `track.html?n=` |
+| Reporting in one place | Report links live only in the nav, the home's Report block, the Report and Track pages, the Services index and Contact. Track a report is headlined at the top of the Report page; a number entered there opens `track.html?n=` |
 | Side columns (31 Oct) | None, after owner review; they may return later. Each page is one reading column, 50rem wide. A service's Start block sits above its guide; contacts and help sit at the end |
+| Facts in one place (2 Nov) | A fact that can change lives in one home. The hotline and its hours sit in the footer and on Contact; Home and Report give the number alone, as a way to report. The municipality count appears once, in The Mayoralty's "What the Mayoralty does". Municipality office hours appear once, on Contact. Other pages link to Contact instead of repeating details. Legend lines such as "— means no public email" are gone; the language note lives on Using this website |
 | No hand-kept counts | No totals that someone must update by hand (e.g. "6 projects run by the Mayoralty"). Lists show their own size |
 | No side roads | No cards or links that send readers to unrelated pages they can reach from the nav |
 | Disclaimers | Scarce. Keep the illustrative label on made-up figures. The model pages role-play the real site: no comparisons with the Mayoralty's current website, and no research-method or sourcing notes on public pages (`research/service-claims.md` holds those). The prototype notice lives only in the sticky bar, outside the page design |
-| No reveal-on-select | Choosing something navigates to a page; it never makes new content appear on the current one. The home district picker is a list of links |
+| No reveal-on-select | Choosing something navigates to a page; it never makes new content appear on the current one. |
 | Language swap | On every paired page (`shared/lang-swap.css`, `shared/lang-swap.js`). Every page, home included, sweeps in from the new page's reading direction. The swap keeps the reader's place. A mirror glide (seal, language links and home cards travelling to their mirrored place), Settle and the lab panel were tried and dropped |
 | Location | This folder; `github.com/jaramana/baghdad.publicworks.nyc`, public. Pages serves `docs/` at baghdad.publicworks.nyc. The root sends visitors to the English home |
 | Research | Four parallel agents; findings in `research/` |
 | Home direction | `home.html` (30 Oct, first built as the "i-blend" variant): the B + C blend revised. Green stays primary but only as lines, text and outlines. Grounded (E) rejected |
 | The Mayoralty (31 Oct) | About is renamed The Mayoralty. Its overview leads with the Mayor, then duties, responsibilities in Baghdad, major projects and contact. Its four children are Leadership and structure, Tenders and auctions, Laws and plans, Open data |
-| Districts (1 Nov) | Under The Mayoralty, after Leadership and structure, since the municipalities are part of its structure. Its breadcrumb is Home › The Mayoralty. The footer's The city column becomes News |
+| Districts (2 Nov) | No district pages. The current site's municipality subsites are mostly dormant since 2024, and our district content was illustrative. The municipalities are listed by bank on Contact. `districts.html` and `district-karrada.html` redirect there in all three languages, keeping `#karkh`-style anchors. The home page lost its district block |
+| Contact (2 Nov) | One page, `contact.html`, under The Mayoralty, holds every email: hotline and app, municipality offices, enquiries (media, tenders, legal, staff complaints, meeting the Mayor, website) and all departments. Leadership is structure only, with no emails. Tenders, Laws and News link to their Contact row instead of giving the address |
+| Report tool (2 Nov) | The four steps sit on a raised white sheet labelled "New report", with a step counter, a grey footer bar and a solid dark Next. The dark Next is the only filled button on the site. Panel (A) was chosen over an official-form sheet (B) and a full-width workspace band (C) |
 | News (31 Oct) | News is a top-level nav item. The home page shows the three latest headlines, each linking to its item on the News page |
 | Site information (31 Oct) | Privacy, accessibility and how search works live on `site.html` ("Using this website"), linked from the footer only. The Mayoralty pages say nothing about the website itself |
 | Headshots (31 Oct) | The Mayor's portrait (Wikimedia Commons, CC0, January 2026) leads the overview and Leadership, at 3:2. Deputy mayors have no licensed photo and unconfirmed names, so they stay by role |
+| Photos for authority (2 Nov) | Licensed photos only (Commons); the Mayoralty's own press photos are copyrighted (PD-Iraq covers body-corporate work only before 1980). The home page has a small Mayor band after Report: portrait, name, title, links to The Mayoralty and Leadership. Major projects shows two 2014 photos of the Mayoralty's own works, Zawraa Park and the Abu Nuwas corniche gardens. Leadership names directors general where a post names them (Projects, Relations and Media). No silhouettes or placeholders |
 | Complaints | The 5628 hotline and the Citizen Voice app are real and shown wherever reporting is. Our Report flow presents every channel as feeding one complaints system with one kind of number |
 | Deputy mayors | Shown by role only until the Mayoralty confirms names. Posts disagree on who holds Technical and Administrative |
 | News page | Real statements, newest first, with English headlines written from the Arabic and a link to each original. Headlines lead with what changed, not with who attended |
@@ -62,7 +66,7 @@ Not part of the publicworks.nyc suite.
 - Image ratios: hero band 3:1 (16:9 on phones, capped at 26rem tall); every other photo 3:2, equal widths in a row
 - Type roles in Arabic: Noto Kufi Arabic for the institution; Noto Naskh Arabic for story voice only; IBM Plex Sans Arabic for everything people read and use. English swaps in IBM Plex Sans and IBM Plex Serif through `shared/en.css`. Kurdish keeps the Arabic roles unchanged; all three Arabic-script fonts carry the Kurdish letters (ڕ ڵ ۆ ێ ە), checked against the font files
 - Report a problem offers the web form beside the 5628 hotline and the Citizen Voice app
-- Districts are listed by bank, each on its own side of the river as on a map: Karkh (west) on the left in every language
+- Municipalities are listed by bank on Contact, Karkh first
 - Shared rules live in `docs/shared/base.css`. Inner pages add `shared/page.css`. English pages add `shared/en.css` last. Page files hold only their own layout. The footer grid takes any number of columns
 - Maps are Leaflet on OpenStreetMap at 3:2, with wheel zoom off so the page scrolls past them. Marker positions come from OSM place lookups and are approximate
 
@@ -94,12 +98,11 @@ Preview: `baghdad-site` in this folder's `.claude/launch.json` (port 4321), or `
 
 | Section | Index | Pages under it |
 | --- | --- | --- |
-| Home | `en/index.html` | Search (opens `search.html`), Today, most requested, report, districts by bank, three latest news |
+| Home | `en/index.html` | Search (opens `search.html`), Today, most requested, report, the Mayor, three latest news |
 | Services | `en/services.html` | Five service guides (`service-*.html`), Alerts. The fee lookup opens `fees-account.html` |
 | Report a problem | `en/report.html` | Track a report |
 | News | `en/news.html` | Statements newest first, each tagged Planning, Parks, Services or Works |
-| The Mayoralty | `en/about.html` | Leadership and structure (`leadership.html`), Districts (`districts.html`), Tenders and auctions (`tenders.html`), Laws and plans (`laws.html`), Open data (`data.html`). The overview holds the Mayor, duties, responsibilities in Baghdad, major projects and contact |
-| Districts, under The Mayoralty | `en/districts.html` | Karrada; the other 14 open their row in the index. Baghdad Governorate is one more row, under Around the city |
+| The Mayoralty | `en/about.html` | Leadership and structure (`leadership.html`), Tenders and auctions (`tenders.html`), Laws and plans (`laws.html`), Open data (`data.html`), Contact (`contact.html`). The overview holds the Mayor, duties, responsibilities in Baghdad and major projects |
 | Footer only | `en/site.html` | Privacy, accessibility, how search works |
 
 Every page links to its twin in the other two languages. The Arabic home is `home.html`; every other Arabic page has its English filename. `city-tigris.html` links to Projects. `docs/index.html` is a redirect to the English home.
@@ -109,10 +112,9 @@ Every page links to its twin in the other two languages. The Arabic home is `hom
 | Type | Example | Notes |
 | --- | --- | --- |
 | Home | `en/index.html` | Fixed structure above |
-| Index | Services, Districts | Ruled list of every child page, tagged by where the task happens |
+| Index | Services, The Mayoralty | Ruled list of every child page, tagged by where the task happens |
 | Service | Building permit | What you need, cost, time, steps, "Start on Ur" button, office fallback |
 | Report | Report a problem | Track box under the title, then photo, map pin, category, case number, status page |
-| District | Karrada | Office, contacts, works map, one census line |
 
 ## Data rules
 
@@ -124,9 +126,13 @@ Every page links to its twin in the other two languages. The Arabic home is `hom
 
 - No Mayoralty WhatsApp number exists, so WhatsApp is hidden
 - Pay-bill links to nothing, because the payment site's operator is unverified
-- The other 14 district pages, once the official boundary and office list exist
+- Contact lists departments in English alphabetical order, so the Arabic and Kurdish tables are not alphabetical
 - Bank of the Tigris for Al-Ghadeer, Al-Shula and the Green Zone municipality is unverified
 - Deputy mayors' names and photos, and whether Citizen Voice gives residents a case number
+- The Mayor's message exists only as a JPG of text (Feb 2025, `Show/49a27d6f…`). Transcribe it under the home portrait once the official site can be read
+- The 9 director bios (scanned PDFs) could name more directors general on Leadership
+- The Arabic and Kurdish spellings of the two directors' names are transliterated back from English. Check them against the posts
+- No licensed daylight photo of the Abu Nuwas gardens; the one used is a 2014 night view with the hotels in frame
 - Tenders and auctions show only notice numbers, because the subject sits inside each Word or image file
 - The district mobile numbers in `current-site-deep.md` date from 2024 and are untested, so they are not on the site
 - News, tenders and laws are a snapshot from 31 Oct 2026. A live site would read them from the Mayoralty's own feed
@@ -164,7 +170,6 @@ State on 1 Nov 2026: the English site (`docs/en/`, 21 pages including the redire
 
 1. Native review of the Arabic and Kurdish text in `tools/i18n/text/`
 2. Owner feedback on the English pages, carried to Arabic and Kurdish through the build
-3. The other 14 district pages (blocked until the official boundary and office list exist)
 
 ### When editing
 

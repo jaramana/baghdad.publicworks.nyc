@@ -16,13 +16,11 @@
 <script src="../shared/lang-swap.js"></script>
 <style>
   .guide h2 { scroll-margin-top: 7rem; }
-  .ways-in { list-style: none; padding: 0 !important; border-top: 2px solid var(--green); }
-  .ways-in li { display: grid; grid-template-columns: 10rem 1fr; gap: 0.25rem 1.25rem; padding-block: 0.7rem; margin: 0 !important; border-bottom: 1px solid var(--line); }
-  .ways-in strong { font-weight: 600; }
-  .ways-in p { margin: 0 !important; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.25rem 0 1.5rem; }
+  .pair img { display: block; width: 100%; aspect-ratio: var(--ratio-photo); object-fit: cover; border-radius: 3px; }
+  .pair .place { display: block; font-size: 0.875rem; font-weight: 600; color: var(--ink); }
   @media (max-width: 560px) {
-    .ways-in li { grid-template-columns: 1fr; }
-  }
+    }
 </style>
 <script src="../shared/prototype.js" defer></script>
 </head>
@@ -54,11 +52,10 @@
         <li class="has-sub end"><a href="about.html" aria-current="page">The Mayoralty</a>
           <ul class="sub">
             <li><a href="leadership.html">Leadership and structure</a></li>
-            <li><a href="districts.html">Districts</a></li>
             <li><a href="tenders.html">Tenders and auctions</a></li>
             <li><a href="laws.html">Laws and plans</a></li>
             <li><a href="data.html">Open data</a></li>
-            <li><a href="about.html#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </li>
         <li class="lang"><a href="../about.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../ku/about.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a></li>
@@ -76,7 +73,7 @@
 
   <header class="page-head">
     <h1>The Mayoralty of Baghdad</h1>
-    <p class="lede">The Mayoralty provides water, sewerage, roads, waste collection, parks and building permits within the boundary of Baghdad, through 15 municipalities.</p>
+    <p class="lede">The Mayoralty provides water, sewerage, roads, waste collection, parks and building permits within the boundary of Baghdad.</p>
   </header>
 
   <div class="layout">
@@ -100,11 +97,11 @@
       <section id="pages" aria-labelledby="pages-h">
         <h2 id="pages-h">In this section</h2>
         <ul class="index-list">
-          <li><a class="t" href="leadership.html">Leadership and structure</a><p>The Mayor, the deputy mayors and the departments, with their email addresses.</p></li>
-          <li><a class="t" href="districts.html">Districts</a><p>The 15 municipalities, with the email for each office.</p></li>
+          <li><a class="t" href="leadership.html">Leadership and structure</a><p>The Mayor, the deputy mayors and the departments that report to each.</p></li>
           <li><a class="t" href="tenders.html">Tenders and auctions</a><p>Notices for contracts and for sales and leases of Mayoralty property.</p></li>
           <li><a class="t" href="laws.html">Laws and plans</a><p>The laws, regulations and plans that govern the Mayoralty's work.</p></li>
           <li><a class="t" href="data.html">Open data</a><p>Population by subdistrict and the Mayoralty's statistical reports.</p></li>
+          <li><a class="t" href="contact.html">Contact</a><p>The hotline, the municipality offices and the email addresses of the departments.</p></li>
         </ul>
       </section>
 
@@ -119,7 +116,7 @@
           <li>building permits and land use</li>
           <li>municipal fees</li>
         </ul>
-        <p>It works through <a href="districts.html">15 municipalities</a> and through central departments, each responsible for one service. It also runs the Baghdadi Museum, the radio station Sawt Baghdad and the Sawt Baghdad newspaper.</p>
+        <p>It works through <a href="contact.html#municipalities">15 municipalities</a> and through central departments, each responsible for one service. It also runs the Baghdadi Museum, the radio station Sawt Baghdad and the Sawt Baghdad newspaper.</p>
       </section>
 
       <section id="who" aria-labelledby="who-h">
@@ -142,6 +139,16 @@
       <section id="works" aria-labelledby="works-h">
         <h2 id="works-h">Major projects</h2>
         <p>Major projects in Baghdad are run by several public bodies. Enquiries about a project should be sent to the body responsible. Updates on the Mayoralty's own works are published in <a href="news.html">News</a>.</p>
+        <div class="pair">
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Al_Zawraa_Park_lake_%2C_Karch_%2C_Baghdad_1.jpg/960px-Al_Zawraa_Park_lake_%2C_Karch_%2C_Baghdad_1.jpg" alt="The lake in Zawraa Park, with trees along its banks" loading="lazy">
+            <figcaption><span class="place">Zawraa Park, Karkh</span>Haleemwitwit, 2014 — CC BY-SA 4.0 — Wikimedia Commons</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/%D9%85%D9%86_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4_%D8%A7%D8%A8%D9%88_%D9%86%D9%88%D8%A7%D8%B3_....jpg/960px-%D9%85%D9%86_%D8%AD%D8%AF%D8%A7%D8%A6%D9%82_%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4_%D8%A7%D8%A8%D9%88_%D9%86%D9%88%D8%A7%D8%B3_....jpg" alt="Gardens on the Abu Nuwas corniche beside the Tigris" loading="lazy" style="object-position: center 80%">
+            <figcaption><span class="place">Abu Nuwas corniche gardens, Rusafa</span>Nawar GJ, 2014 — CC BY-SA 3.0 — Wikimedia Commons</figcaption>
+          </figure>
+        </div>
         <div class="table-wrap">
           <table class="data">
             <thead><tr><th>Project</th><th>Runs it</th></tr></thead>
@@ -162,20 +169,6 @@
         </div>
       </section>
 
-      <section id="contact" aria-labelledby="contact-h">
-        <h2 id="contact-h">Contact</h2>
-        <ul class="ways-in">
-          <li><strong>Problems in your area</strong><p><a href="report.html">Report a problem</a>, then <a href="track.html">track it</a> with your report number.</p></li>
-          <li><strong>By phone</strong><p>Call <a href="tel:5628"><strong>5628</strong></a>, 8:30 am – 2 pm, for questions and complaints.</p></li>
-          <li><strong>In the app</strong><p>Baghdad Citizen Voice, the Mayoralty's complaints app. <a href="https://apps.apple.com/iq/app/id1669088018" rel="external">App Store ↗</a></p></li>
-          <li><strong>Your municipality</strong><p>Each of the 15 municipalities has its own office and email. <a href="districts.html">Find your municipality</a></p></li>
-          <li><strong>Complaints about staff or departments</strong><p>Audit and Control Department: <a href="mailto:shakawi.alrkaba@amanatbaghdad.gov.iq">shakawi.alrkaba@amanatbaghdad.gov.iq</a></p></li>
-          <li><strong>Meeting the Mayor</strong><p>By appointment: <a href="mailto:connection@amanatbaghdad.gov.iq">connection@amanatbaghdad.gov.iq</a></p></li>
-          <li><strong>Departments</strong><p>Each department's email is listed under <a href="leadership.html">Leadership and structure</a>.</p></li>
-          <li><strong>Media enquiries</strong><p>Relations and Media Department: <a href="mailto:elakat@amanatbaghdad.gov.iq">elakat@amanatbaghdad.gov.iq</a></p></li>
-          <li><strong>General enquiries</strong><p><a href="mailto:info@amanatbaghdad.gov.iq">info@amanatbaghdad.gov.iq</a></p></li>
-        </ul>
-      </section>
 
     </article>
   </div>
@@ -187,7 +180,7 @@
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">Mayoralty of Baghdad</div>
       <div><h2>Services</h2><ul><li><a href="services.html">All services</a></li><li><a href="report.html">Report a problem</a></li><li><a href="track.html">Track a report</a></li><li><a href="alerts.html">Alerts</a></li></ul></div>
       <div><h2>News</h2><ul><li><a href="news.html">All news</a></li></ul></div>
-      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">Overview</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="districts.html">Districts</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
+      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">Overview</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div><h2>This website</h2><ul><li><a href="site.html#privacy">Privacy</a></li><li><a href="site.html#access">Accessibility</a></li><li><a href="site.html#search">How search works</a></li></ul></div>
     </div>
     <div class="fine">

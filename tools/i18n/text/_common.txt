@@ -275,9 +275,9 @@ en: By phone or app
 ar: عبر الهاتف أو التطبيق
 ku: بە تەلەفۆن یان ئەپ
 
-en: Contact details for each of the 15 municipalities.
-ar: بيانات الاتصال بكل بلدية من البلديات الخمس عشرة.
-ku: زانیاریی پەیوەندی بە هەر یەک لە ١٥ شارەوانییەکە.
+en: Contact details for your municipality.
+ar: بيانات الاتصال ببلديتك.
+ku: زانیاریی پەیوەندی بە شارەوانییەکەتەوە.
 
 en: Notices with their closing dates and full terms.
 ar: الإعلانات مع مواعيد غلقها وشروطها الكاملة.

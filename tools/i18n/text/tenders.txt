@@ -191,3 +191,7 @@ ku: 24ی ئابی 2026
 en: 9 Sep 2026
 ar: 9 أيلول 2026
 ku: 9ی ئەیلوولی 2026
+
+en: Enquiries about a notice should be sent to the Public Contracts Department, quoting the notice number. Its address is listed under <0>Contact</0>.
+ar: تُرسل الاستفسارات عن أي إعلان إلى قسم العقود العامة مع ذكر رقم الإعلان. عنوانه مدرج في صفحة <0>الاتصال</0>.
+ku: پرسیار دەربارەی هەر ئاگادارییەک بۆ بەشی گرێبەستە گشتییەکان دەنێردرێت، لەگەڵ ژمارەی ئاگاداری. ناونیشانەکەی لە <0>پەیوەندی</0> دا هاتووە.

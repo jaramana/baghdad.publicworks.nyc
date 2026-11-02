@@ -60,13 +60,12 @@
   .way h3 { font-size: 1.125rem; font-weight: 700; }
   .way p { margin: 0.3rem 0 0.9rem; color: var(--muted); }
 
-  /* Districts: each bank on its own side of the river, as on a map */
-  .banks { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2.5rem; }
-  .bank + .bank { border-inline-start: 2px solid var(--teal); padding-inline-start: 2.5rem; }
-  .bank h3 { font-size: 1.125rem; font-weight: 700; padding-bottom: 0.5rem; border-bottom: 1px solid var(--line); }
-  .bank h3 span { font-family: "IBM Plex Sans", sans-serif; font-size: 0.875rem; font-weight: 500; color: var(--muted); margin-inline-start: 0.4rem; }
-  .bank ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 1.5rem; }
-  .bank li { padding-block: 0.35rem; break-inside: avoid; }
+  /* The Mayor: portrait beside name and title */
+  .mayor { display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); gap: 1.5rem; align-items: center; }
+  .mayor img { display: block; width: 100%; aspect-ratio: var(--ratio-photo); object-fit: cover; object-position: center 30%; border-radius: 3px; }
+  .mayor .role { margin: 0; font-size: 0.875rem; font-weight: 600; color: var(--green); }
+  .mayor h2 { font-size: 1.5rem; margin: 0.1rem 0 0.6rem; }
+  .mayor .links { margin: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; }
 
   /* News: the three latest headlines, date beside each */
   .headlines { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--green); }
@@ -82,8 +81,7 @@
     .tasks { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 560px) {
-    .tasks, .banks, .headlines li { grid-template-columns: 1fr; }
-    .bank + .bank { border-inline-start: 0; padding-inline-start: 0; margin-top: 1.5rem; }
+    .tasks, .headlines li, .mayor { grid-template-columns: 1fr; }
   }
 </style>
 <script src="../shared/prototype.js" defer></script>
@@ -116,11 +114,10 @@
         <li class="has-sub end"><a href="about.html">The Mayoralty</a>
           <ul class="sub">
             <li><a href="leadership.html">Leadership and structure</a></li>
-            <li><a href="districts.html">Districts</a></li>
             <li><a href="tenders.html">Tenders and auctions</a></li>
             <li><a href="laws.html">Laws and plans</a></li>
             <li><a href="data.html">Open data</a></li>
-            <li><a href="about.html#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </li>
         <li class="lang"><a href="../home.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../ku/index.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a></li>
@@ -171,7 +168,7 @@
       <li><a href="service-property.html"><strong>Property statement</strong><p>For sales, inheritance and permits. Issued online.</p><span class="tag">On the Ur portal</span></a></li>
       <li><a href="service-fees.html"><strong>Municipal fees</strong><p>Trade, advertising and cleaning fees, and where to pay them.</p></a></li>
       <li><a href="track.html"><strong>Track a report</strong><p>Enter your report number to check its status.</p></a></li>
-      <li><a href="districts.html"><strong>Your district office</strong><p>Contact details for each of the 15 municipalities.</p></a></li>
+      <li><a href="contact.html#municipalities"><strong>Your district office</strong><p>Contact details for your municipality.</p></a></li>
     </ul>
   </section>
 
@@ -186,39 +183,22 @@
         </div>
         <div class="way">
           <h3>By phone or app</h3>
-          <p>Call <a href="tel:5628"><strong>5628</strong></a>, 8:30 am – 2 pm, or use the Mayoralty's app, <a href="https://apps.apple.com/iq/app/id1669088018" rel="external">Baghdad Citizen Voice ↗</a>. Reports made by phone or in the app also receive a report number.</p>
+          <p>Call <a href="tel:5628"><strong>5628</strong></a> or use the Mayoralty's app, <a href="https://apps.apple.com/iq/app/id1669088018" rel="external">Baghdad Citizen Voice ↗</a>. Reports made by phone or in the app also receive a report number.</p>
         </div>
       </div>
     </section>
   </div>
 
-  <section class="block wrap" id="district" aria-labelledby="district-h">
-    <div class="block-head"><h2 id="district-h">Your district</h2><p><a href="districts.html">All 15 municipalities</a></p></div>
-    <div class="banks">
-      <div class="bank">
-        <h3>Karkh <span>west bank</span></h3>
-        <ul>
-          <li><a href="districts.html#karkh">Karkh Center</a></li>
-          <li><a href="districts.html#kadhimiya">Kadhimiya</a></li>
-          <li><a href="districts.html#mansour">Mansour</a></li>
-          <li><a href="districts.html#shuala">Al-Shula</a></li>
-          <li><a href="districts.html#rasheed">Al-Rasheed</a></li>
-          <li><a href="districts.html#dora">Dora</a></li>
-          <li><a href="districts.html#gzone">Green Zone and Airport Road</a></li>
-        </ul>
-      </div>
-      <div class="bank">
-        <h3>Rusafa <span>east bank</span></h3>
-        <ul>
-          <li><a href="districts.html#rusafa">Rusafa Center</a></li>
-          <li><a href="districts.html#adhamiya">Adhamiya</a></li>
-          <li><a href="districts.html#shaab">Al-Shaab</a></li>
-          <li><a href="districts.html#sader1">Sadr 1</a></li>
-          <li><a href="districts.html#sader2">Sadr 2</a></li>
-          <li><a href="districts.html#ghadeer">Al-Ghadeer</a></li>
-          <li><a href="districts.html#baghdadg">New Baghdad</a></li>
-          <li><a href="district-karrada.html">Karrada</a></li>
-        </ul>
+  <section class="block wrap" id="mayor" aria-labelledby="mayor-h">
+    <div class="mayor">
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/%D8%B5%D9%88%D8%B1%D8%A9_%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9_%D8%B9%D9%85%D8%A7%D8%B1_%D9%85%D9%88%D8%B3%D9%89_%D9%83%D8%A7%D8%B8%D9%85.jpg/960px-%D8%B5%D9%88%D8%B1%D8%A9_%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9_%D8%B9%D9%85%D8%A7%D8%B1_%D9%85%D9%88%D8%B3%D9%89_%D9%83%D8%A7%D8%B8%D9%85.jpg" alt="Eng. Ammar Moussa Kadhim at his desk">
+        <figcaption>Mustafa85674 — CC0 — Wikimedia Commons</figcaption>
+      </figure>
+      <div>
+        <p class="role">Mayor of Baghdad</p>
+        <h2 id="mayor-h">Eng. Ammar Moussa Kadhim</h2>
+        <p class="links"><a href="about.html">The Mayoralty</a><a href="leadership.html">Leadership and structure</a></p>
       </div>
     </div>
   </section>
@@ -239,7 +219,7 @@
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">Mayoralty of Baghdad</div>
       <div><h2>Services</h2><ul><li><a href="services.html">All services</a></li><li><a href="report.html">Report a problem</a></li><li><a href="track.html">Track a report</a></li><li><a href="alerts.html">Alerts</a></li></ul></div>
       <div><h2>News</h2><ul><li><a href="news.html">All news</a></li></ul></div>
-      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">Overview</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="districts.html">Districts</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
+      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">Overview</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div><h2>This website</h2><ul><li><a href="site.html#privacy">Privacy</a></li><li><a href="site.html#access">Accessibility</a></li><li><a href="site.html#search">How search works</a></li></ul></div>
     </div>
     <div class="fine">

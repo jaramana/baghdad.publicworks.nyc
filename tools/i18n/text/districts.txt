@@ -4,9 +4,9 @@ en: Districts — Mayoralty of Baghdad
 ar: البلديات — أمانة بغداد
 ku: شارەوانییەکان — ئەمانەتی بەغدا
 
-en: The Mayoralty serves the city through 15 municipalities: six on the Karkh side, eight on the Rusafa side, and the Green Zone and Airport Road municipality. Your municipality is the office for your area and receives the reports made there.
-ar: تخدم الأمانة المدينة عبر خمس عشرة بلدية: ست في جانب الكرخ، وثماني في جانب الرصافة، وبلدية المنطقة الخضراء وطريق المطار. بلديتك هي الجهة المختصة بمنطقتك، وإليها تصل البلاغات المقدّمة فيها.
-ku: ئەمانەت لە ڕێگەی ١٥ شارەوانییەوە خزمەتی شار دەکات: شەش لە لای کەرخ، هەشت لە لای ڕوسافە، و شارەوانی ناوچەی سەوز و ڕێگای فڕۆکەخانە. شارەوانییەکەت نووسینگەی ناوچەکەتە و ئەو ڕاپۆرتانە وەردەگرێت کە لەوێ دەکرێن.
+en: Your municipality is the office for your area and receives the reports made there.
+ar: بلديتك هي الجهة المختصة بمنطقتك، وإليها تصل البلاغات المقدّمة فيها.
+ku: شارەوانییەکەت نووسینگەی ناوچەکەتە و ئەو ڕاپۆرتانە وەردەگرێت کە لەوێ دەکرێن.
 
 en: Karkh
 ar: الكرخ
@@ -111,7 +111,3 @@ ku: ئەبو غرێب، تارمییە، مەحمودییە، مەدائین و 
 en: baghdad.gov.iq ↗
 ar: baghdad.gov.iq ↗
 ku: baghdad.gov.iq ↗
-
-en: All municipalities can be reached through the Mayoralty hotline, <0>5628</0>, 8:30 am – 2 pm.
-ar: يمكن الاتصال بكل البلديات عبر الخط الساخن للأمانة <0>5628</0> من 8:30 صباحاً إلى 2 ظهراً.
-ku: دەتوانرێت لە ڕێگەی هێڵی گەرمی ئەمانەتەوە پەیوەندی بە هەموو شارەوانییەکانەوە بکرێت، <0>5628</0>، لە 8:30ی بەیانی تا 2ی دوانیوەڕۆ.

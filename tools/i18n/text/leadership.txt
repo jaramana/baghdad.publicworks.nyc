@@ -56,13 +56,13 @@ en: Deputy Mayor for Municipal Affairs
 ar: وكيل أمين بغداد للشؤون البلدية
 ku: جێگری ئەمین بۆ کاروباری شارەوانی
 
-en: Responsible for the 15 municipalities, solid waste, highways, cemeteries and house numbering. Office: <0>wakelbaladi@amanatbaghdad.gov.iq</0>
-ar: يتولى البلديات الخمس عشرة، والمخلفات الصلبة، والطرق السريعة، والمقابر، وترقيم الدور. المكتب: <0>wakelbaladi@amanatbaghdad.gov.iq</0>
-ku: بەرپرسی ١٥ شارەوانییەکە، پاشماوەی ڕەق، ڕێگا خێراکان، گۆڕستانەکان و ژمارەکردنی خانووەکانە. نووسینگە: <0>wakelbaladi@amanatbaghdad.gov.iq</0>
+en: Responsible for the municipalities, solid waste, highways, cemeteries and house numbering. Office: <0>wakelbaladi@amanatbaghdad.gov.iq</0>
+ar: يتولى البلديات، والمخلفات الصلبة، والطرق السريعة، والمقابر، وترقيم الدور. المكتب: <0>wakelbaladi@amanatbaghdad.gov.iq</0>
+ku: بەرپرسی شارەوانییەکان، پاشماوەی ڕەق، ڕێگا خێراکان، گۆڕستانەکان و ژمارەکردنی خانووەکانە. نووسینگە: <0>wakelbaladi@amanatbaghdad.gov.iq</0>
 
-en: The 15 municipalities
-ar: البلديات الخمس عشرة
-ku: ١٥ شارەوانییەکە
+en: The municipalities
+ar: البلديات
+ku: شارەوانییەکان
 
 en: Listed on <0>Districts</0>
 ar: مدرجة في <0>البلديات</0>
@@ -196,6 +196,26 @@ en: Vocational Training Institute
 ar: معهد التدريب المهني
 ku: پەیمانگای ڕاهێنانی پیشەیی
 
-en: — means no public email address.
-ar: تعني العلامة — عدم وجود بريد إلكتروني معلن.
-ku: — واتە ناونیشانی ئیمەیڵی گشتی نییە.
+en: The Mayor, the three deputy mayors and the departments that report to each. Email addresses for each office are listed under <0>Contact</0>.
+ar: أمين بغداد ووكلاؤه الثلاثة والدوائر التابعة لكل منهم. عناوين البريد الإلكتروني لكل مكتب مدرجة في صفحة <0>الاتصال</0>.
+ku: ئەمینی بەغدا، سێ جێگرەکەی و ئەو فەرمانگانەی سەر بە هەر یەکێکیانن. ناونیشانی ئیمەیڵی هەر نووسینگەیەک لە <0>پەیوەندی</0> دا هاتووە.
+
+en: Responsible for the municipalities, solid waste, highways, cemeteries and house numbering.
+ar: يتولى البلديات، والمخلفات الصلبة، والطرق السريعة، والمقابر، وترقيم الدور.
+ku: بەرپرسی شارەوانییەکان، پاشماوەی ڕەق، ڕێگا خێراکان، گۆڕستانەکان و ژمارەکردنی خانووەکانە.
+
+en: Responsible for water, sewerage, parks, projects and design.
+ar: يتولى الماء، والمجاري، والمتنزهات، والمشاريع، والتصاميم.
+ku: بەرپرسی ئاو، ئاوەڕۆ، پارکەکان، پرۆژەکان و دیزاینە.
+
+en: Responsible for administration, finance, real estate, legal affairs and audit.
+ar: يتولى الشؤون الإدارية والمالية، والعقارات، والشؤون القانونية، والرقابة.
+ku: بەرپرسی کارگێڕی، دارایی، موڵک و ماڵ، کاروباری یاسایی و چاودێرییە.
+
+en: Projects<0>Director General: Eng. Yaqdhan Adnan al-Waili</0>
+ar: المشاريع<0>المدير العام: المهندس يقظان عدنان الوائلي</0>
+ku: پرۆژەکان<0>بەڕێوەبەری گشتی: ئەندازیار یەقزان عەدنان وائیلی</0>
+
+en: Relations and Media<0>Director General: Eng. Mohammed al-Rubaie</0>
+ar: العلاقات والإعلام<0>المدير العام: المهندس محمد الربيعي</0>
+ku: پەیوەندییەکان و ڕاگەیاندن<0>بەڕێوەبەری گشتی: ئەندازیار محەمەد ڕوبەیعی</0>

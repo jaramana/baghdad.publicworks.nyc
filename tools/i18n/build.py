@@ -26,7 +26,7 @@ TEXT = pathlib.Path(__file__).resolve().parent / 'text'
 
 # English-only redirect stubs are not translated
 
-SKIP_PAGES = {'projects.html'}
+SKIP_PAGES = {'projects.html', 'districts.html', 'district-karrada.html'}
 
 INLINE = {'a', 'strong', 'em', 'b', 'i', 'span', 'code', 'abbr', 'time', 'small', 'br', 'sup', 'sub', 'mark', 'bdi', 'q', 'cite', 's', 'u'}
 VOID = {'br', 'img', 'input', 'meta', 'link', 'hr', 'source', 'wbr'}

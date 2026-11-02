@@ -42,12 +42,20 @@
   .track-box button { border: 0; border-inline-start: 1.5px solid var(--line); background: transparent; color: var(--green); font: inherit; font-weight: 700; padding-inline: 1rem; cursor: pointer; }
   .track-box button:hover { background: var(--green-tint); }
 
+  /* The tool: the four steps on a raised sheet, set apart from the page, with a footer bar and a solid Next */
+
+  .tool { margin-top: 2rem; scroll-margin-top: 6rem; background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--green); border-radius: 6px; box-shadow: 0 1px 2px rgb(19 32 26 / 0.04), 0 12px 32px -16px rgb(19 32 26 / 0.18); }
+  .tool-head { display: flex; align-items: center; gap: 0.6rem; padding: 1rem 1.5rem 0.5rem; }
+  .tool-name { margin: 0; font-weight: 700; font-size: 0.8125rem; letter-spacing: 0.08em; text-transform: uppercase; }
+  .step-count { margin: 0; margin-inline-start: auto; font-size: 0.8125rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .tool-body { padding: 1.75rem 1.5rem 0.5rem; }
+  .tool .cats label { background: var(--paper); }
+
   /* Progress: four segments on one line */
-  .progress { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem; margin: 1.75rem 0 0.5rem; padding: 0; list-style: none; }
+  .progress { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem; margin: 0; padding: 0 1.5rem; list-style: none; }
   .progress li { border-top: 3px solid var(--line); padding-top: 0.4rem; font-size: 0.8125rem; color: var(--muted); }
   .progress li.done { border-color: var(--green); }
   .progress li.now { border-color: var(--green); color: var(--ink); font-weight: 600; }
-  .step-count { font-size: 0.8125rem; color: var(--muted); margin: 0 0 1.25rem; }
 
   .step { display: none; }
   .step.on { display: block; }
@@ -96,7 +104,9 @@
   .updates label { display: flex; gap: 0.6rem; align-items: center; font-weight: 400; }
   .updates input { accent-color: var(--green); width: 1.1rem; height: 1.1rem; }
 
-  .nav-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+  .nav-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem 1.5rem; background: var(--soft); border-top: 1px solid var(--line); border-radius: 0 0 6px 6px; }
+  #next { background: var(--ink); border-color: var(--ink); color: var(--white); padding-inline: 1.75rem; }
+  #next:hover { background: var(--green-deep); border-color: var(--green-deep); }
   .back { font: inherit; background: none; border: 0; color: var(--muted); cursor: pointer; padding: 0.4rem 0; }
   .back:hover { color: var(--ink); text-decoration: underline; }
   .back[hidden] { display: inline-block; visibility: hidden; }
@@ -115,6 +125,7 @@
   @media (max-width: 640px) {
     .cats { grid-template-columns: 1fr 1fr; }
     .progress li { font-size: 0; }
+    .tool-head, .progress, .tool-body, .nav-row { padding-inline: 1rem; }
     .review div { grid-template-columns: 1fr auto; }
     .review dt { grid-column: 1 / -1; }
   }
@@ -149,11 +160,10 @@
         <li class="has-sub end"><a href="about.html">The Mayoralty</a>
           <ul class="sub">
             <li><a href="leadership.html">Leadership and structure</a></li>
-            <li><a href="districts.html">Districts</a></li>
             <li><a href="tenders.html">Tenders and auctions</a></li>
             <li><a href="laws.html">Laws and plans</a></li>
             <li><a href="data.html">Open data</a></li>
-            <li><a href="about.html#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </li>
         <li class="lang"><a href="../report.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../ku/report.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a></li>
@@ -185,15 +195,20 @@
           </div>
         </div>
         <p class="danger">If there is a risk to life, such as an exposed electric wire or an open manhole, call the emergency services first, then report it here.</p>
+      </div>
 
-        <ol class="progress" aria-hidden="true">
-          <li data-p="1">Problem</li>
-          <li data-p="2">Place</li>
-          <li data-p="3">Photo and note</li>
-          <li data-p="4">Review</li>
-        </ol>
+      <section class="tool" id="tool" aria-labelledby="tool-name">
+      <div class="tool-head">
+        <p class="tool-name" id="tool-name">New report</p>
         <p class="step-count" aria-live="polite"></p>
       </div>
+      <ol class="progress" aria-hidden="true">
+        <li data-p="1">Problem</li>
+        <li data-p="2">Place</li>
+        <li data-p="3">Photo and note</li>
+        <li data-p="4">Review</li>
+      </ol>
+      <div class="tool-body">
 
       <!-- 1. What -->
       <fieldset class="step on" data-step="1" style="border:0;margin:0;padding:0">
@@ -266,11 +281,13 @@
       </fieldset>
 
       <p class="error" id="error" role="alert"></p>
+      </div>
 
       <div class="nav-row" id="nav-row">
         <button type="button" class="back" id="back" hidden>← Back</button>
         <button type="button" class="btn" id="next">Next</button>
       </div>
+      </section>
     </form>
 
     <!-- Receipt -->
@@ -302,7 +319,7 @@
     </section>
     <section>
       <h2>By phone or app</h2>
-      <p>Call <a href="tel:5628"><strong>5628</strong></a>, 8:30 am – 2 pm, or use the Mayoralty's app, Baghdad Citizen Voice.</p>
+      <p>Call <a href="tel:5628"><strong>5628</strong></a> or use the Mayoralty's app, Baghdad Citizen Voice.</p>
       <p>Reports made by phone or in the app enter the same complaints system and can also be tracked here by their number.</p>
     </section>
   </div>
@@ -315,7 +332,7 @@
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">Mayoralty of Baghdad</div>
       <div><h2>Services</h2><ul><li><a href="services.html">All services</a></li><li><a href="report.html">Report a problem</a></li><li><a href="track.html">Track a report</a></li><li><a href="alerts.html">Alerts</a></li></ul></div>
       <div><h2>News</h2><ul><li><a href="news.html">All news</a></li></ul></div>
-      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">Overview</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="districts.html">Districts</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
+      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">Overview</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div><h2>This website</h2><ul><li><a href="site.html#privacy">Privacy</a></li><li><a href="site.html#access">Accessibility</a></li><li><a href="site.html#search">How search works</a></li></ul></div>
     </div>
     <div class="fine">
@@ -358,7 +375,7 @@
     if (n === 2) setupMap();
     if (n === 4) fillReview();
     if (first) return;
-    document.getElementById('intro').scrollIntoView({ block: 'start' });
+    document.getElementById('tool').scrollIntoView({ block: 'start' });
     heading.tabIndex = -1;
     heading.focus({ preventScroll: true });
   }

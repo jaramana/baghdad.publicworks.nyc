@@ -16,8 +16,13 @@
 <script src="../shared/lang-swap.js"></script>
 <style>
   .guide h2 { scroll-margin-top: 7rem; }
-  table.data td:last-child { word-break: break-word; }
-  table.data td:first-child { width: 55%; }
+  .guide h3 { font-size: 1rem; margin: 1.25rem 0 0.25rem; }
+  .units { columns: 2; column-gap: 2rem; list-style: none; padding: 0 !important; border-top: 2px solid var(--green); }
+  .units .head { display: block; font-size: 0.875rem; color: var(--muted); }
+  .units li { break-inside: avoid; margin: 0 !important; padding-block: 0.45rem; border-bottom: 1px solid var(--line); }
+  @media (max-width: 560px) {
+    .units { columns: 1; }
+  }
 </style>
 <script src="../shared/prototype.js" defer></script>
 </head>
@@ -49,11 +54,10 @@
         <li class="has-sub end"><a href="about.html" aria-current="true">The Mayoralty</a>
           <ul class="sub">
             <li><a href="leadership.html" aria-current="page">Leadership and structure</a></li>
-            <li><a href="districts.html">Districts</a></li>
             <li><a href="tenders.html">Tenders and auctions</a></li>
             <li><a href="laws.html">Laws and plans</a></li>
             <li><a href="data.html">Open data</a></li>
-            <li><a href="about.html#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </li>
         <li class="lang"><a href="../leadership.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../ku/leadership.html" lang="ckb" hreflang="ckb" dir="rtl">کوردی</a></li>
@@ -72,7 +76,7 @@
 
   <header class="page-head">
     <h1>Leadership and structure</h1>
-    <p class="lede">The Mayor, the three deputy mayors and the departments that report to each, with their email addresses.</p>
+    <p class="lede">The Mayor, the three deputy mayors and the departments that report to each. Email addresses for each office are listed under <a href="contact.html#departments">Contact</a>.</p>
   </header>
 
   <div class="layout">
@@ -91,101 +95,64 @@
           </div>
         </div>
         <p>Three deputy mayors assist the Mayor, one each for municipal, technical and administrative affairs.</p>
-        <div class="table-wrap">
-          <table class="data">
-            <caption>Reporting to the Mayor</caption>
-            <thead><tr><th>Office</th><th>Email</th></tr></thead>
-            <tbody>
-              <tr><td>Office of the Mayor</td><td><a href="mailto:mayor.office@amanatbaghdad.gov.iq">mayor.office@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Public Contracts</td><td><a href="mailto:alukud@amanatbaghdad.gov.iq">alukud@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Investment</td><td><a href="mailto:investing@amanatbaghdad.gov.iq">investing@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Quality Management</td><td>—</td></tr>
-              <tr><td>Information Technology</td><td><a href="mailto:alhaseb@amanatbaghdad.gov.iq">alhaseb@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>World Bank projects</td><td><a href="mailto:bank@amanatbaghdad.gov.iq">bank@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Electricity and Decorations</td><td><a href="mailto:kahraba@amanatbaghdad.gov.iq">kahraba@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
+        <h3>Reporting to the Mayor</h3>
+        <ul class="units">
+          <li>Office of the Mayor</li>
+          <li>Public Contracts</li>
+          <li>Investment</li>
+          <li>Quality Management</li>
+          <li>Information Technology</li>
+          <li>World Bank projects</li>
+          <li>Electricity and Decorations</li>
+        </ul>
       </section>
 
       <section id="municipal" aria-labelledby="municipal-h">
         <h2 id="municipal-h">Deputy Mayor for Municipal Affairs</h2>
-        <p>Responsible for the 15 municipalities, solid waste, highways, cemeteries and house numbering. Office: <a href="mailto:wakelbaladi@amanatbaghdad.gov.iq">wakelbaladi@amanatbaghdad.gov.iq</a></p>
-        <div class="table-wrap">
-          <table class="data">
-            <thead><tr><th>Office</th><th>Email</th></tr></thead>
-            <tbody>
-              <tr><td><a href="districts.html">The 15 municipalities</a></td><td>Listed on <a href="districts.html">Districts</a></td></tr>
-              <tr><td>Solid Waste and Environment</td><td><a href="mailto:albeaa@amanatbaghdad.gov.iq">albeaa@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Highways</td><td>—</td></tr>
-              <tr><td>House Numbering</td><td>—</td></tr>
-              <tr><td>Municipal Factories</td><td><a href="mailto:factor@amanatbaghdad.gov.iq">factor@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Cemeteries</td><td><a href="mailto:makaber@amanatbaghdad.gov.iq">makaber@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Bob al-Sham</td><td><a href="mailto:bob@amanatbaghdad.gov.iq">bob@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
+        <p>Responsible for the municipalities, solid waste, highways, cemeteries and house numbering.</p>
+        <ul class="units">
+          <li><a href="contact.html#municipalities">The municipalities</a></li>
+          <li>Solid Waste and Environment</li>
+          <li>Highways</li>
+          <li>House Numbering</li>
+          <li>Municipal Factories</li>
+          <li>Cemeteries</li>
+          <li>Bob al-Sham</li>
+        </ul>
       </section>
 
       <section id="technical" aria-labelledby="technical-h">
         <h2 id="technical-h">Deputy Mayor for Technical Affairs</h2>
-        <p>Responsible for water, sewerage, parks, projects and design. Office: <a href="mailto:wakelfani@amanatbaghdad.gov.iq">wakelfani@amanatbaghdad.gov.iq</a></p>
-        <div class="table-wrap">
-          <table class="data">
-            <thead><tr><th>Office</th><th>Email</th></tr></thead>
-            <tbody>
-              <tr><td>Baghdad Water</td><td><a href="mailto:maabaghdad@amanatbaghdad.gov.iq">maabaghdad@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Baghdad Sewerage</td><td><a href="mailto:majari@amanatbaghdad.gov.iq">majari@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Projects</td><td><a href="mailto:mashareaa@amanatbaghdad.gov.iq">mashareaa@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Designs</td><td><a href="mailto:tasamem@amanatbaghdad.gov.iq">tasamem@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Planning and Follow-up</td><td><a href="mailto:tactet@amanatbaghdad.gov.iq">tactet@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Parks and Afforestation</td><td><a href="mailto:mashatel@amanatbaghdad.gov.iq">mashatel@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Production Units</td><td><a href="mailto:antajea@amanatbaghdad.gov.iq">antajea@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Water Projects Execution Company</td><td><a href="mailto:alsharka@amanatbaghdad.gov.iq">alsharka@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Ibn Rushd General Company</td><td><a href="mailto:ibnrushd@amanatbaghdad.gov.iq">ibnrushd@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
+        <p>Responsible for water, sewerage, parks, projects and design.</p>
+        <ul class="units">
+          <li>Baghdad Water</li>
+          <li>Baghdad Sewerage</li>
+          <li>Projects<span class="head">Director General: Eng. Yaqdhan Adnan al-Waili</span></li>
+          <li>Designs</li>
+          <li>Planning and Follow-up</li>
+          <li>Parks and Afforestation</li>
+          <li>Production Units</li>
+          <li>Water Projects Execution Company</li>
+          <li>Ibn Rushd General Company</li>
+        </ul>
       </section>
 
       <section id="administrative" aria-labelledby="administrative-h">
         <h2 id="administrative-h">Deputy Mayor for Administrative Affairs</h2>
-        <p>Responsible for administration, finance, real estate, legal affairs and audit. Office: <a href="mailto:wakeledari@amanatbaghdad.gov.iq">wakeledari@amanatbaghdad.gov.iq</a></p>
-        <div class="table-wrap">
-          <table class="data">
-            <thead><tr><th>Office</th><th>Email</th></tr></thead>
-            <tbody>
-              <tr><td>Administration and Finance</td><td><a href="mailto:edarea@amanatbaghdad.gov.iq">edarea@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Real Estate</td><td><a href="mailto:ekarat@amanatbaghdad.gov.iq">ekarat@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Legal</td><td><a href="mailto:kanonea@amanatbaghdad.gov.iq">kanonea@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Audit and Control</td><td><a href="mailto:alrkaba@amanatbaghdad.gov.iq">alrkaba@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Relations and Media</td><td><a href="mailto:elakat@amanatbaghdad.gov.iq">elakat@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Guards and Security</td><td><a href="mailto:hrasat@amanatbaghdad.gov.iq">hrasat@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
+        <p>Responsible for administration, finance, real estate, legal affairs and audit.</p>
+        <ul class="units">
+          <li>Administration and Finance</li>
+          <li>Real Estate</li>
+          <li>Legal</li>
+          <li>Audit and Control</li>
+          <li>Relations and Media<span class="head">Director General: Eng. Mohammed al-Rubaie</span></li>
+          <li>Guards and Security</li>
+        </ul>
       </section>
 
-      <section id="other" aria-labelledby="other-h">
-        <h2 id="other-h">Other offices</h2>
-        <div class="table-wrap">
-          <table class="data">
-            <thead><tr><th>Office</th><th>Email</th></tr></thead>
-            <tbody>
-              <tr><td>Revenues</td><td><a href="mailto:wardat@amanatbaghdad.gov.iq">wardat@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Planning section</td><td><a href="mailto:dep_tactet@amanatbaghdad.gov.iq">dep_tactet@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Control section</td><td><a href="mailto:control@amanatbaghdad.gov.iq">control@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Tourism</td><td><a href="mailto:alseaha@amanatbaghdad.gov.iq">alseaha@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Women's Empowerment</td><td><a href="mailto:women-t@amanatbaghdad.gov.iq">women-t@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>Vocational Training Institute</td><td><a href="mailto:mahad@amanatbaghdad.gov.iq">mahad@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
 
     </article>
   </div>
-  <p class="meta">— means no public email address.</p>
 </main>
 
 <footer>
@@ -194,7 +161,7 @@
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">Mayoralty of Baghdad</div>
       <div><h2>Services</h2><ul><li><a href="services.html">All services</a></li><li><a href="report.html">Report a problem</a></li><li><a href="track.html">Track a report</a></li><li><a href="alerts.html">Alerts</a></li></ul></div>
       <div><h2>News</h2><ul><li><a href="news.html">All news</a></li></ul></div>
-      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">Overview</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="districts.html">Districts</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
+      <div><h2>The Mayoralty</h2><ul><li><a href="about.html">Overview</a></li><li><a href="leadership.html">Leadership and structure</a></li><li><a href="tenders.html">Tenders and auctions</a></li><li><a href="laws.html">Laws and plans</a></li><li><a href="data.html">Open data</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div><h2>This website</h2><ul><li><a href="site.html#privacy">Privacy</a></li><li><a href="site.html#access">Accessibility</a></li><li><a href="site.html#search">How search works</a></li></ul></div>
     </div>
     <div class="fine">

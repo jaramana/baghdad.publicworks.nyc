@@ -27,14 +27,13 @@
 | Alerts | `/en/alerts.html` |
 | Report a problem | `/en/report.html` |
 | Track a report | `/en/track.html` |
-| Districts | `/en/districts.html` |
-| Karrada municipality | `/en/district-karrada.html` |
 | News | `/en/news.html` |
 | The Mayoralty | `/en/about.html` |
 | Leadership and structure | `/en/leadership.html` |
 | Tenders and auctions | `/en/tenders.html` |
 | Laws and plans | `/en/laws.html` |
 | Open data | `/en/data.html` |
+| Contact | `/en/contact.html` |
 | Using this website | `/en/site.html` |
 
 ## Out of scope
@@ -52,9 +51,8 @@
 - These gaps are already logged:
   - The Mayoralty has no WhatsApp number.
   - The pay-bill link has no destination.
-  - Karrada is the only district with its own page.
   - The deputy mayors' names are unconfirmed.
-- Search, the report map and the district maps need JavaScript. The rest of each page works without it.
+- Search and the report map need JavaScript. The rest of each page works without it.
 
 ## Tasks
 

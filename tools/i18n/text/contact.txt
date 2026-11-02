@@ -1,0 +1,313 @@
+# Contact
+
+en: Contact the Mayoralty
+ar: الاتصال بالأمانة
+ku: پەیوەندی بە ئەمانەتەوە
+
+en: Problems in your area
+ar: المشكلات في منطقتك
+ku: کێشەکانی ناوچەکەت
+
+en: <0>Report a problem</0>, then <1>track it</1> with your report number.
+ar: <0>أبلغ عن المشكلة</0>، ثم <1>تابعها</1> برقم البلاغ.
+ku: <0>کێشەکە ڕاپۆرت بکە</0>، پاشان بە ژمارەی ڕاپۆرتەکە <1>بەدواداچوونی بۆ بکە</1>.
+
+en: By phone
+ar: عبر الهاتف
+ku: بە تەلەفۆن
+
+en: Call <0><1>5628</1></0>, 8:30 am – 2 pm, for questions and complaints.
+ar: اتصل بالرقم <0><1>5628</1></0> من 8:30 صباحاً إلى 2 ظهراً للاستفسارات والشكاوى.
+ku: بۆ پرسیار و سکاڵا پەیوەندی بە <0><1>5628</1></0> بکە، لە 8:30ی بەیانی تا 2ی دوانیوەڕۆ.
+
+en: In the app
+ar: عبر التطبيق
+ku: لە ئەپەکەوە
+
+en: Baghdad Citizen Voice, the Mayoralty's complaints app. <0>App Store ↗</0>
+ar: صوت المواطن البغدادي، تطبيق الشكاوى التابع للأمانة. <0>App Store ↗</0>
+ku: دەنگی هاووڵاتیی بەغدا، ئەپی سکاڵاکانی ئەمانەت. <0>App Store ↗</0>
+
+en: Karkh Center<0>مركز الكرخ</0>
+ar: مركز الكرخ
+ku: ناوەندی کەرخ<0>مركز الكرخ</0>
+
+en: Kadhimiya<0>الكاظمية</0>
+ar: الكاظمية
+ku: کازمییە<0>الكاظمية</0>
+
+en: Mansour<0>المنصور</0>
+ar: المنصور
+ku: مەنسوور<0>المنصور</0>
+
+en: Al-Shula<0>الشعلة</0>
+ar: الشعلة
+ku: شوعلە<0>الشعلة</0>
+
+en: Al-Rasheed<0>الرشيد</0>
+ar: الرشيد
+ku: ڕەشید<0>الرشيد</0>
+
+en: Dora<0>الدورة</0>
+ar: الدورة
+ku: دۆرە<0>الدورة</0>
+
+en: Green Zone and Airport Road<0>المنطقة الخضراء وطريق المطار</0>
+ar: المنطقة الخضراء وطريق المطار
+ku: ناوچەی سەوز و ڕێگای فڕۆکەخانە<0>المنطقة الخضراء وطريق المطار</0>
+
+en: Rusafa Center<0>مركز الرصافة</0>
+ar: مركز الرصافة
+ku: ناوەندی ڕوسافە<0>مركز الرصافة</0>
+
+en: Adhamiya<0>الأعظمية</0>
+ar: الأعظمية
+ku: ئەعزەمییە<0>الأعظمية</0>
+
+en: Al-Shaab<0>الشعب</0>
+ar: الشعب
+ku: شەعب<0>الشعب</0>
+
+en: Sadr 1<0>الصدر الأولى</0>
+ar: الصدر الأولى
+ku: سەدری یەکەم<0>الصدر الأولى</0>
+
+en: Sadr 2<0>الصدر الثانية</0>
+ar: الصدر الثانية
+ku: سەدری دووەم<0>الصدر الثانية</0>
+
+en: Al-Ghadeer<0>الغدير</0>
+ar: الغدير
+ku: غەدیر<0>الغدير</0>
+
+en: New Baghdad<0>بغداد الجديدة</0>
+ar: بغداد الجديدة
+ku: بەغدای نوێ<0>بغداد الجديدة</0>
+
+en: Karrada<0>الكرادة</0>
+ar: الكرادة
+ku: کەڕادە<0>الكرادة</0>
+
+en: Baghdad Governorate<0>محافظة بغداد</0>
+ar: محافظة بغداد
+ku: پارێزگای بەغدا<0>محافظة بغداد</0>
+
+en: Legal enquiries
+ar: الاستفسارات القانونية
+ku: پرسیارە یاساییەکان
+
+en: Legal Department: <0>kanonea@amanatbaghdad.gov.iq</0>
+ar: الدائرة القانونية: <0>kanonea@amanatbaghdad.gov.iq</0>
+ku: فەرمانگەی یاسایی: <0>kanonea@amanatbaghdad.gov.iq</0>
+
+en: Complaints about staff or departments
+ar: الشكاوى بحق الموظفين أو الدوائر
+ku: سکاڵا دەربارەی فەرمانبەران یان فەرمانگەکان
+
+en: Audit and Control Department: <0>shakawi.alrkaba@amanatbaghdad.gov.iq</0>
+ar: دائرة الرقابة والتدقيق: <0>shakawi.alrkaba@amanatbaghdad.gov.iq</0>
+ku: فەرمانگەی چاودێری و وردبینی: <0>shakawi.alrkaba@amanatbaghdad.gov.iq</0>
+
+en: Meeting the Mayor
+ar: مقابلة أمين بغداد
+ku: چاوپێکەوتن لەگەڵ ئەمین
+
+en: By appointment: <0>connection@amanatbaghdad.gov.iq</0>
+ar: بموعد مسبق: <0>connection@amanatbaghdad.gov.iq</0>
+ku: بە کاتی پێشوەختە: <0>connection@amanatbaghdad.gov.iq</0>
+
+en: Departments
+ar: الدوائر
+ku: فەرمانگەکان
+
+en: Office
+ar: الجهة
+ku: یەکە
+
+en: Administration and Finance
+ar: الشؤون الإدارية والمالية
+ku: کارگێڕی و دارایی
+
+en: Audit and Control
+ar: الرقابة والتدقيق
+ku: چاودێری و وردبینی
+
+en: Baghdad Sewerage
+ar: مجاري بغداد
+ku: ئاوەڕۆی بەغدا
+
+en: Baghdad Water
+ar: ماء بغداد
+ku: ئاوی بەغدا
+
+en: Bob al-Sham
+ar: بوب الشام
+ku: بوب ئەلشام
+
+en: Cemeteries
+ar: المقابر
+ku: گۆڕستانەکان
+
+en: Control section
+ar: قسم الرقابة
+ku: بەشی چاودێری
+
+en: Deputy Mayor for Administrative Affairs
+ar: وكيل أمين بغداد للشؤون الإدارية
+ku: جێگری ئەمین بۆ کاروباری کارگێڕی
+
+en: Deputy Mayor for Municipal Affairs
+ar: وكيل أمين بغداد للشؤون البلدية
+ku: جێگری ئەمین بۆ کاروباری شارەوانی
+
+en: Deputy Mayor for Technical Affairs
+ar: وكيل أمين بغداد للشؤون الفنية
+ku: جێگری ئەمین بۆ کاروباری تەکنیکی
+
+en: Designs
+ar: التصاميم
+ku: دیزاینەکان
+
+en: Electricity and Decorations
+ar: الكهرباء والتزيين
+ku: کارەبا و ڕازاندنەوە
+
+en: Guards and Security
+ar: الحراسات والأمن
+ku: پاسەوانی و ئاسایش
+
+en: Ibn Rushd General Company
+ar: شركة ابن رشد العامة
+ku: کۆمپانیای گشتیی ئیبن ڕوشد
+
+en: Information Technology
+ar: تقنية المعلومات
+ku: تەکنەلۆجیای زانیاری
+
+en: Investment
+ar: الاستثمار
+ku: وەبەرهێنان
+
+en: Legal
+ar: الشؤون القانونية
+ku: یاسایی
+
+en: Municipal Factories
+ar: المعامل البلدية
+ku: کارگە شارەوانییەکان
+
+en: Office of the Mayor
+ar: مكتب أمين بغداد
+ku: نووسینگەی ئەمین
+
+en: Parks and Afforestation
+ar: المتنزهات والتشجير
+ku: پارک و دارستانکردن
+
+en: Planning and Follow-up
+ar: التخطيط والمتابعة
+ku: پلاندانان و بەدواداچوون
+
+en: Planning section
+ar: قسم التخطيط
+ku: بەشی پلاندانان
+
+en: Production Units
+ar: الوحدات الإنتاجية
+ku: یەکە بەرهەمهێنەکان
+
+en: Projects
+ar: المشاريع
+ku: پرۆژەکان
+
+en: Public Contracts
+ar: العقود العامة
+ku: گرێبەستە گشتییەکان
+
+en: Real Estate
+ar: العقارات
+ku: موڵک و ماڵ
+
+en: Relations and Media
+ar: العلاقات والإعلام
+ku: پەیوەندییەکان و ڕاگەیاندن
+
+en: Revenues
+ar: الواردات
+ku: داهاتەکان
+
+en: Solid Waste and Environment
+ar: المخلفات الصلبة والبيئة
+ku: پاشماوەی ڕەق و ژینگە
+
+en: Tourism
+ar: السياحة
+ku: گەشتوگوزار
+
+en: Vocational Training Institute
+ar: معهد التدريب المهني
+ku: پەیمانگای ڕاهێنانی پیشەیی
+
+en: Water Projects Execution Company
+ar: شركة تنفيذ مشاريع الماء
+ku: کۆمپانیای جێبەجێکردنی پرۆژەکانی ئاو
+
+en: Women's Empowerment
+ar: تمكين المرأة
+ku: بەهێزکردنی ئافرەتان
+
+en: World Bank projects
+ar: مشاريع البنك الدولي
+ku: پرۆژەکانی بانکی نێودەوڵەتی
+
+en: Contact — Mayoralty of Baghdad
+ar: الاتصال — أمانة بغداد
+ku: پەیوەندی — ئەمانەتی بەغدا
+
+en: The hotline, the municipality offices and the email addresses of the Mayoralty's departments.
+ar: الخط الساخن ومقار البلديات وعناوين البريد الإلكتروني لدوائر الأمانة.
+ku: هێڵی گەرم، نووسینگەی شارەوانییەکان و ناونیشانی ئیمەیڵی فەرمانگەکانی ئەمانەت.
+
+en: Hotline and app
+ar: الخط الساخن والتطبيق
+ku: هێڵی گەرم و ئەپ
+
+en: Municipality offices
+ar: مقار البلديات
+ku: نووسینگەی شارەوانییەکان
+
+en: Your municipality is the office for your area and receives the reports made there. Offices are open Sunday to Thursday, 8:30 am – 2:30 pm. <0>(illustrative)</0>
+ar: بلديتك هي الجهة المختصة بمنطقتك، وإليها تصل البلاغات المقدّمة فيها. الدوام من الأحد إلى الخميس، من 8:30 صباحاً إلى 2:30 ظهراً. <0>(توضيحي)</0>
+ku: شارەوانییەکەت نووسینگەی ناوچەکەتە و ئەو ڕاپۆرتانە وەردەگرێت کە لەوێ دەکرێن. دەوام یەکشەممە تا پێنجشەممەیە، لە 8:30ی بەیانی تا 2:30ی دوانیوەڕۆ. <0>(نموونەیی)</0>
+
+en: Karkh, the west bank
+ar: الكرخ، الجانب الغربي
+ku: کەرخ، کەناری ڕۆژئاوا
+
+en: Rusafa, the east bank
+ar: الرصافة، الجانب الشرقي
+ku: ڕوسافە، کەناری ڕۆژهەڵات
+
+en: Outside the city boundary
+ar: خارج حدود المدينة
+ku: دەرەوەی سنووری شار
+
+en: Abu Ghraib, Tarmiyah, Mahmudiyah, Mada'in and the other districts around the city. <0>baghdad.gov.iq ↗</0>
+ar: أبو غريب والطارمية والمحمودية والمدائن وسائر الأقضية المحيطة بالمدينة. <0>baghdad.gov.iq ↗</0>
+ku: ئەبو غرێب، تارمییە، مەحمودییە، مەدائین و قەزاکانی تری دەوروبەری شار. <0>baghdad.gov.iq ↗</0>
+
+en: Enquiries
+ar: الاستفسارات
+ku: پرسیارەکان
+
+en: Public Contracts Department, quoting the notice number: <0>alukud@amanatbaghdad.gov.iq</0>
+ar: قسم العقود العامة، مع ذكر رقم الإعلان: <0>alukud@amanatbaghdad.gov.iq</0>
+ku: بەشی گرێبەستە گشتییەکان، لەگەڵ ژمارەی ئاگاداری: <0>alukud@amanatbaghdad.gov.iq</0>
+
+en: General enquiries and this website
+ar: الاستفسارات العامة وهذا الموقع
+ku: پرسیارە گشتییەکان و ئەم ماڵپەڕە
+
+en: How the departments are organized is set out under <0>Leadership and structure</0>.
+ar: يرد تنظيم الدوائر في صفحة <0>القيادة والهيكل التنظيمي</0>.
+ku: ڕێکخستنی فەرمانگەکان لە پەڕەی <0>سەرکردایەتی و پێکهاتە</0> دا هاتووە.

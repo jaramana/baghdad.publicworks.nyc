@@ -34,9 +34,9 @@ raw: `No pages match “${q}”.`
 ar: `لا توجد صفحة تطابق «${q}».`
 ku: `هیچ پەڕەیەک لەگەڵ «${q}» ناگونجێت.`
 
-raw: '<p>Try other words, browse <a href="services.html">all services</a>, or call the hotline, <a href="tel:5628">5628</a>, 8:30 am – 2 pm.</p>'
-ar: '<p>جرّب كلمات أخرى، أو تصفّح <a href="services.html">كل الخدمات</a>، أو اتصل بالخط الساخن <a href="tel:5628">٥٦٢٨</a> من ٨:٣٠ صباحاً إلى ٢ ظهراً.</p>'
-ku: '<p>وشەی تر تاقی بکەرەوە، سەیری <a href="services.html">هەموو خزمەتگوزارییەکان</a> بکە، یان پەیوەندی بە هێڵی گەرمەوە بکە، <a href="tel:5628">٥٦٢٨</a>، لە ٨:٣٠ی بەیانی تا ٢ی دوانیوەڕۆ.</p>'
+raw: '<p>Try other words, browse <a href="services.html">all services</a>, or <a href="contact.html">contact the Mayoralty</a>.</p>'
+ar: '<p>جرّب كلمات أخرى، أو تصفّح <a href="services.html">كل الخدمات</a>، أو <a href="contact.html">تواصل مع الأمانة</a>.</p>'
+ku: '<p>وشەی تر تاقی بکەرەوە، سەیری <a href="services.html">هەموو خزمەتگوزارییەکان</a> بکە، یان <a href="contact.html">پەیوەندی بە ئەمانەتەوە بکە</a>.</p>'
 
 raw: `${q} — Search — Mayoralty of Baghdad`
 ar: `${q} — البحث — أمانة بغداد`
@@ -126,13 +126,9 @@ raw: t: 'All services', h: 'services.html', s: 'Services', d: 'Every service, gr
 ar: t: 'كل الخدمات', h: 'services.html', s: 'Services', d: 'كل الخدمات، مجمّعة بحسب ما تريد إنجازه.', w: 'خدمات خدمة قائمة'
 ku: t: 'هەموو خزمەتگوزارییەکان', h: 'services.html', s: 'Services', d: 'هەموو خزمەتگوزارییەکان، بەپێی ئەوەی دەتەوێت بیکەیت.', w: 'خزمەتگوزاری لیست'
 
-raw: t: 'Districts', h: 'districts.html', s: 'The Mayoralty', d: 'Contact details for the 15 municipalities, by bank of the river.', w: 'district municipality office local karkh rusafa kadhimiya mansour shula shuala rasheed dora green zone airport adhamiya shaab sadr ghadeer baghdad new center centre'
-ar: t: 'البلديات', h: 'districts.html', s: 'The Mayoralty', d: 'بيانات الاتصال بالبلديات الخمس عشرة، بحسب جانب النهر.', w: 'بلدية بلديات منطقة الكرخ الرصافة الكاظمية المنصور الشعلة الرشيد الدورة الخضراء المطار الاعظمية الشعب الصدر الغدير بغداد الجديدة مركز'
-ku: t: 'شارەوانییەکان', h: 'districts.html', s: 'The Mayoralty', d: 'زانیاریی پەیوەندی بە ١٥ شارەوانییەکە، بەپێی کەناری ڕووبار.', w: 'شارەوانی ناوچە کەرخ ڕوسافە کازمییە مەنسوور شوعلە ڕەشید دۆرە سەوز فڕۆکەخانە ئەعزەمییە شەعب سەدر غەدیر بەغدای نوێ ناوەند'
-
-raw: t: 'Karrada municipality', h: 'district-karrada.html', s: 'The Mayoralty', d: 'Office, alerts, works under way and reports in Karrada.', w: 'karrada jadriya arasat masbah abu nuwas alwiya wahda zawiya camp sarah'
-ar: t: 'بلدية الكرادة', h: 'district-karrada.html', s: 'The Mayoralty', d: 'المقر والتنبيهات والأعمال الجارية والبلاغات في الكرادة.', w: 'الكرادة الجادرية العرصات المسبح ابو نواس العلوية الوحدة الزوية كمب سارة'
-ku: t: 'شارەوانی کەڕادە', h: 'district-karrada.html', s: 'The Mayoralty', d: 'بارەگا، ئاگادارکردنەوە، کارە بەردەوامەکان و ڕاپۆرتەکان لە کەڕادە.', w: 'کەڕادە جادرییە عەرەسات مەسبەح ئەبو نوواس عەلەوییە وەحدە زەوییە کەمپ سارە'
+raw: t: 'Municipality offices', h: 'contact.html#municipalities', s: 'The Mayoralty', d: 'The email for each municipality, by bank of the river.', w: 'district municipality office local karkh rusafa kadhimiya mansour shula shuala rasheed dora green zone airport adhamiya shaab sadr ghadeer karrada baghdad new center centre email'
+ar: t: 'مقار البلديات', h: 'contact.html#municipalities', s: 'The Mayoralty', d: 'البريد الإلكتروني لكل بلدية، بحسب جانب النهر.', w: 'بلدية بلديات منطقة الكرخ الرصافة الكاظمية المنصور الشعلة الرشيد الدورة الخضراء المطار الاعظمية الشعب الصدر الغدير الكرادة بغداد الجديدة مركز بريد'
+ku: t: 'نووسینگەی شارەوانییەکان', h: 'contact.html#municipalities', s: 'The Mayoralty', d: 'ئیمەیڵی هەر شارەوانییەک، بەپێی کەناری ڕووبار.', w: 'شارەوانی ناوچە کەرخ ڕوسافە کازمییە مەنسوور شوعلە ڕەشید دۆرە سەوز فڕۆکەخانە ئەعزەمییە شەعب سەدر غەدیر کەڕادە بەغدای نوێ ناوەند ئیمەیڵ'
 
 raw: t: 'News', h: 'news.html', s: 'News', d: 'Mayoralty statements and updates on municipal works, newest first.', w: 'news statement announcement press latest update works park'
 ar: t: 'الأخبار', h: 'news.html', s: 'News', d: 'بيانات الأمانة وآخر أخبار الأعمال البلدية، الأحدث أولاً.', w: 'اخبار خبر بيان اعلان صحافة جديد اعمال متنزه حديقة'
@@ -142,13 +138,13 @@ raw: t: 'The Mayoralty of Baghdad', h: 'about.html', s: 'The Mayoralty', d: 'Wha
 ar: t: 'أمانة بغداد', h: 'about.html', s: 'The Mayoralty', d: 'مهام الأمانة، والمسؤوليات في بغداد، والمشاريع الكبرى.', w: 'عن الامانة امانة مهام مسؤولية محافظة مشروع مشاريع مترو من'
 ku: t: 'ئەمانەتی بەغدا', h: 'about.html', s: 'The Mayoralty', d: 'ئەمانەت چی دەکات، بەرپرسیارێتییەکان لە بەغدا و پرۆژە گەورەکان.', w: 'دەربارە ئەمانەت ئەرک بەرپرسیارێتی پارێزگا پرۆژە مێترۆ'
 
-raw: t: 'Leadership and structure', h: 'leadership.html', s: 'The Mayoralty', d: 'The Mayor, the three deputy mayors, and every department\'s email.', w: 'mayor deputy leadership structure department organisation organization chart email'
-ar: t: 'القيادة والهيكل التنظيمي', h: 'leadership.html', s: 'The Mayoralty', d: 'أمين بغداد ووكلاؤه الثلاثة، والبريد الإلكتروني لكل دائرة.', w: 'امين وكيل قيادة هيكل دائرة دوائر تنظيمي بريد'
-ku: t: 'سەرکردایەتی و پێکهاتە', h: 'leadership.html', s: 'The Mayoralty', d: 'ئەمینی بەغدا، سێ جێگرەکەی و ئیمەیڵی هەموو فەرمانگەکان.', w: 'ئەمین جێگر سەرکردایەتی پێکهاتە فەرمانگە ئیمەیڵ'
+raw: t: 'Leadership and structure', h: 'leadership.html', s: 'The Mayoralty', d: 'The Mayor, the three deputy mayors and the departments that report to each.', w: 'mayor deputy leadership structure department organisation organization chart'
+ar: t: 'القيادة والهيكل التنظيمي', h: 'leadership.html', s: 'The Mayoralty', d: 'أمين بغداد ووكلاؤه الثلاثة والدوائر التابعة لكل منهم.', w: 'امين وكيل قيادة هيكل دائرة دوائر تنظيمي'
+ku: t: 'سەرکردایەتی و پێکهاتە', h: 'leadership.html', s: 'The Mayoralty', d: 'ئەمینی بەغدا، سێ جێگرەکەی و ئەو فەرمانگانەی سەر بە هەر یەکێکیانن.', w: 'ئەمین جێگر سەرکردایەتی پێکهاتە فەرمانگە'
 
-raw: t: 'Contact the Mayoralty', h: 'about.html#contact', s: 'The Mayoralty', d: 'The 5628 hotline, the Citizen Voice app, and emails for departments and the press.', w: 'contact hotline phone call email 5628 citizen voice app complaint staff meet mayor appointment'
-ar: t: 'الاتصال بالأمانة', h: 'about.html#contact', s: 'The Mayoralty', d: 'الخط الساخن ٥٦٢٨، وتطبيق صوت المواطن، والبريد الإلكتروني للدوائر والإعلام.', w: 'اتصال تواصل خط ساخن هاتف بريد 5628 صوت المواطن تطبيق شكوى مقابلة موعد امين'
-ku: t: 'پەیوەندی بە ئەمانەتەوە', h: 'about.html#contact', s: 'The Mayoralty', d: 'هێڵی گەرمی ٥٦٢٨، ئەپی دەنگی هاووڵاتی و ئیمەیڵی فەرمانگەکان و ڕاگەیاندن.', w: 'پەیوەندی هێڵی گەرم تەلەفۆن ئیمەیڵ 5628 دەنگی هاووڵاتی ئەپ سکاڵا چاوپێکەوتن'
+raw: t: 'Contact the Mayoralty', h: 'contact.html', s: 'The Mayoralty', d: 'The hotline, the Citizen Voice app, and emails for the municipalities, the departments and the press.', w: 'contact hotline phone call email 5628 citizen voice app complaint staff meet mayor appointment department press media'
+ar: t: 'الاتصال بالأمانة', h: 'contact.html', s: 'The Mayoralty', d: 'الخط الساخن، وتطبيق صوت المواطن، والبريد الإلكتروني للبلديات والدوائر والإعلام.', w: 'اتصال تواصل خط ساخن هاتف بريد 5628 صوت المواطن تطبيق شكوى مقابلة موعد امين دائرة اعلام'
+ku: t: 'پەیوەندی بە ئەمانەتەوە', h: 'contact.html', s: 'The Mayoralty', d: 'هێڵی گەرم، ئەپی دەنگی هاووڵاتی و ئیمەیڵی شارەوانییەکان، فەرمانگەکان و ڕاگەیاندن.', w: 'پەیوەندی هێڵی گەرم تەلەفۆن ئیمەیڵ 5628 دەنگی هاووڵاتی ئەپ سکاڵا چاوپێکەوتن فەرمانگە ڕاگەیاندن'
 
 raw: t: 'Tenders and auctions', h: 'tenders.html', s: 'The Mayoralty', d: 'Notices for contracts, and for sales and leases of Mayoralty property.', w: 'tender auction bid bidding contract procurement lease'
 ar: t: 'المناقصات والمزايدات', h: 'tenders.html', s: 'The Mayoralty', d: 'إعلانات العقود، وبيع أملاك الأمانة وإيجارها.', w: 'مناقصة مناقصات مزايدة مزايدات عقد عطاء ايجار'

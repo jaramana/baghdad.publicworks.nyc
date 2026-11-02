@@ -104,9 +104,9 @@ en: Contact the Mayoralty
 ar: الاتصال بالأمانة
 ku: پەیوەندی بە ئەمانەتەوە
 
-en: The 5628 hotline, email and meeting requests.
-ar: الخط الساخن 5628، والبريد الإلكتروني، وطلبات المقابلة.
-ku: هێڵی گەرمی 5628، ئیمەیڵ و داواکاریی چاوپێکەوتن.
+en: Phone, email and meeting requests.
+ar: الهاتف والبريد الإلكتروني وطلبات المقابلة.
+ku: تەلەفۆن، ئیمەیڵ و داواکاریی چاوپێکەوتن.
 
 en: If the service you need is not listed, <0>search the website</0>.
 ar: إذا لم تجد الخدمة التي تحتاجها في القائمة، <0>ابحث في الموقع</0>.

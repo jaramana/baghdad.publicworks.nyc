@@ -15,8 +15,13 @@
 <script src="../shared/lang-swap.js"></script>
 <style>
   .guide h2 { scroll-margin-top: 7rem; }
-  table.data td:last-child { word-break: break-word; }
-  table.data td:first-child { width: 55%; }
+  .guide h3 { font-size: 1rem; margin: 1.25rem 0 0.25rem; }
+  .units { columns: 2; column-gap: 2rem; list-style: none; padding: 0 !important; border-top: 2px solid var(--green); }
+  .units .head { display: block; font-size: 0.875rem; color: var(--muted); }
+  .units li { break-inside: avoid; margin: 0 !important; padding-block: 0.45rem; border-bottom: 1px solid var(--line); }
+  @media (max-width: 560px) {
+    .units { columns: 1; }
+  }
 </style>
 <script src="../shared/prototype.js" defer></script>
 </head>
@@ -48,11 +53,10 @@
         <li class="has-sub end"><a href="about.html" aria-current="true">ئەمانەت</a>
           <ul class="sub">
             <li><a href="leadership.html" aria-current="page">سەرکردایەتی و پێکهاتە</a></li>
-            <li><a href="districts.html">شارەوانییەکان</a></li>
             <li><a href="tenders.html">تەندەر و مزایەدەکان</a></li>
             <li><a href="laws.html">یاسا و پلانەکان</a></li>
             <li><a href="data.html">داتای کراوە</a></li>
-            <li><a href="about.html#contact">پەیوەندی</a></li>
+            <li><a href="contact.html">پەیوەندی</a></li>
           </ul>
         </li>
         <li class="lang"><a href="../leadership.html" lang="ar" hreflang="ar" dir="rtl">العربية</a><a href="../en/leadership.html" lang="en" hreflang="en" dir="ltr">English</a></li>
@@ -71,7 +75,7 @@
 
   <header class="page-head">
     <h1>سەرکردایەتی و پێکهاتە</h1>
-    <p class="lede">ئەمین، سێ جێگرەکەی و ئەو فەرمانگانەی سەر بە هەر یەکێکیانن، لەگەڵ ناونیشانی ئیمەیڵیان.</p>
+    <p class="lede">ئەمینی بەغدا، سێ جێگرەکەی و ئەو فەرمانگانەی سەر بە هەر یەکێکیانن. ناونیشانی ئیمەیڵی هەر نووسینگەیەک لە <a href="contact.html#departments">پەیوەندی</a> دا هاتووە.</p>
   </header>
 
   <div class="layout">
@@ -90,101 +94,64 @@
           </div>
         </div>
         <p>سێ جێگر یارمەتی ئەمین دەدەن، یەکێک بۆ کاروباری شارەوانی، یەکێک بۆ کاروباری تەکنیکی و یەکێک بۆ کاروباری کارگێڕی.</p>
-        <div class="table-wrap">
-          <table class="data">
-            <caption>سەر بە ئەمین</caption>
-            <thead><tr><th>یەکە</th><th>ئیمەیڵ</th></tr></thead>
-            <tbody>
-              <tr><td>نووسینگەی ئەمین</td><td><a href="mailto:mayor.office@amanatbaghdad.gov.iq">mayor.office@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>گرێبەستە گشتییەکان</td><td><a href="mailto:alukud@amanatbaghdad.gov.iq">alukud@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>وەبەرهێنان</td><td><a href="mailto:investing@amanatbaghdad.gov.iq">investing@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>بەڕێوەبردنی کوالیتی</td><td>—</td></tr>
-              <tr><td>تەکنەلۆجیای زانیاری</td><td><a href="mailto:alhaseb@amanatbaghdad.gov.iq">alhaseb@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>پرۆژەکانی بانکی نێودەوڵەتی</td><td><a href="mailto:bank@amanatbaghdad.gov.iq">bank@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>کارەبا و ڕازاندنەوە</td><td><a href="mailto:kahraba@amanatbaghdad.gov.iq">kahraba@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
+        <h3>سەر بە ئەمین</h3>
+        <ul class="units">
+          <li>نووسینگەی ئەمین</li>
+          <li>گرێبەستە گشتییەکان</li>
+          <li>وەبەرهێنان</li>
+          <li>بەڕێوەبردنی کوالیتی</li>
+          <li>تەکنەلۆجیای زانیاری</li>
+          <li>پرۆژەکانی بانکی نێودەوڵەتی</li>
+          <li>کارەبا و ڕازاندنەوە</li>
+        </ul>
       </section>
 
       <section id="municipal" aria-labelledby="municipal-h">
         <h2 id="municipal-h">جێگری ئەمین بۆ کاروباری شارەوانی</h2>
-        <p>بەرپرسی ١٥ شارەوانییەکە، پاشماوەی ڕەق، ڕێگا خێراکان، گۆڕستانەکان و ژمارەکردنی خانووەکانە. نووسینگە: <a href="mailto:wakelbaladi@amanatbaghdad.gov.iq">wakelbaladi@amanatbaghdad.gov.iq</a></p>
-        <div class="table-wrap">
-          <table class="data">
-            <thead><tr><th>یەکە</th><th>ئیمەیڵ</th></tr></thead>
-            <tbody>
-              <tr><td><a href="districts.html">١٥ شارەوانییەکە</a></td><td>لە <a href="districts.html">شارەوانییەکان</a>دا لیست کراون</td></tr>
-              <tr><td>پاشماوەی ڕەق و ژینگە</td><td><a href="mailto:albeaa@amanatbaghdad.gov.iq">albeaa@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>ڕێگا خێراکان</td><td>—</td></tr>
-              <tr><td>ژمارەکردنی خانووەکان</td><td>—</td></tr>
-              <tr><td>کارگە شارەوانییەکان</td><td><a href="mailto:factor@amanatbaghdad.gov.iq">factor@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>گۆڕستانەکان</td><td><a href="mailto:makaber@amanatbaghdad.gov.iq">makaber@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>بوب ئەلشام</td><td><a href="mailto:bob@amanatbaghdad.gov.iq">bob@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
+        <p>بەرپرسی شارەوانییەکان، پاشماوەی ڕەق، ڕێگا خێراکان، گۆڕستانەکان و ژمارەکردنی خانووەکانە.</p>
+        <ul class="units">
+          <li><a href="contact.html#municipalities">شارەوانییەکان</a></li>
+          <li>پاشماوەی ڕەق و ژینگە</li>
+          <li>ڕێگا خێراکان</li>
+          <li>ژمارەکردنی خانووەکان</li>
+          <li>کارگە شارەوانییەکان</li>
+          <li>گۆڕستانەکان</li>
+          <li>بوب ئەلشام</li>
+        </ul>
       </section>
 
       <section id="technical" aria-labelledby="technical-h">
         <h2 id="technical-h">جێگری ئەمین بۆ کاروباری تەکنیکی</h2>
-        <p>بەرپرسی ئاو، ئاوەڕۆ، پارکەکان، پرۆژەکان و دیزاینە. نووسینگە: <a href="mailto:wakelfani@amanatbaghdad.gov.iq">wakelfani@amanatbaghdad.gov.iq</a></p>
-        <div class="table-wrap">
-          <table class="data">
-            <thead><tr><th>یەکە</th><th>ئیمەیڵ</th></tr></thead>
-            <tbody>
-              <tr><td>ئاوی بەغدا</td><td><a href="mailto:maabaghdad@amanatbaghdad.gov.iq">maabaghdad@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>ئاوەڕۆی بەغدا</td><td><a href="mailto:majari@amanatbaghdad.gov.iq">majari@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>پرۆژەکان</td><td><a href="mailto:mashareaa@amanatbaghdad.gov.iq">mashareaa@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>دیزاینەکان</td><td><a href="mailto:tasamem@amanatbaghdad.gov.iq">tasamem@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>پلاندانان و بەدواداچوون</td><td><a href="mailto:tactet@amanatbaghdad.gov.iq">tactet@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>پارک و دارستانکردن</td><td><a href="mailto:mashatel@amanatbaghdad.gov.iq">mashatel@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>یەکە بەرهەمهێنەکان</td><td><a href="mailto:antajea@amanatbaghdad.gov.iq">antajea@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>کۆمپانیای جێبەجێکردنی پرۆژەکانی ئاو</td><td><a href="mailto:alsharka@amanatbaghdad.gov.iq">alsharka@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>کۆمپانیای گشتیی ئیبن ڕوشد</td><td><a href="mailto:ibnrushd@amanatbaghdad.gov.iq">ibnrushd@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
+        <p>بەرپرسی ئاو، ئاوەڕۆ، پارکەکان، پرۆژەکان و دیزاینە.</p>
+        <ul class="units">
+          <li>ئاوی بەغدا</li>
+          <li>ئاوەڕۆی بەغدا</li>
+          <li>پرۆژەکان<span class="head">بەڕێوەبەری گشتی: ئەندازیار یەقزان عەدنان وائیلی</span></li>
+          <li>دیزاینەکان</li>
+          <li>پلاندانان و بەدواداچوون</li>
+          <li>پارک و دارستانکردن</li>
+          <li>یەکە بەرهەمهێنەکان</li>
+          <li>کۆمپانیای جێبەجێکردنی پرۆژەکانی ئاو</li>
+          <li>کۆمپانیای گشتیی ئیبن ڕوشد</li>
+        </ul>
       </section>
 
       <section id="administrative" aria-labelledby="administrative-h">
         <h2 id="administrative-h">جێگری ئەمین بۆ کاروباری کارگێڕی</h2>
-        <p>بەرپرسی کارگێڕی، دارایی، موڵک و ماڵ، کاروباری یاسایی و چاودێرییە. نووسینگە: <a href="mailto:wakeledari@amanatbaghdad.gov.iq">wakeledari@amanatbaghdad.gov.iq</a></p>
-        <div class="table-wrap">
-          <table class="data">
-            <thead><tr><th>یەکە</th><th>ئیمەیڵ</th></tr></thead>
-            <tbody>
-              <tr><td>کارگێڕی و دارایی</td><td><a href="mailto:edarea@amanatbaghdad.gov.iq">edarea@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>موڵک و ماڵ</td><td><a href="mailto:ekarat@amanatbaghdad.gov.iq">ekarat@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>یاسایی</td><td><a href="mailto:kanonea@amanatbaghdad.gov.iq">kanonea@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>چاودێری و وردبینی</td><td><a href="mailto:alrkaba@amanatbaghdad.gov.iq">alrkaba@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>پەیوەندییەکان و ڕاگەیاندن</td><td><a href="mailto:elakat@amanatbaghdad.gov.iq">elakat@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>پاسەوانی و ئاسایش</td><td><a href="mailto:hrasat@amanatbaghdad.gov.iq">hrasat@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
+        <p>بەرپرسی کارگێڕی، دارایی، موڵک و ماڵ، کاروباری یاسایی و چاودێرییە.</p>
+        <ul class="units">
+          <li>کارگێڕی و دارایی</li>
+          <li>موڵک و ماڵ</li>
+          <li>یاسایی</li>
+          <li>چاودێری و وردبینی</li>
+          <li>پەیوەندییەکان و ڕاگەیاندن<span class="head">بەڕێوەبەری گشتی: ئەندازیار محەمەد ڕوبەیعی</span></li>
+          <li>پاسەوانی و ئاسایش</li>
+        </ul>
       </section>
 
-      <section id="other" aria-labelledby="other-h">
-        <h2 id="other-h">یەکەکانی تر</h2>
-        <div class="table-wrap">
-          <table class="data">
-            <thead><tr><th>یەکە</th><th>ئیمەیڵ</th></tr></thead>
-            <tbody>
-              <tr><td>داهاتەکان</td><td><a href="mailto:wardat@amanatbaghdad.gov.iq">wardat@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>بەشی پلاندانان</td><td><a href="mailto:dep_tactet@amanatbaghdad.gov.iq">dep_tactet@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>بەشی چاودێری</td><td><a href="mailto:control@amanatbaghdad.gov.iq">control@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>گەشتوگوزار</td><td><a href="mailto:alseaha@amanatbaghdad.gov.iq">alseaha@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>بەهێزکردنی ئافرەتان</td><td><a href="mailto:women-t@amanatbaghdad.gov.iq">women-t@amanatbaghdad.gov.iq</a></td></tr>
-              <tr><td>پەیمانگای ڕاهێنانی پیشەیی</td><td><a href="mailto:mahad@amanatbaghdad.gov.iq">mahad@amanatbaghdad.gov.iq</a></td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
 
     </article>
   </div>
-  <p class="meta">— واتە ناونیشانی ئیمەیڵی گشتی نییە.</p>
 </main>
 
 <footer>
@@ -193,7 +160,7 @@
       <div class="foot-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Seal_of_Baghdad.svg" alt="">ئەمانەتی بەغدا</div>
       <div><h2>خزمەتگوزارییەکان</h2><ul><li><a href="services.html">هەموو خزمەتگوزارییەکان</a></li><li><a href="report.html">ڕاپۆرتکردنی کێشە</a></li><li><a href="track.html">بەدواداچوونی ڕاپۆرت</a></li><li><a href="alerts.html">ئاگادارکردنەوەکان</a></li></ul></div>
       <div><h2>هەواڵەکان</h2><ul><li><a href="news.html">هەموو هەواڵەکان</a></li></ul></div>
-      <div><h2>ئەمانەت</h2><ul><li><a href="about.html">تێڕوانینی گشتی</a></li><li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li><li><a href="districts.html">شارەوانییەکان</a></li><li><a href="tenders.html">تەندەر و مزایەدەکان</a></li><li><a href="laws.html">یاسا و پلانەکان</a></li><li><a href="data.html">داتای کراوە</a></li><li><a href="about.html#contact">پەیوەندی</a></li></ul></div>
+      <div><h2>ئەمانەت</h2><ul><li><a href="about.html">تێڕوانینی گشتی</a></li><li><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></li><li><a href="tenders.html">تەندەر و مزایەدەکان</a></li><li><a href="laws.html">یاسا و پلانەکان</a></li><li><a href="data.html">داتای کراوە</a></li><li><a href="contact.html">پەیوەندی</a></li></ul></div>
       <div><h2>ئەم ماڵپەڕە</h2><ul><li><a href="site.html#privacy">تایبەتێتی</a></li><li><a href="site.html#access">دەستڕاگەیشتن</a></li><li><a href="site.html#search">گەڕان چۆن کار دەکات</a></li></ul></div>
     </div>
     <div class="fine">

@@ -112,9 +112,9 @@ en: Results of the general population census of 25 November 2024, with 2009 esti
 ar: نتائج التعداد العام للسكان في 25 تشرين الثاني 2024، مع تقديرات عام 2009 للمقارنة. تشمل الأرقام محافظة بغداد كلها، ومنها الأقضية الواقعة خارج حدود الأمانة.
 ku: ئەنجامەکانی سەرژمێریی گشتیی دانیشتوان لە 25ی تشرینی دووەمی 2024، لەگەڵ خەمڵاندنەکانی 2009 بۆ بەراوردکردن. ژمارەکان هەموو پارێزگای بەغدا دەگرنەوە، لەوانە ئەو قەزایانەی لە دەرەوەی سنووری ئەمانەتن.
 
-en: Subdistricts are statistical units. Their boundaries do not match those of the 15 municipalities, so subdistrict figures cannot be added together to give a municipality's population.
-ar: النواحي وحدات إحصائية لا تتطابق حدودها مع حدود البلديات الخمس عشرة، لذا لا يمكن جمع أرقام النواحي للحصول على عدد سكان بلدية ما.
-ku: ناحیەکان یەکەی ئامارین. سنوورەکانیان لەگەڵ سنووری ١٥ شارەوانییەکە یەک ناگرنەوە، بۆیە ناتوانرێت ژمارەی ناحیەکان کۆ بکرێنەوە بۆ دەرهێنانی دانیشتوانی شارەوانییەک.
+en: Subdistricts are statistical units. Their boundaries do not match those of the municipalities, so subdistrict figures cannot be added together to give a municipality's population.
+ar: النواحي وحدات إحصائية لا تتطابق حدودها مع حدود البلديات، لذا لا يمكن جمع أرقام النواحي للحصول على عدد سكان بلدية ما.
+ku: ناحیەکان یەکەی ئامارین. سنوورەکانیان لەگەڵ سنووری شارەوانییەکان یەک ناگرنەوە، بۆیە ناتوانرێت ژمارەی ناحیەکان کۆ بکرێنەوە بۆ دەرهێنانی دانیشتوانی شارەوانییەک.
 
 en: Largest to smallest
 ar: من الأكبر إلى الأصغر
@@ -284,9 +284,9 @@ en: Al-'Abāījī <0>العبايجي</0>
 ar: العبايجي
 ku: العبايجي
 
-en: — means the source gives no 2009 estimate. Names follow the source's spelling. The Arabic names are transliterations and may differ from official names.
-ar: تعني العلامة — أن المصدر لا يورد تقديراً لعام 2009. نُقلت الأسماء عن التهجئة اللاتينية في المصدر، وقد تختلف عن الأسماء الرسمية.
-ku: — واتە سەرچاوەکە خەمڵاندنی 2009ی نییە. ناوەکان لە ڕێنووسی لاتینیی سەرچاوەکەوە گوازراونەتەوە و لەوانەیە جیاواز بن لە ناوە فەرمییەکان.
+en: Names follow the source's spelling. The Arabic names are transliterations and may differ from official names.
+ar: نُقلت الأسماء عن التهجئة اللاتينية في المصدر، وقد تختلف عن الأسماء الرسمية.
+ku: ناوەکان لە ڕێنووسی لاتینیی سەرچاوەکەوە گوازراونەتەوە و لەوانەیە جیاواز بن لە ناوە فەرمییەکان.
 
 en: Source: Central Statistical Organization, 2024 census, as compiled by <0>citypopulation.de ↗</0>
 ar: المصدر: الجهاز المركزي للإحصاء، تعداد 2024، بحسب ما جمعه موقع <0>citypopulation.de ↗</0>
