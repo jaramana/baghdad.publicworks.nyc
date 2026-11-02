@@ -37,13 +37,14 @@ Not part of the publicworks.nyc suite.
 | Districts (2 Nov) | No district pages. The current site's municipality subsites are mostly dormant since 2024, and our district content was illustrative. The municipalities are listed by bank on Contact. `districts.html` and `district-karrada.html` redirect there in all three languages, keeping `#karkh`-style anchors. The home page lost its district block |
 | Contact (2 Nov) | One page, `contact.html`, under The Mayoralty, holds every email: hotline and app, municipality offices, enquiries (media, tenders, legal, staff complaints, meeting the Mayor, website) and all departments. Leadership is structure only, with no emails. Tenders, Laws and News link to their Contact row instead of giving the address |
 | Report tool (2 Nov) | The four steps sit on a raised white sheet labelled "New report", with a step counter, a grey footer bar and a solid dark Next. The dark Next is the only filled button on the site. Panel (A) was chosen over an official-form sheet (B) and a full-width workspace band (C) |
-| News (31 Oct) | News is a top-level nav item. The home page shows the three latest headlines, each linking to its item on the News page |
+| News (31 Oct) | News is a top-level nav item. The home page shows the three latest stories, each with its photo, linking to the story page |
 | Site information (31 Oct) | Privacy, accessibility and how search works live on `site.html` ("Using this website"), linked from the footer only. The Mayoralty pages say nothing about the website itself |
-| Headshots (31 Oct) | The Mayor's portrait (Wikimedia Commons, CC0, January 2026) leads the overview and Leadership, at 3:2. Deputy mayors have no licensed photo and unconfirmed names, so they stay by role |
-| Photos for authority (2 Nov) | Licensed photos only (Commons); the Mayoralty's own press photos are copyrighted (PD-Iraq covers body-corporate work only before 1980). The home page has a small Mayor band after Report: portrait, name, title, links to The Mayoralty and Leadership. Major projects shows two 2014 photos of the Mayoralty's own works, Zawraa Park and the Abu Nuwas corniche gardens. Leadership names directors general where a post names them (Projects, Relations and Media). No silhouettes or placeholders |
+| Headshots (31 Oct, revised 2 Nov) | The Mayor's portrait (Wikimedia Commons, CC0, January 2026) appears on Leadership only, at 3:2. The overview names the Mayor without a photo. Deputy mayors have no licensed photo and unconfirmed names, so they stay by role |
+| Photos for authority (2 Nov, revised) | Photos earn their place by showing the Mayoralty's work, never as decoration. The Mayoralty's press photos are copyrighted (PD-Iraq covers body-corporate work only before 1980); the owner accepts using them in News stories and on the works they show, credited "Photo: Relations and Media Department". Their server drops requests at random, so the site serves its own copies from `docs/img/news/`: cropped to 3:2, `<slug>.jpg` at up to 1000px (45–150 KB) for stories and Major projects, `<slug>-sm.jpg` at 480px (14–42 KB) for the News list and the home page. Commons photos everywhere else. The home page has no Mayor band. Major projects shows two recent works from News, the Habibiya pump hall and the Utaifiya fountain, each linking to its story. Leadership names directors general where a post names them (Projects, Relations and Media). No silhouettes or placeholders |
 | Complaints | The 5628 hotline and the Citizen Voice app are real and shown wherever reporting is. Our Report flow presents every channel as feeding one complaints system with one kind of number |
 | Deputy mayors | Shown by role only until the Mayoralty confirms names. Posts disagree on who holds Technical and Administrative |
-| News page | Real statements, newest first, with English headlines written from the Arabic and a link to each original. Headlines lead with what changed, not with who attended |
+| News page | Real statements, newest first, with English headlines written from the Arabic. Headlines lead with what changed, not with who attended. Each row shows the lead photo, date, topic, headline and one line |
+| News stories (2 Nov) | Each statement has its own page, `news-<slug>.html`, written in English from the Arabic: what changed, where, who it serves, then who acted. Facts only from the statement; deputy mayors by role. One lead photo at 3:2, scaled with the window between 16rem and 26rem wide (416 × 277 on desktop, 256 × 171 on a 375px phone), with a caption, then the body; no link to the Arabic statement (the site translates) and no Newer or Older links. A ruled footer links to All news and to the media enquiries row on Contact. Sources are listed in `research/news-sources.md`. Stories are in search. `tools/` has no generator; edit each page by hand |
 | Audit (31 Oct) | `independent-audit-2026-10-31.md` reviewed the English site. The rows below record what was fixed. Its open decisions are under Open items |
 | Report location (31 Oct) | A typed address or landmark completes the Where step. The map pin is optional |
 | Report demo (31 Oct) | The sample case is B-48213 (sewage, Karrada). A report sent in the demo gets B-48492, and Track shows it with the chosen problem, municipality and update channel, read from `sessionStorage`. Message updates need a phone number |
@@ -98,10 +99,10 @@ Preview: `baghdad-site` in this folder's `.claude/launch.json` (port 4321), or `
 
 | Section | Index | Pages under it |
 | --- | --- | --- |
-| Home | `en/index.html` | Search (opens `search.html`), Today, most requested, report, the Mayor, three latest news |
+| Home | `en/index.html` | Search (opens `search.html`), Today, most requested, report, three latest stories |
 | Services | `en/services.html` | Five service guides (`service-*.html`), Alerts. The fee lookup opens `fees-account.html` |
 | Report a problem | `en/report.html` | Track a report |
-| News | `en/news.html` | Statements newest first, each tagged Planning, Parks, Services or Works |
+| News | `en/news.html` | 11 story pages (`news-*.html`), newest first, each tagged Planning, Parks, Services or Works |
 | The Mayoralty | `en/about.html` | Leadership and structure (`leadership.html`), Tenders and auctions (`tenders.html`), Laws and plans (`laws.html`), Open data (`data.html`), Contact (`contact.html`). The overview holds the Mayor, duties, responsibilities in Baghdad and major projects |
 | Footer only | `en/site.html` | Privacy, accessibility, how search works |
 
@@ -136,6 +137,7 @@ Every page links to its twin in the other two languages. The Arabic home is `hom
 - Tenders and auctions show only notice numbers, because the subject sits inside each Word or image file
 - The district mobile numbers in `current-site-deep.md` date from 2024 and are untested, so they are not on the site
 - News, tenders and laws are a snapshot from 31 Oct 2026. A live site would read them from the Mayoralty's own feed
+- The 11 English stories have no Arabic or Kurdish twins yet. Their language links point to the Arabic and Kurdish News pages, which still list the old headlines. Run the translation pass, then `build.py build`, which rewrites the links
 - The Arabic and Kurdish text is a draft translation by Claude, in `tools/i18n/text/`. Arabic needs an Iraqi reader for register; Kurdish needs a native Sorani reader before anyone relies on it
 - Arabic law and plan titles on Laws and plans are rendered from the English, not copied from each document. Check each against its PDF
 - The Arabic name of the Building Permits Regulation (نظام إجازات البناء) is unverified
@@ -198,6 +200,7 @@ State on 1 Nov 2026: the English site (`docs/en/`, 21 pages including the redire
 - `research/` — benchmark scan, current-site inventory and its deep dive (`current-site-deep.md`), identity and images, urban context, 2024 census by subdistrict
 - `docs/` — the published site: Arabic pages (home is `home.html`), the root redirect and `CNAME`
 - `docs/en/` — the English site, the source for the other two
+- `docs/img/news/` — the Mayoralty's press photos used in News, resized copies (see Photos for authority)
 - `docs/ku/` — the Kurdish (Sorani) site
 - `docs/shared/` — shared styles and scripts
 - `tools/` — `check_links.py`, the internal link and anchor check; `i18n/build.py` and `i18n/text/`, the Arabic and Kurdish build and its translations

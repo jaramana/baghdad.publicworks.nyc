@@ -104,10 +104,6 @@ en: Your district office
 ar: بلدية منطقتك
 ku: شارەوانی ناوچەکەت
 
-en: Water, sewage, waste, street lights, potholes
-ar: الماء، المجاري، النفايات، إنارة الشوارع، الحفر
-ku: ئاو، ئاوەڕۆ، خاشاک، ڕووناکی شەقام، چاڵ
-
 en: On the website
 ar: عبر الموقع
 ku: لە ماڵپەڕەکەوە

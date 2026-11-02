@@ -4,9 +4,9 @@ en: Report a problem — Mayoralty of Baghdad
 ar: الإبلاغ عن مشكلة — أمانة بغداد
 ku: ڕاپۆرتکردنی کێشە — ئەمانەتی بەغدا
 
-en: Complete the four steps to receive a report number. Use it to track your report.
-ar: أكمل الخطوات الأربع لتحصل على رقم بلاغ تتابع به بلاغك.
-ku: چوار هەنگاوەکە تەواو بکە بۆ وەرگرتنی ژمارەی ڕاپۆرت. بەو ژمارەیە بەدواداچوون بۆ ڕاپۆرتەکەت بکە.
+en: Each report receives a number for tracking its progress.
+ar: يحصل كل بلاغ على رقم لمتابعة سيره.
+ku: هەر ڕاپۆرتێک ژمارەیەک وەردەگرێت بۆ بەدواداچوونی.
 
 en: To follow an existing report, enter its number.
 ar: لمتابعة بلاغ سابق، أدخل رقمه.

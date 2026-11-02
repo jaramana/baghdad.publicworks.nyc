@@ -120,6 +120,7 @@ table.data tr.total td { font-weight: 700; border-bottom: 0; }
 
 .leader { display: grid; grid-template-columns: minmax(0, 17rem) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
 .leader img { display: block; width: 100%; aspect-ratio: var(--ratio-photo); object-fit: cover; border-radius: 3px; }
+.leader:not(:has(img)) { grid-template-columns: minmax(0, 1fr); }
 .leader .role { margin: 0; font-size: 0.875rem; font-weight: 600; color: var(--green); }
 .guide .leader h2 { font-size: 1.5rem; margin: 0.1rem 0 0.5rem; }
 
@@ -139,6 +140,20 @@ table.data tr.total td { font-weight: 700; border-bottom: 0; }
 .sources { font-size: 0.8125rem; color: var(--muted); padding-inline-start: 1.25rem; }
 .sources li { margin-block: 0.2rem; }
 .sources a { color: var(--muted); word-break: break-word; }
+
+/* News: date and topic line, used on the index and each story */
+.dateline, .meta { margin: 0; font-size: 0.875rem; font-weight: 600; color: var(--muted); }
+.dateline .topic, .meta .topic { color: var(--green); }
+
+/* News story: lead photo and a short body */
+.story-head h1 { font-size: clamp(1.75rem, 4vw, 2.375rem); line-height: 1.2; max-width: 44rem; }
+.story-head .dateline { margin-top: 0.75rem; }
+.story .lead { width: clamp(16rem, 55vw, 26rem); max-width: 100%; margin: 0 0 1.5rem; }
+.story .lead img { display: block; width: 100%; aspect-ratio: var(--ratio-photo); object-fit: cover; border-radius: 3px; background: var(--soft); }
+.story .lead figcaption { font-size: 0.8125rem; }
+.story > p, .story > ul { font-size: 1.0625rem; }
+.story-foot { margin-top: 2.5rem; padding-top: 0.75rem; border-top: 2px solid var(--green); }
+.guide .story-foot p { margin: 0.25rem 0; font-size: 0.9375rem; color: var(--muted); }
 
 @media (max-width: 860px) {
   .layout, .layout:has(> .action) { grid-template-columns: 1fr; padding-top: 1.5rem; }
