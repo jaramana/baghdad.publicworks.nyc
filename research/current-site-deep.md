@@ -278,7 +278,7 @@ The other laws in the library: Municipal Revenues Law 1/2023, Municipal Administ
 
 | Kind | Where | Typical size | Example |
 | --- | --- | --- | --- |
-| Hero carousel | Home, 10 slides; renders and city views (one checked: a tower render) | 49 KB – 1.3 MB; up to 4842×2126 | `api…/images/a393610c-15ae-4a9f-b123-c0ae83aa1448.jpg` (1.2 MB) |
+| Hero carousel | Home, 10 slides, no titles or alt text. 4 landmark photos (Mayoralty building twice, Martyr's Monument, a cuneiform-cylinder sculpture), 1 Flower Exhibition photo, 1 tower render, 2 National Day posters, 1 anti-migration banner, 1 Ur promo (building permits and water services online; "free number 5599") | 49 KB – 1.3 MB; up to 9685×4252 | `/api/SiteConfig/ar` `files`; checked 2 Nov 2026 |
 | Law cards | Home laws section; one generic card uploaded separately 28 times | **11.7 MB each**, 7086×2953 | `api…/images/5ee92a1e-e6ca-4d01-a276-d06c2ee63ffb.jpg` |
 | Service posters with QR codes | Home posters | Up to 13500×11702, 5.2 MB | `api…/images/fbea2806-ed31-47fb-8ef6-00c286b3e9fe.jpg` |
 | News photos | One per post (event photos, the Mayor at openings and meetings) | 640–800 px wide, ~100–200 KB | `api…/images/027553ea-8ead-4932-90ce-78afedac2568.jpg` (113 KB) |
