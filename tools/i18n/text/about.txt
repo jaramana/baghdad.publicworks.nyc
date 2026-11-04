@@ -315,3 +315,19 @@ ku: باخچەکانی کۆرنیشی ئەبو نوواس لە تەنیشت دی
 en: <0>Abu Nuwas corniche gardens, Rusafa</0>Nawar GJ, 2014 — CC BY-SA 3.0 — Wikimedia Commons
 ar: <0>حدائق كورنيش أبي نواس، الرصافة</0>Nawar GJ، ٢٠١٤ — CC BY-SA 3.0 — ويكيميديا كومنز
 ku: <0>باخچەکانی کۆرنیشی ئەبو نوواس، ڕوسافە</0>Nawar GJ، ٢٠١٤ — CC BY-SA 3.0 — ویکیمیدیا کۆمنز
+
+en: Blue pump motors and control panels inside a pumping station
+ar: محركات مضخات زرقاء ولوحات تحكم داخل محطة ضخ
+ku: بزوێنەری پەمپی شین و پانێڵی کۆنترۆڵ لە ناو وێستگەیەکی پەمپ
+
+en: <0>Habibiya and Khadra sewage stations, reopened July 2026</0>Photo: Relations and Media Department
+ar: <0>محطتا مجاري الحبيبية والخضراء، أُعيد افتتاحهما في تموز 2026</0>تصوير: دائرة العلاقات والإعلام
+ku: <0>وێستگەکانی ئاوەڕۆی حەبیبییە و خەزرا، لە تەممووزی 2026 کرانەوە</0>وێنە: فەرمانگەی پەیوەندییەکان و ڕاگەیاندن
+
+en: Lit fountain jets rising from the Tigris at night
+ar: دفقات نافورة مضاءة تعلو من نهر دجلة ليلاً
+ku: فوارەی ڕووناککراو بە شەو لە دیجلەوە بەرز دەبێتەوە
+
+en: <0>Utaifiya corniche fountain, opened October 2026</0>Photo: Relations and Media Department
+ar: <0>نافورة كورنيش العطيفية، افتُتحت في تشرين الأول 2026</0>تصوير: دائرة العلاقات والإعلام
+ku: <0>فوارەی کۆرنیشی عوتەیفییە، لە تشرینی یەکەمی 2026 کرایەوە</0>وێنە: فەرمانگەی پەیوەندییەکان و ڕاگەیاندن

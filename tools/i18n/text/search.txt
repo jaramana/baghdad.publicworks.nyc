@@ -161,3 +161,49 @@ ku: t: 'داتای کراوە', h: 'data.html', s: 'The Mayoralty', d: 'دانی
 raw: t: 'Using this website', h: 'site.html', s: 'This website', d: 'Privacy, accessibility and how search works.', w: 'privacy accessibility cookie website search'
 ar: t: 'استخدام هذا الموقع', h: 'site.html', s: 'This website', d: 'الخصوصية، وإمكانية الوصول، وكيف يعمل البحث.', w: 'خصوصية وصول كوكيز موقع بحث'
 ku: t: 'بەکارهێنانی ئەم ماڵپەڕە', h: 'site.html', s: 'This website', d: 'تایبەتێتی، دەستڕاگەیشتن و گەڕان چۆن کار دەکات.', w: 'تایبەتێتی دەستڕاگەیشتن کووکی ماڵپەڕ گەڕان'
+
+# Page index: news stories
+
+raw: t: 'Mayoralty and the Federation of Arab Engineers agree to work together on urban development', h: 'news-arab-engineers.html', s: 'News', d: 'A memorandum of understanding covering sustainable development and city planning.', w: 'federation arab engineers memorandum agreement planning urban development heritage'
+ar: t: 'الأمانة واتحاد المهندسين العرب يتفقان على التعاون في التنمية الحضرية', h: 'news-arab-engineers.html', s: 'News', d: 'مذكرة تفاهم تشمل التنمية المستدامة وتخطيط المدن.', w: 'اتحاد المهندسين العرب مذكرة تفاهم اتفاق تخطيط تنمية حضرية تراث'
+ku: t: 'ئەمانەت و یەکێتیی ئەندازیارانی عەرەب ڕێککەوتن لەسەر هاوکاری لە پەرەپێدانی شاردا', h: 'news-arab-engineers.html', s: 'News', d: 'یاداشتنامەیەکی لێکتێگەیشتن کە پەرەپێدانی بەردەوام و پلاندانانی شار دەگرێتەوە.', w: 'یەکێتی ئەندازیار عەرەب یاداشتنامە ڕێککەوتن پلاندانان پەرەپێدان شار میرات'
+
+raw: t: 'New 32,000 m² park opens in Kadhimiya', h: 'news-kadhimiya-park.html', s: 'News', d: 'Imamain al-Jawadain Park opened on 17 October.', w: 'park kadhimiya imamain jawadain opening green tennis fountain playground'
+ar: t: 'افتتاح متنزه جديد بمساحة ٣٢٬٠٠٠ م² في الكاظمية', h: 'news-kadhimiya-park.html', s: 'News', d: 'افتُتح متنزه الإمامين الجوادين في ١٧ تشرين الأول.', w: 'متنزه حديقة الكاظمية الامامين الجوادين افتتاح تنس نافورة العاب'
+ku: t: 'پارکێکی نوێی ٣٢٬٠٠٠ م² لە کازمییە کرایەوە', h: 'news-kadhimiya-park.html', s: 'News', d: 'پارکی ئیمامەین جەوادەین لە ١٧ی تشرینی یەکەم کرایەوە.', w: 'پارک کازمییە ئیمامەین جەوادەین کردنەوە سەوز تێنس فوارە یاری'
+
+raw: t: 'Campaign to plant 190,000 trees starts in every municipality', h: 'news-tree-planting.html', s: 'News', d: 'Trees will be planted along streets, in squares and at other public sites across the city.', w: 'tree trees planting campaign green 190000'
+ar: t: 'انطلاق حملة لزراعة ١٩٠٬٠٠٠ شجرة في كل البلديات', h: 'news-tree-planting.html', s: 'News', d: 'تُزرع الأشجار في الشوارع والساحات والمواقع العامة في أنحاء المدينة.', w: 'شجرة اشجار تشجير زراعة حملة خضراء 190000'
+ku: t: 'هەڵمەتی چاندنی ١٩٠٬٠٠٠ دار لە هەموو شارەوانییەکان دەستی پێکرد', h: 'news-tree-planting.html', s: 'News', d: 'دار لە شەقام، گۆڕەپان و شوێنە گشتییەکانی سەرانسەری شار دەچێنرێن.', w: 'دار دارچاندن چاندن هەڵمەت سەوز 190000'
+
+raw: t: 'Saqlawiya Garden opens in Ghazaliya', h: 'news-saqlawiya-garden.html', s: 'News', d: 'One of several public gardens opened during the planting campaign, in Mansour municipality.', w: 'garden saqlawiya ghazaliya mansour park dhilal'
+ar: t: 'افتتاح حديقة الصقلاوية في الغزالية', h: 'news-saqlawiya-garden.html', s: 'News', d: 'إحدى الحدائق العامة التي افتُتحت خلال حملة التشجير، في بلدية المنصور.', w: 'حديقة الصقلاوية الغزالية المنصور متنزه الظلال'
+ku: t: 'باخچەی سەقلاوییە لە غەزالییە کرایەوە', h: 'news-saqlawiya-garden.html', s: 'News', d: 'یەکێکە لەو باخچە گشتییانەی لە ماوەی هەڵمەتی دارچاندندا کرانەوە، لە شارەوانی مەنسوور.', w: 'باخچە سەقلاوییە غەزالییە مەنسوور پارک زیلال'
+
+raw: t: 'Fountain opens on the Tigris at the Utaifiya corniche', h: 'news-utaifiya-fountain.html', s: 'News', d: 'Opened on 1 October for National Sovereignty Day.', w: 'fountain utaifiya corniche tigris sovereignty day'
+ar: t: 'افتتاح نافورة على دجلة في كورنيش العطيفية', h: 'news-utaifiya-fountain.html', s: 'News', d: 'افتُتحت في ١ تشرين الأول بمناسبة يوم السيادة الوطني.', w: 'نافورة العطيفية كورنيش دجلة يوم السيادة'
+ku: t: 'فوارەیەک لەسەر دیجلە لە کۆرنیشی عوتەیفییە کرایەوە', h: 'news-utaifiya-fountain.html', s: 'News', d: 'لە ١ی تشرینی یەکەم بە بۆنەی ڕۆژی سەروەریی نیشتمانییەوە کرایەوە.', w: 'فوارە عوتەیفییە کۆرنیش دیجلە ڕۆژی سەروەری'
+
+raw: t: 'Household waste collection is free of charge', h: 'news-free-waste-collection.html', s: 'News', d: 'Requests for payment should be reported to 5628 or through the Citizen Voice app, with the truck\'s number.', w: 'waste garbage collection free charge pay payment truck compactor'
+ar: t: 'رفع النفايات المنزلية مجاني', h: 'news-free-waste-collection.html', s: 'News', d: 'يُبلَّغ عن أي مطالبة بالدفع على الرقم ٥٦٢٨ أو عبر تطبيق صوت المواطن، مع ذكر رقم الآلية.', w: 'نفايات قمامة رفع مجاني دفع مبلغ كابسة الية ابتزاز'
+ku: t: 'کۆکردنەوەی خاشاکی ماڵان بێبەرامبەرە', h: 'news-free-waste-collection.html', s: 'News', d: 'هەر داواکردنێکی پارە بە ژمارەی ئۆتۆمبێلەکەوە ڕاپۆرت بکە بۆ ٥٦٢٨ یان لە ڕێگەی ئەپی دەنگی هاووڵاتییەوە.', w: 'خاشاک زبڵ کۆکردنەوە بێبەرامبەر پارە بارهەڵگر'
+
+raw: t: 'Drains and pumping stations to be ready before the rains', h: 'news-rain-preparations.html', s: 'News', d: 'The Mayor ordered every department to finish its rain-season preparations.', w: 'rain rainy season flood flooding drain drains pumping station subsidence'
+ar: t: 'تهيئة المشبكات ومحطات الضخ قبل موسم الأمطار', h: 'news-rain-preparations.html', s: 'News', d: 'وجّه أمين بغداد كل الدوائر بإكمال استعداداتها لموسم الأمطار.', w: 'مطر امطار موسم غرق فيضان تصريف مشبكات محطة ضخ تخسفات'
+ku: t: 'ئاوەڕۆ و وێستگەکانی پەمپ پێش باران ئامادە دەکرێن', h: 'news-rain-preparations.html', s: 'News', d: 'ئەمین فەرمانی بە هەموو فەرمانگەکان کرد ئامادەکارییەکانیان بۆ وەرزی باران تەواو بکەن.', w: 'باران وەرز لافاو ئاوەڕۆ وێستگە پەمپ داچوون'
+
+raw: t: 'Mansour municipality moves into a new building', h: 'news-mansour-municipality.html', s: 'News', d: 'The first of the Mayoralty\'s model municipality offices.', w: 'mansour municipality building office new'
+ar: t: 'بلدية المنصور تنتقل إلى مبنى جديد', h: 'news-mansour-municipality.html', s: 'News', d: 'أول المقرات البلدية النموذجية للأمانة.', w: 'المنصور بلدية مبنى مقر جديد نموذجية'
+ku: t: 'شارەوانی مەنسوور گوازرایەوە بۆ بینایەکی نوێ', h: 'news-mansour-municipality.html', s: 'News', d: 'یەکەمین نووسینگەی شارەوانیی نموونەیی ئەمانەت.', w: 'مەنسوور شارەوانی بینا نووسینگە نوێ نموونەیی'
+
+raw: t: 'Work begins on one electronic system for building permits', h: 'news-permit-system.html', s: 'News', d: 'The system will link the Mayoralty\'s records and reduce the steps in the permit process on Ur.', w: 'permit building electronic system ur steps'
+ar: t: 'بدء العمل على منظومة إلكترونية موحدة لإجازات البناء', h: 'news-permit-system.html', s: 'News', d: 'ستربط المنظومة سجلات الأمانة وتقلّل خطوات معاملة الإجازة على أور.', w: 'اجازة بناء منظومة الكترونية نظام اور خطوات'
+ku: t: 'کار لەسەر سیستەمێکی ئەلیکترۆنیی یەکگرتوو بۆ مۆڵەتی بیناسازی دەستی پێکرد', h: 'news-permit-system.html', s: 'News', d: 'سیستەمەکە تۆمارەکانی ئەمانەت پێکەوە دەبەستێتەوە و هەنگاوەکانی مۆڵەت لە ئور کەم دەکاتەوە.', w: 'مۆڵەت بیناسازی ئەلیکترۆنی سیستەم ئور هەنگاو'
+
+raw: t: 'Citizen Voice complaints app upgraded', h: 'news-citizen-voice.html', s: 'News', d: 'The app now sorts complaints, sends each to the responsible office and follows it until it is closed. It will also be available inside the SuperQi app.', w: 'citizen voice app complaint superqi upgrade'
+ar: t: 'تطوير تطبيق صوت المواطن للشكاوى', h: 'news-citizen-voice.html', s: 'News', d: 'صار التطبيق يصنّف الشكاوى ويحيل كلاً منها إلى الجهة المسؤولة ويتابعها حتى إنجازها. وسيتوفر أيضاً داخل تطبيق SuperQi.', w: 'صوت المواطن تطبيق شكوى شكاوى superqi تطوير'
+ku: t: 'ئەپی سکاڵاکانی دەنگی هاووڵاتی نوێکرایەوە', h: 'news-citizen-voice.html', s: 'News', d: 'ئێستا ئەپەکە سکاڵاکان پۆلێن دەکات، هەر یەکێک دەنێرێت بۆ نووسینگەی بەرپرس و تا داخستنی بەدواداچوونی بۆ دەکات. لە ناو ئەپی SuperQi-یش بەردەست دەبێت.', w: 'دەنگی هاووڵاتی ئەپ سکاڵا superqi نوێکردنەوە'
+
+raw: t: 'Habibiya and Khadra sewage stations reopen after repairs', h: 'news-habibiya-khadra-stations.html', s: 'News', d: 'Rehabilitated with World Bank funding. Habibiya serves Shaab and nearby areas.', w: 'sewage station habibiya khadra pumping world bank shaab sadr ghadeer ghazaliya amiriya'
+ar: t: 'إعادة افتتاح محطتي مجاري الحبيبية والخضراء بعد تأهيلهما', h: 'news-habibiya-khadra-stations.html', s: 'News', d: 'أُهّلتا بتمويل من البنك الدولي. وتخدم محطة الحبيبية منطقة الشعب وما يجاورها.', w: 'مجاري صرف صحي محطة الحبيبية الخضراء ضخ البنك الدولي الشعب الصدر الغدير الغزالية العامرية'
+ku: t: 'وێستگەکانی ئاوەڕۆی حەبیبییە و خەزرا دوای چاککردنەوە کرانەوە', h: 'news-habibiya-khadra-stations.html', s: 'News', d: 'بە پارەی بانکی نێودەوڵەتی نۆژەن کرانەوە. حەبیبییە خزمەتی شەعب و ناوچەکانی دەوروبەری دەکات.', w: 'ئاوەڕۆ وێستگە حەبیبییە خەزرا پەمپ بانکی نێودەوڵەتی شەعب سەدر غەدیر غەزالییە عامریە'

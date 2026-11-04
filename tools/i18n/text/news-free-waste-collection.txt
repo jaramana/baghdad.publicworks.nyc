@@ -1,0 +1,25 @@
+# News story: Household waste collection is free of charge
+
+en: Household waste collection is free of charge — Mayoralty of Baghdad
+ar: رفع النفايات المنزلية مجاني — أمانة بغداد
+ku: کۆکردنەوەی خاشاکی ماڵان بێبەرامبەرە — ئەمانەتی بەغدا
+
+en: A residential street lined with trees
+ar: شارع سكني تصطف على جانبيه الأشجار
+ku: شەقامێکی نیشتەجێبوون کە دار لە هەردوو لای ڕیز کراون
+
+en: A residential street in Baghdad. Photo: Relations and Media Department
+ar: شارع سكني في بغداد. تصوير: دائرة العلاقات والإعلام
+ku: شەقامێکی نیشتەجێبوون لە بەغدا. وێنە: فەرمانگەی پەیوەندییەکان و ڕاگەیاندن
+
+en: The collection of household waste from outside homes is free of charge. No resident is required to pay for it.
+ar: رفع النفايات المنزلية من أمام المنازل مجاني، ولا يُطلب من أي مواطن دفع مبلغ مقابله.
+ku: کۆکردنەوەی خاشاکی ماڵان لەبەردەم ماڵەکان بێبەرامبەرە. هیچ دانیشتووێک ناچار نییە پارەی بۆ بدات.
+
+en: Some operators of private compactor trucks have asked residents for money. A resident asked to pay should note the truck's number and report it by calling <0>5628</0> or through the Baghdad Citizen Voice app.
+ar: طالب بعض أصحاب الكابسات الأهلية المواطنين بدفع مبالغ. وعلى من يُطلب منه الدفع تسجيل رقم الآلية والإبلاغ عنه بالاتصال بالرقم <0>5628</0> أو عبر تطبيق «بغداد صوت المواطن».
+ku: هەندێک لە خاوەنی بارهەڵگرە تایبەتەکانی پەستانی خاشاک داوای پارەیان لە دانیشتووان کردووە. هەر دانیشتووێک داوای پارەی لێ بکرێت با ژمارەی ئۆتۆمبێلەکە تۆمار بکات و بە پەیوەندیکردن بە <0>5628</0> یان لە ڕێگەی ئەپی دەنگی هاووڵاتیی بەغداوە ڕاپۆرتی بکات.
+
+en: The Mayor has instructed the municipalities to increase inspections and to take legal action against those responsible, in particular anyone who claims to work for the Mayoralty.
+ar: ووجّه أمين بغداد البلديات بتكثيف الجولات الميدانية واتخاذ الإجراءات القانونية بحق المتورطين، ولا سيما من يدّعي الانتساب إلى الأمانة.
+ku: ئەمین فەرمانی بە شارەوانییەکان کردووە پشکنین زیاد بکەن و ڕێکاری یاسایی دژی بەرپرسان بگرنەبەر، بەتایبەتی هەر کەسێک بانگەشەی ئەوە بکات کە بۆ ئەمانەت کار دەکات.

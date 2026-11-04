@@ -44,7 +44,7 @@ Not part of the publicworks.nyc suite.
 | Complaints | The 5628 hotline and the Citizen Voice app are real and shown wherever reporting is. Our Report flow presents every channel as feeding one complaints system with one kind of number |
 | Deputy mayors | Shown by role only until the Mayoralty confirms names. Posts disagree on who holds Technical and Administrative |
 | News page | Real statements, newest first, with English headlines written from the Arabic. Headlines lead with what changed, not with who attended. Each row shows the lead photo, date, topic, headline and one line |
-| News stories (2 Nov) | Each statement has its own page, `news-<slug>.html`, written in English from the Arabic: what changed, where, who it serves, then who acted. Facts only from the statement; deputy mayors by role. One lead photo at 3:2, scaled with the window between 16rem and 26rem wide (416 × 277 on desktop, 256 × 171 on a 375px phone), with a caption, then the body; no link to the Arabic statement (the site translates) and no Newer or Older links. A ruled footer links to All news and to the media enquiries row on Contact. Sources are listed in `research/news-sources.md`. Stories are in search. `tools/` has no generator; edit each page by hand |
+| News stories (2 Nov) | Each statement has its own page, `news-<slug>.html`, written in English from the Arabic: what changed, where, who it serves, then who acted. Facts only from the statement; deputy mayors by role. One lead photo at 3:2, scaled with the window between 16rem and 26rem wide (416 × 277 on desktop, 256 × 171 on a 375px phone), with a caption, then the body; no link to the Arabic statement (the site translates) and no Newer or Older links. A ruled footer links to All news and to the media enquiries row on Contact. Sources are listed in `research/news-sources.md`. Stories are in search. `tools/` has no generator; edit each English page by hand. The Arabic and Kurdish twins are built like every other page, from `tools/i18n/text/news-<slug>.txt` |
 | Audit (31 Oct) | `independent-audit-2026-10-31.md` reviewed the English site. The rows below record what was fixed. Its open decisions are under Open items |
 | Report location (31 Oct) | A typed address or landmark completes the Where step. The map pin is optional |
 | Report demo (31 Oct) | The sample case is B-48213 (sewage, Karrada). A report sent in the demo gets B-48492, and Track shows it with the chosen problem, municipality and update channel, read from `sessionStorage`. Message updates need a phone number |
@@ -137,7 +137,7 @@ Every page links to its twin in the other two languages. The Arabic home is `hom
 - Tenders and auctions show only notice numbers, because the subject sits inside each Word or image file
 - The district mobile numbers in `current-site-deep.md` date from 2024 and are untested, so they are not on the site
 - News, tenders and laws are a snapshot from 31 Oct 2026. A live site would read them from the Mayoralty's own feed
-- The 11 English stories have no Arabic or Kurdish twins yet. Their language links point to the Arabic and Kurdish News pages, which still list the old headlines. Run the translation pass, then `build.py build`, which rewrites the links
+- The Mayoralty's statement on Saqlawiya Garden spells the gardens in Rusafa Center «الضلال». The Arabic story uses «الظلال», taken as the intended word. Confirm it
 - The Arabic and Kurdish text is a draft translation by Claude, in `tools/i18n/text/`. Arabic needs an Iraqi reader for register; Kurdish needs a native Sorani reader before anyone relies on it
 - Arabic law and plan titles on Laws and plans are rendered from the English, not copied from each document. Check each against its PDF
 - The Arabic name of the Building Permits Regulation (نظام إجازات البناء) is unverified
@@ -151,7 +151,7 @@ Every page links to its twin in the other two languages. The Arabic home is `hom
 - `tel:5628` links are untested on Iraqi phones
 ## Next session
 
-State on 1 Nov 2026: the English site (`docs/en/`, 21 pages including the redirect stub) is settled. Every English page now has an Arabic twin in `docs/` and a Kurdish twin in `docs/ku/`, built by `tools/i18n/build.py`. Both translations are drafts awaiting native review.
+State on 4 Nov 2026: the English site (`docs/en/`, 34 pages including the redirect stub) is settled. Every English page now has an Arabic twin in `docs/` and a Kurdish twin in `docs/ku/`, built by `tools/i18n/build.py`. Both translations are drafts awaiting native review.
 
 ### Owner preferences
 

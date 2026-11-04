@@ -1,0 +1,25 @@
+# News story: Campaign to plant 190,000 trees starts in every municipality
+
+en: Campaign to plant 190,000 trees starts in every municipality — Mayoralty of Baghdad
+ar: انطلاق حملة لزراعة 190,000 شجرة في كل البلديات — أمانة بغداد
+ku: هەڵمەتی چاندنی 190,000 دار لە هەموو شارەوانییەکان دەستی پێکرد — ئەمانەتی بەغدا
+
+en: Municipal staff plant a young tree in a public garden
+ar: موظفو البلدية يزرعون شتلة في حديقة عامة
+ku: کارمەندانی شارەوانی نەمامێک لە باخچەیەکی گشتی دەچێنن
+
+en: Planting at the start of the campaign. Photo: Relations and Media Department
+ar: الزراعة عند انطلاق الحملة. تصوير: دائرة العلاقات والإعلام
+ku: چاندن لە سەرەتای هەڵمەتەکەدا. وێنە: فەرمانگەی پەیوەندییەکان و ڕاگەیاندن
+
+en: The Mayoralty has begun a city-wide tree-planting campaign. Every municipality is taking part.
+ar: بدأت الأمانة حملة تشجير في أرجاء المدينة، تشارك فيها كل البلديات.
+ku: ئەمانەت هەڵمەتێکی دارچاندنی لە سەرانسەری شار دەست پێکردووە. هەموو شارەوانییەکان بەشدارن.
+
+en: The campaign will plant 190,000 trees along streets, in squares and at other public sites across Baghdad. It is part of the Mayoralty's plan to expand green space and improve the urban environment.
+ar: وستزرع الحملة 190,000 شجرة في الشوارع والساحات والمواقع العامة في أنحاء بغداد، ضمن خطة الأمانة لتوسيع المساحات الخضراء وتحسين البيئة الحضرية.
+ku: هەڵمەتەکە 190,000 دار لە شەقام، گۆڕەپان و شوێنە گشتییەکانی سەرانسەری بەغدا دەچێنێت. ئەمە بەشێکە لە پلانی ئەمانەت بۆ فراوانکردنی ڕووبەری سەوز و باشترکردنی ژینگەی شار.
+
+en: The Deputy Mayor for Municipal Affairs launched the campaign with several directors general, on the instruction of the Mayor. New public gardens are opening as part of the campaign, among them <0>Saqlawiya Garden</0> in Ghazaliya.
+ar: أطلق وكيل أمين بغداد للشؤون البلدية الحملة مع عدد من المديرين العامين، بتوجيه من أمين بغداد. وتُفتتح حدائق عامة جديدة ضمن الحملة، منها <0>حديقة الصقلاوية</0> في الغزالية.
+ku: جێگری ئەمین بۆ کاروباری شارەوانی لەگەڵ چەند بەڕێوەبەرێکی گشتی، بە ڕێنمایی ئەمین، هەڵمەتەکەی دەست پێکرد. باخچەی گشتیی نوێ وەک بەشێک لە هەڵمەتەکە دەکرێنەوە، لەوانە <0>باخچەی سەقلاوییە</0> لە غەزالییە.

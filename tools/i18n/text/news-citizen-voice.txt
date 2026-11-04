@@ -1,0 +1,29 @@
+# News story: Citizen Voice complaints app upgraded
+
+en: Citizen Voice complaints app upgraded — Mayoralty of Baghdad
+ar: تطوير تطبيق صوت المواطن للشكاوى — أمانة بغداد
+ku: ئەپی سکاڵاکانی دەنگی هاووڵاتی نوێکرایەوە — ئەمانەتی بەغدا
+
+en: An official speaks at a meeting in front of a presentation screen
+ar: مسؤول يتحدث في اجتماع أمام شاشة عرض
+ku: بەرپرسێک لە کۆبوونەوەیەکدا لەبەردەم شاشەی پیشاندان قسە دەکات
+
+en: Presenting the upgraded system to municipal staff. Photo: Relations and Media Department
+ar: عرض المنظومة المطوَّرة على موظفي البلديات. تصوير: دائرة العلاقات والإعلام
+ku: پیشاندانی سیستەمە نوێکراوەکە بۆ کارمەندانی شارەوانی. وێنە: فەرمانگەی پەیوەندییەکان و ڕاگەیاندن
+
+en: The Baghdad Citizen Voice platform and app have been upgraded. A complaint is now sorted, sent to the responsible office and followed until it is closed. The Mayoralty measures how each complaint is handled.
+ar: جرى تطوير منصة وتطبيق «بغداد صوت المواطن». وصارت الشكوى تُصنَّف وتُحال إلى الجهة المسؤولة وتُتابَع حتى إنجازها. وتقيس الأمانة أداء معالجة كل شكوى.
+ku: پلاتفۆرم و ئەپی دەنگی هاووڵاتیی بەغدا نوێ کرانەوە. ئێستا هەر سکاڵایەک پۆلێن دەکرێت، دەنێردرێت بۆ نووسینگەی بەرپرس و تا داخستنی بەدواداچوونی بۆ دەکرێت. ئەمانەت چۆنیەتیی مامەڵەکردن لەگەڵ هەر سکاڵایەک دەپێوێت.
+
+en: The system uses artificial intelligence to sort complaints and to identify problems that recur.
+ar: وتستخدم المنظومة الذكاء الاصطناعي لتصنيف الشكاوى ورصد المشكلات المتكررة.
+ku: سیستەمەکە زیرەکیی دەستکرد بەکاردەهێنێت بۆ پۆلێنکردنی سکاڵاکان و دۆزینەوەی ئەو کێشانەی دووبارە دەبنەوە.
+
+en: Citizen Voice will also be available inside the SuperQi app, as a further way to submit and follow requests.
+ar: وسيتاح «بغداد صوت المواطن» أيضاً داخل تطبيق SuperQi، وسيلةً إضافية لتقديم الطلبات ومتابعتها.
+ku: دەنگی هاووڵاتی لە ناو ئەپی SuperQi-یش بەردەست دەبێت، وەک ڕێگەیەکی زیادە بۆ پێشکەشکردن و بەدواداچوونی داواکارییەکان.
+
+en: The Citizens Affairs Section of the Relations and Media Department presented the upgrade to the citizens affairs officers of the municipalities and technical departments. The officers followed a complaint through every stage, from submission to closure. The upgrade follows more than two years of study and trial operation.
+ar: عرض قسم شؤون المواطنين في دائرة العلاقات والإعلام التحديثات على مسؤولي شؤون المواطنين في البلديات والدوائر الفنية. وتتبّع المسؤولون شكوى عبر جميع مراحلها، من تقديمها إلى إنجازها. ويأتي التطوير بعد أكثر من عامين من الدراسة والتجربة التشغيلية.
+ku: بەشی کاروباری هاووڵاتیان لە فەرمانگەی پەیوەندییەکان و ڕاگەیاندن نوێکارییەکەی بۆ بەرپرسانی کاروباری هاووڵاتیان لە شارەوانی و فەرمانگە تەکنیکییەکان پیشان دا. بەرپرسان سکاڵایەکیان بە هەموو قۆناغەکاندا بەدواداچوون بۆ کرد، لە پێشکەشکردنەوە تا داخستن. ئەم نوێکارییە دوای زیاتر لە دوو ساڵ لێکۆڵینەوە و کارپێکردنی تاقیکاری هاتووە.

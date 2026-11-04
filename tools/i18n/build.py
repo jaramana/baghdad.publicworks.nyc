@@ -259,7 +259,7 @@ def link(href, lang):
     """Rewrite an English-page link for a page in the target language."""
     if re.match(r'(https?:|mailto:|tel:|#|//|data:)', href):
         return href
-    if href.startswith('../shared/'):
+    if href.startswith(('../shared/', '../img/')):
         return href[3:] if lang == 'ar' else href
     if href.startswith('../'):
         return href

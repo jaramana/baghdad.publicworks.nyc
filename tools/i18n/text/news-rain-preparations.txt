@@ -1,0 +1,41 @@
+# News story: Drains and pumping stations to be ready before the rains
+
+en: Drains and pumping stations to be ready before the rains — Mayoralty of Baghdad
+ar: تهيئة المشبكات ومحطات الضخ قبل موسم الأمطار — أمانة بغداد
+ku: ئاوەڕۆ و وێستگەکانی پەمپ پێش باران ئامادە دەکرێن — ئەمانەتی بەغدا
+
+en: A sewer-cleaning truck and its crew at work on a street
+ar: شاحنة تنظيف مجارٍ وطاقمها يعملون في شارع
+ku: بارهەڵگرێکی پاککردنەوەی ئاوەڕۆ و تیمەکەی لە شەقامێک کار دەکەن
+
+en: A sewer-cleaning crew at work. Photo: Relations and Media Department
+ar: طاقم تنظيف مجارٍ أثناء العمل. تصوير: دائرة العلاقات والإعلام
+ku: تیمێکی پاککردنەوەی ئاوەڕۆ لە کاتی کاردا. وێنە: فەرمانگەی پەیوەندییەکان و ڕاگەیاندن
+
+en: The Mayor has ordered every department of the Mayoralty to complete its preparations for the rainy season. Drainage networks, sewage pumping stations, emergency rain lines and specialist vehicles must be ready to work as soon as rain falls.
+ar: وجّه أمين بغداد جميع دوائر الأمانة باستكمال استعداداتها لموسم الأمطار. ويجب أن تكون شبكات التصريف ومحطات الصرف الصحي وخطوط الأمطار الطارئة والآليات التخصصية جاهزة للعمل فور هطول الأمطار.
+ku: ئەمین فەرمانی بە هەموو فەرمانگەکانی ئەمانەت کردووە ئامادەکارییەکانیان بۆ وەرزی باران تەواو بکەن. دەبێت تۆڕەکانی ئاوەڕۆ، وێستگەکانی پەمپی ئاوەڕۆ، هێڵە فریاگوزارییەکانی باران و ئۆتۆمبێلە تایبەتەکان هەر کە باران بارێت ئامادەی کار بن.
+
+en: The order followed a meeting of the rain operations room on 28 September 2026, attended by the three deputy mayors and the directors general of every department. The meeting reviewed:
+ar: جاء التوجيه عقب اجتماع لغرفة عمليات الأمطار في 28 أيلول 2026، حضره وكلاء الأمين الثلاثة والمديرون العامون لجميع الدوائر. واستعرض الاجتماع:
+ku: فەرمانەکە دوای کۆبوونەوەیەکی ژووری ئۆپەراسیۆنی باران لە 28ی ئەیلوولی 2026 هات، کە هەر سێ جێگری ئەمین و بەڕێوەبەرە گشتییەکانی هەموو فەرمانگەکان تێیدا ئامادە بوون. کۆبوونەوەکە ئەمانەی پێداچووەوە:
+
+en: repairs to subsided roads
+ar: إصلاح التخسفات في الطرق
+ku: چاککردنەوەی ڕێگا داچووەکان
+
+en: the readiness of sewage pumping stations and their fuel stocks
+ar: جاهزية محطات الصرف الصحي وخزين الوقود فيها
+ku: ئامادەیی وێستگەکانی پەمپی ئاوەڕۆ و عەمبارەکانی سووتەمەنییان
+
+en: the cleaning of main and branch drains and street gratings
+ar: تنظيف الخطوط الرئيسة والفرعية والمشبكات
+ku: پاککردنەوەی هێڵە سەرەکی و لاوەکییەکانی ئاوەڕۆ و تۆڕەکانی شەقام
+
+en: sites that flooded in past seasons
+ar: المواقع التي شهدت غرقاً في المواسم السابقة
+ku: ئەو شوێنانەی لە وەرزەکانی پێشوودا لافاویان لێ بووە
+
+en: Departments are to repair all subsidence, complete work on the sewer networks and keep inspecting known problem sites through the season. Service disruptions during heavy rain are listed under <0>Alerts</0>.
+ar: وعلى الدوائر معالجة جميع التخسفات واستكمال الأعمال على شبكات الصرف الصحي ومواصلة متابعة مواقع الخلل المعروفة طوال الموسم. وتُدرج انقطاعات الخدمة أثناء الأمطار الغزيرة في <0>التنبيهات</0>.
+ku: دەبێت فەرمانگەکان هەموو داچوونەکان چاک بکەنەوە، کار لەسەر تۆڕەکانی ئاوەڕۆ تەواو بکەن و بە درێژایی وەرزەکە پشکنینی شوێنە کێشەدارە ناسراوەکان بەردەوام بکەن. پچڕانەکانی خزمەتگوزاری لە کاتی بارانی بەخوڕدا لە <0>ئاگادارکردنەوەکان</0>دا لیست کراون.

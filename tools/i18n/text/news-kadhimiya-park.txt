@@ -1,0 +1,53 @@
+# News story: New 32,000 m² park opens in Kadhimiya
+
+en: New 32,000 m² park opens in Kadhimiya — Mayoralty of Baghdad
+ar: افتتاح متنزه جديد بمساحة 32,000 م² في الكاظمية — أمانة بغداد
+ku: پارکێکی نوێی 32,000 م² لە کازمییە کرایەوە — ئەمانەتی بەغدا
+
+en: Officials cut a ribbon at the park entrance at night
+ar: مسؤولون يقصّون الشريط عند مدخل المتنزه ليلاً
+ku: بەرپرسان لەبەردەم دەروازەی پارکەکە بە شەو شریت دەبڕن
+
+en: The opening of Imamain al-Jawadain Park, 17 October 2026. Photo: Relations and Media Department
+ar: افتتاح متنزه الإمامين الجوادين، 17 تشرين الأول 2026. تصوير: دائرة العلاقات والإعلام
+ku: کردنەوەی پارکی ئیمامەین جەوادەین، 17ی تشرینی یەکەمی 2026. وێنە: فەرمانگەی پەیوەندییەکان و ڕاگەیاندن
+
+en: Imamain al-Jawadain Park opened in Kadhimiya on 17 October 2026. It covers 32,000 square metres.
+ar: افتُتح متنزه الإمامين الجوادين في الكاظمية في 17 تشرين الأول 2026، بمساحة 32,000 متر مربع.
+ku: پارکی ئیمامەین جەوادەین لە 17ی تشرینی یەکەمی 2026 لە کازمییە کرایەوە. ڕووبەرەکەی 32,000 مەتر چوارگۆشەیە.
+
+en: The park has:
+ar: يضم المتنزه:
+ku: پارکەکە ئەمانەی تێدایە:
+
+en: lawns and seating areas
+ar: مساحات خضراء ومناطق جلوس
+ku: چیمەن و شوێنی دانیشتن
+
+en: a car park
+ar: موقف للسيارات
+ku: شوێنی وەستانی ئۆتۆمبێل
+
+en: a tennis court and a volleyball court
+ar: ملعب للتنس وملعب للكرة الطائرة
+ku: یاریگایەکی تێنس و یاریگایەکی تۆپی باڵە
+
+en: a musical fountain
+ar: نافورة راقصة
+ku: فوارەیەکی مۆسیقی
+
+en: a prayer room
+ar: مصلى
+ku: نوێژگە
+
+en: a children's play area
+ar: ألعاب للأطفال
+ku: شوێنی یاریی منداڵان
+
+en: The Mayoralty's Projects Department built the park over about one year.
+ar: تولّت دائرة المشاريع في الأمانة تنفيذ المتنزه على مدى نحو عام.
+ku: فەرمانگەی پرۆژەکانی ئەمانەت پارکەکەی لە ماوەی نزیکەی ساڵێکدا دروست کرد.
+
+en: The Mayor opened the park with the Deputy Mayor for Municipal Affairs and the directors general of the Projects Department, Kadhimiya Municipality and the Relations and Media Department. The opening follows the start of the <0>tree-planting campaign</0> in every municipality.
+ar: افتتح أمين بغداد المتنزه بحضور وكيل أمين بغداد للشؤون البلدية والمديرين العامين لدوائر المشاريع وبلدية الكاظمية والعلاقات والإعلام. ويأتي الافتتاح بعد انطلاق <0>حملة التشجير</0> في كل البلديات.
+ku: ئەمین لەگەڵ جێگری ئەمین بۆ کاروباری شارەوانی و بەڕێوەبەرە گشتییەکانی فەرمانگەی پرۆژەکان، شارەوانی کازمییە و فەرمانگەی پەیوەندییەکان و ڕاگەیاندن پارکەکەی کردەوە. کردنەوەکە دوای دەستپێکردنی <0>هەڵمەتی دارچاندن</0> لە هەموو شارەوانییەکان دێت.

@@ -1,0 +1,41 @@
+# News story: Habibiya and Khadra sewage stations reopen after repairs
+
+en: Habibiya and Khadra sewage stations reopen after repairs — Mayoralty of Baghdad
+ar: إعادة افتتاح محطتي مجاري الحبيبية والخضراء بعد تأهيلهما — أمانة بغداد
+ku: وێستگەکانی ئاوەڕۆی حەبیبییە و خەزرا دوای چاککردنەوە کرانەوە — ئەمانەتی بەغدا
+
+en: Blue pump motors and control panels below a crane hook inside a pumping station
+ar: محركات مضخات زرقاء ولوحات تحكم تحت خطّاف رافعة داخل محطة ضخ
+ku: بزوێنەری پەمپی شین و پانێڵی کۆنترۆڵ لە ژێر قولابی کرێنێک لە ناو وێستگەیەکی پەمپ
+
+en: Pumps inside one of the rehabilitated stations. Photo: Relations and Media Department
+ar: مضخات داخل إحدى المحطتين بعد تأهيلهما. تصوير: دائرة العلاقات والإعلام
+ku: پەمپەکان لە ناو یەکێک لە وێستگە نۆژەنکراوەکان. وێنە: فەرمانگەی پەیوەندییەکان و ڕاگەیاندن
+
+en: The Habibiya main sewage pumping station and the Khadra station reopened on 9 July 2026, after rehabilitation funded by the World Bank.
+ar: أُعيد افتتاح محطة الحبيبية الرئيسة لضخ مياه الصرف الصحي ومحطة الخضراء في 9 تموز 2026، بعد إعادة تأهيلهما بتمويل من البنك الدولي.
+ku: وێستگەی سەرەکیی پەمپی ئاوەڕۆی حەبیبییە و وێستگەی خەزرا لە 9ی تەممووزی 2026 دوای نۆژەنکردنەوە بە پارەی بانکی نێودەوڵەتی کرانەوە.
+
+en: Habibiya serves Shaab, Sadr 1, Sadr 2, Ghadeer and New Baghdad. Khadra, in Karkh, serves Ghazaliya, Amiriya and nearby areas. Both stations now end the discharge of sewage into nearby drainage channels.
+ar: تخدم محطة الحبيبية مناطق الشعب والصدر الأولى والصدر الثانية والغدير وبغداد الجديدة. وتخدم محطة الخضراء، في جانب الكرخ، مناطق الغزالية والعامرية والمناطق المجاورة. وتُنهي المحطتان الآن طرح مياه الصرف الصحي إلى المبازل القريبة.
+ku: حەبیبییە خزمەتی شەعب، سەدری یەکەم، سەدری دووەم، غەدیر و بەغدای نوێ دەکات. خەزرا، لە کەرخ، خزمەتی غەزالییە، عامریە و ناوچەکانی دەوروبەر دەکات. ئێستا هەردوو وێستگە کۆتایی بە ڕژاندنی ئاوەڕۆ بۆ ناو جۆگەکانی ئاوڕێژی نزیک دەهێنن.
+
+en: The rehabilitation added:
+ar: وأضافت إعادة التأهيل:
+ku: نۆژەنکردنەوەکە ئەمانەی زیاد کردووە:
+
+en: generators, so that both stations can run at full capacity
+ar: مولدات كهربائية، لتشغيل المحطتين بكامل طاقتهما
+ku: مۆلیدەی کارەبا، بۆ ئەوەی هەردوو وێستگە بە تەواوی توانا کار بکەن
+
+en: odour control systems
+ar: منظومات لمعالجة الروائح
+ku: سیستەمی کۆنترۆڵی بۆن
+
+en: electronic control systems to monitor and run the stations
+ar: أنظمة تحكم إلكترونية لمراقبة المحطتين وتشغيلهما
+ku: سیستەمی کۆنترۆڵی ئەلیکترۆنی بۆ چاودێری و کارپێکردنی وێستگەکان
+
+en: Both stations are part of an infrastructure programme supported by the World Bank. The Mayor said the programme began more than two years ago, is on schedule, and that further works will open in the coming period.
+ar: وتندرج المحطتان ضمن برنامج للبنى التحتية يدعمه البنك الدولي. وقال أمين بغداد إن البرنامج بدأ قبل أكثر من عامين ويسير وفق الجدول الزمني، وإن أعمالاً أخرى ستُفتتح في المدة المقبلة.
+ku: هەردوو وێستگە بەشێکن لە بەرنامەیەکی ژێرخان کە بانکی نێودەوڵەتی پشتگیری دەکات. ئەمین وتی بەرنامەکە زیاتر لە دوو ساڵ لەمەوبەر دەستی پێکردووە، بەپێی خشتەی کات دەڕوات، و کاری تر لە ماوەی داهاتوودا دەکرێنەوە.

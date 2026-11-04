@@ -12,134 +12,50 @@ en: Latest
 ar: الأحدث
 ku: نوێترین
 
-en: Planning
-ar: التخطيط
-ku: پلاندانان
-
-en: Parks
-ar: المتنزهات
-ku: پارکەکان
-
-en: Works
-ar: الأعمال
-ku: کارەکان
-
-en: 21 Oct 2026
-ar: 21 تشرين الأول 2026
-ku: 21ی تشرینی یەکەمی 2026
-
-en: 19 Oct 2026
-ar: 19 تشرين الأول 2026
-ku: 19ی تشرینی یەکەمی 2026
-
-en: 6 Oct 2026
-ar: 6 تشرين الأول 2026
-ku: 6ی تشرینی یەکەمی 2026
-
-en: 29 Sep 2026
-ar: 29 أيلول 2026
-ku: 29ی ئەیلوولی 2026
-
-en: 14 Sep 2026
-ar: 14 أيلول 2026
-ku: 14ی ئەیلوولی 2026
-
-en: 6 Sep 2026
-ar: 6 أيلول 2026
-ku: 6ی ئەیلوولی 2026
-
-en: 13 Jul 2026
-ar: 13 تموز 2026
-ku: 13ی تەممووزی 2026
-
-en: Mayoralty and the Federation of Arab Engineers agree to work together on urban development
-ar: الأمانة واتحاد المهندسين العرب يتفقان على التعاون في التنمية الحضرية
-ku: ئەمانەت و یەکێتیی ئەندازیارانی عەرەب ڕێککەوتن لەسەر هاوکاری لە پەرەپێدانی شاردا
-
-en: A memorandum of understanding covering sustainable development and city planning. <0>Statement in Arabic ↗</0>
-ar: مذكرة تفاهم تشمل التنمية المستدامة وتخطيط المدن. <0>البيان الأصلي ↗</0>
-ku: یاداشتنامەیەکی لێکتێگەیشتن کە پەرەپێدانی بەردەوام و پلاندانانی شار دەگرێتەوە. <0>ڕاگەیەندراوەکە بە عەرەبی ↗</0>
-
-en: New 32,000 m² park opens in Kadhimiya
-ar: افتتاح متنزه جديد بمساحة 32,000 م² في الكاظمية
-ku: پارکێکی نوێی 32,000 م² لە کازمییە کرایەوە
-
-en: Imamain al-Jawadain Park opened on 17 October. <0>Statement in Arabic ↗</0>
-ar: افتُتح متنزه الإمامين الجوادين في 17 تشرين الأول. <0>البيان الأصلي ↗</0>
-ku: پارکی ئیمامەین جەوادەین لە 17ی تشرینی یەکەم کرایەوە. <0>ڕاگەیەندراوەکە بە عەرەبی ↗</0>
-
-en: Tree-planting campaign starts in every municipality
-ar: انطلاق حملة تشجير في كل البلديات
-ku: هەڵمەتی دارچاندن لە هەموو شارەوانییەکان دەستی پێکرد
-
-en: Led by the Deputy Mayor for Municipal Affairs, to add green space across the city. <0>Statement in Arabic ↗</0>
-ar: بإشراف وكيل أمين بغداد للشؤون البلدية، لزيادة المساحات الخضراء في أرجاء المدينة. <0>البيان الأصلي ↗</0>
-ku: بە سەرپەرشتیی جێگری ئەمین بۆ کاروباری شارەوانی، بۆ زیادکردنی ڕووبەری سەوز لە سەرانسەری شار. <0>ڕاگەیەندراوەکە بە عەرەبی ↗</0>
-
-en: Saqlawiya Garden opens in Ghazaliya
-ar: افتتاح حديقة الصقلاوية في الغزالية
-ku: باخچەی سەقلاوییە لە غەزالییە کرایەوە
-
-en: One of several public gardens opened during the planting campaign, in Mansour municipality. <0>Statement in Arabic ↗</0>
-ar: إحدى الحدائق العامة التي افتُتحت خلال حملة التشجير، في بلدية المنصور. <0>البيان الأصلي ↗</0>
-ku: یەکێکە لەو باخچە گشتییانەی لە ماوەی هەڵمەتی دارچاندندا کرانەوە، لە شارەوانی مەنسوور. <0>ڕاگەیەندراوەکە بە عەرەبی ↗</0>
-
-en: Fountain opens on the Tigris at the Utaifiya corniche
-ar: افتتاح نافورة على دجلة في كورنيش العطيفية
-ku: فوارەیەک لەسەر دیجلە لە کۆرنیشی عوتەیفییە کرایەوە
-
-en: Opened on 1 October for National Sovereignty Day. <0>Statement in Arabic ↗</0>
-ar: افتُتحت في 1 تشرين الأول بمناسبة يوم السيادة الوطنية. <0>البيان الأصلي ↗</0>
-ku: لە 1ی تشرینی یەکەم بە بۆنەی ڕۆژی سەروەریی نیشتمانییەوە کرایەوە. <0>ڕاگەیەندراوەکە بە عەرەبی ↗</0>
-
-en: Household waste collection is free of charge
-ar: رفع النفايات المنزلية مجاني
-ku: کۆکردنەوەی خاشاکی ماڵان بێبەرامبەرە
-
-en: Requests for payment should be reported to 5628 or through the Citizen Voice app, with the truck's number. <0>Statement in Arabic ↗</0>
-ar: يُبلَّغ عن أي مطالبة بالدفع على الرقم 5628 أو عبر تطبيق صوت المواطن، مع ذكر رقم العجلة. <0>البيان الأصلي ↗</0>
-ku: هەر داواکردنێکی پارە بە ژمارەی ئۆتۆمبێلەکەوە ڕاپۆرت بکە بۆ 5628 یان لە ڕێگەی ئەپی دەنگی هاووڵاتییەوە. <0>ڕاگەیەندراوەکە بە عەرەبی ↗</0>
-
-en: Drains and pumping stations to be ready before the rains
-ar: تهيئة المشبكات ومحطات الضخ قبل موسم الأمطار
-ku: ئاوەڕۆ و وێستگەکانی پەمپ پێش باران ئامادە دەکرێن
-
-en: The Mayor ordered every department to finish its rain-season preparations. <0>Statement in Arabic ↗</0>
-ar: وجّه أمين بغداد كل الدوائر بإكمال استعداداتها لموسم الأمطار. <0>البيان الأصلي ↗</0>
-ku: ئەمین فەرمانی بە هەموو فەرمانگەکان کرد ئامادەکارییەکانی وەرزی باران تەواو بکەن. <0>ڕاگەیەندراوەکە بە عەرەبی ↗</0>
-
-en: Mansour municipality moves into a new building
-ar: بلدية المنصور تنتقل إلى مبنى جديد
-ku: شارەوانی مەنسوور گوازرایەوە بۆ بینایەکی نوێ
-
-en: The first of the Mayoralty's model municipality offices. <0>Statement in Arabic ↗</0>
-ar: أول المقرات البلدية النموذجية للأمانة. <0>البيان الأصلي ↗</0>
-ku: یەکەمین نووسینگەی شارەوانیی نموونەیی ئەمانەت. <0>ڕاگەیەندراوەکە بە عەرەبی ↗</0>
-
-en: Work begins on one electronic system for building permits
-ar: بدء العمل على منظومة إلكترونية موحدة لإجازات البناء
-ku: کار لەسەر سیستەمێکی ئەلیکترۆنیی یەکگرتوو بۆ مۆڵەتی بیناسازی دەستی پێکرد
-
-en: The system will link the Mayoralty's records and reduce the steps in the permit process on Ur. <0>Statement in Arabic ↗</0>
-ar: ستربط المنظومة سجلات الأمانة وتقلّل خطوات معاملة الإجازة على أور. <0>البيان الأصلي ↗</0>
-ku: سیستەمەکە تۆمارەکانی ئەمانەت پێکەوە دەبەستێتەوە و هەنگاوەکانی مۆڵەت لە ئور کەم دەکاتەوە. <0>ڕاگەیەندراوەکە بە عەرەبی ↗</0>
-
-en: Citizen Voice complaints app upgraded
-ar: تطوير تطبيق صوت المواطن للشكاوى
-ku: ئەپی سکاڵاکانی دەنگی هاووڵاتی نوێکرایەوە
-
-en: The app now sorts complaints, sends each to the responsible office and follows it until it is closed. It will also be available inside the SuperQi app. <0>Statement in Arabic ↗</0>
-ar: صار التطبيق يصنّف الشكاوى ويحيل كلاً منها إلى الجهة المسؤولة ويتابعها حتى إغلاقها. وسيتوفر أيضاً داخل تطبيق SuperQi. <0>البيان الأصلي ↗</0>
-ku: ئێستا ئەپەکە سکاڵاکان پۆلێن دەکات، هەر یەکێک دەنێرێت بۆ نووسینگەی بەرپرس و تا داخستنی بەدواداچوونی بۆ دەکات. لە ناو ئەپی SuperQi-یش بەردەست دەبێت. <0>ڕاگەیەندراوەکە بە عەرەبی ↗</0>
-
-en: Habibiya and Khadra sewage stations reopen after repairs
-ar: إعادة افتتاح محطتي مجاري الحبيبية والخضراء بعد تأهيلهما
-ku: وێستگەکانی ئاوەڕۆی حەبیبییە و خەزرا دوای چاککردنەوە کرانەوە
-
-en: Rehabilitated with World Bank funding. Habibiya serves Shaab and nearby areas. <0>Statement in Arabic ↗</0>
-ar: أُهّلتا بتمويل من البنك الدولي. وتخدم محطة الحبيبية منطقة الشعب وما يجاورها. <0>البيان الأصلي ↗</0>
-ku: بە پارەی بانکی نێودەوڵەتی نۆژەن کرانەوە. حەبیبییە خزمەتی شەعب و ناوچەکانی دەوروبەری دەکات. <0>ڕاگەیەندراوەکە بە عەرەبی ↗</0>
-
 en: Media enquiries are handled by the Relations and Media Department. Its address is listed under <0>Contact</0>.
 ar: تتولى دائرة العلاقات والإعلام استفسارات الإعلام. عنوانها مدرج في صفحة <0>الاتصال</0>.
 ku: پرسیارەکانی ڕاگەیاندن لەلایەن فەرمانگەی پەیوەندی و ڕاگەیاندنەوە وەڵام دەدرێنەوە. ناونیشانەکەی لە <0>پەیوەندی</0> دا هاتووە.
+
+en: A memorandum of understanding covering sustainable development and city planning.
+ar: مذكرة تفاهم تشمل التنمية المستدامة وتخطيط المدن.
+ku: یاداشتنامەیەکی لێکتێگەیشتن کە پەرەپێدانی بەردەوام و پلاندانانی شار دەگرێتەوە.
+
+en: Imamain al-Jawadain Park opened on 17 October.
+ar: افتُتح متنزه الإمامين الجوادين في 17 تشرين الأول.
+ku: پارکی ئیمامەین جەوادەین لە 17ی تشرینی یەکەم کرایەوە.
+
+en: Trees will be planted along streets, in squares and at other public sites across the city.
+ar: تُزرع الأشجار في الشوارع والساحات والمواقع العامة في أنحاء المدينة.
+ku: دار لە شەقام، گۆڕەپان و شوێنە گشتییەکانی سەرانسەری شار دەچێنرێن.
+
+en: One of several public gardens opened during the planting campaign, in Mansour municipality.
+ar: إحدى الحدائق العامة التي افتُتحت خلال حملة التشجير، في بلدية المنصور.
+ku: یەکێکە لەو باخچە گشتییانەی لە ماوەی هەڵمەتی دارچاندندا کرانەوە، لە شارەوانی مەنسوور.
+
+en: Opened on 1 October for National Sovereignty Day.
+ar: افتُتحت في 1 تشرين الأول بمناسبة يوم السيادة الوطني.
+ku: لە 1ی تشرینی یەکەم بە بۆنەی ڕۆژی سەروەریی نیشتمانییەوە کرایەوە.
+
+en: Requests for payment should be reported to 5628 or through the Citizen Voice app, with the truck's number.
+ar: يُبلَّغ عن أي مطالبة بالدفع على الرقم 5628 أو عبر تطبيق صوت المواطن، مع ذكر رقم الآلية.
+ku: هەر داواکردنێکی پارە بە ژمارەی ئۆتۆمبێلەکەوە ڕاپۆرت بکە بۆ 5628 یان لە ڕێگەی ئەپی دەنگی هاووڵاتییەوە.
+
+en: The Mayor ordered every department to finish its rain-season preparations.
+ar: وجّه أمين بغداد كل الدوائر بإكمال استعداداتها لموسم الأمطار.
+ku: ئەمین فەرمانی بە هەموو فەرمانگەکان کرد ئامادەکارییەکانیان بۆ وەرزی باران تەواو بکەن.
+
+en: The first of the Mayoralty's model municipality offices.
+ar: أول المقرات البلدية النموذجية للأمانة.
+ku: یەکەمین نووسینگەی شارەوانیی نموونەیی ئەمانەت.
+
+en: The system will link the Mayoralty's records and reduce the steps in the permit process on Ur.
+ar: ستربط المنظومة سجلات الأمانة وتقلّل خطوات معاملة الإجازة على أور.
+ku: سیستەمەکە تۆمارەکانی ئەمانەت پێکەوە دەبەستێتەوە و هەنگاوەکانی مۆڵەت لە ئور کەم دەکاتەوە.
+
+en: The app now sorts complaints, sends each to the responsible office and follows it until it is closed. It will also be available inside the SuperQi app.
+ar: صار التطبيق يصنّف الشكاوى ويحيل كلاً منها إلى الجهة المسؤولة ويتابعها حتى إنجازها. وسيتوفر أيضاً داخل تطبيق SuperQi.
+ku: ئێستا ئەپەکە سکاڵاکان پۆلێن دەکات، هەر یەکێک دەنێرێت بۆ نووسینگەی بەرپرس و تا داخستنی بەدواداچوونی بۆ دەکات. لە ناو ئەپی SuperQi-یش بەردەست دەبێت.
+
+en: Rehabilitated with World Bank funding. Habibiya serves Shaab and nearby areas.
+ar: أُهّلتا بتمويل من البنك الدولي. وتخدم محطة الحبيبية منطقة الشعب وما يجاورها.
+ku: بە پارەی بانکی نێودەوڵەتی نۆژەن کرانەوە. حەبیبییە خزمەتی شەعب و ناوچەکانی دەوروبەری دەکات.

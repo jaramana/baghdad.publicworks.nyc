@@ -1,0 +1,25 @@
+# News story: Work begins on one electronic system for building permits
+
+en: Work begins on one electronic system for building permits — Mayoralty of Baghdad
+ar: بدء العمل على منظومة إلكترونية موحدة لإجازات البناء — أمانة بغداد
+ku: کار لەسەر سیستەمێکی ئەلیکترۆنیی یەکگرتوو بۆ مۆڵەتی بیناسازی دەستی پێکرد — ئەمانەتی بەغدا
+
+en: Officials at a meeting table in front of a presentation screen
+ar: مسؤولون إلى طاولة اجتماع أمام شاشة عرض
+ku: بەرپرسان لەسەر مێزی کۆبوونەوە لەبەردەم شاشەی پیشاندان
+
+en: The meeting on the new permit system. Photo: Relations and Media Department
+ar: الاجتماع الخاص بمنظومة الإجازات الجديدة. تصوير: دائرة العلاقات والإعلام
+ku: کۆبوونەوەکە دەربارەی سیستەمی نوێی مۆڵەت. وێنە: فەرمانگەی پەیوەندییەکان و ڕاگەیاندن
+
+en: The Mayoralty has begun work on a single electronic system for building permits. The system will link the Mayoralty's databases and reduce the number of steps an applicant must complete.
+ar: بدأت الأمانة العمل على منظومة إلكترونية موحدة لإجازات البناء. وستربط المنظومة قواعد بيانات الأمانة وتقلّل عدد الخطوات التي يُكملها مقدم الطلب.
+ku: ئەمانەت دەستی بە کار کردووە لەسەر یەک سیستەمی ئەلیکترۆنی بۆ مۆڵەتی بیناسازی. سیستەمەکە بنکەدراوەکانی ئەمانەت پێکەوە دەبەستێتەوە و ژمارەی ئەو هەنگاوانە کەم دەکاتەوە کە داواکار دەبێت تەواویان بکات.
+
+en: The Deputy Mayor for Municipal Affairs chaired a meeting of the heads of the permit and licence sections of the municipalities and the Information Technology Section, on the instruction of the Mayor. The meeting reviewed each stage of a permit in the current system on Ur and discussed how to redesign the procedure.
+ar: ترأس وكيل أمين بغداد للشؤون البلدية، بتوجيه من أمين بغداد، اجتماعاً لمديري أقسام الإجازات والرخص في البلديات وقسم تقنية المعلومات. واستعرض الاجتماع كل مرحلة من مراحل الإجازة في النظام الحالي على أور، وناقش إعادة تصميم الإجراءات.
+ku: جێگری ئەمین بۆ کاروباری شارەوانی، بە ڕێنمایی ئەمین، سەرۆکایەتیی کۆبوونەوەیەکی بەڕێوەبەرانی بەشەکانی مۆڵەت و لایسنس لە شارەوانییەکان و بەشی تەکنەلۆجیای زانیاری کرد. کۆبوونەوەکە هەموو قۆناغێکی مۆڵەتی لە سیستەمی ئێستای ئور پێداچووەوە و باسی دووبارە داڕشتنەوەی ڕێکارەکەی کرد.
+
+en: Applications continue on Ur in the meantime. The steps are set out under <0>Building permit</0>.
+ar: وتستمر الطلبات عبر أور في الأثناء. والخطوات موضحة في صفحة <0>إجازة البناء</0>.
+ku: لەم ماوەیەدا داواکارییەکان لە ئور بەردەوام دەبن. هەنگاوەکان لە <0>مۆڵەتی بیناسازی</0>دا ڕوون کراونەتەوە.

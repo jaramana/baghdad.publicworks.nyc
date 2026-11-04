@@ -14,21 +14,21 @@
 <link rel="stylesheet" href="shared/lang-swap.css">
 <script src="shared/lang-swap.js"></script>
 <style>
-  /* News list: date column, headline, one line of what it means */
+  /* News list: photo beside date, headline and one line of what it means */
 
   .guide .news { padding: 0; max-width: none; }
   .guide .news li { margin: 0; }
   .news { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--green); }
-  .news li { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.15rem 1.25rem; padding-block: 0.9rem; border-bottom: 1px solid var(--line); }
-  .news time { grid-row: span 3; font-size: 0.875rem; font-weight: 600; color: var(--muted); padding-top: 0.15rem; }
-  .news .topic { font-size: 0.8125rem; font-weight: 600; color: var(--green); }
-  .news h3 { font-size: 1.0625rem; font-weight: 600; margin: 0; }
+  .news li { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 1.25rem; align-items: start; padding-block: 1rem; border-bottom: 1px solid var(--line); }
+  .news .thumb img { display: block; width: 100%; aspect-ratio: var(--ratio-photo); object-fit: cover; border-radius: 3px; background: var(--soft); }
+  .news h3 { font-size: 1.0625rem; font-weight: 600; margin: 0.15rem 0 0.25rem; }
+  .news h3 a { color: var(--ink); }
+  .news h3 a:hover { color: var(--green); }
   .news p { margin: 0; color: var(--muted); font-size: 0.9375rem; }
-  .news .src { font-size: 0.8125rem; }
 
   @media (max-width: 560px) {
-    .news li { grid-template-columns: 1fr; }
-    .news time { grid-row: auto; }
+    .news li { grid-template-columns: 7rem minmax(0, 1fr); gap: 0.9rem; }
+    .news li > div > p:last-child { display: none; }
   }
 </style>
 <script src="shared/prototype.js" defer></script>
@@ -91,17 +91,17 @@
       <section id="latest" aria-labelledby="latest-h">
         <h2 id="latest-h">الأحدث</h2>
         <ul class="news">
-          <li id="n-f8c1ed6f"><time datetime="2026-10-21">٢١ تشرين الأول ٢٠٢٦</time><p class="topic">التخطيط</p><h3>الأمانة واتحاد المهندسين العرب يتفقان على التعاون في التنمية الحضرية</h3><p>مذكرة تفاهم تشمل التنمية المستدامة وتخطيط المدن. <a class="src" href="https://www.amanatbaghdad.gov.iq/ar/news/f8c1ed6f-da79-49a5-881f-bfc08c621d8c" rel="external" hreflang="ar">البيان الأصلي ↗</a></p></li>
-          <li id="n-c7aca8a4"><time datetime="2026-10-19">١٩ تشرين الأول ٢٠٢٦</time><p class="topic">المتنزهات</p><h3>افتتاح متنزه جديد بمساحة ٣٢٬٠٠٠ م² في الكاظمية</h3><p>افتُتح متنزه الإمامين الجوادين في ١٧ تشرين الأول. <a class="src" href="https://www.amanatbaghdad.gov.iq/ar/news/c7aca8a4-75b0-4153-a682-f047f08a90bd" rel="external" hreflang="ar">البيان الأصلي ↗</a></p></li>
-          <li id="n-3922b475"><time datetime="2026-10-06">٦ تشرين الأول ٢٠٢٦</time><p class="topic">المتنزهات</p><h3>انطلاق حملة تشجير في كل البلديات</h3><p>بإشراف وكيل أمين بغداد للشؤون البلدية، لزيادة المساحات الخضراء في أرجاء المدينة. <a class="src" href="https://www.amanatbaghdad.gov.iq/ar/news/3922b475-e684-4ac8-b041-09a5fef46766" rel="external" hreflang="ar">البيان الأصلي ↗</a></p></li>
-          <li id="n-f922520c"><time datetime="2026-10-06">٦ تشرين الأول ٢٠٢٦</time><p class="topic">المتنزهات</p><h3>افتتاح حديقة الصقلاوية في الغزالية</h3><p>إحدى الحدائق العامة التي افتُتحت خلال حملة التشجير، في بلدية المنصور. <a class="src" href="https://www.amanatbaghdad.gov.iq/ar/news/f922520c-0e5b-47d1-ace4-33e71f605460" rel="external" hreflang="ar">البيان الأصلي ↗</a></p></li>
-          <li id="n-d7814649"><time datetime="2026-10-06">٦ تشرين الأول ٢٠٢٦</time><p class="topic">الأعمال</p><h3>افتتاح نافورة على دجلة في كورنيش العطيفية</h3><p>افتُتحت في ١ تشرين الأول بمناسبة يوم السيادة الوطنية. <a class="src" href="https://www.amanatbaghdad.gov.iq/ar/news/d7814649-9d8c-459d-a740-44d31c91fc80" rel="external" hreflang="ar">البيان الأصلي ↗</a></p></li>
-          <li id="n-0ca9db53"><time datetime="2026-09-29">٢٩ أيلول ٢٠٢٦</time><p class="topic">الخدمات</p><h3>رفع النفايات المنزلية مجاني</h3><p>يُبلَّغ عن أي مطالبة بالدفع على الرقم ٥٦٢٨ أو عبر تطبيق صوت المواطن، مع ذكر رقم العجلة. <a class="src" href="https://www.amanatbaghdad.gov.iq/ar/news/0ca9db53-35a1-4cbc-9baa-8f545f5bb4d9" rel="external" hreflang="ar">البيان الأصلي ↗</a></p></li>
-          <li id="n-2460ee63"><time datetime="2026-09-29">٢٩ أيلول ٢٠٢٦</time><p class="topic">الأعمال</p><h3>تهيئة المشبكات ومحطات الضخ قبل موسم الأمطار</h3><p>وجّه أمين بغداد كل الدوائر بإكمال استعداداتها لموسم الأمطار. <a class="src" href="https://www.amanatbaghdad.gov.iq/ar/news/2460ee63-9311-4ba7-96d8-4435a61d8f46" rel="external" hreflang="ar">البيان الأصلي ↗</a></p></li>
-          <li id="n-6fc5143b"><time datetime="2026-09-29">٢٩ أيلول ٢٠٢٦</time><p class="topic">الأعمال</p><h3>بلدية المنصور تنتقل إلى مبنى جديد</h3><p>أول المقرات البلدية النموذجية للأمانة. <a class="src" href="https://www.amanatbaghdad.gov.iq/ar/news/6fc5143b-067d-426b-a194-5e23375d45fa" rel="external" hreflang="ar">البيان الأصلي ↗</a></p></li>
-          <li id="n-5d0a72bf"><time datetime="2026-09-14">١٤ أيلول ٢٠٢٦</time><p class="topic">الخدمات</p><h3>بدء العمل على منظومة إلكترونية موحدة لإجازات البناء</h3><p>ستربط المنظومة سجلات الأمانة وتقلّل خطوات معاملة الإجازة على أور. <a class="src" href="https://www.amanatbaghdad.gov.iq/ar/news/5d0a72bf-f090-4594-975a-c5a9cba4e03f" rel="external" hreflang="ar">البيان الأصلي ↗</a></p></li>
-          <li id="n-fe6fc46a"><time datetime="2026-09-06">٦ أيلول ٢٠٢٦</time><p class="topic">الخدمات</p><h3>تطوير تطبيق صوت المواطن للشكاوى</h3><p>صار التطبيق يصنّف الشكاوى ويحيل كلاً منها إلى الجهة المسؤولة ويتابعها حتى إغلاقها. وسيتوفر أيضاً داخل تطبيق SuperQi. <a class="src" href="https://www.amanatbaghdad.gov.iq/ar/news/fe6fc46a-074c-4e73-8071-d69dda3947f1" rel="external" hreflang="ar">البيان الأصلي ↗</a></p></li>
-          <li id="n-942b0d0f"><time datetime="2026-07-13">١٣ تموز ٢٠٢٦</time><p class="topic">الأعمال</p><h3>إعادة افتتاح محطتي مجاري الحبيبية والخضراء بعد تأهيلهما</h3><p>أُهّلتا بتمويل من البنك الدولي. وتخدم محطة الحبيبية منطقة الشعب وما يجاورها. <a class="src" href="https://www.amanatbaghdad.gov.iq/ar/news/942b0d0f-a8ee-4c15-973b-081ff54928c0" rel="external" hreflang="ar">البيان الأصلي ↗</a></p></li>
+          <li id="n-f8c1ed6f"><a class="thumb" href="news-arab-engineers.html" tabindex="-1" aria-hidden="true"><img src="img/news/news-arab-engineers-sm.jpg" alt="" loading="lazy"></a><div><p class="meta"><time datetime="2026-10-21">٢١ تشرين الأول ٢٠٢٦</time> · <span class="topic">التخطيط</span></p><h3><a href="news-arab-engineers.html">الأمانة واتحاد المهندسين العرب يتفقان على التعاون في التنمية الحضرية</a></h3><p>مذكرة تفاهم تشمل التنمية المستدامة وتخطيط المدن.</p></div></li>
+          <li id="n-c7aca8a4"><a class="thumb" href="news-kadhimiya-park.html" tabindex="-1" aria-hidden="true"><img src="img/news/news-kadhimiya-park-sm.jpg" alt="" loading="lazy"></a><div><p class="meta"><time datetime="2026-10-19">١٩ تشرين الأول ٢٠٢٦</time> · <span class="topic">المتنزهات</span></p><h3><a href="news-kadhimiya-park.html">افتتاح متنزه جديد بمساحة ٣٢٬٠٠٠ م² في الكاظمية</a></h3><p>افتُتح متنزه الإمامين الجوادين في ١٧ تشرين الأول.</p></div></li>
+          <li id="n-3922b475"><a class="thumb" href="news-tree-planting.html" tabindex="-1" aria-hidden="true"><img src="img/news/news-tree-planting-sm.jpg" alt="" loading="lazy"></a><div><p class="meta"><time datetime="2026-10-06">٦ تشرين الأول ٢٠٢٦</time> · <span class="topic">المتنزهات</span></p><h3><a href="news-tree-planting.html">انطلاق حملة لزراعة ١٩٠٬٠٠٠ شجرة في كل البلديات</a></h3><p>تُزرع الأشجار في الشوارع والساحات والمواقع العامة في أنحاء المدينة.</p></div></li>
+          <li id="n-f922520c"><a class="thumb" href="news-saqlawiya-garden.html" tabindex="-1" aria-hidden="true"><img src="img/news/news-saqlawiya-garden-sm.jpg" alt="" loading="lazy"></a><div><p class="meta"><time datetime="2026-10-06">٦ تشرين الأول ٢٠٢٦</time> · <span class="topic">المتنزهات</span></p><h3><a href="news-saqlawiya-garden.html">افتتاح حديقة الصقلاوية في الغزالية</a></h3><p>إحدى الحدائق العامة التي افتُتحت خلال حملة التشجير، في بلدية المنصور.</p></div></li>
+          <li id="n-d7814649"><a class="thumb" href="news-utaifiya-fountain.html" tabindex="-1" aria-hidden="true"><img src="img/news/news-utaifiya-fountain-sm.jpg" alt="" loading="lazy"></a><div><p class="meta"><time datetime="2026-10-06">٦ تشرين الأول ٢٠٢٦</time> · <span class="topic">الأعمال</span></p><h3><a href="news-utaifiya-fountain.html">افتتاح نافورة على دجلة في كورنيش العطيفية</a></h3><p>افتُتحت في ١ تشرين الأول بمناسبة يوم السيادة الوطني.</p></div></li>
+          <li id="n-0ca9db53"><a class="thumb" href="news-free-waste-collection.html" tabindex="-1" aria-hidden="true"><img src="img/news/news-free-waste-collection-sm.jpg" alt="" loading="lazy"></a><div><p class="meta"><time datetime="2026-09-29">٢٩ أيلول ٢٠٢٦</time> · <span class="topic">الخدمات</span></p><h3><a href="news-free-waste-collection.html">رفع النفايات المنزلية مجاني</a></h3><p>يُبلَّغ عن أي مطالبة بالدفع على الرقم ٥٦٢٨ أو عبر تطبيق صوت المواطن، مع ذكر رقم الآلية.</p></div></li>
+          <li id="n-2460ee63"><a class="thumb" href="news-rain-preparations.html" tabindex="-1" aria-hidden="true"><img src="img/news/news-rain-preparations-sm.jpg" alt="" loading="lazy"></a><div><p class="meta"><time datetime="2026-09-29">٢٩ أيلول ٢٠٢٦</time> · <span class="topic">الأعمال</span></p><h3><a href="news-rain-preparations.html">تهيئة المشبكات ومحطات الضخ قبل موسم الأمطار</a></h3><p>وجّه أمين بغداد كل الدوائر بإكمال استعداداتها لموسم الأمطار.</p></div></li>
+          <li id="n-6fc5143b"><a class="thumb" href="news-mansour-municipality.html" tabindex="-1" aria-hidden="true"><img src="img/news/news-mansour-municipality-sm.jpg" alt="" loading="lazy"></a><div><p class="meta"><time datetime="2026-09-29">٢٩ أيلول ٢٠٢٦</time> · <span class="topic">الأعمال</span></p><h3><a href="news-mansour-municipality.html">بلدية المنصور تنتقل إلى مبنى جديد</a></h3><p>أول المقرات البلدية النموذجية للأمانة.</p></div></li>
+          <li id="n-5d0a72bf"><a class="thumb" href="news-permit-system.html" tabindex="-1" aria-hidden="true"><img src="img/news/news-permit-system-sm.jpg" alt="" loading="lazy"></a><div><p class="meta"><time datetime="2026-09-14">١٤ أيلول ٢٠٢٦</time> · <span class="topic">الخدمات</span></p><h3><a href="news-permit-system.html">بدء العمل على منظومة إلكترونية موحدة لإجازات البناء</a></h3><p>ستربط المنظومة سجلات الأمانة وتقلّل خطوات معاملة الإجازة على أور.</p></div></li>
+          <li id="n-fe6fc46a"><a class="thumb" href="news-citizen-voice.html" tabindex="-1" aria-hidden="true"><img src="img/news/news-citizen-voice-sm.jpg" alt="" loading="lazy"></a><div><p class="meta"><time datetime="2026-09-06">٦ أيلول ٢٠٢٦</time> · <span class="topic">الخدمات</span></p><h3><a href="news-citizen-voice.html">تطوير تطبيق صوت المواطن للشكاوى</a></h3><p>صار التطبيق يصنّف الشكاوى ويحيل كلاً منها إلى الجهة المسؤولة ويتابعها حتى إنجازها. وسيتوفر أيضاً داخل تطبيق SuperQi.</p></div></li>
+          <li id="n-942b0d0f"><a class="thumb" href="news-habibiya-khadra-stations.html" tabindex="-1" aria-hidden="true"><img src="img/news/news-habibiya-khadra-stations-sm.jpg" alt="" loading="lazy"></a><div><p class="meta"><time datetime="2026-07-13">١٣ تموز ٢٠٢٦</time> · <span class="topic">الأعمال</span></p><h3><a href="news-habibiya-khadra-stations.html">إعادة افتتاح محطتي مجاري الحبيبية والخضراء بعد تأهيلهما</a></h3><p>أُهّلتا بتمويل من البنك الدولي. وتخدم محطة الحبيبية منطقة الشعب وما يجاورها.</p></div></li>
         </ul>
       </section>
 

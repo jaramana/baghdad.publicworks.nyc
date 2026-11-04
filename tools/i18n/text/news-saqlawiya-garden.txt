@@ -1,0 +1,25 @@
+# News story: Saqlawiya Garden opens in Ghazaliya
+
+en: Saqlawiya Garden opens in Ghazaliya — Mayoralty of Baghdad
+ar: افتتاح حديقة الصقلاوية في الغزالية — أمانة بغداد
+ku: باخچەی سەقلاوییە لە غەزالییە کرایەوە — ئەمانەتی بەغدا
+
+en: Municipal staff and gardeners in safety vests gathered in the garden
+ar: موظفو البلدية وعمال الحدائق بسترات السلامة مجتمعون في الحديقة
+ku: کارمەندانی شارەوانی و باخەوانان بە چاکەتی سەلامەتییەوە لە باخچەکە کۆبوونەتەوە
+
+en: Municipal staff at Saqlawiya Garden. Photo: Relations and Media Department
+ar: موظفو البلدية في حديقة الصقلاوية. تصوير: دائرة العلاقات والإعلام
+ku: کارمەندانی شارەوانی لە باخچەی سەقلاوییە. وێنە: فەرمانگەی پەیوەندییەکان و ڕاگەیاندن
+
+en: Saqlawiya Garden in Ghazaliya, in Mansour municipality, is now open to the public. It covers 11 dunams, about 27,500 square metres.
+ar: فُتحت حديقة الصقلاوية في الغزالية، ضمن بلدية المنصور، أمام الجمهور. وتبلغ مساحتها 11 دونماً، أي نحو 27,500 متر مربع.
+ku: باخچەی سەقلاوییە لە غەزالییە، لە شارەوانی مەنسوور، ئێستا بۆ خەڵک کراوەیە. ڕووبەرەکەی 11 دۆنمە، نزیکەی 27,500 مەتر چوارگۆشە.
+
+en: The Deputy Mayor for Municipal Affairs opened the garden as part of the <0>tree-planting campaign</0>, on the instruction of the Mayor.
+ar: افتتح وكيل أمين بغداد للشؤون البلدية الحديقة ضمن <0>حملة التشجير</0>، بتوجيه من أمين بغداد.
+ku: جێگری ئەمین بۆ کاروباری شارەوانی، بە ڕێنمایی ئەمین، باخچەکەی وەک بەشێک لە <0>هەڵمەتی دارچاندن</0> کردەوە.
+
+en: Planting has also begun in the Dhilal gardens in Rusafa Center municipality, under a planting plan prepared in advance.
+ar: وبدأت الأعمال الزراعية أيضاً في حدائق الظلال ضمن بلدية مركز الرصافة، وفق خطة زراعية أُعدّت مسبقاً.
+ku: چاندن لە باخچەکانی زیلال لە شارەوانی ناوەندی ڕوسافەش دەستی پێکردووە، بەپێی پلانێکی چاندن کە پێشتر ئامادە کراوە.

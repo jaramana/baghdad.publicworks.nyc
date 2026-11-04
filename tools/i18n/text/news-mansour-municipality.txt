@@ -1,0 +1,25 @@
+# News story: Mansour municipality moves into a new building
+
+en: Mansour municipality moves into a new building — Mayoralty of Baghdad
+ar: بلدية المنصور تنتقل إلى مبنى جديد — أمانة بغداد
+ku: شارەوانی مەنسوور گوازرایەوە بۆ بینایەکی نوێ — ئەمانەتی بەغدا
+
+en: Officials seated around a long table in a wood-panelled hall
+ar: مسؤولون جالسون حول طاولة طويلة في قاعة مكسوة بالخشب
+ku: بەرپرسان لە دەوری مێزێکی درێژ لە هۆڵێکی بە دار ڕووپۆشکراو دانیشتوون
+
+en: Inside the new Mansour municipality building. Photo: Relations and Media Department
+ar: داخل المبنى الجديد لبلدية المنصور. تصوير: دائرة العلاقات والإعلام
+ku: ناو بینا نوێیەکەی شارەوانی مەنسوور. وێنە: فەرمانگەی پەیوەندییەکان و ڕاگەیاندن
+
+en: Mansour municipality has moved into a new building. It is the first of the Mayoralty's model municipality offices.
+ar: انتقلت بلدية المنصور إلى مبنى جديد، وهو أول المقرات البلدية النموذجية للأمانة.
+ku: شارەوانی مەنسوور گوازرایەوە بۆ بینایەکی نوێ. ئەمە یەکەمین نووسینگەی شارەوانیی نموونەیی ئەمانەتە.
+
+en: The Mayor opened the building with the three deputy mayors and the directors general of the Mayoralty's departments.
+ar: افتتح أمين بغداد المبنى بحضور وكلائه الثلاثة والمديرين العامين لدوائر الأمانة.
+ku: ئەمین لەگەڵ هەر سێ جێگری ئەمین و بەڕێوەبەرە گشتییەکانی فەرمانگەکانی ئەمانەت بیناکەی کردەوە.
+
+en: The municipality's email is listed under <0>Contact</0>.
+ar: البريد الإلكتروني للبلدية مدرج في صفحة <0>الاتصال</0>.
+ku: ئیمەیڵی شارەوانییەکە لە <0>پەیوەندی</0>دا هاتووە.

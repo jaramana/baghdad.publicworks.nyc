@@ -59,19 +59,14 @@
   .way h3 { font-size: 1.125rem; font-weight: 700; }
   .way p { margin: 0.3rem 0 0.9rem; color: var(--muted); }
 
-  /* The Mayor: portrait beside name and title */
-  .mayor { display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); gap: 1.5rem; align-items: center; }
-  .mayor img { display: block; width: 100%; aspect-ratio: var(--ratio-photo); object-fit: cover; object-position: center 30%; border-radius: 3px; }
-  .mayor .role { margin: 0; font-size: 0.875rem; font-weight: 600; color: var(--green); }
-  .mayor h2 { font-size: 1.5rem; margin: 0.1rem 0 0.6rem; }
-  .mayor .links { margin: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; }
-
-  /* News: the three latest headlines, date beside each */
-  .headlines { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--green); }
-  .headlines li { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.15rem 1.25rem; padding-block: 0.8rem; border-bottom: 1px solid var(--line); }
-  .headlines time { font-size: 0.875rem; font-weight: 600; color: var(--muted); padding-top: 0.1rem; }
-  .headlines a { font-weight: 600; color: var(--ink); text-decoration: none; }
-  .headlines a:hover { color: var(--green); text-decoration: underline; }
+  /* News: the three latest stories, photo above date and headline */
+  .headlines { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
+  .headlines li { display: grid; grid-template-rows: auto auto 1fr; gap: 0.5rem; }
+  .headlines img { display: block; width: 100%; aspect-ratio: var(--ratio-photo); object-fit: cover; border-radius: 3px; background: var(--soft); }
+  .headlines time { font-size: 0.875rem; font-weight: 600; color: var(--muted); }
+  .headlines h3 { font-size: 1.0625rem; font-weight: 600; margin: 0; }
+  .headlines h3 a { color: var(--ink); text-decoration: none; }
+  .headlines h3 a:hover { color: var(--green); text-decoration: underline; }
 
   @media (max-width: 860px) {
     .hero { grid-template-columns: 1fr; margin-top: -2.5rem; }
@@ -80,7 +75,9 @@
     .tasks { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 560px) {
-    .tasks, .headlines li, .mayor { grid-template-columns: 1fr; }
+    .tasks, .headlines { grid-template-columns: 1fr; }
+    .headlines li { grid-template-columns: 7rem minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 0.9rem; row-gap: 0.15rem; }
+    .headlines li > a { grid-row: span 2; }
   }
 </style>
 <script src="../shared/prototype.js" defer></script>
@@ -188,26 +185,12 @@
     </section>
   </div>
 
-  <section class="block wrap" id="mayor" aria-labelledby="mayor-h">
-    <div class="mayor">
-      <figure>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/%D8%B5%D9%88%D8%B1%D8%A9_%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9_%D8%B9%D9%85%D8%A7%D8%B1_%D9%85%D9%88%D8%B3%D9%89_%D9%83%D8%A7%D8%B8%D9%85.jpg/960px-%D8%B5%D9%88%D8%B1%D8%A9_%D8%B4%D8%AE%D8%B5%D9%8A%D8%A9_%D8%B9%D9%85%D8%A7%D8%B1_%D9%85%D9%88%D8%B3%D9%89_%D9%83%D8%A7%D8%B8%D9%85.jpg" alt="ئەندازیار عەممار مووسا کازم لە نووسینگەکەیدا">
-        <figcaption>Mustafa85674 — CC0 — ویکیمیدیا کۆمنز</figcaption>
-      </figure>
-      <div>
-        <p class="role">ئەمینی بەغدا</p>
-        <h2 id="mayor-h">ئەندازیار عەممار مووسا کازم</h2>
-        <p class="links"><a href="about.html">ئەمانەت</a><a href="leadership.html">سەرکردایەتی و پێکهاتە</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="block wrap ruled" id="news" aria-labelledby="news-h">
+  <section class="block wrap" id="news" aria-labelledby="news-h">
     <div class="block-head"><h2 id="news-h">هەواڵەکان</h2><p><a href="news.html">هەموو هەواڵەکان</a></p></div>
     <ul class="headlines">
-      <li><time datetime="2026-10-21">٢١ی تشرینی یەکەمی ٢٠٢٦</time><a href="news.html#n-f8c1ed6f">ئەمانەت و یەکێتیی ئەندازیارانی عەرەب ڕێککەوتن لەسەر هاوکاری لە پەرەپێدانی شاردا</a></li>
-      <li><time datetime="2026-10-19">١٩ی تشرینی یەکەمی ٢٠٢٦</time><a href="news.html#n-c7aca8a4">پارکێکی نوێی ٣٢٬٠٠٠ م² لە کازمییە کرایەوە</a></li>
-      <li><time datetime="2026-10-06">٦ی تشرینی یەکەمی ٢٠٢٦</time><a href="news.html#n-3922b475">هەڵمەتی دارچاندن لە هەموو شارەوانییەکان دەستی پێکرد</a></li>
+      <li><a href="news-arab-engineers.html" tabindex="-1" aria-hidden="true"><img src="../img/news/news-arab-engineers-sm.jpg" alt="" loading="lazy"></a><time datetime="2026-10-21">٢١ی تشرینی یەکەمی ٢٠٢٦</time><h3><a href="news-arab-engineers.html">ئەمانەت و یەکێتیی ئەندازیارانی عەرەب ڕێککەوتن لەسەر هاوکاری لە پەرەپێدانی شاردا</a></h3></li>
+      <li><a href="news-kadhimiya-park.html" tabindex="-1" aria-hidden="true"><img src="../img/news/news-kadhimiya-park-sm.jpg" alt="" loading="lazy"></a><time datetime="2026-10-19">١٩ی تشرینی یەکەمی ٢٠٢٦</time><h3><a href="news-kadhimiya-park.html">پارکێکی نوێی ٣٢٬٠٠٠ م² لە کازمییە کرایەوە</a></h3></li>
+      <li><a href="news-tree-planting.html" tabindex="-1" aria-hidden="true"><img src="../img/news/news-tree-planting-sm.jpg" alt="" loading="lazy"></a><time datetime="2026-10-06">٦ی تشرینی یەکەمی ٢٠٢٦</time><h3><a href="news-tree-planting.html">هەڵمەتی چاندنی ١٩٠٬٠٠٠ دار لە هەموو شارەوانییەکان دەستی پێکرد</a></h3></li>
     </ul>
   </section>
 </main>

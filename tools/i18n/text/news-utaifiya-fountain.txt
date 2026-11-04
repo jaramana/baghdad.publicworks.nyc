@@ -1,0 +1,25 @@
+# News story: Fountain opens on the Tigris at the Utaifiya corniche
+
+en: Fountain opens on the Tigris at the Utaifiya corniche — Mayoralty of Baghdad
+ar: افتتاح نافورة على دجلة في كورنيش العطيفية — أمانة بغداد
+ku: فوارەیەک لەسەر دیجلە لە کۆرنیشی عوتەیفییە کرایەوە — ئەمانەتی بەغدا
+
+en: Lit fountain jets rising from the Tigris at night
+ar: دفقات نافورة مضاءة تعلو من نهر دجلة ليلاً
+ku: فوارەی ڕووناککراو بە شەو لە دیجلەوە بەرز دەبێتەوە
+
+en: The fountain on the Tigris at the Utaifiya corniche, 1 October 2026. Photo: Relations and Media Department
+ar: النافورة على نهر دجلة في كورنيش العطيفية، 1 تشرين الأول 2026. تصوير: دائرة العلاقات والإعلام
+ku: فوارەکە لەسەر دیجلە لە کۆرنیشی عوتەیفییە، 1ی تشرینی یەکەمی 2026. وێنە: فەرمانگەی پەیوەندییەکان و ڕاگەیاندن
+
+en: A musical fountain on the Tigris at the Utaifiya corniche opened on 1 October 2026, National Sovereignty Day. The Mayoralty's Projects Department built it.
+ar: افتُتحت نافورة راقصة على نهر دجلة في كورنيش العطيفية في 1 تشرين الأول 2026، يوم السيادة الوطني. وقد نفّذتها دائرة المشاريع في الأمانة.
+ku: فوارەیەکی مۆسیقی لەسەر دیجلە لە کۆرنیشی عوتەیفییە لە 1ی تشرینی یەکەمی 2026، ڕۆژی سەروەریی نیشتمانی، کرایەوە. فەرمانگەی پرۆژەکانی ئەمانەت دروستی کرد.
+
+en: The corniche was improved earlier under the Baghdad More Beautiful campaign.
+ar: وسبق أن طُوِّر الكورنيش ضمن حملة «بغداد أجمل».
+ku: کۆرنیشەکە پێشتر لە هەڵمەتی «بەغدای جوانتر»دا باشتر کرابوو.
+
+en: For National Sovereignty Day, Zawraa Park and the city's other parks and gardens opened free of charge. Municipal staff cleaned and decorated streets and raised Iraqi flags across the city.
+ar: وبمناسبة يوم السيادة الوطني، فُتح متنزه الزوراء وسائر متنزهات المدينة وحدائقها مجاناً. ونظّف موظفو البلديات الشوارع وزيّنوها ورفعوا الأعلام العراقية في أنحاء المدينة.
+ku: بە بۆنەی ڕۆژی سەروەریی نیشتمانی، پارکی زەوراء و پارک و باخچەکانی تری شار بێبەرامبەر کرانەوە. کارمەندانی شارەوانی شەقامەکانیان پاک کردەوە و ڕازاندیانەوە و ئاڵای عێراقیان لە سەرانسەری شار بەرز کردەوە.

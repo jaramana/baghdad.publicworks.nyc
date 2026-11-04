@@ -25,7 +25,7 @@ ar: عبر التطبيق
 ku: لە ئەپەکەوە
 
 en: Baghdad Citizen Voice, the Mayoralty's complaints app. <0>App Store ↗</0>
-ar: صوت المواطن البغدادي، تطبيق الشكاوى التابع للأمانة. <0>App Store ↗</0>
+ar: «بغداد صوت المواطن»، تطبيق الشكاوى التابع للأمانة. <0>App Store ↗</0>
 ku: دەنگی هاووڵاتیی بەغدا، ئەپی سکاڵاکانی ئەمانەت. <0>App Store ↗</0>
 
 en: Karkh Center<0>مركز الكرخ</0>
